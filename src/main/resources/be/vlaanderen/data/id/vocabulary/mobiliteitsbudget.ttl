@@ -1,0 +1,392 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix schemas: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schemas:DigitalDocument a rdfs:Class;
+  rdfs:label "Document"@nl .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget.type> a owl:ObjectProperty;
+  rdfs:label "type"@nl;
+  rdfs:comment "Type oorsprong van budget"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range <https://data.vlaanderen.be/ns/mobiliteitsbudget#MobiliteitsbudgetType> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment.type> a owl:ObjectProperty;
+  rdfs:label "type"@nl;
+  rdfs:comment "Het type segment."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range <https://data.vlaanderen.be/ns/mobiliteitsbudget#SegmentType> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment.waarde> a owl:ObjectProperty;
+  rdfs:label "waarde"@nl;
+  rdfs:comment "De invulling van de waarde van het SegmentType."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range rdfs:Resource .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde.segment> a owl:ObjectProperty;
+  rdfs:label "segment"@nl;
+  <http://purl.org/vocab/vann/usageNote> "De segmenten die het mobiliteitsbudget mogen gebruiken"@nl;
+  rdfs:comment "Soorten segment waartoe een agent behoord"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range schemas:audienceType .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#aantal> a owl:DatatypeProperty;
+  rdfs:label "aantal"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bepaalde kortingen zijn maar een aantal keer geldig. Deze waarde geeft weer hoeveel keer het gebruikt mag worden"@nl;
+  rdfs:comment "Aantal reizen dat men met het Vervoersbewijs kan afleggen."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range xsd:integer .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#beschrijving> a owl:DatatypeProperty;
+  rdfs:label "beschrijving"@nl;
+  rdfs:comment "Beschrijving van de voorwaarde"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range rdf:langString .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#consumptie> a owl:ObjectProperty;
+  rdfs:label "consumptie"@nl;
+  rdfs:comment "De consumptie van het Mobiliteitsbudget"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range <https://data.vlaanderen.be/ns/mobiliteitsbudget#Consumptie> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#consumptieTijdstip> a owl:DatatypeProperty;
+  rdfs:label "consumptieTijdstip"@nl;
+  rdfs:comment "Moment waarop het mobiliteitsbudget wordt geconsumeerd"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Consumptie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range xsd:dateTime .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#consumptieType> a owl:ObjectProperty;
+  rdfs:label "consumptieType"@nl;
+  rdfs:comment "De aard van de consumptie van het mobiliteitsbudget"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Consumptie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range <https://data.vlaanderen.be/ns/mobiliteitsbudget#ConsumptieType> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#dienstverlenertype> a owl:ObjectProperty;
+  rdfs:label "dienstverlenertype"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Het mobiliteitsbudget mag maar voor 1 of meerdere dienstverlenertypes gebruikt worden."@nl;
+  rdfs:comment "Aard van de dienstverlenertype"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range skos:Concept .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#geconsumeerdDoor> a owl:ObjectProperty;
+  rdfs:label "geconsumeerdDoor"@nl;
+  rdfs:comment "De agent die het mobiliteitsbudget consumeert."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Consumptie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range dc:Agent .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#mobiliteitsbudget> a owl:ObjectProperty;
+  rdfs:label "mobiliteitsbudget"@nl;
+  rdfs:comment "Het Mobiliteitsbudget dat geconsumeerd wordt. "@nl,
+    "Mobiliteitsbudget waarvoor de Voorwaarde geldt."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Consumptie>,
+    <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#mobiliteitsdienst> a owl:ObjectProperty;
+  rdfs:label "mobiliteitsdienst"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Enkel deze diensten mogen gebruikt worden met het mobiliteitsbudget."@nl;
+  rdfs:comment "Dienstverlening die verplaatsingen van Personen tussen Locaties mogelijk maakt."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#naam> a owl:DatatypeProperty;
+  rdfs:label "naam"@nl;
+  rdfs:comment "Naam van het budget"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range rdf:langString .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#segment> a owl:ObjectProperty;
+  rdfs:label "segment"@nl;
+  rdfs:comment "De classificatie waartoe een agent behoort volgens bepaalde criteria."@nl;
+  rdfs:domain dc:Agent;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range schemas:audienceType .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#specificatie> a owl:ObjectProperty;
+  rdfs:label "specificatie"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Voorbeelden zijn: kortingmechanismes"@nl;
+  rdfs:comment "Document waar extra specificaties in omschreven staan"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range schemas:DigitalDocument .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#vervoersbewijs> a owl:ObjectProperty;
+  rdfs:label "vervoersbewijs"@nl;
+  rdfs:comment "Het soort vervoersbewijs dat gebruikt wordt"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Consumptie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range schemas:Ticket .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#voorwaarde> a owl:ObjectProperty;
+  rdfs:label "voorwaarde"@nl;
+  rdfs:comment "Voorwaarde gekoppeld aan het Mobiliteitsbudget."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#waarde> a owl:ObjectProperty;
+  rdfs:label "waarde"@nl;
+  rdfs:comment "De concrete,kwantitatieve of kwalitatieve invulling van een grootheid of categorie."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Consumptie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range schemas:QuantitativeValue .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#waardetype> a owl:ObjectProperty;
+  rdfs:label "waardetype"@nl;
+  rdfs:comment "Type waarde waarmee een vervoersbewijs gefinancierd kan worden"@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:range <https://data.vlaanderen.be/ns/mobiliteitsbudget#Waardetype> .
+
+dc:date a rdf:Property;
+  rdfs:label "periode"@nl .
+
+schema:itinerary a rdf:Property;
+  rdfs:label "reisweg"@nl .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#ConsumptieType> a owl:Class;
+  rdfs:label "ConsumptieType"@nl;
+  rdfs:comment "De aard van de consumptie van het mobiliteitsbudget"@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#MobiliteitsbudgetType> a owl:Class;
+  rdfs:label "MobiliteitsbudgetType"@nl;
+  rdfs:comment "Aard van het mobiliteitsbudget"@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#SegmentType> a owl:Class;
+  rdfs:label "Segment"@nl;
+  rdfs:comment "Soorten segment waartoe een agent behoord"@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#Waardetype> a owl:Class;
+  rdfs:label "Waardetype"@nl;
+  rdfs:comment "Soort van waardemiddel om vervoerbewijs te financieren"@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget> .
+
+schemas:MonetaryAmount a rdf:Property;
+  rdfs:label "waarde"@nl .
+
+schemas:dateReceived a rdf:Property;
+  rdfs:label "toegekendOp"@nl .
+
+schemas:endDate a rdf:Property;
+  rdfs:label "vervaldatum"@nl .
+
+schemas:startDate a rdf:Property;
+  rdfs:label "begindatum"@nl .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment> a owl:Class;
+  rdfs:label "Segment"@nl;
+  rdfs:comment "Gemeenschappelijke eigenschappen van personen"@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget> .
+
+schemas:QuantitativeValue a rdf:Property;
+  rdfs:label "waardetype"@nl .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget> a owl:Class;
+  rdfs:label "Mobiliteitsbudget"@nl;
+  rdfs:comment "Het budget dat je als organisatie aan een Agent toekent om te besteden aan mobiliteitsdiensten in eender welke vorm."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget>;
+  rdfs:subClassOf <http://fixme.com#Beloning> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#Consumptie> a owl:Class;
+  rdfs:label "Consumptie"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Het besteden van het mobiliteitsbudget aan vervoer, huisvesting of cash"@nl;
+  rdfs:comment "Het besteden aan of het gebruik van goederen en diensten voor behoeftebevrediging."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde> a owl:Class;
+  rdfs:label "Voorwaarde"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Voorwaarde die van toepassing zijn op het mobiliteitsbudget."@nl;
+  rdfs:comment "Voorwaarde verbonden aan het budget"@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/mobiliteitsbudget> .
+
+<https://data.vlaanderen.be/ns/mobiliteitsbudget> a owl:Ontology;
+  rdfs:label "mobiliteitsbudget"@en,
+    "mobiliteitsbudget"@nl;
+  dc:contributor [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/departement-mobiliteit-en-openbare-werken>;
+      foaf:name "Departement Mobiliteit & Openbare Werken"
+    ];
+    foaf:firstName "Erika";
+    foaf:lastName "Verstrepen"
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.gtl-taxi.be/>;
+      foaf:name "Groepering Taxi ondernemingen"
+    ];
+    foaf:firstName "Pierre";
+    foaf:lastName "Steenberghen"
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.anyways.eu/>;
+      foaf:name "Anyways"
+    ];
+    foaf:firstName "Wim";
+    foaf:lastName "Michiels"
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.mycsn.be/>;
+      foaf:name "MyCSM"
+    ];
+    foaf:firstName "Niels";
+    foaf:lastName "Kelchtermans"
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.hasselt.be>;
+      foaf:name "Stad Hasselt"
+    ];
+    foaf:firstName "Yannick";
+    foaf:lastName "Fabbro"
+  ];
+  dc:issued "TODO";
+  dc:license "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>;
+  dc:mediator [
+    foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen"
+  ];
+  rdfs:seeAlso schemas:DigitalDocument,
+    schemas:startDate,
+    schemas:endDate,
+    schemas:dateReceived,
+    schemas:QuantitativeValue,
+    schemas:MonetaryAmount,
+    schema:itinerary,
+    dc:date;
+  <http://www.w3.org/2001/02pd/rec54#editor> [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+      foaf:name "Digitaal Vlaanderen"
+    ];
+    foaf:firstName "Eveline";
+    foaf:lastName "Vlassenroot";
+    foaf:mbox <mailto:eveline.vlassenroot@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+      foaf:name "Digitaal Vlaanderen"
+    ];
+    foaf:firstName "Laurens";
+    foaf:lastName "Vercauteren";
+    foaf:mbox <mailto:laurens.vercauteren@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+      foaf:name "Digitaal Vlaanderen"
+    ];
+    foaf:firstName "Ziggy";
+    foaf:lastName "Vanlishout";
+    foaf:mbox <mailto:ziggy.vanlishout@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+      foaf:name "Digitaal Vlaanderen"
+    ];
+    foaf:firstName "Liesbeth";
+    foaf:lastName "Van der Haegen";
+    foaf:mbox <mailto:liesbeth.vanderhaegen@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+      foaf:name "Digitaal Vlaanderen"
+    ];
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs";
+    foaf:mbox <mailto:geert.thijs@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+      foaf:name "Digitaal Vlaanderen"
+    ];
+    foaf:firstName "Jef";
+    foaf:lastName "Liekens";
+    foaf:mbox <mailto:jef.liekens@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+      foaf:name "Digitaal Vlaanderen"
+    ];
+    foaf:firstName "Kim";
+    foaf:lastName "Leemans";
+    foaf:mbox <mailto:kim.leemans@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+      foaf:name "Digitaal Vlaanderen"
+    ];
+    foaf:firstName "Yaron";
+    foaf:lastName "Dassonneville";
+    foaf:mbox <mailto:yaron.dassonneville@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+      foaf:name "Digitaal Vlaanderen"
+    ];
+    foaf:firstName "Raf";
+    foaf:lastName "Buyle";
+    foaf:mbox <mailto:raf.buyle@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+      foaf:name "Digitaal Vlaanderen"
+    ];
+    foaf:firstName "Veerle";
+    foaf:lastName "Beyaert";
+    foaf:mbox <mailto:veerle.beyaert@vlaanderen.be>
+  ];
+  foaf:maker [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.leuven.be>;
+      foaf:name "Stad Leuven"
+    ];
+    foaf:firstName "Eli";
+    foaf:lastName "Nomes"
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.hasselt.be>;
+      foaf:name "Stad Hasselt"
+    ];
+    foaf:firstName "Bea";
+    foaf:lastName "Cleeren"
+  ] .

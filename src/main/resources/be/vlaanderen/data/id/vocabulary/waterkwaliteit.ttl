@@ -1,0 +1,336 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+skos:Concept a rdfs:Class;
+  rdfs:label "HydromorfologischIndexType"@nl,
+    "EmissiebronType"@nl,
+    "MatrixType"@nl,
+    "EmissieType"@nl,
+    "Bemonsteringsobjecttype"@nl,
+    "Emissiewijzetype"@nl .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#ChemischAgensConcentratieObservatie.agens> a owl:ObjectProperty;
+  rdfs:label "agens"@nl;
+  rdfs:comment "Het agens dat bij de observatie geobserveerd wordt."@nl;
+  rdfs:domain <https://purl.eu/ns/air-and-water/water#ChemicalAgentConcentrationObservation>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <https://data.vlaanderen.be/ns/waterkwaliteit#Agens> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#ChemischAgensVrachtObservatie.agens> a owl:ObjectProperty;
+  rdfs:label "agens"@nl;
+  rdfs:comment "Het agens dat bij de observatie geobserveerd wordt."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#ChemischAgensVrachtObservatie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <https://data.vlaanderen.be/ns/waterkwaliteit#Agens> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#ChemischAgensVrachtObservatie.geobserveerdKenmerk> a owl:ObjectProperty;
+  rdfs:label "geobserveerdKenmerk"@nl;
+  rdfs:comment "Type van het geobserveerdKenmerk."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#ChemischAgensVrachtObservatie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <https://data.vlaanderen.be/ns/waterkwaliteit#ChemischAgensKenmerkType> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#GeobserveerdWeer> a owl:Class;
+  rdfs:label "GeobserveerdWeer"@nl;
+  rdfs:comment "Een observatie van weersomstandigheden op een zekere plaats en tijd."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#HydromorfologischeIndexObservatie.geobserveerdKenmerk> a owl:ObjectProperty;
+  rdfs:label "geobserveerdKenmerk"@nl;
+  rdfs:comment "Type van het geobserveerdKenmerk."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#HydromorfologischeIndexObservatie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range skos:Concept .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#Meetnet> a owl:Class;
+  rdfs:label "Meetnet"@nl;
+  rdfs:comment "Samenhangend geheel van plaatsen waar Observaties worden uitgevoerd."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:subClassOf <http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeatureCollection> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#Meetpunt> a owl:Class;
+  rdfs:label "Meetpunt"@nl;
+  rdfs:comment "Plaats waar Observaties plaatsvinden."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:subClassOf <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#StatistischeObservatie> a owl:Class;
+  rdfs:label "StatistischeObservatie"@nl;
+  rdfs:comment "Een observatie volgens een statistische methodologie."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#WaterkwaliteitObservatieVerzameling> a owl:Class;
+  rdfs:label "WaterkwaliteitObservatieVerzameling"@nl;
+  rdfs:comment "Een verzameling van één of meerdere waterkwaliteitobservaties. De geïncludeerde observaties delen een waarde voor één of meerdere eigenschappen."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:subClassOf <https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#chemischAgensVracht> a owl:ObjectProperty;
+  rdfs:label "chemischAgensVracht"@nl;
+  rdfs:comment "De afgemeten hoeveelheid vracht die van het chemisch Agens werd geloosd."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#ChemischAgensVrachtObservatie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#hydromorfologischeIndex> a owl:ObjectProperty;
+  rdfs:label "hydromorfologischeIndex"@nl;
+  rdfs:comment "Resultaat van de HydromorfologischeObservatie."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#HydromorfologischeIndexObservatie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#identificator> a owl:ObjectProperty;
+  rdfs:label "identificator"@nl;
+  rdfs:comment "Identificator van de Emissiebron."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#Emissiebron>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <http://www.w3.org/ns/adms#Identifier> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#locatie> a owl:ObjectProperty;
+  rdfs:label "locatie"@nl;
+  <http://purl.org/vocab/vann/usageNote> "OPMERKING: meerdere locaties zijn mogelijk voor zover ze van een verschillend type zijn (bv. Adres, Geometrie... ) en naar dezelfde plek verwijzen."@nl;
+  rdfs:comment "De locatie van de emissiebron."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#Emissiebron>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range prov:Location .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#matrix> a owl:ObjectProperty;
+  rdfs:label "matrix"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bv een schoorsteen die emissie uitstoot in de lucht, waarbij de lucht de matrix is."@nl;
+  rdfs:comment "De matrix (omgeving) waarin de emissie zich voordoet."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#Emissie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range skos:Concept .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#ontvanger> a owl:ObjectProperty;
+  rdfs:label "ontvanger"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bv. in het geval van water, het kanaal waarin de Emissie terecht komt. Of in het geval van lucht de Plaats waar de Emissie plaatsvindt. Laat bv. toe om naast Observaties mbt de uitstoot van een Emissiebron ook Observaties te doen over de impact van de EmissieBron."@nl;
+  rdfs:comment "Het object waarin de emissie van de Emissiebron terecht komt."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#Emissiebron>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#periode> a owl:ObjectProperty;
+  rdfs:label "periode"@nl;
+  rdfs:comment "Periode waarin de Emissie plaatsvond."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#Emissie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#soort> a owl:ObjectProperty;
+  rdfs:label "soort"@nl;
+  rdfs:comment "De bioindicator soort die bij de observatie geobserveerd wordt."@nl;
+  rdfs:domain <https://purl.eu/ns/air-and-water/water#BioIndicatorObservation>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <https://data.vlaanderen.be/ns/waterkwaliteit#Soort> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#uitgestotenDoor> a owl:ObjectProperty;
+  rdfs:label "uitgestotenDoor"@nl;
+  rdfs:comment "Relateert de emissie aan de emissiebron waarvan deze afkomstig is."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#Emissie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <https://data.vlaanderen.be/ns/waterkwaliteit#Emissiebron> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#verantwoordelijke> a owl:ObjectProperty;
+  rdfs:label "verantwoordelijke"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bv. diegene die verantwoordelijk is voor het naleven van de Vergunning die van toepassing is op de Emissiebron."@nl;
+  rdfs:comment "Persoon of Organisatie die verantwoordelijk is voor de Emissiebron."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#Emissiebron>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range dc:Agent .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#wettelijkkader> a owl:ObjectProperty;
+  rdfs:label "wettelijkKader"@nl;
+  rdfs:comment "De wetgeving die van toepassing is op de Emissiebron."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/waterkwaliteit#Emissiebron>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:range <https://data.vlaanderen.be/ns/generiek#WettelijkKader> .
+
+dc:type a rdf:Property;
+  rdfs:label "type"@nl,
+    "emissiewijze"@nl .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#Soort> a owl:Class;
+  rdfs:label "Soort"@nl;
+  <http://purl.org/vocab/vann/usageNote> "In deze context het type plant, dier, microbe gebruikt als bioindicator."@nl;
+  rdfs:comment "Groep organismen getypeerd door het feit dat ze gezamenlijk vruchtbare nakomelingen kunnen krijgen."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#Agens> a owl:Class;
+  rdfs:label "Agens"@nl;
+  rdfs:comment "Een chemisch element of chemische verbinding (in zuivere vorm of in een mengsel) zoals deze in natuurlijke staat voorkomt of het resultaat is van, gebruikt of vrijgekomen is bij een beroepsactiviteit, al dan niet opzettelijk geproduceerd."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#HydromorfologischeIndexObservatie> a owl:Class;
+  rdfs:label "HydromorfologischeIndexObservatie"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Het gaat om hydrologische kenmerken zoals waterdiepte, stroomsnelheid, variaties in waterstand en om morfologische kenmerken zoals de vorm van de oevers, bodemsubstraat, aanwezigheid van vegetatie etc. "@nl;
+  rdfs:comment "Observatie die volgens een bepaalde schaal de ecologische toestand beoordeelt van waterlichamen op basis van hun hydrologische en morfologische kenmerken."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:subClassOf <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>,
+    <http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement>,
+    <https://data.vlaanderen.be/ns/statistiek#StatistischeObservatie> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#ChemischAgensVrachtObservatie> a owl:Class;
+  rdfs:label "ChemischAgensVrachtObservatie"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Cummulatieve massa of hoeveelheid, doorgaans in kilogram of ton."@nl;
+  rdfs:comment "Observatie om de chemische kwaliteit van water te beoordelen aan de hand van de hoeveelheid van een bepaalde stof die door het water wordt vervoerd."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:subClassOf <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>,
+    <http://def.isotc211.org/iso19156/2011/Measurement#OM_Measurement> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#Emissie> a owl:Class;
+  rdfs:label "Emissie"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Typisch productie en afvoer van een verontreinigende stof, bv. een gas in de lucht of een vloeistof in water. Kan bv. ook geluid of straling zijn."@nl;
+  rdfs:comment "Uitstoot van iets."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:subClassOf <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit#Emissiebron> a owl:Class;
+  rdfs:label "Emissiebron"@nl;
+  rdfs:comment "Oorsprong van een emissie."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/waterkwaliteit>;
+  rdfs:subClassOf <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature> .
+
+<https://data.vlaanderen.be/ns/waterkwaliteit> a owl:Ontology;
+  rdfs:label "waterkwaliteit"@en,
+    "waterkwaliteit"@nl;
+  dc:contributor [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Omgeving"];
+    foaf:firstName "Annelies";
+    foaf:lastName "Baert";
+    foaf:mbox <mailto:annelies.baert@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Omgeving"];
+    foaf:firstName "Tom ";
+    foaf:lastName "Boonen";
+    foaf:mbox <mailto:tom.boonen@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Pieter";
+    foaf:lastName "De Graef";
+    foaf:mbox <mailto:p.degraef@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "De Watergroep"];
+    foaf:firstName "Guy";
+    foaf:lastName "Dillen";
+    foaf:mbox <mailto:guy.dillen@dewatergroep.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Omgeving"];
+    foaf:firstName "Steven";
+    foaf:lastName "Geirnaert";
+    foaf:mbox <mailto:steven.geirnaert@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Dirk";
+    foaf:lastName "Goossens";
+    foaf:mbox <mailto:d.goossens@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Jonas";
+    foaf:lastName "Rooman";
+    foaf:mbox <mailto:j.rooman@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Instelling voor Technologisch Onderzoek"];
+    foaf:firstName "Frank";
+    foaf:lastName "Sleeuwaert";
+    foaf:mbox <mailto:frank.sleeuwaert@vito.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Omgeving"];
+    foaf:firstName "Jos";
+    foaf:lastName "Tits";
+    foaf:mbox <mailto:jos.tits@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Omgeving"];
+    foaf:firstName "Geert";
+    foaf:lastName "Van Haute";
+    foaf:mbox <mailto:geert.vanhaute@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Provincie Antwerpen"];
+    foaf:firstName "Donald";
+    foaf:lastName "Vergauwe";
+    foaf:mbox <mailto:donald.vergauwe@provincieantwerpen.be>
+  ];
+  dc:issued "TODO";
+  dc:license "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>;
+  dc:mediator [
+    foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen"
+  ];
+  rdfs:seeAlso skos:Concept,
+    dc:type;
+  <http://www.w3.org/2001/02pd/rec54#editor> [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Dirk";
+    foaf:lastName "De Smedt";
+    foaf:mbox <mailto:dirk.desmedt@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Maxime";
+    foaf:lastName "Pittomvils";
+    foaf:mbox <mailto:maxime.pittomvils@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs";
+    foaf:mbox <mailto:geert.thijs@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Arne";
+    foaf:lastName "Van Der Stuyft";
+    foaf:mbox <mailto:arnevanderstuyft@vlaanderen.be>
+  ];
+  foaf:maker [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Pieter";
+    foaf:lastName "Borremans";
+    foaf:mbox <mailto:p.borremans@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Greet";
+    foaf:lastName "Devriese";
+    foaf:mbox <mailto:g.devriese@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Frank";
+    foaf:lastName "Lavens";
+    foaf:mbox <mailto:f.lavens@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Jurgen";
+    foaf:lastName "Meirlaen";
+    foaf:mbox <mailto:j.meirlaen@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Laurens";
+    foaf:lastName "Vercauteren";
+    foaf:mbox <mailto:laurens.vercauteren@vlaanderen.be>
+  ] .
