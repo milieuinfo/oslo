@@ -1,0 +1,9 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?label ?uri (GROUP_CONCAT(DISTINCT  ?type; SEPARATOR="|") AS ?types) ?vocabulary
+WHERE
+    { ?uri a ?type ; rdfs:label ?label .
+    optional{?uri rdfs:isDefinedBy ?vocabulary}
+    }
+group by ?label ?uri ?vocabulary
+ORDER BY ?label

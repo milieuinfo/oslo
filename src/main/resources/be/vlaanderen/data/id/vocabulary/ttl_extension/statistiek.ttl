@@ -1,0 +1,265 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+skos:Concept a rdfs:Class;
+  rdfs:label "StatistiekType"@nl,
+    "OperatorType"@nl .
+
+<https://data.vlaanderen.be/ns/statistiek#categorie> a owl:ObjectProperty;
+  rdfs:label "categorie"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bvb eik voor voorgaand vb."@nl;
+  rdfs:comment "De categorie waarvoor de probaliteit bepaald is."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/statistiek#DiscreteProbabiliteit>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:range rdfs:Resource .
+
+<https://data.vlaanderen.be/ns/statistiek#drempelwaarde> a owl:ObjectProperty;
+  rdfs:label "drempelwaarde"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bvb 10m voor voorgaand vb."@nl;
+  rdfs:comment "De waarde die wordt overschreden."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/statistiek#Probabiliteit>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:range <https://data.vlaanderen.be/ns/statistiek#Drempelwaarde> .
+
+<https://data.vlaanderen.be/ns/statistiek#niveau> a owl:DatatypeProperty;
+  rdfs:label "niveau"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bvb 1 als de Statistiek betrekking heeft op het eerste kwartiel."@nl;
+  rdfs:comment "Nummer van het kwantiel waarvoor de Statistiek geldt."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/statistiek#Kwantiel>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:range xsd:double .
+
+<https://data.vlaanderen.be/ns/statistiek#operator> a owl:ObjectProperty;
+  rdfs:label "operator"@nl;
+  <http://purl.org/vocab/vann/usageNote> "In voornoemd vb zou de drempel overschreden worden bij waarden 'groter of gelijk aan' 10m."@nl;
+  rdfs:comment "Vergelijkingsoperator."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/statistiek#Drempelwaarde>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:range skos:Concept .
+
+<https://data.vlaanderen.be/ns/statistiek#orde> a owl:DatatypeProperty;
+  rdfs:label "orde"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Het gemiddelde wordt beschouwd als een moment van orde 1, varantie en standaarddeviatie van orde 2, orde 3 voor de scheefheid van de verdeling en orde 4 voor de mate waarin outlierts de verdeling verbreden of versmallen."@nl;
+  rdfs:comment "Orde van het Moment."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/statistiek#Moment>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:range xsd:integer .
+
+<https://data.vlaanderen.be/ns/statistiek#resultaat> a owl:ObjectProperty;
+  rdfs:label "resultaat"@nl;
+  rdfs:comment "De waarde van het geobserveerdeKenmerk als resultaat van de StatistischeObservatie."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/statistiek#StatistischeObservatie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:range <https://data.vlaanderen.be/ns/statistiek#Statistiek> .
+
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest> a rdf:Property;
+  rdfs:label "geobserveerdObject"@nl .
+
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty> a rdf:Property;
+  rdfs:label "geobserveerdKenmerk"@nl .
+
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime> a rdf:Property;
+  rdfs:label "fenomeentijd"@nl .
+
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultTime> a rdf:Property;
+  rdfs:label "resultaattijd"@nl .
+
+dc:type a rdf:Property;
+  rdfs:label "statistiektype"@nl .
+
+rdf:value a rdf:Property;
+  rdfs:label "waarde"@nl .
+
+<https://data.vlaanderen.be/ns/statistiek#DiscreteProbabiliteit> a owl:Class;
+  rdfs:label "DiscreteProbabiliteit"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bvb de kans dat de begroeiing uit eik bestaat."@nl;
+  rdfs:comment "Statistiek die beschrijft hoe waarschijnlijk het is dat een variable binnen een bepaalde categorie valt."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/statistiek#Statistiek> .
+
+<https://data.vlaanderen.be/ns/statistiek#Kwantiel> a owl:Class;
+  rdfs:label "Kwantiel"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Onder kwantiel verstaan we de subset van data die ontstaat door de volledige set te ordenen en in gelijke aantallen op te delen. Bvb een kwartiel van een set waarnemingen bevat 25% van alle waarnemingen. De Statistiek is dan bvb het gemiddelde van alle waarden in het eerste kwartiel."@nl;
+  rdfs:comment "Statistiek die betrekking heeft op een bepaald kwantiel."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/statistiek#Statistiek> .
+
+<https://data.vlaanderen.be/ns/statistiek#Moment> a owl:Class;
+  rdfs:label "Moment"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bvb de spreiding tov het gemiddelde, uitgedrukt als de standaarddeviatie. De Statistiek is bvb de standaardddeviatie tov het gemiddelde."@nl;
+  rdfs:comment "Statistiek die aangeeft hoe de waarden gespreid zijn tov een centrale maat."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/statistiek#Statistiek> .
+
+<https://data.vlaanderen.be/ns/statistiek#Probabiliteit> a owl:Class;
+  rdfs:label "Probabiliteit"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bvb de kans dat het waterpeil 10m overschrijdt."@nl;
+  rdfs:comment "Statistiek die beschrijft hoe waarschijnlijk het is dat een variabele een bepaalde drempelwaarde (al dan niet) overschrijdt."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/statistiek#Statistiek> .
+
+<https://data.vlaanderen.be/ns/statistiek#StatistischeObservatie> a owl:Class;
+  rdfs:label "StatistischeObservatie"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bvb een gemiddelde temperatuur."@nl;
+  rdfs:comment "Observatie waarvan het resultaat een Statistiek is."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek>;
+  rdfs:subClassOf <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation> .
+
+<https://data.vlaanderen.be/ns/statistiek#Drempelwaarde> a owl:Class;
+  rdfs:label "Drempelwaarde"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Bvb 10m voor een maximaal waterpeil."@nl;
+  rdfs:comment "Waarde die aangeeft wanneer een grens wordt overschreden."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek> .
+
+<https://data.vlaanderen.be/ns/statistiek#Statistiek> a owl:Class;
+  rdfs:label "Statistiek"@nl;
+  rdfs:comment "Een stuk informatie dat een kenmerk van een dataset of variable beschrijft."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/statistiek> .
+
+<https://data.vlaanderen.be/ns/statistiek> a owl:Ontology;
+  rdfs:label "statistiek"@en,
+    "statistiek"@nl;
+  dc:contributor [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Omgeving"];
+    foaf:firstName "Annelies";
+    foaf:lastName "Baert";
+    foaf:mbox <mailto:annelies.baert@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Omgeving"];
+    foaf:firstName "Tom ";
+    foaf:lastName "Boonen";
+    foaf:mbox <mailto:tom.boonen@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Pieter";
+    foaf:lastName "De Graef";
+    foaf:mbox <mailto:p.degraef@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "De Watergroep"];
+    foaf:firstName "Guy";
+    foaf:lastName "Dillen";
+    foaf:mbox <mailto:guy.dillen@dewatergroep.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Omgeving"];
+    foaf:firstName "Steven";
+    foaf:lastName "Geirnaert";
+    foaf:mbox <mailto:steven.geirnaert@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Dirk";
+    foaf:lastName "Goossens";
+    foaf:mbox <mailto:d.goossens@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Jonas";
+    foaf:lastName "Rooman";
+    foaf:mbox <mailto:j.rooman@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Instelling voor Technologisch Onderzoek"];
+    foaf:firstName "Frank";
+    foaf:lastName "Sleeuwaert";
+    foaf:mbox <mailto:frank.sleeuwaert@vito.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Omgeving"];
+    foaf:firstName "Jos";
+    foaf:lastName "Tits";
+    foaf:mbox <mailto:jos.tits@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Omgeving"];
+    foaf:firstName "Geert";
+    foaf:lastName "Van Haute";
+    foaf:mbox <mailto:geert.vanhaute@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Provincie Antwerpen"];
+    foaf:firstName "Donald";
+    foaf:lastName "Vergauwe";
+    foaf:mbox <mailto:donald.vergauwe@provincieantwerpen.be>
+  ];
+  dc:issued "TODO";
+  dc:license "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>;
+  dc:mediator [
+    foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen"
+  ];
+  rdfs:seeAlso skos:Concept,
+    <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest>,
+    <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty>,
+    <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime>,
+    <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultTime>,
+    dc:type,
+    rdf:value;
+  <http://www.w3.org/2001/02pd/rec54#editor> [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Dirk";
+    foaf:lastName "De Smedt";
+    foaf:mbox <mailto:dirk.desmedt@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Maxime";
+    foaf:lastName "Pittomvils";
+    foaf:mbox <mailto:maxime.pittomvils@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs";
+    foaf:mbox <mailto:geert.thijs@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Arne";
+    foaf:lastName "Van Der Stuyft";
+    foaf:mbox <mailto:arnevanderstuyft@vlaanderen.be>
+  ];
+  foaf:maker [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Pieter";
+    foaf:lastName "Borremans";
+    foaf:mbox <mailto:p.borremans@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Greet";
+    foaf:lastName "Devriese";
+    foaf:mbox <mailto:g.devriese@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Frank";
+    foaf:lastName "Lavens";
+    foaf:mbox <mailto:f.lavens@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaamse Milieumaatschappij"];
+    foaf:firstName "Jurgen";
+    foaf:lastName "Meirlaen";
+    foaf:mbox <mailto:j.meirlaen@vmm.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Laurens";
+    foaf:lastName "Vercauteren";
+    foaf:mbox <mailto:laurens.vercauteren@vlaanderen.be>
+  ] .

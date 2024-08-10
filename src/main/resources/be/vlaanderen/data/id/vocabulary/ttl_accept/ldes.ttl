@@ -1,0 +1,424 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.vlaanderen.be/ns/ldes#AfgeleideCollectie> a owl:Class;
+  rdfs:label "AfgeleideCollectie"@nl;
+  rdfs:comment "Een collectie die afgeleid is van een andere collectie."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:subClassOf <https://w3id.org/tree#Collection> .
+
+<https://data.vlaanderen.be/ns/ldes#DataServiceLDES> a owl:Class;
+  rdfs:label "DataServiceLDES"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Het protocol is hier per default dat van de Linked Data Event Stream."@nl;
+  rdfs:comment "Een verzameling van operaties die ofwel toegang bieden tot één of meer Linked Data Event Streams."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:subClassOf dcat:DataService .
+
+<https://data.vlaanderen.be/ns/ldes#OnveranderlijkObject> a owl:Class;
+  rdfs:label "OnveranderlijkObject"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Een onveranderlijk object is het basiselement van een eventstream."@nl;
+  rdfs:comment "Een onveranderlijkObject is het basiselement van een Linked Data Event Stream."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/ldes#CollectieLid> .
+
+<https://data.vlaanderen.be/ns/ldes#VeranderlijkObject> a owl:Class;
+  rdfs:label "VeranderlijkObject"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Een veranderlijk object wordt gebruikt als basiselement van een dataset. "@nl;
+  rdfs:comment "Een veranderlijk object is een object wiens status nog kan veranderen nadat het werd gecreëerd."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/ldes#CollectieLid> .
+
+<https://data.vlaanderen.be/ns/ldes#eventstreamView> a owl:ObjectProperty;
+  rdfs:label "eventstreamView"@nl;
+  rdfs:comment "De event stream view connecteert de collectie met de rootnode zodanig dat alle leden van de collectie gevonden kunnen worden."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/ldes#RootNode>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:range <https://data.vlaanderen.be/ns/ldes#EventstreamView> .
+
+<https://data.vlaanderen.be/ns/ldes#retentiebeleid> a owl:ObjectProperty;
+  rdfs:label "retentiebeleid"@nl;
+  rdfs:comment "Een retentiebeleid is een beleid volgens welke elementen (i.e. data) verwijderd zullen worden."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/ldes#EventstreamView>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:range <https://w3id.org/ldes#RetentionPolicy> .
+
+<https://data.vlaanderen.be/ns/ldes#rootNode> a owl:ObjectProperty;
+  rdfs:label "rootNode"@nl;
+  rdfs:comment "Een rootnode is een beginpagina, die zelf al leden kan bevatten, via wiens gelinkte paginas alle leden kunnen gevonden worden."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/ldes#EventstreamView>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:range <https://data.vlaanderen.be/ns/ldes#RootNode> .
+
+<https://data.vlaanderen.be/ns/ldes#snapshotTot> a owl:DatatypeProperty;
+  rdfs:label "snapshotTot"@nl;
+  rdfs:comment "Het tijdstip waarop de snapshot van de Linked Data Event Stream werd genomen. "@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/ldes#Snapshot>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:range xsd:dateTime .
+
+<https://data.vlaanderen.be/ns/ldes#snapshotVan> a owl:ObjectProperty;
+  rdfs:label "snapshotVan"@nl;
+  rdfs:comment "Verwijst naar de originele Linked Data Event Stream."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/ldes#Snapshot>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:range <https://data.vlaanderen.be/ns/ldes#VersieEventStream> .
+
+<https://data.vlaanderen.be/ns/ldes#versieMaterialisatieTot> a owl:DatatypeProperty;
+  rdfs:label "versieMaterialisatieTot"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Het attribuut versieMaterialisatieTot geeft weer tot op welk moment de versies werden geaggregeerd."@nl;
+  rdfs:comment "Het tijdstip tot wanneer versies werden verwerkt."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/ldes#VersieMaterialisatie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:range xsd:dateTime .
+
+<https://data.vlaanderen.be/ns/ldes#versiematerialisatieVan> a owl:ObjectProperty;
+  rdfs:label "versieMaterialisatieVan"@nl;
+  rdfs:comment "Verwijst naar de originele Linked Data Event Stream."@nl;
+  rdfs:domain <https://data.vlaanderen.be/ns/ldes#VersieMaterialisatie>;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:range <https://data.vlaanderen.be/ns/ldes#Snapshot> .
+
+<https://data.vlaanderen.be/ns/ldes#VersieEventStream> a owl:Class;
+  rdfs:label "VersieEventStream"@nl;
+  rdfs:comment "Een event stream waarvan de leden versies zijn."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:subClassOf <https://w3id.org/ldes#EventStream> .
+
+<https://w3id.org/ldes#timestampPath> a rdf:Property;
+  rdfs:label "timestampPath"@nl .
+
+<https://w3id.org/ldes#versionOfPath> a rdf:Property;
+  rdfs:label "versionOfPath"@nl .
+
+<https://w3id.org/tree#member> a rdf:Property;
+  rdfs:label "lid"@nl .
+
+<https://w3id.org/tree#shape> a rdf:Property;
+  rdfs:label "shape"@nl .
+
+<https://data.vlaanderen.be/ns/ldes#CollectieLid> a owl:Class;
+  rdfs:label "CollectieLid"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Kan verder gespecialiseerd worden in functie van het soort collectie, bijvoorbeeld als de collectie een event stream is zijn de collectieleden onveranderlijke objecten."@nl;
+  rdfs:comment "Een object dat deel uitmaakt van een collectie."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes> .
+
+<https://data.vlaanderen.be/ns/ldes#RootNode> a owl:Class;
+  rdfs:label "RootNode"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Naar de rootnode wordt verwezen vanuit de eventstream bij voorkeur via een eventstream-view."@nl;
+  rdfs:comment "Een RootNode is een beginpagina, die zelf al leden kan bevatten, via wiens gelinkte pagina's alle leden kunnen gevonden worden."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes> .
+
+<https://data.vlaanderen.be/ns/ldes#VersieMaterialisatie> a owl:Class;
+  rdfs:label "VersieMaterialisatie"@nl;
+  <http://purl.org/vocab/vann/usageNote> "Om deze reden (zie definitie) zijn de collectieleden veranderlijke - in plaats van onveranderlijke objecten."@nl;
+  rdfs:comment "Een snapshot waarbij de versie-identificatoren zijn vervangen door object-identificatoren."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:subClassOf <https://w3id.org/tree#Collection>,
+    <https://www.w3.org/ns/dcat#Dataset> .
+
+<https://data.vlaanderen.be/ns/ldes#EventstreamView> a owl:Class;
+  rdfs:label "EventstreamView"@nl;
+  rdfs:comment "De event stream view connecteert de collectie met de rootnode zodanig dat alle leden van de collectie gevonden kunnen worden."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes> .
+
+<https://data.vlaanderen.be/ns/ldes#Snapshot> a owl:Class;
+  rdfs:label "Snapshot"@nl;
+  rdfs:comment "Een event stream van versies waarbij enkel laatste versie behouden blijft t.o.v. een opgegeven datum."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/ldes>;
+  rdfs:subClassOf <https://w3id.org/ldes#EventStream>,
+    <https://www.w3.org/ns/dcat#Dataset> .
+
+<https://data.vlaanderen.be/ns/ldes> a owl:Ontology;
+  rdfs:label "ldes"@en,
+    "ldes"@nl;
+  dc:contributor [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Mathieu";
+    foaf:lastName "Beirlaen";
+    foaf:mbox <mailto:mathieu.beirlaen@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Esri Belux"];
+    foaf:firstName "Gert";
+    foaf:lastName "Bergers";
+    foaf:mbox <mailto:gert.bergers@esri.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Veerle ";
+    foaf:lastName "Beyaert";
+    foaf:mbox <mailto:veerle.beyaert@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Konsolidate"];
+    foaf:firstName "Christophe ";
+    foaf:lastName "Cop";
+    foaf:mbox <mailto:christophe.cop@konsolidate.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "De Watergroep"];
+    foaf:firstName "Guy ";
+    foaf:lastName "Dillen";
+    foaf:mbox <mailto:guy.dillen@dewatergroep.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Esri Belux"];
+    foaf:firstName "Wim";
+    foaf:lastName "Driessens";
+    foaf:mbox <mailto:wim.driessens@esri.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Cegeka"];
+    foaf:firstName "Emanuel";
+    foaf:lastName "Gaytant";
+    foaf:mbox <mailto:emanuel.gaytant@cegeka.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "MyCSN NV"];
+    foaf:firstName "Jan ";
+    foaf:lastName "Geukens";
+    foaf:mbox <mailto:jan.geukens@myscn.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Dimitri ";
+    foaf:lastName "Hertogs";
+    foaf:mbox <mailto:dimitri.hertogs@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Agoria"];
+    foaf:firstName "Jelle";
+    foaf:lastName "Hoedemaekers";
+    foaf:mbox <mailto:jelle.hoedemaekers@agoria.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Agentschap Wegen en Verkeer"];
+    foaf:firstName "Joris";
+    foaf:lastName "Hoogeboom";
+    foaf:mbox <mailto:joris.hoogeboom@mow.vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "NSX"];
+    foaf:firstName "Philip";
+    foaf:lastName "Huysmans";
+    foaf:mbox <mailto:philip.huysmans@nsx.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaams Instituut voor de Zee (VLIZ)"];
+    foaf:firstName "Milan";
+    foaf:lastName "Lamote";
+    foaf:mbox <mailto:milan.lamote@vliz.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Cegeka"];
+    foaf:firstName "Wouter";
+    foaf:lastName "Lefever";
+    foaf:mbox <mailto:wouter.lefever@cegeka.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Universiteit Gent"];
+    foaf:firstName "Jiao";
+    foaf:lastName "Long";
+    foaf:mbox <mailto:jiao.long@ugent.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Cegeka"];
+    foaf:firstName "Joke";
+    foaf:lastName "Lybaert";
+    foaf:mbox <mailto:joke.lybaert@cegeka.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitpolis"];
+    foaf:firstName "Michael ";
+    foaf:lastName "Meersman";
+    foaf:mbox <mailto:michael.meersman@digipolis.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Atos"];
+    foaf:firstName "Patrick";
+    foaf:lastName "Michels";
+    foaf:mbox <mailto:patrick.michels@atos.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Cronos"];
+    foaf:firstName "Tom ";
+    foaf:lastName "Michiels";
+    foaf:mbox <mailto:tom.michiels@cronos.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Cegeka"];
+    foaf:firstName "Ranko";
+    foaf:lastName "Orlic";
+    foaf:mbox <mailto:ranko.orlic@cegeka.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Justine";
+    foaf:lastName "Ottevaere ";
+    foaf:mbox <mailto:justine.ottevaere@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Vlaams Instituut voor de Zee (VLIZ)"];
+    foaf:firstName "Marc";
+    foaf:lastName "Portier";
+    foaf:mbox <mailto:marc.portier@vliz.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Cegeka"];
+    foaf:firstName "Jan";
+    foaf:lastName "Robert";
+    foaf:mbox <mailto:jan.robert@cegeka.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Atos"];
+    foaf:firstName "Roland";
+    foaf:lastName "Schmidt";
+    foaf:mbox <mailto:roland.schmidt@atos.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "District09"];
+    foaf:firstName "Maarten ";
+    foaf:lastName "Segers";
+    foaf:mbox <mailto:maarten.segers@district09.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Departement Mobiliteit en Openbare Werken"];
+    foaf:firstName "Inge";
+    foaf:lastName "Van Hooydonck";
+    foaf:mbox <mailto:inge.vanhooydocnk@mow.vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "IDLab - Universiteit Gent"];
+    foaf:firstName "Brecht";
+    foaf:lastName "Van de Vyvere";
+    foaf:mbox <mailto:brecht.vandevyvere@ugent.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Inuits"];
+    foaf:firstName "Tom ";
+    foaf:lastName "Van den abbeele ";
+    foaf:mbox <mailto:tom.vandenabbeele@inuits.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "ITS Belgium"];
+    foaf:firstName "Peter";
+    foaf:lastName "Van der Perre";
+    foaf:mbox <mailto:peter.vanderperre@its.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "RedPencil"];
+    foaf:firstName "Niels";
+    foaf:lastName "Vandekeybus";
+    foaf:mbox <mailto:niels.vandekeybus@redpencil.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "IDLab - Universiteit Gent"];
+    foaf:firstName "Ruben";
+    foaf:lastName "Verbogh";
+    foaf:mbox <mailto:ruben.verbogh@ugent.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "NSX"];
+    foaf:firstName "Frans ";
+    foaf:lastName "Verstreken";
+    foaf:mbox <mailto:frans.verstreken@nsx.be>
+  ];
+  dc:issued "TODO";
+  dc:license "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>;
+  dc:mediator [
+    foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen"
+  ];
+  rdfs:seeAlso <https://w3id.org/ldes#timestampPath>,
+    <https://w3id.org/ldes#versionOfPath>,
+    <https://w3id.org/tree#member>,
+    <https://w3id.org/tree#shape>;
+  <http://www.w3.org/2001/02pd/rec54#editor> [
+    a foaf:Person;
+    schema:affiliation [foaf:name "IMEC"];
+    foaf:firstName "Pieter";
+    foaf:lastName "Colpaert ";
+    foaf:mbox <mailto:pieter.colpaert@imec.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "PwC Belgium"];
+    foaf:firstName "Thijs ";
+    foaf:lastName "Hegge";
+    foaf:mbox <mailto:thijs.hegge@pwc.com>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs";
+    foaf:mbox <mailto:geert.thijs@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Arne";
+    foaf:lastName "Van Der Stuyft";
+    foaf:mbox <mailto:arne.vanderstuyft@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Dwight ";
+    foaf:lastName "Van Lancker";
+    foaf:mbox <mailto:dwight.vanlancker@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Bert";
+    foaf:lastName "Van Nuffelen";
+    foaf:mbox <mailto:bert.vannuffelen@vlaanderen.be>
+  ];
+  foaf:maker [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Filip";
+    foaf:lastName "Borloo";
+    foaf:mbox <mailto:filip.borloo@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Simon";
+    foaf:lastName "Claus";
+    foaf:mbox <mailto:simon.claus@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Annelies";
+    foaf:lastName "De Craene";
+    foaf:mbox <mailto:annelies.decraene@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "IMEC"];
+    foaf:firstName "Phillipe";
+    foaf:lastName "Michiels";
+    foaf:mbox <mailto:phillipe.michiels.ext@imec.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Geraldine";
+    foaf:lastName "Nolf";
+    foaf:mbox <mailto:geraldine.nolf@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Laurens";
+    foaf:lastName "Vercauteren";
+    foaf:mbox <mailto:laurens.vercauteren@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [foaf:name "Digitaal Vlaanderen"];
+    foaf:firstName "Adriaan";
+    foaf:lastName "Walpot";
+    foaf:mbox <mailto:adriaan.walpot@vlaanderen.be>
+  ] .
