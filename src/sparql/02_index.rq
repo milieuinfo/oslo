@@ -1,9 +1,12 @@
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?label ?uri (GROUP_CONCAT(DISTINCT  ?type; SEPARATOR="|") AS ?types) ?vocabulary
+SELECT DISTINCT ?label ?uri (GROUP_CONCAT(DISTINCT  ?type; SEPARATOR="|") AS ?types) ?vocabulary ?domain ?range ?superproperty
 WHERE
     { ?uri a ?type ; rdfs:label ?label .
     optional{?uri rdfs:isDefinedBy ?vocabulary}
+    optional{?uri rdfs:domain ?domain}
+    optional{?uri rdfs:range ?range}
+    optional{?uri rdfs:subPropertyOf ?superproperty}
     }
-group by ?label ?uri ?vocabulary
+group by ?label ?uri ?vocabulary ?domain ?range ?superproperty
 ORDER BY ?label
