@@ -1,0 +1,512 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+prov:Association a rdfs:Class;
+    rdfs:label "Agent (in rol)"@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#agendaStatus> a owl:ObjectProperty;
+    rdfs:label "agenda status"@nl;
+    vann:usageNote "Bijvoorbeeld Ontwerp, Tussentijds goedgekeurd, Definitief, etc."@nl;
+    rdfs:comment "De toestand waarin de agenda zich bevindt voor een specifiek type."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/besluitvorming#Agenda>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/besluitvorming#agendaType> a owl:ObjectProperty;
+    rdfs:label "agenda type"@nl;
+    vann:usageNote "Bijvoorbeeld Spoedeisend, Aanvullend, etc."@nl;
+    rdfs:comment "Soort agenda."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/besluitvorming#Agenda>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range skos:Concept;
+    rdfs:subPropertyOf dcterms:type.
+<https://data.vlaanderen.be/ns/besluitvorming#behandelt> a owl:ObjectProperty;
+    rdfs:label "behandelt"@nl;
+    rdfs:comment "De Agenda die effectief wordt behandeld op de Vergaderactiviteit."@nl;
+    rdfs:domain besluit:Vergaderactiviteit;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range <https://data.vlaanderen.be/ns/besluitvorming#Agenda>.
+<https://data.vlaanderen.be/ns/besluitvorming#beleidsveld> a owl:ObjectProperty;
+    rdfs:label "beleidsveld"@nl;
+    rdfs:comment "De beleidsvelden waar deze besluitvormingsaangelegenheid onder valt."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/besluitvorming#Besluitvormingsaangelegenheid>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/besluitvorming#beschrijft> a owl:ObjectProperty;
+    rdfs:label "beschrijft"@nl;
+    rdfs:comment "De beslissing(en) die in dit verslag beschreven zijn."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/besluitvorming#Verslag>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range <https://data.vlaanderen.be/ns/besluitvorming#Beslissingsactiviteit>;
+    rdfs:subPropertyOf prov:wasGeneratedBy.
+<https://data.vlaanderen.be/ns/besluitvorming#geagendeerdStuk> a owl:ObjectProperty;
+    rdfs:label "geagendeerd stuk"@nl;
+    rdfs:comment "Een gerelateerd stuk waarnaar wordt verwezen, geciteerd of anderszins aangegeven in het agendapunt"@nl;
+    rdfs:domain besluit:Agendapunt;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range <https://data.vlaanderen.be/ns/dossier#Stuk>;
+    rdfs:subPropertyOf dcterms:references.
+<https://data.vlaanderen.be/ns/besluitvorming#genereertAgendapunt> a owl:ObjectProperty;
+    rdfs:label "genereert agendapunt"@nl;
+    rdfs:comment "Het agendapunt of de agendapunten die werden aangemaakt als gevolg van de agendering."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/besluitvorming#Agendering>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range besluit:Agendapunt;
+    rdfs:subPropertyOf prov:generated.
+<https://data.vlaanderen.be/ns/besluitvorming#genereertVerslag> a owl:ObjectProperty;
+    rdfs:label "genereert verslag"@nl;
+    rdfs:comment "de schriftelijke neerslag van (een onderdeel) van deze behandeling van agendapunt."@nl;
+    rdfs:domain besluit:BehandelingVanAgendapunt;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range <https://data.vlaanderen.be/ns/besluitvorming#Verslag>;
+    rdfs:subPropertyOf prov:generated.
+<https://data.vlaanderen.be/ns/besluitvorming#geplandOpenbaar> a owl:DatatypeProperty;
+    rdfs:label "gepland openbaar"@nl;
+    rdfs:comment "Geeft aan over de procedurestap al dan niet openbaar zal zijn."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/dossier#Procedurestap>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range xsd:boolean.
+<https://data.vlaanderen.be/ns/besluitvorming#heeftAanleiding> a owl:ObjectProperty;
+    rdfs:label "heeft aanleiding"@nl;
+    rdfs:comment "De motivatie voor het opstarten van de Besluitvormingsaangelegenheid."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/besluitvorming#Besluitvormingsaangelegenheid>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range <https://data.vlaanderen.be/ns/besluitvorming#Aanleiding>.
+<https://data.vlaanderen.be/ns/besluitvorming#heeftBeslissing> a owl:ObjectProperty;
+    rdfs:label "heeft beslissing"@nl;
+    rdfs:comment "De Beslissing die volgt uit de Behandeling van het Agendapunt."@nl;
+    rdfs:domain besluit:BehandelingVanAgendapunt;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range <https://data.vlaanderen.be/ns/besluitvorming#Beslissingsactiviteit>.
+<https://data.vlaanderen.be/ns/besluitvorming#heeftBijlage> a owl:ObjectProperty;
+    rdfs:label "heeft bijlage"@nl;
+    rdfs:comment "Een gerelateerd Stuk dat vereist is om het stuk zijn functie of samenhang te ondersteunen."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/dossier#Stuk>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range <https://data.vlaanderen.be/ns/dossier#Stuk>;
+    rdfs:subPropertyOf dcterms:requires.
+<https://data.vlaanderen.be/ns/besluitvorming#heeftNotulen> a owl:ObjectProperty;
+    rdfs:label "heeft notulen"@nl;
+    rdfs:comment "De formele notulen van de vergadering."@nl;
+    rdfs:domain besluit:Vergaderactiviteit;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range <https://data.vlaanderen.be/ns/dossier#Stuk>.
+<https://data.vlaanderen.be/ns/besluitvorming#heeftOorsprongIn> a owl:ObjectProperty;
+    rdfs:label "heeft oorsprong in"@nl;
+    rdfs:comment "Het stuk waarop de aanleiding zich baseert."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/besluitvorming#Aanleiding>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range <https://data.vlaanderen.be/ns/dossier#Stuk>;
+    rdfs:subPropertyOf prov:wasInfluencedBy.
+<https://data.vlaanderen.be/ns/besluitvorming#isAgendaVoor> a owl:ObjectProperty;
+    rdfs:label "is agenda voor"@nl;
+    rdfs:comment "De Vergaderactiviteit waarvoor de Agenda wordt voorbereid."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/besluitvorming#Agenda>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range besluit:Vergaderactiviteit.
+<https://data.vlaanderen.be/ns/besluitvorming#isGehoudenDoor> a owl:ObjectProperty;
+    rdfs:label "is gehouden door"@nl;
+    rdfs:comment "Duidt aan door welk orgaan de vergadering is gehouden."@nl;
+    rdfs:domain besluit:Vergaderactiviteit;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range besluit:Bestuursorgaan;
+    rdfs:subPropertyOf prov:wasStartedBy.
+<https://data.vlaanderen.be/ns/besluitvorming#korteTitel> a owl:DatatypeProperty;
+    rdfs:label "korte titel"@nl;
+    rdfs:comment "Een verkorte vorm van de naam."@nl;
+    rdfs:domain besluit:Agendapunt;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range xsd:string;
+    rdfs:subPropertyOf dcterms:alternative.
+<https://data.vlaanderen.be/ns/besluitvorming#resultaat> a owl:ObjectProperty;
+    rdfs:label "resultaat"@nl;
+    vann:usageNote "bijvoorbeeld goedkeuring, goedkeuring mits voorwaarden,afkeuring, verdaging,..."@nl;
+    rdfs:comment "Eindoordeel van de beoordeling."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/besluitvorming#Beslissingsactiviteit>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/besluitvorming#vertrouwelijkheidsniveau> a owl:ObjectProperty;
+    rdfs:label "vertrouwelijkheidsniveau"@nl;
+    rdfs:comment "Indicatie van de gevoeligheid van het stuk en welke beperkingen gelden."@nl;
+    rdfs:domain rdfs:Resource;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range skos:Concept;
+    rdfs:subPropertyOf dcterms:accessRights.
+<https://data.vlaanderen.be/ns/besluitvorming#volgnummer> a owl:DatatypeProperty;
+    rdfs:label "volgnummer"@nl;
+    rdfs:comment "Nummer van het stuk binnen een serie, kan bestaan uit cijfers of een combinatie van cijfers en alfanummerieke tekens."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/dossier#Stuk>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:range xsd:string.
+dcterms:description a rdf:Property;
+    rdfs:label "beschrijving"@nl.
+dcterms:isPartOf a rdf:Property;
+    rdfs:label "is onderdeel van"@nl.
+dcterms:replaces a rdf:Property;
+    rdfs:label "vervangt"@nl.
+dcterms:title a rdf:Property;
+    rdfs:label "naam"@nl.
+prov:hadRole a rdf:Property;
+    rdfs:label "rol"@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#Agendering> a owl:Class;
+    rdfs:label "Agendering"@nl;
+    rdfs:comment "Het inplannen van de bespreking van een besluitvormingsaangelegenheid op een agenda."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:subClassOf prov:Activity.
+<https://data.vlaanderen.be/ns/dossier#openingsdatum> a rdf:Property;
+    rdfs:label "openingsdatum"@nl.
+<https://data.vlaanderen.be/ns/dossier#sluitingsdatum> a rdf:Property;
+    rdfs:label "sluitingsdatum"@nl.
+dcterms:alternative a rdf:Property;
+    rdfs:label "alternatieve naam"@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#Aanleiding> a owl:Class;
+    rdfs:label "Aanleiding"@nl;
+    vann:usageNote "Vooral aangeraden bij een formele aanleiding."@nl;
+    rdfs:comment "Ontstaansgrond van een besluitvormingsaangelegenheid."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>.
+<https://data.vlaanderen.be/ns/besluitvorming#Besluitvormingsaangelegenheid> a owl:Class;
+    rdfs:label "Besluitvormingsaangelegenheid"@nl;
+    rdfs:comment "Een samenhangende hoeveelheid activiteiten met een aanleiding en een beoogde beslissing."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:subClassOf dbo:Case.
+<https://data.vlaanderen.be/ns/besluitvorming#Verslag> a owl:Class;
+    rdfs:label "Verslag"@nl;
+    rdfs:comment "De formele neerslag van (een onderdeel van) de behandeling van het agendapunt."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:subClassOf <https://data.vlaanderen.be/ns/dossier#Stuk>.
+prov:generated a rdf:Property;
+    rdfs:label "geeft aanleiding tot"@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#Beslissingsactiviteit> a owl:Class;
+    rdfs:label "Beslissingsactiviteit"@nl;
+    rdfs:comment "Beoordeling door de bevoegde(n) van het voorgelegde agendapunt of stuk(ken)."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:subClassOf prov:Activity.
+<https://data.vlaanderen.be/ns/besluitvorming#Agenda> a owl:Class;
+    rdfs:label "Agenda"@nl;
+    vann:usageNote "De agenda behoort niet tot het dossier van de besluitvormingsaangelegenheid"@nl;
+    rdfs:comment "Een geordende lijst van agendapunten voor een Vergaderactiviteit."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/besluitvorming>;
+    rdfs:subClassOf <https://data.vlaanderen.be/ns/dossier#Stuk>.
+<https://data.vlaanderen.be/ns/besluitvorming> a owl:Ontology;
+    rdfs:label "besluitvorming"@en, "besluitvorming"@nl.
+_:n3-551 a foaf:Person.
+_:n3-552 foaf:name "Departement Financiën en Begroting".
+_:n3-551 schema:affiliation _:n3-552;
+    foaf:firstName "Ward";
+    foaf:lastName "Bemelmans".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-551.
+_:n3-553 a foaf:Person.
+_:n3-554 foaf:name "Fédération Wallonie-Bruxelles".
+_:n3-553 schema:affiliation _:n3-554;
+    foaf:firstName "Thierry";
+    foaf:lastName "Brouwer".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-553.
+_:n3-555 a foaf:Person.
+_:n3-556 foaf:name "Informatie Vlaanderen".
+_:n3-555 schema:affiliation _:n3-556;
+    foaf:firstName "Raf";
+    foaf:lastName "Buyle".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-555.
+_:n3-557 a foaf:Person.
+_:n3-558 foaf:name "Departement Kanselarij en Bestuur".
+_:n3-557 schema:affiliation _:n3-558;
+    foaf:firstName "Alexander";
+    foaf:lastName "De Raymaeker".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-557.
+_:n3-559 a foaf:Person.
+_:n3-560 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-559 schema:affiliation _:n3-560;
+    foaf:firstName "Katrien";
+    foaf:lastName "De Smet";
+    foaf:mbox <mailto:katrien.desmet@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-559.
+_:n3-561 a foaf:Person.
+_:n3-562 foaf:name "Federale Overheidsdienst Kanselarij van de Eerste Minister".
+_:n3-561 schema:affiliation _:n3-562;
+    foaf:firstName "Bart";
+    foaf:lastName "Decruyenaere".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-561.
+_:n3-563 a foaf:Person.
+_:n3-564 foaf:name "Fédération Wallonie-Bruxelles".
+_:n3-563 schema:affiliation _:n3-564;
+    foaf:firstName "Ysaline";
+    foaf:lastName "Degueldre".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-563.
+_:n3-565 a foaf:Person.
+_:n3-566 foaf:homepage <http://redpencil.io>;
+    foaf:name "redpencil.io".
+_:n3-565 schema:affiliation _:n3-566;
+    foaf:firstName "Johan";
+    foaf:lastName "Delaure";
+    foaf:mbox <mailto:johan.delaure@redpencil.io>.
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-565.
+_:n3-567 a foaf:Person.
+_:n3-568 foaf:homepage <https://redpencil.io>;
+    foaf:name "redpencil.io".
+_:n3-567 schema:affiliation _:n3-568;
+    foaf:firstName "Michaël";
+    foaf:lastName "Dierick";
+    foaf:mbox <mailto:michael.dierick@redpencil.io>.
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-567.
+_:n3-569 a foaf:Person.
+_:n3-570 foaf:name "Service Pulic De Wallonie".
+_:n3-569 schema:affiliation _:n3-570;
+    foaf:firstName "Nicolas";
+    foaf:lastName "Dopchie".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-569.
+_:n3-571 a foaf:Person.
+_:n3-572 foaf:name "Departement Kanselarij en Bestuur".
+_:n3-571 schema:affiliation _:n3-572;
+    foaf:firstName "Leslie";
+    foaf:lastName "Goossens".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-571.
+_:n3-573 a foaf:Person.
+_:n3-574 foaf:name "Service Pulic De Wallonie".
+_:n3-573 schema:affiliation _:n3-574;
+    foaf:firstName "Brieuc";
+    foaf:lastName "Heyvaert".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-573.
+_:n3-575 a foaf:Person.
+_:n3-576 foaf:name "Departement Onderwijs en Vorming".
+_:n3-575 schema:affiliation _:n3-576;
+    foaf:firstName "Kaat";
+    foaf:lastName "Huylebroeck".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-575.
+_:n3-577 a foaf:Person.
+_:n3-578 foaf:name "Raad van State".
+_:n3-577 schema:affiliation _:n3-578;
+    foaf:firstName "Cedric";
+    foaf:lastName "Jolling".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-577.
+_:n3-579 a foaf:Person.
+_:n3-580 foaf:name "Service Pulic De Wallonie".
+_:n3-579 schema:affiliation _:n3-580;
+    foaf:firstName "Olga";
+    foaf:lastName "Lwabandji Wiragi".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-579.
+_:n3-581 a foaf:Person.
+_:n3-582 foaf:name "Departement Kanselarij en Bestuur".
+_:n3-581 schema:affiliation _:n3-582;
+    foaf:firstName "Isabelle";
+    foaf:lastName "Mestdagh".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-581.
+_:n3-583 a foaf:Person.
+_:n3-584 foaf:name "Vlaams Parlement".
+_:n3-583 schema:affiliation _:n3-584;
+    foaf:firstName "Bram";
+    foaf:lastName "Moenaert".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-583.
+_:n3-585 a foaf:Person.
+_:n3-586 foaf:name "Agentschap Binnenlands Bestuur".
+_:n3-585 schema:affiliation _:n3-586;
+    foaf:firstName "Mina";
+    foaf:lastName "Nidlahcen".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-585.
+_:n3-587 a foaf:Person.
+_:n3-588 foaf:name "Vlaams Parlement".
+_:n3-587 schema:affiliation _:n3-588;
+    foaf:firstName "Frank";
+    foaf:lastName "Ornelis".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-587.
+_:n3-589 a foaf:Person.
+_:n3-590 foaf:name "Federale Overheidsdienst Kanselarij van de Eerste Minister".
+_:n3-589 schema:affiliation _:n3-590;
+    foaf:firstName "Jean-Charles";
+    foaf:lastName "Quertinmont".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-589.
+_:n3-591 a foaf:Person.
+_:n3-592 foaf:name "Kind & Gezin".
+_:n3-591 schema:affiliation _:n3-592;
+    foaf:firstName "Kristien";
+    foaf:lastName "Roete".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-591.
+_:n3-593 a foaf:Person.
+_:n3-594 foaf:name "Vlaamse Dienst voor Arbeidsbemiddeling en Beroepsopleiding".
+_:n3-593 schema:affiliation _:n3-594;
+    foaf:firstName "Cindy";
+    foaf:lastName "Scharlaeken".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-593.
+_:n3-595 a foaf:Person.
+_:n3-596 foaf:name "Departement Kanselarij en Bestuur".
+_:n3-595 schema:affiliation _:n3-596;
+    foaf:firstName "Frank";
+    foaf:lastName "Steenput".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-595.
+_:n3-597 a foaf:Person.
+_:n3-598 foaf:name "Agentschap Binnenlands Bestuur".
+_:n3-597 schema:affiliation _:n3-598;
+    foaf:firstName "Norah";
+    foaf:lastName "Thaens".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-597.
+_:n3-599 a foaf:Person.
+_:n3-600 foaf:name "Federale Overheidsdienst Kanselarij van de Eerste Minister".
+_:n3-599 schema:affiliation _:n3-600;
+    foaf:firstName "Martine";
+    foaf:lastName "Trznadel".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-599.
+_:n3-601 a foaf:Person.
+_:n3-602 foaf:name "Departement Kanselarij en Bestuur".
+_:n3-601 schema:affiliation _:n3-602;
+    foaf:firstName "Daisy";
+    foaf:lastName "Van De Velde".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-601.
+_:n3-603 a foaf:Person.
+_:n3-604 foaf:homepage <https://changelab.be>;
+    foaf:name "ChangeLab".
+_:n3-603 schema:affiliation _:n3-604;
+    foaf:firstName "Yana";
+    foaf:lastName "Van Dorst";
+    foaf:mbox <mailto:yana@changelab.be>.
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-603.
+_:n3-605 a foaf:Person.
+_:n3-606 foaf:name "Departement Economie, Wetenschap en Innovatie".
+_:n3-605 schema:affiliation _:n3-606;
+    foaf:firstName "Geert";
+    foaf:lastName "Van Grootel".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-605.
+_:n3-607 a foaf:Person.
+_:n3-608 foaf:name "Vlaamse ICT Organisatie vzw".
+_:n3-607 schema:affiliation _:n3-608;
+    foaf:firstName "Hendrik";
+    foaf:lastName "Van Haele".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-607.
+_:n3-609 a foaf:Person.
+_:n3-610 foaf:name "Departement Kanselarij en Bestuur".
+_:n3-609 schema:affiliation _:n3-610;
+    foaf:firstName "Christel";
+    foaf:lastName "Van Keer".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-609.
+_:n3-611 a foaf:Person.
+_:n3-612 foaf:name "Vlaams Parlement".
+_:n3-611 schema:affiliation _:n3-612;
+    foaf:firstName "Stephan";
+    foaf:lastName "Vanbossegem".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-611.
+_:n3-613 a foaf:Person.
+_:n3-614 foaf:name "Departement Kanselarij en Bestuur".
+_:n3-613 schema:affiliation _:n3-614;
+    foaf:firstName "Frederik";
+    foaf:lastName "Vanlaere".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-613.
+_:n3-615 a foaf:Person.
+_:n3-616 foaf:name "Departement Kanselarij en Bestuur".
+_:n3-615 schema:affiliation _:n3-616;
+    foaf:firstName "Hilde";
+    foaf:lastName "Vantroyen".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-615.
+_:n3-617 a foaf:Person.
+_:n3-618 foaf:name "Vlaams Parlement".
+_:n3-617 schema:affiliation _:n3-618;
+    foaf:firstName "Gerit";
+    foaf:lastName "Vermeylen".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-617.
+_:n3-619 a foaf:Person.
+_:n3-620 foaf:name "Federale Overheidsdienst Justitie".
+_:n3-619 schema:affiliation _:n3-620;
+    foaf:firstName "Wilfried";
+    foaf:lastName "Verrezen".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-619.
+_:n3-621 a foaf:Person.
+_:n3-622 foaf:name "Raad van State".
+_:n3-621 schema:affiliation _:n3-622;
+    foaf:firstName "Veerle";
+    foaf:lastName "Vertongen".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-621.
+_:n3-623 a foaf:Person.
+_:n3-624 foaf:homepage <https://www.ugent.be/ps/communicatiewetenschappen/mict>;
+    foaf:name "imec - UGent".
+_:n3-623 schema:affiliation _:n3-624;
+    foaf:firstName "Eveline";
+    foaf:lastName "Vlassenroot";
+    foaf:mbox <mailto:eveline.vlassenroot@ugent.be>.
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-623.
+_:n3-625 a foaf:Person.
+_:n3-626 foaf:homepage <http://binnenland.vlaanderen.be/>;
+    foaf:name "Agentschap Binnenlands Bestuur".
+_:n3-625 schema:affiliation _:n3-626;
+    foaf:firstName "Veronique";
+    foaf:lastName "Volders";
+    foaf:mbox <mailto:veronique.volders@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-625.
+_:n3-627 a foaf:Person.
+_:n3-628 foaf:name "Departement Kanselarij en Bestuur".
+_:n3-627 schema:affiliation _:n3-628;
+    foaf:firstName "Hugo";
+    foaf:lastName "Zwaenepoel".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:contributor _:n3-627;
+    dcterms:issued "TODO";
+    dcterms:license <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>, "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0".
+_:n3-629 foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen".
+<https://data.vlaanderen.be/ns/besluitvorming> dcterms:mediator _:n3-629;
+    rdfs:seeAlso prov:Association, dcterms:alternative, dcterms:description, dcterms:isPartOf, dcterms:replaces, dcterms:title, prov:generated, prov:hadRole, <https://data.vlaanderen.be/ns/dossier#openingsdatum>, <https://data.vlaanderen.be/ns/dossier#sluitingsdatum>.
+_:n3-630 a foaf:Person.
+_:n3-631 foaf:homepage <https://www.ugent.be>;
+    foaf:name "imec - UGent".
+_:n3-630 schema:affiliation _:n3-631;
+    foaf:firstName "Ben";
+    foaf:lastName "De Meester";
+    foaf:mbox <mailto:ben.demeester@ugent.be>.
+<https://data.vlaanderen.be/ns/besluitvorming> ns1:editor _:n3-630.
+_:n3-632 a foaf:Person.
+_:n3-633 foaf:homepage <https://www.pwc.be>;
+    foaf:name "PwC".
+_:n3-632 schema:affiliation _:n3-633;
+    foaf:firstName "Dimitri";
+    foaf:lastName "Schepers";
+    foaf:mbox <mailto:dimitri.schepers@pwc.com>.
+<https://data.vlaanderen.be/ns/besluitvorming> ns1:editor _:n3-632.
+_:n3-634 a foaf:Person.
+_:n3-635 foaf:homepage <https://redpencil.io>;
+    foaf:name "redpencil.io".
+_:n3-634 schema:affiliation _:n3-635;
+    foaf:firstName "Niels";
+    foaf:lastName "Vandekeybus";
+    foaf:mbox <mailto:niels.vandekeybus@redpencil.io>.
+<https://data.vlaanderen.be/ns/besluitvorming> ns1:editor _:n3-634.
+_:n3-636 a foaf:Person.
+_:n3-637 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Departement Kanselarij en Bestuur".
+_:n3-636 schema:affiliation _:n3-637;
+    foaf:firstName "Alvin";
+    foaf:lastName "Demeyer";
+    foaf:mbox <mailto:alvin.demeyer@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/besluitvorming> foaf:maker _:n3-636.
+_:n3-638 a foaf:Person.
+_:n3-639 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Departement Kanselarij en Bestuur".
+_:n3-638 schema:affiliation _:n3-639;
+    foaf:firstName "Karl";
+    foaf:lastName "Musschoot";
+    foaf:mbox <mailto:karl.musschoot@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/besluitvorming> foaf:maker _:n3-638.

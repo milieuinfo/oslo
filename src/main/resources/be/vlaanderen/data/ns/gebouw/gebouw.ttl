@@ -1,0 +1,323 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+skos:Concept a rdfs:Class.
+<https://data.vlaanderen.be/ns/gebouw#Gebouw.adres> a owl:ObjectProperty;
+    rdfs:label "adres"@nl;
+    rdfs:comment "Adresvoorstelling die bij het gebouw hoort."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouw>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range locn:Address.
+<https://data.vlaanderen.be/ns/gebouw#Gebouw.geometrie> a owl:ObjectProperty;
+    rdfs:label "geometrie"@nl;
+    rdfs:comment "2D- of 2.5D-geometrische voorstelling van het gebouw."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouw>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range <https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie>.
+<https://data.vlaanderen.be/ns/gebouw#Gebouw.status> a owl:ObjectProperty;
+    rdfs:label "status"@nl;
+    rdfs:comment "Fase van de levensloop waarin het gebouw zich bevindt."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouw>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gebouw#Gebouweenheid.adres> a owl:ObjectProperty;
+    rdfs:label "adres"@nl;
+    rdfs:comment "Adresvoorstelling die bij de gebouweenheid hoort."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouweenheid>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range locn:Address.
+<https://data.vlaanderen.be/ns/gebouw#Gebouweenheid.geometrie> a owl:ObjectProperty;
+    rdfs:label "geometrie"@nl;
+    rdfs:comment "2D-geometrische voorstelling van de gebouweenheid."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouweenheid>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range locn:Geometry.
+<https://data.vlaanderen.be/ns/gebouw#Gebouweenheid.status> a owl:ObjectProperty;
+    rdfs:label "gebouweenheidstatus"@nl;
+    rdfs:comment "Fase van de levensloop waarin de gebouweenheid zich bevindt."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouweenheid>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gebouw#aantalBovengrondseVerdiepingen> a owl:DatatypeProperty;
+    rdfs:label "aantal bovengrondse verdiepingen"@nl;
+    rdfs:comment "Totaal van het aantal bovengrondse gebouwlagen, bekeken over alle gebouwdelen heen."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouw>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range xsd:integer.
+<https://data.vlaanderen.be/ns/gebouw#aantalOndergrondseVerdiepingen> a owl:DatatypeProperty;
+    rdfs:label "aantal ondergrondse verdiepingen"@nl;
+    rdfs:comment "Totaal van het aantal ondergrondse gebouwlagen, bekeken over alle gebouwdelen heen."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouw>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range xsd:integer.
+<https://data.vlaanderen.be/ns/gebouw#bestaatUit> a owl:ObjectProperty;
+    rdfs:label "bestaat uit"@nl;
+    rdfs:comment "De gebouweenheden die tot het gebouw behoren."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouw>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range <https://data.vlaanderen.be/ns/gebouw#Gebouweenheid>.
+<https://data.vlaanderen.be/ns/gebouw#bouwjaar> a owl:ObjectProperty;
+    rdfs:label "bouwjaar"@nl;
+    vann:usageNote "Verbouwingen en renovaties na initiële oplevering worden niet meegeteld."@nl;
+    rdfs:comment "Datum waarop het gebouw voltooid werd."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouw>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum>.
+<https://data.vlaanderen.be/ns/gebouw#default> a owl:DatatypeProperty;
+    rdfs:label "default"@nl;
+    rdfs:comment "Geometrie die moet worden gebruikt bv bij voorstelling op kaart."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range xsd:boolean.
+<https://data.vlaanderen.be/ns/gebouw#functie> a owl:ObjectProperty;
+    rdfs:label "functie"@nl;
+    rdfs:comment "Functie waarvoor de gebouweenheid in de realiteit (zoals vastgesteld op het terrein) gebruikt wordt."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouweenheid>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gebouw#gebouwnaam> a owl:DatatypeProperty;
+    rdfs:label "gebouwnaam"@nl;
+    rdfs:comment "Naam van het gebouw."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouw>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range rdf:langString.
+<https://data.vlaanderen.be/ns/gebouw#geometrie> a owl:ObjectProperty;
+    rdfs:label "geometrie"@nl;
+    rdfs:comment "2D- of 2.5D-geometrische voorstelling van het gebouw."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range locn:Geometry.
+<https://data.vlaanderen.be/ns/gebouw#horizontaleReferentie> a owl:ObjectProperty;
+    rdfs:label "horizontale referentie"@nl;
+    rdfs:comment "Aspect van het object dat door de xy-coördinaten wordt voorgesteld."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gebouw#laatsteRenovatie> a owl:ObjectProperty;
+    rdfs:label "laatste renovatie"@nl;
+    rdfs:comment "Datum waarop het gebouw het laatst gerenoveerd werd."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouw>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum>.
+<https://data.vlaanderen.be/ns/gebouw#ligtOp> a owl:ObjectProperty;
+    rdfs:label "ligt op"@nl;
+    rdfs:comment "De percelen waarmee het gebouw officieel geassocieerd is."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouw>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range <https://data.vlaanderen.be/ns/perceel#Perceel>.
+<https://data.vlaanderen.be/ns/gebouw#locatieAanduiding> a owl:ObjectProperty;
+    rdfs:label "locatieaanduiding"@nl;
+    rdfs:comment "Alfanumerieke code die een adreslocator uniek identificeert binnen de straat, administratieve eenheid etc."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#Gebouweenheid>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range <https://data.vlaanderen.be/ns/adres#Locatieaanduiding>.
+<https://data.vlaanderen.be/ns/gebouw#methode> a owl:ObjectProperty;
+    rdfs:label "methode"@nl;
+    rdfs:comment "Beschrijving van de manier waarop de geometrie aangemaakt werd."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gebouw#verticaleReferentie> a owl:ObjectProperty;
+    rdfs:label "verticale referentie"@nl;
+    rdfs:comment "Aspect van het object dat door de z-coördinaten wordt voorgesteld."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie> a owl:Class;
+    rdfs:label "2D-Gebouwgeometrie"@nl;
+    rdfs:comment "Geometrie van het gebouw en metadata over welk deel van het gebouw door de geometrie wordt voorgesteld en hoe deze werd bepaald."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>.
+<https://data.vlaanderen.be/ns/gebouw#Gebouweenheid> a owl:Class;
+    rdfs:label "Gebouweenheid"@nl;
+    rdfs:comment "De kleinste eenheid binnen een gebouw die geschikt is voor woon-, bedrijfsmatige, of recreatieve doeleinden en die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde circulatieruimte. Een gebouweenheid is in functioneel opzicht zelfstandig. Daarnaast kan een gebouweenheid ook een gemeenschappelijk deel zijn."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:subClassOf prov:Entity, <https://data.vlaanderen.be/ns/adres#AdresseerbaarObject>.
+<https://data.vlaanderen.be/ns/gebouw#Gebouw> a owl:Class;
+    rdfs:label "Gebouw"@nl;
+    rdfs:comment "Een gesloten en/of overdekt, bovengronds of ondergronds bouwwerk, dat dient of bestemd is, ofwel om mensen, dieren en voorwerpen onder te brengen, ofwel om economische goederen te vervaardigen of diensten te verstrekken. Een gebouw verwijst naar gelijk welke structuur die op blijvende wijze op een terrein opgetrokken of gebouwd wordt."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gebouw>;
+    rdfs:subClassOf prov:Entity.
+<https://data.vlaanderen.be/ns/gebouw> a owl:Ontology;
+    rdfs:label "Building"@en, "Gebouw"@nl.
+_:n3-1044 a foaf:person.
+_:n3-1045 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-1044 schema:affiliation _:n3-1045;
+    foaf:firstName "Raf";
+    foaf:lastName "Buyle";
+    foaf:mbox <mailto:raf.buyle@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1044.
+_:n3-1046 a foaf:person.
+_:n3-1047 foaf:homepage <https://www.vlaamsbrabant.be>;
+    foaf:name "Provincie Vlaams-Brabant".
+_:n3-1046 schema:affiliation _:n3-1047;
+    foaf:firstName "Ireen";
+    foaf:lastName "Librecht";
+    foaf:mbox <mailto:ireen.librecht@vlaamsbrabant.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1046.
+_:n3-1048 a foaf:person.
+_:n3-1049 foaf:homepage <https://www.wonenvlaanderen.be>;
+    foaf:name "Wonen-Vlaanderen".
+_:n3-1048 schema:affiliation _:n3-1049;
+    foaf:firstName "Olivier";
+    foaf:lastName "Heyvaert";
+    foaf:mbox <mailto:olivier.heyvaert@rwo.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1048.
+_:n3-1050 a foaf:person.
+_:n3-1051 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-1050 schema:affiliation _:n3-1051;
+    foaf:firstName "Katrien";
+    foaf:lastName "Geerts";
+    foaf:mbox <mailto:katrien.geerts@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1050.
+_:n3-1052 a foaf:person.
+_:n3-1053 foaf:homepage <https://www.fednot.be>;
+    foaf:name "Fednot".
+_:n3-1052 schema:affiliation _:n3-1053;
+    foaf:firstName "Paul";
+    foaf:lastName "Verbeeck";
+    foaf:mbox <mailto:Paul.Verbeeck@fednot.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1052.
+_:n3-1054 a foaf:person.
+_:n3-1055 foaf:homepage <https://stad.gent>;
+    foaf:name "Stad Gent".
+_:n3-1054 schema:affiliation _:n3-1055;
+    foaf:firstName "Diedrik";
+    foaf:lastName "Gaus";
+    foaf:mbox <mailto:Diedrik.Gaus@stad.gent>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1054.
+_:n3-1056 a foaf:person.
+_:n3-1057 foaf:homepage <https://www.telenet.be>;
+    foaf:name "Telenet".
+_:n3-1056 schema:affiliation _:n3-1057;
+    foaf:firstName "Koen";
+    foaf:lastName "D'Haen";
+    foaf:mbox <mailto:koen.dhaen1@staff.telenet.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1056.
+_:n3-1058 a foaf:person.
+_:n3-1059 foaf:homepage <https://www.vmsw.be>;
+    foaf:name "VMSW".
+_:n3-1058 schema:affiliation _:n3-1059;
+    foaf:firstName "Wout";
+    foaf:lastName "Groniger";
+    foaf:mbox <mailto:Wout.groniger@vmsw.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1058.
+_:n3-1060 a foaf:person.
+_:n3-1061 foaf:homepage <https://www.antwerpen.be>;
+    foaf:name "Stad Antwerpen".
+_:n3-1060 schema:affiliation _:n3-1061;
+    foaf:firstName "Christiaan";
+    foaf:lastName "Bos";
+    foaf:mbox <mailto:christiaan.bos@stad.antwerpen.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1060.
+_:n3-1062 a foaf:person.
+_:n3-1063 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-1062 schema:affiliation _:n3-1063;
+    foaf:firstName "Barbara";
+    foaf:lastName "Van Broeckhoven";
+    foaf:mbox <mailto:barbara.vanbroeckhoven@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1062.
+_:n3-1064 a foaf:person.
+_:n3-1065 foaf:homepage <https://www.leuven.be>;
+    foaf:name "Stad Leuven".
+_:n3-1064 schema:affiliation _:n3-1065;
+    foaf:firstName "Michaël";
+    foaf:lastName "Sibiet";
+    foaf:mbox <mailto:Michael.Sibiet@leuven.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1064.
+_:n3-1066 a foaf:person.
+_:n3-1067 foaf:homepage <http://tenforce.com>;
+    foaf:name "Tenforce".
+_:n3-1066 schema:affiliation _:n3-1067;
+    foaf:firstName "Bert";
+    foaf:lastName "Van Nuffelen";
+    foaf:mbox <mailto:bert.van.nuffelen@tenforce.com>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1066.
+_:n3-1068 a foaf:person.
+_:n3-1069 foaf:homepage <https://www.vmm.be>;
+    foaf:name "VMM".
+_:n3-1068 schema:affiliation _:n3-1069;
+    foaf:firstName "Katleen";
+    foaf:lastName "Miserez";
+    foaf:mbox <mailto:k.miserez@vmm.be>.
+<https://data.vlaanderen.be/ns/gebouw> dcterms:contributor _:n3-1068;
+    dcterms:issued "2018-11-08"^^xsd:date;
+    dcterms:license <https://overheid.vlaanderen.be/sites/default/files/documenten/ict-egov/licenties/hergebruik/modellicentie_gratis_hergebruik_v1_0.html>.
+_:n3-1070 foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen".
+<https://data.vlaanderen.be/ns/gebouw> dcterms:mediator _:n3-1070;
+    dcterms:title "Building"@en, "Gebouw"@nl;
+    vann:preferredNamespaceUri "https://data.vlaanderen.be/ns/gebouw".
+_:n3-1071 a foaf:person.
+_:n3-1072 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-1071 schema:affiliation _:n3-1072;
+    foaf:firstName "Veerle";
+    foaf:lastName "Beyaert";
+    foaf:mbox <mailto:veerle.beyaert@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gebouw> foaf:maker _:n3-1071.
+_:n3-1073 a foaf:person.
+_:n3-1074 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-1073 schema:affiliation _:n3-1074;
+    foaf:firstName "Ziggy";
+    foaf:lastName "Vanlishout";
+    foaf:mbox <mailto:siegfried.vanlishout@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gebouw> foaf:maker _:n3-1073.
+_:n3-1075 a foaf:person.
+_:n3-1076 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-1075 schema:affiliation _:n3-1076;
+    foaf:firstName "Jan";
+    foaf:lastName "Laporte";
+    foaf:mbox <mailto:jan.laporte@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gebouw> foaf:maker _:n3-1075.
+_:n3-1077 a foaf:person.
+_:n3-1078 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-1077 schema:affiliation _:n3-1078;
+    foaf:firstName "Ruben";
+    foaf:lastName "Capiau";
+    foaf:mbox <mailto:ruben.capiau@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gebouw> foaf:maker _:n3-1077.
+_:n3-1079 a foaf:person.
+_:n3-1080 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-1079 schema:affiliation _:n3-1080;
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs";
+    foaf:mbox <mailto:geert.thijs@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gebouw> foaf:maker _:n3-1079.

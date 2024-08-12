@@ -1,0 +1,266 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+eu:RequirementResponse a rdfs:Class;
+    rdfs:label "Criterium antwoord"@nl.
+cpsv:PublicService a rdfs:Class;
+    rdfs:label "Publieke Dienstverlening"@nl, "Publieke Dienstverlening (aanbod)"@nl.
+<https://lod.milieuinfo.be/ns/dossier> a rdfs:Class;
+    rdfs:label "Dossier"@nl.
+eu:appliesToPeriodOfTime a rdf:Property;
+    rdfs:label "van toepassing op tijdsinterval"@nl.
+eu:hasCost a rdf:Property;
+    rdfs:label "heeft kost"@nl.
+eu:value a rdf:Property;
+    rdfs:label "waarde"@nl.
+dcterms:date a rdf:Property;
+    rdfs:label "datum"@nl.
+dcterms:description a rdf:Property;
+    rdfs:label "beschrijving"@nl.
+dcterms:language a rdf:Property;
+    rdfs:label "taal"@nl.
+dcterms:relation a rdf:Property;
+    rdfs:label "is gerelateerd met"@nl.
+dcterms:title a rdf:Property;
+    rdfs:label "titel"@nl.
+<http://www.w3.org/ns/adms#identifier> a rdf:Property;
+    rdfs:label "referentie"@nl.
+<https://data.vlaanderen.be/ns/transactie#actie> a owl:DatatypeProperty;
+    rdfs:label "actie"@nl;
+    rdfs:comment "Deze parameter laat toe om aan te geven dat - qua procesverloop van de transactie - de bal expliciet in het kamp van de klant (= de Agent) ligt en dat er dus een actie verwacht wordt van zijn kant."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/transactie#Status>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range xsd:string.
+<https://data.vlaanderen.be/ns/transactie#actieNodig> a owl:DatatypeProperty;
+    rdfs:label "actie nodig"@nl;
+    rdfs:comment "Indien Actie Nodig 'Ja', dan laat dit veld toe te specifiëren welke Actie van de klant (Agent) wordt verwacht."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/transactie#Status>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range xsd:boolean.
+<https://data.vlaanderen.be/ns/transactie#betrouwbaarheidsniveau> a owl:ObjectProperty;
+    rdfs:label "betrouwbaarheidsniveau"@nl;
+    vann:usageNote "Van een toepassing wordt verwacht dat hier een bepaalde codelijst aan wordt gekoppeld met mogelijke betrouwbaarheidsniveau's. Bijvoorbeeld 0 = 'bewijs verstrekt door de aanvrager', 1 = 'bewijs gevalideerd door een dossierbehandelaar'..."@nl;
+    rdfs:comment "Geeft aan hoe betrouwbaar het bewijs is."@nl;
+    rdfs:domain eu:Evidence;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/transactie#heeftStatus> a owl:ObjectProperty;
+    rdfs:label "heeft status"@nl;
+    rdfs:comment "Link tussen Publieke Dienstverlening en Status."@nl;
+    rdfs:domain cpsv:PublicService;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range <https://data.vlaanderen.be/ns/transactie#Status>.
+<https://data.vlaanderen.be/ns/transactie#isGedocumenteerdDoor> a owl:ObjectProperty;
+    rdfs:label "is gedocumenteerd door"@nl;
+    rdfs:comment "Verwijzing naar een dossier met een logische bundeling van documenten binnen een bepaalde consumptie van een Publieke Dienstverlening."@nl;
+    rdfs:domain cpsv:PublicService;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range <https://lod.milieuinfo.be/ns/dossier>.
+<https://data.vlaanderen.be/ns/transactie#isInstantieVan> a owl:ObjectProperty;
+    rdfs:label "is instantie van"@nl;
+    rdfs:comment "Linkt een bepaalde consumptie van een publieke dienstverlening (een transactie) met het product uit het dienstverleningsregister."@nl;
+    rdfs:domain cpsv:PublicService;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range cpsv:PublicService.
+<https://data.vlaanderen.be/ns/transactie#statusEDRL> a owl:ObjectProperty;
+    rdfs:label "status EDRL"@nl;
+    rdfs:comment "De status volgens de Europese Dienstenrichtlijn"@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/transactie#Status>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/transactie#statusVlaamsCode> a owl:ObjectProperty;
+    rdfs:label "status Vlaamse code"@nl;
+    rdfs:comment "Verdere precisering van de status-fase volgens de 'Generieke Vlaamse status'."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/transactie#Status>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/transactie#statusVlaamsFase> a owl:ObjectProperty;
+    rdfs:label "status Vlaams fase"@nl;
+    rdfs:comment "Is het eerste veld van 2 verplichte velden (Fase+Status) die samen de 'Generieke Vlaamse status' specifiëren. De StatusVlaamsFase vormt de eerste en hogere indeling van het dossierverloop (in aanvraag, in behandeling, in beroep, in uitvoering enz). Verdere precisering binnen de Fase gebeurt dan in het veld StatusVlaamsCode."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/transactie#Status>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/transactie#statusWijzigingsdatum> a owl:DatatypeProperty;
+    rdfs:label "statusdatum"@nl;
+    rdfs:comment "Is de verplichte vermelding van de datum + tijdstip waarop de betrokken status werd geregistreerd."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/transactie#Status>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range xsd:date.
+<https://data.vlaanderen.be/ns/transactie#streefdatum> a owl:DatatypeProperty;
+    rdfs:label "streefdatum"@nl;
+    rdfs:comment "Is de datum waarop verwacht wordt dat de volgende stap (status-wijziging) in de transactie zal of zou moeten plaatsvinden. Dit kan in bepaalde gevallen bepaald worden door een wettelijke termijn (van een fase of status)."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/transactie#Status>;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>;
+    rdfs:range xsd:date.
+<https://data.vlaanderen.be/ns/transactie#Status> a owl:Class;
+    rdfs:label "Status"@nl;
+    rdfs:comment "De status die van toepassing is op een entiteit op een bepaald tijdstip."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/transactie>.
+<https://data.vlaanderen.be/ns/transactie> a owl:Ontology;
+    rdfs:label "Public Service - Transaction"@en, "Dienst - Transactie"@nl.
+_:n3-2455 a foaf:person.
+_:n3-2456 foaf:homepage <https://www.skryv.com/>;
+    foaf:name "Skryv".
+_:n3-2455 schema:affiliation _:n3-2456;
+    foaf:firstName "Toon";
+    foaf:lastName "Timbermont";
+    foaf:mbox <mailto:toon.timbermont@skryv.com>.
+<https://data.vlaanderen.be/ns/transactie> dcterms:contributor _:n3-2455.
+_:n3-2457 a foaf:person.
+_:n3-2458 foaf:homepage <http://www.pwc.be>;
+    foaf:name "PwC".
+_:n3-2457 schema:affiliation _:n3-2458;
+    foaf:firstName "Nikolaos";
+    foaf:lastName "Loutas";
+    foaf:mbox <mailto:nikolaos.loutas@pwc.com>.
+<https://data.vlaanderen.be/ns/transactie> dcterms:contributor _:n3-2457.
+_:n3-2459 a foaf:person.
+_:n3-2460 foaf:homepage <https://www.cevi.be/>;
+    foaf:name "Cevi NV".
+_:n3-2459 schema:affiliation _:n3-2460;
+    foaf:firstName "Guy";
+    foaf:lastName "Rammant";
+    foaf:mbox <mailto:guy.rammant@cevi.be>.
+<https://data.vlaanderen.be/ns/transactie> dcterms:contributor _:n3-2459.
+_:n3-2461 a foaf:person.
+_:n3-2462 foaf:homepage <https://bosa.belgium.be/>;
+    foaf:name "BOSA".
+_:n3-2461 schema:affiliation _:n3-2462;
+    foaf:firstName "Barbara";
+    foaf:lastName "Van Gogh";
+    foaf:mbox <mailto:barbara.vanoggh@bosa.fgov.be>.
+<https://data.vlaanderen.be/ns/transactie> dcterms:contributor _:n3-2461.
+_:n3-2463 a foaf:person.
+_:n3-2464 foaf:homepage <https://www.antwerpen.be/>;
+    foaf:name "Stad Antwerpen".
+_:n3-2463 schema:affiliation _:n3-2464;
+    foaf:firstName "Jasmin";
+    foaf:lastName "De Rijcker";
+    foaf:mbox <mailto:jasmin.derijcker@stad.antwerpen.be>.
+<https://data.vlaanderen.be/ns/transactie> dcterms:contributor _:n3-2463;
+    dcterms:issued "2018-12-19"^^xsd:date;
+    dcterms:license <https://overheid.vlaanderen.be/sites/default/files/documenten/ict-egov/licenties/hergebruik/modellicentie_gratis_hergebruik_v1_0.html>.
+_:n3-2465 foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen".
+<https://data.vlaanderen.be/ns/transactie> dcterms:mediator _:n3-2465;
+    dcterms:title "Public Service - Transaction"@en, "Dienst - Transactie"@nl;
+    vann:preferredNamespaceUri "https://data.vlaanderen.be/ns/transactie".
+_:n3-2466 a foaf:person.
+_:n3-2467 foaf:homepage <http://www.pwc.be>;
+    foaf:name "PwC".
+_:n3-2466 schema:affiliation _:n3-2467;
+    foaf:firstName "Jens";
+    foaf:lastName "Scheerlinck";
+    foaf:mbox <mailto:jens.scheerlinck@pwc.com>.
+<https://data.vlaanderen.be/ns/transactie> ns1:editor _:n3-2466.
+_:n3-2468 a foaf:person.
+_:n3-2469 foaf:homepage <http://www.pwc.be>;
+    foaf:name "PwC".
+_:n3-2468 schema:affiliation _:n3-2469;
+    foaf:firstName "Michiel";
+    foaf:lastName "De Keyzer";
+    foaf:mbox <mailto:michiel.de.keyzer@pwc.com>.
+<https://data.vlaanderen.be/ns/transactie> ns1:editor _:n3-2468.
+_:n3-2470 a foaf:person.
+_:n3-2471 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-2470 schema:affiliation _:n3-2471;
+    foaf:firstName "Ziggy";
+    foaf:lastName "Vanlishout";
+    foaf:mbox <mailto:siegfried.vanlishout@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/transactie> foaf:maker _:n3-2470.
+_:n3-2472 a foaf:person.
+_:n3-2473 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-2472 schema:affiliation _:n3-2473;
+    foaf:firstName "Niko";
+    foaf:lastName "Tanghe";
+    foaf:mbox <mailto:goedele.vanderspiegel@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/transactie> foaf:maker _:n3-2472.
+_:n3-2474 a foaf:person.
+_:n3-2475 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-2474 schema:affiliation _:n3-2475;
+    foaf:firstName "Thomas";
+    foaf:lastName "D'haenens";
+    foaf:mbox <mailto:thomas.dhaenens@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/transactie> foaf:maker _:n3-2474.
+_:n3-2476 a foaf:person.
+_:n3-2477 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-2476 schema:affiliation _:n3-2477;
+    foaf:firstName "Katrien";
+    foaf:lastName "Mostaert";
+    foaf:mbox <mailto:goedele.vanderspiegel@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/transactie> foaf:maker _:n3-2476.
+_:n3-2478 a foaf:person.
+_:n3-2479 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-2478 schema:affiliation _:n3-2479;
+    foaf:firstName "Goedele";
+    foaf:lastName "Van der Spiegel";
+    foaf:mbox <mailto:goedele.vanderspiegel@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/transactie> foaf:maker _:n3-2478.
+_:n3-2480 a foaf:person.
+_:n3-2481 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-2480 schema:affiliation _:n3-2481;
+    foaf:firstName "Dries";
+    foaf:lastName "Beheydt";
+    foaf:mbox <mailto:dries.beheydt@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/transactie> foaf:maker _:n3-2480.
+_:n3-2482 a foaf:person.
+_:n3-2483 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-2482 schema:affiliation _:n3-2483;
+    foaf:firstName "Joost";
+    foaf:lastName "De Weghe";
+    foaf:mbox <mailto:joost.deweghe@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/transactie> foaf:maker _:n3-2482.
+_:n3-2484 a foaf:person.
+_:n3-2485 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-2484 schema:affiliation _:n3-2485;
+    foaf:firstName "Bart";
+    foaf:lastName "Misseeuw";
+    foaf:mbox <mailto:bart.misseeuw@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/transactie> foaf:maker _:n3-2484.
+_:n3-2486 a foaf:person.
+_:n3-2487 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-2486 schema:affiliation _:n3-2487;
+    foaf:firstName "Raf";
+    foaf:lastName "Buyle";
+    foaf:mbox <mailto:raf.buyle@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/transactie> foaf:maker _:n3-2486.

@@ -1,0 +1,264 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Record> a rdfs:Class;
+    rdfs:label "Record"@nl.
+<http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#RecordType> a rdfs:Class;
+    rdfs:label "RecordType"@nl.
+<http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#UnitOfMeasure> a rdfs:Class;
+    rdfs:label "Maateenheid"@nl.
+<http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation> a rdfs:Class;
+    rdfs:label "Citatie"@nl.
+<http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Scope> a rdfs:Class;
+    rdfs:label "MD_Scope"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod> a rdfs:Class;
+    rdfs:label "EvaluatieMethode"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult> a rdfs:Class;
+    rdfs:label "ConformiteitResultaat"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult> a rdfs:Class;
+    rdfs:label "BeschrijvendResultaat"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult> a rdfs:Class;
+    rdfs:label "KwantitatiefResultaat"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_Result> a rdfs:Class;
+    rdfs:label "KwaliteitsResultaat"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Completeness> a rdfs:Class;
+    rdfs:label "Volledigheid"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element> a rdfs:Class;
+    rdfs:label "KwaliteitsElement"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_LogicalConsistency> a rdfs:Class;
+    rdfs:label "LogischeConsistentie"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference> a rdfs:Class;
+    rdfs:label "MaatReferentie"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_PositionalAccuracy> a rdfs:Class;
+    rdfs:label "PositioneleAccuraatheid"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_TemporalQuality> a rdfs:Class;
+    rdfs:label "TemporeleKwaliteit"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_ThematicAccuracy> a rdfs:Class;
+    rdfs:label "ThematischeAccuraatheid"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_UsabilityElement> a rdfs:Class;
+    rdfs:label "BruikbaarheidElement"@nl.
+skos:Concept a rdfs:Class;
+    rdfs:label "EvaluatieMethodeType"@nl.
+<https://data.vlaanderen.be/ns/datakwaliteit> a owl:Ontology;
+    rdfs:label "datakwaliteit"@en, "datakwaliteit"@nl.
+_:n3-1914 a foaf:Person.
+_:n3-1915 foaf:name "Departement Omgeving".
+_:n3-1914 schema:affiliation _:n3-1915;
+    foaf:firstName "Annelies";
+    foaf:lastName "Baert";
+    foaf:mbox <mailto:annelies.baert@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1914.
+_:n3-1916 a foaf:Person.
+_:n3-1917 foaf:name "Departement Omgeving".
+_:n3-1916 schema:affiliation _:n3-1917;
+    foaf:firstName "Tom ";
+    foaf:lastName "Boonen";
+    foaf:mbox <mailto:tom.boonen@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1916.
+_:n3-1918 a foaf:Person.
+_:n3-1919 foaf:name "Vlaamse Milieumaatschappij".
+_:n3-1918 schema:affiliation _:n3-1919;
+    foaf:firstName "Pieter";
+    foaf:lastName "De Graef";
+    foaf:mbox <mailto:p.degraef@vmm.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1918.
+_:n3-1920 a foaf:Person.
+_:n3-1921 foaf:name "De Watergroep".
+_:n3-1920 schema:affiliation _:n3-1921;
+    foaf:firstName "Guy";
+    foaf:lastName "Dillen";
+    foaf:mbox <mailto:guy.dillen@dewatergroep.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1920.
+_:n3-1922 a foaf:Person.
+_:n3-1923 foaf:name "Departement Omgeving".
+_:n3-1922 schema:affiliation _:n3-1923;
+    foaf:firstName "Steven";
+    foaf:lastName "Geirnaert";
+    foaf:mbox <mailto:steven.geirnaert@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1922.
+_:n3-1924 a foaf:Person.
+_:n3-1925 foaf:name "Vlaamse Milieumaatschappij".
+_:n3-1924 schema:affiliation _:n3-1925;
+    foaf:firstName "Dirk";
+    foaf:lastName "Goossens";
+    foaf:mbox <mailto:d.goossens@vmm.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1924.
+_:n3-1926 a foaf:Person.
+_:n3-1927 foaf:name "Vlaamse Milieumaatschappij".
+_:n3-1926 schema:affiliation _:n3-1927;
+    foaf:firstName "Jonas";
+    foaf:lastName "Rooman";
+    foaf:mbox <mailto:j.rooman@vmm.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1926.
+_:n3-1928 a foaf:Person.
+_:n3-1929 foaf:name "Vlaamse Instelling voor Technologisch Onderzoek".
+_:n3-1928 schema:affiliation _:n3-1929;
+    foaf:firstName "Frank";
+    foaf:lastName "Sleeuwaert";
+    foaf:mbox <mailto:frank.sleeuwaert@vito.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1928.
+_:n3-1930 a foaf:Person.
+_:n3-1931 foaf:name "Departement Omgeving".
+_:n3-1930 schema:affiliation _:n3-1931;
+    foaf:firstName "Jos";
+    foaf:lastName "Tits";
+    foaf:mbox <mailto:jos.tits@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1930.
+_:n3-1932 a foaf:Person.
+_:n3-1933 foaf:name "Departement Omgeving".
+_:n3-1932 schema:affiliation _:n3-1933;
+    foaf:firstName "Geert";
+    foaf:lastName "Van Haute";
+    foaf:mbox <mailto:geert.vanhaute@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1932.
+_:n3-1934 a foaf:Person.
+_:n3-1935 foaf:name "Provincie Antwerpen".
+_:n3-1934 schema:affiliation _:n3-1935;
+    foaf:firstName "Donald";
+    foaf:lastName "Vergauwe";
+    foaf:mbox <mailto:donald.vergauwe@provincieantwerpen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:contributor _:n3-1934;
+    dcterms:issued "TODO";
+    dcterms:license "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0", <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:n3-1936 foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen".
+<https://data.vlaanderen.be/ns/datakwaliteit> dcterms:mediator _:n3-1936;
+    rdfs:seeAlso <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Record>, <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#RecordType>, <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#UnitOfMeasure>, <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation>, <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Scope>, <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_Result>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Completeness>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_LogicalConsistency>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_PositionalAccuracy>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_TemporalQuality>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_ThematicAccuracy>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_UsabilityElement>, skos:Concept, <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.dateTime>, <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.evaluationMethodDescription>, <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.evaluationMethodType>, <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.evaluationProcedure>, <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.referenceDoc>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult.explanation>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult.pass>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult.specification>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult.statement>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.value>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.valueRecordType>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.valueUnit>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_Result.dateTime>, <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_Result.resultScope>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.derivedElement>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.evaluationMethod>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.measure>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.result>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.standaloneQualityReportDetails>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference.measureDescription>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference.measureIdentification>, <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference.nameOfMeasure>.
+_:n3-1937 a foaf:Person.
+_:n3-1938 foaf:name "Digitaal Vlaanderen".
+_:n3-1937 schema:affiliation _:n3-1938;
+    foaf:firstName "Dirk";
+    foaf:lastName "De Smedt";
+    foaf:mbox <mailto:dirk.desmedt@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> ns1:editor _:n3-1937.
+_:n3-1939 a foaf:Person.
+_:n3-1940 foaf:name "Digitaal Vlaanderen".
+_:n3-1939 schema:affiliation _:n3-1940;
+    foaf:firstName "Maxime";
+    foaf:lastName "Pittomvils";
+    foaf:mbox <mailto:maxime.pittomvils@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> ns1:editor _:n3-1939.
+_:n3-1941 a foaf:Person.
+_:n3-1942 foaf:name "Digitaal Vlaanderen".
+_:n3-1941 schema:affiliation _:n3-1942;
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs";
+    foaf:mbox <mailto:geert.thijs@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> ns1:editor _:n3-1941.
+_:n3-1943 a foaf:Person.
+_:n3-1944 foaf:name "Digitaal Vlaanderen".
+_:n3-1943 schema:affiliation _:n3-1944;
+    foaf:firstName "Arne";
+    foaf:lastName "Van Der Stuyft";
+    foaf:mbox <mailto:arnevanderstuyft@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> ns1:editor _:n3-1943.
+_:n3-1945 a foaf:Person.
+_:n3-1946 foaf:name "Vlaamse Milieumaatschappij".
+_:n3-1945 schema:affiliation _:n3-1946;
+    foaf:firstName "Pieter";
+    foaf:lastName "Borremans";
+    foaf:mbox <mailto:p.borremans@vmm.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> foaf:maker _:n3-1945.
+_:n3-1947 a foaf:Person.
+_:n3-1948 foaf:name "Vlaamse Milieumaatschappij".
+_:n3-1947 schema:affiliation _:n3-1948;
+    foaf:firstName "Greet";
+    foaf:lastName "Devriese";
+    foaf:mbox <mailto:g.devriese@vmm.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> foaf:maker _:n3-1947.
+_:n3-1949 a foaf:Person.
+_:n3-1950 foaf:name "Vlaamse Milieumaatschappij".
+_:n3-1949 schema:affiliation _:n3-1950;
+    foaf:firstName "Frank";
+    foaf:lastName "Lavens";
+    foaf:mbox <mailto:f.lavens@vmm.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> foaf:maker _:n3-1949.
+_:n3-1951 a foaf:Person.
+_:n3-1952 foaf:name "Vlaamse Milieumaatschappij".
+_:n3-1951 schema:affiliation _:n3-1952;
+    foaf:firstName "Jurgen";
+    foaf:lastName "Meirlaen";
+    foaf:mbox <mailto:j.meirlaen@vmm.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> foaf:maker _:n3-1951.
+_:n3-1953 a foaf:Person.
+_:n3-1954 foaf:name "Digitaal Vlaanderen".
+_:n3-1953 schema:affiliation _:n3-1954;
+    foaf:firstName "Laurens";
+    foaf:lastName "Vercauteren";
+    foaf:mbox <mailto:laurens.vercauteren@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/datakwaliteit> foaf:maker _:n3-1953.
+<http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.dateTime> a rdf:Property;
+    rdfs:label "tijdstip"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.evaluationMethodDescription> a rdf:Property;
+    rdfs:label "evaluatieMethodeBeschrijving"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.evaluationMethodType> a rdf:Property;
+    rdfs:label "evaluatieMethodeType"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.evaluationProcedure> a rdf:Property;
+    rdfs:label "evaluatieProcedure"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.referenceDoc> a rdf:Property;
+    rdfs:label "referentieDoc"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult.explanation> a rdf:Property;
+    rdfs:label "toelichting"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult.pass> a rdf:Property;
+    rdfs:label "geaccepteerd"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult.specification> a rdf:Property;
+    rdfs:label "specificatie"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult.statement> a rdf:Property;
+    rdfs:label "beschrijving"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.value> a rdf:Property;
+    rdfs:label "waarde"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.valueRecordType> a rdf:Property;
+    rdfs:label "waardeRecordType"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.valueUnit> a rdf:Property;
+    rdfs:label "waardeEenheid"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_Result.dateTime> a rdf:Property;
+    rdfs:label "tijdstip"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_Result.resultScope> a rdf:Property;
+    rdfs:label "resultaatScope"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.derivedElement> a rdf:Property;
+    rdfs:label "afgeleidElement"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.evaluationMethod> a rdf:Property;
+    rdfs:label "evaluatieMethode"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.measure> a rdf:Property;
+    rdfs:label "maat"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.result> a rdf:Property;
+    rdfs:label "resultaat"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.standaloneQualityReportDetails> a rdf:Property;
+    rdfs:label "standaloneKwaliteitRapportDetails"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference.measureDescription> a rdf:Property;
+    rdfs:label "maatBeschrijving"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference.measureIdentification> a rdf:Property;
+    rdfs:label "maatIdentificatie"@nl.
+<http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference.nameOfMeasure> a rdf:Property;
+    rdfs:label "maatNaam"@nl.

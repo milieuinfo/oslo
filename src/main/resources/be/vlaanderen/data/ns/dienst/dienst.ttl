@@ -1,0 +1,364 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+eu:BusinessEvent a rdfs:Class;
+    rdfs:label "Bedrijfsgebeurtenis"@nl.
+eu:Channel a rdfs:Class;
+    rdfs:label "Kanaal"@nl.
+eu:Cost a rdfs:Class;
+    rdfs:label "Kost"@nl.
+eu:CriterionRequirement a rdfs:Class;
+    rdfs:label "Criteriumvereiste"@nl.
+eu:Event a rdfs:Class;
+    rdfs:label "Gebeurtenis"@nl.
+eu:Evidence a rdfs:Class;
+    rdfs:label "Bewijs"@nl.
+eu:LifeEvent a rdfs:Class;
+    rdfs:label "Levensgebeurtenis"@nl.
+eu:Output a rdfs:Class;
+    rdfs:label "Output"@nl.
+eu:Participation a rdfs:Class;
+    rdfs:label "Participatie"@nl.
+cpsv:PublicService a rdfs:Class;
+    rdfs:label "Publieke Dienstverlening"@nl.
+cpsv:Rule a rdfs:Class;
+    rdfs:label "Regel"@nl.
+schema:OpeningHoursSpecification a rdfs:Class;
+    rdfs:label "Openingsurenspecificatie"@nl.
+skos:Concept a rdfs:Class.
+eu:currency a rdf:Property;
+    rdfs:label "valuta"@nl.
+eu:hasChannel a rdf:Property;
+    rdfs:label "heeft kanaal"@nl.
+eu:hasCompetentAuthority a rdf:Property;
+    rdfs:label "heeft verantwoordelijke autoriteit"@nl.
+eu:hasContactPoint a rdf:Property;
+    rdfs:label "heeft contactpunt"@nl.
+eu:hasCost a rdf:Property;
+    rdfs:label "heeft kost"@nl.
+eu:hasCriterion a rdf:Property;
+    rdfs:label "heeft criterium"@nl.
+eu:hasFormalFramework a rdf:Property;
+    rdfs:label "heeft formeel kader"@nl.
+eu:hasParticipation a rdf:Property;
+    rdfs:label "heeft participatie"@nl.
+eu:ifAccessedThrough a rdf:Property;
+    rdfs:label "indien benaderd via"@nl.
+eu:isDefinedBy a rdf:Property;
+    rdfs:label "is gedefinieerd door"@nl.
+eu:isGroupedBy a rdf:Property;
+    rdfs:label "is gegroepeerd volgens"@nl.
+eu:ownedBy a rdf:Property;
+    rdfs:label "eigendom van"@nl.
+eu:playsRole a rdf:Property;
+    rdfs:label "speelt rol"@nl.
+eu:processingTime a rdf:Property;
+    rdfs:label "verwerkingstijd"@nl.
+eu:role a rdf:Property;
+    rdfs:label "rol"@nl.
+eu:sector a rdf:Property;
+    rdfs:label "sector"@nl.
+eu:serviceProvider a rdf:Property;
+    rdfs:label "dienstverlener"@nl.
+eu:value a rdf:Property;
+    rdfs:label "waarde"@nl.
+dcterms:description a rdf:Property;
+    rdfs:label "beschrijving"@nl.
+dcterms:language a rdf:Property;
+    rdfs:label "taal"@nl.
+dcterms:relation a rdf:Property;
+    rdfs:label "relatie"@nl.
+dcterms:requires a rdf:Property;
+    rdfs:label "vereist"@nl.
+dcterms:spatial a rdf:Property;
+    rdfs:label "ruimtelijke dekking"@nl.
+dcterms:title a rdf:Property;
+    rdfs:label "titel"@nl.
+dcterms:type a rdf:Property;
+    rdfs:label "type"@nl.
+cpsv:follows a rdf:Property;
+    rdfs:label "volgt"@nl.
+cpsv:hasInput a rdf:Property;
+    rdfs:label "heeft input"@nl.
+cpsv:implements a rdf:Property;
+    rdfs:label "implementeert"@nl.
+cpsv:produces a rdf:Property;
+    rdfs:label "produceert"@nl.
+schema:closes a rdf:Property;
+    rdfs:label "sluit"@nl.
+schema:dayOfWeek a rdf:Property;
+    rdfs:label "dag van week"@nl.
+schema:hoursAvailable a rdf:Property;
+    rdfs:label "uren beschikbaarheid"@nl.
+schema:openingHours a rdf:Property;
+    rdfs:label "openingsuren"@nl.
+schema:opens a rdf:Property;
+    rdfs:label "opent"@nl.
+schema:validFrom a rdf:Property;
+    rdfs:label "geldig van"@nl.
+schema:validThrough a rdf:Property;
+    rdfs:label "geldig tot"@nl.
+skos:altLabel a rdf:Property;
+    rdfs:label "alternatieve label"@nl.
+<http://www.w3.org/ns/adms#status> a rdf:Property;
+    rdfs:label "status"@nl.
+dcat:keyword a rdf:Property;
+    rdfs:label "trefwoord"@nl.
+foaf:page a rdf:Property;
+    rdfs:label "pagina"@nl.
+<https://data.vlaanderen.be/ns/dienst> a owl:Ontology;
+    rdfs:label "Service"@en, "Dienst"@nl.
+_:n3-863 a foaf:person.
+_:n3-864 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-863 schema:affiliation _:n3-864;
+    foaf:firstName "Bart";
+    foaf:lastName "Misseeuw";
+    foaf:mbox <mailto:bart.misseeuw@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> dcterms:contributor _:n3-863.
+_:n3-865 a foaf:person.
+_:n3-866 foaf:homepage <https://www.lne.be/>;
+    foaf:name "LNE".
+_:n3-865 schema:affiliation _:n3-866;
+    foaf:firstName "Karen";
+    foaf:lastName "Bosmans";
+    foaf:mbox <mailto:karen.bosmans@lne.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> dcterms:contributor _:n3-865.
+_:n3-867 a foaf:person.
+_:n3-868 foaf:homepage <http://stad.gent>;
+    foaf:name "Digipolis Gent".
+_:n3-867 schema:affiliation _:n3-868;
+    foaf:firstName "Katrien";
+    foaf:lastName "Leire";
+    foaf:mbox <mailto:katrien.leire@digipolis.gent>.
+<https://data.vlaanderen.be/ns/dienst> dcterms:contributor _:n3-867.
+_:n3-869 a foaf:person.
+_:n3-870 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "ABB".
+_:n3-869 schema:affiliation _:n3-870;
+    foaf:firstName "Hannes";
+    foaf:lastName "Lombaert";
+    foaf:mbox <mailto:hannes.lombaert@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> dcterms:contributor _:n3-869.
+_:n3-871 a foaf:person.
+_:n3-872 foaf:homepage <http://digipolis.be>;
+    foaf:name "Digipolis Gent".
+_:n3-871 schema:affiliation _:n3-872;
+    foaf:firstName "Niels";
+    foaf:lastName "Vandekeybus";
+    foaf:mbox <mailto:niels.vandekeybus@digipolis.gent>.
+<https://data.vlaanderen.be/ns/dienst> dcterms:contributor _:n3-871.
+_:n3-873 a foaf:person.
+_:n3-874 foaf:homepage <http://vlm.be>;
+    foaf:name "VLM".
+_:n3-873 schema:affiliation _:n3-874;
+    foaf:firstName "Annita";
+    foaf:lastName "Stevens";
+    foaf:mbox <mailto:Annita.Stevens@vlm.be>.
+<https://data.vlaanderen.be/ns/dienst> dcterms:contributor _:n3-873.
+_:n3-875 a foaf:person.
+_:n3-876 foaf:homepage <http://binnenland.vlaanderen.be/>;
+    foaf:name "ABB".
+_:n3-875 schema:affiliation _:n3-876;
+    foaf:firstName "Wim";
+    foaf:lastName "Devroey";
+    foaf:mbox <mailto:wim.devroey@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> dcterms:contributor _:n3-875.
+_:n3-877 a foaf:person.
+_:n3-878 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-877 schema:affiliation _:n3-878;
+    foaf:firstName "Geraldine";
+    foaf:lastName "Nolf";
+    foaf:mbox <mailto:geraldine.nolf@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> dcterms:contributor _:n3-877.
+_:n3-879 a foaf:person.
+_:n3-880 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-879 schema:affiliation _:n3-880;
+    foaf:firstName "Sarah";
+    foaf:lastName "Spiessens";
+    foaf:mbox <mailto:sarah.spiessens@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> dcterms:contributor _:n3-879.
+_:n3-881 a foaf:person.
+_:n3-882 foaf:homepage <https://www.lne.be/>;
+    foaf:name "ANB".
+_:n3-881 schema:affiliation _:n3-882;
+    foaf:firstName "Geert";
+    foaf:lastName "Vermeiren";
+    foaf:mbox <mailto:geert.vermeiren@lne.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> dcterms:contributor _:n3-881;
+    dcterms:issued "2018-10-04"^^xsd:date;
+    dcterms:license <https://overheid.vlaanderen.be/sites/default/files/documenten/ict-egov/licenties/hergebruik/modellicentie_gratis_hergebruik_v1_0.html>.
+_:n3-883 foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen".
+<https://data.vlaanderen.be/ns/dienst> dcterms:mediator _:n3-883;
+    dcterms:title "Service"@en, "Dienst"@nl;
+    vann:preferredNamespaceUri "https://data.vlaanderen.be/ns/dienst".
+_:n3-884 a foaf:person.
+_:n3-885 foaf:homepage <http://idlab.ugent.be>;
+    foaf:name "imec - UGent".
+_:n3-884 schema:affiliation _:n3-885;
+    foaf:firstName "Laurens";
+    foaf:lastName "De Vocht";
+    foaf:mbox <mailto:laurens.devocht@ugent.be>.
+<https://data.vlaanderen.be/ns/dienst> ns1:editor _:n3-884.
+_:n3-886 a foaf:person.
+_:n3-887 foaf:homepage <http://idlab.ugent.be>;
+    foaf:name "imec - UGent".
+_:n3-886 schema:affiliation _:n3-887;
+    foaf:firstName "Erik";
+    foaf:lastName "Mannens";
+    foaf:mbox <mailto:erik.mannens@ugent.be>.
+<https://data.vlaanderen.be/ns/dienst> ns1:editor _:n3-886.
+_:n3-888 a foaf:person.
+_:n3-889 foaf:homepage <https://www.lne.be/>;
+    foaf:name "Departement Omgeving".
+_:n3-888 schema:affiliation _:n3-889;
+    foaf:firstName "Geert";
+    foaf:lastName "Van Haute";
+    foaf:mbox <mailto:geert.vanhaute@lne.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-888.
+_:n3-890 a foaf:person.
+_:n3-891 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-890 schema:affiliation _:n3-891;
+    foaf:firstName "Björn";
+    foaf:lastName "De Vidts";
+    foaf:mbox <mailto:bjorn.devidts@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-890.
+_:n3-892 a foaf:person.
+_:n3-893 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-892 schema:affiliation _:n3-893;
+    foaf:firstName "Ziggy";
+    foaf:lastName "Vanlishout";
+    foaf:mbox <mailto:siegfried.vanlishout@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-892.
+_:n3-894 a foaf:person.
+_:n3-895 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-894 schema:affiliation _:n3-895;
+    foaf:firstName "Henk";
+    foaf:lastName "Vanderstraeten";
+    foaf:mbox <mailto:henk.vanderstraeten@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-894.
+_:n3-896 a foaf:person.
+_:n3-897 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-896 schema:affiliation _:n3-897;
+    foaf:firstName "Thomas";
+    foaf:lastName "D'haenens";
+    foaf:mbox <mailto:thomas.dhaenens@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-896.
+_:n3-898 a foaf:person.
+_:n3-899 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-898 schema:affiliation _:n3-899;
+    foaf:firstName "Dries";
+    foaf:lastName "Beheydt";
+    foaf:mbox <mailto:dries.beheydt@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-898.
+_:n3-900 a foaf:person.
+_:n3-901 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-900 schema:affiliation _:n3-901;
+    foaf:firstName "Quincy";
+    foaf:lastName "Oeyen";
+    foaf:mbox <mailto:quincy.oeyen@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-900.
+_:n3-902 a foaf:person.
+_:n3-903 foaf:homepage <http://idlab.ugent.be>;
+    foaf:name "imec - UGent".
+_:n3-902 schema:affiliation _:n3-903;
+    foaf:firstName "Dieter";
+    foaf:lastName "De Paepe";
+    foaf:mbox <mailto:dieter.depaepe@ugent.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-902.
+_:n3-904 a foaf:person.
+_:n3-905 foaf:homepage <http://cipalschaubroeck.be>;
+    foaf:name "Cipal Schaubroeck".
+_:n3-904 schema:affiliation _:n3-905;
+    foaf:firstName "Willem";
+    foaf:lastName "Van Hoecke";
+    foaf:mbox <mailto:willem.vanhoecke@cipalschaubroeck.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-904.
+_:n3-906 a foaf:person.
+_:n3-907 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-906 schema:affiliation _:n3-907;
+    foaf:firstName "Katrien";
+    foaf:lastName "De Smet";
+    foaf:mbox <mailto:katrien.desmet@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-906.
+_:n3-908 a foaf:person.
+_:n3-909 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-908 schema:affiliation _:n3-909;
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs";
+    foaf:mbox <mailto:geert.thijs@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-908.
+_:n3-910 a foaf:person.
+_:n3-911 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-910 schema:affiliation _:n3-911;
+    foaf:firstName "Dorien";
+    foaf:lastName "Bauwens";
+    foaf:mbox <mailto:dorien.bauwens@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-910.
+_:n3-912 a foaf:person.
+_:n3-913 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-912 schema:affiliation _:n3-913;
+    foaf:firstName "Raf";
+    foaf:lastName "Buyle";
+    foaf:mbox <mailto:raf.buyle@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-912.
+_:n3-914 a foaf:person.
+_:n3-915 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-914 schema:affiliation _:n3-915;
+    foaf:firstName "An";
+    foaf:lastName "Taelemans";
+    foaf:mbox <mailto:an.taelemans@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-914.
+_:n3-916 a foaf:person.
+_:n3-917 foaf:homepage <http://stad.gent>;
+    foaf:name "Stad Gent".
+_:n3-916 schema:affiliation _:n3-917;
+    foaf:firstName "Thimo";
+    foaf:lastName "Thoeye";
+    foaf:mbox <mailto:Thimo.Thoeye@stad.gent>.
+<https://data.vlaanderen.be/ns/dienst> foaf:maker _:n3-916.

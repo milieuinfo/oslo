@@ -1,0 +1,320 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/ns/bestuur> a owl:Ontology;
+    rdfs:label "Administration"@en, "Bestuur"@nl.
+_:n3-640 a foaf:person.
+_:n3-641 foaf:homepage <http://stad.gent>;
+    foaf:name "Stad Gent".
+_:n3-640 schema:affiliation _:n3-641;
+    foaf:firstName "Sylvie";
+    foaf:lastName "Roos".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-640.
+_:n3-642 a foaf:person.
+_:n3-643 foaf:homepage <http://www.vlaamsparlement.be>;
+    foaf:name "Vlaams Parlement".
+_:n3-642 schema:affiliation _:n3-643;
+    foaf:firstName "Luc";
+    foaf:lastName "Vanpaemel".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-642.
+_:n3-644 a foaf:person.
+_:n3-645 foaf:homepage <http://digipolis.be>;
+    foaf:name "Digipolis".
+_:n3-644 schema:affiliation _:n3-645;
+    foaf:firstName "Katrien";
+    foaf:lastName "Behiels".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-644.
+_:n3-646 a foaf:person.
+_:n3-647 foaf:homepage <http://www.cipalschaubroeck.be>;
+    foaf:name "Cipal Schaubroeck".
+_:n3-646 schema:affiliation _:n3-647;
+    foaf:firstName "Reynder";
+    foaf:lastName "Bierens".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-646.
+_:n3-648 a foaf:person.
+_:n3-649 foaf:homepage <http://stad.antwerpen.be>;
+    foaf:name "Antwerpen".
+_:n3-648 schema:affiliation _:n3-649;
+    foaf:firstName "Lynn";
+    foaf:lastName "Lodewyckx".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-648.
+_:n3-650 a foaf:person.
+_:n3-651 foaf:homepage <http://stad.Antwerpen.be>;
+    foaf:name "Antwerpen".
+_:n3-650 schema:affiliation _:n3-651;
+    foaf:firstName "Melissa";
+    foaf:lastName "Merckx".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-650.
+_:n3-652 a foaf:person.
+_:n3-653 foaf:homepage <http://www.herzele.be>;
+    foaf:name "Herzele".
+_:n3-652 schema:affiliation _:n3-653;
+    foaf:firstName "Marijke";
+    foaf:lastName "Versteels".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-652.
+_:n3-654 a foaf:person.
+_:n3-655 foaf:homepage <http://www.raadvanstate.be/>;
+    foaf:name "Raad Van State".
+_:n3-654 schema:affiliation _:n3-655;
+    foaf:firstName "Wouter";
+    foaf:lastName "De Cock".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-654.
+_:n3-656 a foaf:person.
+_:n3-657 foaf:homepage <http://www.cipalschaubroeck.be>;
+    foaf:name "Cipal Schaubroeck".
+_:n3-656 schema:affiliation _:n3-657;
+    foaf:firstName "Jonas";
+    foaf:lastName "Tamsyn".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-656.
+_:n3-658 a foaf:person.
+_:n3-659 foaf:homepage <http://www.remmicom.be>;
+    foaf:name "Remmicom".
+_:n3-658 schema:affiliation _:n3-659;
+    foaf:firstName "Jef";
+    foaf:lastName "Peeters".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-658.
+_:n3-660 a foaf:person.
+_:n3-661 foaf:homepage <http://Aalst.be>;
+    foaf:name "Stad Aalst".
+_:n3-660 schema:affiliation _:n3-661;
+    foaf:firstName "Sophie";
+    foaf:lastName "Podevyn".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-660.
+_:n3-662 a foaf:person.
+_:n3-663 foaf:homepage <https://www.ibabs.eu/>;
+    foaf:name "iBabs BV".
+_:n3-662 schema:affiliation _:n3-663;
+    foaf:firstName "Niels";
+    foaf:lastName "Manshanden".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-662.
+_:n3-664 a foaf:person.
+_:n3-665 foaf:homepage <http://binnenland.vlaanderen.be>;
+    foaf:name "ABB".
+_:n3-664 schema:affiliation _:n3-665;
+    foaf:firstName "Geert";
+    foaf:lastName "Van Campenhout".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-664.
+_:n3-666 a foaf:person.
+_:n3-667 foaf:homepage <http://www.vvsg.be>;
+    foaf:name "VVSG".
+_:n3-666 schema:affiliation _:n3-667;
+    foaf:firstName "Marian";
+    foaf:lastName "Verbeek".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-666.
+_:n3-668 a foaf:person.
+_:n3-669 foaf:homepage <http://www.kaprijke.be>;
+    foaf:name "Kaprijke".
+_:n3-668 schema:affiliation _:n3-669;
+    foaf:firstName "Kristel";
+    foaf:lastName "Brusselle".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-668.
+_:n3-670 a foaf:person.
+_:n3-671 foaf:homepage <http://www.herzele.be>;
+    foaf:name "Herzele".
+_:n3-670 schema:affiliation _:n3-671;
+    foaf:firstName "Anja";
+    foaf:lastName "Cosijns".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-670.
+_:n3-672 a foaf:person.
+_:n3-673 foaf:homepage <http://www.herzele.be>;
+    foaf:name "Herzele".
+_:n3-672 schema:affiliation _:n3-673;
+    foaf:firstName "Miranda";
+    foaf:lastName "Van Bockstaele".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-672.
+_:n3-674 a foaf:person.
+_:n3-675 foaf:homepage <http://www.niel.be>;
+    foaf:name "Niel".
+_:n3-674 schema:affiliation _:n3-675;
+    foaf:firstName "Eric";
+    foaf:lastName "Vermeiren".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-674.
+_:n3-676 a foaf:person.
+_:n3-677 foaf:homepage <http://www.herzele.be>;
+    foaf:name "Herzele".
+_:n3-676 schema:affiliation _:n3-677;
+    foaf:firstName "Daniël";
+    foaf:lastName "Adriaens".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-676.
+_:n3-678 a foaf:person.
+_:n3-679 foaf:homepage <http://www.vlaamsparlement.be>;
+    foaf:name "Vlaams parlement".
+_:n3-678 schema:affiliation _:n3-679;
+    foaf:firstName "Tom";
+    foaf:lastName "Cocquyt".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-678.
+_:n3-680 a foaf:person.
+_:n3-681 foaf:homepage <http://www.v-ict-or.be>;
+    foaf:name "V-ICT-OR".
+_:n3-680 schema:affiliation _:n3-681;
+    foaf:firstName "Johan";
+    foaf:lastName "Van der Waal".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-680.
+_:n3-682 a foaf:person.
+_:n3-683 foaf:homepage <http://www.cevi.be>;
+    foaf:name "CEVI".
+_:n3-682 schema:affiliation _:n3-683;
+    foaf:firstName "Micheline";
+    foaf:lastName "Van Bogaert".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-682.
+_:n3-684 a foaf:person.
+_:n3-685 foaf:homepage <http://Aalst.be>;
+    foaf:name "Stad Aalst".
+_:n3-684 schema:affiliation _:n3-685;
+    foaf:firstName "Chris";
+    foaf:lastName "Van Molle".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-684.
+_:n3-686 a foaf:person.
+_:n3-687 foaf:homepage <http://stad.gent>;
+    foaf:name "Stad Gent".
+_:n3-686 schema:affiliation _:n3-687;
+    foaf:firstName "Ines";
+    foaf:lastName "Acke".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-686.
+_:n3-688 a foaf:person.
+_:n3-689 foaf:homepage <http://www.maldegem.be>;
+    foaf:name "Maldegem".
+_:n3-688 schema:affiliation _:n3-689;
+    foaf:firstName "Heidi";
+    foaf:lastName "Van Deynse".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-688.
+_:n3-690 a foaf:person.
+_:n3-691 foaf:homepage <http://lier.be>;
+    foaf:name "Lier".
+_:n3-690 schema:affiliation _:n3-691;
+    foaf:firstName "Danny";
+    foaf:lastName "Dewelde".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-690.
+_:n3-692 a foaf:person.
+_:n3-693 foaf:homepage <http://www.vlaamsparlement.be>;
+    foaf:name "Vlaams Parlement".
+_:n3-692 schema:affiliation _:n3-693;
+    foaf:firstName "Renée";
+    foaf:lastName "Cambré".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:contributor _:n3-692;
+    dcterms:issued "2018-06-26"^^xsd:date;
+    dcterms:license <https://overheid.vlaanderen.be/sites/default/files/documenten/ict-egov/licenties/hergebruik/modellicentie_gratis_hergebruik_v1_0.html>.
+_:n3-694 foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen".
+<https://data.vlaanderen.be/ns/bestuur> dcterms:mediator _:n3-694;
+    dcterms:title "Administration"@en, "Bestuur"@nl;
+    vann:preferredNamespaceUri "https://data.vlaanderen.be/ns/bestuur".
+_:n3-695 a foaf:person.
+_:n3-696 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-695 schema:affiliation _:n3-696;
+    foaf:firstName "Raf";
+    foaf:lastName "Buyle";
+    foaf:mbox <mailto:raf.buyle@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/bestuur> ns1:editor _:n3-695.
+_:n3-697 a foaf:person.
+_:n3-698 foaf:homepage <https://www.ugent.be/ps/communicatiewetenschappen/mict>;
+    foaf:name "imec-MICT-UGent".
+_:n3-697 schema:affiliation _:n3-698;
+    foaf:firstName "Mathias";
+    foaf:lastName "Van Compernolle";
+    foaf:mbox <mailto:mathias.vancompernolle@ugent.be>.
+<https://data.vlaanderen.be/ns/bestuur> ns1:editor _:n3-697.
+_:n3-699 a foaf:person.
+_:n3-700 foaf:homepage <http://idlab.ugent.be>;
+    foaf:name "imec-IDLab-UGent".
+_:n3-699 schema:affiliation _:n3-700;
+    foaf:firstName "Laurens";
+    foaf:lastName "De Vocht";
+    foaf:mbox <mailto:laurens.devocht@ugent.be>.
+<https://data.vlaanderen.be/ns/bestuur> ns1:editor _:n3-699.
+_:n3-701 a foaf:person.
+_:n3-702 foaf:homepage <http://idlab.ugent.be>;
+    foaf:name "imec-IDLab-UGent".
+_:n3-701 schema:affiliation _:n3-702;
+    foaf:firstName "Erik";
+    foaf:lastName "Mannens";
+    foaf:mbox <mailto:erik.mannens@ugent.be>.
+<https://data.vlaanderen.be/ns/bestuur> ns1:editor _:n3-701.
+_:n3-703 a foaf:person.
+_:n3-704 foaf:homepage <https://www.ugent.be/ps/communicatiewetenschappen/mict>;
+    foaf:name "imec-MICT-UGent".
+_:n3-703 schema:affiliation _:n3-704;
+    foaf:firstName "Fie";
+    foaf:lastName "Vandamme";
+    foaf:mbox <mailto:fie.vandamme@ugent.be>.
+<https://data.vlaanderen.be/ns/bestuur> ns1:editor _:n3-703.
+_:n3-705 a foaf:person.
+_:n3-706 foaf:homepage <http://binnenland.vlaanderen.be/>;
+    foaf:name "Agentschap Binnenlands Bestuur".
+_:n3-705 schema:affiliation _:n3-706;
+    foaf:firstName "Heidi";
+    foaf:lastName "Godderis";
+    foaf:mbox <mailto:heidi.godderis@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/bestuur> foaf:maker _:n3-705.
+_:n3-707 a foaf:person.
+_:n3-708 foaf:homepage <http://idlab.ugent.be>;
+    foaf:name "imec - UGent".
+_:n3-707 schema:affiliation _:n3-708;
+    foaf:firstName "Brecht";
+    foaf:lastName "Van de Vyvere";
+    foaf:mbox <mailto:brecht.vandevyvere@ugent.be>.
+<https://data.vlaanderen.be/ns/bestuur> foaf:maker _:n3-707.
+_:n3-709 a foaf:person.
+_:n3-710 foaf:homepage <http://idlab.ugent.be>;
+    foaf:name "imec - UGent".
+_:n3-709 schema:affiliation _:n3-710;
+    foaf:firstName "Dieter";
+    foaf:lastName "De Paepe";
+    foaf:mbox <mailto:dieter.depaepe@ugent.be>.
+<https://data.vlaanderen.be/ns/bestuur> foaf:maker _:n3-709.
+_:n3-711 a foaf:person.
+_:n3-712 foaf:homepage <http://binnenland.vlaanderen.be/>;
+    foaf:name "Agentschap Binnenlands Bestuur".
+_:n3-711 schema:affiliation _:n3-712;
+    foaf:firstName "Veronique";
+    foaf:lastName "Volders";
+    foaf:mbox <mailto:veronique.volders@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/bestuur> foaf:maker _:n3-711.
+_:n3-713 a foaf:person.
+_:n3-714 foaf:homepage <http://binnenland.vlaanderen.be/>;
+    foaf:name "Agentschap Binnenlands Bestuur".
+_:n3-713 schema:affiliation _:n3-714;
+    foaf:firstName "Katrien";
+    foaf:lastName "De Smet";
+    foaf:mbox <mailto:katrien.desmet@bz.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/bestuur> foaf:maker _:n3-713.
+_:n3-715 a foaf:person.
+_:n3-716 foaf:homepage <http://idlab.ugent.be>;
+    foaf:name "imec-IDLab-UGent".
+_:n3-715 schema:affiliation _:n3-716;
+    foaf:firstName "Dieter";
+    foaf:lastName "De Paepe";
+    foaf:mbox <mailto:dieter.depaepe@ugent.be>.
+<https://data.vlaanderen.be/ns/bestuur> foaf:maker _:n3-715.
