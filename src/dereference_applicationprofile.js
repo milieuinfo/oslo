@@ -19,7 +19,7 @@ async function get_uris() {
             let my_uris = new Array();
             var resourceReferences = jp.query(body, '$..resourceReference');
             resourceReferences.forEach((element, index, array) => {
-                var re = new RegExp(".*\/ns\/.*");
+                var re = new RegExp(".*\/doc\/applicatieprofiel.*|.*\/id\/applicatieprofiel.*");
                 if (re.test(element)){
                     my_uris.push(element);
                     //console.log(element)
@@ -34,8 +34,8 @@ async function deref(uris) {
     const prefixen = JSON.parse(fs.readFileSync('source/prefixen.json', "utf8"));
     for (let uri of uris) {
         const domain = uri.split('/')[2].split('.').reverse().join('/');
-        const pad = uri.split('/ns/')[1]
-        const turtle = [['main/resources', domain, 'ns', pad, path.basename(pad)].join('/'), 'ttl'].join('.')
+        const pad = uri.split('/doc/')[1]
+        const turtle = [['main/resources', domain, 'id', pad, path.basename(pad)].join('/'), 'ttl'].join('.')
         try {
             const { data } = await rdfDereferencer.dereference(uri);
             const ttl_writer = new N3.Writer({ format: 'text/turtle', prefixes: Object.assign({}, prefixen) });
@@ -49,7 +49,7 @@ async function deref(uris) {
                 });
         }
         catch(error) {
-            const text = [['main/error/dereferencing', domain, 'ns', pad, path.basename(pad)].join('/'), 'txt'].join('.')
+            const text = [['main/error', domain, 'id', pad, path.basename(pad)].join('/'), 'txt'].join('.')
             if (!fs.existsSync(path.dirname(text))){
                 fs.mkdirSync(path.dirname(text), { recursive: true });
             }
