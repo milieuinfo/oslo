@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -47,7 +256,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeheerShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeheerShape/1a30482b3e53ec3424e45bfaee16aa218fe34532>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeheerShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeheerShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Beheer>.
+    shacl:targetClass jc_infrastructuur:Beheer.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeheerShape/1a30482b3e53ec3424e45bfaee16aa218fe34532> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Beheer.beheerder";
     shacl:class dcterms:Agent;
     shacl:description "De Agent die instaat voor de zorg en verantwoordelijkheid van de Infrastructuur."@nl;
@@ -69,7 +278,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BereikbaarheidShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BereikbaarheidShape/3135a4374894d12ad278aec758becad86fe56381>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BereikbaarheidShape/b6fdaaf99a20cefdacd1e7e011f488894329956e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BereikbaarheidShape/03f7eea6606597f4604dc76539c03eac3a033106>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BereikbaarheidShape/22a285bc73618b3da527c949ffbc9d10a9558658>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BereikbaarheidShape/e05ff60682ad45b5c56d42046335c6fa37baaf7c>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Bereikbaarheid>.
+    shacl:targetClass jc_infrastructuur:Bereikbaarheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BereikbaarheidShape/03f7eea6606597f4604dc76539c03eac3a033106> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Bereikbaarheid.mobiscore";
     shacl:datatype xsd:integer;
     shacl:description "Een index die aangeeft hoe goed een locatie scoort op vlak van mobiliteit."@nl;
@@ -98,7 +307,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeschikbaarheidShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeschikbaarheidShape/0282924473194bfb8e0b4a42b2e8fc001153211d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeschikbaarheidShape/f4fc1e907a31c120661dd6c4265a7daa340f7e1c>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeschikbaarheidShape/e6ada4b25599dde7d63c9b717df99ba62230ba58>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeschikbaarheidShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeschikbaarheidShape/236818a46442d5839007629fc7515b884fd201ef>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Beschikbaarheid>.
+    shacl:targetClass jc_infrastructuur:Beschikbaarheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BeschikbaarheidShape/0282924473194bfb8e0b4a42b2e8fc001153211d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Beschikbaarheid.gebruiker";
     shacl:class skos:Concept;
     shacl:description "Het type gebruiker dat over de infrastructuur mag beschikken."@nl;
@@ -127,9 +336,9 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BinnenruimteShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BinnenruimteShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Binnenruimte>.
+    shacl:targetClass jc_infrastructuur:Binnenruimte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BinnenruimteShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Binnenruimte.type";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Binnenruimtetype>;
+    shacl:class jc_infrastructuur:Binnenruimtetype;
     shacl:description "Het type Binnenruimte verbonden aan de Infrastructuur."@nl;
     shacl:name "type"@nl;
     shacl:path dcterms:type.
@@ -138,18 +347,18 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BouwtechniekShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Bouwtechniek>.
+    shacl:targetClass jc_infrastructuur:Bouwtechniek.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BuitenruimteShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BuitenruimteShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BuitenruimteShape/03d85d312b3703fb62e7f5854b45d5c1a58d9518>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BuitenruimteShape/1b2aee03158809e2f0ee727229b6dd7e43f2d523>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Buitenruimte>.
+    shacl:targetClass jc_infrastructuur:Buitenruimte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BuitenruimteShape/03d85d312b3703fb62e7f5854b45d5c1a58d9518> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Buitenruimte.verbondenaan";
     shacl:description "De Buitenruimte gelinkt aan de Infrastructuur."@nl;
     shacl:maxCount 1;
     shacl:name "verbonden aan"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Buitenruimte.verbondenAan>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#BuitenruimteShape/1b2aee03158809e2f0ee727229b6dd7e43f2d523> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Buitenruimte.verbondenaan";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur>;
+    shacl:class jc_infrastructuur:Infrastructuur;
     shacl:description "De Buitenruimte gelinkt aan de Infrastructuur."@nl;
     shacl:name "verbonden aan"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Buitenruimte.verbondenAan>.
@@ -164,7 +373,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/72c15e74c4d0cb3548d621c127b1090e77f8481e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/8a7cf46c8506736f2b7d04fe32bd522933417037>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/2655ea3715a46cfcd9c319a318bcd92f31a9fbdc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/49b87d602c372219dc93e50933bf7c17f369ae13>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/762f5094731b213d88d8a29332598749ea0eaa46>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Capaciteit>.
+    shacl:targetClass jc_infrastructuur:Capaciteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Capaciteit.waarde";
     shacl:class schemas:Number;
     shacl:description "De numerieke hoeveelheid waarop de capaciteit betrekking heeft."@nl;
@@ -181,7 +390,7 @@
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#CapaciteitShape/2655ea3715a46cfcd9c319a318bcd92f31a9fbdc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Capaciteit.standaardeenheid";
-    shacl:class <http://fixme.com#StandaardEenheid>;
+    shacl:class fixme.com:StandaardEenheid;
     shacl:description "De standaard maat waarin de capaciteit wordt uitgedrukt."@nl;
     shacl:name "standaardeenheid"@nl;
     shacl:path schemas:unitCode.
@@ -244,7 +453,7 @@
     shacl:name "type"@nl;
     shacl:path crm:P2_has_type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#DimensieShape/2655ea3715a46cfcd9c319a318bcd92f31a9fbdc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Dimensie.standaardeenheid";
-    shacl:class <http://fixme.com#StandaardEenheid>;
+    shacl:class fixme.com:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
     shacl:name "standaardeenheid"@nl;
     shacl:path schemas:unitCode.
@@ -291,7 +500,7 @@
     shacl:name "standplaats"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Ding.standplaats>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#DingShape/e2017f72421063cd9ff494011ec78f35f9632a4a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Ding.identifier";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "De identificator die het Ding heeft verkregen."@nl;
     shacl:name "identifier"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Ding.identifier>.
@@ -300,11 +509,11 @@
     shacl:targetClass foaf:Document.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EcologieShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Ecologie>.
+    shacl:targetClass jc_infrastructuur:Ecologie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EigenaarschapShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EigenaarschapShape/0addb769185db828aa4c44888f0aa906471c3d06>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EigenaarschapShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EigenaarschapShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Eigenaarschap>.
+    shacl:targetClass jc_infrastructuur:Eigenaarschap.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EigenaarschapShape/0addb769185db828aa4c44888f0aa906471c3d06> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Eigenaarschap.eigenaar";
     shacl:class dcterms:Agent;
     shacl:description "De Agent aan wie de Infrastructuur toebehoort."@nl;
@@ -326,7 +535,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EnergieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EnergieShape/309572e3b689e6350130213be40959d432f77b33>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EnergieShape/106b57041a16b0390b2a577b11b3a5c27df426df>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EnergieShape/96d701fe8b891dacb889ea9f11c635a1c5b59c9b>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Energie>.
+    shacl:targetClass jc_infrastructuur:Energie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#EnergieShape/106b57041a16b0390b2a577b11b3a5c27df426df> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Energie.score";
     shacl:description "Een getal dat aangeeft hoeveel het energieverbruik per vierkante mete vloeropperlak bedraagt."@nl;
     shacl:maxCount 1;
@@ -347,14 +556,14 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ErkenningShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Erkenning>.
+    shacl:targetClass FeitelijkeVerenigingen:Erkenning.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExclusiviteitstypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/0ca9068562e0ea776c62b9932187fcf386071f5a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/09df74f5afb3ab9b44eb72c067f965bc900cdae3>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/1095e02f3a4b9760cc898b4af899fccaeb52c020>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/3839f646d813b4c43ce32569187e402e8b90ad52>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/6b681868a4d678b705999117010f289c84a06a8f>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/236818a46442d5839007629fc7515b884fd201ef>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Exploitatie>.
+    shacl:targetClass jc_infrastructuur:Exploitatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/09df74f5afb3ab9b44eb72c067f965bc900cdae3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Exploitatie.huurder";
     shacl:class dcterms:Agent;
     shacl:description "De Agent die geld betaalt voor het gebruik van de Infrastructuur."@nl;
@@ -366,7 +575,7 @@
     shacl:name "exploitant"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Exploitatie.exploitant>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/1095e02f3a4b9760cc898b4af899fccaeb52c020> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Exploitatie.inkomen";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Inkomst>;
+    shacl:class jc_infrastructuur:Inkomst;
     shacl:description "Geldbedrag dat uit de Exploitatie voortkomt."@nl;
     shacl:name "inkomen"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Exploitatie.inkomen>.
@@ -391,12 +600,12 @@
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/3839f646d813b4c43ce32569187e402e8b90ad52> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Exploitatie.kost";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Kost>;
+    shacl:class jc_infrastructuur:Kost;
     shacl:description "Geldbedrag dat moet betaald worden om de Exploitatie te kunnen doen."@nl;
     shacl:name "kost"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Exploitatie.kost>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ExploitatieShape/6b681868a4d678b705999117010f289c84a06a8f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Exploitatie.overeenkomst";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Overeenkomst>;
+    shacl:class jc_infrastructuur:Overeenkomst;
     shacl:description "Een al dan niet schriftelijke afspraak, contract, etc."@nl;
     shacl:name "overeenkomst"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Exploitatie.overeenkomst>.
@@ -406,7 +615,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#FaciliteitShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#FaciliteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#FaciliteitShape/10238f20248c4a8851251daa05d9a6f17ba672d5>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#FaciliteitShape/0282924473194bfb8e0b4a42b2e8fc001153211d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#FaciliteitShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#FaciliteitShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Faciliteit>.
+    shacl:targetClass jc_infrastructuur:Faciliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#FaciliteitShape/0282924473194bfb8e0b4a42b2e8fc001153211d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Faciliteit.gebruiker";
     shacl:class skos:Concept;
     shacl:description "Het type gebruiker en reden waarom er beroep wordt gedaan op de Faciliteit."@nl;
@@ -472,7 +681,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/4349979bf47e6302f2591ee16c832648971d552d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/54ccafc36196031a906db1c91f0c35f1c823814b>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/b48ce0e2c83dead34b515f2b67af6c26cd0f0d7c>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/72befc771822d6f39456302406f99dbf2ed68153>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/722a1f18cabb107c684fe4ca857876ade00b0d01>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/f5ab3f122b38e8c32004a98c8035e9f020052464>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/3de643106c4e6f71c7e47465f253c2feb5835c73>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/0f6cb927d0d26f3819cba3fb903a075cd426180d>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gebouw#Gebouw>.
+    shacl:targetClass gebouw:Gebouw.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/0f6cb927d0d26f3819cba3fb903a075cd426180d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Gebouw.status";
     shacl:class skos:Concept;
     shacl:description "Fase van de levensloop waarin het gebouw zich bevindt."@nl;
@@ -492,12 +701,12 @@
     shacl:description "Datum waarop het gebouw voltooid werd."@nl;
     shacl:maxCount 1;
     shacl:name "bouwjaar"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gebouw#bouwjaar>.
+    shacl:path gebouw:bouwjaar.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/722a1f18cabb107c684fe4ca857876ade00b0d01> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Gebouw.geometrie";
     shacl:class <https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie>;
     shacl:description "Vorm- en positiekenmerken van een object."@nl;
     shacl:name "geometrie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gebouw#geometrie>.
+    shacl:path gebouw:geometrie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/72befc771822d6f39456302406f99dbf2ed68153> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Gebouw.bouwmeester";
     shacl:class dcterms:Agent;
     shacl:description "De ontwerper van het Gebouw"@nl;
@@ -507,16 +716,16 @@
     shacl:class schemas:endDate;
     shacl:description "Datum waarop het gebouw voltooid werd."@nl;
     shacl:name "bouwjaar"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gebouw#bouwjaar>.
+    shacl:path gebouw:bouwjaar.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebouwShape/f5ab3f122b38e8c32004a98c8035e9f020052464> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Gebouw.laatsteRenovatie";
     shacl:class schemas:endDate;
     shacl:description "Datum waarop het gebouw het laatst gerenoveerd werd."@nl;
     shacl:name "laatsteRenovatie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gebouw#laatsteRenovatie>.
+    shacl:path gebouw:laatsteRenovatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/4c356c89be8d7eaa18e04cc74b5ae87a4fb977fa>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/2cead17614f2fff00e87f9ad7a2f3d1539aafb60>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/4c92bea2113902b37d340041ae0044a05d4262ce>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/0282924473194bfb8e0b4a42b2e8fc001153211d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/236818a46442d5839007629fc7515b884fd201ef>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/7be1b3c256d9c86a612c10f9fecff45f1c241075>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/f6c6cb5987b43e44ecd504e5cef64f9f96fbe7f5>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/4a03ef0c30b9f96a0e1f7234ac97f040f3dfe6a5>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Gebruik>.
+    shacl:targetClass jc_infrastructuur:Gebruik.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/0282924473194bfb8e0b4a42b2e8fc001153211d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Gebruik.gebruiker";
     shacl:class dcterms:Agent;
     shacl:description "De Agent die gebruik maakt van de Infrastructuur."@nl;
@@ -558,7 +767,7 @@
     shacl:name "prijs"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Gebruik.prijs>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GebruikShape/f6c6cb5987b43e44ecd504e5cef64f9f96fbe7f5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Gebruik.prijs";
-    shacl:class <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#Prijsinfo>;
+    shacl:class doelgericht-digitaal-transformeren:Prijsinfo;
     shacl:description "Het bedrag dat verbonden is aan het gebruik van de Infrastructuur."@nl;
     shacl:name "prijs"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Gebruik.prijs>.
@@ -575,36 +784,36 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GeometrieShape/4d4c0673abd071971c9a3eb8ecfb24f976f77c81> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Geometrie.alsWKT";
     shacl:maxCount 1;
     shacl:name "als WKT"@nl;
-    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>.
+    shacl:path geosparql:asWKT.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GeometrieShape/996ee2cf5d1893561ba8823fb0da01c080685cec> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Geometrie.alsWKT";
     shacl:minCount 1;
     shacl:name "als WKT"@nl;
-    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>.
+    shacl:path geosparql:asWKT.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GeometrieShape/cf69f280ec0dcda93d40350b6459e7da40a5d738> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Geometrie.alsGML";
     shacl:minCount 1;
     shacl:name "als GML"@nl;
-    shacl:path <http://www.opengis.net/ont/geosparql#asGML>.
+    shacl:path geosparql:asGML.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GeometrieShape/ef783f39afdef3741189b6db0049f2a4fe522ca4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Geometrie.alsGML";
     shacl:maxCount 1;
     shacl:name "als GML"@nl;
-    shacl:path <http://www.opengis.net/ont/geosparql#asGML>.
+    shacl:path geosparql:asGML.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#GetalShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass schemas:Number.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#IdentificatorShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+    shacl:targetClass adms:Identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/c1bab5a837fb821115736f1e7d45c018acd5cdd5>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/c5f1120ae1aa4b9eb1b86a4b7b6ea077f6c5578e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/11b0ee5031fb8cfe09174468277b3ca207ec6494>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/e11b2a1604cf413eb83ea33265b5c1fcbd827760>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/5485f560cc4537a56ec0fdb5ad3b59522d112e1e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/7afdb5e532aae0234495df704beed1c303e180e6>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/9c604b9567e1b5af1616c6702def069096d3c50a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/d0c51bc47299e519bba8c6951d236f6f4cce9d3d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/8452958e7e3ff4f372a2572514a9e5828932e062>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/0addb769185db828aa4c44888f0aa906471c3d06>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/e8615f0a5d02411b4117dc143d6677ba72eb969a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/12f68b64132131aa94572666993833bd48b3e580>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/9639191f255149f7494961d9b2b7174a7b5df463>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/28d923880a89eed2f564eb28a3d59a04c1306267>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/d46c23aefce61bb9315880bfd79717664435670a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/509740cc7b3c86ebee90dc6303c11c40e2b08212>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/d000adb186880cbcc53d4d31cf1f6bfd06d1ae82>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/35117c44bc8a8d77336c58c2566aa2bf5f3ba5da>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/3df0b92a985cd99f64ed4ebd46df784128525974>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/410562081d734d62507990f9e81b1cb006abc580>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/77652d1d804cb49907f29cd9f08b66a5d04c5fe1>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/e233b0eeb9e1acdcb6559d52c03c9a95079d4b4c>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/b8c94ae18823bcb68120647e516986b8174b99b0>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/df16c0c6d8ce78318ce3a1bf54e687bc78d883a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/031bbca639565561db944524c6ccd3e3d60bc7dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/2267b19656bad8ecd890a4b3578a010cefb62214>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/53c1c10e3b31f684da45427ca9946ae770edabf6>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/24981cddb6b02e0bbb989f44b77a97fa916915a1>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/66781e324ba8edf4a6d60f6cb51935bcce064267>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/f9524ba86e28981345a2b84aea788460ad4e805e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur>.
+    shacl:targetClass jc_infrastructuur:Infrastructuur.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/031bbca639565561db944524c6ccd3e3d60bc7dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.reservatie";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Reservatie>;
+    shacl:class jc_infrastructuur:Reservatie;
     shacl:description "Het voorbehouden van een infrastructuur."@nl;
     shacl:name "reservatie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.reservatie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/0addb769185db828aa4c44888f0aa906471c3d06> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.eigenaar";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Eigenaarschap>;
+    shacl:class jc_infrastructuur:Eigenaarschap;
     shacl:description "De Agent die de Infrastructuur bezit."@nl;
     shacl:name "eigenaar"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.eigenaar>.
@@ -629,17 +838,17 @@
     shacl:name "naam"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.naam>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/2267b19656bad8ecd890a4b3578a010cefb62214> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.staat";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Staat>;
+    shacl:class jc_infrastructuur:Staat;
     shacl:description "De toestand van een infrastructuur."@nl;
     shacl:name "staat"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.staat>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/24981cddb6b02e0bbb989f44b77a97fa916915a1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.subinfrastructuur";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur>;
+    shacl:class jc_infrastructuur:Infrastructuur;
     shacl:description "De infrastructuur die onderdeel is van een groter geheel van infrastructuur."@nl;
     shacl:name "subinfrastructuur"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.subinfrastructuur>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/28d923880a89eed2f564eb28a3d59a04c1306267> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.faciliteit";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Faciliteit>;
+    shacl:class jc_infrastructuur:Faciliteit;
     shacl:description "De voorziening van een Infrastructuur."@nl;
     shacl:name "faciliteit"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.faciliteit>.
@@ -664,7 +873,7 @@
     shacl:name "openstelling"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.openstelling>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/509740cc7b3c86ebee90dc6303c11c40e2b08212> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.licentie";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Licentie>;
+    shacl:class jc_infrastructuur:Licentie;
     shacl:description "Het recht of de toestemming voor iets."@nl;
     shacl:name "licentie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.licentie>.
@@ -684,7 +893,7 @@
     shacl:name "locatie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.locatie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/66781e324ba8edf4a6d60f6cb51935bcce064267> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.superinfrastructuur";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur>;
+    shacl:class jc_infrastructuur:Infrastructuur;
     shacl:description "De infrastructuur die het groter geheel van infrastructuur vormt."@nl;
     shacl:name "superinfrastructuur"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.superinfrastructuur>.
@@ -694,7 +903,7 @@
     shacl:name "overheid"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.overheid>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/7afdb5e532aae0234495df704beed1c303e180e6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.beschikbaarheid";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Beschikbaarheid>;
+    shacl:class jc_infrastructuur:Beschikbaarheid;
     shacl:description "De mate waarin een Infrastructuur gebruikt kan worden."@nl;
     shacl:name "beschikbaarheid"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.beschikbaarheid>.
@@ -704,17 +913,17 @@
     shacl:name "dimensie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.dimensie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/9639191f255149f7494961d9b2b7174a7b5df463> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.exploitatie";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Exploitatie>;
+    shacl:class jc_infrastructuur:Exploitatie;
     shacl:description "Het uitbaten van Infrastructuur."@nl;
     shacl:name "exploitatie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.exploitatie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/9c604b9567e1b5af1616c6702def069096d3c50a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.capaciteit";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Capaciteit>;
+    shacl:class jc_infrastructuur:Capaciteit;
     shacl:description "Het bevattingsvermogen of de bezetting van een Infrastructuur."@nl;
     shacl:name "capaciteit"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.capaciteit>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.toegankelijkheid";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Toegankelijkheid>;
+    shacl:class jc_infrastructuur:Toegankelijkheid;
     shacl:description "De mate waarin een infrastructuur open of benaderbaar is."@nl;
     shacl:name "toegankelijkheid"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.toegankelijkheid>.
@@ -722,9 +931,9 @@
     shacl:description "Het feit of de infrastructuur tijdelijk of permanent is."@nl;
     shacl:maxCount 1;
     shacl:name "permanentie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#permanentie>.
+    shacl:path jc_infrastructuur:permanentie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/c1bab5a837fb821115736f1e7d45c018acd5cdd5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.beheer";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Beheer>;
+    shacl:class jc_infrastructuur:Beheer;
     shacl:description "Het bestuur, toezicht, de zorg ofverantwoordelijkheid, over een Infrastructuur."@nl;
     shacl:name "beheer"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.beheer>.
@@ -744,7 +953,7 @@
     shacl:name "contactpersoon"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.contactpersoon>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/d46c23aefce61bb9315880bfd79717664435670a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.gebruik";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Gebruik>;
+    shacl:class jc_infrastructuur:Gebruik;
     shacl:description "Het benutten van een Infrastructuur."@nl;
     shacl:name "gebruik"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.gebruik>.
@@ -752,14 +961,14 @@
     shacl:class skos:Concept;
     shacl:description "Het feit of de infrastructuur tijdelijk of permanent is."@nl;
     shacl:name "permanentie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#permanentie>.
+    shacl:path jc_infrastructuur:permanentie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/e11b2a1604cf413eb83ea33265b5c1fcbd827760> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.bereikbaarheid";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Bereikbaarheid>;
+    shacl:class jc_infrastructuur:Bereikbaarheid;
     shacl:description "De mate waarin een Infrastructuur te bereiken is."@nl;
     shacl:name "bereikbaarheid"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.bereikbaarheid>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InfrastructuurShape/e233b0eeb9e1acdcb6559d52c03c9a95079d4b4c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Infrastructuur.overheid";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#OfficieleStatus>;
+    shacl:class jc_infrastructuur:OfficieleStatus;
     shacl:description "De manier waarop de overheid betrokken is in de infrastructuur."@nl;
     shacl:name "overheid"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur.overheid>.
@@ -779,7 +988,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InkomstShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InkomstShape/a88d06f343359b7b95af028292e348810924e355>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InkomstShape/c9584bd112099eab9ac3f9319f715d4125ab5eda>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InkomstShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InkomstShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Inkomst>.
+    shacl:targetClass jc_infrastructuur:Inkomst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#InkomstShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Inkomst.type";
     shacl:description "De soort activeit waaruit de inkomst wordt geïnd/verkregen."@nl;
     shacl:maxCount 1;
@@ -806,7 +1015,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#KostShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#KostShape/a88d06f343359b7b95af028292e348810924e355>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#KostShape/c9584bd112099eab9ac3f9319f715d4125ab5eda>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#KostShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#KostShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Kost>.
+    shacl:targetClass jc_infrastructuur:Kost.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#KostShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Kost.type";
     shacl:description "Het soort kost die wordt betaald."@nl;
     shacl:maxCount 1;
@@ -865,14 +1074,14 @@
     shacl:name "standaard eenheid"@nl;
     shacl:path schemas:unitCode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#KwantitatieveWaardeShape/dcf18241c7695eee6abe5c99b390387f700ef44c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#KwantitatieveWaarde.standaardeenheid";
-    shacl:class <http://fixme.com#StandaardEenheid>;
+    shacl:class fixme.com:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
     shacl:name "standaard eenheid"@nl;
     shacl:path schemas:unitCode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#LicentieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#LicentieShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#LicentieShape/236818a46442d5839007629fc7515b884fd201ef>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#LicentieShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Licentie>.
+    shacl:targetClass jc_infrastructuur:Licentie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#LicentieShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Licentie.periode";
     shacl:description "De hoeveelheid tijd waarin de licentie geldig is."@nl;
     shacl:maxCount 1;
@@ -897,22 +1106,22 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#NationaliteitShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#NationaliteitShape/3e3a4e8682198425d489fe5fc4c296a900167164>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#NationaliteitShape/5587d3f84a318e597a4693ea5f8b72e5ff592f6e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#NationaliteitShape/bd69b6cc25b7bc47a53cc881e1011da4ff6a7c6a>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Nationaliteit>.
+    shacl:targetClass persoon:Nationaliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#NationaliteitShape/3e3a4e8682198425d489fe5fc4c296a900167164> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Nationaliteit.nationaliteit";
     shacl:description "De nationaliteit vd persoon."@nl;
     shacl:maxCount 1;
     shacl:name "nationaliteit"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#nationaliteit>.
+    shacl:path persoon:nationaliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#NationaliteitShape/5587d3f84a318e597a4693ea5f8b72e5ff592f6e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Nationaliteit.nationaliteit";
     shacl:description "De nationaliteit vd persoon."@nl;
     shacl:minCount 1;
     shacl:name "nationaliteit"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#nationaliteit>.
+    shacl:path persoon:nationaliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#NationaliteitShape/bd69b6cc25b7bc47a53cc881e1011da4ff6a7c6a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Nationaliteit.nationaliteit";
     shacl:class skos:Concept;
     shacl:description "De nationaliteit vd persoon."@nl;
     shacl:name "nationaliteit"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#nationaliteit>.
+    shacl:path persoon:nationaliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#NationaliteitscodeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
@@ -922,14 +1131,14 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OfficieleStatusShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OfficieleStatusShape/32bee6401543e9ba3f437536c9bb2f8291e9a501>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OfficieleStatusShape/6f34bf703507d78f7e48cb26795a7bd110fbd42e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OfficieleStatusShape/9fca74e809f47f80c946517bc123fd71420fce93>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OfficieleStatusShape/32772182ea85bd1bace1873b954ec134b083e37b>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#OfficieleStatus>.
+    shacl:targetClass jc_infrastructuur:OfficieleStatus.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OfficieleStatusShape/32772182ea85bd1bace1873b954ec134b083e37b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Overheid.vrijstelling";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Vrijstelling>;
+    shacl:class jc_infrastructuur:Vrijstelling;
     shacl:description "Ontheffing van iets."@nl;
     shacl:name "vrijstelling"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Overheid.vrijstelling>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OfficieleStatusShape/32bee6401543e9ba3f437536c9bb2f8291e9a501> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Overheid.erkenning";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Erkenning>;
+    shacl:class jc_infrastructuur:Erkenning;
     shacl:description "Een authentieke akte, een officiële goedkeuring."@nl;
     shacl:name "erkenning"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Overheid.erkenning>.
@@ -989,7 +1198,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OvereenkomstShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OvereenkomstShape/10238f20248c4a8851251daa05d9a6f17ba672d5>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OvereenkomstShape/c4fab1584282e52cc9249e8780a8a582101a84a0>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OvereenkomstShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Overeenkomst>.
+    shacl:targetClass jc_infrastructuur:Overeenkomst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#OvereenkomstShape/10238f20248c4a8851251daa05d9a6f17ba672d5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Overeenkomst.document";
     shacl:class foaf:Document;
     shacl:description "Het geschrift van de overeenkomst."@nl;
@@ -1063,7 +1272,7 @@
     shacl:description "Het feit of men een man of een vrouw is."@nl;
     shacl:maxCount 1;
     shacl:name "geslacht"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+    shacl:path persoon:geslacht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PersoonShape/5cd883b2e106bb2e51ed8f61eed97a9731de38aa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Persoon.geboortedatum";
     shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop persoon geboren werd."@nl;
@@ -1073,7 +1282,7 @@
     shacl:datatype xsd:string;
     shacl:description "Belangrijkste vd voornamen ve persoon."@nl;
     shacl:name "gebruikte voornaam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>.
+    shacl:path persoon:gebruikteVoornaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PersoonShape/b67716fc88fb88e1a3e7dbae35461fd06b268311> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Persoon.achternaam";
     shacl:datatype xsd:string;
     shacl:description "Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt."@nl;
@@ -1085,23 +1294,23 @@
     shacl:name "contactinfo"@nl;
     shacl:path schema:contactPoint.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PersoonShape/bd69b6cc25b7bc47a53cc881e1011da4ff6a7c6a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Persoon.nationaliteit";
-    shacl:class <https://data.vlaanderen.be/ns/persoon#Nationaliteit>;
+    shacl:class persoon:Nationaliteit;
     shacl:description "De relatie tussen een persoon en een staat, cultuur of loyaliteit."@nl;
     shacl:name "nationaliteit"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#nationaliteit>.
+    shacl:path persoon:nationaliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PersoonShape/dccbaf8b9ca123087f5faa1ded7e6e69d388fea7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Persoon.geslacht";
     shacl:class skos:Concept;
     shacl:description "Het feit of men een man of een vrouw is."@nl;
     shacl:name "geslacht"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+    shacl:path persoon:geslacht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PersoonShape/fd9de3e456668ac246c6e059df34887e5214d488> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Persoon.gebruiktevoornaam";
     shacl:description "Belangrijkste vd voornamen ve persoon."@nl;
     shacl:maxCount 1;
     shacl:name "gebruikte voornaam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>.
+    shacl:path persoon:gebruikteVoornaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PodiumtechnischeFaciliteitShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#PodiumtechnischeFaciliteit>.
+    shacl:targetClass jc_infrastructuur:PodiumtechnischeFaciliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/65963ec730ecc0938dbb1ca2739f7b289fdb3603>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/8ffc999ed3c80bad2705dd95b6706147fd6a1a68>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/7da27868bbc3ae93fd110609fa31724a6a760895>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/fb20024022e1fae8c893c1a98634b91e84a9c2c7>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/3d1b776bd36094c3219ba83102a4448792fc959c>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/6a66abac3a9315992341b44b506880e2d17b0428>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/09173aea4a7712f9ce278c11a223588e8447dfbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/0ee99c8ebb90926f6762dc95c170bb50d6d494dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/7be1b3c256d9c86a612c10f9fecff45f1c241075>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/f6c6cb5987b43e44ecd504e5cef64f9f96fbe7f5>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/1355225d6a1816ade0d05a5e9486428189d0e99a>;
@@ -1110,12 +1319,12 @@
     shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de toepasselijke belasting over de toegevoegde waarde (BTW) al dan niet in de prijsinfo is opgenomen."@nl;
     shacl:name "inclusiefBTW"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#inclusiefBTW>.
+    shacl:path doelgericht-digitaal-transformeren:inclusiefBTW.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/0ee99c8ebb90926f6762dc95c170bb50d6d494dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Prijsinfo.inclusiefBTW";
     shacl:description "Geeft aan of de toepasselijke belasting over de toegevoegde waarde (BTW) al dan niet in de prijsinfo is opgenomen."@nl;
     shacl:maxCount 1;
     shacl:name "inclusiefBTW"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#inclusiefBTW>.
+    shacl:path doelgericht-digitaal-transformeren:inclusiefBTW.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/1355225d6a1816ade0d05a5e9486428189d0e99a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Prijsinfo.prijsCategorie";
     shacl:class skos:Concept;
     shacl:description "De categorie van de prijs zoals een jongerentarief of seniorentarief."@nl;
@@ -1125,46 +1334,46 @@
     shacl:description "Het interval en de meeteenheid van de bestelhoeveelheden waarvoor de prijsinfo geldt."@nl;
     shacl:maxCount 1;
     shacl:name "beschikbareHoeveelheid"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#beschikbareHoeveelheid>.
+    shacl:path doelgericht-digitaal-transformeren:beschikbareHoeveelheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/65963ec730ecc0938dbb1ca2739f7b289fdb3603> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Prijsinfo.beschikbaar";
     shacl:class eu:PeriodOfTime;
     shacl:description "De periode waarin de prijsinfo van een activiteit beschikbaar is."@nl;
     shacl:name "beschikbaar"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#beschikbaar>.
+    shacl:path doelgericht-digitaal-transformeren:beschikbaar.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/6a66abac3a9315992341b44b506880e2d17b0428> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Prijsinfo.beschikbareHoeveelheid";
     shacl:class schemas:QuantitativeValue;
     shacl:description "Het interval en de meeteenheid van de bestelhoeveelheden waarvoor de prijsinfo geldt."@nl;
     shacl:name "beschikbareHoeveelheid"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#beschikbareHoeveelheid>.
+    shacl:path doelgericht-digitaal-transformeren:beschikbareHoeveelheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/7be1b3c256d9c86a612c10f9fecff45f1c241075> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Prijsinfo.prijs";
     shacl:description "De aanbiedingsprijs van een activiteit."@nl;
     shacl:maxCount 1;
     shacl:name "prijs"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#prijs>.
+    shacl:path doelgericht-digitaal-transformeren:prijs.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/7da27868bbc3ae93fd110609fa31724a6a760895> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Prijsinfo.beschikbaarTransactieVolume";
     shacl:description "Het interval en de meeteenheid van de bestelhoeveelheden voor een activiteit of transactie."@nl;
     shacl:maxCount 1;
     shacl:name "beschikbaarTransactieVolume"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#beschikbaarTransactieVolume>.
+    shacl:path doelgericht-digitaal-transformeren:beschikbaarTransactieVolume.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/8ffc999ed3c80bad2705dd95b6706147fd6a1a68> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Prijsinfo.beschikbaar";
     shacl:description "De periode waarin de prijsinfo van een activiteit beschikbaar is."@nl;
     shacl:maxCount 1;
     shacl:name "beschikbaar"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#beschikbaar>.
+    shacl:path doelgericht-digitaal-transformeren:beschikbaar.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/f6c6cb5987b43e44ecd504e5cef64f9f96fbe7f5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Prijsinfo.prijs";
     shacl:class schemas:MonetaryAmount;
     shacl:description "De aanbiedingsprijs van een activiteit."@nl;
     shacl:name "prijs"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#prijs>.
+    shacl:path doelgericht-digitaal-transformeren:prijs.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#PrijsinfoShape/fb20024022e1fae8c893c1a98634b91e84a9c2c7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Prijsinfo.beschikbaarTransactieVolume";
     shacl:class schemas:QuantitativeValue;
     shacl:description "Het interval en de meeteenheid van de bestelhoeveelheden voor een activiteit of transactie."@nl;
     shacl:name "beschikbaarTransactieVolume"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#beschikbaarTransactieVolume>.
+    shacl:path doelgericht-digitaal-transformeren:beschikbaarTransactieVolume.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ReservatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ReservatieShape/2c6b84079ff99bb27bfd1441c18126bcbe4213d2>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ReservatieShape/a375c55a5523ab16ec993758a5c570f24a21b0f2>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ReservatieShape/236818a46442d5839007629fc7515b884fd201ef>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Reservatie>.
+    shacl:targetClass jc_infrastructuur:Reservatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ReservatieShape/236818a46442d5839007629fc7515b884fd201ef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Reservatie.periode";
     shacl:class eu:PeriodOfTime;
     shacl:description "De hoeveelheid tijd waarvoor de Reservatie geldt."@nl;
@@ -1182,18 +1391,18 @@
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Reservatie.gereserveerdVoor>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#RuimteShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Ruimte>.
+    shacl:targetClass jc_infrastructuur:Ruimte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/2a9dcba88cf1ec46a6630ec833072fc66ecf9f44>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/eb9763c5896b07d9a9921772c0b09f3de51932c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/c3fa7fbc197e8fd3d4522f19cb6e835f95b79115>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/27aefcf1de5c2763a1abc15bf8375614adaa5c37>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/3cb62c5ea66cdd202ca9b16c58b4e2e282956a68>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/afcc2c5237815618b7b6d0e97f639d16fbcbbe39>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Staat>.
+    shacl:targetClass jc_infrastructuur:Staat.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/27aefcf1de5c2763a1abc15bf8375614adaa5c37> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Staat.veiligheid";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Veiligheid>;
+    shacl:class jc_infrastructuur:Veiligheid;
     shacl:description "De beveiligingsinrichting van een infrastructuur."@nl;
     shacl:name "veiligheid"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Staat.veiligheid>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/2a9dcba88cf1ec46a6630ec833072fc66ecf9f44> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Staat.bouwtechniek";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Bouwtechniek>;
+    shacl:class jc_infrastructuur:Bouwtechniek;
     shacl:description "De bouwtechnische toestand van een infrastructuur."@nl;
     shacl:name "bouwtechniek"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Staat.bouwtechniek>.
@@ -1203,23 +1412,23 @@
     shacl:name "veiligheid"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Staat.veiligheid>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/afcc2c5237815618b7b6d0e97f639d16fbcbbe39> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Staat.verbruik";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Verbruik>;
+    shacl:class jc_infrastructuur:Verbruik;
     shacl:description "Het verbruik van een Infrastructuur."@nl;
     shacl:name "verbruik"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Staat.verbruik>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/c3fa7fbc197e8fd3d4522f19cb6e835f95b79115> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Staat.energie";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Energie>;
+    shacl:class jc_infrastructuur:Energie;
     shacl:description "De energie die gebruikt wordt in een Infrastructuur."@nl;
     shacl:name "energie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Staat.energie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StaatShape/eb9763c5896b07d9a9921772c0b09f3de51932c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Staat.ecologie";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Ecologie>;
+    shacl:class jc_infrastructuur:Ecologie;
     shacl:description "De milieuvriendelijkheid van een Infrastructuur."@nl;
     shacl:name "ecologie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Staat.ecologie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StandaardEenheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://fixme.com#StandaardEenheid>.
+    shacl:targetClass fixme.com:StandaardEenheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#StatusgebouwwaardeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
@@ -1232,12 +1441,12 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ToegankelijkheidShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ToegankelijkheidShape/67ea555474378d8510c3e840a9b9a4b5d91045bf>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ToegankelijkheidShape/da7b20fa5672e1efac8134dc00bf3f008dc299c8>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ToegankelijkheidShape/55af5228aba1ef1511b98ceb65437e864b7396e8>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Toegankelijkheid>.
+    shacl:targetClass jc_infrastructuur:Toegankelijkheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ToegankelijkheidShape/55af5228aba1ef1511b98ceb65437e864b7396e8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Toegankelijkheid.onderdeel";
     shacl:class skos:Concept;
     shacl:description "Deel van de dienst of infrastructuur waarop de Toegankelijkheid betrekking heeft.."@nl;
     shacl:name "onderdeel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#onderdeel>.
+    shacl:path jc_infrastructuur:onderdeel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#ToegankelijkheidShape/67ea555474378d8510c3e840a9b9a4b5d91045bf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Toegankelijkheid.niveau";
     shacl:description "De graad van toegankelijkheid van een infrastructuur."@nl;
     shacl:maxCount 1;
@@ -1254,7 +1463,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VeiligheidShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VeiligheidShape/1ce319b8a85ca20d2b42f5b5268fcf312274bc30>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VeiligheidShape/12fe64c606ad7dd6ecb513b8fab91af56148f2dd>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VeiligheidShape/8f1c088359331533b3236c17c342dc52e8fd246a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VeiligheidShape/bbb91730e508252f487c2360938a18c9fc89da71>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Veiligheid>.
+    shacl:targetClass jc_infrastructuur:Veiligheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VeiligheidShape/12fe64c606ad7dd6ecb513b8fab91af56148f2dd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Veiligheid.preventieadviseur";
     shacl:class dcterms:Agent;
     shacl:description "Agent die risico's analyseert en maatregelen ontwikkelt om die risico's te voorkomen."@nl;
@@ -1278,7 +1487,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VerbruikShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VerbruikShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VerbruikShape/236818a46442d5839007629fc7515b884fd201ef>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VerbruikShape/3d887429d144db835aad5760059cef605c0bbb9e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VerbruikShape/7ecf033f5d2967392f206b48daef9f532971d0b6>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VerbruikShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VerbruikShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VerbruikShape/2af1e9fb54b51b86077f430044e4448b628caefd>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VerbruikShape/afcc2c5237815618b7b6d0e97f639d16fbcbbe39>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Verbruik>.
+    shacl:targetClass jc_infrastructuur:Verbruik.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VerbruikShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#Verbruik.periode";
     shacl:description "De hoeveelheid tijd waarin het verbruik zich voordoet."@nl;
     shacl:maxCount 1;
@@ -1354,4 +1563,4 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/kandidaatstandaard/2022-03-21#VrijstellingShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Vrijstelling>.
+    shacl:targetClass jc_infrastructuur:Vrijstelling.

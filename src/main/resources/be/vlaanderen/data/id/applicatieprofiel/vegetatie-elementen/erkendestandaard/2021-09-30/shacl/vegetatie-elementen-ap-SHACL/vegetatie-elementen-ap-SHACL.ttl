@@ -1,331 +1,540 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap> <https://data.vlaanderen.be/shacl/vegetatie-elementen-apshapes> <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BloemenmandShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BloementorenShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#GekandelaardeBoomShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#GeschorenBoomShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KlimvormShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KnotboomShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#LeiboomShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#MuurvegetatieShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#NietZelfhechtendeKlimvormShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#OpgaandeBoomShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#PlantbakShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#PlantbakvormShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#SolitaireHeesterShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#VegetatieElementShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#VegetatiewandShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#VormboomShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#ZelfhechtendeKlimvormShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormconditieKlassenShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#GroeifasenShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#NauwkeurigsheidsklassenShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomConditiewaardeShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#ElementShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#FysiekObjectShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BegroeidVoorkomenShape>, <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KwantitatieveWaardeShape>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BegroeidVoorkomenShape> a shacl:NodeShape;
+<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap> <https://data.vlaanderen.be/shacl/vegetatie-elementen-apshapes> vegetatie-elementen-ap:BloemenmandShape, vegetatie-elementen-ap:BloementorenShape, vegetatie-elementen-ap:BoomvormShape, vegetatie-elementen-ap:GekandelaardeBoomShape, vegetatie-elementen-ap:GeschorenBoomShape, vegetatie-elementen-ap:KlimvormShape, vegetatie-elementen-ap:KnotboomShape, vegetatie-elementen-ap:LeiboomShape, vegetatie-elementen-ap:MuurvegetatieShape, vegetatie-elementen-ap:NietZelfhechtendeKlimvormShape, vegetatie-elementen-ap:OpgaandeBoomShape, vegetatie-elementen-ap:PlantbakShape, vegetatie-elementen-ap:PlantbakvormShape, vegetatie-elementen-ap:SolitaireHeesterShape, vegetatie-elementen-ap:VegetatieElementShape, vegetatie-elementen-ap:VegetatiewandShape, vegetatie-elementen-ap:VormboomShape, vegetatie-elementen-ap:ZelfhechtendeKlimvormShape, vegetatie-elementen-ap:BoomvormconditieKlassenShape, vegetatie-elementen-ap:GroeifasenShape, vegetatie-elementen-ap:NauwkeurigsheidsklassenShape, vegetatie-elementen-ap:BoomConditiewaardeShape, vegetatie-elementen-ap:ElementShape, vegetatie-elementen-ap:FysiekObjectShape, vegetatie-elementen-ap:BegroeidVoorkomenShape, vegetatie-elementen-ap:KwantitatieveWaardeShape.
+vegetatie-elementen-ap:BegroeidVoorkomenShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2363 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/DrassigheidWaarde>;
+_:n3-2363 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/DrassigheidWaarde>;
     shacl:class skos:Concept;
     shacl:description "Mate waarin de bodem verzadigd is met water.";
     shacl:maxCount 1;
     shacl:name "drassigheid";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#drassigheid>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BegroeidVoorkomenShape> shacl:property _:n3-2363.
-_:n3-2364 <http://purl.org/linked-data/cube#codeList> <https://www.gbif.org/species/6>;
+    shacl:path begroeidvoorkomen:drassigheid.
+vegetatie-elementen-ap:BegroeidVoorkomenShape shacl:property _:n3-2363.
+_:n3-2364 cube:codeList <https://www.gbif.org/species/6>;
     shacl:class skos:Concept;
     shacl:description "Een unieke identificator voor de soort van het vegetatie-element. ";
     shacl:name "soortcode";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#soortcode>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BegroeidVoorkomenShape> shacl:property _:n3-2364.
+    shacl:path begroeidvoorkomen:soortcode.
+vegetatie-elementen-ap:BegroeidVoorkomenShape shacl:property _:n3-2364.
 _:n3-2365 shacl:datatype rdf:langString;
     shacl:description "Soortnaam in het Nederlands.";
     shacl:name "soortnaamNederlands";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#soortnaamNederlands>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BegroeidVoorkomenShape> shacl:property _:n3-2365.
+    shacl:path begroeidvoorkomen:soortnaamNederlands.
+vegetatie-elementen-ap:BegroeidVoorkomenShape shacl:property _:n3-2365.
 _:n3-2366 shacl:class skos:Concept;
     shacl:description "De wetenschappelijke soortnaam.";
     shacl:name "soortnaamWetenschappelijk";
     shacl:path <http://rs.tdwg.org/dwc/terms/scientificName>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BegroeidVoorkomenShape> shacl:property _:n3-2366;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#BegroeidVoorkomen>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BloemenmandShape> a shacl:NodeShape;
+vegetatie-elementen-ap:BegroeidVoorkomenShape shacl:property _:n3-2366;
+    shacl:targetClass begroeidvoorkomen:BegroeidVoorkomen.
+vegetatie-elementen-ap:BloemenmandShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Bloemenmand>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BloementorenShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:Bloemenmand.
+vegetatie-elementen-ap:BloementorenShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Bloementoren>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomConditiewaardeShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:Bloementoren.
+vegetatie-elementen-ap:BoomConditiewaardeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape> a shacl:NodeShape;
+vegetatie-elementen-ap:BoomvormShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2367 shacl:datatype xsd:boolean;
     shacl:description "Boomplaten worden aangebracht rond de stam van bomen, bosgoed en heesters en eventueel vastgezet met piketten. Ze hebben een centrale opening en een rechte snede, zodat ze op eenvoudige wijze rond de planten kunnen aangebracht worden. Boomplaten die aangewend worden voor bomen beschikken over extra openingen in de plaat voor het aanbrengen van een boompalen.";
     shacl:maxCount 1;
     shacl:name "boomplaat";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomplaat>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape> shacl:property _:n3-2367.
+    shacl:path vegetatie:boomplaat.
+vegetatie-elementen-ap:BoomvormShape shacl:property _:n3-2367.
 _:n3-2368 shacl:datatype xsd:boolean;
     shacl:description "Een horizontale structuur die zorgt voor een adequate bescherming van bomen tegen betreding van de boomspiegel door voetgangers of verkeer. Bijkomend zorgen boomroosters voor veiligheid van vooral voetgangers en fietsers doordat het maaiveld rondom de bomen gelijk blijft met de rest van de verharding waarin ze gelegen zijn.";
     shacl:maxCount 1;
     shacl:name "boomrooster";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomrooster>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape> shacl:property _:n3-2368.
-_:n3-2369 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/BoomvormconditieKlassen>;
+    shacl:path vegetatie:boomrooster.
+vegetatie-elementen-ap:BoomvormShape shacl:property _:n3-2368.
+_:n3-2369 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/BoomvormconditieKlassen>;
     shacl:class skos:Concept;
     shacl:description "De conditie beoordeeld volgens de kronenstructuur van Dr. A. Roloff, gelet op de scheutlengte ontwikkeling en vorming van dood hout.";
     shacl:maxCount 1;
     shacl:name "conditiebeoordeling";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiebeoordeling>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape> shacl:property _:n3-2369.
-_:n3-2370 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/BoomConditiewaarde>;
+    shacl:path vegetatie:conditiebeoordeling.
+vegetatie-elementen-ap:BoomvormShape shacl:property _:n3-2369.
+_:n3-2370 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/BoomConditiewaarde>;
     shacl:class skos:Concept;
     shacl:description "De conditiewaarde van een boom is een coëfficiënt die iets vertelt over de gezondheidstoestand (vitaliteit, conditie) en de levensverwachting van een boom. Een dode boom heeft een conditiewaarde nul. Een kerngezonde boom met zeer hoge levensverwachting heeft een conditiewaarde 1.";
     shacl:maxCount 1;
     shacl:name "conditiewaarde";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiewaarde>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape> shacl:property _:n3-2370.
-_:n3-2371 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Groeifasen>;
+    shacl:path vegetatie:conditiewaarde.
+vegetatie-elementen-ap:BoomvormShape shacl:property _:n3-2370.
+_:n3-2371 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Groeifasen>;
     shacl:class skos:Concept;
     shacl:description "De levensfase van een Boomvorm.";
     shacl:maxCount 1;
     shacl:name "groeifase";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#groeifase>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape> shacl:property _:n3-2371.
+    shacl:path vegetatie:groeifase.
+vegetatie-elementen-ap:BoomvormShape shacl:property _:n3-2371.
 _:n3-2372 shacl:class schemas:QuantitativeValue;
     shacl:description "Diameter van de kroonprojectie.";
     shacl:maxCount 1;
     shacl:name "kroondiameter";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#kroondiameter>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape> shacl:property _:n3-2372.
-_:n3-2373 <http://purl.org/linked-data/cube#codeList> <https://id.erfgoed.net/thesauri/erfgoedtypes/932>;
+    shacl:path vegetatie:kroondiameter.
+vegetatie-elementen-ap:BoomvormShape shacl:property _:n3-2372.
+_:n3-2373 cube:codeList <https://id.erfgoed.net/thesauri/erfgoedtypes/932>;
     shacl:class skos:Concept;
     shacl:description "Een kenmerk van een boom waardoor deze zich onderscheidt van andere bomen van dezelfde soort. Bijvoorbeeld door een bepaalde erfgoedwaarde.";
     shacl:name "markantElement";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#markantElement>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape> shacl:property _:n3-2373.
+    shacl:path vegetatie:markantElement.
+vegetatie-elementen-ap:BoomvormShape shacl:property _:n3-2373.
 _:n3-2374 shacl:class schemas:QuantitativeValue;
     shacl:description "Stamomtrek, gemeten vanaf 1 meter boven de grond.";
     shacl:maxCount 1;
     shacl:name "stamomtrek";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#stamomtrek>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape> shacl:property _:n3-2374.
+    shacl:path vegetatie:stamomtrek.
+vegetatie-elementen-ap:BoomvormShape shacl:property _:n3-2374.
 _:n3-2375 shacl:class schemas:QuantitativeValue;
     shacl:description "Vrij te houden hoogte, voor het doorrijden van verkeer toe te laten.";
     shacl:maxCount 1;
     shacl:name "vrijeDoorrijhoogte";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#vrijeDoorrijhoogte>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormShape> shacl:property _:n3-2375;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Boomvorm>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#BoomvormconditieKlassenShape> a shacl:NodeShape;
+    shacl:path vegetatie:vrijeDoorrijhoogte.
+vegetatie-elementen-ap:BoomvormShape shacl:property _:n3-2375;
+    shacl:targetClass vegetatie:Boomvorm.
+vegetatie-elementen-ap:BoomvormconditieKlassenShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#ElementShape> a shacl:NodeShape;
+vegetatie-elementen-ap:ElementShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein#Element>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#FysiekObjectShape> a shacl:NodeShape;
+    shacl:targetClass openbaardomein:Element.
+vegetatie-elementen-ap:FysiekObjectShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2376 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#begindatum>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#FysiekObjectShape> shacl:property _:n3-2376.
+    shacl:path openbaardomein:begindatum.
+vegetatie-elementen-ap:FysiekObjectShape shacl:property _:n3-2376.
 _:n3-2377 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#einddatum>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#FysiekObjectShape> shacl:property _:n3-2377.
-_:n3-2378 shacl:class <http://www.opengis.net/ont/geosparql#Geometry>;
+    shacl:path openbaardomein:einddatum.
+vegetatie-elementen-ap:FysiekObjectShape shacl:property _:n3-2377.
+_:n3-2378 shacl:class geosparql:Geometry;
     shacl:description "De geometrie overeenkomstig met een bepaald object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#FysiekObjectShape> shacl:property _:n3-2378.
-_:n3-2379 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
+vegetatie-elementen-ap:FysiekObjectShape shacl:property _:n3-2378.
+_:n3-2379 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
     shacl:class skos:Concept;
     shacl:description "De precisie waarmee het object opgemeten werd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nauwkeurigheid";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#FysiekObjectShape> shacl:property _:n3-2379.
+    shacl:path openbaardomein:nauwkeurigheid.
+vegetatie-elementen-ap:FysiekObjectShape shacl:property _:n3-2379.
 _:n3-2380 shacl:datatype xsd:integer;
     shacl:description "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten.";
     shacl:maxCount 1;
     shacl:name "niveau";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#niveau>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#FysiekObjectShape> shacl:property _:n3-2380.
+    shacl:path openbaardomein:niveau.
+vegetatie-elementen-ap:FysiekObjectShape shacl:property _:n3-2380.
 _:n3-2381 shacl:class rdfs:Resource;
     shacl:description "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject.";
     shacl:name "relatie";
     shacl:path dcterms:relation.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#FysiekObjectShape> shacl:property _:n3-2381;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein#FysiekObject>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#GekandelaardeBoomShape> a shacl:NodeShape;
+vegetatie-elementen-ap:FysiekObjectShape shacl:property _:n3-2381;
+    shacl:targetClass openbaardomein:FysiekObject.
+vegetatie-elementen-ap:GekandelaardeBoomShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#GekandelaardeBoom>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#GeschorenBoomShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:GekandelaardeBoom.
+vegetatie-elementen-ap:GeschorenBoomShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#GeschorenBoom>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#GroeifasenShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:GeschorenBoom.
+vegetatie-elementen-ap:GroeifasenShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KlimvormShape> a shacl:NodeShape;
+vegetatie-elementen-ap:KlimvormShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2382 shacl:class schemas:QuantitativeValue;
     shacl:description "Oppervlakte.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "begroeidOppervlak";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#begroeidOppervlak>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KlimvormShape> shacl:property _:n3-2382.
+    shacl:path vegetatie:begroeidOppervlak.
+vegetatie-elementen-ap:KlimvormShape shacl:property _:n3-2382.
 _:n3-2383 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het object al dan niet in volle grond staat.";
     shacl:maxCount 1;
     shacl:name "grondgebonden";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#grondgebonden>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KlimvormShape> shacl:property _:n3-2383;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Klimvorm>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KnotboomShape> a shacl:NodeShape;
+    shacl:path vegetatie:grondgebonden.
+vegetatie-elementen-ap:KlimvormShape shacl:property _:n3-2383;
+    shacl:targetClass vegetatie:Klimvorm.
+vegetatie-elementen-ap:KnotboomShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Knotboom>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KwantitatieveWaardeShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:Knotboom.
+vegetatie-elementen-ap:KwantitatieveWaardeShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2384 shacl:datatype xsd:string;
     shacl:description "De eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "eenheid";
     shacl:path schemas:unitText.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KwantitatieveWaardeShape> shacl:property _:n3-2384.
-_:n3-2385 shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+vegetatie-elementen-ap:KwantitatieveWaardeShape shacl:property _:n3-2384.
+_:n3-2385 shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "standaardEenheid";
     shacl:path schemas:unitCode.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KwantitatieveWaardeShape> shacl:property _:n3-2385.
+vegetatie-elementen-ap:KwantitatieveWaardeShape shacl:property _:n3-2385.
 _:n3-2386 shacl:class schemas:Number;
     shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#KwantitatieveWaardeShape> shacl:property _:n3-2386;
+vegetatie-elementen-ap:KwantitatieveWaardeShape shacl:property _:n3-2386;
     shacl:targetClass schemas:QuantitativeValue.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#LeiboomShape> a shacl:NodeShape;
+vegetatie-elementen-ap:LeiboomShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Leiboom>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#MuurvegetatieShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:Leiboom.
+vegetatie-elementen-ap:MuurvegetatieShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Muurvegetatie>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#NauwkeurigsheidsklassenShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:Muurvegetatie.
+vegetatie-elementen-ap:NauwkeurigsheidsklassenShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#NietZelfhechtendeKlimvormShape> a shacl:NodeShape;
+vegetatie-elementen-ap:NietZelfhechtendeKlimvormShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#NietZelfhechtendeKlimvorm>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#OpgaandeBoomShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:NietZelfhechtendeKlimvorm.
+vegetatie-elementen-ap:OpgaandeBoomShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2387 shacl:class schemas:QuantitativeValue;
     shacl:description "De lengte in meters, gemeten vanop het aardoppervlak, van het gedeelte van de stam dat takvrij dient gehouden te worden. Alle takken die lager zitten dan de uiteindelijke takvrije stamlengte behoren tot de tijdelijke kroon en zullen gesnoeid worden in verschillende fasen gespreid over verschillende jaren.";
     shacl:maxCount 1;
     shacl:name "takvrijeStamlengte";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#takvrijeStamlengte>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#OpgaandeBoomShape> shacl:property _:n3-2387.
+    shacl:path vegetatie:takvrijeStamlengte.
+vegetatie-elementen-ap:OpgaandeBoomShape shacl:property _:n3-2387.
 _:n3-2388 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de vegetatie of begroeiing al dan niet snoei vereist.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "vrijUitgroeiend";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#vrijUitgroeiend>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#OpgaandeBoomShape> shacl:property _:n3-2388;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#OpgaandeBoom>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#PlantbakShape> a shacl:NodeShape;
+    shacl:path vegetatie:vrijUitgroeiend.
+vegetatie-elementen-ap:OpgaandeBoomShape shacl:property _:n3-2388;
+    shacl:targetClass vegetatie:OpgaandeBoom.
+vegetatie-elementen-ap:PlantbakShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Plantbak>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#PlantbakvormShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:Plantbak.
+vegetatie-elementen-ap:PlantbakvormShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2389 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het element door de mens fysiek bereikbaar is zonder hulpmiddelen.";
     shacl:maxCount 1;
     shacl:name "bereikbaar";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#bereikbaar>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#PlantbakvormShape> shacl:property _:n3-2389.
+    shacl:path vegetatie:bereikbaar.
+vegetatie-elementen-ap:PlantbakvormShape shacl:property _:n3-2389.
 _:n3-2390 shacl:class schemas:QuantitativeValue;
     shacl:description "De afmeting van het object.";
     shacl:maxCount 1;
     shacl:name "oppervlakte";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#oppervlakte>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#PlantbakvormShape> shacl:property _:n3-2390.
+    shacl:path vegetatie:oppervlakte.
+vegetatie-elementen-ap:PlantbakvormShape shacl:property _:n3-2390.
 _:n3-2391 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het element al dan niet verplaatsbaar is en dus niet permanent verankerd werd met het aardoppervlak.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "verplaatsbaar";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#verplaatsbaar>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#PlantbakvormShape> shacl:property _:n3-2391.
+    shacl:path vegetatie:verplaatsbaar.
+vegetatie-elementen-ap:PlantbakvormShape shacl:property _:n3-2391.
 _:n3-2392 shacl:class schemas:QuantitativeValue;
     shacl:description "De inhoud of grootte van het object in de ruimte in kubieke meter.";
     shacl:maxCount 1;
     shacl:name "volume";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#volume>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#PlantbakvormShape> shacl:property _:n3-2392.
-_:n3-2393 shacl:class <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#BegroeidVoorkomen>;
+    shacl:path vegetatie:volume.
+vegetatie-elementen-ap:PlantbakvormShape shacl:property _:n3-2392.
+_:n3-2393 shacl:class begroeidvoorkomen:BegroeidVoorkomen;
     shacl:description "Verwijst naar het voorkomen van de plantbakvorm.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkomen";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#voorkomen>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#PlantbakvormShape> shacl:property _:n3-2393;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Plantbakvorm>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#SolitaireHeesterShape> a shacl:NodeShape;
+    shacl:path vegetatie:voorkomen.
+vegetatie-elementen-ap:PlantbakvormShape shacl:property _:n3-2393;
+    shacl:targetClass vegetatie:Plantbakvorm.
+vegetatie-elementen-ap:SolitaireHeesterShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#SolitaireHeester>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#VegetatieElementShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:SolitaireHeester.
+vegetatie-elementen-ap:VegetatieElementShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2394 shacl:class schemas:QuantitativeValue;
     shacl:description "De hoogte van het object zelf.";
     shacl:maxCount 1;
     shacl:name "hoogte";
     shacl:path schema:height.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#VegetatieElementShape> shacl:property _:n3-2394.
-_:n3-2395 <http://purl.org/linked-data/cube#codeList> <https://www.gbif.org/species/6>;
+vegetatie-elementen-ap:VegetatieElementShape shacl:property _:n3-2394.
+_:n3-2395 cube:codeList <https://www.gbif.org/species/6>;
     shacl:class skos:Concept;
     shacl:description "Een unieke identificator voor de soort van het vegetatie-element. ";
     shacl:minCount 1;
     shacl:name "soortcode";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#VegetatieElementShape> shacl:property _:n3-2395.
+    shacl:path vegetatie:soortcode.
+vegetatie-elementen-ap:VegetatieElementShape shacl:property _:n3-2395.
 _:n3-2396 shacl:datatype rdf:langString;
     shacl:description "Soortnaam in het Nederlands.";
     shacl:name "soortnaamNederlands";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#VegetatieElementShape> shacl:property _:n3-2396.
+    shacl:path vegetatie:soortnaamNederlands.
+vegetatie-elementen-ap:VegetatieElementShape shacl:property _:n3-2396.
 _:n3-2397 shacl:class skos:Concept;
     shacl:description "De wetenschappelijke soortnaam van het vegetatie-element.";
     shacl:minCount 1;
     shacl:name "soortnaamWetenschappelijk";
     shacl:path <http://rs.tdwg.org/dwc/terms/scientificName>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#VegetatieElementShape> shacl:property _:n3-2397;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#VegetatieElement>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#VegetatiewandShape> a shacl:NodeShape;
+vegetatie-elementen-ap:VegetatieElementShape shacl:property _:n3-2397;
+    shacl:targetClass vegetatie:VegetatieElement.
+vegetatie-elementen-ap:VegetatiewandShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Vegetatiewand>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#VormboomShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:Vegetatiewand.
+vegetatie-elementen-ap:VormboomShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#Vormboom>.
-<https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#ZelfhechtendeKlimvormShape> a shacl:NodeShape;
+    shacl:targetClass vegetatie:Vormboom.
+vegetatie-elementen-ap:ZelfhechtendeKlimvormShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#ZelfhechtendeKlimvorm>.
+    shacl:targetClass vegetatie:ZelfhechtendeKlimvorm.

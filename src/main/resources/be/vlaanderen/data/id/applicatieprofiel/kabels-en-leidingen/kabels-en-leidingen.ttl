@@ -1,53 +1,262 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/> a <http://purl.org/ontology/bibo/Document>;
     dcterms:language "nl"@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#status> vocab:role vocab:status.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#respecHeader> vocab:role vocab:contentinfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#metainfo> vocab:role vocab:metainfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#main> vocab:role vocab:main.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#h2_sotd> vocab:role vocab:heading.
 <https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#ref> a <http://purl.org/ontology/bibo/Chapter>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#ref>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#h2_sotd> vocab:role vocab:heading.
 <https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/> dcterms:type dcmitype:Text;
     dcterms:title "Deze specificatie"@nl;
-    <http://creativecommons.org/ns#attributionURL> <https://data.vlaanderen.be/id/organisatie/OVO002949>;
-    <http://creativecommons.org/ns#attributionName> "Digitaal Vlaanderen"@nl;
-    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#adres> a rdfs:Property;
+    creativecommons:attributionURL <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    creativecommons:attributionName "Digitaal Vlaanderen"@nl;
+    vocab:license <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#conformance> vocab:role vocab:heading.
+nutsvoorzieningen:adres a rdfs:Property;
     rdfs:label "\n                            \n                            adres\n                          "@nl;
     rdfs:comment "Adres van de aansluiting."@nl;
     vann:usageNote ""@nl.
@@ -55,11 +264,11 @@
     rdfs:label "\n                            \n                            toebehorentype\n                          "@nl;
     rdfs:comment "Aard van het Toebehoren."@nl;
     vann:usageNote "Aansluiting is een specialisatie van Toebehoren waarbij het type Toebehoren \"aansluitingspunt\" is."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#documentatie> a rdfs:Property;
+nutsvoorzieningen:documentatie a rdfs:Property;
     rdfs:label "\n                            \n                            documentatie\n                          "@nl;
     rdfs:comment "Verwijzing naar een Document met extra informatie over het Activiteitencomplex."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#functie> a rdfs:Property;
+nutsvoorzieningen:functie a rdfs:Property;
     rdfs:label "\n                            \n                            functie\n                          "@nl;
     rdfs:comment "Activiteiten uitgevoerd door het complex."@nl;
     vann:usageNote "Eventueel aangevuld met informatie over inputs en outputs van de activiteiten."@nl.
@@ -67,7 +276,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "Geometrie van het Activiteitencomplex om de ligging en omvang ervan te beschrijven."@nl;
     vann:usageNote ""@nl.
-<http://www.w3.org/ns/adms#identifier> a rdfs:Property;
+adms:identifier a rdfs:Property;
     rdfs:label "\n                            \n                            identificator\n                          "@nl;
     rdfs:comment "Externe Identificator van het complex."@nl;
     vann:usageNote ""@nl.
@@ -79,7 +288,7 @@ dcterms:title a rdfs:Property;
     rdfs:label "\n                            \n                            naam\n                          "@nl;
     rdfs:comment "Naam waaronder het complex gekend is."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#op> a rdfs:Property;
+nutsvoorzieningen:op a rdfs:Property;
     rdfs:label "\n                            \n                            op\n                          "@nl;
     rdfs:comment "Nutsvoorzieningnetwerkelement dat behoort tot het complex."@nl;
     vann:usageNote ""@nl.
@@ -87,15 +296,15 @@ dc11:type a rdfs:Property;
     rdfs:label "\n                            \n                            annotatietype\n                          "@nl;
     rdfs:comment "Aard van de Annotatie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#deel> a rdfs:Property;
+nutsvoorzieningen:deel a rdfs:Property;
     rdfs:label "\n                            \n                            deel\n                          "@nl;
     rdfs:comment "Annotatie die deel uitmaakt van de Annotatie."@nl;
     vann:usageNote "Bvb de maatvoeringslijn in het geval van een Maataanduiding bestaande uit twee pijlen en een maatvoeringshulplijn."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#geassocieerdMet> a rdfs:Property;
+nutsvoorzieningen:geassocieerdMet a rdfs:Property;
     rdfs:label "\n                            \n                            geassocieerd met\n                          "@nl;
     rdfs:comment "Object waar de Annotatie betrekking op heeft"@nl;
     vann:usageNote "Bvb een kabel."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#geheel> a rdfs:Property;
+nutsvoorzieningen:geheel a rdfs:Property;
     rdfs:label "\n                            \n                            geheel\n                          "@nl;
     rdfs:comment "Annotatie waarvan de Annotatie deel uitmaakt."@nl;
     vann:usageNote "Bvb de Maataanduiding waartoe de maatvoeringslijn behoort."@nl.
@@ -103,11 +312,11 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            locatie\n                          "@nl;
     rdfs:comment "Geometrie van de Annotatie."@nl;
     vann:usageNote "Bvb de ligging en vorm van een Maataanduiding."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#rotatiehoek> a rdfs:Property;
+nutsvoorzieningen:rotatiehoek a rdfs:Property;
     rdfs:label "\n                            \n                            rotatiehoek\n                          "@nl;
     rdfs:comment "Hoek waarmee de Annotatie bij weergave moet worden geroteerd."@nl;
     vann:usageNote "Typisch om de Annotatie te aligneren met het Object waarop het betrekking heeft, bvb evenwijdig met de kabel."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#tekst> a rdfs:Property;
+nutsvoorzieningen:tekst a rdfs:Property;
     rdfs:label "\n                            \n                            tekst\n                          "@nl;
     rdfs:comment "Tekst van de Annotatie."@nl;
     vann:usageNote "Bvb de maat in het geval van een Maataanduiding."@nl.
@@ -135,7 +344,7 @@ dc11:description a rdfs:Property;
     rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
     rdfs:comment "Beschrijving van het Document."@nl;
     vann:usageNote ""@nl.
-<http://www.w3.org/ns/adms#Identifier> a rdfs:Property;
+adms:Identifier a rdfs:Property;
     rdfs:label "\n                            \n                            documentidentificator\n                          "@nl;
     rdfs:comment "Identificator van het Document."@nl;
     vann:usageNote ""@nl.
@@ -155,15 +364,15 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            verwijstNaar\n                          "@nl;
     rdfs:comment "Het Object waar het Document betrekking op heeft."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#nominaleSpanning> a rdfs:Property;
+nutsvoorzieningen:nominaleSpanning a rdfs:Property;
     rdfs:label "\n                            \n                            nominale Spanning\n                          "@nl;
     rdfs:comment "Spanning zonder belasting."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#werkspanning> a rdfs:Property;
+nutsvoorzieningen:werkspanning a rdfs:Property;
     rdfs:label "\n                            \n                            werkspanning\n                          "@nl;
     rdfs:comment "Spanning tijdens belasting."@nl;
     vann:usageNote ""@nl.
-<http://fixme.com#activiteit> a rdfs:Property;
+fixme.com:activiteit a rdfs:Property;
     rdfs:label "\n                            \n                            activiteit\n                          "@nl;
     rdfs:comment "Classificatie van de activiteit."@nl;
     vann:usageNote "Gebruik bij voorkeur de NACE codes."@nl.
@@ -171,15 +380,15 @@ dc11:description a rdfs:Property;
     rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
     rdfs:comment "Een meer gedtailleerde beschrijving van de functie."@nl;
     vann:usageNote ""@nl.
-<http://fixme.com#input> a rdfs:Property;
+fixme.com:input a rdfs:Property;
     rdfs:label "\n                            \n                            input\n                          "@nl;
     rdfs:comment "Invoer voor de activiteit in de functie."@nl;
     vann:usageNote ""@nl.
-<http://fixme.com#output> a rdfs:Property;
+fixme.com:output a rdfs:Property;
     rdfs:label "\n                            \n                            output\n                          "@nl;
     rdfs:comment "Uitvoer van het resultaat van de activiteit in de functie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#kabeldiameter> a rdfs:Property;
+nutsvoorzieningen:kabeldiameter a rdfs:Property;
     rdfs:label "\n                            \n                            kabeldiameter\n                          "@nl;
     rdfs:comment "Diameter van de kabel."@nl;
     vann:usageNote ""@nl.
@@ -199,7 +408,7 @@ dcterms:type a rdfs:Property;
     rdfs:label "\n                            \n                            kanaal\n                          "@nl;
     rdfs:comment "Kanaal gelegen in het Kanaal."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#kanaalbreedte> a rdfs:Property;
+nutsvoorzieningen:kanaalbreedte a rdfs:Property;
     rdfs:label "\n                            \n                            kanaalbreedte\n                          "@nl;
     rdfs:comment "Breedte van het Kanaal"@nl;
     vann:usageNote ""@nl.
@@ -219,15 +428,15 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            documentatie\n                          "@nl;
     rdfs:comment "Verwijzing naar een Document met extra informatie over het element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#geldigTot> a rdfs:Property;
+nutsvoorzieningen:geldigTot a rdfs:Property;
     rdfs:label "\n                            \n                            geldigTot\n                          "@nl;
     rdfs:comment "Tijdstip tot wanneer het element in de werkelijkheid bestond."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#geldigVan> a rdfs:Property;
+nutsvoorzieningen:geldigVan a rdfs:Property;
     rdfs:label "\n                            \n                            geldigVan\n                          "@nl;
     rdfs:comment "Tijdstip vanaf wanneer het element in de werkelijkheid bestond."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#huidigeStatus> a rdfs:Property;
+nutsvoorzieningen:huidigeStatus a rdfs:Property;
     rdfs:label "\n                            \n                            huidigeStatus\n                          "@nl;
     rdfs:comment "De status van het element met betrekking tot de voltooiing en het gebruik ervan."@nl;
     vann:usageNote ""@nl.
@@ -239,15 +448,15 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            verticalePositie\n                          "@nl;
     rdfs:comment "Algemene aanduiding van de VerticalePositie van het element."@nl;
     vann:usageNote "Bv ondergronds, bovengronds."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#verticalePositiedetail> a rdfs:Property;
+nutsvoorzieningen:verticalePositiedetail a rdfs:Property;
     rdfs:label "\n                            \n                            verticalePositiedetail\n                          "@nl;
     rdfs:comment "Detail van de VerticalePositie van het element."@nl;
     vann:usageNote "Bv diepte."@nl.
-<https://data.vlaanderen.be/ns/netwerk#beginlink> a rdfs:Property;
+netwerk:beginlink a rdfs:Property;
     rdfs:label "\n                            \n                            beginlink\n                          "@nl;
     rdfs:comment "Link waarvan de Knoop de beginKnoop is."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/netwerk#eindlink> a rdfs:Property;
+netwerk:eindlink a rdfs:Property;
     rdfs:label "\n                            \n                            eindlink\n                          "@nl;
     rdfs:comment "Link waarvan de Knoop de eindKnoop is."@nl;
     vann:usageNote ""@nl.
@@ -275,7 +484,7 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "Geometrie van de container"@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#knoop> a rdfs:Property;
+nutsvoorzieningen:knoop a rdfs:Property;
     rdfs:label "\n                            \n                            knoop\n                          "@nl;
     rdfs:comment "Nutsvoorzieningknoop die de Nutsvoorzieningknoopcontainer omvat."@nl;
     vann:usageNote ""@nl.
@@ -295,7 +504,7 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            zichtbaarheid\n                          "@nl;
     rdfs:comment "Mate waarin de container waarneembaar is."@nl;
     vann:usageNote "Bvb nietBovengrondsZichtbaar."@nl.
-<https://data.vlaanderen.be/ns/netwerk#eindknoop> a rdfs:Property;
+netwerk:eindknoop a rdfs:Property;
     rdfs:label "\n                            \n                            eindknoop\n                          "@nl;
     rdfs:comment "Knoop waarmee de Link begint."@nl;
     vann:usageNote ""@nl.
@@ -303,7 +512,7 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            middelijngeometrie\n                          "@nl;
     rdfs:comment "De geometrie van de middellijn van de link."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/netwerk#beginknoop> a rdfs:Property;
+netwerk:beginknoop a rdfs:Property;
     rdfs:label "\n                            \n                            startknoop\n                          "@nl;
     rdfs:comment "Knoop waarmee de Link eindigt."@nl;
     vann:usageNote ""@nl.
@@ -315,11 +524,11 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            link\n                          "@nl;
     rdfs:comment "Nutsvoorzieninglinksequentie of Nutsvoorzieninglink die deel uitmaakt van de Linkset."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#materiaaltype> a rdfs:Property;
+nutsvoorzieningen:materiaaltype a rdfs:Property;
     rdfs:label "\n                            \n                            materiaaltype\n                          "@nl;
     rdfs:comment "Soort materiaal waaruit de Linkset bestaat."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#nutsvoorzieningleveringstype> a rdfs:Property;
+nutsvoorzieningen:nutsvoorzieningleveringstype a rdfs:Property;
     rdfs:label "\n                            \n                            nutsvoorzieningleveringstype\n                          "@nl;
     rdfs:comment "Manier waarop de nutsvoorziening wordt geleverd."@nl;
     vann:usageNote "Bvb transport, distributie, collectie. Resp bvb van gas, elektriciteit, afvalwater."@nl.
@@ -327,7 +536,7 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            risico\n                          "@nl;
     rdfs:comment "Geeft aan of de linkset als gevaarlijk kan beschouwd worden."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#technischeSpecificate> a rdfs:Property;
+nutsvoorzieningen:technischeSpecificate a rdfs:Property;
     rdfs:label "\n                            \n                            technischeSpecificatie\n                          "@nl;
     rdfs:comment "Nadere bepaling van de linkset."@nl;
     vann:usageNote "Bijvoorbeeld 4g10 om 4-aderige kabel van 10mm doorsnee te specifiëren."@nl.
@@ -335,7 +544,7 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            uiterlijk\n                          "@nl;
     rdfs:comment "Uitzicht van de Linkset."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#waarschuwingstype> a rdfs:Property;
+nutsvoorzieningen:waarschuwingstype a rdfs:Property;
     rdfs:label "\n                            \n                            waarschuwingstype\n                          "@nl;
     rdfs:comment "Manier waarop voor de aanwezigheid van de Linkset wordt gewaarschuwd."@nl;
     vann:usageNote "Bijvoorbeeld een ondergrondse beschermplaat of net."@nl.
@@ -343,15 +552,15 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            zichtbaarheid\n                          "@nl;
     rdfs:comment "Mate waarin de linkset waarneembaar is."@nl;
     vann:usageNote "Bvb nietBovengrondsZichtbaar."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#activiteitencomplexreferentie> a rdfs:Property;
+nutsvoorzieningen:activiteitencomplexreferentie a rdfs:Property;
     rdfs:label "\n                            \n                            activiteitencomplexreferentie\n                          "@nl;
     rdfs:comment "Activiteitencomplex dat tot het netwerk behoort."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#bevoegdePartij> a rdfs:Property;
+nutsvoorzieningen:bevoegdePartij a rdfs:Property;
     rdfs:label "\n                            \n                            bevoegdePartij\n                          "@nl;
     rdfs:comment "Partijen die bevoegd zijn om het Nutsvoorzieningnetwerk te beheren, exploiteren of er eigenaar van is."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#disclaimer> a rdfs:Property;
+nutsvoorzieningen:disclaimer a rdfs:Property;
     rdfs:label "\n                            \n                            disclaimer\n                          "@nl;
     rdfs:comment "Wettelijke tekst waarin vertrouwelijkheidsclausules worden beschreven die van toepassing zijn op de informatie over het nutsnetwerk."@nl;
     vann:usageNote ""@nl.
@@ -359,7 +568,7 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            documentatie\n                          "@nl;
     rdfs:comment "Verwijzing naar een Document met extra informatie over het Netwerk."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#element> a rdfs:Property;
+nutsvoorzieningen:element a rdfs:Property;
     rdfs:label "\n                            \n                            element\n                          "@nl;
     rdfs:comment "Nutsvoorzieningnetwerkelement dat tot het netwerk behoort."@nl;
     vann:usageNote ""@nl.
@@ -367,7 +576,7 @@ dc11:relation a rdfs:Property;
     rdfs:label "\n                            \n                            geografischeNaam\n                          "@nl;
     rdfs:comment "Naam waaronder het netwerk bekend staat."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#netwerk> a rdfs:Property;
+nutsvoorzieningen:netwerk a rdfs:Property;
     rdfs:label "\n                            \n                            netwerk\n                          "@nl;
     rdfs:comment "Nutsvoorzieningnetwerk dat met het Nutsvoorzieningnetwerk is geassocieerd."@nl;
     vann:usageNote "Bvb een deelnetwerk."@nl.
@@ -375,15 +584,15 @@ dc11:type a rdfs:Property;
     rdfs:label "\n                            \n                            nutsvoorzieningnetwerktype\n                          "@nl;
     rdfs:comment "Het type nutsvoorzieningnetwerk of het thema van het nutsvoorzieningnetwerk."@nl;
     vann:usageNote "Gebruikt de codelijst \"Nutsvoorzieningnetwerktype\" om de mogelijke nutsvoorzieningnetwerken te beschrijven. Dit bevat ook de waarde 'crossTheme' die moet worden gebruikt voor nutsvoorzieningnetwerken die kabels of leidingen uit verschillende thema's kunnen bevatten, die doorgaans worden gebruikt door aanbieders van nutsvoorzieningnetwerken die leidingen leveren."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#standaardVerticalePositiedetail> a rdfs:Property;
+nutsvoorzieningen:standaardVerticalePositiedetail a rdfs:Property;
     rdfs:label "\n                            \n                            standaardVerticalePositiedetail\n                          "@nl;
     rdfs:comment "Standaard VerticalePositie van elementen in het netwerk."@nl;
     vann:usageNote "Bv de standaard Diepte waarop de elementen zich bevinden."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#olieGasChemicalienProducttype> a rdfs:Property;
+nutsvoorzieningen:olieGasChemicalienProducttype a rdfs:Property;
     rdfs:label "\n                            \n                            olieGasChemicaliënProducttype\n                          "@nl;
     rdfs:comment "Het type olie-, gas- of chemisch product dat door de olie-, gas- of chemische pijp wordt getransporteerd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#paalhoogte> a rdfs:Property;
+nutsvoorzieningen:paalhoogte a rdfs:Property;
     rdfs:label "\n                            \n                            paalhoogte\n                          "@nl;
     rdfs:comment "Hoogte van de Paal."@nl;
     vann:usageNote ""@nl.
@@ -391,7 +600,7 @@ dcterms:type a rdfs:Property;
     rdfs:label "\n                            \n                            containertype\n                          "@nl;
     rdfs:comment "Aard van de Pijp als container."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#druk> a rdfs:Property;
+nutsvoorzieningen:druk a rdfs:Property;
     rdfs:label "\n                            \n                            druk\n                          "@nl;
     rdfs:comment "De maximaal toegestane operationele druk waarbij een product door een Pijp wordt getransporteerd."@nl;
     vann:usageNote "De meeteenheid voor druk wordt meestal uitgedrukt in 'bar'."@nl.
@@ -403,7 +612,7 @@ dcterms:type a rdfs:Property;
     rdfs:label "\n                            \n                            pijp\n                          "@nl;
     rdfs:comment "Andere Pijp gelegen in de Pijp."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#pijpdiameter> a rdfs:Property;
+nutsvoorzieningen:pijpdiameter a rdfs:Property;
     rdfs:label "\n                            \n                            pijpdiameter\n                          "@nl;
     rdfs:comment "Buitendiameter van de Pijp."@nl;
     vann:usageNote "Voor convex gevormde objecten (bijvoorbeeld een cirkel) is de diameter gedefinieerd als de grootste afstand die gevormd kan worden tussen twee tegenover elkaar liggende parallelle lijnen die raken aan de rand."@nl.
@@ -415,19 +624,19 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            locatie\n                          "@nl;
     rdfs:comment "Geometrie van de locatie waarop het Plan betrekking heeft."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#rioolwatertype> a rdfs:Property;
+nutsvoorzieningen:rioolwatertype a rdfs:Property;
     rdfs:label "\n                            \n                            rioolwatertype\n                          "@nl;
     rdfs:comment "Type van rioolwater."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#telecommunicatiekabelmateriaaltype> a rdfs:Property;
+nutsvoorzieningen:telecommunicatiekabelmateriaaltype a rdfs:Property;
     rdfs:label "\n                            \n                            telecommunicatiekabelmateriaaltype\n                          "@nl;
     rdfs:comment "Type van kabelmateriaal."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#temperatuur> a rdfs:Property;
+nutsvoorzieningen:temperatuur a rdfs:Property;
     rdfs:label "\n                            \n                            temperatuur\n                          "@nl;
     rdfs:comment "De maximum toelaatbare temperatuur van de inhoud van de Pijp."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#thermischProducttype> a rdfs:Property;
+nutsvoorzieningen:thermischProducttype a rdfs:Property;
     rdfs:label "\n                            \n                            thermischProducttype\n                          "@nl;
     rdfs:comment "Het type thermisch product dat door de ThermischePijp wordt getransporteerd."@nl;
     vann:usageNote ""@nl.
@@ -447,11 +656,11 @@ dc11:type a rdfs:Property;
     rdfs:label "\n                            \n                            topografisch elementtype\n                          "@nl;
     rdfs:comment "Aard van het TopografischElement."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#torenhoogte> a rdfs:Property;
+nutsvoorzieningen:torenhoogte a rdfs:Property;
     rdfs:label "\n                            \n                            torenhoogte\n                          "@nl;
     rdfs:comment "Hoogte van de Toren."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#watertype> a rdfs:Property;
+nutsvoorzieningen:watertype a rdfs:Property;
     rdfs:label "\n                            \n                            watertype\n                          "@nl;
     rdfs:comment "Type van het water."@nl;
     vann:usageNote ""@nl.
@@ -467,11 +676,11 @@ locn:addressArea a rdfs:Property;
     rdfs:label "\n                            adresgebied\n                          "@nl;
     rdfs:comment "Naam ve geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is"@nl;
     vann:usageNote "Bvb de naam van het gehucht waarin het adres ligt."@nl.
-<https://data.vlaanderen.be/ns/adres#busnummer> a rdfs:Property;
+adres:busnummer a rdfs:Property;
     rdfs:label "\n                            busnummer\n                          "@nl;
     rdfs:comment "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."@nl;
     vann:usageNote "Specialisatie van Adresvoorstelling.locatieaanduiding tbv Belgische adressen."@nl.
-<https://data.vlaanderen.be/ns/adres#gemeentenaam> a rdfs:Property;
+adres:gemeentenaam a rdfs:Property;
     rdfs:label "\n                            gemeentenaam\n                          "@nl;
     rdfs:comment "Gemeentenaam van het adres."@nl;
     vann:usageNote " "@nl.
@@ -479,7 +688,7 @@ locn:addressArea a rdfs:Property;
     rdfs:label "\n                            huisnummer\n                          "@nl;
     rdfs:comment "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."@nl;
     vann:usageNote "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."@nl.
-<https://data.vlaanderen.be/ns/adres#land> a rdfs:Property;
+adres:land a rdfs:Property;
     rdfs:label "\n                            land\n                          "@nl;
     rdfs:comment "Land waarin het adres gelegen is."@nl;
     vann:usageNote " "@nl.
@@ -507,7 +716,7 @@ locn:thoroughfare a rdfs:Property;
     rdfs:label "\n                            straatnaam\n                          "@nl;
     rdfs:comment "Straatnaam van het adres."@nl;
     vann:usageNote " "@nl.
-<https://data.vlaanderen.be/ns/adres#verwijstNaar> a rdfs:Property;
+adres:verwijstNaar a rdfs:Property;
     rdfs:label "\n                            verwijst Naar\n                          "@nl;
     rdfs:comment "Adres waarvan de adresvoorstelling is afgeleid."@nl;
     vann:usageNote "Dit kan enkel voor Belgische adressen aangezien onder adres een Belgisch adres wordt verstaan."@nl.
@@ -515,11 +724,11 @@ locn:fullAddress a rdfs:Property;
     rdfs:label "\n                            volledig Adres\n                          "@nl;
     rdfs:comment "Het complete adres in één string, al dan niet geformatteerd."@nl;
     vann:usageNote "Vermijdt fouten tgv het opsplitsen ve adres in zijn onderdelen. Geeft de voorgeschreven volgorde vd verschillende onderdelen weer."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#diepte> a rdfs:Property;
+nutsvoorzieningen:diepte a rdfs:Property;
     rdfs:label "\n                            diepte\n                          "@nl;
     rdfs:comment "Afstand onder het Referentieoppervlak."@nl;
     vann:usageNote ""@nl.
-<http://www.opengis.net/ont/geosparql#asGML> a rdfs:Property;
+geosparql:asGML a rdfs:Property;
     rdfs:label "\n                            gml\n                          "@nl;
     rdfs:comment "Directe positie uitgedrukt in gml-formaat."@nl;
     vann:usageNote "Gebruik gmlliteral als datatype."@nl.
@@ -527,15 +736,15 @@ locn:fullAddress a rdfs:Property;
     rdfs:label "\n                            opmeting\n                          "@nl;
     rdfs:comment "De manier waarop de positie werd bepaald."@nl;
     vann:usageNote ""@nl.
-<http://www.opengis.net/ont/geosparql#asWKT> a rdfs:Property;
+geosparql:asWKT a rdfs:Property;
     rdfs:label "\n                            wkt\n                          "@nl;
     rdfs:comment "Directe positie uitgedrukt in wkt-formaat."@nl;
     vann:usageNote "Gebruik wktliteral als datatype."@nl.
-<http://www.opengis.net/ont/geosparql#asGML> a rdfs:Property;
+geosparql:asGML a rdfs:Property;
     rdfs:label "\n                            als GML\n                          "@nl;
     rdfs:comment "Geometrie uitgedrukt in gml-formaat."@nl;
     vann:usageNote "Use gmlliteral as datatype."@nl.
-<http://www.opengis.net/ont/geosparql#asWKT> a rdfs:Property;
+geosparql:asWKT a rdfs:Property;
     rdfs:label "\n                            als WKT\n                          "@nl;
     rdfs:comment "Geometrie uitgedrukt in wkt-formaat."@nl;
     vann:usageNote "Gebruik wktliteral als datatype."@nl.
@@ -547,7 +756,7 @@ locn:fullAddress a rdfs:Property;
     rdfs:label "\n                            link\n                          "@nl;
     rdfs:comment "Verwijzing naar de Link."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/netwerk#richting> a rdfs:Property;
+netwerk:richting a rdfs:Property;
     rdfs:label "\n                            richting\n                          "@nl;
     rdfs:comment "Geeft aan of de GerichteLink de oorspronkelijke richting van de Link volgt of niet (positief indien gelijklopend, negatief indien tegengesteld)."@nl;
     vann:usageNote ""@nl.
@@ -563,7 +772,7 @@ dcterms:creator a rdfs:Property;
     rdfs:label "\n                            toegekend door\n                          "@nl;
     rdfs:comment "Link naar de agent die de identificator heeft uitgegeven."@nl;
     vann:usageNote " "@nl.
-<http://www.w3.org/ns/adms#schemaAgency> a rdfs:Property;
+adms:schemaAgency a rdfs:Property;
     rdfs:label "\n                            toegekend door (String)\n                          "@nl;
     rdfs:comment "Naam vd agent die de identificator heeft toegekend."@nl;
     vann:usageNote " "@nl.
@@ -591,7 +800,7 @@ dc11:date a rdfs:Property;
     rdfs:label "\n                            methode\n                          "@nl;
     rdfs:comment "Aard van de gebruikte methode."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#nauwkeurigheid> a rdfs:Property;
+nutsvoorzieningen:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De PositioneleNauwkeurigheid van de Opmeting."@nl;
     vann:usageNote ""@nl.
@@ -611,11 +820,11 @@ dc11:type a rdfs:Property;
     rdfs:label "\n                            verticalePositie\n                          "@nl;
     rdfs:comment "De VerticalePositie van het Referentieoppervlak als positie in een verticaal coördinaatsysteem."@nl;
     vann:usageNote "Bvb in België de z-coördinaat in TAW."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#kleur> a rdfs:Property;
+nutsvoorzieningen:kleur a rdfs:Property;
     rdfs:label "\n                            kleur\n                          "@nl;
     rdfs:comment "De kleur van het object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#afstand> a rdfs:Property;
+nutsvoorzieningen:afstand a rdfs:Property;
     rdfs:label "\n                            afstand\n                          "@nl;
     rdfs:comment "De VerticalePositie als afstand tov het Referentieoppervlak."@nl;
     vann:usageNote "Bvb de afstand tov het maaiveld."@nl.
@@ -623,7 +832,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            ligging\n                          "@nl;
     rdfs:comment "Locatie waarvoor de VerticalePositie geldt."@nl;
     vann:usageNote "Typisch de xy-coördinaten van het Punt op het aardoppervlak waar de VerticalePositie is gemeten. Of de xy-coördinaten van de leiding of kabel of van de zone waarin deze ligt."@nl.
-<https://data.vlaanderen.be/ns/nutsvoorzieningen#referentieOppervlak> a rdfs:Property;
+nutsvoorzieningen:referentieOppervlak a rdfs:Property;
     rdfs:label "\n                            referentieOppervlak\n                          "@nl;
     rdfs:comment "Verwijzing naar het Referentieoppervlak."@nl;
     vann:usageNote "Bvb het maaiveld."@nl.
@@ -631,4 +840,4 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            verticalePositie\n                          "@nl;
     rdfs:comment "De VerticalePositie als positie in een verticaal coördinaatsysteem."@nl;
     vann:usageNote "Bvb in België de z-coördinaat in TAW."@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/#h2_sotd> vocab:role vocab:heading, vocab:heading.

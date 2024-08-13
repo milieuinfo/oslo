@@ -1,603 +1,812 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap> <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-apshapes> <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GeometrieShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#LijnstringShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#PuntShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#PolygoonShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GeografischeNaamShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#RelatieObjectShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#NauwkeurigsheidsklassenShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GraftypesShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#MaterialenShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#StraatkolktypesShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OrganisatieShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#CollectieShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DeelShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ElementShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekObjectShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekVoorkomenShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#BegraafplaatsRijShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ColumbariumShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GrafShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#StrooiweideShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#UrnenveldShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#BegraafplaatsShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GebiedShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#AanplakbordShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#AfsluitingShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#BestendigeAfsluitingShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DekselShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DraadafsluitingShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FietsstallingShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#InfozuilShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#InfrastructuurelementShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#LichtpuntShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#NormandischeAfsluitingShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OpenbaarToiletShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OpenbareStraatverlichtingAanGevelOfMuurShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OpenbareVerlichtingShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OpenbareVuilnisbakShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#PaneelafsluitingShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#RoosterShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#SelectieveAfsluitingShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#SlagboomShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#SpandraadKettingShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#StraatkolkShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#StraatmeubilairShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ToegangspoortShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#VerlichtingspaalShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ZichtbaarDekselOfLuikShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ZitbankShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GroendakShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GroenvlakShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TerreinVoorkomenShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TerreindeelShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TrapShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#VoetwegShape>, <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#KwantitatieveWaardeShape>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#AanplakbordShape> a shacl:NodeShape;
+<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap> <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-apshapes> begraafplaatsenbeheer-ap:ContactinfoShape, begraafplaatsenbeheer-ap:GeometrieShape, begraafplaatsenbeheer-ap:LijnstringShape, begraafplaatsenbeheer-ap:PuntShape, begraafplaatsenbeheer-ap:PolygoonShape, begraafplaatsenbeheer-ap:GeografischeNaamShape, begraafplaatsenbeheer-ap:RelatieObjectShape, begraafplaatsenbeheer-ap:NauwkeurigsheidsklassenShape, begraafplaatsenbeheer-ap:GraftypesShape, begraafplaatsenbeheer-ap:MaterialenShape, begraafplaatsenbeheer-ap:StraatkolktypesShape, begraafplaatsenbeheer-ap:OrganisatieShape, begraafplaatsenbeheer-ap:CollectieShape, begraafplaatsenbeheer-ap:DeelShape, begraafplaatsenbeheer-ap:ElementShape, begraafplaatsenbeheer-ap:FysiekObjectShape, begraafplaatsenbeheer-ap:FysiekVoorkomenShape, begraafplaatsenbeheer-ap:BegraafplaatsRijShape, begraafplaatsenbeheer-ap:ColumbariumShape, begraafplaatsenbeheer-ap:GrafShape, begraafplaatsenbeheer-ap:StrooiweideShape, begraafplaatsenbeheer-ap:UrnenveldShape, begraafplaatsenbeheer-ap:BegraafplaatsShape, begraafplaatsenbeheer-ap:GebiedShape, begraafplaatsenbeheer-ap:AanplakbordShape, begraafplaatsenbeheer-ap:AfsluitingShape, begraafplaatsenbeheer-ap:BestendigeAfsluitingShape, begraafplaatsenbeheer-ap:DekselShape, begraafplaatsenbeheer-ap:DraadafsluitingShape, begraafplaatsenbeheer-ap:FietsstallingShape, begraafplaatsenbeheer-ap:InfozuilShape, begraafplaatsenbeheer-ap:InfrastructuurelementShape, begraafplaatsenbeheer-ap:LichtpuntShape, begraafplaatsenbeheer-ap:NormandischeAfsluitingShape, begraafplaatsenbeheer-ap:OpenbaarToiletShape, begraafplaatsenbeheer-ap:OpenbareStraatverlichtingAanGevelOfMuurShape, begraafplaatsenbeheer-ap:OpenbareVerlichtingShape, begraafplaatsenbeheer-ap:OpenbareVuilnisbakShape, begraafplaatsenbeheer-ap:PaneelafsluitingShape, begraafplaatsenbeheer-ap:RoosterShape, begraafplaatsenbeheer-ap:SelectieveAfsluitingShape, begraafplaatsenbeheer-ap:SlagboomShape, begraafplaatsenbeheer-ap:SpandraadKettingShape, begraafplaatsenbeheer-ap:StraatkolkShape, begraafplaatsenbeheer-ap:StraatmeubilairShape, begraafplaatsenbeheer-ap:ToegangspoortShape, begraafplaatsenbeheer-ap:VerlichtingspaalShape, begraafplaatsenbeheer-ap:ZichtbaarDekselOfLuikShape, begraafplaatsenbeheer-ap:ZitbankShape, begraafplaatsenbeheer-ap:GroendakShape, begraafplaatsenbeheer-ap:GroenvlakShape, begraafplaatsenbeheer-ap:TerreinVoorkomenShape, begraafplaatsenbeheer-ap:TerreindeelShape, begraafplaatsenbeheer-ap:TrapShape, begraafplaatsenbeheer-ap:VoetwegShape, begraafplaatsenbeheer-ap:KwantitatieveWaardeShape.
+begraafplaatsenbeheer-ap:AanplakbordShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Aanplakbord>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#AfsluitingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Aanplakbord.
+begraafplaatsenbeheer-ap:AfsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Afsluiting>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#BegraafplaatsRijShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Afsluiting.
+begraafplaatsenbeheer-ap:BegraafplaatsRijShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#BegraafplaatsRij>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#BegraafplaatsShape> a shacl:NodeShape;
+    shacl:targetClass begraafplaats:BegraafplaatsRij.
+begraafplaatsenbeheer-ap:BegraafplaatsShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2236 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of er al dan niet nog aan actieve lijkbezorging gedaan wordt op de begraafplaats.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "actieveLijkbezorging";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/gebied#actieveLijkbezorging>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#BegraafplaatsShape> shacl:property _:n3-2236.
+    shacl:path gebied:actieveLijkbezorging.
+begraafplaatsenbeheer-ap:BegraafplaatsShape shacl:property _:n3-2236.
 _:n3-2237 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de begraafplaats al dan niet geschikt is voor lichte recreatie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "lichteRecreatie";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/gebied#lichteRecreatie>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#BegraafplaatsShape> shacl:property _:n3-2237;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/gebied#Begraafplaats>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#BestendigeAfsluitingShape> a shacl:NodeShape;
+    shacl:path gebied:lichteRecreatie.
+begraafplaatsenbeheer-ap:BegraafplaatsShape shacl:property _:n3-2237;
+    shacl:targetClass gebied:Begraafplaats.
+begraafplaatsenbeheer-ap:BestendigeAfsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#BestendigeAfsluiting>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#CollectieShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:BestendigeAfsluiting.
+begraafplaatsenbeheer-ap:CollectieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2238 shacl:class <https://data.vlaanderen.be/ns/openbaardomein#FysiekObject>;
+_:n3-2238 shacl:class openbaardomein:FysiekObject;
     shacl:description "Relatie naar de objecten die deel uitmaken van de collectie.";
     shacl:name "bevat";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#bevat>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#CollectieShape> shacl:property _:n3-2238.
+    shacl:path openbaardomein:bevat.
+begraafplaatsenbeheer-ap:CollectieShape shacl:property _:n3-2238.
 _:n3-2239 shacl:datatype xsd:string;
     shacl:description "Een titel voor de collectie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "titel";
     shacl:path dcterms:title.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#CollectieShape> shacl:property _:n3-2239;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein#Collectie>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ColumbariumShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:CollectieShape shacl:property _:n3-2239;
+    shacl:targetClass openbaardomein:Collectie.
+begraafplaatsenbeheer-ap:ColumbariumShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#Columbarium>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape> a shacl:NodeShape;
+    shacl:targetClass begraafplaats:Columbarium.
+begraafplaatsenbeheer-ap:ContactinfoShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2240 shacl:datatype rdf:langString;
     shacl:description "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen.";
     shacl:maxCount 1;
     shacl:name "aanschrijfvorm";
     shacl:path vcard:honorific-prefix.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape> shacl:property _:n3-2240.
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2240.
 _:n3-2241 shacl:class locn:Address;
     shacl:description "Adres dat men kan aanschrijven of bezoeken.";
     shacl:maxCount 1;
     shacl:name "adres";
     shacl:path locn:address.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape> shacl:property _:n3-2241.
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2241.
 _:n3-2242 shacl:class schemas:OpeningHoursSpecification;
     shacl:description "Periode waarin contact kan worden opgenomen.";
     shacl:maxCount 1;
     shacl:name "beschikbaarheid";
     shacl:path schema:hoursAvailable.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape> shacl:property _:n3-2242.
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2242.
 _:n3-2243 shacl:datatype xsd:string;
     shacl:description "Naam van bvb de persoon die men kan contacteren.";
     shacl:maxCount 1;
     shacl:name "contactnaam";
     shacl:path foaf:name.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape> shacl:property _:n3-2243.
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2243.
 _:n3-2244 shacl:datatype xsd:string;
     shacl:description "Email-adres waarnaar men kan mailen.";
     shacl:maxCount 1;
     shacl:name "email";
     shacl:path schema:email.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape> shacl:property _:n3-2244.
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2244.
 _:n3-2245 shacl:datatype xsd:string;
     shacl:description "Faxnummer waarnaar men kan faxen.";
     shacl:maxCount 1;
     shacl:name "fax";
     shacl:path schema:faxNumber.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape> shacl:property _:n3-2245.
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2245.
 _:n3-2246 shacl:datatype rdfs:Literal;
     shacl:description "Uren waarbinnen contact kan worden opgenomen.";
     shacl:maxCount 1;
     shacl:name "openingsuren";
     shacl:path schema:openingHours.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape> shacl:property _:n3-2246.
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2246.
 _:n3-2247 shacl:datatype xsd:string;
     shacl:description "Telefoonnummer waarop men kan bellen.";
     shacl:maxCount 1;
     shacl:name "telefoon";
     shacl:path schema:telephone.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape> shacl:property _:n3-2247.
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2247.
 _:n3-2248 shacl:datatype xsd:anyURI;
     shacl:description "Website waarnaar men kan surfen.";
     shacl:maxCount 1;
     shacl:name "website";
     shacl:path foaf:page.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ContactinfoShape> shacl:property _:n3-2248;
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2248;
     shacl:targetClass schema:ContactPoint.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DeelShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:DeelShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2249 shacl:class schemas:QuantitativeValue;
     shacl:description "De afmeting van het object.";
     shacl:maxCount 1;
     shacl:name "oppervlakte";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#oppervlakte>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DeelShape> shacl:property _:n3-2249.
-_:n3-2250 shacl:class <https://data.vlaanderen.be/ns/openbaardomein#FysiekVoorkomen>;
+    shacl:path openbaardomein:oppervlakte.
+begraafplaatsenbeheer-ap:DeelShape shacl:property _:n3-2249.
+_:n3-2250 shacl:class openbaardomein:FysiekVoorkomen;
     shacl:description "Verwijst naar het fysiek voorkomen van het beheerdeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkomen";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#voorkomen>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DeelShape> shacl:property _:n3-2250;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein#Deel>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DekselShape> a shacl:NodeShape;
+    shacl:path openbaardomein:voorkomen.
+begraafplaatsenbeheer-ap:DeelShape shacl:property _:n3-2250;
+    shacl:targetClass openbaardomein:Deel.
+begraafplaatsenbeheer-ap:DekselShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2251 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/DekselVorm>;
+_:n3-2251 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/DekselVorm>;
     shacl:class skos:Concept;
     shacl:description "De vorm van het deksel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "dekselVorm";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#dekselVorm>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DekselShape> shacl:property _:n3-2251.
-_:n3-2252 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
+    shacl:path infrastructuur:dekselVorm.
+begraafplaatsenbeheer-ap:DekselShape shacl:property _:n3-2251.
+_:n3-2252 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
     shacl:class skos:Concept;
     shacl:description "Aanduiding van de soort nutsvoorziening.";
     shacl:maxCount 1;
     shacl:name "nutsvoorzieningscode";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#nutsvoorzieningscode>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DekselShape> shacl:property _:n3-2252.
-_:n3-2253 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Rioleringscode>;
+    shacl:path infrastructuur:nutsvoorzieningscode.
+begraafplaatsenbeheer-ap:DekselShape shacl:property _:n3-2252.
+_:n3-2253 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Rioleringscode>;
     shacl:class skos:Concept;
     shacl:description "De rioleringscode is een arbitraire notitie van waarneembare eigenschappen van het deksel m.b.t. de beheerder en de functie van de ondergrondse ioleringsleiding.";
     shacl:maxCount 1;
     shacl:name "rioleringscode";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#rioleringscode>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DekselShape> shacl:property _:n3-2253;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Deksel>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#DraadafsluitingShape> a shacl:NodeShape;
+    shacl:path infrastructuur:rioleringscode.
+begraafplaatsenbeheer-ap:DekselShape shacl:property _:n3-2253;
+    shacl:targetClass infrastructuur:Deksel.
+begraafplaatsenbeheer-ap:DraadafsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Draadafsluiting>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ElementShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Draadafsluiting.
+begraafplaatsenbeheer-ap:ElementShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2254 shacl:class <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#Terreindeel>;
+_:n3-2254 shacl:class terreindeel:Terreindeel;
     shacl:description "Het specifieke Element dat een obstakel vormt.";
     shacl:maxCount 1;
     shacl:name "heeftObstakel";
     shacl:path <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#Element.heeftObstakel>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ElementShape> shacl:property _:n3-2254;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein#Element>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FietsstallingShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:ElementShape shacl:property _:n3-2254;
+    shacl:targetClass openbaardomein:Element.
+begraafplaatsenbeheer-ap:FietsstallingShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2255 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet kan afgesloten worden om toegang voor onbevoegden te verhinderen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "afsluitbaar";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#afsluitbaar>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FietsstallingShape> shacl:property _:n3-2255.
+    shacl:path infrastructuur:afsluitbaar.
+begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2255.
 _:n3-2256 shacl:datatype xsd:integer;
     shacl:description "Geeft aan hoeveel fietsen gestald kunnen worden aan of in de fietsenstalling.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "capaciteit";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#capaciteit>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FietsstallingShape> shacl:property _:n3-2256.
+    shacl:path infrastructuur:capaciteit.
+begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2256.
 _:n3-2257 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet gebruikt wordt voor deelfietsen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "fietsdelen";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#fietsdelen>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FietsstallingShape> shacl:property _:n3-2257.
+    shacl:path infrastructuur:fietsdelen.
+begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2257.
 _:n3-2258 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet overdekt is.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "overdekt";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#overdekt>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FietsstallingShape> shacl:property _:n3-2258;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Fietsstalling>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekObjectShape> a shacl:NodeShape;
+    shacl:path infrastructuur:overdekt.
+begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2258;
+    shacl:targetClass infrastructuur:Fietsstalling.
+begraafplaatsenbeheer-ap:FysiekObjectShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2259 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#begindatum>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekObjectShape> shacl:property _:n3-2259.
+    shacl:path openbaardomein:begindatum.
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2259.
 _:n3-2260 shacl:class org:Organization;
     shacl:description "Instantie die instaat voor het beheer van het object.";
     shacl:maxCount 1;
     shacl:name "beheerder";
-    shacl:path <http://fixme.com#beheerder>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekObjectShape> shacl:property _:n3-2260.
+    shacl:path fixme.com:beheerder.
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2260.
 _:n3-2261 shacl:class org:Organization;
     shacl:description "De entiteit (bv. de gemeente) die eigenaar is van het object.";
     shacl:maxCount 1;
     shacl:name "eigenaar";
-    shacl:path <http://fixme.com#eigenaar>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekObjectShape> shacl:property _:n3-2261.
+    shacl:path fixme.com:eigenaar.
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2261.
 _:n3-2262 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#einddatum>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekObjectShape> shacl:property _:n3-2262.
-_:n3-2263 shacl:class <http://www.opengis.net/ont/geosparql#Geometry>;
+    shacl:path openbaardomein:einddatum.
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2262.
+_:n3-2263 shacl:class geosparql:Geometry;
     shacl:description "De geometrie overeenkomstig met een bepaald object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekObjectShape> shacl:property _:n3-2263.
-_:n3-2264 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2263.
+_:n3-2264 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
     shacl:class skos:Concept;
     shacl:description "De precisie waarmee het object opgemeten werd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nauwkeurigheid";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekObjectShape> shacl:property _:n3-2264.
+    shacl:path openbaardomein:nauwkeurigheid.
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2264.
 _:n3-2265 shacl:datatype xsd:integer;
     shacl:description "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten.";
     shacl:maxCount 1;
     shacl:name "niveau";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#niveau>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekObjectShape> shacl:property _:n3-2265.
+    shacl:path openbaardomein:niveau.
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2265.
 _:n3-2266 shacl:class rdfs:Resource;
     shacl:description "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject.";
     shacl:name "relatie";
     shacl:path dcterms:relation.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekObjectShape> shacl:property _:n3-2266;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein#FysiekObject>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#FysiekVoorkomenShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2266;
+    shacl:targetClass openbaardomein:FysiekObject.
+begraafplaatsenbeheer-ap:FysiekVoorkomenShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein#FysiekVoorkomen>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GebiedShape> a shacl:NodeShape;
+    shacl:targetClass openbaardomein:FysiekVoorkomen.
+begraafplaatsenbeheer-ap:GebiedShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2267 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheergebied in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/gebied#begindatum>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GebiedShape> shacl:property _:n3-2267.
+    shacl:path gebied:begindatum.
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2267.
 _:n3-2268 shacl:class org:Organization;
     shacl:description "Instantie die instaat voor het beheer van het gebied.";
     shacl:maxCount 1;
     shacl:name "beheerder";
-    shacl:path <http://fixme.com#beheerder>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GebiedShape> shacl:property _:n3-2268.
+    shacl:path fixme.com:beheerder.
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2268.
 _:n3-2269 shacl:class org:Organization;
     shacl:description "De entiteit (bv. de gemeente) die eigenaar is van het gebied.";
     shacl:maxCount 1;
     shacl:name "eigenaar";
-    shacl:path <http://fixme.com#eigenaar>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GebiedShape> shacl:property _:n3-2269.
+    shacl:path fixme.com:eigenaar.
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2269.
 _:n3-2270 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheergebied uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/gebied#einddatum>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GebiedShape> shacl:property _:n3-2270.
-_:n3-2271 shacl:class <http://www.opengis.net/ont/sf#Polygon>;
+    shacl:path gebied:einddatum.
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2270.
+_:n3-2271 shacl:class sf:Polygon;
     shacl:description "De geometrie overeenkomstig met een bepaald gebied.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GebiedShape> shacl:property _:n3-2271.
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2271.
 _:n3-2272 shacl:datatype rdf:langString;
     shacl:description "Een naam voor het gebied.";
     shacl:name "naam";
     shacl:path dcterms:title.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GebiedShape> shacl:property _:n3-2272;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/gebied#Gebied>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GeografischeNaamShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2272;
+    shacl:targetClass gebied:Gebied.
+begraafplaatsenbeheer-ap:GeografischeNaamShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass rdf:langString.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GeometrieShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:GeometrieShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2273 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in gml-formaat.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "gml";
-    shacl:path <http://www.opengis.net/ont/geosparql#asGML>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GeometrieShape> shacl:property _:n3-2273.
+    shacl:path geosparql:asGML.
+begraafplaatsenbeheer-ap:GeometrieShape shacl:property _:n3-2273.
 _:n3-2274 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in wkt-formaat.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "wkt";
-    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GeometrieShape> shacl:property _:n3-2274;
-    shacl:targetClass <http://www.opengis.net/ont/geosparql#Geometry>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GrafShape> a shacl:NodeShape;
+    shacl:path geosparql:asWKT.
+begraafplaatsenbeheer-ap:GeometrieShape shacl:property _:n3-2274;
+    shacl:targetClass geosparql:Geometry.
+begraafplaatsenbeheer-ap:GrafShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2275 shacl:datatype xsd:integer;
     shacl:description "Geeft het aantal bezette plaatsen van een graf weer.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "bezetting";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#bezetting>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GrafShape> shacl:property _:n3-2275.
+    shacl:path begraafplaats:bezetting.
+begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2275.
 _:n3-2276 shacl:datatype xsd:integer;
     shacl:description "Geeft het aantal beschikbare plaatsen van een graf weer.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "capaciteit";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#capaciteit>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GrafShape> shacl:property _:n3-2276.
+    shacl:path begraafplaats:capaciteit.
+begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2276.
 _:n3-2277 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het graf voorzien is van een ondergrondse of bovengrondse ruimte.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "grafkelderAanwezig";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#grafkelderAanwezig>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GrafShape> shacl:property _:n3-2277.
+    shacl:path begraafplaats:grafkelderAanwezig.
+begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2277.
 _:n3-2278 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of er al dan niet een grafteken, bijvoorbeeld een zerk, aanwezig is.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "grafteken";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#grafteken>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GrafShape> shacl:property _:n3-2278.
-_:n3-2279 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Graftypes>;
+    shacl:path begraafplaats:grafteken.
+begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2278.
+_:n3-2279 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Graftypes>;
     shacl:class skos:Concept;
     shacl:description "Het type graf.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "graftype";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#graftype>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GrafShape> shacl:property _:n3-2279;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#Graf>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GraftypesShape> a shacl:NodeShape;
+    shacl:path begraafplaats:graftype.
+begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2279;
+    shacl:targetClass begraafplaats:Graf.
+begraafplaatsenbeheer-ap:GraftypesShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GroendakShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:GroendakShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#Groendak>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#GroenvlakShape> a shacl:NodeShape;
+    shacl:targetClass terreindeel:Groendak.
+begraafplaatsenbeheer-ap:GroenvlakShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#Groenvlak>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#InfozuilShape> a shacl:NodeShape;
+    shacl:targetClass terreindeel:Groenvlak.
+begraafplaatsenbeheer-ap:InfozuilShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Infozuil>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#InfrastructuurelementShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Infozuil.
+begraafplaatsenbeheer-ap:InfrastructuurelementShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2280 <http://purl.org/linked-data/cube#codeList> <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
+_:n3-2280 cube:codeList <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
     shacl:class skos:Concept;
     shacl:description "Materiaal waar het object uit vervaardigd is.";
     shacl:name "materiaal";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#materiaal>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#InfrastructuurelementShape> shacl:property _:n3-2280;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Infrastructuurelement>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#KwantitatieveWaardeShape> a shacl:NodeShape;
+    shacl:path infrastructuur:materiaal.
+begraafplaatsenbeheer-ap:InfrastructuurelementShape shacl:property _:n3-2280;
+    shacl:targetClass infrastructuur:Infrastructuurelement.
+begraafplaatsenbeheer-ap:KwantitatieveWaardeShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2281 shacl:datatype xsd:string;
     shacl:description "De eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "eenheid";
     shacl:path schemas:unitText.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#KwantitatieveWaardeShape> shacl:property _:n3-2281.
-_:n3-2282 shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+begraafplaatsenbeheer-ap:KwantitatieveWaardeShape shacl:property _:n3-2281.
+_:n3-2282 shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "standaardEenheid";
     shacl:path schemas:unitCode.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#KwantitatieveWaardeShape> shacl:property _:n3-2282.
+begraafplaatsenbeheer-ap:KwantitatieveWaardeShape shacl:property _:n3-2282.
 _:n3-2283 shacl:class schemas:Number;
     shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#KwantitatieveWaardeShape> shacl:property _:n3-2283;
+begraafplaatsenbeheer-ap:KwantitatieveWaardeShape shacl:property _:n3-2283;
     shacl:targetClass schemas:QuantitativeValue.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#LichtpuntShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:LichtpuntShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Lichtpunt>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#LijnstringShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Lichtpunt.
+begraafplaatsenbeheer-ap:LijnstringShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.opengis.net/ont/sf#LineString>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#MaterialenShape> a shacl:NodeShape;
-    shacl:closed false;
-    shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#NauwkeurigsheidsklassenShape> a shacl:NodeShape;
+    shacl:targetClass sf:LineString.
+begraafplaatsenbeheer-ap:MaterialenShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#NormandischeAfsluitingShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:NauwkeurigsheidsklassenShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#NormandischeAfsluiting>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OpenbaarToiletShape> a shacl:NodeShape;
+    shacl:targetClass skos:Concept.
+begraafplaatsenbeheer-ap:NormandischeAfsluitingShape a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass infrastructuur:NormandischeAfsluiting.
+begraafplaatsenbeheer-ap:OpenbaarToiletShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2284 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan dat het element ondergronds opgeborgen kan worden.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "verzinkbaar";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#verzinkbaar>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OpenbaarToiletShape> shacl:property _:n3-2284;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#OpenbaarToilet>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OpenbareStraatverlichtingAanGevelOfMuurShape> a shacl:NodeShape;
+    shacl:path infrastructuur:verzinkbaar.
+begraafplaatsenbeheer-ap:OpenbaarToiletShape shacl:property _:n3-2284;
+    shacl:targetClass infrastructuur:OpenbaarToilet.
+begraafplaatsenbeheer-ap:OpenbareStraatverlichtingAanGevelOfMuurShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#OpenbareStraatverlichtingAanGevelOfMuur>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OpenbareVerlichtingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:OpenbareStraatverlichtingAanGevelOfMuur.
+begraafplaatsenbeheer-ap:OpenbareVerlichtingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#OpenbareVerlichting>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OpenbareVuilnisbakShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:OpenbareVerlichting.
+begraafplaatsenbeheer-ap:OpenbareVuilnisbakShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#OpenbareVuilnisbak>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OrganisatieShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:OpenbareVuilnisbak.
+begraafplaatsenbeheer-ap:OrganisatieShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2285 shacl:datatype xsd:string;
     shacl:description "Andere naam waaronder de organisatie bekend is.";
     shacl:maxCount 1;
     shacl:name "alternatieveNaam";
     shacl:path skos:altLabel.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OrganisatieShape> shacl:property _:n3-2285.
+begraafplaatsenbeheer-ap:OrganisatieShape shacl:property _:n3-2285.
 _:n3-2286 shacl:class schema:ContactPoint;
     shacl:description "Informatie zoals email, telefoon ... die toelaat de Organisatie te contacteren.";
     shacl:maxCount 1;
     shacl:name "contactinfo";
     shacl:path schema:contactPoint.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OrganisatieShape> shacl:property _:n3-2286.
+begraafplaatsenbeheer-ap:OrganisatieShape shacl:property _:n3-2286.
 _:n3-2287 shacl:datatype xsd:string;
     shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkeursnaam";
     shacl:path skos:prefLabel.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#OrganisatieShape> shacl:property _:n3-2287;
+begraafplaatsenbeheer-ap:OrganisatieShape shacl:property _:n3-2287;
     shacl:targetClass org:Organization.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#PaneelafsluitingShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:PaneelafsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Paneelafsluiting>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#PolygoonShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Paneelafsluiting.
+begraafplaatsenbeheer-ap:PolygoonShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.opengis.net/ont/sf#Polygon>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#PuntShape> a shacl:NodeShape;
+    shacl:targetClass sf:Polygon.
+begraafplaatsenbeheer-ap:PuntShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.opengis.net/ont/sf#Point>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#RelatieObjectShape> a shacl:NodeShape;
+    shacl:targetClass sf:Point.
+begraafplaatsenbeheer-ap:RelatieObjectShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2288 shacl:datatype xsd:string;
     shacl:description "De naam van de bron.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "bronnaam";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#bronnaam>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#RelatieObjectShape> shacl:property _:n3-2288.
+    shacl:path openbaardomein:bronnaam.
+begraafplaatsenbeheer-ap:RelatieObjectShape shacl:property _:n3-2288.
 _:n3-2289 shacl:datatype xsd:string;
     shacl:description "Een globaal unieke identificator voor het object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "uuid";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#uuid>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#RelatieObjectShape> shacl:property _:n3-2289;
+    shacl:path openbaardomein:uuid.
+begraafplaatsenbeheer-ap:RelatieObjectShape shacl:property _:n3-2289;
     shacl:targetClass rdfs:Resource.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#RoosterShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:RoosterShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Rooster>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#SelectieveAfsluitingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Rooster.
+begraafplaatsenbeheer-ap:SelectieveAfsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#SelectieveAfsluiting>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#SlagboomShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:SelectieveAfsluiting.
+begraafplaatsenbeheer-ap:SlagboomShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Slagboom>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#SpandraadKettingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Slagboom.
+begraafplaatsenbeheer-ap:SpandraadKettingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#SpandraadKetting>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#StraatkolkShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:SpandraadKetting.
+begraafplaatsenbeheer-ap:StraatkolkShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2290 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Straatkolktypes>;
+_:n3-2290 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Straatkolktypes>;
     shacl:class skos:Concept;
     shacl:description "Het type straatkolk.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "straatkolktype";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#straatkolktype>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#StraatkolkShape> shacl:property _:n3-2290;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Straatkolk>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#StraatkolktypesShape> a shacl:NodeShape;
+    shacl:path infrastructuur:straatkolktype.
+begraafplaatsenbeheer-ap:StraatkolkShape shacl:property _:n3-2290;
+    shacl:targetClass infrastructuur:Straatkolk.
+begraafplaatsenbeheer-ap:StraatkolktypesShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#StraatmeubilairShape> a shacl:NodeShape;
+begraafplaatsenbeheer-ap:StraatmeubilairShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2291 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het element al dan niet verplaatsbaar is en dus niet permanent verankerd werd met het aardoppervlak.";
     shacl:maxCount 1;
     shacl:name "verplaatsbaar";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#verplaatsbaar>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#StraatmeubilairShape> shacl:property _:n3-2291;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Straatmeubilair>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#StrooiweideShape> a shacl:NodeShape;
+    shacl:path infrastructuur:verplaatsbaar.
+begraafplaatsenbeheer-ap:StraatmeubilairShape shacl:property _:n3-2291;
+    shacl:targetClass infrastructuur:Straatmeubilair.
+begraafplaatsenbeheer-ap:StrooiweideShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#Strooiweide>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TerreinVoorkomenShape> a shacl:NodeShape;
+    shacl:targetClass begraafplaats:Strooiweide.
+begraafplaatsenbeheer-ap:TerreinVoorkomenShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2292 shacl:class skos:Concept;
     shacl:description "Eigenschap die aangeeft of er binnen het beheerdeel al dan niet objecten voorkomen die de vrije werking van machines of andere werktuigen kan verhinderen.";
     shacl:maxCount 1;
     shacl:name "obstakels";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#obstakels>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TerreinVoorkomenShape> shacl:property _:n3-2292.
-_:n3-2293 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/TaludWaarde>;
+    shacl:path terreindeel:obstakels.
+begraafplaatsenbeheer-ap:TerreinVoorkomenShape shacl:property _:n3-2292.
+_:n3-2293 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/TaludWaarde>;
     shacl:class skos:Concept;
     shacl:description "Een talud is het kunstmatig gedeelte van een vlak van de wegbaan, dijken, spoorbanen, vestingswerken, ... dat een helling (min. 20%, max 80% voor kunstmatig verharde taluds) vertoont en bedoeld voor het opvangen van een hoogteverschil.";
     shacl:maxCount 1;
     shacl:name "talud";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#talud>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TerreinVoorkomenShape> shacl:property _:n3-2293;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#TerreinVoorkomen>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TerreindeelShape> a shacl:NodeShape;
+    shacl:path terreindeel:talud.
+begraafplaatsenbeheer-ap:TerreinVoorkomenShape shacl:property _:n3-2293;
+    shacl:targetClass terreindeel:TerreinVoorkomen.
+begraafplaatsenbeheer-ap:TerreindeelShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2294 shacl:class schemas:QuantitativeValue;
     shacl:description "De breedte van het object. In geval van een ongelijkmatige breedte wordt de gemiddelde breedte opgenomen.";
     shacl:maxCount 1;
     shacl:name "breedte";
     shacl:path schema:width.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TerreindeelShape> shacl:property _:n3-2294.
-_:n3-2295 shacl:class <https://data.vlaanderen.be/ns/openbaardomein#Element>;
+begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2294.
+_:n3-2295 shacl:class openbaardomein:Element;
     shacl:description "Het specifieke Element dat een obstakel vormt.";
     shacl:name "heeftObstakel";
     shacl:path <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#Terreindeel.heeftObstakel>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TerreindeelShape> shacl:property _:n3-2295.
+begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2295.
 _:n3-2296 shacl:class schemas:QuantitativeValue;
     shacl:description "De lineare grootte van het object.";
     shacl:maxCount 1;
     shacl:name "lengte";
     shacl:path <http://open.vocab.org/terms/length>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TerreindeelShape> shacl:property _:n3-2296.
-_:n3-2297 shacl:class <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#TerreinVoorkomen>;
+begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2296.
+_:n3-2297 shacl:class terreindeel:TerreinVoorkomen;
     shacl:description "Het voorkomen van het terreindeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkomen";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#voorkomen>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TerreindeelShape> shacl:property _:n3-2297;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#Terreindeel>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ToegangspoortShape> a shacl:NodeShape;
+    shacl:path terreindeel:voorkomen.
+begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2297;
+    shacl:targetClass terreindeel:Terreindeel.
+begraafplaatsenbeheer-ap:ToegangspoortShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Toegangspoort>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#TrapShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Toegangspoort.
+begraafplaatsenbeheer-ap:TrapShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#Trap>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#UrnenveldShape> a shacl:NodeShape;
+    shacl:targetClass terreindeel:Trap.
+begraafplaatsenbeheer-ap:UrnenveldShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#Urnenveld>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#VerlichtingspaalShape> a shacl:NodeShape;
+    shacl:targetClass begraafplaats:Urnenveld.
+begraafplaatsenbeheer-ap:VerlichtingspaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Verlichtingspaal>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#VoetwegShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Verlichtingspaal.
+begraafplaatsenbeheer-ap:VoetwegShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#Voetweg>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ZichtbaarDekselOfLuikShape> a shacl:NodeShape;
+    shacl:targetClass terreindeel:Voetweg.
+begraafplaatsenbeheer-ap:ZichtbaarDekselOfLuikShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#ZichtbaarDekselOfLuik>.
-<https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#ZitbankShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:ZichtbaarDekselOfLuik.
+begraafplaatsenbeheer-ap:ZitbankShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Zitbank>.
+    shacl:targetClass infrastructuur:Zitbank.

@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -35,55 +244,55 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanmaningShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanmaningShape/5fe331d89aef63bb2da7a5111b89431d7ea3cae5>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanmaningShape/dc3dc723224c4163cbb1156055536ea1f15cef76>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanmaningShape/e31fb81ac6803c3f343ee57be06e54c624f37d40>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanmaningShape/fa59c462a40d1c8b0a2c773df7abba8ca354b4e2>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Aanmaning>.
+    shacl:targetClass schuldbeheer:Aanmaning.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanmaningShape/5fe331d89aef63bb2da7a5111b89431d7ea3cae5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Aanmaning.aanmaningsdatum";
     shacl:datatype xsd:date;
     shacl:description "Datum waarop de aanmaning werd verstuurd. "@nl;
     shacl:name "aanmaningsdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#aanmaningsdatum>.
+    shacl:path schuldbeheer:aanmaningsdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanmaningShape/dc3dc723224c4163cbb1156055536ea1f15cef76> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Aanmaning.aanmaningsdatum";
     shacl:description "Datum waarop de aanmaning werd verstuurd. "@nl;
     shacl:maxCount 1;
     shacl:name "aanmaningsdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#aanmaningsdatum>.
+    shacl:path schuldbeheer:aanmaningsdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanmaningShape/e31fb81ac6803c3f343ee57be06e54c624f37d40> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Aanmaning.aanmaningsdatum";
     shacl:description "Datum waarop de aanmaning werd verstuurd. "@nl;
     shacl:minCount 1;
     shacl:name "aanmaningsdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#aanmaningsdatum>.
+    shacl:path schuldbeheer:aanmaningsdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanmaningShape/fa59c462a40d1c8b0a2c773df7abba8ca354b4e2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Aanmaning.genereertwanbetalingsvergoeding";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Wanbetalingsvergoeding>;
+    shacl:class schuldbeheer:Wanbetalingsvergoeding;
     shacl:description "Verwijzing naar een wanbetalingsvergoeding die door de aanmaning wordt gegenereerd. Een wanbetalingsvergoeding wordt gegenereerd door een aanmaning maar heeft zijn grondslag in een algemene voorwaarde of een reglement"@nl;
     shacl:name "genereert wanbetalingsvergoeding"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#genereertWanbetalingsvergoeding>.
+    shacl:path schuldbeheer:genereertWanbetalingsvergoeding.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanvaardingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanvaardingShape/2df5505847ca300ba6a0632c92bea2a576ae6274>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanvaardingShape/a8cdfac8c4d4e1ec2d9629525cf7887b00588368>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanvaardingShape/ede68c6b3aeb7ce019e2613d41548bbaa0ae17bb>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Aanvaarding>.
+    shacl:targetClass schuldbeheer:Aanvaarding.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanvaardingShape/2df5505847ca300ba6a0632c92bea2a576ae6274> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Aanvaarding.aanvaardafbetalingsplan";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplan>;
+    shacl:class schuldbeheer:Afbetalingsplan;
     shacl:description "Verwijzing naar het afbetalingsplan dat wordt aanvaard."@nl;
     shacl:name "aanvaard afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#aanvaardAfbetalingsplan>.
+    shacl:path schuldbeheer:aanvaardAfbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanvaardingShape/a8cdfac8c4d4e1ec2d9629525cf7887b00588368> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Aanvaarding.aanvaardafbetalingsplan";
     shacl:description "Verwijzing naar het afbetalingsplan dat wordt aanvaard."@nl;
     shacl:maxCount 1;
     shacl:name "aanvaard afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#aanvaardAfbetalingsplan>.
+    shacl:path schuldbeheer:aanvaardAfbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AanvaardingShape/ede68c6b3aeb7ce019e2613d41548bbaa0ae17bb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Aanvaarding.aanvaardafbetalingsplan";
     shacl:description "Verwijzing naar het afbetalingsplan dat wordt aanvaard."@nl;
     shacl:minCount 1;
     shacl:name "aanvaard afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#aanvaardAfbetalingsplan>.
+    shacl:path schuldbeheer:aanvaardAfbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/6a142d51e1996cc547859eb790c61b8be7bf71d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/7da8172d0a595049f5316161a5496c858bc96022>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/5634d382280af9091964123baccf646894b6f112>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/f899bc3cddd0a39a0f4e89cbbfe31ad78d84c85c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/7795703c617f5b31f5a421e8470360141867662f>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/f844de6533252e5b38c84162d753e37a42b7c108>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/768ce2fc1a99c619b3e1c2f441fd783cb8c779ed>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/9513e0c758272449ae34e523fb3286533c4665f4>;
     shacl:targetClass prov:Activity.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/5634d382280af9091964123baccf646894b6f112> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Activiteit.genereert";
-    shacl:class <https://data.vlaanderen.be/ns/dossier#Stuk>;
+    shacl:class dossier:Stuk;
     shacl:description "Een activiteit kan een stuk genereren."@nl;
     shacl:name "genereert"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/dossier#genereert>.
+    shacl:path dossier:genereert.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ActiviteitShape/6a142d51e1996cc547859eb790c61b8be7bf71d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Activiteit.einddatum";
     shacl:datatype xsd:dateTime;
     shacl:description "De einddatum van de activiteit."@nl;
@@ -127,143 +336,143 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingShape/85e6ffdf620ee2d5d7ddbb701a97292db77321e4>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingShape/86f7e0127ca3bcb204bb183253ed231211c777e1>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingShape/c56e233a4d5e76342b1a6e73038659e08b1d7246>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Afbetaling>.
+    shacl:targetClass schuldbeheer:Afbetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingShape/85e6ffdf620ee2d5d7ddbb701a97292db77321e4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetaling.gevolgdafbetalingsplan";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplanonderdeel>;
+    shacl:class schuldbeheer:Afbetalingsplanonderdeel;
     shacl:description "Verwijzing naar het afbetalingsplan dat werd gevolgd bij het uitvoeren van de afbetaling."@nl;
     shacl:name "gevolgd afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#gevolgdAfbetalingsplanonderdeel>.
+    shacl:path schuldbeheer:gevolgdAfbetalingsplanonderdeel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingShape/86f7e0127ca3bcb204bb183253ed231211c777e1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetaling.gevolgdafbetalingsplan";
     shacl:description "Verwijzing naar het afbetalingsplan dat werd gevolgd bij het uitvoeren van de afbetaling."@nl;
     shacl:maxCount 1;
     shacl:name "gevolgd afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#gevolgdAfbetalingsplanonderdeel>.
+    shacl:path schuldbeheer:gevolgdAfbetalingsplanonderdeel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingShape/c56e233a4d5e76342b1a6e73038659e08b1d7246> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetaling.gevolgdafbetalingsplan";
     shacl:description "Verwijzing naar het afbetalingsplan dat werd gevolgd bij het uitvoeren van de afbetaling."@nl;
     shacl:minCount 1;
     shacl:name "gevolgd afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#gevolgdAfbetalingsplanonderdeel>.
+    shacl:path schuldbeheer:gevolgdAfbetalingsplanonderdeel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/924b67cd11bc499382cd46ed1b5ffd711eaf6d47>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/49d65864460d8e474ca0f61dc2fad7610659d61d>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/9d6df4505432069678f1f1955cbcfff9a89c28c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/dc9e59970e2766b6ebdb8a8f6e4723bc51e46cd1>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/676d497054b48a0702adc5a960dc79044beefd56>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/e828f0cdd579bcb556d89708e243a3c8f98e13cb>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/aa039fe606f5c4b3d32ba9ba142ddab522033f77>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/e2f798a6ba8718292da24a885c2c3f013723961c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/4dcad42c107a296dbbd2674e27c3ce8f2719ff09>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/6ab66626756076ee0b507e3b0f602568a6351285>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/ab741352a6850d83386988bd6c36f854a2f3e3af>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/0dd61b22b4b13c5a85f5e4173a916a9172529048>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/0fd8d9df78014a6eb6915c3363877f483ae5666c>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplan>.
+    shacl:targetClass schuldbeheer:Afbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/0dd61b22b4b13c5a85f5e4173a916a9172529048> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.voorstel";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Voorstel>;
+    shacl:class schuldbeheer:Voorstel;
     shacl:description "Verwijzing naar de activiteit die het afbetalingsplan voorstelt."@nl;
     shacl:name "voorstel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#voorstel>.
+    shacl:path schuldbeheer:voorstel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/0fd8d9df78014a6eb6915c3363877f483ae5666c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.voorstel";
     shacl:description "Verwijzing naar de activiteit die het afbetalingsplan voorstelt."@nl;
     shacl:minCount 1;
     shacl:name "voorstel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#voorstel>.
+    shacl:path schuldbeheer:voorstel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/49d65864460d8e474ca0f61dc2fad7610659d61d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.afbetalingsplanonderdeel";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplanonderdeel>;
+    shacl:class schuldbeheer:Afbetalingsplanonderdeel;
     shacl:description "Verwijzing naar een onderdeel van het afbetalingsplan."@nl;
     shacl:name "afbetalingsplanonderdeel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#afbetalingsplanonderdeel>.
+    shacl:path schuldbeheer:afbetalingsplanonderdeel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/4dcad42c107a296dbbd2674e27c3ce8f2719ff09> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.startbedrag";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het totale verschuldigde bedrag dat wordt herschikt bij de aanvang van het afbetalingsplan."@nl;
     shacl:name "startbedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#startBedrag>.
+    shacl:path schuldbeheer:startBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/676d497054b48a0702adc5a960dc79044beefd56> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.herschikteschuldvordering";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Schuldvordering>;
+    shacl:class schuldbeheer:Schuldvordering;
     shacl:description "Verwijzijng naar een schuldvordering waarvan de betaalmodaliteiten door het afbetalingsplan herschikt worden."@nl;
     shacl:name "herschikte schuldvordering"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#herschikteSchuldvordering>.
+    shacl:path schuldbeheer:herschikteSchuldvordering.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/6ab66626756076ee0b507e3b0f602568a6351285> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.startbedrag";
     shacl:description "Het totale verschuldigde bedrag dat wordt herschikt bij de aanvang van het afbetalingsplan."@nl;
     shacl:minCount 1;
     shacl:name "startbedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#startBedrag>.
+    shacl:path schuldbeheer:startBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/924b67cd11bc499382cd46ed1b5ffd711eaf6d47> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.aanvaarding";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Aanvaarding>;
+    shacl:class schuldbeheer:Aanvaarding;
     shacl:description "Verwijzing naar de aanvaarding van het afbetalingsplan."@nl;
     shacl:name "aanvaarding"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#aanvaarding>.
+    shacl:path schuldbeheer:aanvaarding.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/9d6df4505432069678f1f1955cbcfff9a89c28c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.afbetalingsplanonderdeel";
     shacl:description "Verwijzing naar een onderdeel van het afbetalingsplan."@nl;
     shacl:minCount 1;
     shacl:name "afbetalingsplanonderdeel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#afbetalingsplanonderdeel>.
+    shacl:path schuldbeheer:afbetalingsplanonderdeel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/aa039fe606f5c4b3d32ba9ba142ddab522033f77> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.schrapping";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Schrapping>;
+    shacl:class schuldbeheer:Schrapping;
     shacl:description "Verwijzing naar een schrapping van de schuldvordering."@nl;
     shacl:name "schrapping"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schrapping>.
+    shacl:path schuldbeheer:schrapping.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/ab741352a6850d83386988bd6c36f854a2f3e3af> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.startbedrag";
     shacl:description "Het totale verschuldigde bedrag dat wordt herschikt bij de aanvang van het afbetalingsplan."@nl;
     shacl:maxCount 1;
     shacl:name "startbedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#startBedrag>.
+    shacl:path schuldbeheer:startBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/dc9e59970e2766b6ebdb8a8f6e4723bc51e46cd1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.afbetalingsplansaldo";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplansaldo>;
+    shacl:class schuldbeheer:Afbetalingsplansaldo;
     shacl:description "Verwijzing naar een saldo van een afbetalingsplan, namelijk het nog af te betalen bedrag op een bepaalde datum."@nl;
     shacl:name "afbetalingsplansaldo"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#afbetalingsplansaldo>.
+    shacl:path schuldbeheer:afbetalingsplansaldo.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/e2f798a6ba8718292da24a885c2c3f013723961c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.schrapping";
     shacl:description "Verwijzing naar een schrapping van de schuldvordering."@nl;
     shacl:maxCount 1;
     shacl:name "schrapping"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schrapping>.
+    shacl:path schuldbeheer:schrapping.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanShape/e828f0cdd579bcb556d89708e243a3c8f98e13cb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplan.herschikteschuldvordering";
     shacl:description "Verwijzijng naar een schuldvordering waarvan de betaalmodaliteiten door het afbetalingsplan herschikt worden."@nl;
     shacl:minCount 1;
     shacl:name "herschikte schuldvordering"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#herschikteSchuldvordering>.
+    shacl:path schuldbeheer:herschikteSchuldvordering.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/388ddf5925bd6385c41878f8cb615e9c9f639bd5>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/6972e63c3a10e74820254d909e445faaa94a8b4b>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/6d939f5bc7aa9fe950dab82bdbef6b2e6e292d79>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/20fc127c7d294b91eee511f7dacb75683e00ee75>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/5a7f99e3aa994aac655a4df6b558de3efb908353>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/7066bf98cb136244d4013a5e50ea92dd2f6c31b3>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/326c233d3fadb544b815bd20cfd69afa0e65441a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/52678ab4faaec6c8f7e3517110f8e0b46f600359>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/8c3e8f6893440e0d4830b92c18a8ca4d128cb522>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplanonderdeel>.
+    shacl:targetClass schuldbeheer:Afbetalingsplanonderdeel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/20fc127c7d294b91eee511f7dacb75683e00ee75> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplanonderdeel.isdeelvan";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplan>;
+    shacl:class schuldbeheer:Afbetalingsplan;
     shacl:description "Een afbetalingsplanonderdeel is een deel van een afbetalingsplan."@nl;
     shacl:name "is deel van"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#isDeelvan>.
+    shacl:path schuldbeheer:isDeelvan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/326c233d3fadb544b815bd20cfd69afa0e65441a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplanonderdeel.uiterstebetaaldatum";
     shacl:datatype xsd:date;
     shacl:description "De laatst mogelijke datum waarop het af te betalen bedrag moet betaald zijn om aan de betaaldverplichting van het aanvaarde afbetalingsplan te voldoen."@nl;
     shacl:name "uiterste betaaldatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#uitersteBetaaldatum>.
+    shacl:path schuldbeheer:uitersteBetaaldatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/388ddf5925bd6385c41878f8cb615e9c9f639bd5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplanonderdeel.aftebetalenbedrag";
     shacl:description "Het geldbedrag dat voor de uiterste betaaldatum moet worden betaald."@nl;
     shacl:maxCount 1;
     shacl:name "af te betalen bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#afTeBetalenBedrag>.
+    shacl:path schuldbeheer:afTeBetalenBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/52678ab4faaec6c8f7e3517110f8e0b46f600359> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplanonderdeel.uiterstebetaaldatum";
     shacl:description "De laatst mogelijke datum waarop het af te betalen bedrag moet betaald zijn om aan de betaaldverplichting van het aanvaarde afbetalingsplan te voldoen."@nl;
     shacl:maxCount 1;
     shacl:name "uiterste betaaldatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#uitersteBetaaldatum>.
+    shacl:path schuldbeheer:uitersteBetaaldatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/5a7f99e3aa994aac655a4df6b558de3efb908353> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplanonderdeel.isdeelvan";
     shacl:description "Een afbetalingsplanonderdeel is een deel van een afbetalingsplan."@nl;
     shacl:minCount 1;
     shacl:name "is deel van"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#isDeelvan>.
+    shacl:path schuldbeheer:isDeelvan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/6972e63c3a10e74820254d909e445faaa94a8b4b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplanonderdeel.aftebetalenbedrag";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het geldbedrag dat voor de uiterste betaaldatum moet worden betaald."@nl;
     shacl:name "af te betalen bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#afTeBetalenBedrag>.
+    shacl:path schuldbeheer:afTeBetalenBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/6d939f5bc7aa9fe950dab82bdbef6b2e6e292d79> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplanonderdeel.aftebetalenbedrag";
     shacl:description "Het geldbedrag dat voor de uiterste betaaldatum moet worden betaald."@nl;
     shacl:minCount 1;
     shacl:name "af te betalen bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#afTeBetalenBedrag>.
+    shacl:path schuldbeheer:afTeBetalenBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/7066bf98cb136244d4013a5e50ea92dd2f6c31b3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplanonderdeel.isdeelvan";
     shacl:description "Een afbetalingsplanonderdeel is een deel van een afbetalingsplan."@nl;
     shacl:maxCount 1;
     shacl:name "is deel van"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#isDeelvan>.
+    shacl:path schuldbeheer:isDeelvan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplanonderdeelShape/8c3e8f6893440e0d4830b92c18a8ca4d128cb522> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Afbetalingsplanonderdeel.uiterstebetaaldatum";
     shacl:description "De laatst mogelijke datum waarop het af te betalen bedrag moet betaald zijn om aan de betaaldverplichting van het aanvaarde afbetalingsplan te voldoen."@nl;
     shacl:minCount 1;
     shacl:name "uiterste betaaldatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#uitersteBetaaldatum>.
+    shacl:path schuldbeheer:uitersteBetaaldatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AfbetalingsplansaldoShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplansaldo>.
+    shacl:targetClass schuldbeheer:Afbetalingsplansaldo.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AgentInRolShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AgentInRolShape/0d0f364c4d623ce55a74be0cc8c97363ad5efdd6>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AgentInRolShape/3113a407e2072bcb4ae165fbb78af5601bb1c499>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AgentInRolShape/c97176c23d04d61b2ebad6750d82da28dc15e4a7>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AgentInRolShape/68837b0eda962a941b0162e1ae4c5f0e471e0c51>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AgentInRolShape/acb59b00c5c67fec8d3f0b2543d5259a09b17d18>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#AgentInRolShape/e5ccf692ee38c28199531eb5e0c59554153a57c3>;
@@ -310,81 +519,81 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/e65bcb91cefba73ef35cdc97d44089b8d3aac687>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/349f0760ede2ffde05f03a206ec4cb12c0119d81>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/6e56d339ee4efdf1966c288b654434f021d693d4>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/eec2e0435cc38e6e745eb80e7d4ea16f0476c42e>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/2a6bae570571f59c835af15ce0fde3b50dc84ce2>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/7fc98d6c457392464604cc796c61ea36707d5299>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/cf9f3080aa732512c3a7592dc00a084244db2638>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/3f36937c9e6deefe9e442ef46e49a8aeff0674f7>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Betaling>.
+    shacl:targetClass schuldbeheer:Betaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een identificator voor het betaling"@nl;
     shacl:name "identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/2a6bae570571f59c835af15ce0fde3b50dc84ce2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.betalingsdatum";
     shacl:datatype xsd:date;
     shacl:description "Datum waarop het overgedragen geld werd ontvangen door de ontvanger. "@nl;
     shacl:name "betalingsdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#betalingsdatum>.
+    shacl:path schuldbeheer:betalingsdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/349f0760ede2ffde05f03a206ec4cb12c0119d81> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.betaaldbedrag";
     shacl:description "Het geldbedrag dat werd betaald."@nl;
     shacl:maxCount 1;
     shacl:name "betaald bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#betaaldBedrag>.
+    shacl:path schuldbeheer:betaaldBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/3f36937c9e6deefe9e442ef46e49a8aeff0674f7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.wordttoegerekenddoor";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#ToerekeningVanBetaling>;
+    shacl:class schuldbeheer:ToerekeningVanBetaling;
     shacl:description "Verwijzing naar de activiteit die (een deel van) een  betaald bedrag toewijst aan een schuldvordering."@nl;
     shacl:name "wordt toegerekend door"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#wordtToegerekendDoor>.
+    shacl:path schuldbeheer:wordtToegerekendDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/6e56d339ee4efdf1966c288b654434f021d693d4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.betaaldbedrag";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het geldbedrag dat werd betaald."@nl;
     shacl:name "betaald bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#betaaldBedrag>.
+    shacl:path schuldbeheer:betaaldBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/7fc98d6c457392464604cc796c61ea36707d5299> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.betalingsdatum";
     shacl:description "Datum waarop het overgedragen geld werd ontvangen door de ontvanger. "@nl;
     shacl:minCount 1;
     shacl:name "betalingsdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#betalingsdatum>.
+    shacl:path schuldbeheer:betalingsdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.identificator";
     shacl:description "Een identificator voor het betaling"@nl;
     shacl:minCount 1;
     shacl:name "identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.identificator";
     shacl:description "Een identificator voor het betaling"@nl;
     shacl:maxCount 1;
     shacl:name "identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/cf9f3080aa732512c3a7592dc00a084244db2638> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.betalingsdatum";
     shacl:description "Datum waarop het overgedragen geld werd ontvangen door de ontvanger. "@nl;
     shacl:maxCount 1;
     shacl:name "betalingsdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#betalingsdatum>.
+    shacl:path schuldbeheer:betalingsdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/e65bcb91cefba73ef35cdc97d44089b8d3aac687> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.bedoeldvoor";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Schuldvordering>;
+    shacl:class schuldbeheer:Schuldvordering;
     shacl:description "Verwijzing naar de schuldvordering die de betaler wenst af te lossen met de betaling."@nl;
     shacl:name "bedoeld voor"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#bedoeldVoor>.
+    shacl:path schuldbeheer:bedoeldVoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetalingShape/eec2e0435cc38e6e745eb80e7d4ea16f0476c42e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betaling.betaaldbedrag";
     shacl:description "Het geldbedrag dat werd betaald."@nl;
     shacl:minCount 1;
     shacl:name "betaald bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#betaaldBedrag>.
+    shacl:path schuldbeheer:betaaldBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetwistingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetwistingShape/06679f243bbc30a16d8922ab8916976e7ec56c2c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetwistingShape/abef86690a35a54bbe49ae2c948d8c1f75f11b7c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetwistingShape/e1f7ec5489f042c31d5a97cb7ce83c9fbbfe471c>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Betwisting>.
+    shacl:targetClass schuldbeheer:Betwisting.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetwistingShape/06679f243bbc30a16d8922ab8916976e7ec56c2c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betwisting.betwistbedrag";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het geldbedrag dat wordt betwist."@nl;
     shacl:name "betwist bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#betwistBedrag>.
+    shacl:path schuldbeheer:betwistBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetwistingShape/abef86690a35a54bbe49ae2c948d8c1f75f11b7c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betwisting.betwistbedrag";
     shacl:description "Het geldbedrag dat wordt betwist."@nl;
     shacl:maxCount 1;
     shacl:name "betwist bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#betwistBedrag>.
+    shacl:path schuldbeheer:betwistBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#BetwistingShape/e1f7ec5489f042c31d5a97cb7ce83c9fbbfe471c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Betwisting.betwistbedrag";
     shacl:description "Het geldbedrag dat wordt betwist."@nl;
     shacl:minCount 1;
     shacl:name "betwist bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#betwistBedrag>.
+    shacl:path schuldbeheer:betwistBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeldbedragShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeldbedragShape/2a3d253e5212175ae311d1d3236a2aea212a9d7c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeldbedragShape/6bfa9ad1b7686584042e5f70df564759473eab3c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeldbedragShape/c2a80e7127c55b170832bbfa2498de57d6cc323d>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeldbedragShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeldbedragShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeldbedragShape/ca4892872b345b4fe994128b7c31877979275399>;
@@ -422,47 +631,47 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/74b4b2b860822328d824d50251e0a230aa32a876>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/28a1a8dd21c98ff2fe5f0385ea1063680e4faccb>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/959887bd01631fb15808760eccd3aeda5dd452ad>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/df3ba01409fe5d24a380d375ef9332757fb45310>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/73520045c101f2709145f75c1103994138538901>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/42a789d8786a818c6ba68c18c8f6af414df4d2c3>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon>.
+    shacl:targetClass persoon:GeregistreerdPersoon.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/28a1a8dd21c98ff2fe5f0385ea1063680e4faccb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoon.juridischstatuut";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#JuridischStatuut>;
+    shacl:class schuldbeheer:JuridischStatuut;
     shacl:description "Verwijzing naar een juridisch statuut van een persoon."@nl;
     shacl:name "juridisch statuut"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#juridischStatuut>.
+    shacl:path schuldbeheer:juridischStatuut.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/42a789d8786a818c6ba68c18c8f6af414df4d2c3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoon.solvabiliteitsprofiel";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Solvabiliteitsprofiel>;
+    shacl:class schuldbeheer:Solvabiliteitsprofiel;
     shacl:description "Verwijzing naar een solvabiliteitsrofiel van een persoon."@nl;
     shacl:name "solvabiliteitsprofiel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#solvabiliteitsprofiel>.
+    shacl:path schuldbeheer:solvabiliteitsprofiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/73520045c101f2709145f75c1103994138538901> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoon.sociaalstatuut";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#SociaalStatuut>;
+    shacl:class schuldbeheer:SociaalStatuut;
     shacl:description "Verwijzing naar een sociaal statuut van een persoon."@nl;
     shacl:name "sociaal statuut"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#sociaalStatuut>.
+    shacl:path schuldbeheer:sociaalStatuut.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/74b4b2b860822328d824d50251e0a230aa32a876> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoon.inkomst";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Inkomst>;
+    shacl:class schuldbeheer:Inkomst;
     shacl:description "Verwijzing naar een inkomst van een persoon."@nl;
     shacl:name "inkomst"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#inkomst>.
+    shacl:path schuldbeheer:inkomst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/959887bd01631fb15808760eccd3aeda5dd452ad> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoon.krediet";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Krediet>;
+    shacl:class schuldbeheer:Krediet;
     shacl:description "Verwijzing naar een krediet dat door een persoon werd aangegaan als schuldenaar."@nl;
     shacl:name "krediet"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#krediet>.
+    shacl:path schuldbeheer:krediet.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoon.registratie";
     shacl:description "Identificatiecode vd persoon ih register."@nl;
     shacl:maxCount 1;
     shacl:name "registratie"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoon.registratie";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificatiecode vd persoon ih register."@nl;
     shacl:name "registratie"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoonShape/df3ba01409fe5d24a380d375ef9332757fb45310> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdPersoon.registratie";
     shacl:description "Identificatiecode vd persoon ih register."@nl;
     shacl:minCount 1;
     shacl:name "registratie"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdeOrganisatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdeOrganisatieShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdeOrganisatieShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdeOrganisatieShape/df3ba01409fe5d24a380d375ef9332757fb45310>;
@@ -473,7 +682,7 @@
     shacl:name "registratie"@nl;
     shacl:path rov:registration.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdeOrganisatieShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GeregistreerdeOrganisatie.registratie";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificator dat de organisatie verkreeg bij registratie."@nl;
     shacl:name "registratie"@nl;
     shacl:path rov:registration.
@@ -485,36 +694,36 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape/83030af4df5fe692c08744d3103b058a5de7260d>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape/a9ebccb10cd4dc55bc1f21016af9463749ceb094>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape/d2a3bc7c2891227a77eca4d60d7a347122cf1317>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape/43be54dd5034f6c88b9b4afaf359fcafc74c0be4>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape/dace7a196abf3f12a5234276a86ca207bca4ec97>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Gezin>.
+    shacl:targetClass persoon:Gezin.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape/43be54dd5034f6c88b9b4afaf359fcafc74c0be4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Gezin.gezinslid";
     shacl:description "TODO"@nl;
     shacl:minCount 1;
     shacl:name "gezinslid"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#gezinslid>.
+    shacl:path persoon:gezinslid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape/83030af4df5fe692c08744d3103b058a5de7260d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Gezin.gezinshoofd";
     shacl:class person:Person;
     shacl:description "TODO"@nl;
     shacl:name "gezinshoofd"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#gezinshoofd>.
+    shacl:path persoon:gezinshoofd.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape/a9ebccb10cd4dc55bc1f21016af9463749ceb094> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Gezin.gezinshoofd";
     shacl:description "TODO"@nl;
     shacl:minCount 1;
     shacl:name "gezinshoofd"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#gezinshoofd>.
+    shacl:path persoon:gezinshoofd.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape/d2a3bc7c2891227a77eca4d60d7a347122cf1317> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Gezin.gezinshoofd";
     shacl:description "TODO"@nl;
     shacl:maxCount 1;
     shacl:name "gezinshoofd"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#gezinshoofd>.
+    shacl:path persoon:gezinshoofd.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#GezinShape/dace7a196abf3f12a5234276a86ca207bca4ec97> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Gezin.gezinslid";
     shacl:class person:Person;
     shacl:description "TODO"@nl;
     shacl:name "gezinslid"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#gezinslid>.
+    shacl:path persoon:gezinslid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#IdentificatorShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#IdentificatorShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#IdentificatorShape/ed560feb860205e0339910c9b2942564c01b5e11>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#IdentificatorShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#IdentificatorShape/3b5973d35f612c133f22e9f710f65db63d861b6b>;
-    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+    shacl:targetClass adms:Identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Identificator.toegekendop";
     shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
@@ -543,12 +752,12 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/a88d06f343359b7b95af028292e348810924e355>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/c9584bd112099eab9ac3f9319f715d4125ab5eda>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/e9d2a4ff25a2b10061aeeb96d1ba40f32345c7c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/0dc4fa3b35fa508bc71d78aeffb571f846bbe2ee>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/9a451005ea9a4973daf64d14f9081d8cc443d18c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/fbe357c5426728942104f9742d48fdcb9887c4bd>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Inkomst>.
+    shacl:targetClass schuldbeheer:Inkomst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/0dc4fa3b35fa508bc71d78aeffb571f846bbe2ee> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Inkomst.periodiciteitinkomst";
     shacl:description "Laat toe om het verschil tussen een eenmalige inkomst en een periodieke inkomst te specifiëren. "@nl;
     shacl:minCount 1;
     shacl:name "periodiciteit inkomst"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#periodiciteitInkomst>.
+    shacl:path schuldbeheer:periodiciteitInkomst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Inkomst.type";
     shacl:description "De aard van de inkomst, bijvoorbeeld beroepsinkomen, kadastraal inkomen, leefloon, kinderbijslag."@nl;
     shacl:maxCount 1;
@@ -568,34 +777,34 @@
     shacl:class skos:Concept;
     shacl:description "Laat toe om het verschil tussen een eenmalige inkomst en een periodieke inkomst te specifiëren. "@nl;
     shacl:name "periodiciteit inkomst"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#periodiciteitInkomst>.
+    shacl:path schuldbeheer:periodiciteitInkomst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/a88d06f343359b7b95af028292e348810924e355> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Inkomst.bedrag";
     shacl:description "Het bedrag van de inkomst."@nl;
     shacl:maxCount 1;
     shacl:name "bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#bedrag>.
+    shacl:path schuldbeheer:bedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/c9584bd112099eab9ac3f9319f715d4125ab5eda> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Inkomst.bedrag";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het bedrag van de inkomst."@nl;
     shacl:name "bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#bedrag>.
+    shacl:path schuldbeheer:bedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/e9d2a4ff25a2b10061aeeb96d1ba40f32345c7c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Inkomst.bedrag";
     shacl:description "Het bedrag van de inkomst."@nl;
     shacl:minCount 1;
     shacl:name "bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#bedrag>.
+    shacl:path schuldbeheer:bedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomstShape/fbe357c5426728942104f9742d48fdcb9887c4bd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Inkomst.periodiciteitinkomst";
     shacl:description "Laat toe om het verschil tussen een eenmalige inkomst en een periodieke inkomst te specifiëren. "@nl;
     shacl:maxCount 1;
     shacl:name "periodiciteit inkomst"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#periodiciteitInkomst>.
+    shacl:path schuldbeheer:periodiciteitInkomst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#InkomsttypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutShape/60c0d03b013ce00ed7ddf9d375a3e3e4a2069f00>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutShape/873712ca8ca2d81b3f2c9cd8b8dcc26e96a1af8d>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutShape/8e9eabe3a3bacf1839ad5260366b77c1faa8e94c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#JuridischStatuut>.
+    shacl:targetClass schuldbeheer:JuridischStatuut.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Juridischstatuut.type";
     shacl:description "De aard van het juridisch statuut, bijvoorbeeld rechterlijke bescherming, collectieve schuldenregeling."@nl;
     shacl:maxCount 1;
@@ -610,7 +819,7 @@
     shacl:description "Verwijzing naar de juridische grondslag van het juridisch statuut. "@nl;
     shacl:maxCount 1;
     shacl:name "rechtsgrond"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#rechtsgrond>.
+    shacl:path schuldbeheer:rechtsgrond.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Juridischstatuut.type";
     shacl:description "De aard van het juridisch statuut, bijvoorbeeld rechterlijke bescherming, collectieve schuldenregeling."@nl;
     shacl:minCount 1;
@@ -620,29 +829,29 @@
     shacl:description "Verwijzing naar de juridische grondslag van het juridisch statuut. "@nl;
     shacl:minCount 1;
     shacl:name "rechtsgrond"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#rechtsgrond>.
+    shacl:path schuldbeheer:rechtsgrond.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutShape/8e9eabe3a3bacf1839ad5260366b77c1faa8e94c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Juridischstatuut.rechtsgrond";
     shacl:class eli:LegalResource;
     shacl:description "Verwijzing naar de juridische grondslag van het juridisch statuut. "@nl;
     shacl:name "rechtsgrond"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#rechtsgrond>.
+    shacl:path schuldbeheer:rechtsgrond.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#JuridischStatuutTypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/011cdf0953e2422bc1dbab9293126522f11208c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/40a8c84819dd7b5bcddc5bff92937307e42495e5>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/4f1263a009f85c2e37081f82cab81a4a0ed0a8ad>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/74feba662f4f65577bf45a8dd94f8faec0f03592>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/1a1534deb903b00725f7cbf6c2b7e7b92be4ca07>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/41964a0e08d61832ede9fd2ea0b18b4251db99fc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/a52472e6c9ffc0475a87d23049b7220c9132b711>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Krediet>.
+    shacl:targetClass schuldbeheer:Krediet.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/011cdf0953e2422bc1dbab9293126522f11208c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Krediet.initieelkredietbedrag";
     shacl:description "Het bedrag dat wordt geleend bij het aangaan van een kredietovereenkomst."@nl;
     shacl:maxCount 1;
     shacl:name "initieel kredietbedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#initieelKredietbedrag>.
+    shacl:path schuldbeheer:initieelKredietbedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/1a1534deb903b00725f7cbf6c2b7e7b92be4ca07> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Krediet.wanbetaling";
     shacl:datatype xsd:boolean;
     shacl:description "Laat toe te specifiëren of een schuldenaar zijn financiële verplichtingen al dan niet heeft nagekomen. "@nl;
     shacl:name "wanbetaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#wanbetaling>.
+    shacl:path schuldbeheer:wanbetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Krediet.type";
     shacl:description "De aard van het krediet, bijvoorbeeld hypothecair krediet, consumentenkrediet."@nl;
     shacl:maxCount 1;
@@ -657,17 +866,17 @@
     shacl:description "Het bedrag dat wordt geleend bij het aangaan van een kredietovereenkomst."@nl;
     shacl:minCount 1;
     shacl:name "initieel kredietbedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#initieelKredietbedrag>.
+    shacl:path schuldbeheer:initieelKredietbedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/41964a0e08d61832ede9fd2ea0b18b4251db99fc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Krediet.wanbetaling";
     shacl:description "Laat toe te specifiëren of een schuldenaar zijn financiële verplichtingen al dan niet heeft nagekomen. "@nl;
     shacl:maxCount 1;
     shacl:name "wanbetaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#wanbetaling>.
+    shacl:path schuldbeheer:wanbetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/4f1263a009f85c2e37081f82cab81a4a0ed0a8ad> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Krediet.initieelkredietbedrag";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het bedrag dat wordt geleend bij het aangaan van een kredietovereenkomst."@nl;
     shacl:name "initieel kredietbedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#initieelKredietbedrag>.
+    shacl:path schuldbeheer:initieelKredietbedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KredietShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Krediet.type";
     shacl:description "De aard van het krediet, bijvoorbeeld hypothecair krediet, consumentenkrediet."@nl;
     shacl:minCount 1;
@@ -677,29 +886,29 @@
     shacl:description "Laat toe te specifiëren of een schuldenaar zijn financiële verplichtingen al dan niet heeft nagekomen. "@nl;
     shacl:minCount 1;
     shacl:name "wanbetaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#wanbetaling>.
+    shacl:path schuldbeheer:wanbetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#KrediettypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#OninbaarheidsverklaringShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#OninbaarheidsverklaringShape/254e93ab4708ecd2c6fbcbb1a1a08fa986578ce7>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#OninbaarheidsverklaringShape/53544bb8151e0ff287797339b3635f05b13ad91f>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#OninbaarheidsverklaringShape/dbb66483075121bd8912e3552932deb4fbe70c65>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Oninbaarheidsverklaring>.
+    shacl:targetClass schuldbeheer:Oninbaarheidsverklaring.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#OninbaarheidsverklaringShape/254e93ab4708ecd2c6fbcbb1a1a08fa986578ce7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Oninbaarheidsverklaring.oninbaarbedrag";
     shacl:description "Het bedrag dat als oninbaar beschouwd wordt."@nl;
     shacl:minCount 1;
     shacl:name "oninbaar bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#oninbaarBedrag>.
+    shacl:path schuldbeheer:oninbaarBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#OninbaarheidsverklaringShape/53544bb8151e0ff287797339b3635f05b13ad91f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Oninbaarheidsverklaring.oninbaarbedrag";
     shacl:description "Het bedrag dat als oninbaar beschouwd wordt."@nl;
     shacl:maxCount 1;
     shacl:name "oninbaar bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#oninbaarBedrag>.
+    shacl:path schuldbeheer:oninbaarBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#OninbaarheidsverklaringShape/dbb66483075121bd8912e3552932deb4fbe70c65> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Oninbaarheidsverklaring.oninbaarbedrag";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het bedrag dat als oninbaar beschouwd wordt."@nl;
     shacl:name "oninbaar bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#oninbaarBedrag>.
+    shacl:path schuldbeheer:oninbaarBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#OrganisatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#OrganisatieShape/932d8445ca50cc8368664504ae173dbd633b76ee>;
@@ -717,40 +926,40 @@
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/8efbb64adfdd4ab14a02f02bdceddcac75b07cfc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/0b53fcf468a93301f0cc9899bb73aeaafd865c56>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/5b5104eb7f5325312f11112607167776e9ec6475>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/a76f9742d96b1ee2236b9bbd84470b3367844bd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/cac8dfc81a79ac32329e1394edc42d7f16461eb0>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/cba0084dd610b69c432bb492bc3f970a76260160>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/fdd871a750ca20e71277d83120117d6acd9aa0fd>;
     shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Persoonsrelatie.persoon.target>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/0b53fcf468a93301f0cc9899bb73aeaafd865c56> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Persoon.ishoofdvan";
-    shacl:class <https://data.vlaanderen.be/ns/persoon#Gezin>;
+    shacl:class persoon:Gezin;
     shacl:description "Persoon die standaard het gezin vertegenwoordigt."@nl;
     shacl:name "is hoofd van"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#isHoofdVan>.
+    shacl:path persoon:isHoofdVan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/5b5104eb7f5325312f11112607167776e9ec6475> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Persoon.ishoofdvan";
     shacl:description "Persoon die standaard het gezin vertegenwoordigt."@nl;
     shacl:maxCount 1;
     shacl:name "is hoofd van"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#isHoofdVan>.
+    shacl:path persoon:isHoofdVan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/8efbb64adfdd4ab14a02f02bdceddcac75b07cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Persoon.heeftrelatiemet";
     shacl:class person:Person;
     shacl:description "Persoon waarmee de persoon gerelateerd is."@nl;
     shacl:name "heeft relatie met"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#heeftRelatieMet>.
+    shacl:path persoon:heeftRelatieMet.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/a76f9742d96b1ee2236b9bbd84470b3367844bd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Persoon.islidvan";
-    shacl:class <https://data.vlaanderen.be/ns/persoon#Gezin>;
+    shacl:class persoon:Gezin;
     shacl:description "Persoon die tot een gezin behoort."@nl;
     shacl:name "is lid van"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#isLidVan>.
+    shacl:path persoon:isLidVan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/cac8dfc81a79ac32329e1394edc42d7f16461eb0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Persoon.volledigenaam";
     shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
     shacl:maxCount 1;
     shacl:name "volledige naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+    shacl:path persoon:volledigeNaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/cba0084dd610b69c432bb492bc3f970a76260160> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Persoon.volledigenaam";
     shacl:datatype xsd:string;
     shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
     shacl:name "volledige naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+    shacl:path persoon:volledigeNaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonShape/fdd871a750ca20e71277d83120117d6acd9aa0fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Persoon.volledigenaam";
     shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
     shacl:minCount 1;
     shacl:name "volledige naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+    shacl:path persoon:volledigeNaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonsrelatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonsrelatieShape/3e299cbcfde07ae9ec0e0ab1b93bab4f4ba560e5>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonsrelatieShape/45ff7a9c9164b09dfadb99dd22e980e67596e8ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonsrelatieShape/d9b48a544ac4efa4919abd63990e05f3cae1e57c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonsrelatieShape/05de3e63a824760728bfaa358575907c2486f47d>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonsrelatieShape/a3682e7d6f80582424161a3bb93041b0b32dd957>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#PersoonsrelatieShape/adddad0488ddae0b7dea769bb064e5f7eb25f727>.
@@ -793,254 +1002,254 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/349c97208e41993ec0733ffe352cb8e3ff73035a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/5572fe7ff39fec287e47397b110827a1c95a3320>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/de024b746d76650963f36eec07b90d474d49574c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/7a82e038d1422954512e76e3732b9598586609a3>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/c039119414a19095e392843dc49ee8a1b23ab832>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/ebc7b55deb0b535cd05b8c1feac94ead73fb8285>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Saldo>.
+    shacl:targetClass schuldbeheer:Saldo.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/349c97208e41993ec0733ffe352cb8e3ff73035a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Saldo.saldobedrag";
     shacl:description "Het resterende bedrag zelf."@nl;
     shacl:maxCount 1;
     shacl:name "saldobedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#saldobedrag>.
+    shacl:path schuldbeheer:saldobedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/5572fe7ff39fec287e47397b110827a1c95a3320> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Saldo.saldobedrag";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het resterende bedrag zelf."@nl;
     shacl:name "saldobedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#saldobedrag>.
+    shacl:path schuldbeheer:saldobedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/7a82e038d1422954512e76e3732b9598586609a3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Saldo.saldodatum";
     shacl:datatype xsd:date;
     shacl:description "De datum waarop het saldo geldt."@nl;
     shacl:name "saldodatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#saldodatum>.
+    shacl:path schuldbeheer:saldodatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/c039119414a19095e392843dc49ee8a1b23ab832> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Saldo.saldodatum";
     shacl:description "De datum waarop het saldo geldt."@nl;
     shacl:maxCount 1;
     shacl:name "saldodatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#saldodatum>.
+    shacl:path schuldbeheer:saldodatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/de024b746d76650963f36eec07b90d474d49574c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Saldo.saldobedrag";
     shacl:description "Het resterende bedrag zelf."@nl;
     shacl:minCount 1;
     shacl:name "saldobedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#saldobedrag>.
+    shacl:path schuldbeheer:saldobedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SaldoShape/ebc7b55deb0b535cd05b8c1feac94ead73fb8285> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Saldo.saldodatum";
     shacl:description "De datum waarop het saldo geldt."@nl;
     shacl:minCount 1;
     shacl:name "saldodatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#saldodatum>.
+    shacl:path schuldbeheer:saldodatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchrappingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchrappingShape/1677bc268a2e65a22117f8ea7dae1bbac8610853>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchrappingShape/239cbff5b4e7c2c4fdf81ff86fb024f2cc84e1d0>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchrappingShape/7ea6b16c44d82ddd442db53fe5853f46633cb8ee>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Schrapping>.
+    shacl:targetClass schuldbeheer:Schrapping.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchrappingShape/1677bc268a2e65a22117f8ea7dae1bbac8610853> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schrapping.geschraptafbetalingsplan";
     shacl:description "Verwijzing naar het afbetalingsplan dat wordt geschrapt."@nl;
     shacl:maxCount 1;
     shacl:name "geschrapt afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#geschraptAfbetalingsplan>.
+    shacl:path schuldbeheer:geschraptAfbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchrappingShape/239cbff5b4e7c2c4fdf81ff86fb024f2cc84e1d0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schrapping.geschraptafbetalingsplan";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplan>;
+    shacl:class schuldbeheer:Afbetalingsplan;
     shacl:description "Verwijzing naar het afbetalingsplan dat wordt geschrapt."@nl;
     shacl:name "geschrapt afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#geschraptAfbetalingsplan>.
+    shacl:path schuldbeheer:geschraptAfbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchrappingShape/7ea6b16c44d82ddd442db53fe5853f46633cb8ee> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schrapping.geschraptafbetalingsplan";
     shacl:description "Verwijzing naar het afbetalingsplan dat wordt geschrapt."@nl;
     shacl:minCount 1;
     shacl:name "geschrapt afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#geschraptAfbetalingsplan>.
+    shacl:path schuldbeheer:geschraptAfbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/97d7a9c6efa99a7cadbc1c3cfe0968deb6b5124a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/13dbe9b708c7b765d18dd48db0a21b8724f38b4f>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/301cc1a369b31c6de7bc4ece46c9bb3d5e868435>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/a261ccf77e9fd33f94bdafc3a65539eec2efe35a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/f16c636b3fabc4a9109d5d89654bc126600647f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/b362265c1ccb6029dee112af2d1c27655c30efdb>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/3be04c6d817e7501e7775b9689950b084ff04cec>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/3ce27d72e55b4d8d394106d9fb74ec68f307c543>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/97ef9a1dfcde459af6e98141a9f802c641d152f6>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/e43768ead49d4186bfa00ccf465af65259a9ea09>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/ad5cd8ecfebe67a067b7bb1b23550fbfc5c61fff>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/324df6ada725ad41c15b4344d2a6860d6be4dd5d>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/8d112d7b3c4af52b0311b5f598cde876a5daf6d4>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/05ceb255d68483f400a3b1fd12a9bf026fd5cb3a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/5b01aecb907416f7cb26460dad8788d5b65cd158>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/efee31893cf535faecd3db89e144c0f08a8877f8>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/57a6106408b909e7f28901dc26148837df6fa688>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/a869879a8b9a55d918e22f017dad072f9fc3cac5>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/2773d89619c35d946919901cd161c91d07d35eba>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/c495c1adf9589b5371548aef4cad4d18febf5119>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/e7d5a8dde8acb44aa653d92b2c6af9aea9b1eeba>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/b326c6ee313ee31986d6020769f84d3593282e4e>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/3bebf2ff393e56edb86ad12172696c69d5514c7c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/326c233d3fadb544b815bd20cfd69afa0e65441a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/52678ab4faaec6c8f7e3517110f8e0b46f600359>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/8c3e8f6893440e0d4830b92c18a8ca4d128cb522>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/5230f4cb48669ebe8c14c49623a7f1f4556b7e89>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/6cef92f3f249dd6d4d3de1507d0a4cb45c25be61>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/f13917623632a342af696edeb2c4bbef8774a5b6>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/61ce1dc01307e43f6d63ca9d666754439e132cb7>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/1a1534deb903b00725f7cbf6c2b7e7b92be4ca07>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/41964a0e08d61832ede9fd2ea0b18b4251db99fc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/a52472e6c9ffc0475a87d23049b7220c9132b711>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/5b7f6e930383fb7175df501e7dd70c593f5af626>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Schuldvordering>.
+    shacl:targetClass schuldbeheer:Schuldvordering.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een identificator voor de schuldvordering"@nl;
     shacl:name "identificator"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#identificator>.
+    shacl:path schuldbeheer:identificator.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/05ceb255d68483f400a3b1fd12a9bf026fd5cb3a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.schuldeiser";
     shacl:class prov:Agent;
     shacl:description "Verwijzing naar de agent (persoon of organisatie) die zijn recht uitoefent om een bedrag te innen van andere partijen. "@nl;
     shacl:name "schuldeiser"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schuldeiser>.
+    shacl:path schuldbeheer:schuldeiser.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/13dbe9b708c7b765d18dd48db0a21b8724f38b4f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.aanmaning";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Aanmaning>;
+    shacl:class schuldbeheer:Aanmaning;
     shacl:description "Verwijzing naar een aanmaning  met betrekking tot de schuldvordering."@nl;
     shacl:name "aanmaning"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#aanmaning>.
+    shacl:path schuldbeheer:aanmaning.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/1a1534deb903b00725f7cbf6c2b7e7b92be4ca07> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.wanbetaling";
     shacl:datatype xsd:boolean;
     shacl:description "Laat toe om aan te duiden of de hoofdsom voor de uiterste betaaldatum werd betaald."@nl;
     shacl:name "wanbetaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#wanbetaling>.
+    shacl:path schuldbeheer:wanbetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/2773d89619c35d946919901cd161c91d07d35eba> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.schuldvorderingscategorie";
     shacl:description "Een schuldvordering behoort tot een categorie."@nl;
     shacl:maxCount 1;
     shacl:name "schuldvorderingscategorie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schuldvorderingscategorie>.
+    shacl:path schuldbeheer:schuldvorderingscategorie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/301cc1a369b31c6de7bc4ece46c9bb3d5e868435> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.afbetalingsplan";
     shacl:description "Verwijzing naar een afbetalingsplan dat voor de schuldvordering geldt."@nl;
     shacl:minCount 1;
     shacl:name "afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#afbetalingsplan>.
+    shacl:path schuldbeheer:afbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/324df6ada725ad41c15b4344d2a6860d6be4dd5d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.oninbaarheidsverklaring";
     shacl:description "Verwijzing naar een oninbaarheidsverklaring voor de schuldvordering."@nl;
     shacl:maxCount 1;
     shacl:name "oninbaarheidsverklaring"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#oninbaarheidsverklaring>.
+    shacl:path schuldbeheer:oninbaarheidsverklaring.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/326c233d3fadb544b815bd20cfd69afa0e65441a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.uiterstebetaaldatum";
     shacl:datatype xsd:date;
     shacl:description "De laatst mogelijke datum waarop een betaling moet worden gedaan om te voorkomen dat er eventuele boetes, interesten of andere sancties worden opgelegd."@nl;
     shacl:name "uiterste betaaldatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#uitersteBetaaldatum>.
+    shacl:path schuldbeheer:uitersteBetaaldatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/3be04c6d817e7501e7775b9689950b084ff04cec> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.grondslag";
     shacl:class eli:LegalResource;
     shacl:description "Verwijzing naar de juridische basis voor de schuldvordering"@nl;
     shacl:name "grondslag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#grondslag>.
+    shacl:path schuldbeheer:grondslag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/3bebf2ff393e56edb86ad12172696c69d5514c7c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.toerekeningvanbetaling";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#ToerekeningVanBetaling>;
+    shacl:class schuldbeheer:ToerekeningVanBetaling;
     shacl:description "Het toewijzen van een betaald geldbedrag aan een schuldvordering. "@nl;
     shacl:name "toerekening van betaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#toerekeningVanBetaling>.
+    shacl:path schuldbeheer:toerekeningVanBetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/3ce27d72e55b4d8d394106d9fb74ec68f307c543> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.hoofdsom";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het totale bedrag dat wordt gevorderd door de schuldeiser, exclusief eventuele wanbetalingskosten."@nl;
     shacl:name "hoofdsom"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#hoofdsom>.
+    shacl:path schuldbeheer:hoofdsom.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/41964a0e08d61832ede9fd2ea0b18b4251db99fc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.wanbetaling";
     shacl:description "Laat toe om aan te duiden of de hoofdsom voor de uiterste betaaldatum werd betaald."@nl;
     shacl:maxCount 1;
     shacl:name "wanbetaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#wanbetaling>.
+    shacl:path schuldbeheer:wanbetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/5230f4cb48669ebe8c14c49623a7f1f4556b7e89> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.verjaringsdatum";
     shacl:description "De datum waarna de schuldeiser zijn recht om juridische stappen te ondernemen verliest en de vordering niet langer inbaar is. Wordt berekend op basis van de verjaringstermijn, vanaf de startdatum van de vordering of de datum van de stuitende activiteit, bijvoorbeeld een betaling."@nl;
     shacl:minCount 1;
     shacl:name "verjaringsdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#verjaringsdatum>.
+    shacl:path schuldbeheer:verjaringsdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/52678ab4faaec6c8f7e3517110f8e0b46f600359> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.uiterstebetaaldatum";
     shacl:description "De laatst mogelijke datum waarop een betaling moet worden gedaan om te voorkomen dat er eventuele boetes, interesten of andere sancties worden opgelegd."@nl;
     shacl:maxCount 1;
     shacl:name "uiterste betaaldatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#uitersteBetaaldatum>.
+    shacl:path schuldbeheer:uitersteBetaaldatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/57a6106408b909e7f28901dc26148837df6fa688> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.schuldenaar";
     shacl:description "Verwijzing naar de agent (persoon of organisatie) die de verplichting heeft om een schuld te voldoen aan een andere partij. "@nl;
     shacl:minCount 1;
     shacl:name "schuldenaar"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schuldenaar>.
+    shacl:path schuldbeheer:schuldenaar.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/5b01aecb907416f7cb26460dad8788d5b65cd158> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.schuldeiser";
     shacl:description "Verwijzing naar de agent (persoon of organisatie) die zijn recht uitoefent om een bedrag te innen van andere partijen. "@nl;
     shacl:maxCount 1;
     shacl:name "schuldeiser"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schuldeiser>.
+    shacl:path schuldbeheer:schuldeiser.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/5b7f6e930383fb7175df501e7dd70c593f5af626> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.wanbetalingsvergoeding";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Wanbetalingsvergoeding>;
+    shacl:class schuldbeheer:Wanbetalingsvergoeding;
     shacl:description "Een schuldvordering kan verhoogd worden met een wanbetalingsvergoeding."@nl;
     shacl:name "wanbetalingsvergoeding"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#wanbetalingsvergoeding>.
+    shacl:path schuldbeheer:wanbetalingsvergoeding.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/61ce1dc01307e43f6d63ca9d666754439e132cb7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.vermindering";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Vermindering>;
+    shacl:class schuldbeheer:Vermindering;
     shacl:description "Verwijzing naar een vermindering voor de schuldvordering."@nl;
     shacl:name "vermindering"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#vermindering>.
+    shacl:path schuldbeheer:vermindering.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/6cef92f3f249dd6d4d3de1507d0a4cb45c25be61> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.verjaringsdatum";
     shacl:description "De datum waarna de schuldeiser zijn recht om juridische stappen te ondernemen verliest en de vordering niet langer inbaar is. Wordt berekend op basis van de verjaringstermijn, vanaf de startdatum van de vordering of de datum van de stuitende activiteit, bijvoorbeeld een betaling."@nl;
     shacl:maxCount 1;
     shacl:name "verjaringsdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#verjaringsdatum>.
+    shacl:path schuldbeheer:verjaringsdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/8c3e8f6893440e0d4830b92c18a8ca4d128cb522> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.uiterstebetaaldatum";
     shacl:description "De laatst mogelijke datum waarop een betaling moet worden gedaan om te voorkomen dat er eventuele boetes, interesten of andere sancties worden opgelegd."@nl;
     shacl:minCount 1;
     shacl:name "uiterste betaaldatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#uitersteBetaaldatum>.
+    shacl:path schuldbeheer:uitersteBetaaldatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/8d112d7b3c4af52b0311b5f598cde876a5daf6d4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.oninbaarheidsverklaring";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Oninbaarheidsverklaring>;
+    shacl:class schuldbeheer:Oninbaarheidsverklaring;
     shacl:description "Verwijzing naar een oninbaarheidsverklaring voor de schuldvordering."@nl;
     shacl:name "oninbaarheidsverklaring"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#oninbaarheidsverklaring>.
+    shacl:path schuldbeheer:oninbaarheidsverklaring.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.identificator";
     shacl:description "Een identificator voor de schuldvordering"@nl;
     shacl:minCount 1;
     shacl:name "identificator"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#identificator>.
+    shacl:path schuldbeheer:identificator.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/97d7a9c6efa99a7cadbc1c3cfe0968deb6b5124a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.aanleiding";
     shacl:class rdfs:Resource;
     shacl:description "Verwijzing naar de aanleiding voor de schuldvordering."@nl;
     shacl:name "aanleiding"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#aanleiding>.
+    shacl:path schuldbeheer:aanleiding.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/97ef9a1dfcde459af6e98141a9f802c641d152f6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.hoofdsom";
     shacl:description "Het totale bedrag dat wordt gevorderd door de schuldeiser, exclusief eventuele wanbetalingskosten."@nl;
     shacl:maxCount 1;
     shacl:name "hoofdsom"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#hoofdsom>.
+    shacl:path schuldbeheer:hoofdsom.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/a261ccf77e9fd33f94bdafc3a65539eec2efe35a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.afbetalingsplan";
     shacl:description "Verwijzing naar een afbetalingsplan dat voor de schuldvordering geldt."@nl;
     shacl:maxCount 1;
     shacl:name "afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#afbetalingsplan>.
+    shacl:path schuldbeheer:afbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/a52472e6c9ffc0475a87d23049b7220c9132b711> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.wanbetaling";
     shacl:description "Laat toe om aan te duiden of de hoofdsom voor de uiterste betaaldatum werd betaald."@nl;
     shacl:minCount 1;
     shacl:name "wanbetaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#wanbetaling>.
+    shacl:path schuldbeheer:wanbetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/a869879a8b9a55d918e22f017dad072f9fc3cac5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.schuldenaar";
     shacl:class prov:Agent;
     shacl:description "Verwijzing naar de agent (persoon of organisatie) die de verplichting heeft om een schuld te voldoen aan een andere partij. "@nl;
     shacl:name "schuldenaar"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schuldenaar>.
+    shacl:path schuldbeheer:schuldenaar.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/ad5cd8ecfebe67a067b7bb1b23550fbfc5c61fff> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.isgerelateerdmet";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Schuldvordering>;
+    shacl:class schuldbeheer:Schuldvordering;
     shacl:description "Verwijzing naar een andere schuldvordering die een verband heeft met de eerste schuldvordering."@nl;
     shacl:name "is gerelateerd met"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#isGerelateerdMet>.
+    shacl:path schuldbeheer:isGerelateerdMet.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/b326c6ee313ee31986d6020769f84d3593282e4e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.schuldvorderingssaldo";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Schuldvorderingssaldo>;
+    shacl:class schuldbeheer:Schuldvorderingssaldo;
     shacl:description "Verwijzing naar een saldo dat werd berekend voor de schuldvordering."@nl;
     shacl:name "schuldvorderingssaldo"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schuldvordingssaldo>.
+    shacl:path schuldbeheer:schuldvordingssaldo.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/b362265c1ccb6029dee112af2d1c27655c30efdb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.betwisting";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Betwisting>;
+    shacl:class schuldbeheer:Betwisting;
     shacl:description "Verwijzing naar een betwisting van de schuldvordering."@nl;
     shacl:name "betwisting"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#betwisting>.
+    shacl:path schuldbeheer:betwisting.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.identificator";
     shacl:description "Een identificator voor de schuldvordering"@nl;
     shacl:maxCount 1;
     shacl:name "identificator"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#identificator>.
+    shacl:path schuldbeheer:identificator.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/c495c1adf9589b5371548aef4cad4d18febf5119> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.schuldvorderingscategorie";
     shacl:description "Een schuldvordering behoort tot een categorie."@nl;
     shacl:minCount 1;
     shacl:name "schuldvorderingscategorie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schuldvorderingscategorie>.
+    shacl:path schuldbeheer:schuldvorderingscategorie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/e43768ead49d4186bfa00ccf465af65259a9ea09> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.hoofdsom";
     shacl:description "Het totale bedrag dat wordt gevorderd door de schuldeiser, exclusief eventuele wanbetalingskosten."@nl;
     shacl:minCount 1;
     shacl:name "hoofdsom"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#hoofdsom>.
+    shacl:path schuldbeheer:hoofdsom.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/e7d5a8dde8acb44aa653d92b2c6af9aea9b1eeba> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.schuldvorderingscategorie";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Schuldvorderingscategorie>;
+    shacl:class schuldbeheer:Schuldvorderingscategorie;
     shacl:description "Een schuldvordering behoort tot een categorie."@nl;
     shacl:name "schuldvorderingscategorie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schuldvorderingscategorie>.
+    shacl:path schuldbeheer:schuldvorderingscategorie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/efee31893cf535faecd3db89e144c0f08a8877f8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.schuldeiser";
     shacl:description "Verwijzing naar de agent (persoon of organisatie) die zijn recht uitoefent om een bedrag te innen van andere partijen. "@nl;
     shacl:minCount 1;
     shacl:name "schuldeiser"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#schuldeiser>.
+    shacl:path schuldbeheer:schuldeiser.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/f13917623632a342af696edeb2c4bbef8774a5b6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.verjaringsdatum";
     shacl:datatype xsd:date;
     shacl:description "De datum waarna de schuldeiser zijn recht om juridische stappen te ondernemen verliest en de vordering niet langer inbaar is. Wordt berekend op basis van de verjaringstermijn, vanaf de startdatum van de vordering of de datum van de stuitende activiteit, bijvoorbeeld een betaling."@nl;
     shacl:name "verjaringsdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#verjaringsdatum>.
+    shacl:path schuldbeheer:verjaringsdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingShape/f16c636b3fabc4a9109d5d89654bc126600647f4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvordering.afbetalingsplan";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplan>;
+    shacl:class schuldbeheer:Afbetalingsplan;
     shacl:description "Verwijzing naar een afbetalingsplan dat voor de schuldvordering geldt."@nl;
     shacl:name "afbetalingsplan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#afbetalingsplan>.
+    shacl:path schuldbeheer:afbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/05e3ec33f95501c84839667f8fa903d7f7235e73>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/35fa2e4f3bda9e8ee624a3842ef0ed42f80596e6>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/4fa7d6f0c2e62235781cb7366907be8bc2fef963>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/24a57202638bc0a0b4f362df2ef7859e3c0fbb73>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/40b0daeeec04f48274479fca4ca4d688d6967947>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/5436567f35d0ed9620444a2ab6b4fbf427dcb28c>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Schuldvorderingscategorie>.
+    shacl:targetClass schuldbeheer:Schuldvorderingscategorie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/05e3ec33f95501c84839667f8fa903d7f7235e73> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvorderingscategorie.fiscaal";
     shacl:datatype xsd:boolean;
     shacl:description "Laat toe om te specifiëren of het om fiscale of niet-fiscale schuldvorderingen gaat."@nl;
     shacl:name "fiscaal"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#fiscaal>.
+    shacl:path schuldbeheer:fiscaal.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvorderingscategorie.naam";
     shacl:datatype xsd:string;
     shacl:description "De naam van de vorderingscategorie, bijvoorbeeld gemeentebelasting, schoolfactuur, GAS-boete."@nl;
@@ -1050,27 +1259,27 @@
     shacl:description "De verjaringstermijn die voor schuldvorderingen van deze categorie geldt."@nl;
     shacl:minCount 1;
     shacl:name "verjaringstermijn"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#verjaringstermijn>.
+    shacl:path schuldbeheer:verjaringstermijn.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/35fa2e4f3bda9e8ee624a3842ef0ed42f80596e6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvorderingscategorie.fiscaal";
     shacl:description "Laat toe om te specifiëren of het om fiscale of niet-fiscale schuldvorderingen gaat."@nl;
     shacl:maxCount 1;
     shacl:name "fiscaal"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#fiscaal>.
+    shacl:path schuldbeheer:fiscaal.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/40b0daeeec04f48274479fca4ca4d688d6967947> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvorderingscategorie.verjaringstermijn";
     shacl:datatype xsd:duration;
     shacl:description "De verjaringstermijn die voor schuldvorderingen van deze categorie geldt."@nl;
     shacl:name "verjaringstermijn"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#verjaringstermijn>.
+    shacl:path schuldbeheer:verjaringstermijn.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/4fa7d6f0c2e62235781cb7366907be8bc2fef963> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvorderingscategorie.fiscaal";
     shacl:description "Laat toe om te specifiëren of het om fiscale of niet-fiscale schuldvorderingen gaat."@nl;
     shacl:minCount 1;
     shacl:name "fiscaal"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#fiscaal>.
+    shacl:path schuldbeheer:fiscaal.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/5436567f35d0ed9620444a2ab6b4fbf427dcb28c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvorderingscategorie.verjaringstermijn";
     shacl:description "De verjaringstermijn die voor schuldvorderingen van deze categorie geldt."@nl;
     shacl:maxCount 1;
     shacl:name "verjaringstermijn"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#verjaringstermijn>.
+    shacl:path schuldbeheer:verjaringstermijn.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingscategorieShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Schuldvorderingscategorie.naam";
     shacl:description "De naam van de vorderingscategorie, bijvoorbeeld gemeentebelasting, schoolfactuur, GAS-boete."@nl;
     shacl:maxCount 1;
@@ -1083,11 +1292,11 @@
     shacl:path dcterms:title.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SchuldvorderingssaldoShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Schuldvorderingssaldo>.
+    shacl:targetClass schuldbeheer:Schuldvorderingssaldo.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuutShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuutShape/8e172c852556aa8404b7130948edad681259b488>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuutShape/ed560feb860205e0339910c9b2942564c01b5e11>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuutShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuutShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuutShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuutShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#SociaalStatuut>.
+    shacl:targetClass schuldbeheer:SociaalStatuut.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuutShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuut.type";
     shacl:description "De aard van een sociaal statuut, bijvoorbeeld verhoogde tegemoetkoming, vermindering verdienvermogen door handicap."@nl;
     shacl:maxCount 1;
@@ -1107,71 +1316,71 @@
     shacl:description "Verwijzing naar de organisatie die het sociaal statuut heeft toegekend. "@nl;
     shacl:minCount 1;
     shacl:name "toegekend door"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#toegekendDoor>.
+    shacl:path schuldbeheer:toegekendDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuutShape/ed560feb860205e0339910c9b2942564c01b5e11> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuut.toegekenddoor";
     shacl:class dcterms:Agent;
     shacl:description "Verwijzing naar de organisatie die het sociaal statuut heeft toegekend. "@nl;
     shacl:name "toegekend door"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#toegekendDoor>.
+    shacl:path schuldbeheer:toegekendDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuutShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuut.toegekenddoor";
     shacl:description "Verwijzing naar de organisatie die het sociaal statuut heeft toegekend. "@nl;
     shacl:maxCount 1;
     shacl:name "toegekend door"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#toegekendDoor>.
+    shacl:path schuldbeheer:toegekendDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SociaalStatuuttypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/3031d21f941146ec2cbde105f3963205bad379ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/6a142d51e1996cc547859eb790c61b8be7bf71d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/7da8172d0a595049f5316161a5496c858bc96022>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/f844de6533252e5b38c84162d753e37a42b7c108>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Solvabiliteitsindicator>.
+    shacl:targetClass schuldbeheer:Solvabiliteitsindicator.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsindicator.type";
     shacl:description "De aarde van de solvibiliteitsindicator."@nl;
     shacl:maxCount 1;
     shacl:name "type"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#type>.
+    shacl:path schuldbeheer:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/3031d21f941146ec2cbde105f3963205bad379ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsindicator.einddatum";
     shacl:description "De einddatum voor de geldigheid van de solvabiliteitsindicator."@nl;
     shacl:minCount 1;
     shacl:name "einddatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#startdatum>.
+    shacl:path schuldbeheer:startdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsindicator.type";
     shacl:class skos:Concept;
     shacl:description "De aarde van de solvibiliteitsindicator."@nl;
     shacl:name "type"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#type>.
+    shacl:path schuldbeheer:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/6a142d51e1996cc547859eb790c61b8be7bf71d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsindicator.einddatum";
     shacl:datatype xsd:date;
     shacl:description "De einddatum voor de geldigheid van de solvabiliteitsindicator."@nl;
     shacl:name "einddatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#startdatum>.
+    shacl:path schuldbeheer:startdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsindicator.type";
     shacl:description "De aarde van de solvibiliteitsindicator."@nl;
     shacl:minCount 1;
     shacl:name "type"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#type>.
+    shacl:path schuldbeheer:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/7da8172d0a595049f5316161a5496c858bc96022> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsindicator.einddatum";
     shacl:description "De einddatum voor de geldigheid van de solvabiliteitsindicator."@nl;
     shacl:maxCount 1;
     shacl:name "einddatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#startdatum>.
+    shacl:path schuldbeheer:startdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsindicator.startdatum";
     shacl:description "De startdatum voor de geldigheid van de solvabiliteitsindicator."@nl;
     shacl:maxCount 1;
     shacl:name "startdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#einddatum>.
+    shacl:path schuldbeheer:einddatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatorShape/f844de6533252e5b38c84162d753e37a42b7c108> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsindicator.startdatum";
     shacl:datatype xsd:date;
     shacl:description "De startdatum voor de geldigheid van de solvabiliteitsindicator."@nl;
     shacl:name "startdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#einddatum>.
+    shacl:path schuldbeheer:einddatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsindicatortypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/68fd5c43aad7875b41766f0c3e0792679d610dd7>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/617be5ff75b618833b0678fbe321739fb6e50ccf>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/96c5e4f79711c45884710d9578f2236d447eb06f>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/d1d921d3876b23f59c640dc202fe2630f48843b1>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/6a142d51e1996cc547859eb790c61b8be7bf71d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/7da8172d0a595049f5316161a5496c858bc96022>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/7795703c617f5b31f5a421e8470360141867662f>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/f844de6533252e5b38c84162d753e37a42b7c108>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Solvabiliteitsprofiel>.
+    shacl:targetClass schuldbeheer:Solvabiliteitsprofiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsprofiel.type";
     shacl:description "De aard van het solvabiliteitsprofiel."@nl;
     shacl:maxCount 1;
@@ -1186,17 +1395,17 @@
     shacl:class dcterms:Agent;
     shacl:description "Verwijzing naar de agent die het solvabiliteitsprofiel bepaald heeft. "@nl;
     shacl:name "bepaald door"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#bepaaldDoor>.
+    shacl:path schuldbeheer:bepaaldDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/68fd5c43aad7875b41766f0c3e0792679d610dd7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsprofiel.afgeleidvan";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Solvabiliteitsindicator>;
+    shacl:class schuldbeheer:Solvabiliteitsindicator;
     shacl:description "Verwijzing naar een solvabiliteitsindicator waarvan het solvabilitetisprofiel werd afgeleid."@nl;
     shacl:name "afgeleid van"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#afgeleidVan>.
+    shacl:path schuldbeheer:afgeleidVan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/6a142d51e1996cc547859eb790c61b8be7bf71d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsprofiel.einddatum";
     shacl:datatype xsd:date;
     shacl:description "De einddatum van het solvabiliteitsprofiel. Wanneer de finaciële situatie van een persoon wijzigt, kan het nodig zijn om een nieuw solvabiliteitsprofiel voor de persoon aan te maken."@nl;
     shacl:name "einddatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#einddatum>.
+    shacl:path schuldbeheer:einddatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsprofiel.type";
     shacl:description "De aard van het solvabiliteitsprofiel."@nl;
     shacl:minCount 1;
@@ -1206,44 +1415,44 @@
     shacl:description "De startdatum van het solvabiliteitsprofiel."@nl;
     shacl:minCount 1;
     shacl:name "startdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#startdatum>.
+    shacl:path schuldbeheer:startdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/7da8172d0a595049f5316161a5496c858bc96022> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsprofiel.einddatum";
     shacl:description "De einddatum van het solvabiliteitsprofiel. Wanneer de finaciële situatie van een persoon wijzigt, kan het nodig zijn om een nieuw solvabiliteitsprofiel voor de persoon aan te maken."@nl;
     shacl:maxCount 1;
     shacl:name "einddatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#einddatum>.
+    shacl:path schuldbeheer:einddatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/96c5e4f79711c45884710d9578f2236d447eb06f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsprofiel.bepaalddoor";
     shacl:description "Verwijzing naar de agent die het solvabiliteitsprofiel bepaald heeft. "@nl;
     shacl:maxCount 1;
     shacl:name "bepaald door"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#bepaaldDoor>.
+    shacl:path schuldbeheer:bepaaldDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsprofiel.startdatum";
     shacl:description "De startdatum van het solvabiliteitsprofiel."@nl;
     shacl:maxCount 1;
     shacl:name "startdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#startdatum>.
+    shacl:path schuldbeheer:startdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/d1d921d3876b23f59c640dc202fe2630f48843b1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsprofiel.bepaalddoor";
     shacl:description "Verwijzing naar de agent die het solvabiliteitsprofiel bepaald heeft. "@nl;
     shacl:minCount 1;
     shacl:name "bepaald door"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#bepaaldDoor>.
+    shacl:path schuldbeheer:bepaaldDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitsprofielShape/f844de6533252e5b38c84162d753e37a42b7c108> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Solvabiliteitsprofiel.startdatum";
     shacl:datatype xsd:date;
     shacl:description "De startdatum van het solvabiliteitsprofiel."@nl;
     shacl:name "startdatum"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#startdatum>.
+    shacl:path schuldbeheer:startdatum.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#SolvabiliteitstypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#StukShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#StukShape/e19139b4a69025b25344e815e30de70065ce5e3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#StukShape/074d26f195dfc56c0261f3284206dd9819a9ae3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#StukShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#StukShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/dossier#Stuk>.
+    shacl:targetClass dossier:Stuk.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#StukShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Stuk.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een identificator voor het stuk."@nl;
     shacl:name "identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#StukShape/074d26f195dfc56c0261f3284206dd9819a9ae3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Stuk.datum";
     shacl:description "De datum van het stuk."@nl;
     shacl:minCount 1;
@@ -1258,103 +1467,103 @@
     shacl:class dcterms:Agent;
     shacl:description "De auteur van het stuk."@nl;
     shacl:name "auteur"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/dossier#auteur>.
+    shacl:path dossier:auteur.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/a1dde4e4627d05f5664633102a4e228187e9a4a8>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/dd4b92c8de4be8a2987521c8d1d7988ddf4e7d6c>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/f239e0d658cf971f090fc4e8aa840bbf072d1e69>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/1864cc6d972eb7c7a3f6ccf148fb7854f57475fc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/22aaf1effc9f0c0727826fd3129bd5141832a720>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/8737b27e7a4334423d0bf74f5698b336bed39774>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/5bc55423d0c430ee750299e512fbc7e977777b4d>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/78a166a1e8d3b51bdf0c8998b05761a318935424>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/ebb5f3cd5e86dd6db6e91a33f561bb90a75313aa>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#ToerekeningVanBetaling>.
+    shacl:targetClass schuldbeheer:ToerekeningVanBetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/1864cc6d972eb7c7a3f6ccf148fb7854f57475fc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningvanBetaling.toegerekendbedrag";
     shacl:description "Het geldbedrag dat werd toegerekend aan een schuldvordering."@nl;
     shacl:minCount 1;
     shacl:name "toegerekend bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#toegerekendBedrag>.
+    shacl:path schuldbeheer:toegerekendBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/22aaf1effc9f0c0727826fd3129bd5141832a720> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningvanBetaling.toegerekendbedrag";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het geldbedrag dat werd toegerekend aan een schuldvordering."@nl;
     shacl:name "toegerekend bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#toegerekendBedrag>.
+    shacl:path schuldbeheer:toegerekendBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/5bc55423d0c430ee750299e512fbc7e977777b4d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningvanBetaling.toegerekendebetaling";
     shacl:description "Verwijzing naar de betaling die werd toegerekend."@nl;
     shacl:minCount 1;
     shacl:name "toegerekende betaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#toegerekendeBetaling>.
+    shacl:path schuldbeheer:toegerekendeBetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/78a166a1e8d3b51bdf0c8998b05761a318935424> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningvanBetaling.toegerekendebetaling";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Betaling>;
+    shacl:class schuldbeheer:Betaling;
     shacl:description "Verwijzing naar de betaling die werd toegerekend."@nl;
     shacl:name "toegerekende betaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#toegerekendeBetaling>.
+    shacl:path schuldbeheer:toegerekendeBetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/8737b27e7a4334423d0bf74f5698b336bed39774> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningvanBetaling.toegerekendbedrag";
     shacl:description "Het geldbedrag dat werd toegerekend aan een schuldvordering."@nl;
     shacl:maxCount 1;
     shacl:name "toegerekend bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#toegerekendBedrag>.
+    shacl:path schuldbeheer:toegerekendBedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/a1dde4e4627d05f5664633102a4e228187e9a4a8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningvanBetaling.rekenttoeaan";
     shacl:description "Een toerekening van betaling rekent een (deel van het) betaalde bedrag toe aan een schuldvordering."@nl;
     shacl:minCount 1;
     shacl:name "rekent toe aan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#rekentToeAan>.
+    shacl:path schuldbeheer:rekentToeAan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/dd4b92c8de4be8a2987521c8d1d7988ddf4e7d6c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningvanBetaling.rekenttoeaan";
     shacl:description "Een toerekening van betaling rekent een (deel van het) betaalde bedrag toe aan een schuldvordering."@nl;
     shacl:maxCount 1;
     shacl:name "rekent toe aan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#rekentToeAan>.
+    shacl:path schuldbeheer:rekentToeAan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/ebb5f3cd5e86dd6db6e91a33f561bb90a75313aa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningvanBetaling.toegerekendebetaling";
     shacl:description "Verwijzing naar de betaling die werd toegerekend."@nl;
     shacl:maxCount 1;
     shacl:name "toegerekende betaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#toegerekendeBetaling>.
+    shacl:path schuldbeheer:toegerekendeBetaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningVanBetalingShape/f239e0d658cf971f090fc4e8aa840bbf072d1e69> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#ToerekeningvanBetaling.rekenttoeaan";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Schuldvordering>;
+    shacl:class schuldbeheer:Schuldvordering;
     shacl:description "Een toerekening van betaling rekent een (deel van het) betaalde bedrag toe aan een schuldvordering."@nl;
     shacl:name "rekent toe aan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#rekentToeAan>.
+    shacl:path schuldbeheer:rekentToeAan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VerminderingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VerminderingShape/1d65f5c0464f88797fe36d07fbf6bb81e6715a98>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VerminderingShape/790f4374cee0b23eb5d652108d54b94a4ed5d719>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VerminderingShape/face23d492415c989ca48ea0e40218593e15470c>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Vermindering>.
+    shacl:targetClass schuldbeheer:Vermindering.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VerminderingShape/1d65f5c0464f88797fe36d07fbf6bb81e6715a98> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Vermindering.verminderingsbedrag";
     shacl:description "Het bedrag dat in mindering wordt gebracht."@nl;
     shacl:minCount 1;
     shacl:name "verminderingsbedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#verminderingsbedrag>.
+    shacl:path schuldbeheer:verminderingsbedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VerminderingShape/790f4374cee0b23eb5d652108d54b94a4ed5d719> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Vermindering.verminderingsbedrag";
     shacl:description "Het bedrag dat in mindering wordt gebracht."@nl;
     shacl:maxCount 1;
     shacl:name "verminderingsbedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#verminderingsbedrag>.
+    shacl:path schuldbeheer:verminderingsbedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VerminderingShape/face23d492415c989ca48ea0e40218593e15470c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Vermindering.verminderingsbedrag";
     shacl:class schemas:MonetaryAmount;
     shacl:description "Het bedrag dat in mindering wordt gebracht."@nl;
     shacl:name "verminderingsbedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#verminderingsbedrag>.
+    shacl:path schuldbeheer:verminderingsbedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VoorstelShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VoorstelShape/00aaabfebc778b8ec2adadf354e19889058b2f3a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VoorstelShape/97b25f62ace3d7828a468ba06e03756549cf9882>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VoorstelShape/eb3fd08dfe54bfd193a99f71413274e2ad8dd5b3>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Voorstel>.
+    shacl:targetClass schuldbeheer:Voorstel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VoorstelShape/00aaabfebc778b8ec2adadf354e19889058b2f3a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Voorstel.steltvoor";
-    shacl:class <https://data.vlaanderen.be/ns/schuldbeheer#Afbetalingsplan>;
+    shacl:class schuldbeheer:Afbetalingsplan;
     shacl:description "Verwijzing naar het afbetalingsplan dat wordt voorgesteld."@nl;
     shacl:name "stelt voor"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#voorgesteldAfbetalingsplan>.
+    shacl:path schuldbeheer:voorgesteldAfbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VoorstelShape/97b25f62ace3d7828a468ba06e03756549cf9882> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Voorstel.steltvoor";
     shacl:description "Verwijzing naar het afbetalingsplan dat wordt voorgesteld."@nl;
     shacl:maxCount 1;
     shacl:name "stelt voor"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#voorgesteldAfbetalingsplan>.
+    shacl:path schuldbeheer:voorgesteldAfbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#VoorstelShape/eb3fd08dfe54bfd193a99f71413274e2ad8dd5b3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Voorstel.steltvoor";
     shacl:description "Verwijzing naar het afbetalingsplan dat wordt voorgesteld."@nl;
     shacl:minCount 1;
     shacl:name "stelt voor"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#voorgesteldAfbetalingsplan>.
+    shacl:path schuldbeheer:voorgesteldAfbetalingsplan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/08f3d872b22601da11812a8c1af174efbc6aa7d7>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/4437a8cf3db30a6a923f015be9f9c7536e0069ec>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/3839f646d813b4c43ce32569187e402e8b90ad52>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/96926793a6b39cb1cfe44552e73841e2fffbe759>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Wanbetalingsvergoeding>.
+    shacl:targetClass schuldbeheer:Wanbetalingsvergoeding.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/08f3d872b22601da11812a8c1af174efbc6aa7d7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Wanbetalingsvergoeding.interest";
     shacl:description "De omvang van de wanbetalingsvergoeding  kan bepaald worden als een percentage op bedrag van de schuldvordering dat nog niet betaald werd."@nl;
     shacl:maxCount 1;
     shacl:name "interest"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#interest>.
+    shacl:path schuldbeheer:interest.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Wanbetalingsvergoeding.type";
     shacl:description "De aard van de wanbetalingsvergoeding, bijvoorbeeld verwijlinterest, aanmaningskost, verzendingskost"@nl;
     shacl:maxCount 1;
@@ -1369,12 +1578,12 @@
     shacl:class schemas:MonetaryAmount;
     shacl:description "De omvang van de wanbetalingsvergoeding kan worden bepaald door een vast geldbedrag."@nl;
     shacl:name "kost"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#kost>.
+    shacl:path schuldbeheer:kost.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/4437a8cf3db30a6a923f015be9f9c7536e0069ec> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Wanbetalingsvergoeding.interest";
     shacl:datatype xsd:decimal;
     shacl:description "De omvang van de wanbetalingsvergoeding  kan bepaald worden als een percentage op bedrag van de schuldvordering dat nog niet betaald werd."@nl;
     shacl:name "interest"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#interest>.
+    shacl:path schuldbeheer:interest.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#Wanbetalingsvergoeding.type";
     shacl:description "De aard van de wanbetalingsvergoeding, bijvoorbeeld verwijlinterest, aanmaningskost, verzendingskost"@nl;
     shacl:minCount 1;
@@ -1384,10 +1593,10 @@
     shacl:description "De omvang van de wanbetalingsvergoeding kan worden bepaald door een vast geldbedrag."@nl;
     shacl:maxCount 1;
     shacl:name "kost"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/schuldbeheer#kost>.
+    shacl:path schuldbeheer:kost.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WanbetalingsvergoedingstypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/ontwerpstandaard/2024-07-23#WijzigingShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/schuldbeheer#Wijziging>.
+    shacl:targetClass schuldbeheer:Wijziging.

@@ -1,40 +1,249 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/> a <http://purl.org/ontology/bibo/Document>;
     dcterms:language "nl"@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#status> vocab:role vocab:status.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#respecHeader> vocab:role vocab:contentinfo.
 _:df_203_1 a foaf:Person;
     foaf:lastName "Celen"@nl;
     foaf:firstName "Nico"@nl.
@@ -92,18 +301,18 @@ _:df_203_35 a foaf:Person;
 _:df_203_37 a foaf:Person;
     foaf:lastName "Wuyts"@nl;
     foaf:firstName "Els"@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#metainfo> vocab:role vocab:metainfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#main> vocab:role vocab:main.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#h2_sotd> vocab:role vocab:heading.
 <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#ref> a <http://purl.org/ontology/bibo/Chapter>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#ref>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#h2_sotd> vocab:role vocab:heading.
 <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/> dcterms:type dcmitype:Text;
     dcterms:title "Deze specificatie"@nl;
-    <http://creativecommons.org/ns#attributionURL> <http://vlaanderen.be/informatievlaanderen>;
-    <http://creativecommons.org/ns#attributionName> "Informatie Vlaanderen"@nl;
-    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+    creativecommons:attributionURL <http://vlaanderen.be/informatievlaanderen>;
+    creativecommons:attributionName "Informatie Vlaanderen"@nl;
+    vocab:license <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#conformance> vocab:role vocab:heading.
 <https://purl.eu/ns/mobility/timetables-and-planning#Authority.address> a rdfs:Property;
     rdfs:label "\n                            \n                            adres\n                          "@nl;
     rdfs:comment "Postadres van de autoriteit."@nl;
@@ -120,7 +329,7 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            tekst zijkant\n                          "@nl;
     rdfs:comment "Tekst die wordt weergegeven aan de zijkant van het voertuig dat is gekoppeld aan het bestemmingsdisplay."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#variant> a rdfs:Property;
+timetables-and-planning:variant a rdfs:Property;
     rdfs:label "\n                            \n                            variant\n                          "@nl;
     rdfs:comment "Variant van het bestemmingsdisplay."@nl;
     vann:usageNote ""@nl.
@@ -128,7 +337,7 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            via\n                          "@nl;
     rdfs:comment "Tekst om weer te geven voor het Via display."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#destinationVariantDisplayType> a rdfs:Property;
+timetables-and-planning:destinationVariantDisplayType a rdfs:Property;
     rdfs:label "\n                            \n                            bestemmingsdisplay varianttype\n                          "@nl;
     rdfs:comment "Type van het bestemmingsdisplay variant."@nl;
     vann:usageNote ""@nl.
@@ -144,7 +353,7 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            via\n                          "@nl;
     rdfs:comment "Tekst om te tonen voor de Via display."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#describedBy> a rdfs:Property;
+timetables-and-planning:describedBy a rdfs:Property;
     rdfs:label "\n                            \n                            beschreven door\n                          "@nl;
     rdfs:comment "Eigenschap van de dag die wordt gebruikt om het dagtype te beschrijven."@nl;
     vann:usageNote ""@nl.
@@ -164,7 +373,7 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            omschrijving\n                          "@nl;
     rdfs:comment "Beschrijving van het dagtype."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#timeband> a rdfs:Property;
+timetables-and-planning:timeband a rdfs:Property;
     rdfs:label "\n                            \n                            tijdsband\n                          "@nl;
     rdfs:comment "Tijdband geassocieerd met het dagtype."@nl;
     vann:usageNote ""@nl.
@@ -172,11 +381,11 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            vroegste tijd\n                          "@nl;
     rdfs:comment "Vroegste starttijd van het dagtype."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#available> a rdfs:Property;
+timetables-and-planning:available a rdfs:Property;
     rdfs:label "\n                            \n                            beschikbaar\n                          "@nl;
     rdfs:comment "Beschikbaar op de toegewezen dag."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#date> a rdfs:Property;
+timetables-and-planning:date a rdfs:Property;
     rdfs:label "\n                            \n                            datum\n                          "@nl;
     rdfs:comment "Datum van de dagtype-toewijzing."@nl;
     vann:usageNote ""@nl.
@@ -184,11 +393,11 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            naam\n                          "@nl;
     rdfs:comment "Naam van de dagtype-toewijzing."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#operatingPeriod> a rdfs:Property;
+timetables-and-planning:operatingPeriod a rdfs:Property;
     rdfs:label "\n                            \n                            operationele periode\n                          "@nl;
     rdfs:comment "Verwijzing naar de operationele periode die is toegewezen door de dagtype-toewijzing."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#within> a rdfs:Property;
+timetables-and-planning:within a rdfs:Property;
     rdfs:label "\n                            \n                            binnen\n                          "@nl;
     rdfs:comment "Operationele periode waarbinnen de operationele kalender zich bevindt."@nl;
     vann:usageNote ""@nl.
@@ -196,7 +405,7 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            naam\n                          "@nl;
     rdfs:comment "Naam van de operationele kalender."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#operatingDay> a rdfs:Property;
+timetables-and-planning:operatingDay a rdfs:Property;
     rdfs:label "\n                            \n                            operationele dag\n                          "@nl;
     rdfs:comment "Bedrijfsdag in de operationele kalender."@nl;
     vann:usageNote ""@nl.
@@ -208,15 +417,15 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            van datum\n                          "@nl;
     rdfs:comment "Inclusieve startdatum voor geldigheid van de operationele kalender."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#dayType> a rdfs:Property;
+timetables-and-planning:dayType a rdfs:Property;
     rdfs:label "\n                            \n                            dagtype\n                          "@nl;
     rdfs:comment "Dagtype voor de Diensrit."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#facility> a rdfs:Property;
+timetables-and-planning:facility a rdfs:Property;
     rdfs:label "\n                            \n                            faciliteit\n                          "@nl;
     rdfs:comment "Faciliteit op de dienstrit."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#flexibleLineView> a rdfs:Property;
+timetables-and-planning:flexibleLineView a rdfs:Property;
     rdfs:label "\n                            \n                            flexibele lijn view\n                          "@nl;
     rdfs:comment "Een groep flexibele routes die algemeen bekend is bij het publiek door een vergelijkbare naam of nummer en die algemene boekingsregelingen hebben."@nl;
     vann:usageNote ""@nl.
@@ -224,7 +433,7 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            gemaakt met\n                          "@nl;
     rdfs:comment "Dienstritpatroon dat werd gevolgd om de Dienstrit te maken."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#operator> a rdfs:Property;
+timetables-and-planning:operator a rdfs:Property;
     rdfs:label "\n                            \n                            operator\n                          "@nl;
     rdfs:comment "Verwijzing naar een operator."@nl;
     vann:usageNote ""@nl.
@@ -232,11 +441,11 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            ritduur\n                          "@nl;
     rdfs:comment "Totale lengte van de dienstrit. Kan worden berekend uit individuele tijden."@nl;
     vann:usageNote "Toevoegen aan vertrektijd om de aankomsttijd van de service te verkrijgen."@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#trainSize> a rdfs:Property;
+timetables-and-planning:trainSize a rdfs:Property;
     rdfs:label "\n                            \n                            treingrootte\n                          "@nl;
     rdfs:comment "Vereisten voor treingrootte."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#trainNumber> a rdfs:Property;
+timetables-and-planning:trainNumber a rdfs:Property;
     rdfs:label "\n                            \n                            treinnummer\n                          "@nl;
     rdfs:comment "Treinnummers - afgeleid door middel van ritdelen van een rit - alleen voor een multi-part-ritten."@nl;
     vann:usageNote ""@nl.
@@ -248,7 +457,7 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            vertrektijd\n                          "@nl;
     rdfs:comment "Vertrektijd."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#vehicleType> a rdfs:Property;
+timetables-and-planning:vehicleType a rdfs:Property;
     rdfs:label "\n                            \n                            voertuigtype\n                          "@nl;
     rdfs:comment "Verwijzing naar het type voertuig te gebruiken op de Diensrit."@nl;
     vann:usageNote ""@nl.
@@ -304,11 +513,11 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            van\n                          "@nl;
     rdfs:comment "Start van de dienstverbinding."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#arrivalDayOffset> a rdfs:Property;
+timetables-and-planning:arrivalDayOffset a rdfs:Property;
     rdfs:label "\n                            \n                            aankomstdag offset\n                          "@nl;
     rdfs:comment "Aantal dagen na de starttijd van de reis, indien niet dezelfde kalenderdag. Standaard is 0 voor dezelfde dag."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#arrivalTime> a rdfs:Property;
+timetables-and-planning:arrivalTime a rdfs:Property;
     rdfs:label "\n                            \n                            aankomsttijd\n                          "@nl;
     rdfs:comment "Aankomsttijd op punt in patroon."@nl;
     vann:usageNote ""@nl.
@@ -320,27 +529,27 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            vertrektijd\n                          "@nl;
     rdfs:comment "Vertrektijd op punt in patroon."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#headway> a rdfs:Property;
+timetables-and-planning:headway a rdfs:Property;
     rdfs:label "\n                            \n                            volgtijd\n                          "@nl;
     rdfs:comment "Hoofdinterval op punt in patroon."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#usedToDescribe> a rdfs:Property;
+timetables-and-planning:usedToDescribe a rdfs:Property;
     rdfs:label "\n                            \n                            beschrijft\n                          "@nl;
     rdfs:comment "Dagtype die de Eigenschap van de Dag beschrijft."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#dayOfMonth> a rdfs:Property;
+timetables-and-planning:dayOfMonth a rdfs:Property;
     rdfs:label "\n                            \n                            dag van de maand\n                          "@nl;
     rdfs:comment "Voor die dagtypen die op dezelfde dag van de maand voorkomen; een maand als een nummer."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#dayOfWeek> a rdfs:Property;
+timetables-and-planning:dayOfWeek a rdfs:Property;
     rdfs:label "\n                            \n                            dag van de week\n                          "@nl;
     rdfs:comment "De dag van de week, bv. zondag."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#dayOfYear> a rdfs:Property;
+timetables-and-planning:dayOfYear a rdfs:Property;
     rdfs:label "\n                            \n                            dag van het jaar\n                          "@nl;
     rdfs:comment "Voor die dagtypes die elk jaar op dezelfde dag plaatsvinden, maand en dag."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#crowding> a rdfs:Property;
+timetables-and-planning:crowding a rdfs:Property;
     rdfs:label "\n                            \n                            drukte\n                          "@nl;
     rdfs:comment "Relatieve drukte van de dag, b.v. stil, normaal, druk, etc."@nl;
     vann:usageNote ""@nl.
@@ -348,7 +557,7 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            land\n                          "@nl;
     rdfs:comment "Land van vakantietype."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#monthOfYear> a rdfs:Property;
+timetables-and-planning:monthOfYear a rdfs:Property;
     rdfs:label "\n                            \n                            maand van het jaar\n                          "@nl;
     rdfs:comment "Voor die dagsoorten die elk jaar op dezelfde maand voorkomen; een maand als een nummer."@nl;
     vann:usageNote ""@nl.
@@ -360,15 +569,15 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            omschrijving\n                          "@nl;
     rdfs:comment "Beschrijving van de eigenschap van de dag."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#season> a rdfs:Property;
+timetables-and-planning:season a rdfs:Property;
     rdfs:label "\n                            \n                            seizoen\n                          "@nl;
     rdfs:comment "Het seizoen, bv. winter."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#holidayType> a rdfs:Property;
+timetables-and-planning:holidayType a rdfs:Property;
     rdfs:label "\n                            \n                            vakantietype\n                          "@nl;
     rdfs:comment "Het type vakantie, bv. Kerstmis."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#weekOfMonth> a rdfs:Property;
+timetables-and-planning:weekOfMonth a rdfs:Property;
     rdfs:label "\n                            \n                            week van de maand\n                          "@nl;
     rdfs:comment "Weeknummer van de maand (1-5)."@nl;
     vann:usageNote ""@nl.
@@ -412,15 +621,15 @@ _:df_203_37 a foaf:Person;
     rdfs:label "\n                            \n                            start van\n                          "@nl;
     rdfs:comment "Dienstverbinding waarvan het stoppunt van het schema het begin is."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#stopType> a rdfs:Property;
+timetables-and-planning:stopType a rdfs:Property;
     rdfs:label "\n                            \n                            stoptype\n                          "@nl;
     rdfs:comment "Type stopplaats."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#tariffZones> a rdfs:Property;
+timetables-and-planning:tariffZones a rdfs:Property;
     rdfs:label "\n                            \n                            tariefzones\n                          "@nl;
     rdfs:comment "Tariefzones waartoe het geplande stoppunt behoort."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#timingpointStatus> a rdfs:Property;
+timetables-and-planning:timingpointStatus a rdfs:Property;
     rdfs:label "\n                            \n                            tijdspuntstatus\n                          "@nl;
     rdfs:comment "Timing compliance-status van het punt."@nl;
     vann:usageNote ""@nl.
@@ -432,11 +641,11 @@ rov:legalName a rdfs:Property;
     rdfs:label "\n                            \n                            wettelijke naam\n                          "@nl;
     rdfs:comment "Wettelijk geregistreerde naam vd organisatie."@nl;
     vann:usageNote "Evt in verschillende talen."@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#composedOf> a rdfs:Property;
+timetables-and-planning:composedOf a rdfs:Property;
     rdfs:label "\n                            \n                            bestaande uit\n                          "@nl;
     rdfs:comment "De lijnen die samen de groep lijnen vormen."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#mainline> a rdfs:Property;
+timetables-and-planning:mainline a rdfs:Property;
     rdfs:label "\n                            \n                            hoofdlijn\n                          "@nl;
     rdfs:comment "De hoofdlijn van de groep lijnen."@nl;
     vann:usageNote ""@nl.
@@ -448,7 +657,7 @@ rov:legalName a rdfs:Property;
     rdfs:label "\n                            \n                            transportmodus\n                          "@nl;
     rdfs:comment "Transportmode van de groep lijnen."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#otherModes> a rdfs:Property;
+timetables-and-planning:otherModes a rdfs:Property;
     rdfs:label "\n                            \n                            andere transportmodus\n                          "@nl;
     rdfs:comment "Extra transportmodi voor de lijn."@nl;
     vann:usageNote ""@nl.
@@ -456,15 +665,15 @@ rov:legalName a rdfs:Property;
     rdfs:label "\n                            \n                            bestaande uit\n                          "@nl;
     rdfs:comment "De routes die de lijn vormen."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#documentLink> a rdfs:Property;
+timetables-and-planning:documentLink a rdfs:Property;
     rdfs:label "\n                            \n                            documentlink\n                          "@nl;
     rdfs:comment "Tijdschema documenten in verband met de lijn, b.v. PDF-bestanden."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#additionalOperators> a rdfs:Property;
+timetables-and-planning:additionalOperators a rdfs:Property;
     rdfs:label "\n                            \n                            extra operators\n                          "@nl;
     rdfs:comment "Verwijzingen naar extra autoriteiten of exploitanten voor de lijn."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#monitored> a rdfs:Property;
+timetables-and-planning:monitored a rdfs:Property;
     rdfs:label "\n                            \n                            gemonitord\n                          "@nl;
     rdfs:comment "Geeft aan of real-time gegevens normaal beschikbaar zijn voor de lijn."@nl;
     vann:usageNote ""@nl.
@@ -500,7 +709,7 @@ rov:legalName a rdfs:Property;
     rdfs:label "\n                            \n                            toegankelijkheidsbeoordeling\n                          "@nl;
     rdfs:comment "Toegankelijkheidsbeoordeling van de lijn."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#allowedDirection> a rdfs:Property;
+timetables-and-planning:allowedDirection a rdfs:Property;
     rdfs:label "\n                            \n                            toegestane richting\n                          "@nl;
     rdfs:comment "Toegestane richtingen voor de lijn."@nl;
     vann:usageNote ""@nl.
@@ -516,7 +725,7 @@ rov:legalName a rdfs:Property;
     rdfs:label "\n                            \n                            transportsubmodus\n                          "@nl;
     rdfs:comment "Subtransportmodus van de lijn."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#typeOfLine> a rdfs:Property;
+timetables-and-planning:typeOfLine a rdfs:Property;
     rdfs:label "\n                            \n                            type lijn\n                          "@nl;
     rdfs:comment "Verwijzing naar een type lijn."@nl;
     vann:usageNote ""@nl.
@@ -540,7 +749,7 @@ rov:legalName a rdfs:Property;
     rdfs:label "\n                            \n                            daglengte\n                          "@nl;
     rdfs:comment "Lengte van de operationele dag."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#calendarDate> a rdfs:Property;
+timetables-and-planning:calendarDate a rdfs:Property;
     rdfs:label "\n                            \n                            kalenderdatum\n                          "@nl;
     rdfs:comment "Kalenderdatum van de operationele dag."@nl;
     vann:usageNote ""@nl.
@@ -572,7 +781,7 @@ rov:legalName a rdfs:Property;
     rdfs:label "\n                            \n                            land\n                          "@nl;
     rdfs:comment "Verwijzing naar het land."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#primaryMode> a rdfs:Property;
+timetables-and-planning:primaryMode a rdfs:Property;
     rdfs:label "\n                            \n                            primaire modus\n                          "@nl;
     rdfs:comment "Primaire transportmodus van de operator."@nl;
     vann:usageNote ""@nl.
@@ -600,7 +809,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            gepland Stoppunt\n                          "@nl;
     rdfs:comment "Referentie naar verbonden klasse."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#quay> a rdfs:Property;
+timetables-and-planning:quay a rdfs:Property;
     rdfs:label "\n                            \n                            perron\n                          "@nl;
     rdfs:comment "Verwijzing naar een perron binnen de stopplaats waaraan het geplande stoppunt is toegewezen."@nl;
     vann:usageNote ""@nl.
@@ -608,31 +817,31 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            stopplaats\n                          "@nl;
     rdfs:comment "Referentie naar verbonden klasse."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#pushChairCapacity> a rdfs:Property;
+timetables-and-planning:pushChairCapacity a rdfs:Property;
     rdfs:label "\n                            \n                            duwstoelcapaciteit\n                          "@nl;
     rdfs:comment "Aantal duwstoel plaatsen."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#wheelchairPlaceCapacity> a rdfs:Property;
+timetables-and-planning:wheelchairPlaceCapacity a rdfs:Property;
     rdfs:label "\n                            \n                            rolstoelplaatscapaciteit\n                          "@nl;
     rdfs:comment "Aantal aangewezen rolstoelgebieden."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#specialPlaceCapacity> a rdfs:Property;
+timetables-and-planning:specialPlaceCapacity a rdfs:Property;
     rdfs:label "\n                            \n                            speciale plaatscapaciteit\n                          "@nl;
     rdfs:comment "Aantal prioritaire stoelen."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#standingcapacity> a rdfs:Property;
+timetables-and-planning:standingcapacity a rdfs:Property;
     rdfs:label "\n                            \n                            staancapaciteit\n                          "@nl;
     rdfs:comment "Aantal passagiers dat kan rechtstaan."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#fareClass> a rdfs:Property;
+timetables-and-planning:fareClass a rdfs:Property;
     rdfs:label "\n                            \n                            tariefklasse\n                          "@nl;
     rdfs:comment "Tariefklasse waarvoor de capaciteit wordt gegeven, b.v. zaken, economie, enz."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#totalcapacity> a rdfs:Property;
+timetables-and-planning:totalcapacity a rdfs:Property;
     rdfs:label "\n                            \n                            totale capaciteit\n                          "@nl;
     rdfs:comment "Totale capaciteit."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#seatingcapacity> a rdfs:Property;
+timetables-and-planning:seatingcapacity a rdfs:Property;
     rdfs:label "\n                            \n                            zitcapaciteit\n                          "@nl;
     rdfs:comment "Aantal zitplaatsen."@nl;
     vann:usageNote ""@nl.
@@ -640,7 +849,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            gezien als\n                          "@nl;
     rdfs:comment "Zoals gebruikt als een punt in een ritpatroon."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#location> a rdfs:Property;
+timetables-and-planning:location a rdfs:Property;
     rdfs:label "\n                            \n                            locatie\n                          "@nl;
     rdfs:comment "Locatie van het punt."@nl;
     vann:usageNote ""@nl.
@@ -660,7 +869,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            bestemmingsdisplay\n                          "@nl;
     rdfs:comment "Bestemmingsdisplay in verband met het punt in de ritpatroon."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#at> a rdfs:Property;
+timetables-and-planning:at a rdfs:Property;
     rdfs:label "\n                            \n                            bij\n                          "@nl;
     rdfs:comment "Doorkomsttijd op het punt in de ritpatroon."@nl;
     vann:usageNote ""@nl.
@@ -696,7 +905,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            richtingtype\n                          "@nl;
     rdfs:comment "Een vaste waarde b.v. \"uitgaand\", \"inkomend\", \"met de klok mee\", \"tegen de klok in\" geassocieerd met deze richting."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#oppositeDirection> a rdfs:Property;
+timetables-and-planning:oppositeDirection a rdfs:Property;
     rdfs:label "\n                            \n                            tegengestelde richting\n                          "@nl;
     rdfs:comment "Verwijzing naar een richting die tegensteld aan deze richting loopt."@nl;
     vann:usageNote ""@nl.
@@ -712,11 +921,11 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            opmerking\n                          "@nl;
     rdfs:comment "Kennisgeving relevant voor de hele rit."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#passedAt> a rdfs:Property;
+timetables-and-planning:passedAt a rdfs:Property;
     rdfs:label "\n                            \n                            passeerde op\n                          "@nl;
     rdfs:comment "Doorkomsstijd waarop de rit passeert."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#transportMode> a rdfs:Property;
+timetables-and-planning:transportMode a rdfs:Property;
     rdfs:label "\n                            \n                            transportmodus\n                          "@nl;
     rdfs:comment "Transportmodus van de rit."@nl;
     vann:usageNote ""@nl.
@@ -752,7 +961,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            richting\n                          "@nl;
     rdfs:comment "Richting van het ritpatroon (vaak gebruikt om groepen reispatronen te onderscheiden met dezelfde takken (d.w.z. routes) van een regel)."@nl;
     vann:usageNote "Richting is beschikbaar voor het filteren (voor\nVoorbeeld in een reisplanner ui of tijdschema-informatie\nsysteem) maar wordt naar verwachting niet aanwezig\nbeschrijvende informatie."@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#route> a rdfs:Property;
+timetables-and-planning:route a rdfs:Property;
     rdfs:label "\n                            \n                            route\n                          "@nl;
     rdfs:comment "Route geassocieerd met het ritpatroon."@nl;
     vann:usageNote ""@nl.
@@ -760,15 +969,15 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            afstand\n                          "@nl;
     rdfs:comment "Afstand van de route."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#through> a rdfs:Property;
+timetables-and-planning:through a rdfs:Property;
     rdfs:label "\n                            \n                            door\n                          "@nl;
     rdfs:comment "Punten waardoor de route gaat."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#coveredBy> a rdfs:Property;
+timetables-and-planning:coveredBy a rdfs:Property;
     rdfs:label "\n                            \n                            gedekt door\n                          "@nl;
     rdfs:comment "Ritpatroon dat de route bedekt."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#line> a rdfs:Property;
+timetables-and-planning:line a rdfs:Property;
     rdfs:label "\n                            \n                            lijn\n                          "@nl;
     rdfs:comment "Lijn waarmee de route geassocieerd is."@nl;
     vann:usageNote ""@nl.
@@ -776,7 +985,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            naam\n                          "@nl;
     rdfs:comment "Naam van de route."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#inverseRoute> a rdfs:Property;
+timetables-and-planning:inverseRoute a rdfs:Property;
     rdfs:label "\n                            \n                            omgekeerde route\n                          "@nl;
     rdfs:comment "Omgekeerde route van de route."@nl;
     vann:usageNote ""@nl.
@@ -816,7 +1025,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            gezien als\n                          "@nl;
     rdfs:comment "Zoals gebruikt als een punt op een route."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#borderCrossing> a rdfs:Property;
+timetables-and-planning:borderCrossing a rdfs:Property;
     rdfs:label "\n                            \n                            grensovergang\n                          "@nl;
     rdfs:comment "Geeft aan of het routepunt een grensovergang is (gedefinieerd voor landsgrenzen)."@nl;
     vann:usageNote ""@nl.
@@ -824,7 +1033,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            start van\n                          "@nl;
     rdfs:comment "Routelink waarvan het routepunt het begin is."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#requestMethod> a rdfs:Property;
+timetables-and-planning:requestMethod a rdfs:Property;
     rdfs:label "\n                            \n                            aanvraagmethode\n                          "@nl;
     rdfs:comment "Methode om een stop te vragen in dit specifieke dienstpatroon; als er geen is opgegeven, per halte."@nl;
     vann:usageNote ""@nl.
@@ -832,7 +1041,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            bestemmingsdisplay\n                          "@nl;
     rdfs:comment "Bestemmingsdisplay om op dit punt te tonen."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#bookingArrangements> a rdfs:Property;
+timetables-and-planning:bookingArrangements a rdfs:Property;
     rdfs:label "\n                            \n                            boekingsarrangementen\n                          "@nl;
     rdfs:comment "Boekingssarrangementen voor de stopplaats indien verschillend van die voor de dienstenrit."@nl;
     vann:usageNote ""@nl.
@@ -840,7 +1049,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            een view van\n                          "@nl;
     rdfs:comment "Verwijzing naar de geplande stopplaats."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#flexiblePointProperties> a rdfs:Property;
+timetables-and-planning:flexiblePointProperties a rdfs:Property;
     rdfs:label "\n                            \n                            flexibele punteigenschappen\n                          "@nl;
     rdfs:comment "Flexibele eigenschappen van het punt."@nl;
     vann:usageNote ""@nl.
@@ -856,11 +1065,11 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            opmerking\n                          "@nl;
     rdfs:comment "Kennisgeving voor de stopplaats in ritpatroon."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#requestStop> a rdfs:Property;
+timetables-and-planning:requestStop a rdfs:Property;
     rdfs:label "\n                            \n                            stopaanvraag\n                          "@nl;
     rdfs:comment "Geeft aan of de stop een verzoek om te stoppen is in deze rit. Standaard false."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#stopUse> a rdfs:Property;
+timetables-and-planning:stopUse a rdfs:Property;
     rdfs:label "\n                            \n                            stopgebruik\n                          "@nl;
     rdfs:comment "Aard van het gebruik van de stop. Standaard is \"access\"."@nl;
     vann:usageNote ""@nl.
@@ -868,7 +1077,7 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            verandering van bestemmingsdisplay\n                          "@nl;
     rdfs:comment "Geeft aan of de bestemmingsdisplay op dit punt weergeeft."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#onwardServiceLink> a rdfs:Property;
+timetables-and-planning:onwardServiceLink a rdfs:Property;
     rdfs:label "\n                            \n                            volgende dienstverbinding\n                          "@nl;
     rdfs:comment "Volgende dienstverbinding na bezoek aan de stopplaats in het ritpatroon."@nl;
     vann:usageNote ""@nl.
@@ -888,11 +1097,11 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            starttijd\n                          "@nl;
     rdfs:comment "Inclusieve eindtijd van de tijdband."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#daysOfWeek> a rdfs:Property;
+timetables-and-planning:daysOfWeek a rdfs:Property;
     rdfs:label "\n                            \n                            dagen van de week\n                          "@nl;
     rdfs:comment "Dagen van de week waaraan de (tot de eerste zeven) bits corresponderen."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#validDayBits> a rdfs:Property;
+timetables-and-planning:validDayBits a rdfs:Property;
     rdfs:label "\n                            \n                            geldige dagbits\n                          "@nl;
     rdfs:comment "String of bits (gebouwd van \"0\" en \"1\"), één voor elke dag in de periode: al dan niet geldig of niet geldig op de dag."@nl;
     vann:usageNote "Normaal gesproken is er een beetje voor elke dag tussen start- en einddatum. Als bit ontbreekt, neem dan aan beschikbaar."@nl.
@@ -904,19 +1113,19 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            breedte\n                          "@nl;
     rdfs:comment "De breedte van het type voertuig"@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#capacity> a rdfs:Property;
+timetables-and-planning:capacity a rdfs:Property;
     rdfs:label "\n                            \n                            capaciteit\n                          "@nl;
     rdfs:comment "Passagiers dragende capaciteit van het voertuigtype per tariefklasse."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#euroClass> a rdfs:Property;
+timetables-and-planning:euroClass a rdfs:Property;
     rdfs:label "\n                            \n                            euro-klasse\n                          "@nl;
     rdfs:comment "Euro-klasse van het voertuigtype."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#weight> a rdfs:Property;
+timetables-and-planning:weight a rdfs:Property;
     rdfs:label "\n                            \n                            gewicht\n                          "@nl;
     rdfs:comment "Het gewicht van het type voertuig"@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#hasLiftOrRamp> a rdfs:Property;
+timetables-and-planning:hasLiftOrRamp a rdfs:Property;
     rdfs:label "\n                            \n                            heeft lift of ramp\n                          "@nl;
     rdfs:comment "Geeft aan of het type voertuig een lift of oprit heeft voor rolstoeltoegang."@nl;
     vann:usageNote ""@nl.
@@ -924,11 +1133,11 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van een voertuig van het type."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#lowFloor> a rdfs:Property;
+timetables-and-planning:lowFloor a rdfs:Property;
     rdfs:label "\n                            \n                            lage vloer\n                          "@nl;
     rdfs:comment "Geeft aan of het type voertuig een lage vloer is."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#length> a rdfs:Property;
+timetables-and-planning:length a rdfs:Property;
     rdfs:label "\n                            \n                            lengte\n                          "@nl;
     rdfs:comment "De lengte van een voertuig van het type."@nl;
     vann:usageNote ""@nl.
@@ -940,11 +1149,11 @@ skos:prefLabel a rdfs:Property;
     rdfs:label "\n                            \n                            omschrijving\n                          "@nl;
     rdfs:comment "Beschrijving van het type voertuig."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#typeOfFuel> a rdfs:Property;
+timetables-and-planning:typeOfFuel a rdfs:Property;
     rdfs:label "\n                            \n                            type brandstof\n                          "@nl;
     rdfs:comment "Type brandstof van het type voertuig."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#selfPropelled> a rdfs:Property;
+timetables-and-planning:selfPropelled a rdfs:Property;
     rdfs:label "\n                            \n                            zelfvoortstuwend\n                          "@nl;
     rdfs:comment "Geeft aan of het type voertuig zelf wordt voortgestuwd."@nl;
     vann:usageNote ""@nl.
@@ -964,7 +1173,7 @@ locn:addressArea a rdfs:Property;
     rdfs:label "\n                            busnummer\n                          "@nl;
     rdfs:comment "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."@nl;
     vann:usageNote "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."@nl.
-<https://data.vlaanderen.be/ns/adres#gemeentenaam> a rdfs:Property;
+adres:gemeentenaam a rdfs:Property;
     rdfs:label "\n                            gemeentenaam\n                          "@nl;
     rdfs:comment "Gemeentenaam vh adres."@nl;
     vann:usageNote " "@nl.
@@ -972,7 +1181,7 @@ locn:addressArea a rdfs:Property;
     rdfs:label "\n                            huisnummer\n                          "@nl;
     rdfs:comment "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."@nl;
     vann:usageNote "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."@nl.
-<https://data.vlaanderen.be/ns/adres#land> a rdfs:Property;
+adres:land a rdfs:Property;
     rdfs:label "\n                            land\n                          "@nl;
     rdfs:comment "Land waarin het adres gelegen is."@nl;
     vann:usageNote " "@nl.
@@ -1040,11 +1249,11 @@ foaf:page a rdfs:Property;
     rdfs:label "\n                            website\n                          "@nl;
     rdfs:comment "Website waarnaar men kan surfen."@nl;
     vann:usageNote " "@nl.
-<http://www.opengis.net/ont/geosparql#asGML> a rdfs:Property;
+geosparql:asGML a rdfs:Property;
     rdfs:label "\n                            gml\n                          "@nl;
     rdfs:comment "Geometrie uitgedrukt in gml-formaat."@nl;
     vann:usageNote "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype."@nl.
-<http://www.opengis.net/ont/geosparql#asWKT> a rdfs:Property;
+geosparql:asWKT a rdfs:Property;
     rdfs:label "\n                            wkt\n                          "@nl;
     rdfs:comment "Geometrie uitgedrukt in wkt-formaat."@nl;
     vann:usageNote "Gebruik http://www.opengis.net/ont/geosparql#wktLiteral als datatype."@nl.
@@ -1056,7 +1265,7 @@ dcterms:creator a rdfs:Property;
     rdfs:label "\n                            toegekend door\n                          "@nl;
     rdfs:comment "Link naar de agent die de identificator heeft uitgegeven."@nl;
     vann:usageNote " "@nl.
-<http://www.w3.org/ns/adms#schemaAgency> a rdfs:Property;
+adms:schemaAgency a rdfs:Property;
     rdfs:label "\n                            toegekend door (String)\n                          "@nl;
     rdfs:comment "Naam vd agent die de identificator heeft toegekend."@nl;
     vann:usageNote " "@nl.
@@ -1076,11 +1285,11 @@ schemas:value a rdfs:Property;
     rdfs:label "\n                            waarde\n                          "@nl;
     rdfs:comment "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#frequency> a rdfs:Property;
+timetables-and-planning:frequency a rdfs:Property;
     rdfs:label "\n                            frequentie\n                          "@nl;
     rdfs:comment "Frequentie van ritfrequentie."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#fequencyRegulated> a rdfs:Property;
+timetables-and-planning:fequencyRegulated a rdfs:Property;
     rdfs:label "\n                            gereguleerde frequentie\n                          "@nl;
     rdfs:comment "Geeft aan of de frequentie valt onder de regelgevende overeenkomst of niet."@nl;
     vann:usageNote ""@nl.
@@ -1088,23 +1297,23 @@ schemas:value a rdfs:Property;
     rdfs:label "\n                            omschrijving\n                          "@nl;
     rdfs:comment "Tekstbeschrijving om te gebruiken voor de frequentie, b.v. \"elke vijf minuten\"."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#headwayDisplay> a rdfs:Property;
+timetables-and-planning:headwayDisplay a rdfs:Property;
     rdfs:label "\n                            volgtijd display\n                          "@nl;
     rdfs:comment "Volgtijdinformatie voor het publiek."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#scheduledHeadwayInterval> a rdfs:Property;
+timetables-and-planning:scheduledHeadwayInterval a rdfs:Property;
     rdfs:label "\n                            gepland volgtijdinterval\n                          "@nl;
     rdfs:comment "Geplande volgtijdinterval."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#maximumHeadwayInterval> a rdfs:Property;
+timetables-and-planning:maximumHeadwayInterval a rdfs:Property;
     rdfs:label "\n                            maximaal volgtijdinterval\n                          "@nl;
     rdfs:comment "Maximaal volgtijdinterval."@nl;
     vann:usageNote ""@nl.
-<https://purl.eu/ns/mobility/timetables-and-planning#minimumHeadwayInterval> a rdfs:Property;
+timetables-and-planning:minimumHeadwayInterval a rdfs:Property;
     rdfs:label "\n                            minimaal volgtijdinterval\n                          "@nl;
     rdfs:comment "Minimaal volgtijdinterval."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/dienstregeling-en-planning/tijdstabellen/#h2_sotd> vocab:role vocab:heading, vocab:heading.
 _:df_203_38 rdf:first _:df_203_1;
     rdf:rest _:df_203_39.
 _:df_203_39 rdf:first _:df_203_3;

@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -38,66 +247,66 @@ skos:Concept a rdfs:Class;
 <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.juridischeKwalificatie> a owl:ObjectProperty;
     rdfs:label "juridische kwalificatie"@nl;
     rdfs:comment "De Juridische Kwalificatie van de Activiteit."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit>;
+    rdfs:domain omgevingsvergunning:Activiteit;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie>.
+    rdfs:range omgevingsvergunning:JuridischeCategorie.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.tijdsbestek> a owl:ObjectProperty;
     rdfs:label "tijdsbestek"@nl;
     rdfs:comment "Aanduiding van het tijdsbestek van de Activiteit."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit>;
+    rdfs:domain omgevingsvergunning:Activiteit;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <http://www.w3.org/2006/time#Interval>.
+    rdfs:range time:Interval.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid.bevoegdeOverheid> a owl:ObjectProperty;
     rdfs:label "bevoegde overheid"@nl;
     rdfs:comment "De Publieke Organisatie bevoegd om zich over het Rechtsmiddel uit te spreken."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid>;
+    rdfs:domain omgevingsvergunning:Beroepsmogelijkheid;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:range eu:PublicOrganisation.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling.verantwoordelijke> a owl:ObjectProperty;
     rdfs:label "verantwoordelijke"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling>;
+    rdfs:domain omgevingsvergunning:BestuurlijkeRechtshandeling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:range eu:PublicOrganisation.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling.tijdsbestek> a owl:ObjectProperty;
     rdfs:label "tijdsbestek"@nl;
     vann:usageNote "De toelating om een bepaalde Activiteit uit te voeren kan beperkt zijn in de tijd."@nl;
     rdfs:comment "Aanduiding van het tijdsbestek van de Normatieve Bepaling."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling>;
+    rdfs:domain omgevingsvergunning:NormatieveBepaling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <http://www.w3.org/2006/time#Interval>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Recht> a owl:Class;
+    rdfs:range time:Interval.
+omgevingsvergunning:Recht a owl:Class;
     rdfs:label "Recht"@nl;
     rdfs:comment "De toestemming om een bepaalde activiteit uit te voeren op een bepaalde locatie, waarvoor, op het moment van aanvraag of melding, een specifieke vergunning of melding vereist is volgens de geldende regelgeving op het gebied van ruimtelijke ordening en milieu."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling>.
+    rdfs:subClassOf omgevingsvergunning:NormatieveBepaling.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.juridischeKwalificatie> a owl:ObjectProperty;
     rdfs:label "juridische kwalificatie"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>;
+    rdfs:domain omgevingsvergunning:Rechtshandeling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie>.
+    rdfs:range omgevingsvergunning:JuridischeCategorie.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.verantwoordelijke> a owl:ObjectProperty;
     rdfs:label "verantwoordelijke"@nl;
     rdfs:comment "Rechtssubject dat juridisch verantwoordelijk is voor de Rechtshandeling."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>;
+    rdfs:domain omgevingsvergunning:Rechtshandeling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>.
+    rdfs:range omgevingsvergunning:Rechtssubject.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand.verantwoordelijke> a owl:ObjectProperty;
     rdfs:label "verantwoordelijke"@nl;
     rdfs:comment "De Publieke Organisatie verantwoordelijk voor het bepalen van de Vergunde Toestand."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand>;
+    rdfs:domain omgevingsvergunning:VaststellingVergundeToestand;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:range eu:PublicOrganisation.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Verbintenis> a owl:Class;
+omgevingsvergunning:Verbintenis a owl:Class;
     rdfs:label "Verbintenis"@nl;
     vann:usageNote "Bijvoorbeeld, een last of voorwaarde in een omgevingsvergunning."@nl;
     rdfs:comment "Rechtsplicht die rechtssubjecten tegen elkaar opnemen (rechtshandelingen) of oplopen (rechtsfeiten)."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Vergunning> a owl:Class;
+    rdfs:subClassOf omgevingsvergunning:NormatieveBepaling.
+omgevingsvergunning:Vergunning a owl:Class;
     rdfs:label "Vergunning"@nl;
     rdfs:comment "De Rechtshandeling, zijnde een beslissing, die toelating inhoudt voor een Activiteit."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling>, <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>.
+    rdfs:subClassOf omgevingsvergunning:BestuurlijkeRechtshandeling, omgevingsvergunning:Zaakhandeling.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaak.verantwoordelijke> a owl:ObjectProperty;
     rdfs:label "verantwoordelijke"@nl;
     rdfs:domain <https://dbpedia.org/ontology/Case>;
@@ -105,279 +314,279 @@ skos:Concept a rdfs:Class;
     rdfs:range eu:PublicOrganisation.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.verantwoordelijke> a owl:ObjectProperty;
     rdfs:label "verantwoordelijke"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>;
+    rdfs:domain omgevingsvergunning:Zaakhandeling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>.
+    rdfs:range omgevingsvergunning:Rechtssubject.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.zaak> a owl:ObjectProperty;
     rdfs:label "zaak"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>;
+    rdfs:domain omgevingsvergunning:Zaakhandeling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:range <https://dbpedia.org/ontology/Case>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#aanleiding> a owl:ObjectProperty;
+omgevingsvergunning:aanleiding a owl:ObjectProperty;
     rdfs:label "aanleiding"@nl;
     rdfs:domain <https://dbpedia.org/ontology/Case>;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#aanvrager> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:JuridischWerk.
+omgevingsvergunning:aanvrager a owl:ObjectProperty;
     rdfs:label "aanvrager"@nl;
     rdfs:comment "Rechtssubject of rechtssubjecten die de aanvraag indient(-en) of namens wie deze wordt ingediend."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag>;
+    rdfs:domain omgevingsvergunning:Aanvraag;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingsermijn> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:Rechtssubject.
+omgevingsvergunning:aanwendingsermijn a owl:ObjectProperty;
     rdfs:label "aanwendingstermijn"@nl;
     rdfs:comment "Termijn binnen dewelke het Rechtsmiddel aangewend mag worden."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid>;
+    rdfs:domain omgevingsvergunning:Beroepsmogelijkheid;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <http://www.w3.org/2006/time#Interval>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#bekendmaking> a owl:ObjectProperty;
+    rdfs:range time:Interval.
+omgevingsvergunning:bekendmaking a owl:ObjectProperty;
     rdfs:label "bekendmaking"@nl;
     rdfs:comment "Bekendmaking van de Rechtshandeling."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>;
+    rdfs:domain omgevingsvergunning:Rechtshandeling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Bekendmaking>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving> a owl:DatatypeProperty;
+    rdfs:range omgevingsvergunning:Bekendmaking.
+omgevingsvergunning:beschrijving a owl:DatatypeProperty;
     rdfs:label "beschrijving"@nl;
     rdfs:comment "De beschrijving van de Activiteit."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit>;
+    rdfs:domain omgevingsvergunning:Activiteit;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:range rdf:langString.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#betrokkene> a owl:ObjectProperty;
+omgevingsvergunning:betrokkene a owl:ObjectProperty;
     rdfs:label "betrokkene"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit>;
+    rdfs:domain omgevingsvergunning:Activiteit;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#document> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:Rechtssubject.
+omgevingsvergunning:document a owl:ObjectProperty;
     rdfs:label "document"@nl;
     rdfs:comment "Neerslag van de Rechtshandeling in een Document."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>;
+    rdfs:domain omgevingsvergunning:Rechtshandeling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:range foaf:Document.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#gebeurtenis> a owl:ObjectProperty;
+omgevingsvergunning:gebeurtenis a owl:ObjectProperty;
     rdfs:label "gebeurtenis"@nl;
     rdfs:comment "Gebeurtenissen waarvan de Vergunde Toestand is afgeleid."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand>;
+    rdfs:domain omgevingsvergunning:VaststellingVergundeToestand;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum> a owl:DatatypeProperty;
+    rdfs:range omgevingsvergunning:JuridischeGebeurtenis.
+omgevingsvergunning:ingangsdatum a owl:DatatypeProperty;
     rdfs:label "ingangsdatum"@nl;
     vann:usageNote "Bijvoorbeeld, de datum van een arrest."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>;
+    rdfs:domain omgevingsvergunning:Rechtshandeling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:range xsd:date.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#ingesteldRechtsmiddel> a owl:ObjectProperty;
+omgevingsvergunning:ingesteldRechtsmiddel a owl:ObjectProperty;
     rdfs:label "ingesteld rechtsmiddel"@nl;
     rdfs:comment "Verwijzing naar het ingesteld rechtsmiddel."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep>;
+    rdfs:domain omgevingsvergunning:InstellingBeroep;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#inhoud> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:Beroepsmogelijkheid.
+omgevingsvergunning:inhoud a owl:ObjectProperty;
     rdfs:label "inhoud"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>;
+    rdfs:domain omgevingsvergunning:Rechtshandeling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#locatie> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:Inhoud.
+omgevingsvergunning:locatie a owl:ObjectProperty;
     rdfs:label "locatie"@nl;
     rdfs:comment "Aanduiding van de plaats waar een Activiteit plaatsvindt, zal vinden, of zou hebben gevonden."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit>;
+    rdfs:domain omgevingsvergunning:Activiteit;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#normatieveBepaling> a owl:ObjectProperty;
+    rdfs:range perceel:RuimtelijkeEenheid.
+omgevingsvergunning:normatieveBepaling a owl:ObjectProperty;
     rdfs:label "normatieve bepaling"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand>;
+    rdfs:domain omgevingsvergunning:VergundeToestand;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#procedure> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:NormatieveBepaling.
+omgevingsvergunning:procedure a owl:ObjectProperty;
     rdfs:label "procedure"@nl;
     rdfs:domain <https://dbpedia.org/ontology/Case>;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:Procedure.
+omgevingsvergunning:procedurestap a owl:ObjectProperty;
     rdfs:label "procedurestap"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>, <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure>;
+    rdfs:domain omgevingsvergunning:Zaakhandeling, omgevingsvergunning:Procedure;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#publiekeOrganisatie> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:Procedurestap.
+omgevingsvergunning:publiekeOrganisatie a owl:ObjectProperty;
     rdfs:label "publiekeOrganisatie"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure>;
+    rdfs:domain omgevingsvergunning:Procedure;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:range eu:PublicOrganisation.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtscollege> a owl:ObjectProperty;
+omgevingsvergunning:rechtscollege a owl:ObjectProperty;
     rdfs:label "rechtscollege"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak>;
+    rdfs:domain omgevingsvergunning:RechterlijkeUitspraak;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtscollege>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsgrond> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:Rechtscollege.
+omgevingsvergunning:rechtsgrond a owl:ObjectProperty;
     rdfs:label "rechtsgrond"@nl;
     vann:usageNote "Bijvoorbeeld, de procedure voor de vereenvoudigde vergunningsprocedure is vastgesteld in de artikelen 37 en volgende van het Omgevingsdecreet, zoals van kracht op een bepaalde datum."@nl;
     rdfs:comment "Verwijzingen naar de Juridische Werken die de grondslag vormen van de Procedure."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure>;
+    rdfs:domain omgevingsvergunning:Procedure;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsobject> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:JuridischWerk.
+omgevingsvergunning:rechtsobject a owl:ObjectProperty;
     rdfs:label "rechtsobject"@nl;
     rdfs:comment "Het voorwerp van de Normatieve Bepaling."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling>;
+    rdfs:domain omgevingsvergunning:NormatieveBepaling;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#termijn> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:Activiteit.
+omgevingsvergunning:termijn a owl:ObjectProperty;
     rdfs:label "termijn"@nl;
     rdfs:comment "Termijn binnen dewelke de Procedure toegepast mag worden."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure>;
+    rdfs:domain omgevingsvergunning:Procedure;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <http://www.w3.org/2006/time#Interval>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#toestandDatum> a owl:DatatypeProperty;
+    rdfs:range time:Interval.
+omgevingsvergunning:toestandDatum a owl:DatatypeProperty;
     rdfs:label "toestand datum"@nl;
     rdfs:comment "Aanduiding van de datum van de Vergunde Toestand."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand>;
+    rdfs:domain omgevingsvergunning:VergundeToestand;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:range xsd:date.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingTijdstip> a owl:ObjectProperty;
+omgevingsvergunning:vaststellingTijdstip a owl:ObjectProperty;
     rdfs:label "vaststellingtijdstip"@nl;
     rdfs:comment "Tijdstip van vaststelling."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand>;
+    rdfs:domain omgevingsvergunning:VaststellingVergundeToestand;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <http://www.w3.org/2006/time#Instant>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingVergundeToestand> a owl:ObjectProperty;
+    rdfs:range time:Instant.
+omgevingsvergunning:vaststellingVergundeToestand a owl:ObjectProperty;
     rdfs:label "vaststelling vergunde toestand"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand>;
+    rdfs:domain omgevingsvergunning:VergundeToestand;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:VaststellingVergundeToestand.
+omgevingsvergunning:verwanteZaak a owl:ObjectProperty;
     rdfs:label "verwanteZaak"@nl;
     vann:usageNote "Verwantschappen kunnen verschillende doelstellingen hebben. De doelstelling mag een aangegeven worden in een gekwalificeerde relatie."@nl;
     rdfs:comment "Verwijzingen naar verwante Zaken."@nl;
     rdfs:domain <https://dbpedia.org/ontology/Case>;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:range <https://dbpedia.org/ontology/Case>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#verzoekendePartij> a owl:ObjectProperty;
+omgevingsvergunning:verzoekendePartij a owl:ObjectProperty;
     rdfs:label "verzoekende partij"@nl;
     rdfs:comment "Partij die het Rechtsmiddel aanwendt."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep>;
+    rdfs:domain omgevingsvergunning:InstellingBeroep;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp> a owl:ObjectProperty;
+    rdfs:range omgevingsvergunning:Rechtssubject.
+omgevingsvergunning:voorwerp a owl:ObjectProperty;
     rdfs:label "voorwerp"@nl;
     rdfs:comment "De ruimtelijke bepaling waarvoor de vergunde toestand wordt vastgesteld."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand>;
+    rdfs:domain omgevingsvergunning:VergundeToestand;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling> a owl:ObjectProperty;
+    rdfs:range perceel:RuimtelijkeEenheid.
+omgevingsvergunning:zaakhandeling a owl:ObjectProperty;
     rdfs:label "zaakhandeling"@nl;
     rdfs:domain <https://dbpedia.org/ontology/Case>;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>.
+    rdfs:range omgevingsvergunning:Zaakhandeling.
 dcterms:isPartOf a rdf:Property;
     rdfs:label "is deel van"@nl.
 dcterms:type a rdf:Property;
     rdfs:label "type"@nl.
-<http://www.w3.org/ns/adms#identifier> a rdf:Property;
+adms:identifier a rdf:Property;
     rdfs:label "identificator"@nl.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag> a owl:Class;
+omgevingsvergunning:Aanvraag a owl:Class;
     rdfs:label "Aanvraag"@nl;
     vann:usageNote "In de context van omgevingsvergunningen betreft dit alle aanvragen van of met betrekking tot omgevingsvergunningen."@nl;
     rdfs:comment "Aanspraak op de uitoefening van een bevoegdheid; formeel verzoek van een rechtssubject aan een bevoegde instantie om informatie te verstrekken of een beslissing te nemen, in het bijzonder een beslissing om ergens toelating voor te verlenen."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>, <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak> a owl:Class;
+    rdfs:subClassOf omgevingsvergunning:Zaakhandeling, omgevingsvergunning:Rechtshandeling.
+omgevingsvergunning:RechterlijkeUitspraak a owl:Class;
     rdfs:label "Rechterlijke Uitspraak"@nl;
     vann:usageNote "In de context van omgevingsvergunningen omvat dit de uitspraken van de Raad voor Vergunningsbetwistingen en de Raad van State."@nl;
     rdfs:comment "Een formele beslissing of oordeel van een rechtscollege, uitgesproken door een rechter of een panel van rechters."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtscollege> a owl:Class;
+    rdfs:subClassOf omgevingsvergunning:Rechtshandeling.
+omgevingsvergunning:Rechtscollege a owl:Class;
     rdfs:label "Rechtscollege"@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:subClassOf eu:PublicOrganisation.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling> a owl:Class;
+omgevingsvergunning:BestuurlijkeRechtshandeling a owl:Class;
     rdfs:label "Bestuurlijke Rechtshandeling"@nl;
     vann:usageNote "Voorbeelden van eenzijdige bestuurlijke rechtshandelingen zijn: besluiten van algemene strekking, uitvaardiging van voorschriften, beschikkingen zoals erkenningen en vergunningen en aktenamen. Breid deze klasse uit met de nodige specilisaties of typeringen."@nl;
     rdfs:comment "Handeling, uitgaande van een bestuur, die de rechtstoestand wijzigt, dan wel belet dat deze wordt gewijzigd."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud> a owl:Class;
+    rdfs:subClassOf omgevingsvergunning:Rechtshandeling.
+omgevingsvergunning:Inhoud a owl:Class;
     rdfs:label "Inhoud"@nl;
     vann:usageNote "Kan een verzoek zijn, een melding, een vaststelling, een normatieve bepaling, een procedurele beslissing, enzovoort. Eén rechtshandeling kan meerdere inhoudelijke punten inhouden."@nl;
     rdfs:comment "Dat wat een rechtshandeling inhoudt."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> a owl:Class;
+    rdfs:subClassOf omgevingsvergunning:JuridischWerk.
+omgevingsvergunning:InstellingBeroep a owl:Class;
     rdfs:label "Instelling Beroep"@nl;
     vann:usageNote "Bijvoorbeeld, de instelling van een administratief beroep tegen een welbepaalde gemeentelijke vergunningsbeslissing in eerste aanleg. Instelling van een jurisdictioneel beroep tegen een welbepaalde beslissing in laatste administratieve aanleg."@nl;
     rdfs:comment "Instellen van een beroep met betrekking tot een concrete aanvechtbare Rechtshandeling."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>, <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> a owl:Class;
+    rdfs:subClassOf omgevingsvergunning:Zaakhandeling, omgevingsvergunning:Rechtshandeling.
+omgevingsvergunning:JuridischeCategorie a owl:Class;
     rdfs:label "Juridische Categorie"@nl;
     vann:usageNote "Een juridische kwalificatie gebeurt aan de hand van juridische verwijzingen, nl. verwijzingen naar Juridische Werken. Het is mogelijk om een juridische kwalificatie op verschillende dimensies (bv. een activiteit kwalificeren op vlak van indelingsrubrieken en op vlak van Sevezo-regelgeving) te doen."@nl;
     rdfs:comment "Onder Juridische Categorie verstaan we rubrieken, klasseringen of juridisch-verankerde typeringen."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> a owl:Class;
+    rdfs:subClassOf omgevingsvergunning:JuridischWerk.
+omgevingsvergunning:JuridischeGebeurtenis a owl:Class;
     rdfs:label "Juridische Gebeurtenis"@nl;
     vann:usageNote "Is een abstract klasse: gebruik specialisaties. Deze gebeurtenissen vormen de basis waarop de Vergunde Toestand wordt bepaald."@nl;
     rdfs:comment "Rechtsfeiten alsook rechtshandelingen en zaakhandelingen binnen de context van omgevingsvergunning."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:subClassOf eu:Event.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> a owl:Class;
+omgevingsvergunning:Procedurestap a owl:Class;
     rdfs:label "Procedurestap"@nl;
     vann:usageNote "Wordt gebruikt om aan te geven welke soort handeling de Procedure voorschrijft. De Zaakhandeling geeft uitvoering aan de Procedurestap met betrekking tot een concrete Zaak."@nl;
     rdfs:comment "Een Procedurestap is een voorgeschreven handeling binnen een Procedure."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> a owl:Class;
+omgevingsvergunning:Beroepsmogelijkheid a owl:Class;
     rdfs:label "Beroepsmogelijkheid"@nl;
     vann:usageNote "Mogelijkheid om in beroep te gaaan tegen een gemeentelijke vergunningsbeslissing in eerste aanleg. Of jurisdictioneel beroep tegen een beslissing in laatste administratieve aanleg."@nl;
     rdfs:comment "Procedure die de mogelijkheid biedt om een bestuurlijke rechtshandeling of gerechtelijke beslissing aan te vechten."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand> a owl:Class;
+    rdfs:subClassOf omgevingsvergunning:Procedurestap.
+omgevingsvergunning:VaststellingVergundeToestand a owl:Class;
     rdfs:label "Vaststelling Vergunde Toestand"@nl;
     rdfs:comment "De vaststelling/bepaling van de vergunde toestand op een bepaald moment in de tijd, op basis van de op dat moment beschikbare informatie over relevante rechtsfeiten (omgevingsvergunning:Gebeurtenissen) die op de vergunde toestand van invloed zijn geweest."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> a owl:Class;
+omgevingsvergunning:VergundeToestand a owl:Class;
     rdfs:label "Vergunde Toestand"@nl;
     vann:usageNote "Een vergunde toestand bevat (verwijzingen naar) Normatieve Bepalingen. In de context van de omgevingsvergunning is het voorwerp van de vergunde toestand vaak een Ruimtelijke Eenheid zoals een gebouw, een Perceel of een gebied. Een Vergunde Toestand is onlosmakelijk verbonden met de Vaststelling ervan."@nl;
     rdfs:comment "Het geheel van rechten en plichten, voor wat betreft het toepassingsgebied van de omgevingsvergunningen, die op een bepaald moment in de tijd van toepassing zijn op het voorwerp van de vergunde toestand."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> a owl:Class;
+omgevingsvergunning:JuridischWerk a owl:Class;
     rdfs:label "Juridisch Werk"@nl;
     vann:usageNote "Omvat o.a. wetgeving en regelgeving, publiek- en privaatrechtelijke rechtshandelingen van rechtscolleges, bestuurlijke instanties en andere rechtssubjecten. Rechtsleer valt hier ook onder, alsook juridische typologieën (Juridische Categorie). Technocratische instrumenten, zoals standaarden, specificaties en implementaties daarvan die een juridische functie vervullen zijn door deze entiteit gedekt. Een Juridisch Werk vindt doorgaans zijn neerslag in één of meer Documenten. De rechtswaarde van een Juridisch Werk hangt o.a. af van het bestaan van een authentieke versie (Document) die is bekendgemaakt volgens de voorziene voorschriften. Breder dan http://data.europa.eu/eli/ontology#LegalResource die beperkt is tot wetgevende werken."@nl;
     rdfs:comment "Werken opgemaakt voor juridische doeleinden."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> a owl:Class;
+omgevingsvergunning:NormatieveBepaling a owl:Class;
     rdfs:label "Normatieve Bepaling"@nl;
     vann:usageNote "Kan van algemene en individuele strekking zijn. Het kan gaan om een recht of verbintenis."@nl;
     rdfs:comment "Een bepaling die een rechtsnorm in het leven roept, wijzigt, beëindigt of bevestigt."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> a owl:Class;
+    rdfs:subClassOf omgevingsvergunning:Inhoud.
+omgevingsvergunning:Procedure a owl:Class;
     rdfs:label "Procedure"@nl;
     vann:usageNote "Het bevat Procedurestappen zoals bijvoorbeeld een Rechtsmiddel. De Procedurestappen bepalen wat de mogelijke vervolghandelingen zijn in de Zaak en welke termijnen er gelden. In casemanagement systemen die CMMN implementeren komt deze entiteit overeen met een CasePlanModel."@nl;
     rdfs:comment "Een Procedure is de blauwdruk voor de afhandeling van een Zaak."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:subClassOf cpsv:Rule.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> a owl:Class;
+omgevingsvergunning:Rechtssubject a owl:Class;
     rdfs:label "Rechtssubject"@nl;
     vann:usageNote "Omvat zowel natuurlijke personen (mensen) als rechtspersonen. Omvat zowel privaat- als publiekrechtelijke entiteiten. Kan contracten aangaan, eigendommen bezitten, aansprakelijk  worden gesteld voor misdaden, enzovoort. In de context van omgevingsvergunningen: de aanvrager van een vergunning, de vergunningverlenende overheid, de Raad voor Vergunningsbetwistingen, de exploitant van een hinderlijke inrichting, de uitvoerder van stedenbouwkundige handelingen, de melder van een onregelmatigheid, enzovoort. Rechtssubject is als begrip gelijkaardig aan OSLO-generiek:Agent (eveneens verzamelnaam voor natuurlijke en rechtspersonen en gedefinieerd als iemand die of iets dat kan handelen of een effect kan teweeg brengen ), maar is enger dan Agent en eigen aan de juridische context (met inbegrip van het bestuursrecht, waaronder het vergunningenbeleid), en geniet omwille van deze juridische connotatie in de context van omgevingsvergunningen dan ook de voorkeur."@nl;
     rdfs:comment "Entiteit die aan het recht onderworpen is, die drager is of kan zijn van rechten en plichten (Rechtsverhoudingen), en die in staat wordt geacht om juridische handelingen uit te voeren of in haar naam (voor haar rekening) te laten uitvoeren."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
     rdfs:subClassOf dcterms:Agent.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> a owl:Class;
+omgevingsvergunning:Activiteit a owl:Class;
     rdfs:label "Activiteit"@nl;
     vann:usageNote "Maakt het voorwerp uit van vergunningsaanvragen, meldingen, vergunningsbesluiten, vaststellingen."@nl;
     rdfs:comment "Geheel van handelingen die een of meerdere Rechtssubjecten binnen een welbepaald tijdsbestek en op een welbepaalde locatie ten uitvoer (willen) (laten) brengen en die gezien hun aard te kwalificeren zijn en dus geregeld zijn onder één of meer welbepaalde Juridische Categorieën."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> a owl:Class;
+omgevingsvergunning:Zaakhandeling a owl:Class;
     rdfs:label "Zaakhandeling"@nl;
     vann:usageNote "Het kan gaan om Rechtshandelingen, maar ook administratieve handelingen. In casemanagement systemen die CMMN implementeren komt deze entiteit overeen met een PlanItem."@nl;
     rdfs:comment "Een formele handeling die in het kader van een Zaak wordt uitgevoerd."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> a owl:Class;
+omgevingsvergunning:Rechtshandeling a owl:Class;
     rdfs:label "Rechtshandeling"@nl;
     vann:usageNote "Omvat Bestuurlijke Handeling en Rechterlijke Uitspraken. Omvat ook aanvragen, meldingen, formele vastleggingen en andere administratieve en gerechtelijke rechtshandelingen gepleegd door zowel overheidsinstanties als ook burgers en bedrijven. Omvat ook stilzwijgende handelingen, zoals stilzwijgende aktename of weigering."@nl;
     rdfs:comment "Handeling met beoogde rechtsgevolgen. Bewuste actie die gericht is op het tot stand brengen, wijzigen, overdragen, beëindigen of bevestigen van juridische verplichtingen of rechten."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk>, <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis>.
+    rdfs:subClassOf omgevingsvergunning:JuridischWerk, omgevingsvergunning:JuridischeGebeurtenis.
 <https://data.vlaanderen.be/ns/omgevingsvergunning> a owl:Ontology;
     rdfs:label "omgevingsvergunning"@en, "omgevingsvergunning"@nl.
 _:n3-1704 a foaf:Person.
@@ -824,7 +1033,7 @@ _:n3-1828 foaf:homepage <https://data.vlaanderen.be>;
     foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
     foaf:name "Data Vlaanderen".
 <https://data.vlaanderen.be/ns/omgevingsvergunning> dcterms:mediator _:n3-1828;
-    rdfs:seeAlso skos:Concept, <https://dbpedia.org/ontology/Case>, dcterms:isPartOf, dcterms:type, <http://www.w3.org/ns/adms#identifier>.
+    rdfs:seeAlso skos:Concept, <https://dbpedia.org/ontology/Case>, dcterms:isPartOf, dcterms:type, adms:identifier.
 _:n3-1829 a foaf:Person.
 _:n3-1830 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -832,7 +1041,7 @@ _:n3-1829 schema:affiliation _:n3-1830;
     foaf:firstName "Veerle";
     foaf:lastName "Beyaert";
     foaf:mbox <mailto:veerle.beyaert@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning> ns1:editor _:n3-1829.
+<https://data.vlaanderen.be/ns/omgevingsvergunning> rec54:editor _:n3-1829.
 _:n3-1831 a foaf:Person.
 _:n3-1832 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -840,7 +1049,7 @@ _:n3-1831 schema:affiliation _:n3-1832;
     foaf:firstName "Raf";
     foaf:lastName "Buyle";
     foaf:mbox <mailto:raf.buyle@kb.vlaanderen.be>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning> ns1:editor _:n3-1831.
+<https://data.vlaanderen.be/ns/omgevingsvergunning> rec54:editor _:n3-1831.
 _:n3-1833 a foaf:Person.
 _:n3-1834 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -848,7 +1057,7 @@ _:n3-1833 schema:affiliation _:n3-1834;
     foaf:firstName "Mathieu";
     foaf:lastName "Tulpinck";
     foaf:mbox <mailto:mathieu.tulpinck@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning> ns1:editor _:n3-1833.
+<https://data.vlaanderen.be/ns/omgevingsvergunning> rec54:editor _:n3-1833.
 _:n3-1835 a foaf:Person.
 _:n3-1836 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -856,7 +1065,7 @@ _:n3-1835 schema:affiliation _:n3-1836;
     foaf:firstName "Liesbeth";
     foaf:lastName "Van der Haegen";
     foaf:mbox <mailto:liesbeth.vanderhaegen@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning> ns1:editor _:n3-1835.
+<https://data.vlaanderen.be/ns/omgevingsvergunning> rec54:editor _:n3-1835.
 _:n3-1837 a foaf:Person.
 _:n3-1838 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -864,7 +1073,7 @@ _:n3-1837 schema:affiliation _:n3-1838;
     foaf:firstName "Ziggy";
     foaf:lastName "Vanlishout";
     foaf:mbox <mailto:ziggy.vanlishout@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning> ns1:editor _:n3-1837.
+<https://data.vlaanderen.be/ns/omgevingsvergunning> rec54:editor _:n3-1837.
 _:n3-1839 a foaf:Person.
 _:n3-1840 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -872,7 +1081,7 @@ _:n3-1839 schema:affiliation _:n3-1840;
     foaf:firstName "Laurens";
     foaf:lastName "Vercauteren";
     foaf:mbox <mailto:laurens.vercauteren@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning> ns1:editor _:n3-1839.
+<https://data.vlaanderen.be/ns/omgevingsvergunning> rec54:editor _:n3-1839.
 _:n3-1841 a foaf:Person.
 _:n3-1842 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -880,7 +1089,7 @@ _:n3-1841 schema:affiliation _:n3-1842;
     foaf:firstName "Eveline";
     foaf:lastName "Vlassenroot";
     foaf:mbox <mailto:eveline.vlassenroot@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning> ns1:editor _:n3-1841.
+<https://data.vlaanderen.be/ns/omgevingsvergunning> rec54:editor _:n3-1841.
 _:n3-1843 a foaf:Person.
 _:n3-1844 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -888,7 +1097,7 @@ _:n3-1843 schema:affiliation _:n3-1844;
     foaf:firstName "Lorenzo ";
     foaf:lastName "Vylders";
     foaf:mbox <mailto:lorenzo.vylders@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning> ns1:editor _:n3-1843.
+<https://data.vlaanderen.be/ns/omgevingsvergunning> rec54:editor _:n3-1843.
 _:n3-1845 a foaf:Person.
 _:n3-1846 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -896,7 +1105,7 @@ _:n3-1845 schema:affiliation _:n3-1846;
     foaf:firstName "Louise";
     foaf:lastName "Ysewijn";
     foaf:mbox <mailto:louise.ysewijn@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/omgevingsvergunning> ns1:editor _:n3-1845.
+<https://data.vlaanderen.be/ns/omgevingsvergunning> rec54:editor _:n3-1845.
 _:n3-1847 a foaf:Person.
 _:n3-1848 foaf:homepage <https://omgeving.vlaanderen.be/>;
     foaf:name "Departement Omgeving".

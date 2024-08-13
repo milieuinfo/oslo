@@ -1,40 +1,249 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/> a <http://purl.org/ontology/bibo/Document>;
     dcterms:language "nl"@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#status> vocab:role vocab:status.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#respecHeader> vocab:role vocab:contentinfo.
 _:df_589_1 a foaf:Person;
     foaf:lastName "AuteurNaam"@nl;
     foaf:firstName "AuteurVoornaam"@nl;
@@ -50,18 +259,18 @@ _:df_589_5 a foaf:Person;
     foaf:firstName "MedewerkerVoornaam"@nl;
     foaf:workplaceHomepage <https://medewerkerwebsiteurl>;
     foaf:mbox <mailto:medewerkervoornaam.medewerkernaam@medewerkerdomein>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#metainfo> vocab:role vocab:metainfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#main> vocab:role vocab:main.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#h2_sotd> vocab:role vocab:heading.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#ref> a <http://purl.org/ontology/bibo/Chapter>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#ref>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#h2_sotd> vocab:role vocab:heading.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/> dcterms:type dcmitype:Text;
     dcterms:title "Deze specificatie"@nl;
-    <http://creativecommons.org/ns#attributionURL> <https://data.vlaanderen.be/id/organisatie/OVO002949>;
-    <http://creativecommons.org/ns#attributionName> "Digitaal Vlaanderen"@nl;
-    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+    creativecommons:attributionURL <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    creativecommons:attributionName "Digitaal Vlaanderen"@nl;
+    vocab:license <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#conformance> vocab:role vocab:heading.
 <http://www.w3.org/ns/ssn/implements> a rdfs:Property;
     rdfs:label "\n                            \n                            implementeert\n                          "@nl;
     rdfs:comment "Bemonsteringsprocedure die door de Bemonsteraar in praktijk wordt gebracht."@nl;
@@ -198,19 +407,19 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            ^bemonsteringstijdstip\n                          "@nl;
     rdfs:comment "Moment waarop het monster is genomen."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#aantalVerversingen> a rdfs:Property;
+grondwatermeetnet:aantalVerversingen a rdfs:Property;
     rdfs:label "\n                            \n                            aantalVerversingen\n                          "@nl;
     rdfs:comment "Aanduiding van het aantal keren dat een verversing heeft plaats gevonden."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#aanzuring> a rdfs:Property;
+grondwatermeetnet:aanzuring a rdfs:Property;
     rdfs:label "\n                            \n                            aanzuring\n                          "@nl;
     rdfs:comment "Aanzuring van het monster bij staalname."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#materiaalKlasse> a rdfs:Property;
+grondwatermeetnet:materiaalKlasse a rdfs:Property;
     rdfs:label "\n                            \n                            materiaalKlasse\n                          "@nl;
     rdfs:comment "Basisclassificatie van het materiaal waaruit het monster bestaat."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#type> a rdfs:Property;
+grondwatermeetnet:type a rdfs:Property;
     rdfs:label "\n                            \n                            type\n                          "@nl;
     rdfs:comment "Het type grondwaterobject."@nl;
     vann:usageNote ""@nl.
@@ -222,23 +431,23 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            type\n                          "@nl;
     rdfs:comment "Aard van de input."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#beheerder> a rdfs:Property;
+grondwatermeetnet:beheerder a rdfs:Property;
     rdfs:label "\n                            \n                            beheerder\n                          "@nl;
     rdfs:comment "De persoon die verantwoordelijk is voor het beheer van het meetnet."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#identificator> a rdfs:Property;
+grondwatermeetnet:identificator a rdfs:Property;
     rdfs:label "\n                            \n                            identificator\n                          "@nl;
     rdfs:comment "De aanduiding die het meetnet identificeert."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#lid> a rdfs:Property;
+grondwatermeetnet:lid a rdfs:Property;
     rdfs:label "\n                            \n                            lid\n                          "@nl;
     rdfs:comment "TODO"@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#naam> a rdfs:Property;
+grondwatermeetnet:naam a rdfs:Property;
     rdfs:label "\n                            \n                            naam\n                          "@nl;
     rdfs:comment "De naam van het meetnet."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#type> a rdfs:Property;
+grondwatermeetnet:type a rdfs:Property;
     rdfs:label "\n                            \n                            type\n                          "@nl;
     rdfs:comment "Het type meetnet."@nl;
     vann:usageNote ""@nl.
@@ -330,11 +539,11 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            type\n                          "@nl;
     rdfs:comment "Aard van de Output."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#diepteTovReferentiepunt> a rdfs:Property;
+grondwatermeetnet:diepteTovReferentiepunt a rdfs:Property;
     rdfs:label "\n                            \n                            diepteTovReferentiepunt\n                          "@nl;
     rdfs:comment "Diepte van de peilmeting t.o.v. een referentiepunt."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#peil> a rdfs:Property;
+grondwatermeetnet:peil a rdfs:Property;
     rdfs:label "\n                            \n                            peil\n                          "@nl;
     rdfs:comment "Diepte van de peilmeting."@nl;
     vann:usageNote "TO DO"@nl.
@@ -342,11 +551,11 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            piëzometertoestand\n                          "@nl;
     rdfs:comment "De toestand van de waterdrukmeter."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#pompstatus> a rdfs:Property;
+grondwatermeetnet:pompstatus a rdfs:Property;
     rdfs:label "\n                            \n                            pompstatus\n                          "@nl;
     rdfs:comment "De status van de pomp."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#referentiepunt> a rdfs:Property;
+grondwatermeetnet:referentiepunt a rdfs:Property;
     rdfs:label "\n                            \n                            referentiepunt\n                          "@nl;
     rdfs:comment "Meetpunt gebruikt als positie om van daaruit de peilmeting uit te voeren."@nl;
     vann:usageNote "TO DO"@nl.
@@ -362,11 +571,11 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            ^positioneleNauwkeurigheid\n                          "@nl;
     rdfs:comment "TODO"@nl;
     vann:usageNote "TODO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#afwerking> a rdfs:Property;
+grondwatermeetnet:afwerking a rdfs:Property;
     rdfs:label "\n                            \n                            afwerking\n                          "@nl;
     rdfs:comment "De manier waarop iets voltooid is."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#beheerder> a rdfs:Property;
+grondwatermeetnet:beheerder a rdfs:Property;
     rdfs:label "\n                            \n                            beheerder\n                          "@nl;
     rdfs:comment "De persoon die verantwoordelijk is voor het beheer van de peilput."@nl;
     vann:usageNote ""@nl.
@@ -374,7 +583,7 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            diepte\n                          "@nl;
     rdfs:comment "De diepte van de peilput."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#inGebruik> a rdfs:Property;
+grondwatermeetnet:inGebruik a rdfs:Property;
     rdfs:label "\n                            \n                            inGebruik\n                          "@nl;
     rdfs:comment "De aanduiding die aangeeft of de peilput in gebruik is."@nl;
     vann:usageNote ""@nl.
@@ -386,27 +595,27 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            maaiveld\n                          "@nl;
     rdfs:comment "Het maaiveld van de peilput."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#putNaBestemming> a rdfs:Property;
+grondwatermeetnet:putNaBestemming a rdfs:Property;
     rdfs:label "\n                            \n                            putNaBestemming\n                          "@nl;
     rdfs:comment "Bestemming van de put."@nl;
     vann:usageNote "e.g. In gebruik, opgevuld, vernield ..."@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#putsoort> a rdfs:Property;
+grondwatermeetnet:putsoort a rdfs:Property;
     rdfs:label "\n                            \n                            putsoort\n                          "@nl;
     rdfs:comment "Soort van peilput."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#annulaireRuimte> a rdfs:Property;
+grondwatermeetnet:annulaireRuimte a rdfs:Property;
     rdfs:label "\n                            \n                            annulaireRuimte\n                          "@nl;
     rdfs:comment "Informatie omtrent de annulaire ruimte."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#beschermbuis> a rdfs:Property;
+grondwatermeetnet:beschermbuis a rdfs:Property;
     rdfs:label "\n                            \n                            beschermbuis\n                          "@nl;
     rdfs:comment "Informatie omtrent de beschermbuis."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#hoeveelheidAfwerking> a rdfs:Property;
+grondwatermeetnet:hoeveelheidAfwerking a rdfs:Property;
     rdfs:label "\n                            \n                            hoeveelheidAfwerking\n                          "@nl;
     rdfs:comment "Informatie over de hoeveelheid gebruikte materialen bij de afwerking."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#sleuteltype> a rdfs:Property;
+grondwatermeetnet:sleuteltype a rdfs:Property;
     rdfs:label "\n                            \n                            sleuteltype\n                          "@nl;
     rdfs:comment "Informatie over de sleutel waarmee de grondwaterlocatie beschermd is."@nl;
     vann:usageNote "TO DO"@nl.
@@ -422,7 +631,7 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            ^positioneleNauwkeurigheid\n                          "@nl;
     rdfs:comment "TODO"@nl;
     vann:usageNote "TODO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#beheerder> a rdfs:Property;
+grondwatermeetnet:beheerder a rdfs:Property;
     rdfs:label "\n                            \n                            beheerder\n                          "@nl;
     rdfs:comment "De persoon die verantwoordelijk is voor het beheer van de piëzometer."@nl;
     vann:usageNote ""@nl.
@@ -430,11 +639,11 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            diepte\n                          "@nl;
     rdfs:comment "Apparaat om samendrukbaarheid van vloeistoffen te bepalen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#ingebruik> a rdfs:Property;
+grondwatermeetnet:ingebruik a rdfs:Property;
     rdfs:label "\n                            \n                            ingebruik\n                          "@nl;
     rdfs:comment "De aanduiding die aangeeft of de piëzometer in gebruik is."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#lidVan> a rdfs:Property;
+grondwatermeetnet:lidVan a rdfs:Property;
     rdfs:label "\n                            \n                            lidVan\n                          "@nl;
     rdfs:comment "TO DO"@nl;
     vann:usageNote ""@nl.
@@ -446,59 +655,59 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            maaiveld\n                          "@nl;
     rdfs:comment "Het maaiveld van de piëzometer."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#meetfrequentie> a rdfs:Property;
+grondwatermeetnet:meetfrequentie a rdfs:Property;
     rdfs:label "\n                            \n                            meetfrequentie\n                          "@nl;
     rdfs:comment "De frequentie van het meten van de piëzometer."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#opbouw> a rdfs:Property;
+grondwatermeetnet:opbouw a rdfs:Property;
     rdfs:label "\n                            \n                            opbouw\n                          "@nl;
     rdfs:comment "De manier van opstelling van de piëzometer."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#referentiepunt> a rdfs:Property;
+grondwatermeetnet:referentiepunt a rdfs:Property;
     rdfs:label "\n                            \n                            referentiepunt\n                          "@nl;
     rdfs:comment "Meetpunt gebruikt als positie om van daaruit de peilmeting uit te voeren."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#type> a rdfs:Property;
+grondwatermeetnet:type a rdfs:Property;
     rdfs:label "\n                            \n                            type\n                          "@nl;
     rdfs:comment "Het type van piëzometer."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#aantalKwaliteitsmetingen> a rdfs:Property;
+grondwatermeetnet:aantalKwaliteitsmetingen a rdfs:Property;
     rdfs:label "\n                            \n                            aantalKwaliteitsmetingen\n                          "@nl;
     rdfs:comment "Aantal monsternames per jaar."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#aantalPeilmetingen> a rdfs:Property;
+grondwatermeetnet:aantalPeilmetingen a rdfs:Property;
     rdfs:label "\n                            \n                            aantalPeilmetingen\n                          "@nl;
     rdfs:comment "Aantal peilmetingen per jaar."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#opmeter> a rdfs:Property;
+grondwatermeetnet:opmeter a rdfs:Property;
     rdfs:label "\n                            \n                            opmeter\n                          "@nl;
     rdfs:comment "Persoon of organisatie die de metingen of monsternames uitvoert."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#bovenkantPeilbuis> a rdfs:Property;
+grondwatermeetnet:bovenkantPeilbuis a rdfs:Property;
     rdfs:label "\n                            \n                            bovenkantPeilbuis\n                          "@nl;
     rdfs:comment "De bovenzijde van de peilbuis."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#onderdeel> a rdfs:Property;
+grondwatermeetnet:onderdeel a rdfs:Property;
     rdfs:label "\n                            \n                            onderdeel\n                          "@nl;
     rdfs:comment "Element dat behoort tot de samenstelling van de piëzometer."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#onderkantPeilbuis> a rdfs:Property;
+grondwatermeetnet:onderkantPeilbuis a rdfs:Property;
     rdfs:label "\n                            \n                            onderkantPeilbuis\n                          "@nl;
     rdfs:comment "De onderzijde van de peilbuis."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#opvulling> a rdfs:Property;
+grondwatermeetnet:opvulling a rdfs:Property;
     rdfs:label "\n                            \n                            opvulling\n                          "@nl;
     rdfs:comment "Het materiaal dat gebruikt wordt om de peilbuis op te vullen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#datum> a rdfs:Property;
+grondwatermeetnet:datum a rdfs:Property;
     rdfs:label "\n                            \n                            datum\n                          "@nl;
     rdfs:comment "Tijdsaanduiding die bestaat uit een jaar, een maand en een dag uit die maand waarop de meting plaatsvindt."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#meetpunt> a rdfs:Property;
+grondwatermeetnet:meetpunt a rdfs:Property;
     rdfs:label "\n                            \n                            meetpunt\n                          "@nl;
     rdfs:comment "Referentiepunt gebruikt als positie om van daaruit de meting uit te voeren."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#referentie> a rdfs:Property;
+grondwatermeetnet:referentie a rdfs:Property;
     rdfs:label "\n                            \n                            referentie\n                          "@nl;
     rdfs:comment "Verwijzing naar informatie te ondersteuning van een bewering."@nl;
     vann:usageNote "TO DO"@nl.
@@ -510,7 +719,7 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            \n                            uitgevoerdeObservatie\n                          "@nl;
     rdfs:comment "Observatie die met de Sensor is uitrgevoerd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#materiaal> a rdfs:Property;
+grondwatermeetnet:materiaal a rdfs:Property;
     rdfs:label "\n                            materiaal\n                          "@nl;
     rdfs:comment "Materiaal waarmee de annulaire ruimte is opgevuld."@nl;
     vann:usageNote "TO DO"@nl.
@@ -522,15 +731,15 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            waarde\n                          "@nl;
     rdfs:comment "Kwalitatieve of kwantitatieve invulling van de waarde."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#diameter> a rdfs:Property;
+grondwatermeetnet:diameter a rdfs:Property;
     rdfs:label "\n                            diameter\n                          "@nl;
     rdfs:comment "Diameter van de beschermbuis."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#hoogteverschil> a rdfs:Property;
+grondwatermeetnet:hoogteverschil a rdfs:Property;
     rdfs:label "\n                            hoogteverschil\n                          "@nl;
     rdfs:comment "Het verschil in hoogte van de beschermbuis."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#materiaal> a rdfs:Property;
+grondwatermeetnet:materiaal a rdfs:Property;
     rdfs:label "\n                            materiaal\n                          "@nl;
     rdfs:comment "Materiaal waaruit de beschermbuis is vervaardigd."@nl;
     vann:usageNote "TO DO"@nl.
@@ -538,19 +747,19 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            geometrie\n                          "@nl;
     rdfs:comment "Geometrie van het element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/generiek#gml> a rdfs:Property;
+generiek:gml a rdfs:Property;
     rdfs:label "\n                            gml\n                          "@nl;
     rdfs:comment "Directe positie uitgedrukt in gml-formaat."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/generiek#methode> a rdfs:Property;
+generiek:methode a rdfs:Property;
     rdfs:label "\n                            methode\n                          "@nl;
     rdfs:comment "De manier waarop het punt werd bepaald."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/generiek#wkt> a rdfs:Property;
+generiek:wkt a rdfs:Property;
     rdfs:label "\n                            wkt\n                          "@nl;
     rdfs:comment "Directe positie uitgedrukt in wkt-formaat."@nl;
     vann:usageNote ""@nl.
-<http://www.opengis.net/ont/geosparql#asGML> a rdfs:Property;
+geosparql:asGML a rdfs:Property;
     rdfs:label "\n                            gml\n                          "@nl;
     rdfs:comment "Geometrie uitgedrukt in gml-formaat."@nl;
     vann:usageNote "Gebruik gmlliteral als datatype."@nl.
@@ -558,7 +767,7 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            opmeting\n                          "@nl;
     rdfs:comment "Het bepalen van de precieze omvang van iets door het te meten."@nl;
     vann:usageNote ""@nl.
-<http://www.opengis.net/ont/geosparql#asWKT> a rdfs:Property;
+geosparql:asWKT a rdfs:Property;
     rdfs:label "\n                            wkt\n                          "@nl;
     rdfs:comment "Geometrie uitgedrukt in wkt-formaat."@nl;
     vann:usageNote "Gebruik wktliteral als datatype."@nl.
@@ -570,15 +779,15 @@ _:df_589_5 a foaf:Person;
     rdfs:label "\n                            waarde\n                          "@nl;
     rdfs:comment "Waarde van het element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#hoeveelheid> a rdfs:Property;
+grondwatermeetnet:hoeveelheid a rdfs:Property;
     rdfs:label "\n                            hoeveelheid\n                          "@nl;
     rdfs:comment "De hoeveelheid van de hoeveelheidafwerking."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#materiaal> a rdfs:Property;
+grondwatermeetnet:materiaal a rdfs:Property;
     rdfs:label "\n                            materiaal\n                          "@nl;
     rdfs:comment "Materiaal waaruit de afwerking is vervaardigd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#soort> a rdfs:Property;
+grondwatermeetnet:soort a rdfs:Property;
     rdfs:label "\n                            soort\n                          "@nl;
     rdfs:comment "Soort materiaal waaruit de afwerking is vervaardigd."@nl;
     vann:usageNote "TO DO"@nl.
@@ -602,7 +811,7 @@ schemas:value a rdfs:Property;
     rdfs:label "\n                            type\n                          "@nl;
     rdfs:comment "Het type Maaiveld."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#materiaal> a rdfs:Property;
+grondwatermeetnet:materiaal a rdfs:Property;
     rdfs:label "\n                            materiaal\n                          "@nl;
     rdfs:comment "Materiaal waaruit de opvullinginterval is vervaardigd."@nl;
     vann:usageNote "TO DO"@nl.
@@ -622,23 +831,23 @@ eu:endTime a rdfs:Property;
     rdfs:label "\n                            einde\n                          "@nl;
     rdfs:comment "Einde vd tijdsduur."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#binnendiameter> a rdfs:Property;
+grondwatermeetnet:binnendiameter a rdfs:Property;
     rdfs:label "\n                            binnendiameter\n                          "@nl;
     rdfs:comment "Binnendiameter van het filteronderdeel."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#buitendiameter> a rdfs:Property;
+grondwatermeetnet:buitendiameter a rdfs:Property;
     rdfs:label "\n                            buitendiameter\n                          "@nl;
     rdfs:comment "Buitendiameter van het filteronderdeel."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#element> a rdfs:Property;
+grondwatermeetnet:element a rdfs:Property;
     rdfs:label "\n                            element\n                          "@nl;
     rdfs:comment "Het element van het filteronderdeel."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/ns/grondwatermeetnet#materiaal> a rdfs:Property;
+grondwatermeetnet:materiaal a rdfs:Property;
     rdfs:label "\n                            materiaal\n                          "@nl;
     rdfs:comment "Materiaal waaruit het filteronderdeel is vervaardigd."@nl;
     vann:usageNote "TO DO"@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/#h2_sotd> vocab:role vocab:heading, vocab:heading.
 _:df_589_6 rdf:first _:df_589_1;
     rdf:rest rdf:nil.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondwatermeetnet/ontwerpstandaard/2021-08-01/> foaf:maker _:df_589_6.

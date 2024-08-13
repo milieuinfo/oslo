@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -112,32 +321,32 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape/397a5a4f54d3e516e80a83b790fc36b201c00ce0>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape/67d5c5e80a3832b172dc55f53d782e0f7c292fb1>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape/aa40ca1341b90a47e8538fd2ba331f450fb90c67>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultureel-erfgoed#Beschrijving>.
+    shacl:targetClass cultureel-erfgoed:Beschrijving.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Beschrijving.type";
     shacl:description "Aard van de beschrijving."@nl;
     shacl:maxCount 1;
     shacl:name "type"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultureel-erfgoed#type>.
+    shacl:path cultureel-erfgoed:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Beschrijving.type";
     shacl:class skos:Concept;
     shacl:description "Aard van de beschrijving."@nl;
     shacl:name "type"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultureel-erfgoed#type>.
+    shacl:path cultureel-erfgoed:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape/397a5a4f54d3e516e80a83b790fc36b201c00ce0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Beschrijving.tekst";
     shacl:description "Tekst van de Beschrijving."@nl;
     shacl:maxCount 1;
     shacl:name "tekst"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultureel-erfgoed#tekst>.
+    shacl:path cultureel-erfgoed:tekst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape/67d5c5e80a3832b172dc55f53d782e0f7c292fb1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Beschrijving.tekst";
     shacl:description "Tekst van de Beschrijving."@nl;
     shacl:minCount 1;
     shacl:name "tekst"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultureel-erfgoed#tekst>.
+    shacl:path cultureel-erfgoed:tekst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BeschrijvingShape/aa40ca1341b90a47e8538fd2ba331f450fb90c67> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Beschrijving.tekst";
     shacl:datatype rdf:langString;
     shacl:description "Tekst van de Beschrijving."@nl;
     shacl:name "tekst"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultureel-erfgoed#tekst>.
+    shacl:path cultureel-erfgoed:tekst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BewaringShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BewaringShape/225287f6f6e86bddd37c50d18417d9520d79de8b>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BewaringShape/e50aba45c75cbd1cda899b629556659598e4df27>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BewaringShape/b57f2c978a9edbcd640ec03972bc61b61641b1f2>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#BewaringShape/e0ee8ce6cbe9ed42ee3e6a236977b5602b65d135>;
@@ -194,17 +403,17 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ConceptieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ConceptieShape/25e16a6e0b5bc49a589cfda5dd6046c992b358b4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ConceptieShape/6f44db5dda7499e131187777063e72c228075abf>;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F27>.
+    shacl:targetClass frbroo:F27.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ConceptieShape/25e16a6e0b5bc49a589cfda5dd6046c992b358b4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Conceptie.werk";
     shacl:description "Het Werk dat gecreëerd werd."@nl;
     shacl:minCount 1;
     shacl:name "werk"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R16>.
+    shacl:path frbroo:R16.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ConceptieShape/6f44db5dda7499e131187777063e72c228075abf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Conceptie.werk";
-    shacl:class <https://www.iflastandards.info/fr/frbr/frbroo#F1>;
+    shacl:class frbroo:F1;
     shacl:description "Het Werk dat gecreëerd werd."@nl;
     shacl:name "werk"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R16>.
+    shacl:path frbroo:R16.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ConceptueelDingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass crm:E28_Conceptual_Object.
@@ -218,7 +427,7 @@
     shacl:name "periode"@nl;
     shacl:path crm:P4_has_time-span.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ConditieShape/3073c920efd960a5d9914dc057f8cb46063bedb1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Conditie.nota";
-    shacl:class <https://data.vlaanderen.be/ns/cultureel-erfgoed#Beschrijving>;
+    shacl:class cultureel-erfgoed:Beschrijving;
     shacl:description "Beschrijving van de Conditie."@nl;
     shacl:name "nota"@nl;
     shacl:path crm:P3_has_note.
@@ -358,7 +567,7 @@
     shacl:name "waarde"@nl;
     shacl:path schemas:value.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#DimensieShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Dimensie.beschrijving";
-    shacl:class <https://data.vlaanderen.be/ns/cultureel-erfgoed#Beschrijving>;
+    shacl:class cultureel-erfgoed:Beschrijving;
     shacl:description "Beschrijving van de Dimensie."@nl;
     shacl:name "beschrijving"@nl;
     shacl:path crm:P3_has_note.
@@ -403,7 +612,7 @@
     shacl:name "standaard eenheid"@nl;
     shacl:path schemas:unitCode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#DimensieShape/dcf18241c7695eee6abe5c99b390387f700ef44c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Dimensie.standaardeenheid";
-    shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+    shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
     shacl:name "standaard eenheid"@nl;
     shacl:path schemas:unitCode.
@@ -415,12 +624,12 @@
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#EntiteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#EntiteitShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#EntiteitShape/322371a77364a50f049d46180f6192532eea26dc>;
     shacl:targetClass crm:E1_CRM_Entity.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#EntiteitShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Entiteit.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificator van de Entiteit."@nl;
     shacl:name "identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#EntiteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Entiteit.beschrijving";
-    shacl:class <https://data.vlaanderen.be/ns/cultureel-erfgoed#Beschrijving>;
+    shacl:class cultureel-erfgoed:Beschrijving;
     shacl:description "Beschrijving van de Entiteit."@nl;
     shacl:name "beschrijving"@nl;
     shacl:path crm:P3_has_note.
@@ -432,32 +641,32 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape/126f70a78407171efb72f99397545cafd1cbd6cf>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape/5c95ec0dfc9ba896768a79d452c867298569d583>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape/cf5df68cfb8314c61a3365df47aa65093300cc78>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape/c5a86de6df4ee6bb7a192a99124faa11a712160d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape/e6048da69c2b4c47a2c67fbf1c1097c94e0884de>;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F28>.
+    shacl:targetClass frbroo:F28.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape/126f70a78407171efb72f99397545cafd1cbd6cf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatie.expressie";
     shacl:description "ZelfstandigeExpressie die werd gecreëerd."@nl;
     shacl:minCount 1;
     shacl:name "expressie"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R17>.
+    shacl:path frbroo:R17.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape/5c95ec0dfc9ba896768a79d452c867298569d583> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatie.expressie";
-    shacl:class <https://www.iflastandards.info/fr/frbr/frbroo#F22>;
+    shacl:class frbroo:F22;
     shacl:description "ZelfstandigeExpressie die werd gecreëerd."@nl;
     shacl:name "expressie"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R17>.
+    shacl:path frbroo:R17.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape/c5a86de6df4ee6bb7a192a99124faa11a712160d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatie.gerealiseerdwerk";
     shacl:description "Werk dat hierdoor werd gerealiseerd."@nl;
     shacl:minCount 1;
     shacl:name "gerealiseerd werk"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R19>.
+    shacl:path frbroo:R19.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape/cf5df68cfb8314c61a3365df47aa65093300cc78> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatie.expressie";
     shacl:description "ZelfstandigeExpressie die werd gecreëerd."@nl;
     shacl:maxCount 1;
     shacl:name "expressie"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R17>.
+    shacl:path frbroo:R17.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatieShape/e6048da69c2b4c47a2c67fbf1c1097c94e0884de> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ExpressieCreatie.gerealiseerdwerk";
-    shacl:class <https://www.iflastandards.info/fr/frbr/frbroo#F1>;
+    shacl:class frbroo:F1;
     shacl:description "Werk dat hierdoor werd gerealiseerd."@nl;
     shacl:name "gerealiseerd werk"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R19>.
+    shacl:path frbroo:R19.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#GebeurtenisShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#GebeurtenisShape/6dff0bc5d14aec0d16d970b5011ad51dfffcf46f>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#GebeurtenisShape/86c8e07c9db54c41d275d6a125f0a82c25815b80>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#GebeurtenisShape/c7398e9c9a6a99f55ace8794058f97c1e1f27910>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#GebeurtenisShape/241960e26b1c57d963200ab2cd3fc830d60573f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#GebeurtenisShape/b990aa58bbfdcc567198c656b4df5c2a9246d05a>;
@@ -496,7 +705,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape/ed560feb860205e0339910c9b2942564c01b5e11>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape/5f023c37e7d18ecf8aecd2bb45eae0a05687cd6f>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape/9f8532791e13c302ae6dcc70ef353c796f948c85>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape/3b5973d35f612c133f22e9f710f65db63d861b6b>;
-    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+    shacl:targetClass adms:Identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Identificator.toegekendop";
     shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
@@ -511,12 +720,12 @@
     shacl:datatype xsd:string;
     shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
     shacl:name "toegekend door (String)"@nl;
-    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+    shacl:path adms:schemaAgency.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape/9f8532791e13c302ae6dcc70ef353c796f948c85> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Identificator.toegekenddoor(String)";
     shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
     shacl:maxCount 1;
     shacl:name "toegekend door (String)"@nl;
-    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+    shacl:path adms:schemaAgency.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#IdentificatorShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Identificator.identificator";
     shacl:description "String gebruikt om het object uniek te identificeren."@nl;
     shacl:maxCount 1;
@@ -578,44 +787,44 @@
     shacl:path crm:P40_observed_dimension.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnameShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F26>.
+    shacl:targetClass frbroo:F26.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/daa20098a1a0f38720fd75b43f075f46c23913ad>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/e6048da69c2b4c47a2c67fbf1c1097c94e0884de>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/6a71f9010ccc09dfde78bbb20583e39c281cb7a5>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/8d485b641bf3ada1e6248ba535fa50d3e19543cf>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/883e8c2677e9206e1f4d65ee6b55745ed00469cb>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/c7ad1f02d410f2185e47a6019fcd8d81319c7df1>;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F29>.
+    shacl:targetClass frbroo:F29.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/6a71f9010ccc09dfde78bbb20583e39c281cb7a5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Opnamesessie.opname";
     shacl:description "Opname die werd gecreëerd."@nl;
     shacl:minCount 1;
     shacl:name "opname"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R21>.
+    shacl:path frbroo:R21.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/883e8c2677e9206e1f4d65ee6b55745ed00469cb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Opnamesessie.opnamevan";
     shacl:class crm:E2_Temporal_Entity;
     shacl:description "TemporeleEntiteit die werd opgenomen."@nl;
     shacl:name "opname van"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R20>.
+    shacl:path frbroo:R20.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/8d485b641bf3ada1e6248ba535fa50d3e19543cf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Opnamesessie.opname";
-    shacl:class <https://www.iflastandards.info/fr/frbr/frbroo#F26>;
+    shacl:class frbroo:F26;
     shacl:description "Opname die werd gecreëerd."@nl;
     shacl:name "opname"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R21>.
+    shacl:path frbroo:R21.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/c7ad1f02d410f2185e47a6019fcd8d81319c7df1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Opnamesessie.opnamevan";
     shacl:description "TemporeleEntiteit die werd opgenomen."@nl;
     shacl:minCount 1;
     shacl:name "opname van"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R20>.
+    shacl:path frbroo:R20.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/daa20098a1a0f38720fd75b43f075f46c23913ad> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Opnamesessie.gerealiseerdwerk";
     shacl:description "Opnamewerk dat hierdoor werd gerealiseerd."@nl;
     shacl:maxCount 1;
     shacl:name "gerealiseerd werk"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R22>.
+    shacl:path frbroo:R22.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamesessieShape/e6048da69c2b4c47a2c67fbf1c1097c94e0884de> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Opnamesessie.gerealiseerdwerk";
-    shacl:class <https://www.iflastandards.info/fr/frbr/frbroo#F21>;
+    shacl:class frbroo:F21;
     shacl:description "Opnamewerk dat hierdoor werd gerealiseerd."@nl;
     shacl:name "gerealiseerd werk"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R22>.
+    shacl:path frbroo:R22.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OpnamewerkShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F21>.
+    shacl:targetClass frbroo:F21.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OrganisatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OrganisatieShape/6b83c94554e8cc117c1d07fa1e155ccdee8ae62d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OrganisatieShape/9a37477967f54b67db79a7d1bc0b9cb7b67c0c52>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#OrganisatieShape/b48088de85b3e925d9a93b4e93883c8cacbf1b1b>;
@@ -683,38 +892,38 @@
     shacl:path crm:P108_has_produced.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatieExpressieShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F24>.
+    shacl:targetClass frbroo:F24.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatieShape/daa20098a1a0f38720fd75b43f075f46c23913ad>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatieShape/e6048da69c2b4c47a2c67fbf1c1097c94e0884de>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatieShape/9c1c449e351cff62dce13354cba2b216fc74db14>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatieShape/a45c4a0e8078d39bb812fe8290f68e4a682d1c0a>;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F30>.
+    shacl:targetClass frbroo:F30.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatieShape/9c1c449e351cff62dce13354cba2b216fc74db14> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Publicatie.publicatieexpressie";
     shacl:description "PublicatieExpressie die werd gecreëerd."@nl;
     shacl:minCount 1;
     shacl:name "publicatie expressie"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R24>.
+    shacl:path frbroo:R24.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatieShape/a45c4a0e8078d39bb812fe8290f68e4a682d1c0a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Publicatie.publicatieexpressie";
-    shacl:class <https://www.iflastandards.info/fr/frbr/frbroo#F24>;
+    shacl:class frbroo:F24;
     shacl:description "PublicatieExpressie die werd gecreëerd."@nl;
     shacl:name "publicatie expressie"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R24>.
+    shacl:path frbroo:R24.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatieShape/daa20098a1a0f38720fd75b43f075f46c23913ad> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Publicatie.gerealiseerdwerk";
     shacl:description "Publicatiewerk dat hierbij werd gerealiseerd."@nl;
     shacl:maxCount 1;
     shacl:name "gerealiseerd werk"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R23>.
+    shacl:path frbroo:R23.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatieShape/e6048da69c2b4c47a2c67fbf1c1097c94e0884de> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Publicatie.gerealiseerdwerk";
-    shacl:class <https://www.iflastandards.info/fr/frbr/frbroo#F19>;
+    shacl:class frbroo:F19;
     shacl:description "Publicatiewerk dat hierbij werd gerealiseerd."@nl;
     shacl:name "gerealiseerd werk"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R23>.
+    shacl:path frbroo:R23.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#PublicatiewerkShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F19>.
+    shacl:targetClass frbroo:F19.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#RolShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#RolShape/0611ac5efc463c0056cb7a9ff97ab6e00438ed54>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#RolShape/35dd77dfb11d842b8f928cd5c3a10c642ded2a2b>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#RolShape/c48d934c260f297b2e27da70c399d5249cf8f53a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#RolShape/28d6b3e59be033800a74a515b1b1f419aed7e745>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#RolShape/8779c6359271f3bfbf32fb46aef8d3c05abb397a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#RolShape/901ed7d21bb08dd770162c088d314c71f71e097a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#RolShape/e5ccf692ee38c28199531eb5e0c59554153a57c3>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultureel-erfgoed#Rol>.
+    shacl:targetClass cultureel-erfgoed:Rol.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#RolShape/0611ac5efc463c0056cb7a9ff97ab6e00438ed54> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Rol.Activiteit";
     shacl:description "Referentie naar verbonden klasse."@nl;
     shacl:minCount 1;
@@ -752,18 +961,18 @@
     shacl:path <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#StandaardEenheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>.
+    shacl:targetClass generiek:StandaardEenheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#TemporeleEntiteitShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#TemporeleEntiteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#TemporeleEntiteitShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#TemporeleEntiteitShape/241960e26b1c57d963200ab2cd3fc830d60573f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#TemporeleEntiteitShape/b990aa58bbfdcc567198c656b4df5c2a9246d05a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#TemporeleEntiteitShape/322371a77364a50f049d46180f6192532eea26dc>;
     shacl:targetClass crm:E2_Temporal_Entity.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#TemporeleEntiteitShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#TemporeleEntiteit.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificator van de TemporeleEntiteit."@nl;
     shacl:name "identificator"@nl;
     shacl:path crm:P1_is_identified_by.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#TemporeleEntiteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#TemporeleEntiteit.beschrijving";
-    shacl:class <https://data.vlaanderen.be/ns/cultureel-erfgoed#Beschrijving>;
+    shacl:class cultureel-erfgoed:Beschrijving;
     shacl:description "Beschrijving van de TemporeleEntiteit."@nl;
     shacl:name "beschrijving"@nl;
     shacl:path crm:P3_has_note.
@@ -787,7 +996,7 @@
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ToekenningShape/41c80a38bf053f9ff96f3ba5d83151a159c9f5ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ToekenningShape/48b8173d0c4433fc8f1c470846587c85f4224367>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ToekenningShape/ef56d63ed0a1d8d9908b074c7a891e8a6d9fb239>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ToekenningShape/215de59d9ed89d4bebb41ba0b407a02dadd7e998>;
     shacl:targetClass crm:E13_Attribute_Assignment.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ToekenningShape/215de59d9ed89d4bebb41ba0b407a02dadd7e998> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Toekenning.toegekendewaarde";
-    shacl:class <https://data.vlaanderen.be/ns/cultureel-erfgoed#Waarde>;
+    shacl:class cultureel-erfgoed:Waarde;
     shacl:description "Waarde van het kenmerk die is toegekend."@nl;
     shacl:name "toegekende waarde"@nl;
     shacl:path crm:P141_assigned.
@@ -950,26 +1159,26 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#VoorstellingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#VoorstellingShape/c7a29730228fb77565104b393a0abaf01fdee58c>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#VoorstellingShape/d85ada83fe1a0861efd71a691b59b7b479524d74>;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F31>.
+    shacl:targetClass frbroo:F31.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#VoorstellingShape/c7a29730228fb77565104b393a0abaf01fdee58c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Voorstelling.uitgevoerdeversie";
     shacl:class crm:E28_Conceptual_Object;
     shacl:description "Versie van een Werk of ZelfstandigeExpressie van een Werk die wordt opgevoerd."@nl;
     shacl:name "uitgevoerde versie"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R66>.
+    shacl:path frbroo:R66.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#VoorstellingShape/d85ada83fe1a0861efd71a691b59b7b479524d74> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#Voorstelling.volgt";
-    shacl:class <https://www.iflastandards.info/fr/frbr/frbroo#F25>;
+    shacl:class frbroo:F25;
     shacl:description "Voorstellingsplan dat wordt gevolgd bij de Voorstelling."@nl;
     shacl:name "volgt"@nl;
-    shacl:path <https://www.iflastandards.info/fr/frbr/frbroo#R25>.
+    shacl:path frbroo:R25.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#VoorstellingsplanShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F25>.
+    shacl:targetClass frbroo:F25.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#WaardeShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultureel-erfgoed#Waarde>.
+    shacl:targetClass cultureel-erfgoed:Waarde.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#WerkShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F1>.
+    shacl:targetClass frbroo:F1.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#WijzigingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#WijzigingShape/6a1641e282c7bdb43870442814b6ee5c38f4f5aa>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#WijzigingShape/329aaa040b465e9b497b66b6fda6af9af93eb4ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#WijzigingShape/dea0a4f56d2c9924d2f13e069e99c82433367751>;
@@ -991,4 +1200,4 @@
     shacl:path crm:P31_has_modified.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultureel-erfgoed-event/erkendestandaard/2021-04-22#ZelfstandigeExpressieShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://www.iflastandards.info/fr/frbr/frbroo#F22>.
+    shacl:targetClass frbroo:F22.

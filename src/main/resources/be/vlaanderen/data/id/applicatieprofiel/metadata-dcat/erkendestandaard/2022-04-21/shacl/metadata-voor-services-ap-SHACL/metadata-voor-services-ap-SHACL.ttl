@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -54,7 +263,7 @@
     shacl:description "Een webpagina in een menselijk leesbare vorm van de bron metadata record."@nl;
     shacl:maxCount 1;
     shacl:name "bron metadata record landingspagina"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina>.
+    shacl:path metadata-dcat:bronMetadataRecordLandingspagina.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#CatalogusRecordShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#CatalogusRecord.wijzigingsdatum";
     shacl:description "De meest recente datum waarop de record in de catalogus is gewijzigd, bijgewerkt of aangepast."@nl;
     shacl:maxCount 1;
@@ -66,10 +275,10 @@
     shacl:name "hoofdonderwerp"@nl;
     shacl:path foaf:primaryTopic.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#CatalogusRecordShape/39607ae8317e4f99846f57f713d51b19528e5764> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#CatalogusRecord.alternatieveidentificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een alternatieve identificator (dan de unieke identificator) voor een record in de catalogus kan hier beschreven worden."@nl;
     shacl:name "alternatieve identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#CatalogusRecordShape/6a51b2354ea38a815d6131b4e05f8587791de4e0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#CatalogusRecord.wijzigingsdatum";
     shacl:description "De meest recente datum waarop de record in de catalogus is gewijzigd, bijgewerkt of aangepast."@nl;
     shacl:minCount 1;
@@ -124,7 +333,7 @@
     shacl:class rdfs:Resource;
     shacl:description "Een webpagina in een menselijk leesbare vorm van de bron metadata record."@nl;
     shacl:name "bron metadata record landingspagina"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina>.
+    shacl:path metadata-dcat:bronMetadataRecordLandingspagina.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#CatalogusRecordShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#CatalogusRecord.titel";
     shacl:datatype rdf:langString;
     shacl:description "De naam van het record in de catalogus."@nl;
@@ -189,10 +398,10 @@
     shacl:name "record"@nl;
     shacl:path dcat:record.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#CatalogusShape/39607ae8317e4f99846f57f713d51b19528e5764> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Catalogus.alternatieveidentificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een alternatieve identificator (dan de unieke identificator) voor de catalogus kan hier beschreven worden."@nl;
     shacl:name "alternatieve identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#CatalogusShape/458062b0ae03c559426b85df3dd28e1c785acb0b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Catalogus.contactinformatie";
     shacl:class vcard:Kind;
     shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de catalogus."@nl;
@@ -297,13 +506,13 @@ _:n3-791 shacl:class skos:ConceptScheme;
 _:n3-790 shacl:property _:n3-791.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/0aea9e8a54457ca50f1b00c07872cb7c7b39e8ba> shacl:node _:n3-790;
     shacl:nodeKind shacl:IRI;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#levensfase>;
+    shacl:path metadata-dcat:levensfase;
     shacl:severity shacl:Warning.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/0cdcfe2387440711ebbe94a2fcc93a29377956c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.landingspaginavoorstatusinformatie";
     shacl:class rdfs:Resource;
     shacl:description "Een verwijzing naar de statuspagina van de dataservice"@nl;
     shacl:name "landingspagina voor statusinformatie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie>.
+    shacl:path metadata-dcat:landingspaginaVoorStatusinformatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/0e54e6660eb6bc0ea08ebfce3dbbf188c3e400d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.publicatiedatum";
     shacl:datatype xsd:dateTime;
     shacl:description "Het tijdsmoment waarop de service werd gepubliceerd door de uitgever."@nl;
@@ -318,7 +527,7 @@ _:n3-790 shacl:property _:n3-791.
     shacl:class skos:Concept;
     shacl:description "De levensfase waarin de dataservice zich bevindt."@nl;
     shacl:name "levensfase"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#levensfase>.
+    shacl:path metadata-dcat:levensfase.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/1712ef1b325d7d2807bc601d6409b70a42eaff10> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.thema";
     shacl:class skos:Concept;
     shacl:description "De hoofdcategorie waartoe de dataservice behoort."@nl;
@@ -343,17 +552,17 @@ _:n3-790 shacl:property _:n3-791.
     shacl:class rdfs:Resource;
     shacl:description "Een verwijzing naar de landingspagina met de specifieke informatie over de authenticatie voor de dataservice."@nl;
     shacl:name "landingspagina voor authenticatie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie>.
+    shacl:path metadata-dcat:landingspaginaVoorAuthenticatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/302090a90a5755780bc8fe09be4bcd29193cfd6d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.versie";
     shacl:description "Een unieke aanduiding van een variant van de dataservice door middel van een versienummer of -naam van de dataservice."@nl;
     shacl:maxCount 1;
     shacl:name "versie"@nl;
     shacl:path owl:versionInfo.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/39607ae8317e4f99846f57f713d51b19528e5764> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.alternatieveidentificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een alternatieve identificator (dan de unieke identificator) voor een dataservice kan hier beschreven worden."@nl;
     shacl:name "alternatieve identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/44f6426e2306c5bc0421823eb4a1a034b615f715> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.trefwoord";
     shacl:datatype rdf:langString;
     shacl:description "Een trefwoord of tag die de resource beschrijft."@nl;
@@ -363,7 +572,7 @@ _:n3-790 shacl:property _:n3-791.
     shacl:class skos:Concept;
     shacl:description "De ontwikkelingstoestand waarin de dataservice is gedeployed."@nl;
     shacl:name "ontwikkelingstoestand"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand>.
+    shacl:path metadata-dcat:ontwikkelingstoestand.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/458062b0ae03c559426b85df3dd28e1c785acb0b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.contactinformatie";
     shacl:class vcard:Kind;
     shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataservice."@nl;
@@ -422,7 +631,7 @@ _:n3-795 shacl:class skos:ConceptScheme;
 _:n3-794 shacl:property _:n3-795.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/67325124afc7d6eac4402056620665f7348ef62a> shacl:node _:n3-794;
     shacl:nodeKind shacl:IRI;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#statuut>;
+    shacl:path metadata-dcat:statuut;
     shacl:severity shacl:Warning.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/67c89165b0f38567bf099862ffdef88f25e68714> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.endpointURL";
     shacl:class rdfs:Resource;
@@ -443,7 +652,7 @@ _:n3-794 shacl:property _:n3-795.
     shacl:description "De ontwikkelingstoestand waarin de dataservice is gedeployed."@nl;
     shacl:maxCount 1;
     shacl:name "ontwikkelingstoestand"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand>.
+    shacl:path metadata-dcat:ontwikkelingstoestand.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/80a839685f13d2584ebe2f9b5d9a93ae2c1b21a0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.conformaanprotocol";
     shacl:class dcterms:Standard;
     shacl:description "Een protocol waaraan de dataservice voldoet."@nl;
@@ -453,12 +662,12 @@ _:n3-794 shacl:property _:n3-795.
     shacl:description "Een verwijzing naar de statuspagina van de dataservice"@nl;
     shacl:maxCount 1;
     shacl:name "landingspagina voor statusinformatie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie>.
+    shacl:path metadata-dcat:landingspaginaVoorStatusinformatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/8a32a3e6b5ca4b68f8846b184e7faa4f48a0ee1d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.levensfase";
     shacl:description "De levensfase waarin de dataservice zich bevindt."@nl;
     shacl:maxCount 1;
     shacl:name "levensfase"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#levensfase>.
+    shacl:path metadata-dcat:levensfase.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.identificator";
     shacl:description "De unieke identificator van de dataservice."@nl;
     shacl:minCount 1;
@@ -488,7 +697,7 @@ _:n3-794 shacl:property _:n3-795.
     shacl:description "Een verwijzing naar de landingspagina met de specifieke informatie over het gebruik van de dataservice."@nl;
     shacl:maxCount 1;
     shacl:name "landingspagina voor gebruiksinformatie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie>.
+    shacl:path metadata-dcat:landingspaginaVoorGebruiksinformatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.identificator";
     shacl:description "De unieke identificator van de dataservice."@nl;
     shacl:maxCount 1;
@@ -518,7 +727,7 @@ _:n3-796 shacl:property _:n3-797.
     shacl:class rdfs:Resource;
     shacl:description "Een verwijzing naar de landingspagina met de specifieke informatie over het gebruik van de dataservice."@nl;
     shacl:name "landingspagina voor gebruiksinformatie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie>.
+    shacl:path metadata-dcat:landingspaginaVoorGebruiksinformatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/c5f6c428a4ae32239d9662d58fa65ae4f0cf49e6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.toegankelijkheid";
     shacl:description "De toegankelijkheid voor de dataservice."@nl;
     shacl:name "toegankelijkheid"@nl.
@@ -553,7 +762,7 @@ _:n3-798 shacl:property _:n3-799.
     shacl:description "Een verwijzing naar de landingspagina met de specifieke informatie over de authenticatie voor de dataservice."@nl;
     shacl:maxCount 1;
     shacl:name "landingspagina voor authenticatie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie>.
+    shacl:path metadata-dcat:landingspaginaVoorAuthenticatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.titel";
     shacl:datatype rdf:langString;
     shacl:description "De naam van de dataservice."@nl;
@@ -568,7 +777,7 @@ _:n3-798 shacl:property _:n3-799.
     shacl:class skos:Concept;
     shacl:description "Een aanduiding van op welke basis de catalogusresource beschikbaar is."@nl;
     shacl:name "statuut"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#statuut>.
+    shacl:path metadata-dcat:statuut.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/f9862087b9d1ec8465f46ee21e166c45776cf8bd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.ontwikkelingstoestand";
     shacl:description "De ontwikkelingstoestand waarin de dataservice is gedeployed."@nl;
     shacl:name "ontwikkelingstoestand"@nl.
@@ -582,7 +791,7 @@ _:n3-801 shacl:class skos:ConceptScheme;
 _:n3-800 shacl:property _:n3-801.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/f9862087b9d1ec8465f46ee21e166c45776cf8bd> shacl:node _:n3-800;
     shacl:nodeKind shacl:IRI;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand>;
+    shacl:path metadata-dcat:ontwikkelingstoestand;
     shacl:severity shacl:Warning.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DataServiceShape/fe1a78c9169da2469a23fd783cf9a69060bfe198> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataservice.landingspagina";
     shacl:class rdfs:Resource;
@@ -639,10 +848,10 @@ _:n3-800 shacl:property _:n3-801.
     shacl:name "versie"@nl;
     shacl:path owl:versionInfo.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DatasetShape/39607ae8317e4f99846f57f713d51b19528e5764> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataset.alternatieveidentificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een alternatieve identificator (dan de unieke identificator) voor een dataset kan hier beschreven worden."@nl;
     shacl:name "alternatieve identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DatasetShape/44f6426e2306c5bc0421823eb4a1a034b615f715> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataset.trefwoord";
     shacl:datatype rdf:langString;
     shacl:description "Een trefwoord of tag die de resource beschrijft."@nl;
@@ -686,7 +895,7 @@ _:n3-805 shacl:class skos:ConceptScheme;
 _:n3-804 shacl:property _:n3-805.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DatasetShape/67325124afc7d6eac4402056620665f7348ef62a> shacl:node _:n3-804;
     shacl:nodeKind shacl:IRI;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#statuut>;
+    shacl:path metadata-dcat:statuut;
     shacl:severity shacl:Warning.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DatasetShape/6b0d5813153da700505d795c17d681878225c6d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataset.creatiedatum";
     shacl:description "Het tijdsmoment waarop de dataset ontstaan is."@nl;
@@ -737,7 +946,7 @@ _:n3-804 shacl:property _:n3-805.
     shacl:class dcat:Distribution;
     shacl:description "Een verkleinde weergave van een afbeelding die de dataset illustreert.?"@nl;
     shacl:name "voorbeeldweergave"@nl;
-    shacl:path <http://www.w3.org/ns/adms#sample>.
+    shacl:path adms:sample.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DatasetShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataset.identificator";
     shacl:description "De unieke identificator van de dataset."@nl;
     shacl:maxCount 1;
@@ -787,7 +996,7 @@ _:n3-806 shacl:property _:n3-807.
     shacl:class skos:Concept;
     shacl:description "Een aanduiding van op welke basis de catalogusresource beschikbaar is."@nl;
     shacl:name "statuut"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#statuut>.
+    shacl:path metadata-dcat:statuut.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DatasetShape/fe1a78c9169da2469a23fd783cf9a69060bfe198> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Dataset.landingspagina";
     shacl:class rdfs:Resource;
     shacl:description "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene informatie over de dataset, zijn distributies en/of aanvullende informatie."@nl;
@@ -818,10 +1027,10 @@ _:n3-806 shacl:property _:n3-807.
     shacl:name "toegangsURL"@nl;
     shacl:path dcat:accessURL.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DistributieShape/39607ae8317e4f99846f57f713d51b19528e5764> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Distributie.alternatieveidentificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een alternatieve identificator (dan de unieke identificator) voor een distributie kan hier beschreven worden."@nl;
     shacl:name "alternatieve identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#DistributieShape/3d0e850677d211050dd9e93ec6496e6af9908da6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Distributie.toegangsURL";
     shacl:class rdfs:Resource;
     shacl:description "Een URL waar de data kan gevonden worden."@nl;
@@ -913,7 +1122,7 @@ _:n3-808 shacl:property _:n3-809.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/0e92d523a1837590188fbfddd2ab0d9f901bdcab>, <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/6789412851c92fe5eb8479182507dd72e28ab811>, <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/ccb2d543d17baa8b6b0ca2a42156eed6f23e3f6e>, <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/ed560feb860205e0339910c9b2942564c01b5e11>, <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/5f023c37e7d18ecf8aecd2bb45eae0a05687cd6f>, <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/9f8532791e13c302ae6dcc70ef353c796f948c85>, <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b>, <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/3b5973d35f612c133f22e9f710f65db63d861b6b>;
-    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+    shacl:targetClass adms:Identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/0e92d523a1837590188fbfddd2ab0d9f901bdcab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Identificator.gestructureerdeidentificator";
     shacl:class <http://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator>;
     shacl:description "Identificator vh object opgesplitst in zijn onderdelen."@nl;
@@ -933,7 +1142,7 @@ _:n3-808 shacl:property _:n3-809.
     shacl:datatype xsd:string;
     shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
     shacl:name "toegekend door (String)"@nl;
-    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+    shacl:path adms:schemaAgency.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/6789412851c92fe5eb8479182507dd72e28ab811> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Identificator.gestructureerdeidentificator";
     shacl:description "Identificator vh object opgesplitst in zijn onderdelen."@nl;
     shacl:maxCount 1;
@@ -943,7 +1152,7 @@ _:n3-808 shacl:property _:n3-809.
     shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
     shacl:maxCount 1;
     shacl:name "toegekend door (String)"@nl;
-    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+    shacl:path adms:schemaAgency.
 <https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#IdentificatorShape/ccb2d543d17baa8b6b0ca2a42156eed6f23e3f6e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2022-04-21#Identificator.notatie";
     shacl:description "String gebruikt om het object uniek te identificeren. "@nl;
     shacl:maxCount 1;

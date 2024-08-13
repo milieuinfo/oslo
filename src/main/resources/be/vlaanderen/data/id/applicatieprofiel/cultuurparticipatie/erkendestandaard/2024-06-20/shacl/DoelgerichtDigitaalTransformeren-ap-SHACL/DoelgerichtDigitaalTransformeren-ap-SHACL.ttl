@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -40,12 +249,12 @@
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/4a7f197441ddaf8ef774c39d0e34d1c3d4f5fb17>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/1cd44640dfa534b194ee45315f6a6bacbd2c5c04>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/5485f560cc4537a56ec0fdb5ad3b59522d112e1e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/7afdb5e532aae0234495df704beed1c303e180e6>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/0a4b899ea5848b5ccb44d5aef08a046260fdf710>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/4b124f0924fab01fc5967b50aacaf82bcf846710>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/6dff0bc5d14aec0d16d970b5011ad51dfffcf46f>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/65882aa6e035e313d7e8ae2a231fb774e8ce8068>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/68be2c238b549481b3871ab9e152013fa73bb451>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/e803d7f299a7ccb59a3fa7983113e51d23825223>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/cd2628ef4874b9a1c9381e5f4c98aa1a9629faeb>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/73d09b4a2f05066b3d7f4ddebac064c8ecc9c3e9>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/8f8d653e304153b908ef8c4ace8348d1e837fb08>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/d1815831122a6dadbc2fa97e36b5e9ef302ad3da>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/1d591451fea2083e4ceabe8d66ae6fc5d3f22e4f>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/358b869ccd19b45039e9a02a3c9a3401ff698558>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/ccd4c171c25e9fe41ade4f9df02d87c53638c02b>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/51290e7b777b4cd8af49e24400a048328100c784>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/cea37e45afc7fb8a18318a35bc5d31e2b7f4c5d9>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/e40907f566e77ef95872fc13b2279b83b9693147>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/83859248fe6f78d540fa11444bae404fcbafae24>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/421d78c27acf98a3c52191db36ac97de764ae8b5>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/a1bb9ee406b41fdb9bf74eb56dc6574b4150cc1c>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/f6c6cb5987b43e44ecd504e5cef64f9f96fbe7f5>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/6f9e071223d07e6bbcd3523a55a0794b01294a3a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/80e49db4d35a517c8b82797b6cc1759f26a86ed6>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/ed5e8ac219cc233d99754d761271056b2a436c80>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/0f6cb927d0d26f3819cba3fb903a075cd426180d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/499cac5affdbc3184fe2663d9e5ba028072dae12>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/a9d2027978ed67b7053ebc23af67af97ef063212>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/1712ef1b325d7d2807bc601d6409b70a42eaff10>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/241960e26b1c57d963200ab2cd3fc830d60573f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/43775369c86888c21f8d575ad00e9514818eaa33>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/6d46887e8e0ab653b74cac909abf29dec93c8321>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/2345efb6b488e426a091eb42e42a7c37a16e392d>;
     shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#ActiviteitVerhouding.activiteit.source>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Activiteit.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificator dat de Activiteit verkreeg bij registratie."@nl;
     shacl:name "identificator"@nl;
     shacl:path <https://www.w3.org/ns/adms#identifier>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/0a4b899ea5848b5ccb44d5aef08a046260fdf710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Activiteit.boeking";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Boekingsinfo>;
+    shacl:class cultuurparticipatie:Boekingsinfo;
     shacl:description "De Boekinginfo van de Activiteit."@nl;
     shacl:name "boeking"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.boeking>.
@@ -68,9 +277,9 @@
     shacl:class skos:Concept;
     shacl:description "Waar de Activiteit inhoudelijk over gaat."@nl;
     shacl:name "thema"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#thema>.
+    shacl:path cultuurparticipatie:thema.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/1cd44640dfa534b194ee45315f6a6bacbd2c5c04> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Activiteit.berichtgeving";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Berichtgeving>;
+    shacl:class cultuurparticipatie:Berichtgeving;
     shacl:description "Berichtgeving rond de Activiteit."@nl;
     shacl:name "berichtgeving"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.berichtgeving>.
@@ -115,7 +324,7 @@
     shacl:name "subactiviteit"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.subactiviteit>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/4a7f197441ddaf8ef774c39d0e34d1c3d4f5fb17> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Activiteit.beperkttot";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel>;
+    shacl:class cultuurparticipatie:ParticipantProfiel;
     shacl:description "Een beperking opgelegd aan de Activiteit op basis van het ParticipantProfiel."@nl;
     shacl:name "beperkt tot"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.beperktTot>.
@@ -153,9 +362,9 @@
     shacl:class skos:Concept;
     shacl:description "Eigenschap van de Activiteit die bepaald gedrag, gevoel of fysieke reactie kan opwekken."@nl;
     shacl:name "trigger"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#trigger>.
+    shacl:path cultuurparticipatie:trigger.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/6dff0bc5d14aec0d16d970b5011ad51dfffcf46f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Activiteit.deelnemer";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant>;
+    shacl:class cultuurparticipatie:Participant;
     shacl:description "Participant die deelneemt aan een Activiteit."@nl;
     shacl:name "deelnemer"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.deelnemer>.
@@ -170,7 +379,7 @@
     shacl:name "duur"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.duur>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/7afdb5e532aae0234495df704beed1c303e180e6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Activiteit.beschikbaarheid";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Beschikbaarheid>;
+    shacl:class cultuurparticipatie:Beschikbaarheid;
     shacl:description "Geeft de beschikbaarheid weer van de Activiteit."@nl;
     shacl:name "beschikbaarheid"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.beschikbaarheid>.
@@ -180,7 +389,7 @@
     shacl:name "recurrerend"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.recurrerend>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/83859248fe6f78d540fa11444bae404fcbafae24> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Activiteit.isgepromoot";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Promotie>;
+    shacl:class cultuurparticipatie:Promotie;
     shacl:description "Activiteit die wordt gepromoot aan de hand van een Promotie."@nl;
     shacl:name "is gepromoot"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.isGepromoot>.
@@ -200,7 +409,7 @@
     shacl:name "superactiviteit"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.superactiviteit>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/ccd4c171c25e9fe41ade4f9df02d87c53638c02b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Activiteit.gerealiseerddoor";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisator>;
+    shacl:class cultuurparticipatie:Realisator;
     shacl:description "De Activiteit wordt uitgevoerd door een Realisator.."@nl;
     shacl:name "gerealiseerd door"@nl;
     shacl:path <http://cidoc-crm.org/cidoc-crm/P14_carried_out_by>.
@@ -215,12 +424,12 @@
     shacl:name "heeft vorige Activiteit"@nl;
     shacl:path eu:hasPreviousEvent.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/d1815831122a6dadbc2fa97e36b5e9ef302ad3da> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Activiteit.financiering";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Financiering>;
+    shacl:class cultuurparticipatie:Financiering;
     shacl:description "De benodigde middelen in het organiseren van de Activiteit."@nl;
     shacl:name "financiering"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.financiering>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitShape/e40907f566e77ef95872fc13b2279b83b9693147> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Activiteit.infrastructuur";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur>;
+    shacl:class jc_infrastructuur:Infrastructuur;
     shacl:description "Informatie rond de infrastructuur waarrond of waarin de Activiteit doorgaat."@nl;
     shacl:name "infrastructuur"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Activiteit.infrastructuur>.
@@ -245,7 +454,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitVerhoudingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitVerhoudingShape/892f5d5615ed9bae8f66e98f02318d5b086ba49d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitVerhoudingShape/94a120bfb4e7295c48e7640b06122a90df582ee1>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitVerhoudingShape/af0dd1d70020133ef2d44c714209325bb97efc17>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitVerhoudingShape/16649c299ca5d2ea9ef861fc9007050f799c62ea>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitVerhoudingShape/8c4bd3ec12d152848cf59985774e1a0b2cbbc5b3>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitVerhoudingShape/cea09882aa4b3bf2cf75d66ca3a1efc0469f0140>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitVerhoudingShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#ActiviteitVerhouding>.
+    shacl:targetClass cultuurparticipatie:ActiviteitVerhouding.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitVerhoudingShape/16649c299ca5d2ea9ef861fc9007050f799c62ea> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ActiviteitVerhouding.Activiteit(target)";
     shacl:description "Referentie naar verbonden klasse."@nl;
     shacl:minCount 1;
@@ -299,9 +508,9 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#AlgemeenParticipantKenmerkShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#AlgemeenParticipantKenmerkShape/20fc127c7d294b91eee511f7dacb75683e00ee75>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#AlgemeenParticipantKenmerkShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#AlgemeenParticipantkenmerk>.
+    shacl:targetClass cultuurparticipatie:AlgemeenParticipantkenmerk.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#AlgemeenParticipantKenmerkShape/20fc127c7d294b91eee511f7dacb75683e00ee75> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#AlgemeenParticipantkenmerk.isdeelvan";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel>;
+    shacl:class cultuurparticipatie:ParticipantProfiel;
     shacl:description "AlgemeenParticipantkenmerk is deel van het ParticipantProfiel"@nl;
     shacl:name "is deel van"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#AlgemeenParticipantkenmerk.isDeelVan>.
@@ -312,17 +521,17 @@
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#BerichtgevingShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Berichtgeving>.
+    shacl:targetClass cultuurparticipatie:Berichtgeving.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#BeschikbaarheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Beschikbaarheid>.
+    shacl:targetClass cultuurparticipatie:Beschikbaarheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#BetaaltermijnTypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#BoekingsinfoShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#BoekingsinfoShape/65963ec730ecc0938dbb1ca2739f7b289fdb3603>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#BoekingsinfoShape/8ffc999ed3c80bad2705dd95b6706147fd6a1a68>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#BoekingsinfoShape/4b124f0924fab01fc5967b50aacaf82bcf846710>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#BoekingsinfoShape/fb437893f0ff5b6e7bf5d37961caea3ea4fefaa0>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Boekingsinfo>.
+    shacl:targetClass cultuurparticipatie:Boekingsinfo.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#BoekingsinfoShape/4b124f0924fab01fc5967b50aacaf82bcf846710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Boekingsinfo.contactinfo";
     shacl:class schema:ContactPoint;
     shacl:description "Informatie zoals email, telefoon... die toelaat de aanbieder te contacteren."@nl;
@@ -339,27 +548,27 @@
     shacl:name "beschikbaar"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Boekinginfo.beschikbaar>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#BoekingsinfoShape/fb437893f0ff5b6e7bf5d37961caea3ea4fefaa0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Boekingsinfo.kanaal";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Kanaal>;
+    shacl:class cultuurparticipatie:Kanaal;
     shacl:description "De Boeking van een Activiteit verloopt via een Kanaal."@nl;
     shacl:name "kanaal"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Boekinginfo.kanaal>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ConsentShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://w3id.org/GConsent#Consent>.
+    shacl:targetClass GConsent:Consent.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ContactInfoShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass schema:ContactPoint.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#CultuurdeelnameShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#CultuurdeelnameShape/d3aadc6f54cf02a2f12c14f75041f2b77369c9c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#CultuurdeelnameShape/72d8e53b4c1763e3a015f9673d4143aff92643cc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#CultuurdeelnameShape/fd79be3f209d2ad7c806dec4641965b480e07d9c>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#CultuurdeelnameShape/f2daeaf0b0bc601593872c128537b7e0f556afc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#CultuurdeelnameShape/ebdfd1c7107df0a8de0ca08076ee6eca64a37874>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Cultuurdeelname>.
+    shacl:targetClass cultuurparticipatie:Cultuurdeelname.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#CultuurdeelnameShape/72d8e53b4c1763e3a015f9673d4143aff92643cc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Cultuurdeelname.frequentie";
     shacl:description "De frequentie waarmee een participant deelneemt aan bepaalde activiteiten"@nl;
     shacl:maxCount 1;
     shacl:name "frequentie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Cultuurdeelname.frequentie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#CultuurdeelnameShape/d3aadc6f54cf02a2f12c14f75041f2b77369c9c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Cultuurdeelname.deelvan";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel>;
+    shacl:class cultuurparticipatie:ParticipantProfiel;
     shacl:description "Cultuurdeelname is deel van het ParticipantProfiel."@nl;
     shacl:name "deel van"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Cultuurdeelname.deelVan>.
@@ -381,7 +590,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/0611ac5efc463c0056cb7a9ff97ab6e00438ed54>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/35dd77dfb11d842b8f928cd5c3a10c642ded2a2b>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/c48d934c260f297b2e27da70c399d5249cf8f53a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/4bc750672fa42a6b1c935f34442604a7d3029d51>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/5f8f324bf23b304210a1d31cc6c09939fc14ad41>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/ffd5c21648815f4853224941785f0402ae42eba7>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/7c5e6278bdbee52d75538eabbb67ea2b85a9ccef>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/8661c744a8005c8b2bc2da6671fdbe1359299fc8>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/9ea3155186cdebcd5540827d6c0349d8c92a8088>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/4871811d8d5f50d25ff627cd32699aace01c70a4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/879341651e3c340cecf1e909795fa7a8caf72ea1>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelname>.
+    shacl:targetClass cultuurparticipatie:Deelname.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/0611ac5efc463c0056cb7a9ff97ab6e00438ed54> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Deelname.Activiteit";
     shacl:description "Referentie naar verbonden klasse."@nl;
     shacl:minCount 1;
@@ -408,27 +617,27 @@
     shacl:name "Participant"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelname.participant>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/5f8f324bf23b304210a1d31cc6c09939fc14ad41> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Deelname.Participant";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant>;
+    shacl:class cultuurparticipatie:Participant;
     shacl:description "Referentie naar verbonden klasse."@nl;
     shacl:name "Participant"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelname.participant>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/7c5e6278bdbee52d75538eabbb67ea2b85a9ccef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Deelname.deelnamerecht";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelnamerecht>;
+    shacl:class cultuurparticipatie:Deelnamerecht;
     shacl:description "Het deelnamerecht gekoppeld die nodig kan zijn om een Deelname mogelijk te maken."@nl;
     shacl:name "deelnamerecht"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelname.deelnamerecht>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/8661c744a8005c8b2bc2da6671fdbe1359299fc8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Deelname.feedbackopdeelname";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Feedback>;
+    shacl:class cultuurparticipatie:Feedback;
     shacl:description "Feedback van de Participant op de Deelname."@nl;
     shacl:name "feedback op deelname"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelname.feedbackOpDeelname>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/879341651e3c340cecf1e909795fa7a8caf72ea1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Deelname.transactie";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Transactie>;
+    shacl:class cultuurparticipatie:Transactie;
     shacl:description "Transactie die eventueel nodig is om deel te nemen aan een Activiteit"@nl;
     shacl:name "transactie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#transactie>.
+    shacl:path cultuurparticipatie:transactie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnameShape/9ea3155186cdebcd5540827d6c0349d8c92a8088> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Deelname.inputvoor";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel>;
+    shacl:class cultuurparticipatie:ParticipantProfiel;
     shacl:description "Deelname vormt input voor de vorming van het ParticipantProfiel."@nl;
     shacl:name "input voor"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelname.inputVoor>.
@@ -447,13 +656,13 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DeelnamerechtShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelnamerecht>.
+    shacl:targetClass cultuurparticipatie:Deelnamerecht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DingShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>;
     shacl:targetClass crm:E70_Thing.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#DingShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Ding.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificator dat het Ding verkreeg bij registratie."@nl;
     shacl:name "identificator"@nl;
     shacl:path <https://www.w3.org/ns/adms#identifier>.
@@ -500,11 +709,11 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeedbackContentShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#FeedbackContent>.
+    shacl:targetClass cultuurparticipatie:FeedbackContent.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeedbackShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeedbackShape/309572e3b689e6350130213be40959d432f77b33>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeedbackShape/5ac0b52595192558dfb9598a17c2910027dca3ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeedbackShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeedbackShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeedbackShape/e8b5f87406ed9e3b1e7d5b22efe92cc2a6e02a93>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Feedback>.
+    shacl:targetClass cultuurparticipatie:Feedback.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeedbackShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Feedback.type";
     shacl:description "Het type van feedback."@nl;
     shacl:maxCount 1;
@@ -521,12 +730,12 @@
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeedbackShape/5ac0b52595192558dfb9598a17c2910027dca3ac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Feedback.content";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#FeedbackContent>;
+    shacl:class cultuurparticipatie:FeedbackContent;
     shacl:description "De inhoud van de feedback."@nl;
     shacl:name "content"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Feedback.content>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeedbackShape/e8b5f87406ed9e3b1e7d5b22efe92cc2a6e02a93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Feedback.vandeelname";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelname>;
+    shacl:class cultuurparticipatie:Deelname;
     shacl:description "Feedback die gegeven wordt door de Participant rond de Deelname aan een Activiteit."@nl;
     shacl:name "van deelname"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Feedback.vanDeelname>.
@@ -535,10 +744,10 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FeitelijkeVerenigingShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging>.
+    shacl:targetClass FeitelijkeVerenigingen:FeitelijkeVereniging.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FinancieringShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Financiering>.
+    shacl:targetClass cultuurparticipatie:Financiering.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#FormeleOrganisatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass org:FormalOrganization.
@@ -548,22 +757,22 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdPersoonShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdPersoonShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdPersoonShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdPersoonShape/df3ba01409fe5d24a380d375ef9332757fb45310>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon>.
+    shacl:targetClass persoon:GeregistreerdPersoon.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdPersoonShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdPersoon.registratie";
     shacl:description "Identificatiecode vd persoon ih register."@nl;
     shacl:maxCount 1;
     shacl:name "registratie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#registratie>.
+    shacl:path persoon:registratie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdPersoonShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdPersoon.registratie";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificatiecode vd persoon ih register."@nl;
     shacl:name "registratie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#registratie>.
+    shacl:path persoon:registratie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdPersoonShape/df3ba01409fe5d24a380d375ef9332757fb45310> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdPersoon.registratie";
     shacl:description "Identificatiecode vd persoon ih register."@nl;
     shacl:minCount 1;
     shacl:name "registratie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#registratie>.
+    shacl:path persoon:registratie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/7243a77300218e47a9827b728cee07c82ed066d4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/d57cb165ac4f845634915d2c6c2e73d40ee6110a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/f1781c3dcdf1346eaf92be651fc6cb2d3551f3c2>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/fff3b1f04fe4afe1fbe339c6378f2ae96d78a6b3>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/364dfd6a24bb59f5cc719e209de05409960dc2af>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/8299e4655f07484f2fa35cde44e9712d85143d01>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/df3ba01409fe5d24a380d375ef9332757fb45310>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/02ed73f36c4e07925a539c05520582449b3e581c>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/ca940fc30a7abb4f1633bc2d08e049af318277e3>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/fd4a9e4e9a24b82ff902c6dbdd3ed54ccd4debbf>;
@@ -594,7 +803,7 @@
     shacl:name "registratie"@nl;
     shacl:path rov:registration.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatieShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#GeregistreerdeOrganisatie.registratie";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificator dat de organisatie verkreeg bij registratie."@nl;
     shacl:name "registratie"@nl;
     shacl:path rov:registration.
@@ -636,17 +845,17 @@
     shacl:targetClass schemas:Number.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#IdentificatorShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+    shacl:targetClass adms:Identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#InfrastructuurShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur>.
+    shacl:targetClass jc_infrastructuur:Infrastructuur.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#InkomensniveauShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#KanaalShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#KanaalShape/88043758901c2a26ded2150bca50bd5d14378232>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#KanaalShape/1399bd400d4637b15d5fe38202d6572f82150aac>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Kanaal>.
+    shacl:targetClass cultuurparticipatie:Kanaal.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#KanaalShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Kanaal.naam";
     shacl:class rdf:langString;
     shacl:description "Naam van het promotiekanaal."@nl;
@@ -692,7 +901,7 @@
     shacl:name "standaard eenheid"@nl;
     shacl:path schemas:unitCode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#KwantitatieveWaardeShape/dcf18241c7695eee6abe5c99b390387f700ef44c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#KwantitatieveWaarde.standaardeenheid";
-    shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+    shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
     shacl:name "standaard eenheid"@nl;
     shacl:path schemas:unitCode.
@@ -711,22 +920,22 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#NationaliteitShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#NationaliteitShape/3e3a4e8682198425d489fe5fc4c296a900167164>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#NationaliteitShape/5587d3f84a318e597a4693ea5f8b72e5ff592f6e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#NationaliteitShape/bd69b6cc25b7bc47a53cc881e1011da4ff6a7c6a>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Nationaliteit>.
+    shacl:targetClass persoon:Nationaliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#NationaliteitShape/3e3a4e8682198425d489fe5fc4c296a900167164> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Nationaliteit.nationaliteit";
     shacl:description "De nationaliteit vd persoon."@nl;
     shacl:maxCount 1;
     shacl:name "nationaliteit"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#nationaliteit>.
+    shacl:path persoon:nationaliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#NationaliteitShape/5587d3f84a318e597a4693ea5f8b72e5ff592f6e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Nationaliteit.nationaliteit";
     shacl:description "De nationaliteit vd persoon."@nl;
     shacl:minCount 1;
     shacl:name "nationaliteit"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#nationaliteit>.
+    shacl:path persoon:nationaliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#NationaliteitShape/bd69b6cc25b7bc47a53cc881e1011da4ff6a7c6a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Nationaliteit.nationaliteit";
     shacl:class skos:Concept;
     shacl:description "De nationaliteit vd persoon."@nl;
     shacl:name "nationaliteit"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#nationaliteit>.
+    shacl:path persoon:nationaliteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#NationaliteitscodeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
@@ -735,10 +944,10 @@
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ObjectShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ObjectShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ObjectShape/322371a77364a50f049d46180f6192532eea26dc>;
     shacl:targetClass prov:Entity.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ObjectShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Object.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificator van het object."@nl;
     shacl:name "identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ObjectShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Object.type";
     shacl:class skos:Concept;
     shacl:description "Het type Object."@nl;
@@ -748,7 +957,7 @@
     shacl:description "Identificator van het object."@nl;
     shacl:minCount 1;
     shacl:name "identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ObjecttypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
@@ -876,11 +1085,11 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#OrganisatorShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Organisator>.
+    shacl:targetClass cultuurparticipatie:Organisator.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/68fd5c43aad7875b41766f0c3e0792679d610dd7>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/6e32c7dd8efa5fcf5a8cac69fe1f6bc9bdbbc595>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/716fa2d94f4ae9324e8f191350d29d07a5cf3f69>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/a624f025a85a019a735cf512bce83805ac3c1b60>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/2cf1527fe974232d0e800822a48787e5d1c8cdfa>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/0a5b6259ce2581e3cdf7c853f74566845e07e226>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/e5938ccb941f940746acd944406b2911890335cc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/6ab8eb64fb14d0cacaa3e386d9b2168675e39d89>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/de7cc235477c119fd30ea492709a14ac125146e8>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel>.
+    shacl:targetClass cultuurparticipatie:ParticipantProfiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/0a5b6259ce2581e3cdf7c853f74566845e07e226> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfiel.persoonlijkprofielvan";
     shacl:description "Het persoonlijk profiel van de Participant. dat meer info geeft rond de specifieke cultuurparticipatie van een Participant."@nl;
     shacl:maxCount 1;
@@ -892,17 +1101,17 @@
     shacl:name "gerichte doelgroep"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel.gerichteDoelgroep>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/68fd5c43aad7875b41766f0c3e0792679d610dd7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfiel.afgeleidvan";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelname>;
+    shacl:class cultuurparticipatie:Deelname;
     shacl:description "Het ParticipantProfiel wordt afgeleid van de Deelname van de Participant aan een Activiteit."@nl;
     shacl:name "afgeleid van"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel.afgeleidVan>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/6ab8eb64fb14d0cacaa3e386d9b2168675e39d89> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfiel.profielvan";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant>;
+    shacl:class cultuurparticipatie:Participant;
     shacl:description "Generiek profiel van de Participant dat slaat op een algemenere invulling van een Participant."@nl;
     shacl:name "profiel van"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel.profielVan>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/6e32c7dd8efa5fcf5a8cac69fe1f6bc9bdbbc595> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfiel.algemeenkenmerk";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#AlgemeenParticipantkenmerk>;
+    shacl:class cultuurparticipatie:AlgemeenParticipantkenmerk;
     shacl:description "Een ParticipantProfiel heeft een AlgemeenKenmerk."@nl;
     shacl:name "algemeen kenmerk"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel.algemeenKenmerk>.
@@ -912,17 +1121,17 @@
     shacl:name "bepaalt beperking"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel.bepaaltBeperking>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/a624f025a85a019a735cf512bce83805ac3c1b60> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfiel.cultureel";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Cultuurdeelname>;
+    shacl:class cultuurparticipatie:Cultuurdeelname;
     shacl:description "Een ParticipantProfiel heeft een Cultuurdeelname van de Participant."@nl;
     shacl:name "cultureel"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel.cultureel>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/de7cc235477c119fd30ea492709a14ac125146e8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfiel.sociodemografisch";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#SociodemografischKenmerk>;
+    shacl:class cultuurparticipatie:SociodemografischKenmerk;
     shacl:description "Sociodemografisch kenmerk over de participant"@nl;
     shacl:name "sociodemografisch"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel.sociodemografisch>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfielShape/e5938ccb941f940746acd944406b2911890335cc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantProfiel.persoonlijkprofielvan";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant>;
+    shacl:class cultuurparticipatie:Participant;
     shacl:description "Het persoonlijk profiel van de Participant. dat meer info geeft rond de specifieke cultuurparticipatie van een Participant."@nl;
     shacl:name "persoonlijk profiel van"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel.persoonlijkProfielVan>.
@@ -941,7 +1150,7 @@
     shacl:name "onderwijsniveau"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant.onderwijsniveau>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantShape/5453d1b71e7bb5c6ede6c0f3ce1bb833da62cde4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Participant.heeftpersoonlijkprofiel";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel>;
+    shacl:class cultuurparticipatie:ParticipantProfiel;
     shacl:description "Het persoonlijk profiel van de Participant. dat meer info geeft rond de specifieke cultuurparticipatie van een Participant."@nl;
     shacl:name "heeft persoonlijk profiel"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant.heeftPersoonlijkeProfiel>.
@@ -951,17 +1160,17 @@
     shacl:name "neemt deel aan"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant.neemtDeelAan>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantShape/8efbb64adfdd4ab14a02f02bdceddcac75b07cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Participant.heeftrelatiemet";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant>;
+    shacl:class cultuurparticipatie:Participant;
     shacl:description "De Participant heeft een relatie met een andere Participant."@nl;
     shacl:name "heeft relatie met"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant.heeftRelatieMet>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantShape/9da8b9a77732993afebc57f8e0975181f17ad9d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Participant.consent";
-    shacl:class <https://w3id.org/GConsent#Consent>;
+    shacl:class GConsent:Consent;
     shacl:description "Toestemming van de betrokkene voor de verwerking van zijn persoonsgegevens"@nl;
     shacl:name "consent"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant.consent>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#ParticipantShape/a58d58f649dea172527a3dc7c4f300507f213f7c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Participant.heeftprofiel";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel>;
+    shacl:class cultuurparticipatie:ParticipantProfiel;
     shacl:description "Het generieke profiel dat bij een Participant kan horen."@nl;
     shacl:name "heeft profiel"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant.heeftProfiel>.
@@ -1050,7 +1259,7 @@
     shacl:description "Het feit of men een man of een vrouw is."@nl;
     shacl:maxCount 1;
     shacl:name "geslacht"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+    shacl:path persoon:geslacht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PersoonShape/5cd883b2e106bb2e51ed8f61eed97a9731de38aa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Persoon.geboortedatum";
     shacl:datatype xsd:dateTime;
     shacl:description "De geboortedatum van een Persoon."@nl;
@@ -1095,7 +1304,7 @@
     shacl:class skos:Concept;
     shacl:description "Het feit of men een man of een vrouw is."@nl;
     shacl:name "geslacht"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+    shacl:path persoon:geslacht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PersoonShape/fd9de3e456668ac246c6e059df34887e5214d488> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Persoon.gebruiktevoornaam";
     shacl:description "Belangrijkste vd voornamen ve persoon."@nl;
     shacl:maxCount 1;
@@ -1169,14 +1378,14 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/4c356c89be8d7eaa18e04cc74b5ae87a4fb977fa>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/e803d7f299a7ccb59a3fa7983113e51d23825223>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/dc019c837feb8534aa15f05993a73d60046720b9>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/1a0ae9e9afe9b97d28ac0cf3297af5d38a105335>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/fb437893f0ff5b6e7bf5d37961caea3ea4fefaa0>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/4871811d8d5f50d25ff627cd32699aace01c70a4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/b0b353ad4e427329f8695e342e66f3bc193529d7>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/26b20f28e0b96b9e7ff05c93afb2f0fb88ad1d55>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Promotie>.
+    shacl:targetClass cultuurparticipatie:Promotie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/1a0ae9e9afe9b97d28ac0cf3297af5d38a105335> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Promotie.doelprofiel";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel>;
+    shacl:class cultuurparticipatie:ParticipantProfiel;
     shacl:description "Het doel van het ParticipantProfiel is om Promotie te kunnen voeren."@nl;
     shacl:name "doel profiel"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Promotie.doelProfiel>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/26b20f28e0b96b9e7ff05c93afb2f0fb88ad1d55> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Promotie.uitgevoerddoor";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisator>;
+    shacl:class cultuurparticipatie:Realisator;
     shacl:description "De Promotie wordt uitgevoerd door een Realisator."@nl;
     shacl:name "uitgevoerd door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Promotie.uitgevoerdDoor>.
@@ -1201,7 +1410,7 @@
     shacl:name "tijdstip"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Promotie.tijdstip>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/dc019c837feb8534aa15f05993a73d60046720b9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Promotie.doelparticipant";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Participant>;
+    shacl:class cultuurparticipatie:Participant;
     shacl:description "Het doel van de Promotie is om de Participant te bereiken."@nl;
     shacl:name "doel participant"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Promotie.doelParticipant>.
@@ -1211,7 +1420,7 @@
     shacl:name "documentatie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Promotie.documentatie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#PromotieShape/fb437893f0ff5b6e7bf5d37961caea3ea4fefaa0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Promotie.kanaal";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Kanaal>;
+    shacl:class cultuurparticipatie:Kanaal;
     shacl:description "De Promotie van een Activiteit verloopt via een Kanaal."@nl;
     shacl:name "kanaal"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Promotie.kanaal>.
@@ -1224,7 +1433,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/0611ac5efc463c0056cb7a9ff97ab6e00438ed54>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/35dd77dfb11d842b8f928cd5c3a10c642ded2a2b>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/c48d934c260f297b2e27da70c399d5249cf8f53a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/2e7116990c9029b72e16693d09ec3abf2a00fc3e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/841197052fb0c1e061cf25eaf4cca464bd61e194>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/a5a95bdb1f5c707a352184f0872ec338b3f8b17c>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/298c9adb0dc0cf5326d77d0890274c3f4d253903>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/2c72cc432f64d66420f06f4c24f8bb02d8eec39f>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/e614f6532d1a848541b96e298a799c902dd4f0f6>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/5dbb8a009983ec959200e26abc53863fcbd7c7d4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/6925fcb95f3d77e38c8018bab3e4cf3b167f2079>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/e5ccf692ee38c28199531eb5e0c59554153a57c3>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisatie>.
+    shacl:targetClass cultuurparticipatie:Realisatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/0611ac5efc463c0056cb7a9ff97ab6e00438ed54> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Realisatie.Activiteit";
     shacl:description "Referentie naar verbonden klasse."@nl;
     shacl:minCount 1;
@@ -1241,7 +1450,7 @@
     shacl:name "rang"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisatie.rang>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatieShape/2e7116990c9029b72e16693d09ec3abf2a00fc3e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Realisatie.Realisator";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisator>;
+    shacl:class cultuurparticipatie:Realisator;
     shacl:description "Referentie naar verbonden klasse."@nl;
     shacl:name "Realisator"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisatie.realisator>.
@@ -1290,7 +1499,7 @@
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/ccc60f000e8255577f863856ca86c69a40f97951>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/65882aa6e035e313d7e8ae2a231fb774e8ce8068>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/e40907f566e77ef95872fc13b2279b83b9693147>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/51b202dae867815af392864cd67e6f43b75bde44>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/4c9d49b43e0d9676a6c72775d5a2605bb1ecffca>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/75b31bc8be7681efb8aa898eddcad3196fa3365d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/1712ef1b325d7d2807bc601d6409b70a42eaff10>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/ebdfd1c7107df0a8de0ca08076ee6eca64a37874>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/6fce063e03afed4078f32664201c46b0c53da61a>;
     shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisatie.realisator>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Realisator.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificator die de Realisator verkreeg bij registratie."@nl;
     shacl:name "identificator"@nl;
     shacl:path <https://www.w3.org/ns/adms#identifier>.
@@ -1310,7 +1519,7 @@
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/4c9d49b43e0d9676a6c72775d5a2605bb1ecffca> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Realisator.subrealisator";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisator>;
+    shacl:class cultuurparticipatie:Realisator;
     shacl:description "De Realisator heeft één of meerdere Superrealisators."@nl;
     shacl:name "subrealisator"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisator.subrealisator>.
@@ -1330,12 +1539,12 @@
     shacl:name "dienst"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisator.dienst>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/6fce063e03afed4078f32664201c46b0c53da61a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Realisator.voertuit";
-    shacl:class crm:E7_Activity, <https://data.vlaanderen.be/ns/cultuurparticipatie#Promotie>;
+    shacl:class crm:E7_Activity, cultuurparticipatie:Promotie;
     shacl:description "De Realisator voert de Activiteit uit."@nl, "De Realisator die Promotie uitvoert."@nl;
     shacl:name "voert uit"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisator.realiseert>, <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisator.voertUit>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/75b31bc8be7681efb8aa898eddcad3196fa3365d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Realisator.superrealisator";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisator>;
+    shacl:class cultuurparticipatie:Realisator;
     shacl:description "De Realisator heeft één of meerdere Subrealisators."@nl;
     shacl:name "superrealisator"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Uitvoerder.superrealisator>.
@@ -1345,7 +1554,7 @@
     shacl:name "alternatieve naam"@nl;
     shacl:path skos:altLabel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RealisatorShape/e40907f566e77ef95872fc13b2279b83b9693147> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Realisator.infrastructuur";
-    shacl:class <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#Infrastructuur>;
+    shacl:class jc_infrastructuur:Infrastructuur;
     shacl:description "Infrastructuur die gekoppeld is aan de Realisator."@nl;
     shacl:name "infrastructuur"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Realisator.infrastructuur>.
@@ -1377,16 +1586,16 @@
     shacl:class eu:PeriodOfTime;
     shacl:description "Tijdstip binnen de Ruimtetijd wanneer de activiteit zal plaatsvinden of heeft plaatsgevonden."@nl;
     shacl:name "tijd"@nl;
-    shacl:path <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#P160>.
+    shacl:path cidoc_crm_v7.1.2.html:P160.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#RuimtetijdShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Ruimtetijd.locatie";
     shacl:class prov:Location;
     shacl:description "Aanduiding van een geografische positie, dmv coordinaten, een toponiem, een adreslabel, een verwijzing naar een plaats/regio of verwijzing naar een adres."@nl;
     shacl:name "locatie"@nl;
-    shacl:path <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#P161>.
+    shacl:path cidoc_crm_v7.1.2.html:P161.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape/4b8011f9b6865c3f87649977bae2a85c601fb6a3>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape/edd0a58cc69f9b717d038924a003f2cc01199801>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape/f0ff08934d6b261d75a9547047f57a4df6e607be>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape/21bd11b765e013784d175a6a70e47a850482b54f>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape/ae3ab8d0384418a8631e5a19f7640ad21093171f>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape/b0c633fac76ae41271ee4ec66d6602bd2900df30>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape/4c356c89be8d7eaa18e04cc74b5ae87a4fb977fa>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape/236818a46442d5839007629fc7515b884fd201ef>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Samenwerking>.
+    shacl:targetClass cultuurparticipatie:Samenwerking.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SamenwerkingShape/21bd11b765e013784d175a6a70e47a850482b54f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Samenwerking.Agent(target)";
     shacl:description "Referentie naar verbonden klasse."@nl;
     shacl:minCount 1;
@@ -1438,7 +1647,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/d3aadc6f54cf02a2f12c14f75041f2b77369c9c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/3320806f20d2c4caea9147b1ce709764c03043ca>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/befee8b3a9b46a2fb52e485f2d098b7655088045>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/bdf39aa4bec5e5c0c7b49293c22093d918e252e0>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/d0b78f38938d4a601085cb8e751efba3354d48ad>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/421d78c27acf98a3c52191db36ac97de764ae8b5>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/1b3500b6275c16a7a7ebf60ee8ee1c1c727e867d>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/205f46bc6face3662236a61ff6d1af5869cd5441>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#SociodemografischKenmerk>.
+    shacl:targetClass cultuurparticipatie:SociodemografischKenmerk.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/1b3500b6275c16a7a7ebf60ee8ee1c1c727e867d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerk.onderwijsniveau";
     shacl:description "Het onderwijsniveau waarvan de participant heeft genoten"@nl;
     shacl:maxCount 1;
@@ -1480,13 +1689,13 @@
     shacl:name "leeftijdsgroep"@nl;
     shacl:path schemas:typicalAgeRange.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerkShape/d3aadc6f54cf02a2f12c14f75041f2b77369c9c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#SociodemografischKenmerk.deelvan";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#ParticipantProfiel>;
+    shacl:class cultuurparticipatie:ParticipantProfiel;
     shacl:description "Sociodemografisch kenmerk maakt deel uit van het ParticipantProfiel."@nl;
     shacl:name "deel van"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#SociodemografischKenmerk.deelVan>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#StandaardEenheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>.
+    shacl:targetClass generiek:StandaardEenheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TaalStringShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass rdf:langString.
@@ -1496,7 +1705,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TicketShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TicketShape/007b375ed24f02c9827ba30c069e95226a5e824f>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TicketShape/d31d55ed62db0707f677c0c76d874f9653128343>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TicketShape/879341651e3c340cecf1e909795fa7a8caf72ea1>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TicketShape/90ff8d11bfc9c73e2a40fde3b3c655a4ca50ae1e>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TicketShape/cc4a7c4da1ced734b0507689d75a8c53742fca66>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TicketShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Ticket>.
+    shacl:targetClass cultuurparticipatie:Ticket.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TicketShape/007b375ed24f02c9827ba30c069e95226a5e824f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Ticket.geldigheid";
     shacl:description "De periode waarin een ticket geldig is."@nl;
     shacl:maxCount 1;
@@ -1508,7 +1717,7 @@
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TicketShape/879341651e3c340cecf1e909795fa7a8caf72ea1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Ticket.transactie";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Transactie>;
+    shacl:class cultuurparticipatie:Transactie;
     shacl:description "De Transactie kan resulteren in een Ticket."@nl;
     shacl:name "transactie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Ticket.transactie>.
@@ -1536,12 +1745,12 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/03fbeb27d9ef010e83e3c09e333ee2c2d372cfd7>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/a5fbb5ccdead0d20c7f2458be51f8ce37ff34965>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/23c4e5b34e96c73031d04d396ebbc3cdf4ab023b>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/eac830276aa5ab7b7be9459c7241e06735e5f9d9>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/005f3705e7ee84226dde19d36b105143551b8f5a>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/c24764a8fe1e0bed7d991adfcdbf1d954272cd84>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/7be1b3c256d9c86a612c10f9fecff45f1c241075>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/f6c6cb5987b43e44ecd504e5cef64f9f96fbe7f5>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/b89ad122a8a535349ce1bb8d0c3773a1cc8c04bb>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/4871811d8d5f50d25ff627cd32699aace01c70a4>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/b0b353ad4e427329f8695e342e66f3bc193529d7>, <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Transactie>.
+    shacl:targetClass cultuurparticipatie:Transactie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/005f3705e7ee84226dde19d36b105143551b8f5a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Transactie.geeftrechtop";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Deelname>;
+    shacl:class cultuurparticipatie:Deelname;
     shacl:description "De Transactie geeft recht op een Ticket."@nl;
     shacl:name "geeft recht op"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#geefrechtop>.
+    shacl:path cultuurparticipatie:geefrechtop.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/03fbeb27d9ef010e83e3c09e333ee2c2d372cfd7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Transactie.aangekochtdoor";
     shacl:description "Het individu, groep of organisatie die de transactie heeft uitgevoerd"@nl;
     shacl:maxCount 1;
@@ -1578,7 +1787,7 @@
     shacl:name "tijdstip"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Transactie.tijdstip>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#TransactieShape/b89ad122a8a535349ce1bb8d0c3773a1cc8c04bb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Transactie.ticket";
-    shacl:class <https://data.vlaanderen.be/ns/cultuurparticipatie#Ticket>;
+    shacl:class cultuurparticipatie:Ticket;
     shacl:description "Het Ticket komt voort uit een Transactie."@nl;
     shacl:name "ticket"@nl;
     shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#Transactie.ticket>.
@@ -1609,12 +1818,12 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#UitvoerderShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#UitvoerderShape/26b20f28e0b96b9e7ff05c93afb2f0fb88ad1d55>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#Uitvoerder>.
+    shacl:targetClass cultuurparticipatie:Uitvoerder.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#UitvoerderShape/26b20f28e0b96b9e7ff05c93afb2f0fb88ad1d55> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#Uitvoerder.uitgevoerddoor";
     shacl:class crm:E70_Thing;
     shacl:description "Ding dat is of zal worden uitgevoerd door de Organisator"@nl;
     shacl:name "uitgevoerd door"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#uitgevoerdDoor>.
+    shacl:path cultuurparticipatie:uitgevoerdDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/erkendestandaard/2024-06-20#VerenigingShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging>.
+    shacl:targetClass FeitelijkeVerenigingen:Vereniging.

@@ -1,1179 +1,1388 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap> <https://data.vlaanderen.be/shacl/stopplaatsen-apshapes> <https://data.vlaanderen.be/shacl/stopplaatsen-ap#AccessibilityAssessmentShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#GroupOfStopPlacesShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#LevelShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#LocaleShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#OperatorShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#PassengerStopAssignmentShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#PresentationShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#ServiceLinkShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceEntranceShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPointInJourneyPatternShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#TariffZoneShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#PuntShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#PolygoonShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#TransportmodeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#EntranceTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#PlaceTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#AccessModesShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#InterchangeUseTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceWeightyTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#GatedTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#CoveredTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#LightingTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#OrganisatieTypeShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#IdentificatorShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#GeometrieShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#OrganisatieShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#GeregistreerdeOrganisatieShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#StandaardEenheidShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#GetalShape>, <https://data.vlaanderen.be/shacl/stopplaatsen-ap#KwantitatieveWaardeShape>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AccessModesShape> a shacl:NodeShape;
+<https://data.vlaanderen.be/shacl/stopplaatsen-ap> <https://data.vlaanderen.be/shacl/stopplaatsen-apshapes> stopplaatsen-ap:AccessibilityAssessmentShape, stopplaatsen-ap:CountryShape, stopplaatsen-ap:GroupOfStopPlacesShape, stopplaatsen-ap:LevelShape, stopplaatsen-ap:LocaleShape, stopplaatsen-ap:OperatorShape, stopplaatsen-ap:PassengerStopAssignmentShape, stopplaatsen-ap:PointOfInterestShape, stopplaatsen-ap:PresentationShape, stopplaatsen-ap:QuayShape, stopplaatsen-ap:ScheduledStopPointShape, stopplaatsen-ap:ServiceLinkShape, stopplaatsen-ap:SiteEntranceShape, stopplaatsen-ap:StopPlaceShape, stopplaatsen-ap:StopPlaceEntranceShape, stopplaatsen-ap:StopPointInJourneyPatternShape, stopplaatsen-ap:TariffZoneShape, stopplaatsen-ap:TopographicPlaceShape, stopplaatsen-ap:PuntShape, stopplaatsen-ap:PolygoonShape, stopplaatsen-ap:TransportmodeShape, stopplaatsen-ap:StopPlaceTypeShape, stopplaatsen-ap:EntranceTypeShape, stopplaatsen-ap:PlaceTypeShape, stopplaatsen-ap:AccessModesShape, stopplaatsen-ap:InterchangeUseTypeShape, stopplaatsen-ap:StopPlaceWeightyTypeShape, stopplaatsen-ap:QuayTypeShape, stopplaatsen-ap:GatedTypeShape, stopplaatsen-ap:CoveredTypeShape, stopplaatsen-ap:LightingTypeShape, stopplaatsen-ap:TopographicPlaceTypeShape, stopplaatsen-ap:OrganisatieTypeShape, stopplaatsen-ap:IdentificatorShape, stopplaatsen-ap:AdresvoorstellingShape, stopplaatsen-ap:GeometrieShape, stopplaatsen-ap:OrganisatieShape, stopplaatsen-ap:GeregistreerdeOrganisatieShape, stopplaatsen-ap:StandaardEenheidShape, stopplaatsen-ap:GetalShape, stopplaatsen-ap:KwantitatieveWaardeShape.
+stopplaatsen-ap:AccessModesShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AccessibilityAssessmentShape> a shacl:NodeShape;
+stopplaatsen-ap:AccessibilityAssessmentShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#AccessibilityAssessment>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> a shacl:NodeShape;
+    shacl:targetClass timetables-and-planning:AccessibilityAssessment.
+stopplaatsen-ap:AdresvoorstellingShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-812 shacl:description "Hoogste Administratieve eenheid vh adres, doorgaans een land.";
     shacl:maxCount 1;
     shacl:name "administratieveEenheidNiveau1";
     shacl:path locn:adminUnitL1.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-812.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-812.
 _:n3-813 shacl:description "De regio vh adres, doorgaans een provincie of deelstaat of gelijkaardig gebied dat typisch meerdere plaatsen omvat.";
     shacl:maxCount 1;
     shacl:name "administratieveEenheidNiveau2";
     shacl:path locn:adminUnitL2.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-813.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-813.
 _:n3-814 shacl:description "Naam ve geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is";
     shacl:maxCount 1;
     shacl:name "adresgebied";
     shacl:path locn:addressArea.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-814.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-814.
 _:n3-815 shacl:datatype xsd:string;
     shacl:description "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben.";
     shacl:maxCount 1;
     shacl:name "busnummer";
     shacl:path <https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-815.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-815.
 _:n3-816 shacl:description "Gemeentenaam vh adres.";
     shacl:maxCount 1;
     shacl:name "gemeentenaam";
-    shacl:path <https://data.vlaanderen.be/ns/adres#gemeentenaam>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-816.
+    shacl:path adres:gemeentenaam.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-816.
 _:n3-817 shacl:datatype xsd:string;
     shacl:description "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen.";
     shacl:maxCount 1;
     shacl:name "huisnummer";
     shacl:path <https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-817.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-817.
 _:n3-818 shacl:description "Land waarin het adres gelegen is.";
     shacl:maxCount 1;
     shacl:name "land";
-    shacl:path <https://data.vlaanderen.be/ns/adres#land>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-818.
+    shacl:path adres:land.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-818.
 _:n3-819 shacl:datatype xsd:string;
     shacl:description "Alfanumerieke code die de adreslocator uniek identificeert binnen de straat, administratieve eenheid etc.";
     shacl:name "locatieaanduiding";
     shacl:path locn:locatorDesignator.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-819.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-819.
 _:n3-820 shacl:description "Naam of omschrijving vh het geografisch object dat de adreslocator aanduidt.";
     shacl:name "locatienaam";
     shacl:path locn:locatorName.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-820.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-820.
 _:n3-821 shacl:datatype xsd:string;
     shacl:description "Postbusnummer in een postkantoor.";
     shacl:maxCount 1;
     shacl:name "postbus";
     shacl:path locn:poBox.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-821.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-821.
 _:n3-822 shacl:datatype xsd:string;
     shacl:description "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.";
     shacl:maxCount 1;
     shacl:name "postcode";
     shacl:path locn:postCode.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-822.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-822.
 _:n3-823 shacl:description "Naam waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.";
     shacl:maxCount 1;
     shacl:name "postnaam";
     shacl:path locn:postName.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-823.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-823.
 _:n3-824 shacl:description "Straatnaam vh adres.";
     shacl:maxCount 1;
     shacl:name "straatnaam";
     shacl:path locn:thoroughfare.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-824.
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-824.
 _:n3-825 shacl:description "Het complete adres in één string, al dan niet geformatteerd.";
     shacl:maxCount 1;
     shacl:name "volledigAdres";
     shacl:path locn:fullAddress.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#AdresvoorstellingShape> shacl:property _:n3-825;
+stopplaatsen-ap:AdresvoorstellingShape shacl:property _:n3-825;
     shacl:targetClass locn:Address.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> a shacl:NodeShape;
+stopplaatsen-ap:CountryShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-826 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Point>;
+_:n3-826 shacl:class timetables-and-planning:Point;
     shacl:description "Middenpunt van het land.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^centroid";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Country.centroid>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-826.
+stopplaatsen-ap:CountryShape shacl:property _:n3-826.
 _:n3-827 shacl:datatype rdf:langString;
     shacl:description "Beschrijving van het land.";
     shacl:maxCount 1;
     shacl:name "^description";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Country.description>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-827.
-_:n3-828 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Point>;
+stopplaatsen-ap:CountryShape shacl:property _:n3-827.
+_:n3-828 shacl:class timetables-and-planning:Point;
     shacl:description "Lijst van punten in het land.";
     shacl:name "^members";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Country.members>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-828.
+stopplaatsen-ap:CountryShape shacl:property _:n3-828.
 _:n3-829 shacl:datatype rdf:langString;
     shacl:description "Naam van het land.";
     shacl:maxCount 1;
     shacl:name "^name";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Country.name>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-829.
+stopplaatsen-ap:CountryShape shacl:property _:n3-829.
 _:n3-830 shacl:class skos:Concept;
     shacl:description "Categorisering van het land.";
     shacl:name "^placeType";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Country.placeType>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-830.
-_:n3-831 shacl:class <http://www.opengis.net/ont/sf#Polygon>;
+stopplaatsen-ap:CountryShape shacl:property _:n3-830.
+_:n3-831 shacl:class sf:Polygon;
     shacl:description "Veelhoek geassocieerd met het land.";
     shacl:maxCount 1;
     shacl:name "^polygon";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Country.polygon>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-831.
+stopplaatsen-ap:CountryShape shacl:property _:n3-831.
 _:n3-832 shacl:datatype xsd:string;
     shacl:description "Privécode van het land.";
     shacl:maxCount 1;
     shacl:name "^privateCode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Country.privateCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-832.
+stopplaatsen-ap:CountryShape shacl:property _:n3-832.
 _:n3-833 shacl:datatype rdf:langString;
     shacl:description "Korte naam van het land.";
     shacl:maxCount 1;
     shacl:name "^shortName";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Country.shortName>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-833.
+stopplaatsen-ap:CountryShape shacl:property _:n3-833.
 _:n3-834 shacl:datatype rdf:langString;
     shacl:description "Alternatieve naam voor het land.";
     shacl:name "alternativeName";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Country.alternativeName>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-834.
-_:n3-835 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace>;
+stopplaatsen-ap:CountryShape shacl:property _:n3-834.
+_:n3-835 shacl:class timetables-and-planning:StopPlace;
     shacl:description "Stopplaats die zich in het land bevindt.";
     shacl:name "locationOf";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#locationOf>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-835.
+    shacl:path timetables-and-planning:locationOf.
+stopplaatsen-ap:CountryShape shacl:property _:n3-835.
 _:n3-836 shacl:datatype rdfs:Literal;
     shacl:description "Uic-code van het land.";
     shacl:maxCount 1;
     shacl:name "uicCode";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#uicCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CountryShape> shacl:property _:n3-836;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#Country>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#CoveredTypeShape> a shacl:NodeShape;
+    shacl:path timetables-and-planning:uicCode.
+stopplaatsen-ap:CountryShape shacl:property _:n3-836;
+    shacl:targetClass timetables-and-planning:Country.
+stopplaatsen-ap:CoveredTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#EntranceTypeShape> a shacl:NodeShape;
+stopplaatsen-ap:EntranceTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GatedTypeShape> a shacl:NodeShape;
+stopplaatsen-ap:GatedTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GeometrieShape> a shacl:NodeShape;
+stopplaatsen-ap:GeometrieShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-837 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in gml-formaat.";
     shacl:maxCount 1;
     shacl:name "gml";
-    shacl:path <http://www.opengis.net/ont/geosparql#asGML>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GeometrieShape> shacl:property _:n3-837.
+    shacl:path geosparql:asGML.
+stopplaatsen-ap:GeometrieShape shacl:property _:n3-837.
 _:n3-838 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in wkt-formaat.";
     shacl:maxCount 1;
     shacl:name "wkt";
-    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GeometrieShape> shacl:property _:n3-838;
+    shacl:path geosparql:asWKT.
+stopplaatsen-ap:GeometrieShape shacl:property _:n3-838;
     shacl:targetClass locn:Geometry.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GeregistreerdeOrganisatieShape> a shacl:NodeShape;
+stopplaatsen-ap:GeregistreerdeOrganisatieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-839 shacl:class <http://www.w3.org/ns/adms#Identifier>;
+_:n3-839 shacl:class adms:Identifier;
     shacl:description "Identificator dat de organisatie verkreeg bij registratie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "registratie";
     shacl:path rov:registration.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GeregistreerdeOrganisatieShape> shacl:property _:n3-839.
+stopplaatsen-ap:GeregistreerdeOrganisatieShape shacl:property _:n3-839.
 _:n3-840 shacl:datatype rdf:langString;
     shacl:description "Wettelijk geregistreerde naam vd organisatie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "wettelijkeNaam";
     shacl:path rov:legalName.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GeregistreerdeOrganisatieShape> shacl:property _:n3-840;
+stopplaatsen-ap:GeregistreerdeOrganisatieShape shacl:property _:n3-840;
     shacl:targetClass rov:RegisteredOrganization.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GetalShape> a shacl:NodeShape;
+stopplaatsen-ap:GetalShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass schemas:Number.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GroupOfStopPlacesShape> a shacl:NodeShape;
+stopplaatsen-ap:GroupOfStopPlacesShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-841 shacl:datatype rdf:langString;
     shacl:description "Beschrijving van de groep stopplaatsen.";
     shacl:maxCount 1;
     shacl:name "^description";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#GroupOfStopPlaces.description>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GroupOfStopPlacesShape> shacl:property _:n3-841.
+stopplaatsen-ap:GroupOfStopPlacesShape shacl:property _:n3-841.
 _:n3-842 shacl:datatype rdf:langString;
     shacl:description "Naam van de groep stopplaatsen.";
     shacl:maxCount 1;
     shacl:name "^name";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#GroupOfStopPlaces.name>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GroupOfStopPlacesShape> shacl:property _:n3-842.
+stopplaatsen-ap:GroupOfStopPlacesShape shacl:property _:n3-842.
 _:n3-843 shacl:datatype xsd:string;
     shacl:description "Privécode in verband met de groep stopplaatsen.";
     shacl:maxCount 1;
     shacl:name "^privateCode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#GroupOfStopPlaces.privateCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GroupOfStopPlacesShape> shacl:property _:n3-843.
+stopplaatsen-ap:GroupOfStopPlacesShape shacl:property _:n3-843.
 _:n3-844 shacl:class skos:Concept;
     shacl:description "Doel van het groeperen van de stopplaatsen.";
     shacl:maxCount 1;
     shacl:name "^purposeOfGrouping";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#GroupOfStopPlaces.purposeOfGrouping>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GroupOfStopPlacesShape> shacl:property _:n3-844.
+stopplaatsen-ap:GroupOfStopPlacesShape shacl:property _:n3-844.
 _:n3-845 shacl:datatype rdf:langString;
     shacl:description "Korte naam voor de groep stopplaatsen.";
     shacl:maxCount 1;
     shacl:name "^shortName";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#GroupOfStopPlaces.shortName>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GroupOfStopPlacesShape> shacl:property _:n3-845.
-_:n3-846 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace>;
+stopplaatsen-ap:GroupOfStopPlacesShape shacl:property _:n3-845.
+_:n3-846 shacl:class timetables-and-planning:StopPlace;
     shacl:description "Stopplaats die lid is van de groep stopplaatsen.";
     shacl:name "member";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#member>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GroupOfStopPlacesShape> shacl:property _:n3-846.
+    shacl:path timetables-and-planning:member.
+stopplaatsen-ap:GroupOfStopPlacesShape shacl:property _:n3-846.
 _:n3-847 shacl:class skos:Concept;
     shacl:description "Transportmodus van de groep stopplaatsen.";
     shacl:maxCount 1;
     shacl:name "transportMode";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#transportMode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#GroupOfStopPlacesShape> shacl:property _:n3-847;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#GroupOfStopPlaces>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#IdentificatorShape> a shacl:NodeShape;
+    shacl:path timetables-and-planning:transportMode.
+stopplaatsen-ap:GroupOfStopPlacesShape shacl:property _:n3-847;
+    shacl:targetClass timetables-and-planning:GroupOfStopPlaces.
+stopplaatsen-ap:IdentificatorShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-848 shacl:datatype rdfs:Literal;
     shacl:description "String gebruikt om het object uniek te identificeren.";
     shacl:maxCount 1;
     shacl:name "identificator";
     shacl:path skos:notation.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#IdentificatorShape> shacl:property _:n3-848.
+stopplaatsen-ap:IdentificatorShape shacl:property _:n3-848.
 _:n3-849 shacl:class dcterms:Agent;
     shacl:description "Link naar de agent die de identificator heeft uitgegeven.";
     shacl:maxCount 1;
     shacl:name "toegekendDoor";
     shacl:path dcterms:creator.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#IdentificatorShape> shacl:property _:n3-849.
+stopplaatsen-ap:IdentificatorShape shacl:property _:n3-849.
 _:n3-850 shacl:datatype xsd:string;
     shacl:description "Naam vd agent die de identificator heeft toegekend.";
     shacl:maxCount 1;
     shacl:name "toegekendDoorString";
-    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#IdentificatorShape> shacl:property _:n3-850.
+    shacl:path adms:schemaAgency.
+stopplaatsen-ap:IdentificatorShape shacl:property _:n3-850.
 _:n3-851 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de identificator werd uitgegeven.";
     shacl:maxCount 1;
     shacl:name "toegekendOp";
     shacl:path dcterms:issued.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#IdentificatorShape> shacl:property _:n3-851;
-    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#InterchangeUseTypeShape> a shacl:NodeShape;
+stopplaatsen-ap:IdentificatorShape shacl:property _:n3-851;
+    shacl:targetClass adms:Identifier.
+stopplaatsen-ap:InterchangeUseTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#KwantitatieveWaardeShape> a shacl:NodeShape;
+stopplaatsen-ap:KwantitatieveWaardeShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-852 shacl:datatype xsd:string;
     shacl:description "De eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "eenheid";
     shacl:path schemas:unitText.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#KwantitatieveWaardeShape> shacl:property _:n3-852.
-_:n3-853 shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+stopplaatsen-ap:KwantitatieveWaardeShape shacl:property _:n3-852.
+_:n3-853 shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "standaardEenheid";
     shacl:path schemas:unitCode.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#KwantitatieveWaardeShape> shacl:property _:n3-853.
+stopplaatsen-ap:KwantitatieveWaardeShape shacl:property _:n3-853.
 _:n3-854 shacl:class schemas:Number;
     shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#KwantitatieveWaardeShape> shacl:property _:n3-854;
+stopplaatsen-ap:KwantitatieveWaardeShape shacl:property _:n3-854;
     shacl:targetClass schemas:QuantitativeValue.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LevelShape> a shacl:NodeShape;
+stopplaatsen-ap:LevelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-855 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#AccessibilityAssessment>;
+_:n3-855 shacl:class timetables-and-planning:AccessibilityAssessment;
     shacl:description "Toegankelijkheid van de verdieping.";
     shacl:maxCount 1;
     shacl:name "accessibility";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#accessibility>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LevelShape> shacl:property _:n3-855.
+    shacl:path timetables-and-planning:accessibility.
+stopplaatsen-ap:LevelShape shacl:property _:n3-855.
 _:n3-856 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of alle gebieden van de verdieping rolstoeltoegankelijk zijn.";
     shacl:maxCount 1;
     shacl:name "allAreasWheelchair";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#allAreasWheelchair>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LevelShape> shacl:property _:n3-856.
+    shacl:path timetables-and-planning:allAreasWheelchair.
+stopplaatsen-ap:LevelShape shacl:property _:n3-856.
 _:n3-857 shacl:datatype rdf:langString;
     shacl:description "Beschrijving van de verdieping.";
     shacl:maxCount 1;
     shacl:name "description";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Level.description>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LevelShape> shacl:property _:n3-857.
+stopplaatsen-ap:LevelShape shacl:property _:n3-857.
 _:n3-858 shacl:datatype rdf:langString;
     shacl:description "Naam van de verdieping.";
     shacl:maxCount 1;
     shacl:name "name";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Level.name>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LevelShape> shacl:property _:n3-858.
+stopplaatsen-ap:LevelShape shacl:property _:n3-858.
 _:n3-859 shacl:datatype xsd:string;
     shacl:description "Publieke code van de verdieping.";
     shacl:maxCount 1;
     shacl:name "publicCode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Level.publicCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LevelShape> shacl:property _:n3-859.
+stopplaatsen-ap:LevelShape shacl:property _:n3-859.
 _:n3-860 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de verdieping publiekelijk toegankelijk is.";
     shacl:maxCount 1;
     shacl:name "publicUse";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#publicUse>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LevelShape> shacl:property _:n3-860.
+    shacl:path timetables-and-planning:publicUse.
+stopplaatsen-ap:LevelShape shacl:property _:n3-860.
 _:n3-861 shacl:datatype rdf:langString;
     shacl:description "Korte naam voor de verdieping.";
     shacl:maxCount 1;
     shacl:name "shortName";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Level.shortName>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LevelShape> shacl:property _:n3-861.
-_:n3-862 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Site>;
+stopplaatsen-ap:LevelShape shacl:property _:n3-861.
+_:n3-862 shacl:class timetables-and-planning:Site;
     shacl:description "Plaats van de verdieping.";
     shacl:name "site";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#site>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LevelShape> shacl:property _:n3-862;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#Level>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LightingTypeShape> a shacl:NodeShape;
+    shacl:path timetables-and-planning:site.
+stopplaatsen-ap:LevelShape shacl:property _:n3-862;
+    shacl:targetClass timetables-and-planning:Level.
+stopplaatsen-ap:LightingTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LocaleShape> a shacl:NodeShape;
+stopplaatsen-ap:LocaleShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-863 shacl:description "Standaardtaal van de locale, b.v. en, fr, de, etc.";
     shacl:maxCount 1;
     shacl:name "defaultLanguage";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#defaultLanguage>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LocaleShape> shacl:property _:n3-863.
+    shacl:path timetables-and-planning:defaultLanguage.
+stopplaatsen-ap:LocaleShape shacl:property _:n3-863.
 _:n3-864 shacl:description "Andere talen ondersteund in de locale.";
     shacl:name "language";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#language>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LocaleShape> shacl:property _:n3-864.
+    shacl:path timetables-and-planning:language.
+stopplaatsen-ap:LocaleShape shacl:property _:n3-864.
 _:n3-865 shacl:description "Tijdzone als offset in uren of deeluren van GMT.";
     shacl:maxCount 1;
     shacl:name "summerTimeZoneOffset";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#summerTimeZoneOffset>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LocaleShape> shacl:property _:n3-865.
+    shacl:path timetables-and-planning:summerTimeZoneOffset.
+stopplaatsen-ap:LocaleShape shacl:property _:n3-865.
 _:n3-866 shacl:datatype xsd:string;
     shacl:description "Naam van de tijdzone die is gekoppeld aan de locale.";
     shacl:maxCount 1;
     shacl:name "timeZone";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#timeZone>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LocaleShape> shacl:property _:n3-866.
+    shacl:path timetables-and-planning:timeZone.
+stopplaatsen-ap:LocaleShape shacl:property _:n3-866.
 _:n3-867 shacl:description "Tijdzone van de locale als offset in uren van GMT.";
     shacl:maxCount 1;
     shacl:name "timeZoneOffset";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#timeZoneOffset>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#LocaleShape> shacl:property _:n3-867;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#Locale>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OperatorShape> a shacl:NodeShape;
+    shacl:path timetables-and-planning:timeZoneOffset.
+stopplaatsen-ap:LocaleShape shacl:property _:n3-867;
+    shacl:targetClass timetables-and-planning:Locale.
+stopplaatsen-ap:OperatorShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-868 shacl:class locn:Address;
     shacl:description "Postadres van de operator.";
     shacl:maxCount 1;
     shacl:name "address";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Operator.address>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OperatorShape> shacl:property _:n3-868.
+stopplaatsen-ap:OperatorShape shacl:property _:n3-868.
 _:n3-869 shacl:datatype xsd:string;
     shacl:description "Verwijzing naar het land.";
     shacl:maxCount 1;
     shacl:name "country";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Operator.country>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OperatorShape> shacl:property _:n3-869.
+stopplaatsen-ap:OperatorShape shacl:property _:n3-869.
 _:n3-870 shacl:class skos:Concept;
     shacl:description "Primaire transportmodus van de operator.";
     shacl:maxCount 1;
     shacl:name "primaryMode";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#primaryMode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OperatorShape> shacl:property _:n3-870;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#Operator>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OrganisatieShape> a shacl:NodeShape;
+    shacl:path timetables-and-planning:primaryMode.
+stopplaatsen-ap:OperatorShape shacl:property _:n3-870;
+    shacl:targetClass timetables-and-planning:Operator.
+stopplaatsen-ap:OrganisatieShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-871 shacl:datatype rdf:langString;
     shacl:description "Andere naam waaronder de organisatie bekend is.";
     shacl:name "alternatieveNaam";
     shacl:path skos:altLabel.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OrganisatieShape> shacl:property _:n3-871.
+stopplaatsen-ap:OrganisatieShape shacl:property _:n3-871.
 _:n3-872 shacl:datatype rdf:langString;
     shacl:description "Beschrijving van de organisatie.";
     shacl:maxCount 1;
     shacl:name "beschrijving";
     shacl:path dcterms:description.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OrganisatieShape> shacl:property _:n3-872.
+stopplaatsen-ap:OrganisatieShape shacl:property _:n3-872.
 _:n3-873 shacl:class schema:ContactPoint;
     shacl:description "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren.";
     shacl:name "contactinfo";
     shacl:path schema:contactPoint.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OrganisatieShape> shacl:property _:n3-873.
+stopplaatsen-ap:OrganisatieShape shacl:property _:n3-873.
 _:n3-874 shacl:class skos:Concept;
     shacl:description "Soort organisatie.";
     shacl:name "type";
     shacl:path rov:orgType.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OrganisatieShape> shacl:property _:n3-874.
+stopplaatsen-ap:OrganisatieShape shacl:property _:n3-874.
 _:n3-875 shacl:datatype rdf:langString;
     shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkeursnaam";
     shacl:path skos:prefLabel.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OrganisatieShape> shacl:property _:n3-875;
+stopplaatsen-ap:OrganisatieShape shacl:property _:n3-875;
     shacl:targetClass org:Organization.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#OrganisatieTypeShape> a shacl:NodeShape;
+stopplaatsen-ap:OrganisatieTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PassengerStopAssignmentShape> a shacl:NodeShape;
+stopplaatsen-ap:PassengerStopAssignmentShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-876 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#ScheduledStopPoint>;
+_:n3-876 shacl:class timetables-and-planning:ScheduledStopPoint;
     shacl:description "Referentie naar verbonden klasse.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "ScheduledStopPoint";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#PassengerStopAssignment.scheduledStopPoint>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PassengerStopAssignmentShape> shacl:property _:n3-876.
-_:n3-877 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace>;
+stopplaatsen-ap:PassengerStopAssignmentShape shacl:property _:n3-876.
+_:n3-877 shacl:class timetables-and-planning:StopPlace;
     shacl:description "Referentie naar verbonden klasse.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "StopPlace";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#PassengerStopAssignment.stopPlace>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PassengerStopAssignmentShape> shacl:property _:n3-877.
-_:n3-878 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Quay>;
+stopplaatsen-ap:PassengerStopAssignmentShape shacl:property _:n3-877.
+_:n3-878 shacl:class timetables-and-planning:Quay;
     shacl:description "Verwijzing naar een perron binnen de stopplaats waaraan het geplande stoppunt is toegewezen.";
     shacl:maxCount 1;
     shacl:name "quay";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#quay>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PassengerStopAssignmentShape> shacl:property _:n3-878;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#PassengerStopAssignment>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PlaceTypeShape> a shacl:NodeShape;
+    shacl:path timetables-and-planning:quay.
+stopplaatsen-ap:PassengerStopAssignmentShape shacl:property _:n3-878;
+    shacl:targetClass timetables-and-planning:PassengerStopAssignment.
+stopplaatsen-ap:PlaceTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> a shacl:NodeShape;
+stopplaatsen-ap:PointOfInterestShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-879 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace>;
+_:n3-879 shacl:class timetables-and-planning:TopographicPlace;
     shacl:description "Extra topografische plaatsen in verband met de Point of Interest.";
     shacl:name "^additionalTopographicPlace";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#additionalTopographicPlace>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> shacl:property _:n3-879.
-_:n3-880 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance>;
+    shacl:path timetables-and-planning:additionalTopographicPlace.
+stopplaatsen-ap:PointOfInterestShape shacl:property _:n3-879.
+_:n3-880 shacl:class timetables-and-planning:SiteEntrance;
     shacl:description "Ingang van de Point of Interest.";
     shacl:name "^entrance";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#entrance>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> shacl:property _:n3-880.
-_:n3-881 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Level>;
+    shacl:path timetables-and-planning:entrance.
+stopplaatsen-ap:PointOfInterestShape shacl:property _:n3-880.
+_:n3-881 shacl:class timetables-and-planning:Level;
     shacl:description "Verdieping van de Point of Interest.";
     shacl:name "^level";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#PointOfInterest.level>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> shacl:property _:n3-881.
-_:n3-882 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Locale>;
+stopplaatsen-ap:PointOfInterestShape shacl:property _:n3-881.
+_:n3-882 shacl:class timetables-and-planning:Locale;
     shacl:description "Locale-instellingstijdzone, standaardtaal, etc., voor de Point of Interest.";
     shacl:maxCount 1;
     shacl:name "^locale";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#PointOfInterest.locale>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> shacl:property _:n3-882.
-_:n3-883 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Operator>;
+stopplaatsen-ap:PointOfInterestShape shacl:property _:n3-882.
+_:n3-883 shacl:class timetables-and-planning:Operator;
     shacl:description "Verwijzing naar de exploitant van de Point of Interest.";
     shacl:maxCount 1;
     shacl:name "^organisation";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#PointOfInterest.organisation>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> shacl:property _:n3-883.
-_:n3-884 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Site>;
+stopplaatsen-ap:PointOfInterestShape shacl:property _:n3-883.
+_:n3-884 shacl:class timetables-and-planning:Site;
     shacl:description "Parent site die de Point of Interest bevat.";
     shacl:maxCount 1;
     shacl:name "^parentSite";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#PointOfInterest.parentSite>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> shacl:property _:n3-884.
-_:n3-885 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace>;
+stopplaatsen-ap:PointOfInterestShape shacl:property _:n3-884.
+_:n3-885 shacl:class timetables-and-planning:TopographicPlace;
     shacl:description "Verwijzing naar een topografische plaats waarmee de Point of Interest is geassocieerd.";
     shacl:maxCount 1;
     shacl:name "^topographicPlace";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#PointOfInterest.topographicPlace>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> shacl:property _:n3-885.
+stopplaatsen-ap:PointOfInterestShape shacl:property _:n3-885.
 _:n3-886 shacl:class skos:Concept;
     shacl:description "Classificatie van de Point of Interest.";
     shacl:name "classification";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#classification>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> shacl:property _:n3-886.
-_:n3-887 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace>;
+    shacl:path timetables-and-planning:classification.
+stopplaatsen-ap:PointOfInterestShape shacl:property _:n3-886.
+_:n3-887 shacl:class timetables-and-planning:TopographicPlace;
     shacl:description "Topografische plaatsen in de buurt van de Point of Interest.";
     shacl:name "nearTopographicPlace";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#nearTopographicPlace>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> shacl:property _:n3-887.
-_:n3-888 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace>;
+    shacl:path timetables-and-planning:nearTopographicPlace.
+stopplaatsen-ap:PointOfInterestShape shacl:property _:n3-887.
+_:n3-888 shacl:class timetables-and-planning:StopPlace;
     shacl:description "Stopplaats die de Point of Interest dient.";
     shacl:name "servedBy";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#PointOfInterest.servedBy>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PointOfInterestShape> shacl:property _:n3-888;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#PointOfInterest>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PolygoonShape> a shacl:NodeShape;
+stopplaatsen-ap:PointOfInterestShape shacl:property _:n3-888;
+    shacl:targetClass timetables-and-planning:PointOfInterest.
+stopplaatsen-ap:PolygoonShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.opengis.net/ont/sf#Polygon>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PresentationShape> a shacl:NodeShape;
+    shacl:targetClass sf:Polygon.
+stopplaatsen-ap:PresentationShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#Presentation>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#PuntShape> a shacl:NodeShape;
+    shacl:targetClass timetables-and-planning:Presentation.
+stopplaatsen-ap:PuntShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.opengis.net/ont/sf#Point>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> a shacl:NodeShape;
+    shacl:targetClass sf:Point.
+stopplaatsen-ap:QuayShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-889 shacl:class skos:Concept;
     shacl:description "Toegangsmodus van het perron.";
     shacl:name "^accessMode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.accessMode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-889.
-_:n3-890 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#AccessibilityAssessment>;
+stopplaatsen-ap:QuayShape shacl:property _:n3-889.
+_:n3-890 shacl:class timetables-and-planning:AccessibilityAssessment;
     shacl:description "Toegankelijkheid van het perron.";
     shacl:maxCount 1;
     shacl:name "^accessibilityAssessment";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.accessibilityAssessment>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-890.
+stopplaatsen-ap:QuayShape shacl:property _:n3-890.
 _:n3-891 shacl:datatype rdf:langString;
     shacl:description "Alternatieve naam voor het perron.";
     shacl:name "^alternativeName";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.alternativeName>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-891.
+stopplaatsen-ap:QuayShape shacl:property _:n3-891.
 _:n3-892 shacl:class skos:Concept;
     shacl:description "Geeft aan of het perron bedekt is.";
     shacl:maxCount 1;
     shacl:name "^covered";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.covered>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-892.
+stopplaatsen-ap:QuayShape shacl:property _:n3-892.
 _:n3-893 shacl:datatype rdf:langString;
     shacl:description "Naam van de dichtstbijzijnde dwarsweg of kruising en die kan worden gebruikt om het perron te lokaliseren.";
     shacl:maxCount 1;
     shacl:name "^crossRoad";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.crossRoad>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-893.
+stopplaatsen-ap:QuayShape shacl:property _:n3-893.
 _:n3-894 shacl:class skos:Concept;
     shacl:description "Geeft aan of het perron binnen een omheind gebied is.";
     shacl:maxCount 1;
     shacl:name "^gated";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.gated>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-894.
+stopplaatsen-ap:QuayShape shacl:property _:n3-894.
 _:n3-895 shacl:datatype xsd:string;
     shacl:description "Label van het perron.";
     shacl:maxCount 1;
     shacl:name "^label";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.label>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-895.
+stopplaatsen-ap:QuayShape shacl:property _:n3-895.
 _:n3-896 shacl:datatype rdf:langString;
     shacl:description "Naam van een nabijgelegen oriëntatiepunt.";
     shacl:maxCount 1;
     shacl:name "^landmark";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.landmark>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-896.
-_:n3-897 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Level>;
+stopplaatsen-ap:QuayShape shacl:property _:n3-896.
+_:n3-897 shacl:class timetables-and-planning:Level;
     shacl:description "Verdieping van het perron.";
     shacl:maxCount 1;
     shacl:name "^level";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.level>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-897.
+stopplaatsen-ap:QuayShape shacl:property _:n3-897.
 _:n3-898 shacl:class skos:Concept;
     shacl:description "Geeft aan hoe het perron verlicht is.";
     shacl:maxCount 1;
     shacl:name "^lighting";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.lighting>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-898.
+stopplaatsen-ap:QuayShape shacl:property _:n3-898.
 _:n3-899 shacl:class schemas:QuantitativeValue;
     shacl:description "Helling van straat ten opzichte van het perron in graden (absolute helling van voorste deel van het voertuig wanneer gestopt bij perron).";
     shacl:maxCount 1;
     shacl:name "compassBearing";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#compassBearing>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-899.
+    shacl:path timetables-and-planning:compassBearing.
+stopplaatsen-ap:QuayShape shacl:property _:n3-899.
 _:n3-900 shacl:datatype xsd:string;
     shacl:description "Asset-code die wordt gebruikt om het perron te identificeren.";
     shacl:maxCount 1;
     shacl:name "plateCode";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#plateCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-900.
+    shacl:path timetables-and-planning:plateCode.
+stopplaatsen-ap:QuayShape shacl:property _:n3-900.
 _:n3-901 shacl:datatype xsd:string;
     shacl:description "Gebruik om het perron aan het publiek te identificeren.";
     shacl:maxCount 1;
     shacl:name "publicCode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#Quay.publicCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-901.
-_:n3-902 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Quay>;
+stopplaatsen-ap:QuayShape shacl:property _:n3-901.
+_:n3-902 shacl:class timetables-and-planning:Quay;
     shacl:description "Perron van het Perron.";
     shacl:maxCount 1;
     shacl:name "quay";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#quay>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-902.
+    shacl:path timetables-and-planning:quay.
+stopplaatsen-ap:QuayShape shacl:property _:n3-902.
 _:n3-903 shacl:class skos:Concept;
     shacl:description "Classificatie van het perron.";
     shacl:maxCount 1;
     shacl:name "quayType";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#quayType>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayShape> shacl:property _:n3-903;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#Quay>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#QuayTypeShape> a shacl:NodeShape;
+    shacl:path timetables-and-planning:quayType.
+stopplaatsen-ap:QuayShape shacl:property _:n3-903;
+    shacl:targetClass timetables-and-planning:Quay.
+stopplaatsen-ap:QuayTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> a shacl:NodeShape;
+stopplaatsen-ap:ScheduledStopPointShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-904 shacl:class <http://www.opengis.net/ont/sf#Point>;
+_:n3-904 shacl:class sf:Point;
     shacl:description "Locatie van het geplande stoppunt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^location";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#ScheduledStopPoint.location>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-904.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-904.
 _:n3-905 shacl:datatype rdf:langString;
     shacl:description "Naam van het geplande stoppunt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^name";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#ScheduledStopPoint.name>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-905.
-_:n3-906 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TimingpointStatus>;
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-905.
+_:n3-906 shacl:class timetables-and-planning:TimingpointStatus;
     shacl:description "Timing compliance-status van het punt.";
     shacl:maxCount 1;
     shacl:name "^timingpointStatus";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#timingpointStatus>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-906.
+    shacl:path timetables-and-planning:timingpointStatus.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-906.
 _:n3-907 shacl:datatype rdf:langString;
     shacl:description "Beschrijving van het geplande stoppunt.";
     shacl:maxCount 1;
     shacl:name "description";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#ScheduledStopPoint.description>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-907.
-_:n3-908 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#ServiceLink>;
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-907.
+_:n3-908 shacl:class timetables-and-planning:ServiceLink;
     shacl:description "Dienstverbinding waarvoor het geplande stoppunt het einde is.";
     shacl:name "endOf";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#endOf>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-908.
-_:n3-909 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Presentation>;
+    shacl:path timetables-and-planning:endOf.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-908.
+_:n3-909 shacl:class timetables-and-planning:Presentation;
     shacl:description "Presentatiewaarden om te gebruiken bij het weergeven van het stoppunt, zoals een kleur en lettertype.";
     shacl:maxCount 1;
     shacl:name "presentation";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#ScheduledStopPoint.presentation>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-909.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-909.
 _:n3-910 shacl:datatype xsd:string;
     shacl:description "Alternatieve identificatie van het geplande stoppunt.";
     shacl:maxCount 1;
     shacl:name "privateCode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#ScheduledStopPoint.privateCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-910.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-910.
 _:n3-911 shacl:datatype xsd:string;
     shacl:description "Publieke code van het geplande stoppunt.";
     shacl:maxCount 1;
     shacl:name "publicCode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#ScheduledStopPoint.publicCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-911.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-911.
 _:n3-912 shacl:datatype rdf:langString;
     shacl:description "Korte naam van het geplande stoppunt.";
     shacl:maxCount 1;
     shacl:name "shortName";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#ScheduledStopPoint.shortName>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-912.
-_:n3-913 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#ServiceLink>;
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-912.
+_:n3-913 shacl:class timetables-and-planning:ServiceLink;
     shacl:description "Dienstverbinding waarvoor het geplande stoppunt de start is.";
     shacl:name "startOf";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#startOf>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-913.
-_:n3-914 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace>;
+    shacl:path timetables-and-planning:startOf.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-913.
+_:n3-914 shacl:class timetables-and-planning:StopPlace;
     shacl:description "Stopplaats.";
     shacl:name "stopPlace";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#stopPlace>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-914.
+    shacl:path timetables-and-planning:stopPlace.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-914.
 _:n3-915 shacl:class skos:Concept;
     shacl:description "Type stopplaats.";
     shacl:maxCount 1;
     shacl:name "stopType";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#stopType>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-915.
-_:n3-916 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TariffZone>;
+    shacl:path timetables-and-planning:stopType.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-915.
+_:n3-916 shacl:class timetables-and-planning:TariffZone;
     shacl:description "Tariefzones waartoe het geplande stoppunt behoort.";
     shacl:name "tariffZones";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#tariffZones>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-916.
-_:n3-917 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#StopPointInJourneyPattern>;
+    shacl:path timetables-and-planning:tariffZones.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-916.
+_:n3-917 shacl:class timetables-and-planning:StopPointInJourneyPattern;
     shacl:description "Stoppunt in ritpatroon dat verwijst naar het geplande stoppunt.";
     shacl:name "viewedAs";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#viewedAs>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ScheduledStopPointShape> shacl:property _:n3-917;
+    shacl:path timetables-and-planning:viewedAs.
+stopplaatsen-ap:ScheduledStopPointShape shacl:property _:n3-917;
     shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#PassengerStopAssignment.scheduledStopPoint>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#ServiceLinkShape> a shacl:NodeShape;
+stopplaatsen-ap:ServiceLinkShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#ServiceLink>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> a shacl:NodeShape;
+    shacl:targetClass timetables-and-planning:ServiceLink.
+stopplaatsen-ap:SiteEntranceShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-918 shacl:class skos:Concept;
     shacl:description "Toegangsmodi van de ingang van de site.";
     shacl:name "^accessMode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.accessMode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-918.
-_:n3-919 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#AccessibilityAssessment>;
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-918.
+_:n3-919 shacl:class timetables-and-planning:AccessibilityAssessment;
     shacl:description "Toegankelijkheidsbeoordeling van de ingang van de site.";
     shacl:maxCount 1;
     shacl:name "^accessibilityAssessment";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.accessibilityAssessment>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-919.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-919.
 _:n3-920 shacl:datatype rdf:langString;
     shacl:description "Alternatieve naam voor de ingang van de site.";
     shacl:name "^alternativeName";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.alternativeName>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-920.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-920.
 _:n3-921 shacl:class skos:Concept;
     shacl:description "Geeft aan of de ingang van de site overdekt of buiten is.";
     shacl:maxCount 1;
     shacl:name "^covered";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.covered>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-921.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-921.
 _:n3-922 shacl:datatype rdf:langString;
     shacl:description "Naam van de dichtstbijzijnde dwarsweg of kruising die kan worden gebruikt om de ingang van de site te lokaliseren.";
     shacl:maxCount 1;
     shacl:name "^crossRoad";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.crossRoad>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-922.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-922.
 _:n3-923 shacl:class skos:Concept;
     shacl:description "Geeft aan of de ingang van de site zich binnen een omheind gebied bevindt.";
     shacl:maxCount 1;
     shacl:name "^gated";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.gated>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-923.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-923.
 _:n3-924 shacl:datatype rdf:langString;
     shacl:description "Naam van een nabijgelegen oriëntatiepunt.";
     shacl:maxCount 1;
     shacl:name "^landmark";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.landmark>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-924.
-_:n3-925 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Level>;
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-924.
+_:n3-925 shacl:class timetables-and-planning:Level;
     shacl:description "Verdieping van de ingang van de site.";
     shacl:maxCount 1;
     shacl:name "^level";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.level>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-925.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-925.
 _:n3-926 shacl:class skos:Concept;
     shacl:description "Geeft aan of de ingang van de site overdekt of buiten is.";
     shacl:maxCount 1;
     shacl:name "^lighting";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.lighting>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-926.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-926.
 _:n3-927 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of er een verlaagde stoeprand buiten de ingang van de site is.";
     shacl:maxCount 1;
     shacl:name "droppedKerbOutside";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#droppedKerbOutside>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-927.
+    shacl:path timetables-and-planning:droppedKerbOutside.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-927.
 _:n3-928 shacl:class skos:Concept;
     shacl:description "Type ingang van de site.";
     shacl:maxCount 1;
     shacl:name "entranceType";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#entranceType>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-928.
+    shacl:path timetables-and-planning:entranceType.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-928.
 _:n3-929 shacl:class schemas:QuantitativeValue;
     shacl:description "Hoogte van de ingang van de site.";
     shacl:maxCount 1;
     shacl:name "height";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.height>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-929.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-929.
 _:n3-930 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de ingang kan worden gebruikt voor toegang tot de stopplaats.";
     shacl:maxCount 1;
     shacl:name "isEntry";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#isEntry>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-930.
+    shacl:path timetables-and-planning:isEntry.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-930.
 _:n3-931 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de ingang kan worden gebruikt voor exit van de stopplaats.";
     shacl:maxCount 1;
     shacl:name "isExit";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#isExit>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-931.
+    shacl:path timetables-and-planning:isExit.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-931.
 _:n3-932 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de ingang van de site extern opent.";
     shacl:maxCount 1;
     shacl:name "isExternal";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#isExternal>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-932.
+    shacl:path timetables-and-planning:isExternal.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-932.
 _:n3-933 shacl:datatype xsd:string;
     shacl:description "Label van de ingang van de site.";
     shacl:maxCount 1;
     shacl:name "label";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.label>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-933.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-933.
 _:n3-934 shacl:datatype xsd:string;
     shacl:description "Publieke code voor de ingang van de site.";
     shacl:maxCount 1;
     shacl:name "publicCode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.publicCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-934.
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-934.
 _:n3-935 shacl:class schemas:QuantitativeValue;
     shacl:description "Breedte van de ingang van de site.";
     shacl:maxCount 1;
     shacl:name "width";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance.width>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#SiteEntranceShape> shacl:property _:n3-935;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#SiteEntrance>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StandaardEenheidShape> a shacl:NodeShape;
+stopplaatsen-ap:SiteEntranceShape shacl:property _:n3-935;
+    shacl:targetClass timetables-and-planning:SiteEntrance.
+stopplaatsen-ap:StandaardEenheidShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceEntranceShape> a shacl:NodeShape;
+    shacl:targetClass generiek:StandaardEenheid.
+stopplaatsen-ap:StopPlaceEntranceShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#StopPlaceEntrance>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> a shacl:NodeShape;
+    shacl:targetClass timetables-and-planning:StopPlaceEntrance.
+stopplaatsen-ap:StopPlaceShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-936 shacl:class skos:Concept;
     shacl:description "Toegangsmodi waarmee de stopplaats toegankelijk is.";
     shacl:name "^accessModes";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#accessModes>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-936.
-_:n3-937 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#AccessibilityAssessment>;
+    shacl:path timetables-and-planning:accessModes.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-936.
+_:n3-937 shacl:class timetables-and-planning:AccessibilityAssessment;
     shacl:description "De algehele toegankelijkheidskenmerken van de stopplaats.";
     shacl:maxCount 1;
     shacl:name "^accessabilityAssessment";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.accessabilityAssessment>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-937.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-937.
 _:n3-938 shacl:datatype rdf:langString;
     shacl:description "Alternatieve naam voor de stopplaats.";
     shacl:name "^alternativeName";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.alternativeName>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-938.
-_:n3-939 shacl:class <http://www.opengis.net/ont/sf#Point>;
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-938.
+_:n3-939 shacl:class sf:Point;
     shacl:description "Middenpunt van de stopplaats.";
     shacl:maxCount 1;
     shacl:name "^centroid";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.centroid>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-939.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-939.
 _:n3-940 shacl:class skos:Concept;
     shacl:description "Geeft aan of de stopplaats bedekt is of buiten.";
     shacl:maxCount 1;
     shacl:name "^covered";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.covered>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-940.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-940.
 _:n3-941 shacl:datatype rdf:langString;
     shacl:description "Naam van de dichtstbijzijnde dwarsweg of kruising die kan worden gebruikt om de stopplaats te vinden.";
     shacl:maxCount 1;
     shacl:name "^crossRoad";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.crossRoad>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-941.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-941.
 _:n3-942 shacl:class skos:Concept;
     shacl:description "Geeft aan of de stopplaats binnen een omheind gebied is.";
     shacl:maxCount 1;
     shacl:name "^gated";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.gated>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-942.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-942.
 _:n3-943 shacl:datatype xsd:anyURI;
     shacl:description "TODO";
     shacl:maxCount 1;
     shacl:name "^image";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#image>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-943.
+    shacl:path timetables-and-planning:image.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-943.
 _:n3-944 shacl:datatype rdf:langString;
     shacl:description "Naam van een nabijgelegen oriëntatiepunt.";
     shacl:maxCount 1;
     shacl:name "^landmark";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.landmark>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-944.
-_:n3-945 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Level>;
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-944.
+_:n3-945 shacl:class timetables-and-planning:Level;
     shacl:description "Verdieping van de stopplaats.";
     shacl:name "^level";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.level>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-945.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-945.
 _:n3-946 shacl:class skos:Concept;
     shacl:description "Geeft aan hoe goed de stopplaats verlicht is.";
     shacl:maxCount 1;
     shacl:name "^lighting";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.lighting>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-946.
-_:n3-947 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Locale>;
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-946.
+_:n3-947 shacl:class timetables-and-planning:Locale;
     shacl:description "Locale instellingen van de tijdzone, standaardtaal, enz., voor de stopplaats.";
     shacl:maxCount 1;
     shacl:name "^locale";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.locale>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-947.
-_:n3-948 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Country>;
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-947.
+_:n3-948 shacl:class timetables-and-planning:Country;
     shacl:description "Land waar de stopplaats zich bevindt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^locatedIn";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#locatedIn>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-948.
-_:n3-949 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Operator>;
+    shacl:path timetables-and-planning:locatedIn.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-948.
+_:n3-949 shacl:class timetables-and-planning:Operator;
     shacl:description "Verwijzing naar de exploitant van de stopplaats.";
     shacl:maxCount 1;
     shacl:name "^organisation";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.organisation>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-949.
-_:n3-950 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Site>;
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-949.
+_:n3-950 shacl:class timetables-and-planning:Site;
     shacl:description "Parent site die deze stopplaats bevat.";
     shacl:maxCount 1;
     shacl:name "^parentSite";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.parentSite>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-950.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-950.
 _:n3-951 shacl:class skos:Concept;
     shacl:description "Categorisering van de stopplaats.";
     shacl:maxCount 1;
     shacl:name "^placeType";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.placeType>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-951.
-_:n3-952 shacl:class <http://www.opengis.net/ont/sf#Polygon>;
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-951.
+_:n3-952 shacl:class sf:Polygon;
     shacl:description "Polygoon geassocieerd met de stopplaats.";
     shacl:maxCount 1;
     shacl:name "^polygon";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.polygon>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-952.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-952.
 _:n3-953 shacl:class locn:Address;
     shacl:description "Een postadres waarnaar post kan worden verzonden.";
     shacl:maxCount 1;
     shacl:name "^postalAddress";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.postalAddress>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-953.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-953.
 _:n3-954 shacl:class locn:Address;
     shacl:description "Adres van een genummerd gebouw op een benoemde weg.";
     shacl:maxCount 1;
     shacl:name "^roadAddress";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.roadAddress>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-954.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-954.
 _:n3-955 shacl:datatype xsd:anyURI;
     shacl:description "URL met informatie over de stopplaats.";
     shacl:maxCount 1;
     shacl:name "^url";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.url>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-955.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-955.
 _:n3-956 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de stopplaats een grensovergang is.";
     shacl:maxCount 1;
     shacl:name "borderCrossing";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#borderCrossing>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-956.
-_:n3-957 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Quay>;
+    shacl:path timetables-and-planning:borderCrossing.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-956.
+_:n3-957 shacl:class timetables-and-planning:Quay;
     shacl:description "De perrons in de stopplaats, dat zijn, platforms, steigers, baaien, taxistandplaatsen en andere punten van fysieke toegang tot voertuigen.";
     shacl:name "containing";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#containing>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-957.
-_:n3-958 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#StopPlaceEntrance>;
+    shacl:path timetables-and-planning:containing.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-957.
+_:n3-958 shacl:class timetables-and-planning:StopPlaceEntrance;
     shacl:description "Ingang van de stopplaats.";
     shacl:name "enteredThrough";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#enteredThrough>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-958.
-_:n3-959 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace>;
+    shacl:path timetables-and-planning:enteredThrough.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-958.
+_:n3-959 shacl:class timetables-and-planning:TopographicPlace;
     shacl:description "Stopplaats die de hoofdterminus van de topografische plaats is.";
     shacl:name "for";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#for>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-959.
-_:n3-960 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace>;
+    shacl:path timetables-and-planning:for.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-959.
+_:n3-960 shacl:class timetables-and-planning:TopographicPlace;
     shacl:description "Topografische plaats in de stopplaats.";
     shacl:name "in";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.in>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-960.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-960.
 _:n3-961 shacl:class skos:Concept;
     shacl:description "De andere transportmodes verkrijgbaar bij de stopplaats.";
     shacl:maxCount 1;
     shacl:name "otherTransportmode";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#otherTransportmode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-961.
+    shacl:path timetables-and-planning:otherTransportmode.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-961.
 _:n3-962 shacl:datatype xsd:string;
     shacl:description "Code gebruikt om een ??stopplaats aan het publiek te identificeren als een alternatief voor een naam.";
     shacl:maxCount 1;
     shacl:name "publicCode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace.publicCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-962.
-_:n3-963 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#ScheduledStopPoint>;
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-962.
+_:n3-963 shacl:class timetables-and-planning:ScheduledStopPoint;
     shacl:description "Geplande Stopplaats.";
     shacl:name "scheduledStopPoint";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#scheduledStopPoint>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-963.
-_:n3-964 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace>;
+    shacl:path timetables-and-planning:scheduledStopPoint.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-963.
+_:n3-964 shacl:class timetables-and-planning:TopographicPlace;
     shacl:description "Topografische plaats die de stopplaats dient.";
     shacl:name "serves";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#serves>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-964.
-_:n3-965 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#PointOfInterest>;
+    shacl:path timetables-and-planning:serves.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-964.
+_:n3-965 shacl:class timetables-and-planning:PointOfInterest;
     shacl:description "Point of Interest die wordt bediend door de stopplaats.";
     shacl:name "serves";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#serves>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-965.
+    shacl:path timetables-and-planning:serves.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-965.
 _:n3-966 shacl:class skos:Concept;
     shacl:description "Het type stopplaats.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "stopPlaceType";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#stopPlaceType>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-966.
+    shacl:path timetables-and-planning:stopPlaceType.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-966.
 _:n3-967 shacl:class skos:Concept;
     shacl:description "Type van verwachte uitwisseling op de stopplaats.";
     shacl:maxCount 1;
     shacl:name "stopPlaceWeight";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#stopPlaceWeight>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-967.
+    shacl:path timetables-and-planning:stopPlaceWeight.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-967.
 _:n3-968 shacl:class skos:Concept;
     shacl:description "Submodus geassocieerd met de stopplaats.";
     shacl:maxCount 1;
     shacl:name "submode";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#submode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-968.
-_:n3-969 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TariffZone>;
+    shacl:path timetables-and-planning:submode.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-968.
+_:n3-969 shacl:class timetables-and-planning:TariffZone;
     shacl:description "Tariefzone geassocieerd met de stopplaats.";
     shacl:name "tariffZone";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#tariffZone>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-969.
+    shacl:path timetables-and-planning:tariffZone.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-969.
 _:n3-970 shacl:class skos:Concept;
     shacl:description "De hoofdtransportmodus van de stopplaats.";
     shacl:maxCount 1;
     shacl:name "transportMode";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#transportMode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-970.
+    shacl:path timetables-and-planning:transportMode.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-970.
 _:n3-971 shacl:class skos:Concept;
     shacl:description "Standaard relatieve weging die moet worden gebruikt voor de stopplaats.";
     shacl:maxCount 1;
     shacl:name "weighting";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#weighting>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceShape> shacl:property _:n3-971;
+    shacl:path timetables-and-planning:weighting.
+stopplaatsen-ap:StopPlaceShape shacl:property _:n3-971;
     shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#PassengerStopAssignment.stopPlace>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceTypeShape> a shacl:NodeShape;
+stopplaatsen-ap:StopPlaceTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPlaceWeightyTypeShape> a shacl:NodeShape;
+stopplaatsen-ap:StopPlaceWeightyTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#StopPointInJourneyPatternShape> a shacl:NodeShape;
+stopplaatsen-ap:StopPointInJourneyPatternShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#StopPointInJourneyPattern>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TariffZoneShape> a shacl:NodeShape;
+    shacl:targetClass timetables-and-planning:StopPointInJourneyPattern.
+stopplaatsen-ap:TariffZoneShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#TariffZone>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> a shacl:NodeShape;
+    shacl:targetClass timetables-and-planning:TariffZone.
+stopplaatsen-ap:TopographicPlaceShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-972 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Point>;
+_:n3-972 shacl:class timetables-and-planning:Point;
     shacl:description "Middenpunt van de topografische plaats.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^centroid";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.centroid>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-972.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-972.
 _:n3-973 shacl:datatype rdf:langString;
     shacl:description "Beschrijving van de topografische plaats.";
     shacl:maxCount 1;
     shacl:name "^description";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.description>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-973.
-_:n3-974 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Point>;
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-973.
+_:n3-974 shacl:class timetables-and-planning:Point;
     shacl:description "Lijst van punten binnen de topografische plaats.";
     shacl:name "^members";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.members>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-974.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-974.
 _:n3-975 shacl:datatype rdf:langString;
     shacl:description "Naam van de topografische plaats.";
     shacl:maxCount 1;
     shacl:name "^name";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.name>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-975.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-975.
 _:n3-976 shacl:class skos:Concept;
     shacl:description "Categorisering van de topografische plaats.";
     shacl:name "^placeType";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.placeType>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-976.
-_:n3-977 shacl:class <http://www.opengis.net/ont/sf#Polygon>;
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-976.
+_:n3-977 shacl:class sf:Polygon;
     shacl:description "Veelhoek geassocieerd met de topografische plaats.";
     shacl:maxCount 1;
     shacl:name "^polygon";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.polygon>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-977.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-977.
 _:n3-978 shacl:datatype xsd:string;
     shacl:description "Alternatieve identificatie van de topografische plaats.";
     shacl:maxCount 1;
     shacl:name "^privateCode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.privateCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-978.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-978.
 _:n3-979 shacl:datatype rdf:langString;
     shacl:description "Korte naam voor de topografische plaats.";
     shacl:maxCount 1;
     shacl:name "^shortName";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.shortName>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-979.
-_:n3-980 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace>;
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-979.
+_:n3-980 shacl:class timetables-and-planning:StopPlace;
     shacl:description "Stopplaats in de topografische plaats.";
     shacl:name "contained";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#contained>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-980.
-_:n3-981 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace>;
+    shacl:path timetables-and-planning:contained.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-980.
+_:n3-981 shacl:class timetables-and-planning:TopographicPlace;
     shacl:description "Verwijzing naar andere topografische plaatsen waarbinnen de topografische plaats is ingesloten.";
     shacl:name "containedIn";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#containedIn>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-981.
-_:n3-982 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Country>;
+    shacl:path timetables-and-planning:containedIn.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-981.
+_:n3-982 shacl:class timetables-and-planning:Country;
     shacl:description "Land waar de topografische plaats is gevestigd.";
     shacl:maxCount 1;
     shacl:name "country";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.country>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-982.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-982.
 _:n3-983 shacl:datatype xsd:string;
     shacl:description "ISO-code voor de topografische plaats.";
     shacl:maxCount 1;
     shacl:name "isoCode";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#isoCode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-983.
-_:n3-984 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace>;
+    shacl:path timetables-and-planning:isoCode.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-983.
+_:n3-984 shacl:class timetables-and-planning:StopPlace;
     shacl:description "Topografische plaats waarvoor de stopplaats de hoofdterminus is.";
     shacl:name "mainTerminus";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#mainTerminus>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-984.
-_:n3-985 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#Country>;
+    shacl:path timetables-and-planning:mainTerminus.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-984.
+_:n3-985 shacl:class timetables-and-planning:Country;
     shacl:description "Voor topografische plaatsen die over grenzen heen gaan, verwijzing naar het extra land of lde anden waar de topografische plaats in ligt.";
     shacl:name "otherCountry";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#otherCountry>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-985.
-_:n3-986 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace>;
+    shacl:path timetables-and-planning:otherCountry.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-985.
+_:n3-986 shacl:class timetables-and-planning:TopographicPlace;
     shacl:description "Verwijzing naar een bovenliggende topografische plaats die de topografische plaats bevat.";
     shacl:maxCount 1;
     shacl:name "parentTopographicPlace";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#parentTopographicPlace>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-986.
+    shacl:path timetables-and-planning:parentTopographicPlace.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-986.
 _:n3-987 shacl:datatype xsd:string;
     shacl:description "Postcode of gedeeltelijke postcode geassocieerd met de topografische plaats.";
     shacl:maxCount 1;
     shacl:name "postcode";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.postcode>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-987.
-_:n3-988 shacl:class <https://purl.eu/ns/mobility/timetables-and-planning#StopPlace>;
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-987.
+_:n3-988 shacl:class timetables-and-planning:StopPlace;
     shacl:description "Stopplaats die de topografische plaats bedient.";
     shacl:name "servedBy";
     shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace.servedBy>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-988.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-988.
 _:n3-989 shacl:class skos:Concept;
     shacl:description "Categorisering van de topografische plaats.";
     shacl:maxCount 1;
     shacl:name "topographicPlaceType";
-    shacl:path <https://purl.eu/ns/mobility/timetables-and-planning#topographicPlaceType>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceShape> shacl:property _:n3-989;
-    shacl:targetClass <https://purl.eu/ns/mobility/timetables-and-planning#TopographicPlace>.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TopographicPlaceTypeShape> a shacl:NodeShape;
+    shacl:path timetables-and-planning:topographicPlaceType.
+stopplaatsen-ap:TopographicPlaceShape shacl:property _:n3-989;
+    shacl:targetClass timetables-and-planning:TopographicPlace.
+stopplaatsen-ap:TopographicPlaceTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/stopplaatsen-ap#TransportmodeShape> a shacl:NodeShape;
+stopplaatsen-ap:TransportmodeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.

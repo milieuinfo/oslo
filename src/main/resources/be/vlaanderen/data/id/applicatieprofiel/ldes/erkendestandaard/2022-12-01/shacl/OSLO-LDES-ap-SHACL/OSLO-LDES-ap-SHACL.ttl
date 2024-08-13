@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -35,9 +244,9 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#AfgeleideCollectieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#AfgeleideCollectieShape/523b5290f6e5cc39b352297894c6bee312de7304>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#AfgeleideCollectieShape/93034007add0d05fd07692f22f11749a35bcbe93>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/ldes#AfgeleideCollectie>.
+    shacl:targetClass vlaanderen_ldes:AfgeleideCollectie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#AfgeleideCollectieShape/523b5290f6e5cc39b352297894c6bee312de7304> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#AfgeleideCollectie.afgeleidVan";
-    shacl:class <https://w3id.org/tree#Collection>;
+    shacl:class tree:Collection;
     shacl:description "Een afleiding is een transformatie van de ene entiteit in een andere, een update van de ene entiteit naar een nieuwe, of de constructie van een nieuwe entiteit gebaseerd op een reeds bestaande entiteit."@nl;
     shacl:name "afgeleidVan"@nl;
     shacl:path <http://purl.org/pav/derivedfrom>.
@@ -48,47 +257,47 @@
     shacl:path <http://purl.org/pav/derivedfrom>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectieLidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/ldes#CollectieLid>.
+    shacl:targetClass vlaanderen_ldes:CollectieLid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape/f3e638e9fa0134317e0bbb6fcce8a96ca0bf1f70>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape/1d625c8069abae824b87878fe1abefaef69334db>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape/60238e6652416aa8fd499f69faf8e9541fdf167b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape/f2ca4290364a170de8dfd443eca9633361a89393>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape/a1f4b7a03407062d5e896253128c4474ba483ddb>;
-    shacl:targetClass <https://w3id.org/tree#Collection>.
+    shacl:targetClass tree:Collection.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape/1d625c8069abae824b87878fe1abefaef69334db> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Collectie.shape";
     shacl:class shacl:NodeShape;
     shacl:description "Een shape is een technische beschrijving van de structuur waaraan de objecten uit de LDES moeten voldoen. "@nl;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape/60238e6652416aa8fd499f69faf8e9541fdf167b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Collectie.shape";
     shacl:description "Een shape is een technische beschrijving van de structuur waaraan de objecten uit de LDES moeten voldoen. "@nl;
     shacl:maxCount 1;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape/a1f4b7a03407062d5e896253128c4474ba483ddb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Collectie.view";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#RootNode>;
+    shacl:class vlaanderen_ldes:RootNode;
     shacl:description "Een view is de index/ invariant/ organisatie waarmee doorheen de collectie (LDES) kan worden genavigeerd."@nl;
     shacl:name "view"@nl;
-    shacl:path <https://w3id.org/tree#view>.
+    shacl:path tree:view.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape/f2ca4290364a170de8dfd443eca9633361a89393> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Collectie.shape";
     shacl:description "Een shape is een technische beschrijving van de structuur waaraan de objecten uit de LDES moeten voldoen. "@nl;
     shacl:minCount 1;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#CollectionShape/f3e638e9fa0134317e0bbb6fcce8a96ca0bf1f70> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Collectie.lid";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#CollectieLid>;
+    shacl:class vlaanderen_ldes:CollectieLid;
     shacl:description "Object dat deel uitmaakt van de collectie."@nl;
     shacl:name "lid"@nl;
-    shacl:path <https://w3id.org/tree#member>.
+    shacl:path tree:member.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDESShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDESShape/59caa2b9bd9228faf4365677da6ce8f873321960>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDESShape/6fa647ec47e4956040a040f63ddcce37c82bb67b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDESShape/9763113953e2ae7e71fc9358bb58ae079e585b37>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDESShape/67c89165b0f38567bf099862ffdef88f25e68714>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDESShape/9978564bd5823785ddace8934e848c68e6e813e3>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDESShape/bc15a30c5a91fb01a98d4b0969c268df7f6ff717>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/ldes#DataServiceLDES>.
+    shacl:targetClass vlaanderen_ldes:DataServiceLDES.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDESShape/59caa2b9bd9228faf4365677da6ce8f873321960> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDES.conformAanProtocol";
     shacl:class dcterms:Standard;
     shacl:description "Een protocol waaraan de dataservice voldoet."@nl;
     shacl:name "conformAanProtocol"@nl;
     shacl:path dcterms:conformsTo.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDESShape/67c89165b0f38567bf099862ffdef88f25e68714> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DataServiceLDES.endpointURL";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#RootNode>;
+    shacl:class vlaanderen_ldes:RootNode;
     shacl:description "De rootlocatie of het primaire endpoint van de dienst (een web-resolvable URi)."@nl;
     shacl:name "endpointURL"@nl;
     shacl:path dcat:endpointURL.
@@ -173,180 +382,180 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape/21d4af813f2c32bb7ebdbca0bd3ff0f08f50093b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape/b83de39c7370d09876d873af75bfbff82f688946>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape/9e6efd49d4b4d8a4758672d9007bbe68237d359b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape/db15b7df9d94d285bd33d0966a4d2357f8333c31>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape/e6ef62a70178318602d7f27504b53fd5102749a1>;
-    shacl:targetClass <https://w3id.org/ldes#DurationAgoPolicy>.
+    shacl:targetClass ldes:DurationAgoPolicy.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape/21d4af813f2c32bb7ebdbca0bd3ff0f08f50093b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicy.timestampPath";
     shacl:description "Geeft weer hoe elementen van een LDES zich tot elkaar verhouden door een tijdstip."@nl;
     shacl:maxCount 1;
     shacl:name "timestampPath"@nl;
-    shacl:path <https://w3id.org/ldes#timestampPath>.
+    shacl:path ldes:timestampPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape/9e6efd49d4b4d8a4758672d9007bbe68237d359b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicy.value";
     shacl:description "De waarde waarmee de gelinkte node in de relatie tussen de nodes is vergeleken."@nl;
     shacl:minCount 1;
     shacl:name "value"@nl;
-    shacl:path <https://w3id.org/tree#value>.
+    shacl:path tree:value.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape/b83de39c7370d09876d873af75bfbff82f688946> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicy.timestampPath";
     shacl:class rdfs:Resource;
     shacl:description "Geeft weer hoe elementen van een LDES zich tot elkaar verhouden door een tijdstip."@nl;
     shacl:name "timestampPath"@nl;
-    shacl:path <https://w3id.org/ldes#timestampPath>.
+    shacl:path ldes:timestampPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape/db15b7df9d94d285bd33d0966a4d2357f8333c31> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicy.value";
     shacl:description "De waarde waarmee de gelinkte node in de relatie tussen de nodes is vergeleken."@nl;
     shacl:maxCount 1;
     shacl:name "value"@nl;
-    shacl:path <https://w3id.org/tree#value>.
+    shacl:path tree:value.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicyShape/e6ef62a70178318602d7f27504b53fd5102749a1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#DurationAgoPolicy.value";
     shacl:datatype xsd:duration;
     shacl:description "De waarde waarmee de gelinkte node in de relatie tussen de nodes is vergeleken."@nl;
     shacl:name "value"@nl;
-    shacl:path <https://w3id.org/tree#value>.
+    shacl:path tree:value.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/f3e638e9fa0134317e0bbb6fcce8a96ca0bf1f70>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/1d625c8069abae824b87878fe1abefaef69334db>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/60238e6652416aa8fd499f69faf8e9541fdf167b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/f2ca4290364a170de8dfd443eca9633361a89393>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/21d4af813f2c32bb7ebdbca0bd3ff0f08f50093b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/b83de39c7370d09876d873af75bfbff82f688946>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/1a7f4d1bafca8e2698ccf72967affdc3597875f8>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/f2e5cd603d5893bbf54c6bd4677e200886e800ad>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/a1f4b7a03407062d5e896253128c4474ba483ddb>;
-    shacl:targetClass <https://w3id.org/ldes#EventStream>.
+    shacl:targetClass ldes:EventStream.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/1a7f4d1bafca8e2698ccf72967affdc3597875f8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStream.versionOfPath";
     shacl:description "Geeft de versie van het element weer."@nl;
     shacl:maxCount 1;
     shacl:name "versionOfPath"@nl;
-    shacl:path <https://w3id.org/ldes#versionOfPath>.
+    shacl:path ldes:versionOfPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/1d625c8069abae824b87878fe1abefaef69334db> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStream.shape";
     shacl:class shacl:NodeShape;
     shacl:description "Een schema waaraan alle elementen in de eventstream moeten voldoen."@nl;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/21d4af813f2c32bb7ebdbca0bd3ff0f08f50093b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStream.timestampPath";
     shacl:description "Geeft weer hoe elementen van een LDES zich tot elkaar verhouden door een specifiek tijdstip."@nl;
     shacl:maxCount 1;
     shacl:name "timestampPath"@nl;
-    shacl:path <https://w3id.org/ldes#timestampPath>.
+    shacl:path ldes:timestampPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/60238e6652416aa8fd499f69faf8e9541fdf167b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStream.shape";
     shacl:description "Een schema waaraan alle elementen in de eventstream moeten voldoen."@nl;
     shacl:maxCount 1;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/a1f4b7a03407062d5e896253128c4474ba483ddb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStream.view";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#RootNode>;
+    shacl:class vlaanderen_ldes:RootNode;
     shacl:description "Een view is de index/invariant/organisatie waarmee doorheen de collectie/ Linked Data Event Stream kan worden genavigeerd."@nl;
     shacl:name "view"@nl;
-    shacl:path <https://w3id.org/tree#view>.
+    shacl:path tree:view.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/b83de39c7370d09876d873af75bfbff82f688946> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStream.timestampPath";
     shacl:class rdfs:Resource;
     shacl:description "Geeft weer hoe elementen van een LDES zich tot elkaar verhouden door een specifiek tijdstip."@nl;
     shacl:name "timestampPath"@nl;
-    shacl:path <https://w3id.org/ldes#timestampPath>.
+    shacl:path ldes:timestampPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/f2ca4290364a170de8dfd443eca9633361a89393> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStream.shape";
     shacl:description "Een schema waaraan alle elementen in de eventstream moeten voldoen."@nl;
     shacl:minCount 1;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/f2e5cd603d5893bbf54c6bd4677e200886e800ad> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStream.versionOfPath";
     shacl:class rdfs:Resource;
     shacl:description "Geeft de versie van het element weer."@nl;
     shacl:name "versionOfPath"@nl;
-    shacl:path <https://w3id.org/ldes#versionOfPath>.
+    shacl:path ldes:versionOfPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStreamShape/f3e638e9fa0134317e0bbb6fcce8a96ca0bf1f70> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventStream.lid";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#OnveranderlijkObject>;
+    shacl:class vlaanderen_ldes:OnveranderlijkObject;
     shacl:description "Onveranderlijk object dat deel uitmaakt van de collectie."@nl;
     shacl:name "lid"@nl;
-    shacl:path <https://w3id.org/tree#member>.
+    shacl:path tree:member.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape/5e6766ea8e6a68575e79125b6249c98d9865f7a2>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape/dd5356918edbc114c65b118e3016948aa57f438e>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape/0a0769f6e9d5935668217d0cb242b58be5adade2>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape/271d4c620293e923191d4b67df7c1290cda35892>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape/90d24039a431ea2916703e696c629998e6ea1fa3>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/ldes#EventstreamView>.
+    shacl:targetClass vlaanderen_ldes:EventstreamView.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape/0a0769f6e9d5935668217d0cb242b58be5adade2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamView.rootNode";
     shacl:description "Een rootnode is een beginpagina, die zelf al leden kan bevatten, via wiens gelinkte paginas alle leden kunnen gevonden worden."@nl;
     shacl:minCount 1;
     shacl:name "rootNode"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#rootNode>.
+    shacl:path vlaanderen_ldes:rootNode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape/271d4c620293e923191d4b67df7c1290cda35892> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamView.rootNode";
     shacl:description "Een rootnode is een beginpagina, die zelf al leden kan bevatten, via wiens gelinkte paginas alle leden kunnen gevonden worden."@nl;
     shacl:maxCount 1;
     shacl:name "rootNode"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#rootNode>.
+    shacl:path vlaanderen_ldes:rootNode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape/5e6766ea8e6a68575e79125b6249c98d9865f7a2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamView.retentiebeleid";
     shacl:description "Een retentiebeleid is een beleid volgens welke elementen (i.e. data) verwijderd zullen worden."@nl;
     shacl:maxCount 1;
     shacl:name "retentiebeleid"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#retentiebeleid>.
+    shacl:path vlaanderen_ldes:retentiebeleid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape/90d24039a431ea2916703e696c629998e6ea1fa3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamView.rootNode";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#RootNode>;
+    shacl:class vlaanderen_ldes:RootNode;
     shacl:description "Een rootnode is een beginpagina, die zelf al leden kan bevatten, via wiens gelinkte paginas alle leden kunnen gevonden worden."@nl;
     shacl:name "rootNode"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#rootNode>.
+    shacl:path vlaanderen_ldes:rootNode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamViewShape/dd5356918edbc114c65b118e3016948aa57f438e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#EventstreamView.retentiebeleid";
-    shacl:class <https://w3id.org/ldes#RetentionPolicy>;
+    shacl:class ldes:RetentionPolicy;
     shacl:description "Een retentiebeleid is een beleid volgens welke elementen (i.e. data) verwijderd zullen worden."@nl;
     shacl:name "retentiebeleid"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#retentiebeleid>.
+    shacl:path vlaanderen_ldes:retentiebeleid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/22ca29a37a8e1e463ee18854ecce530ec52cdc7c>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/75f14cbad0597e1513f5753918795ac8c3e9424d>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/e5eece40830d675e1c74818d3a4a4a74108e2cd0>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/21d4af813f2c32bb7ebdbca0bd3ff0f08f50093b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/b83de39c7370d09876d873af75bfbff82f688946>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/f0d5368ffb935bfce39e6a286f4147a266e9e3ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/1a7f4d1bafca8e2698ccf72967affdc3597875f8>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/f2e5cd603d5893bbf54c6bd4677e200886e800ad>;
-    shacl:targetClass <https://w3id.org/ldes#LatestVersionSubset>.
+    shacl:targetClass ldes:LatestVersionSubset.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/1a7f4d1bafca8e2698ccf72967affdc3597875f8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubset.versionOfPath";
     shacl:description "Geeft de versie van het element weer."@nl;
     shacl:maxCount 1;
     shacl:name "versionOfPath"@nl;
-    shacl:path <https://w3id.org/ldes#versionOfPath>.
+    shacl:path ldes:versionOfPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/21d4af813f2c32bb7ebdbca0bd3ff0f08f50093b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubset.timestampPath";
     shacl:description "Geeft weer hoe elementen van een Linked Data Event Stream zich tot elkaar verhouden door een tijdstip."@nl;
     shacl:maxCount 1;
     shacl:name "timestampPath"@nl;
-    shacl:path <https://w3id.org/ldes#timestampPath>.
+    shacl:path ldes:timestampPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/22ca29a37a8e1e463ee18854ecce530ec52cdc7c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubset.amount";
     shacl:description "Aantal versies van één element die behouden mogen worden."@nl;
     shacl:maxCount 1;
     shacl:name "amount"@nl;
-    shacl:path <https://w3id.org/ldes#amount>.
+    shacl:path ldes:amount.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/75f14cbad0597e1513f5753918795ac8c3e9424d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubset.amount";
     shacl:datatype xsd:integer;
     shacl:description "Aantal versies van één element die behouden mogen worden."@nl;
     shacl:name "amount"@nl;
-    shacl:path <https://w3id.org/ldes#amount>.
+    shacl:path ldes:amount.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/b83de39c7370d09876d873af75bfbff82f688946> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubset.timestampPath";
     shacl:class rdfs:Resource;
     shacl:description "Geeft weer hoe elementen van een Linked Data Event Stream zich tot elkaar verhouden door een tijdstip."@nl;
     shacl:name "timestampPath"@nl;
-    shacl:path <https://w3id.org/ldes#timestampPath>.
+    shacl:path ldes:timestampPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/e5eece40830d675e1c74818d3a4a4a74108e2cd0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubset.amount";
     shacl:description "Aantal versies van één element die behouden mogen worden."@nl;
     shacl:minCount 1;
     shacl:name "amount"@nl;
-    shacl:path <https://w3id.org/ldes#amount>.
+    shacl:path ldes:amount.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/f0d5368ffb935bfce39e6a286f4147a266e9e3ac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubset.versionKey";
     shacl:class rdfs:Resource;
     shacl:description "Een lijst van SHACL property paths die samen een version key vormen."@nl;
     shacl:name "versionKey"@nl;
-    shacl:path <https://w3id.org/ldes#versionKey>.
+    shacl:path ldes:versionKey.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubsetShape/f2e5cd603d5893bbf54c6bd4677e200886e800ad> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#LatestVersionSubset.versionOfPath";
     shacl:class rdfs:Resource;
     shacl:description "Geeft de versie van het element weer."@nl;
     shacl:name "versionOfPath"@nl;
-    shacl:path <https://w3id.org/ldes#versionOfPath>.
+    shacl:path ldes:versionOfPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape/0c2f1ebdbaf105d73a0a1a6d978bba7f5184d75d>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape/4d55af37dbbb6a42088d917caa1ca25428ec42c9>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape/ce012334c76fbb8723d52324457cb619f53f2527>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape/f3e638e9fa0134317e0bbb6fcce8a96ca0bf1f70>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape/0f8fcba8defd790e04421c1042f74286d52c564b>;
-    shacl:targetClass <https://w3id.org/tree#Node>.
+    shacl:targetClass tree:Node.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape/0c2f1ebdbaf105d73a0a1a6d978bba7f5184d75d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Node.";
     shacl:description "";
     shacl:minCount 1;
-    shacl:path <http://fixme.com#viewDescription>.
+    shacl:path fixme.com:viewDescription.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape/0f8fcba8defd790e04421c1042f74286d52c564b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Node.relatie";
-    shacl:class <https://w3id.org/tree#Relation>;
+    shacl:class tree:Relation;
     shacl:description "Een klasse die de relatie tussen twee nodes beschrijft."@nl;
     shacl:name "relatie"@nl;
-    shacl:path <http://fixme.com#relatie>.
+    shacl:path fixme.com:relatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape/4d55af37dbbb6a42088d917caa1ca25428ec42c9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Node.";
-    shacl:class <http://fixme.com#ViewDescription>;
+    shacl:class fixme.com:ViewDescription;
     shacl:description "";
-    shacl:path <http://fixme.com#viewDescription>.
+    shacl:path fixme.com:viewDescription.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape/ce012334c76fbb8723d52324457cb619f53f2527> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Node.";
     shacl:description "";
     shacl:maxCount 1;
-    shacl:path <http://fixme.com#viewDescription>.
+    shacl:path fixme.com:viewDescription.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#NodeShape/f3e638e9fa0134317e0bbb6fcce8a96ca0bf1f70> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Node.lid";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#CollectieLid>;
+    shacl:class vlaanderen_ldes:CollectieLid;
     shacl:description "Een lid maakt deel uit van de collectie."@nl;
     shacl:name "lid"@nl;
-    shacl:path <https://w3id.org/tree#member>.
+    shacl:path tree:member.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#ObjectShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass prov:Entity.
@@ -355,205 +564,205 @@
     shacl:targetClass <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#OnveranderlijkObjectShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/ldes#OnveranderlijkObject>.
+    shacl:targetClass vlaanderen_ldes:OnveranderlijkObject.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/25165e7a84e3114b906957523087e374e9174454>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/5054d802894c4b3556bb9fe430a319542dcaf497>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/21d48e24b7a15f5a60a4524f3eab594cb0029980>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/63eaeea33243c5b9b625bba4c102c047a8242116>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/bc6ad9fc22c9349391550c6e4e1b7822f539e733>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/ca4892872b345b4fe994128b7c31877979275399>;
-    shacl:targetClass <https://w3id.org/tree#Relation>.
+    shacl:targetClass tree:Relation.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/21d48e24b7a15f5a60a4524f3eab594cb0029980> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Relatie.pad";
     shacl:description "Een property path, gedefinieerd door een SHACL, die weergeeft welke zaken beïnvloed worden door tree:value."@nl;
     shacl:minCount 1;
     shacl:name "pad"@nl;
-    shacl:path <https://w3id.org/tree#path>.
+    shacl:path tree:path.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/25165e7a84e3114b906957523087e374e9174454> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Relatie.node";
     shacl:description "Een node is een pagina die relaties naar andere nodes kan bevatten. "@nl;
     shacl:maxCount 1;
     shacl:name "node"@nl;
-    shacl:path <https://w3id.org/tree#Node>.
+    shacl:path tree:Node.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/5054d802894c4b3556bb9fe430a319542dcaf497> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Relatie.node";
-    shacl:class <https://w3id.org/tree#Node>;
+    shacl:class tree:Node;
     shacl:description "Een node is een pagina die relaties naar andere nodes kan bevatten. "@nl;
     shacl:name "node"@nl;
-    shacl:path <https://w3id.org/tree#Node>.
+    shacl:path tree:Node.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/63eaeea33243c5b9b625bba4c102c047a8242116> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Relatie.pad";
     shacl:class rdfs:Resource;
     shacl:description "Een property path, gedefinieerd door een SHACL, die weergeeft welke zaken beïnvloed worden door tree:value."@nl;
     shacl:name "pad"@nl;
-    shacl:path <https://w3id.org/tree#path>.
+    shacl:path tree:path.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Relatie.waarde";
     shacl:description "De waarde in de node waarmee de relatie gaat vergelijken om een volgende node aan te linken."@nl;
     shacl:maxCount 1;
     shacl:name "waarde"@nl;
-    shacl:path <https://w3id.org/tree#value>.
+    shacl:path tree:value.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/bc6ad9fc22c9349391550c6e4e1b7822f539e733> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Relatie.pad";
     shacl:description "Een property path, gedefinieerd door een SHACL, die weergeeft welke zaken beïnvloed worden door tree:value."@nl;
     shacl:maxCount 1;
     shacl:name "pad"@nl;
-    shacl:path <https://w3id.org/tree#path>.
+    shacl:path tree:path.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RelatieShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Relatie.waarde";
     shacl:description "De waarde in de node waarmee de relatie gaat vergelijken om een volgende node aan te linken."@nl;
     shacl:minCount 1;
     shacl:name "waarde"@nl;
-    shacl:path <https://w3id.org/tree#value>.
+    shacl:path tree:value.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RetentionPolicyShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://w3id.org/ldes#RetentionPolicy>.
+    shacl:targetClass ldes:RetentionPolicy.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RootNodeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RootNodeShape/8a6d51c3d2e6b47588def9d5da6f6b8fdd7d29df>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RootNodeShape/ba6ccfde03f9ccebd92a14af1d7fe766a59aae6a>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RootNodeShape/e7c8ac47475d6226e0292e9d83bd9beae69f3237>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/ldes#RootNode>.
+    shacl:targetClass vlaanderen_ldes:RootNode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RootNodeShape/8a6d51c3d2e6b47588def9d5da6f6b8fdd7d29df> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Rootnode.eventstreamView";
     shacl:description "De event stream view connecteert de collectie met de rootnode zodanig dat alle leden van de collectie gevonden kunnen worden."@nl;
     shacl:minCount 1;
     shacl:name "eventstreamView"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#eventstreamView>.
+    shacl:path vlaanderen_ldes:eventstreamView.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RootNodeShape/ba6ccfde03f9ccebd92a14af1d7fe766a59aae6a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Rootnode.eventstreamView";
     shacl:description "De event stream view connecteert de collectie met de rootnode zodanig dat alle leden van de collectie gevonden kunnen worden."@nl;
     shacl:maxCount 1;
     shacl:name "eventstreamView"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#eventstreamView>.
+    shacl:path vlaanderen_ldes:eventstreamView.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#RootNodeShape/e7c8ac47475d6226e0292e9d83bd9beae69f3237> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Rootnode.eventstreamView";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#EventstreamView>;
+    shacl:class vlaanderen_ldes:EventstreamView;
     shacl:description "De event stream view connecteert de collectie met de rootnode zodanig dat alle leden van de collectie gevonden kunnen worden."@nl;
     shacl:name "eventstreamView"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#eventstreamView>.
+    shacl:path vlaanderen_ldes:eventstreamView.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#ShapeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass shacl:NodeShape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/f3e638e9fa0134317e0bbb6fcce8a96ca0bf1f70>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/1d625c8069abae824b87878fe1abefaef69334db>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/60238e6652416aa8fd499f69faf8e9541fdf167b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/f2ca4290364a170de8dfd443eca9633361a89393>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/2274af28004c49ab94f572cca5032b63790d9caa>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/5c97712492866e4a22db557ab3fccd82e5ee48d5>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/90836d58ba82bd15b7b37197e5aa1ee240863b03>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/bfade1d75615a7ebed0a0706ee116b54377f45f3>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/cede5fd456f44b6034ce60ab7bf75358fe9aa98a>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/ldes#Snapshot>.
+    shacl:targetClass vlaanderen_ldes:Snapshot.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/1d625c8069abae824b87878fe1abefaef69334db> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Snapshot.shape";
     shacl:class shacl:NodeShape;
     shacl:description "Een bepaalde shape aan welke alle elementen in de event stream moeten voldoen."@nl;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/2274af28004c49ab94f572cca5032b63790d9caa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Snapshot.snapshotTot";
     shacl:description "Het tijdstip waarop de snapshot van de Linked Data Event Stream werd genomen. "@nl;
     shacl:maxCount 1;
     shacl:name "snapshotTot"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#snapshotTot>.
+    shacl:path vlaanderen_ldes:snapshotTot.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/5c97712492866e4a22db557ab3fccd82e5ee48d5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Snapshot.snapshotTot";
     shacl:datatype xsd:dateTime;
     shacl:description "Het tijdstip waarop de snapshot van de Linked Data Event Stream werd genomen. "@nl;
     shacl:name "snapshotTot"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#snapshotTot>.
+    shacl:path vlaanderen_ldes:snapshotTot.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/60238e6652416aa8fd499f69faf8e9541fdf167b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Snapshot.shape";
     shacl:description "Een bepaalde shape aan welke alle elementen in de event stream moeten voldoen."@nl;
     shacl:maxCount 1;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/90836d58ba82bd15b7b37197e5aa1ee240863b03> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Snapshot.snapshotTot";
     shacl:description "Het tijdstip waarop de snapshot van de Linked Data Event Stream werd genomen. "@nl;
     shacl:minCount 1;
     shacl:name "snapshotTot"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#snapshotTot>.
+    shacl:path vlaanderen_ldes:snapshotTot.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/bfade1d75615a7ebed0a0706ee116b54377f45f3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Snapshot.snapshotVan";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#VersieEventStream>;
+    shacl:class vlaanderen_ldes:VersieEventStream;
     shacl:description "Verwijst naar de originele Linked Data Event Stream."@nl;
     shacl:name "snapshotVan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#snapshotVan>.
+    shacl:path vlaanderen_ldes:snapshotVan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/cede5fd456f44b6034ce60ab7bf75358fe9aa98a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Snapshot.snapshotVan";
     shacl:description "Verwijst naar de originele Linked Data Event Stream."@nl;
     shacl:maxCount 1;
     shacl:name "snapshotVan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#snapshotVan>.
+    shacl:path vlaanderen_ldes:snapshotVan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/f2ca4290364a170de8dfd443eca9633361a89393> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Snapshot.shape";
     shacl:description "Een bepaalde shape aan welke alle elementen in de event stream moeten voldoen."@nl;
     shacl:minCount 1;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#SnapshotShape/f3e638e9fa0134317e0bbb6fcce8a96ca0bf1f70> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#Snapshot.lid";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#OnveranderlijkObject>;
+    shacl:class vlaanderen_ldes:OnveranderlijkObject;
     shacl:description "Een lid maakt deel uit van de collectie."@nl;
     shacl:name "lid"@nl;
-    shacl:path <https://w3id.org/tree#member>.
+    shacl:path tree:member.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VeranderlijkObjectShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/ldes#VeranderlijkObject>.
+    shacl:targetClass vlaanderen_ldes:VeranderlijkObject.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/21d4af813f2c32bb7ebdbca0bd3ff0f08f50093b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/933bdc9e6fc22ee24e9e11b47e5cb638ef308afe>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/b83de39c7370d09876d873af75bfbff82f688946>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/1a7f4d1bafca8e2698ccf72967affdc3597875f8>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/6b182157d62aaaa0d8755ee0e1ff92484a8babf3>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/f2e5cd603d5893bbf54c6bd4677e200886e800ad>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/ldes#VersieEventStream>.
+    shacl:targetClass vlaanderen_ldes:VersieEventStream.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/1a7f4d1bafca8e2698ccf72967affdc3597875f8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStream.versionOfPath";
     shacl:description "Geeft de versie van het element weer."@nl;
     shacl:maxCount 1;
     shacl:name "versionOfPath"@nl;
-    shacl:path <https://w3id.org/ldes#versionOfPath>.
+    shacl:path ldes:versionOfPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/21d4af813f2c32bb7ebdbca0bd3ff0f08f50093b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStream.timestampPath";
     shacl:description "Geeft weer hoe elementen van een LDES zich tot elkaar verhouden door een tijdstip."@nl;
     shacl:maxCount 1;
     shacl:name "timestampPath"@nl;
-    shacl:path <https://w3id.org/ldes#timestampPath>.
+    shacl:path ldes:timestampPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/6b182157d62aaaa0d8755ee0e1ff92484a8babf3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStream.versionOfPath";
     shacl:description "Geeft de versie van het element weer."@nl;
     shacl:minCount 1;
     shacl:name "versionOfPath"@nl;
-    shacl:path <https://w3id.org/ldes#versionOfPath>.
+    shacl:path ldes:versionOfPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/933bdc9e6fc22ee24e9e11b47e5cb638ef308afe> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStream.timestampPath";
     shacl:description "Geeft weer hoe elementen van een LDES zich tot elkaar verhouden door een tijdstip."@nl;
     shacl:minCount 1;
     shacl:name "timestampPath"@nl;
-    shacl:path <https://w3id.org/ldes#timestampPath>.
+    shacl:path ldes:timestampPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/b83de39c7370d09876d873af75bfbff82f688946> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStream.timestampPath";
     shacl:class rdfs:Resource;
     shacl:description "Geeft weer hoe elementen van een LDES zich tot elkaar verhouden door een tijdstip."@nl;
     shacl:name "timestampPath"@nl;
-    shacl:path <https://w3id.org/ldes#timestampPath>.
+    shacl:path ldes:timestampPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStreamShape/f2e5cd603d5893bbf54c6bd4677e200886e800ad> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieEventStream.versionOfPath";
     shacl:class rdfs:Resource;
     shacl:description "Geeft de versie van het element weer."@nl;
     shacl:name "versionOfPath"@nl;
-    shacl:path <https://w3id.org/ldes#versionOfPath>.
+    shacl:path ldes:versionOfPath.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/f3e638e9fa0134317e0bbb6fcce8a96ca0bf1f70>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/1d625c8069abae824b87878fe1abefaef69334db>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/60238e6652416aa8fd499f69faf8e9541fdf167b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/f2ca4290364a170de8dfd443eca9633361a89393>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/07ff9753e6acde0307adcfffd40f2c29a6035de6>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/9c2cf9db42f8a6e1832ffe62606e286612f395ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/bcc2bb9e6d5c7d0c01a8f803a89c8a3f87748710>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/789cf009b399f14f14a8fc66f8862c0a1641fa5c>, <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/e416dbdfe8d7ca49b77443ce9b68938283419d12>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/ldes#VersieMaterialisatie>.
+    shacl:targetClass vlaanderen_ldes:VersieMaterialisatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/07ff9753e6acde0307adcfffd40f2c29a6035de6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatie.versieMaterialisatieTot";
     shacl:datatype xsd:dateTime;
     shacl:description "Het tijdstip tot wanneer versies werden verwerkt."@nl;
     shacl:name "versieMaterialisatieTot"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#versieMaterialisatieTot>.
+    shacl:path vlaanderen_ldes:versieMaterialisatieTot.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/1d625c8069abae824b87878fe1abefaef69334db> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatie.shape";
     shacl:class shacl:NodeShape;
     shacl:description "Een bepaalde shape aan welke alle elementen in de event stream moeten voldoen."@nl;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/60238e6652416aa8fd499f69faf8e9541fdf167b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatie.shape";
     shacl:description "Een bepaalde shape aan welke alle elementen in de event stream moeten voldoen."@nl;
     shacl:maxCount 1;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/789cf009b399f14f14a8fc66f8862c0a1641fa5c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatie.versieMaterialisatieVan";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#Snapshot>;
+    shacl:class vlaanderen_ldes:Snapshot;
     shacl:description "Verwijst naar de originele Linked Data Event Stream."@nl;
     shacl:name "versieMaterialisatieVan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#versiematerialisatieVan>.
+    shacl:path vlaanderen_ldes:versiematerialisatieVan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/9c2cf9db42f8a6e1832ffe62606e286612f395ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatie.versieMaterialisatieTot";
     shacl:description "Het tijdstip tot wanneer versies werden verwerkt."@nl;
     shacl:maxCount 1;
     shacl:name "versieMaterialisatieTot"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#versieMaterialisatieTot>.
+    shacl:path vlaanderen_ldes:versieMaterialisatieTot.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/bcc2bb9e6d5c7d0c01a8f803a89c8a3f87748710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatie.versieMaterialisatieTot";
     shacl:description "Het tijdstip tot wanneer versies werden verwerkt."@nl;
     shacl:minCount 1;
     shacl:name "versieMaterialisatieTot"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#versieMaterialisatieTot>.
+    shacl:path vlaanderen_ldes:versieMaterialisatieTot.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/e416dbdfe8d7ca49b77443ce9b68938283419d12> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatie.versieMaterialisatieVan";
     shacl:description "Verwijst naar de originele Linked Data Event Stream."@nl;
     shacl:maxCount 1;
     shacl:name "versieMaterialisatieVan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/ldes#versiematerialisatieVan>.
+    shacl:path vlaanderen_ldes:versiematerialisatieVan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/f2ca4290364a170de8dfd443eca9633361a89393> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatie.shape";
     shacl:description "Een bepaalde shape aan welke alle elementen in de event stream moeten voldoen."@nl;
     shacl:minCount 1;
     shacl:name "shape"@nl;
-    shacl:path <https://w3id.org/tree#shape>.
+    shacl:path tree:shape.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatieShape/f3e638e9fa0134317e0bbb6fcce8a96ca0bf1f70> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieMaterialisatie.lid";
-    shacl:class <https://data.vlaanderen.be/ns/ldes#VeranderlijkObject>;
+    shacl:class vlaanderen_ldes:VeranderlijkObject;
     shacl:description "Een lid maakt deel uit van de collectie."@nl;
     shacl:name "lid"@nl.
 <https://data.vlaanderen.be/doc/applicatieprofiel/ldes/erkendestandaard/2022-12-01#VersieShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#Versie>.
+    shacl:targetClass generiek:Versie.

@@ -1,175 +1,384 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <https://data.vlaanderen.be/ns/netwerk#GerichteLink.link> a owl:ObjectProperty;
     rdfs:label "link"@nl;
     rdfs:comment "Verwijzing naar de Link."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#GerichteLink>;
+    rdfs:domain netwerk:GerichteLink;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <https://data.vlaanderen.be/ns/netwerk#Link>.
+    rdfs:range netwerk:Link.
 <https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie> a owl:ObjectProperty;
     rdfs:label "geometrie"@nl;
     rdfs:comment "Locatie van de Knoop."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Knoop>;
+    rdfs:domain netwerk:Knoop;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <http://www.opengis.net/ont/sf#Point>.
+    rdfs:range sf:Point.
 <https://data.vlaanderen.be/ns/netwerk#Linksequentie.link> a owl:ObjectProperty;
     rdfs:label "link"@nl;
     rdfs:comment "Link die deel uitmaakt van de Linksequentie"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Linksequentie>;
+    rdfs:domain netwerk:Linksequentie;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <https://data.vlaanderen.be/ns/netwerk#GerichteLink>.
+    rdfs:range netwerk:GerichteLink.
 <https://data.vlaanderen.be/ns/netwerk#Linkset.link> a owl:ObjectProperty;
     rdfs:label "link"@nl;
     rdfs:comment "Link die deel uitmaakt van de Linkset."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Linkset>;
+    rdfs:domain netwerk:Linkset;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <https://data.vlaanderen.be/ns/netwerk#GeneriekeLink>.
+    rdfs:range netwerk:GeneriekeLink.
 <https://data.vlaanderen.be/ns/netwerk#Netwerkgebied.geometrie> a owl:ObjectProperty;
     rdfs:label "geometrie"@nl;
     rdfs:comment "Beschrijving van de geometrie van het netwerkgebied"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Netwerkgebied>;
+    rdfs:domain netwerk:Netwerkgebied;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <http://www.opengis.net/ont/sf#Polygon>.
-<https://data.vlaanderen.be/ns/netwerk#beginknoop> a owl:ObjectProperty;
+    rdfs:range sf:Polygon.
+netwerk:beginknoop a owl:ObjectProperty;
     rdfs:label "beginknoop"@nl;
     rdfs:comment "Knoop die het begin is van de link."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Link>;
+    rdfs:domain netwerk:Link;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <https://data.vlaanderen.be/ns/netwerk#Knoop>.
-<https://data.vlaanderen.be/ns/netwerk#bestaatUit> a owl:ObjectProperty;
+    rdfs:range netwerk:Knoop.
+netwerk:bestaatUit a owl:ObjectProperty;
     rdfs:label "bestaat uit"@nl;
     rdfs:comment "Netwerkelementen waaruit het Netwerk bestaat."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Netwerk>;
+    rdfs:domain netwerk:Netwerk;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <https://data.vlaanderen.be/ns/netwerk#Netwerkelement>.
-<https://data.vlaanderen.be/ns/netwerk#eindknoop> a owl:ObjectProperty;
+    rdfs:range netwerk:Netwerkelement.
+netwerk:eindknoop a owl:ObjectProperty;
     rdfs:label "eindknoop"@nl;
     rdfs:comment "Knoop die het einde is van de Link."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Link>;
+    rdfs:domain netwerk:Link;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <https://data.vlaanderen.be/ns/netwerk#Knoop>.
-<https://data.vlaanderen.be/ns/netwerk#geografischeNaam> a owl:DatatypeProperty;
+    rdfs:range netwerk:Knoop.
+netwerk:geografischeNaam a owl:DatatypeProperty;
     rdfs:label "geografischeNaam"@nl;
     rdfs:comment "Naam van het Netwerk."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Netwerk>;
+    rdfs:domain netwerk:Netwerk;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
     rdfs:range rdf:langString.
-<https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn> a owl:ObjectProperty;
+netwerk:geometriemiddellijn a owl:ObjectProperty;
     rdfs:label "geometriemiddellijn"@nl;
     rdfs:comment "Geometrie van de middellijn van de Link."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Link>;
+    rdfs:domain netwerk:Link;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <http://www.opengis.net/ont/sf#LineString>.
-<https://data.vlaanderen.be/ns/netwerk#identificator> a owl:ObjectProperty;
+    rdfs:range sf:LineString.
+netwerk:identificator a owl:ObjectProperty;
     rdfs:label "identificator"@nl;
     rdfs:comment "Identificator van het Netwerkelement."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Netwerkelement>;
+    rdfs:domain netwerk:Netwerkelement;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <http://www.w3.org/ns/adms#Identifier>.
-<https://data.vlaanderen.be/ns/netwerk#kruisingVan> a owl:ObjectProperty;
+    rdfs:range adms:Identifier.
+netwerk:kruisingVan a owl:ObjectProperty;
     rdfs:label "kruising van"@nl;
     vann:usageNote "De set van kruisend Links is geordend met de laagst gelegen Link eerst."@nl;
     rdfs:comment "Links die ongelijkgronds kruisen."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#OngelijkgrondseKruising>;
+    rdfs:domain netwerk:OngelijkgrondseKruising;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <https://data.vlaanderen.be/ns/netwerk#Link>.
-<https://data.vlaanderen.be/ns/netwerk#richting> a owl:ObjectProperty;
+    rdfs:range netwerk:Link.
+netwerk:richting a owl:ObjectProperty;
     rdfs:label "richting"@nl;
     rdfs:comment "Geeft aan of de richting van de link overeenstemt met zijn positieve of zijn negatieve richting."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#GerichteLink>;
+    rdfs:domain netwerk:GerichteLink;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
     rdfs:range skos:Concept.
-<https://data.vlaanderen.be/ns/netwerk#verbindt> a owl:ObjectProperty;
+netwerk:verbindt a owl:ObjectProperty;
     rdfs:label "verbindt"@nl;
     rdfs:comment "Netwerkelementen die door de Connectie verbonden zijn."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/netwerk#Connectie>;
+    rdfs:domain netwerk:Connectie;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:range <https://data.vlaanderen.be/ns/netwerk#Netwerkelement>.
+    rdfs:range netwerk:Netwerkelement.
 dcterms:type a rdf:Property;
     rdfs:label "type"@nl.
-<https://data.vlaanderen.be/ns/netwerk#Connectie> a owl:Class;
+netwerk:Connectie a owl:Class;
     rdfs:label "Connectie"@nl;
     rdfs:comment "Logische verbinding tussen twee of meer Netwerkelementen in verschillende Netwerken."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/netwerk#Netwerkelement>.
-<https://data.vlaanderen.be/ns/netwerk#Linksequentie> a owl:Class;
+    rdfs:subClassOf netwerk:Netwerkelement.
+netwerk:Linksequentie a owl:Class;
     rdfs:label "Linksequentie"@nl;
     vann:usageNote "Bv een route in het Netwerk."@nl;
     rdfs:comment "Onvertakt doorlopend pad in een Netwerk."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/netwerk#GeneriekeLink>.
-<https://data.vlaanderen.be/ns/netwerk#Linkset> a owl:Class;
+    rdfs:subClassOf netwerk:GeneriekeLink.
+netwerk:Linkset a owl:Class;
     rdfs:label "Linkset"@nl;
     rdfs:comment "Collectie Linksequenties en/of Links met een specifieke functie of belang in het Netwerk."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/netwerk#Netwerkelement>.
-<https://data.vlaanderen.be/ns/netwerk#Netwerkgebied> a owl:Class;
+    rdfs:subClassOf netwerk:Netwerkelement.
+netwerk:Netwerkgebied a owl:Class;
     rdfs:label "Netwerkgebied"@nl;
     rdfs:comment "Tweedimensionaal element in een Netwerk."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/netwerk#Netwerkelement>.
-<https://data.vlaanderen.be/ns/netwerk#OngelijkgrondseKruising> a owl:Class;
+    rdfs:subClassOf netwerk:Netwerkelement.
+netwerk:OngelijkgrondseKruising a owl:Class;
     rdfs:label "OngelijkgrondseKruising"@nl;
     vann:usageNote "Te gebruiken wanneer de hoogtecoördinaten ontbreken of niet betrouwbaar zijn."@nl;
     rdfs:comment "Geeft aan welke van twee of meer Netwerkelementen hoger of lager is gelegen dan de andere."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/netwerk#Netwerkelement>.
-<https://data.vlaanderen.be/ns/netwerk#Netwerk> a owl:Class;
+    rdfs:subClassOf netwerk:Netwerkelement.
+netwerk:Netwerk a owl:Class;
     rdfs:label "Netwerk"@nl;
     vann:usageNote "De reden waarom de Netwerkelementen bij elkaar gebracht worden in een Netwerk kan verschillen, bv omdat ze geschikt zijn voor een bepaald type vervoermiddel."@nl;
     rdfs:comment "Verzameling van Netwerkelementen."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>.
-<https://data.vlaanderen.be/ns/netwerk#GeneriekeLink> a owl:Class;
+netwerk:GeneriekeLink a owl:Class;
     rdfs:label "GeneriekeLink"@nl;
     rdfs:comment "Lineair Netwerkelement."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/netwerk#Netwerkelement>.
-<https://data.vlaanderen.be/ns/netwerk#GerichteLink> a owl:Class;
+    rdfs:subClassOf netwerk:Netwerkelement.
+netwerk:GerichteLink a owl:Class;
     rdfs:label "Gerichte link"@nl;
     rdfs:comment "Link in hetzij zijn positieve, hetzij zijn negatieve richting."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>.
-<https://data.vlaanderen.be/ns/netwerk#Knoop> a owl:Class;
+netwerk:Knoop a owl:Class;
     rdfs:label "Knoop"@nl;
     rdfs:comment "Significante positie in het Netwerk die steeds samenvalt met het begin of het einde van een Link."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/netwerk#Netwerkelement>.
-<https://data.vlaanderen.be/ns/netwerk#Link> a owl:Class;
+    rdfs:subClassOf netwerk:Netwerkelement.
+netwerk:Link a owl:Class;
     rdfs:label "Link"@nl;
     rdfs:comment "Curvilineair netwerkelement dat twee posities verbindt en een homogeen pad in het Netwerk vertegenwoordigt. De verbonden posities worden voorgesteld door Knopen."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/netwerk#GeneriekeLink>.
-<https://data.vlaanderen.be/ns/netwerk#Netwerkelement> a owl:Class;
+    rdfs:subClassOf netwerk:GeneriekeLink.
+netwerk:Netwerkelement a owl:Class;
     rdfs:label "Netwerkelement"@nl;
     rdfs:comment "Element in een Netwerk dat daarin een functie van belang vervult."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/netwerk>.
@@ -365,7 +574,7 @@ _:n3-1654 schema:affiliation _:n3-1655;
     foaf:firstName "Raf";
     foaf:lastName "Buyle";
     foaf:mbox <mailto:raf.buyle@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/netwerk> ns1:editor _:n3-1654.
+<https://data.vlaanderen.be/ns/netwerk> rec54:editor _:n3-1654.
 _:n3-1656 a foaf:Person.
 _:n3-1657 foaf:homepage <https://www.pwc.be>;
     foaf:name "PwC".
@@ -373,7 +582,7 @@ _:n3-1656 schema:affiliation _:n3-1657;
     foaf:firstName "Michiel";
     foaf:lastName "De Keyzer";
     foaf:mbox <mailto:michiel.de.keyzer@pwc.com>.
-<https://data.vlaanderen.be/ns/netwerk> ns1:editor _:n3-1656.
+<https://data.vlaanderen.be/ns/netwerk> rec54:editor _:n3-1656.
 _:n3-1658 a foaf:Person.
 _:n3-1659 foaf:homepage <https://www.pwc.be>;
     foaf:name "PwC".
@@ -381,7 +590,7 @@ _:n3-1658 schema:affiliation _:n3-1659;
     foaf:firstName "Dimitri";
     foaf:lastName "Schepers";
     foaf:mbox <mailto:dimitri.schepers@pwc.com>.
-<https://data.vlaanderen.be/ns/netwerk> ns1:editor _:n3-1658.
+<https://data.vlaanderen.be/ns/netwerk> rec54:editor _:n3-1658.
 _:n3-1660 a foaf:Person.
 _:n3-1661 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
     foaf:name "Informatie Vlaanderen".
@@ -389,7 +598,7 @@ _:n3-1660 schema:affiliation _:n3-1661;
     foaf:firstName "Geert";
     foaf:lastName "Thijs";
     foaf:mbox <mailto:geert.thijs@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/netwerk> ns1:editor _:n3-1660.
+<https://data.vlaanderen.be/ns/netwerk> rec54:editor _:n3-1660.
 _:n3-1662 a foaf:Person.
 _:n3-1663 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
     foaf:name "Informatie Vlaanderen".
@@ -397,7 +606,7 @@ _:n3-1662 schema:affiliation _:n3-1663;
     foaf:firstName "Bert";
     foaf:lastName "Van Nuffelen";
     foaf:mbox <mailto:bert.vannuffelen@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/netwerk> ns1:editor _:n3-1662.
+<https://data.vlaanderen.be/ns/netwerk> rec54:editor _:n3-1662.
 _:n3-1664 a foaf:Person.
 _:n3-1665 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
     foaf:name "Informatie Vlaanderen".
@@ -405,7 +614,7 @@ _:n3-1664 schema:affiliation _:n3-1665;
     foaf:firstName "Martin";
     foaf:lastName "Vanbrabant";
     foaf:mbox <mailto:martin.vanbrabant@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/netwerk> ns1:editor _:n3-1664.
+<https://data.vlaanderen.be/ns/netwerk> rec54:editor _:n3-1664.
 _:n3-1666 a foaf:Person.
 _:n3-1667 foaf:homepage <https://www.pwc.be>;
     foaf:name "PwC".
@@ -413,7 +622,7 @@ _:n3-1666 schema:affiliation _:n3-1667;
     foaf:firstName "Laurens";
     foaf:lastName "Vercauteren";
     foaf:mbox <mailto:laurens.vercauteren@pwc.com>.
-<https://data.vlaanderen.be/ns/netwerk> ns1:editor _:n3-1666.
+<https://data.vlaanderen.be/ns/netwerk> rec54:editor _:n3-1666.
 _:n3-1668 a foaf:Person.
 _:n3-1669 foaf:homepage <https://departement-mow.vlaanderen.be/nl>;
     foaf:name "Departement Mobiliteit en Openbare Werken".

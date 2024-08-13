@@ -1,40 +1,249 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/> a <http://purl.org/ontology/bibo/Document>;
     dcterms:language "nl"@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#status> vocab:role vocab:status.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#respecHeader> vocab:role vocab:contentinfo.
 _:df_385_1 a foaf:Person;
     foaf:lastName "De Wolf"@nl;
     foaf:firstName "Liesbet"@nl;
@@ -195,27 +404,27 @@ _:df_385_103 a foaf:Person;
 _:df_385_105 a foaf:Person;
     foaf:lastName "Vermaelen"@nl;
     foaf:firstName "Ann"@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#metainfo> vocab:role vocab:metainfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#main> vocab:role vocab:main.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#h2_sotd> vocab:role vocab:heading.
 <https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#ref> a <http://purl.org/ontology/bibo/Chapter>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#ref>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#h2_sotd> vocab:role vocab:heading.
 <https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/> dcterms:type dcmitype:Text;
     dcterms:title "Deze specificatie"@nl;
-    <http://creativecommons.org/ns#attributionURL> <http://vlaanderen.be/informatievlaanderen>;
-    <http://creativecommons.org/ns#attributionName> "Informatie Vlaanderen"@nl;
-    <http://www.w3.org/1999/xhtml/vocab#license> <https://overheid.vlaanderen.be/sites/default/files/documenten/ict-egov/licenties/hergebruik/modellicentie_gratis_hergebruik_v1_0.html>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+    creativecommons:attributionURL <http://vlaanderen.be/informatievlaanderen>;
+    creativecommons:attributionName "Informatie Vlaanderen"@nl;
+    vocab:license <https://overheid.vlaanderen.be/sites/default/files/documenten/ict-egov/licenties/hergebruik/modellicentie_gratis_hergebruik_v1_0.html>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#conformance> vocab:role vocab:heading.
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#bereikbaar> a rdfs:Property;
+vegetatie:bereikbaar a rdfs:Property;
     rdfs:label "\n                            \n                            bereikbaar\n                          "@nl;
     rdfs:comment "Duidt aan of het element door de mens fysiek bereikbaar is zonder hulpmiddelen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -227,15 +436,15 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#oppervlakte> a rdfs:Property;
+vegetatie:oppervlakte a rdfs:Property;
     rdfs:label "\n                            \n                            oppervlakte\n                          "@nl;
     rdfs:comment "De afmeting van het object."@nl;
     vann:usageNote ""@nl.
@@ -243,23 +452,23 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#verplaatsbaar> a rdfs:Property;
+vegetatie:verplaatsbaar a rdfs:Property;
     rdfs:label "\n                            \n                            verplaatsbaar\n                          "@nl;
     rdfs:comment "Duidt aan of het element al dan niet verplaatsbaar is en dus niet permanent verankerd werd met het aardoppervlak."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#volume> a rdfs:Property;
+vegetatie:volume a rdfs:Property;
     rdfs:label "\n                            \n                            volume\n                          "@nl;
     rdfs:comment "De inhoud of grootte van het object in de ruimte in kubieke meter."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#voorkomen> a rdfs:Property;
+vegetatie:voorkomen a rdfs:Property;
     rdfs:label "\n                            \n                            voorkomen\n                          "@nl;
     rdfs:comment "Verwijst naar het voorkomen van de plantbakvorm."@nl;
     vann:usageNote ""@nl.
@@ -267,15 +476,15 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#bereikbaar> a rdfs:Property;
+vegetatie:bereikbaar a rdfs:Property;
     rdfs:label "\n                            \n                            bereikbaar\n                          "@nl;
     rdfs:comment "Duidt aan of het element door de mens fysiek bereikbaar is zonder hulpmiddelen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -287,15 +496,15 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#oppervlakte> a rdfs:Property;
+vegetatie:oppervlakte a rdfs:Property;
     rdfs:label "\n                            \n                            oppervlakte\n                          "@nl;
     rdfs:comment "De afmeting van het object."@nl;
     vann:usageNote ""@nl.
@@ -303,23 +512,23 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#verplaatsbaar> a rdfs:Property;
+vegetatie:verplaatsbaar a rdfs:Property;
     rdfs:label "\n                            \n                            verplaatsbaar\n                          "@nl;
     rdfs:comment "Duidt aan of het element al dan niet verplaatsbaar is en dus niet permanent verankerd werd met het aardoppervlak."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#volume> a rdfs:Property;
+vegetatie:volume a rdfs:Property;
     rdfs:label "\n                            \n                            volume\n                          "@nl;
     rdfs:comment "De inhoud of grootte van het object in de ruimte in kubieke meter."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#voorkomen> a rdfs:Property;
+vegetatie:voorkomen a rdfs:Property;
     rdfs:label "\n                            \n                            voorkomen\n                          "@nl;
     rdfs:comment "Verwijst naar het voorkomen van de plantbakvorm."@nl;
     vann:usageNote ""@nl.
@@ -327,27 +536,27 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomplaat> a rdfs:Property;
+vegetatie:boomplaat a rdfs:Property;
     rdfs:label "\n                            \n                            boomplaat\n                          "@nl;
     rdfs:comment "Boomplaten worden aangebracht rond de stam van bomen, bosgoed en heesters en eventueel vastgezet met piketten. Ze hebben een centrale opening en een rechte snede, zodat ze op eenvoudige wijze rond de planten kunnen aangebracht worden. Boomplaten die aangewend worden voor bomen beschikken over extra openingen in de plaat voor het aanbrengen van een boompalen."@nl;
     vann:usageNote "Geeft aan of een boomplaat al dan niet aanwezig is. Naar AWV SB250."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomrooster> a rdfs:Property;
+vegetatie:boomrooster a rdfs:Property;
     rdfs:label "\n                            \n                            boomrooster\n                          "@nl;
     rdfs:comment "Een horizontale structuur die zorgt voor een adequate bescherming van bomen tegen betreding van de boomspiegel door voetgangers of verkeer. Bijkomend zorgen boomroosters voor veiligheid van vooral voetgangers en fietsers doordat het maaiveld rondom de bomen gelijk blijft met de rest van de verharding waarin ze gelegen zijn."@nl;
     vann:usageNote "Geeft aan of een boomrooster al dan niet aanwezig is."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiebeoordeling> a rdfs:Property;
+vegetatie:conditiebeoordeling a rdfs:Property;
     rdfs:label "\n                            \n                            conditiebeoordeling\n                          "@nl;
     rdfs:comment "De conditie beoordeeld volgens de kronenstructuur van Dr. A. Roloff, gelet op de scheutlengte ontwikkeling en vorming van dood hout."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiewaarde> a rdfs:Property;
+vegetatie:conditiewaarde a rdfs:Property;
     rdfs:label "\n                            \n                            conditiewaarde\n                          "@nl;
     rdfs:comment "De conditiewaarde van een boom is een coëfficiënt die iets vertelt over de gezondheidstoestand (vitaliteit, conditie) en de levensverwachting van een boom. Een dode boom heeft een conditiewaarde nul. Een kerngezonde boom met zeer hoge levensverwachting heeft een conditiewaarde 1."@nl;
     vann:usageNote "De conditiewaarde is te gebruiken in de context van de waardebepaling van bomen zoals vooropgesteld door de vereniging voor openbaar groen: http://www.vvog.info/default.asp?page=47 "@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -355,7 +564,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "De geometrie overeenkomstig met een bepaald object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#groeifase> a rdfs:Property;
+vegetatie:groeifase a rdfs:Property;
     rdfs:label "\n                            \n                            groeifase\n                          "@nl;
     rdfs:comment "De levensfase van een Boomvorm."@nl;
     vann:usageNote "De mogelijke types zijn gedefinieerd vanuit Inverde."@nl.
@@ -363,19 +572,19 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#kroondiameter> a rdfs:Property;
+vegetatie:kroondiameter a rdfs:Property;
     rdfs:label "\n                            \n                            kroondiameter\n                          "@nl;
     rdfs:comment "Diameter van de kroonprojectie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#markantElement> a rdfs:Property;
+vegetatie:markantElement a rdfs:Property;
     rdfs:label "\n                            \n                            markant element\n                          "@nl;
     rdfs:comment "Een kenmerk van een boom waardoor deze zich onderscheidt van andere bomen van dezelfde soort. Bijvoorbeeld door een bepaalde erfgoedwaarde."@nl;
     vann:usageNote "Voor de invulling van dit attribuut verwijzen we naar de taxonomie voor houtige beplanting van de erfgoedtypes thesaurus van Onroerend Erfgoed."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -383,19 +592,19 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#stamomtrek> a rdfs:Property;
+vegetatie:stamomtrek a rdfs:Property;
     rdfs:label "\n                            \n                            stamomtrek\n                          "@nl;
     rdfs:comment "Stamomtrek, gemeten vanaf 1 meter boven de grond."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#vrijeDoorrijhoogte> a rdfs:Property;
+vegetatie:vrijeDoorrijhoogte a rdfs:Property;
     rdfs:label "\n                            \n                            vrije doorrijhoogte\n                          "@nl;
     rdfs:comment "Vrij te houden hoogte, voor het doorrijden van verkeer toe te laten."@nl;
     vann:usageNote ""@nl.
@@ -403,27 +612,27 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomplaat> a rdfs:Property;
+vegetatie:boomplaat a rdfs:Property;
     rdfs:label "\n                            \n                            boomplaat\n                          "@nl;
     rdfs:comment "Boomplaten worden aangebracht rond de stam van bomen, bosgoed en heesters en eventueel vastgezet met piketten. Ze hebben een centrale opening en een rechte snede, zodat ze op eenvoudige wijze rond de planten kunnen aangebracht worden. Boomplaten die aangewend worden voor bomen beschikken over extra openingen in de plaat voor het aanbrengen van een boompalen."@nl;
     vann:usageNote "Geeft aan of een boomplaat al dan niet aanwezig is. Naar AWV SB250."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomrooster> a rdfs:Property;
+vegetatie:boomrooster a rdfs:Property;
     rdfs:label "\n                            \n                            boomrooster\n                          "@nl;
     rdfs:comment "Een horizontale structuur die zorgt voor een adequate bescherming van bomen tegen betreding van de boomspiegel door voetgangers of verkeer. Bijkomend zorgen boomroosters voor veiligheid van vooral voetgangers en fietsers doordat het maaiveld rondom de bomen gelijk blijft met de rest van de verharding waarin ze gelegen zijn."@nl;
     vann:usageNote "Geeft aan of een boomrooster al dan niet aanwezig is."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiebeoordeling> a rdfs:Property;
+vegetatie:conditiebeoordeling a rdfs:Property;
     rdfs:label "\n                            \n                            conditiebeoordeling\n                          "@nl;
     rdfs:comment "De conditie beoordeeld volgens de kronenstructuur van Dr. A. Roloff, gelet op de scheutlengte ontwikkeling en vorming van dood hout."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiewaarde> a rdfs:Property;
+vegetatie:conditiewaarde a rdfs:Property;
     rdfs:label "\n                            \n                            conditiewaarde\n                          "@nl;
     rdfs:comment "De conditiewaarde van een boom is een coëfficiënt die iets vertelt over de gezondheidstoestand (vitaliteit, conditie) en de levensverwachting van een boom. Een dode boom heeft een conditiewaarde nul. Een kerngezonde boom met zeer hoge levensverwachting heeft een conditiewaarde 1."@nl;
     vann:usageNote "De conditiewaarde is te gebruiken in de context van de waardebepaling van bomen zoals vooropgesteld door de vereniging voor openbaar groen: http://www.vvog.info/default.asp?page=47 "@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -431,7 +640,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "De geometrie overeenkomstig met een bepaald object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#groeifase> a rdfs:Property;
+vegetatie:groeifase a rdfs:Property;
     rdfs:label "\n                            \n                            groeifase\n                          "@nl;
     rdfs:comment "De levensfase van een Boomvorm."@nl;
     vann:usageNote "De mogelijke types zijn gedefinieerd vanuit Inverde."@nl.
@@ -439,19 +648,19 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#kroondiameter> a rdfs:Property;
+vegetatie:kroondiameter a rdfs:Property;
     rdfs:label "\n                            \n                            kroondiameter\n                          "@nl;
     rdfs:comment "Diameter van de kroonprojectie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#markantElement> a rdfs:Property;
+vegetatie:markantElement a rdfs:Property;
     rdfs:label "\n                            \n                            markant element\n                          "@nl;
     rdfs:comment "Een kenmerk van een boom waardoor deze zich onderscheidt van andere bomen van dezelfde soort. Bijvoorbeeld door een bepaalde erfgoedwaarde."@nl;
     vann:usageNote "Voor de invulling van dit attribuut verwijzen we naar de taxonomie voor houtige beplanting van de erfgoedtypes thesaurus van Onroerend Erfgoed."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -459,19 +668,19 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#stamomtrek> a rdfs:Property;
+vegetatie:stamomtrek a rdfs:Property;
     rdfs:label "\n                            \n                            stamomtrek\n                          "@nl;
     rdfs:comment "Stamomtrek, gemeten vanaf 1 meter boven de grond."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#vrijeDoorrijhoogte> a rdfs:Property;
+vegetatie:vrijeDoorrijhoogte a rdfs:Property;
     rdfs:label "\n                            \n                            vrije doorrijhoogte\n                          "@nl;
     rdfs:comment "Vrij te houden hoogte, voor het doorrijden van verkeer toe te laten."@nl;
     vann:usageNote ""@nl.
@@ -479,27 +688,27 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomplaat> a rdfs:Property;
+vegetatie:boomplaat a rdfs:Property;
     rdfs:label "\n                            \n                            boomplaat\n                          "@nl;
     rdfs:comment "Boomplaten worden aangebracht rond de stam van bomen, bosgoed en heesters en eventueel vastgezet met piketten. Ze hebben een centrale opening en een rechte snede, zodat ze op eenvoudige wijze rond de planten kunnen aangebracht worden. Boomplaten die aangewend worden voor bomen beschikken over extra openingen in de plaat voor het aanbrengen van een boompalen."@nl;
     vann:usageNote "Geeft aan of een boomplaat al dan niet aanwezig is. Naar AWV SB250."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomrooster> a rdfs:Property;
+vegetatie:boomrooster a rdfs:Property;
     rdfs:label "\n                            \n                            boomrooster\n                          "@nl;
     rdfs:comment "Een horizontale structuur die zorgt voor een adequate bescherming van bomen tegen betreding van de boomspiegel door voetgangers of verkeer. Bijkomend zorgen boomroosters voor veiligheid van vooral voetgangers en fietsers doordat het maaiveld rondom de bomen gelijk blijft met de rest van de verharding waarin ze gelegen zijn."@nl;
     vann:usageNote "Geeft aan of een boomrooster al dan niet aanwezig is."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiebeoordeling> a rdfs:Property;
+vegetatie:conditiebeoordeling a rdfs:Property;
     rdfs:label "\n                            \n                            conditiebeoordeling\n                          "@nl;
     rdfs:comment "De conditie beoordeeld volgens de kronenstructuur van Dr. A. Roloff, gelet op de scheutlengte ontwikkeling en vorming van dood hout."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiewaarde> a rdfs:Property;
+vegetatie:conditiewaarde a rdfs:Property;
     rdfs:label "\n                            \n                            conditiewaarde\n                          "@nl;
     rdfs:comment "De conditiewaarde van een boom is een coëfficiënt die iets vertelt over de gezondheidstoestand (vitaliteit, conditie) en de levensverwachting van een boom. Een dode boom heeft een conditiewaarde nul. Een kerngezonde boom met zeer hoge levensverwachting heeft een conditiewaarde 1."@nl;
     vann:usageNote "De conditiewaarde is te gebruiken in de context van de waardebepaling van bomen zoals vooropgesteld door de vereniging voor openbaar groen: http://www.vvog.info/default.asp?page=47 "@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -507,7 +716,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "De geometrie overeenkomstig met een bepaald object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#groeifase> a rdfs:Property;
+vegetatie:groeifase a rdfs:Property;
     rdfs:label "\n                            \n                            groeifase\n                          "@nl;
     rdfs:comment "De levensfase van een Boomvorm."@nl;
     vann:usageNote "De mogelijke types zijn gedefinieerd vanuit Inverde."@nl.
@@ -515,19 +724,19 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#kroondiameter> a rdfs:Property;
+vegetatie:kroondiameter a rdfs:Property;
     rdfs:label "\n                            \n                            kroondiameter\n                          "@nl;
     rdfs:comment "Diameter van de kroonprojectie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#markantElement> a rdfs:Property;
+vegetatie:markantElement a rdfs:Property;
     rdfs:label "\n                            \n                            markant element\n                          "@nl;
     rdfs:comment "Een kenmerk van een boom waardoor deze zich onderscheidt van andere bomen van dezelfde soort. Bijvoorbeeld door een bepaalde erfgoedwaarde."@nl;
     vann:usageNote "Voor de invulling van dit attribuut verwijzen we naar de taxonomie voor houtige beplanting van de erfgoedtypes thesaurus van Onroerend Erfgoed."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -535,19 +744,19 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#stamomtrek> a rdfs:Property;
+vegetatie:stamomtrek a rdfs:Property;
     rdfs:label "\n                            \n                            stamomtrek\n                          "@nl;
     rdfs:comment "Stamomtrek, gemeten vanaf 1 meter boven de grond."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#vrijeDoorrijhoogte> a rdfs:Property;
+vegetatie:vrijeDoorrijhoogte a rdfs:Property;
     rdfs:label "\n                            \n                            vrije doorrijhoogte\n                          "@nl;
     rdfs:comment "Vrij te houden hoogte, voor het doorrijden van verkeer toe te laten."@nl;
     vann:usageNote ""@nl.
@@ -555,15 +764,15 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#begroeidOppervlak> a rdfs:Property;
+vegetatie:begroeidOppervlak a rdfs:Property;
     rdfs:label "\n                            \n                            begroeid oppervlak\n                          "@nl;
     rdfs:comment "Oppervlakte."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -571,7 +780,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "De geometrie overeenkomstig met een bepaald object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#grondgebonden> a rdfs:Property;
+vegetatie:grondgebonden a rdfs:Property;
     rdfs:label "\n                            \n                            grondgebonden\n                          "@nl;
     rdfs:comment "Duidt aan of het object al dan niet in volle grond staat."@nl;
     vann:usageNote ""@nl.
@@ -579,11 +788,11 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -591,11 +800,11 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
@@ -603,27 +812,27 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomplaat> a rdfs:Property;
+vegetatie:boomplaat a rdfs:Property;
     rdfs:label "\n                            \n                            boomplaat\n                          "@nl;
     rdfs:comment "Boomplaten worden aangebracht rond de stam van bomen, bosgoed en heesters en eventueel vastgezet met piketten. Ze hebben een centrale opening en een rechte snede, zodat ze op eenvoudige wijze rond de planten kunnen aangebracht worden. Boomplaten die aangewend worden voor bomen beschikken over extra openingen in de plaat voor het aanbrengen van een boompalen."@nl;
     vann:usageNote "Geeft aan of een boomplaat al dan niet aanwezig is. Naar AWV SB250."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomrooster> a rdfs:Property;
+vegetatie:boomrooster a rdfs:Property;
     rdfs:label "\n                            \n                            boomrooster\n                          "@nl;
     rdfs:comment "Een horizontale structuur die zorgt voor een adequate bescherming van bomen tegen betreding van de boomspiegel door voetgangers of verkeer. Bijkomend zorgen boomroosters voor veiligheid van vooral voetgangers en fietsers doordat het maaiveld rondom de bomen gelijk blijft met de rest van de verharding waarin ze gelegen zijn."@nl;
     vann:usageNote "Geeft aan of een boomrooster al dan niet aanwezig is."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiebeoordeling> a rdfs:Property;
+vegetatie:conditiebeoordeling a rdfs:Property;
     rdfs:label "\n                            \n                            conditiebeoordeling\n                          "@nl;
     rdfs:comment "De conditie beoordeeld volgens de kronenstructuur van Dr. A. Roloff, gelet op de scheutlengte ontwikkeling en vorming van dood hout."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiewaarde> a rdfs:Property;
+vegetatie:conditiewaarde a rdfs:Property;
     rdfs:label "\n                            \n                            conditiewaarde\n                          "@nl;
     rdfs:comment "De conditiewaarde van een boom is een coëfficiënt die iets vertelt over de gezondheidstoestand (vitaliteit, conditie) en de levensverwachting van een boom. Een dode boom heeft een conditiewaarde nul. Een kerngezonde boom met zeer hoge levensverwachting heeft een conditiewaarde 1."@nl;
     vann:usageNote "De conditiewaarde is te gebruiken in de context van de waardebepaling van bomen zoals vooropgesteld door de vereniging voor openbaar groen: http://www.vvog.info/default.asp?page=47 "@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -631,7 +840,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "De geometrie overeenkomstig met een bepaald object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#groeifase> a rdfs:Property;
+vegetatie:groeifase a rdfs:Property;
     rdfs:label "\n                            \n                            groeifase\n                          "@nl;
     rdfs:comment "De levensfase van een Boomvorm."@nl;
     vann:usageNote "De mogelijke types zijn gedefinieerd vanuit Inverde."@nl.
@@ -639,19 +848,19 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#kroondiameter> a rdfs:Property;
+vegetatie:kroondiameter a rdfs:Property;
     rdfs:label "\n                            \n                            kroondiameter\n                          "@nl;
     rdfs:comment "Diameter van de kroonprojectie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#markantElement> a rdfs:Property;
+vegetatie:markantElement a rdfs:Property;
     rdfs:label "\n                            \n                            markant element\n                          "@nl;
     rdfs:comment "Een kenmerk van een boom waardoor deze zich onderscheidt van andere bomen van dezelfde soort. Bijvoorbeeld door een bepaalde erfgoedwaarde."@nl;
     vann:usageNote "Voor de invulling van dit attribuut verwijzen we naar de taxonomie voor houtige beplanting van de erfgoedtypes thesaurus van Onroerend Erfgoed."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -659,19 +868,19 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#stamomtrek> a rdfs:Property;
+vegetatie:stamomtrek a rdfs:Property;
     rdfs:label "\n                            \n                            stamomtrek\n                          "@nl;
     rdfs:comment "Stamomtrek, gemeten vanaf 1 meter boven de grond."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#vrijeDoorrijhoogte> a rdfs:Property;
+vegetatie:vrijeDoorrijhoogte a rdfs:Property;
     rdfs:label "\n                            \n                            vrije doorrijhoogte\n                          "@nl;
     rdfs:comment "Vrij te houden hoogte, voor het doorrijden van verkeer toe te laten."@nl;
     vann:usageNote ""@nl.
@@ -679,27 +888,27 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomplaat> a rdfs:Property;
+vegetatie:boomplaat a rdfs:Property;
     rdfs:label "\n                            \n                            boomplaat\n                          "@nl;
     rdfs:comment "Boomplaten worden aangebracht rond de stam van bomen, bosgoed en heesters en eventueel vastgezet met piketten. Ze hebben een centrale opening en een rechte snede, zodat ze op eenvoudige wijze rond de planten kunnen aangebracht worden. Boomplaten die aangewend worden voor bomen beschikken over extra openingen in de plaat voor het aanbrengen van een boompalen."@nl;
     vann:usageNote "Geeft aan of een boomplaat al dan niet aanwezig is. Naar AWV SB250."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomrooster> a rdfs:Property;
+vegetatie:boomrooster a rdfs:Property;
     rdfs:label "\n                            \n                            boomrooster\n                          "@nl;
     rdfs:comment "Een horizontale structuur die zorgt voor een adequate bescherming van bomen tegen betreding van de boomspiegel door voetgangers of verkeer. Bijkomend zorgen boomroosters voor veiligheid van vooral voetgangers en fietsers doordat het maaiveld rondom de bomen gelijk blijft met de rest van de verharding waarin ze gelegen zijn."@nl;
     vann:usageNote "Geeft aan of een boomrooster al dan niet aanwezig is."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiebeoordeling> a rdfs:Property;
+vegetatie:conditiebeoordeling a rdfs:Property;
     rdfs:label "\n                            \n                            conditiebeoordeling\n                          "@nl;
     rdfs:comment "De conditie beoordeeld volgens de kronenstructuur van Dr. A. Roloff, gelet op de scheutlengte ontwikkeling en vorming van dood hout."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiewaarde> a rdfs:Property;
+vegetatie:conditiewaarde a rdfs:Property;
     rdfs:label "\n                            \n                            conditiewaarde\n                          "@nl;
     rdfs:comment "De conditiewaarde van een boom is een coëfficiënt die iets vertelt over de gezondheidstoestand (vitaliteit, conditie) en de levensverwachting van een boom. Een dode boom heeft een conditiewaarde nul. Een kerngezonde boom met zeer hoge levensverwachting heeft een conditiewaarde 1."@nl;
     vann:usageNote "De conditiewaarde is te gebruiken in de context van de waardebepaling van bomen zoals vooropgesteld door de vereniging voor openbaar groen: http://www.vvog.info/default.asp?page=47 "@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -707,7 +916,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "De geometrie overeenkomstig met een bepaald object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#groeifase> a rdfs:Property;
+vegetatie:groeifase a rdfs:Property;
     rdfs:label "\n                            \n                            groeifase\n                          "@nl;
     rdfs:comment "De levensfase van een Boomvorm."@nl;
     vann:usageNote "De mogelijke types zijn gedefinieerd vanuit Inverde."@nl.
@@ -715,19 +924,19 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#kroondiameter> a rdfs:Property;
+vegetatie:kroondiameter a rdfs:Property;
     rdfs:label "\n                            \n                            kroondiameter\n                          "@nl;
     rdfs:comment "Diameter van de kroonprojectie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#markantElement> a rdfs:Property;
+vegetatie:markantElement a rdfs:Property;
     rdfs:label "\n                            \n                            markant element\n                          "@nl;
     rdfs:comment "Een kenmerk van een boom waardoor deze zich onderscheidt van andere bomen van dezelfde soort. Bijvoorbeeld door een bepaalde erfgoedwaarde."@nl;
     vann:usageNote "Voor de invulling van dit attribuut verwijzen we naar de taxonomie voor houtige beplanting van de erfgoedtypes thesaurus van Onroerend Erfgoed."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -735,19 +944,19 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#stamomtrek> a rdfs:Property;
+vegetatie:stamomtrek a rdfs:Property;
     rdfs:label "\n                            \n                            stamomtrek\n                          "@nl;
     rdfs:comment "Stamomtrek, gemeten vanaf 1 meter boven de grond."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#vrijeDoorrijhoogte> a rdfs:Property;
+vegetatie:vrijeDoorrijhoogte a rdfs:Property;
     rdfs:label "\n                            \n                            vrije doorrijhoogte\n                          "@nl;
     rdfs:comment "Vrij te houden hoogte, voor het doorrijden van verkeer toe te laten."@nl;
     vann:usageNote ""@nl.
@@ -755,11 +964,11 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -771,11 +980,11 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -783,11 +992,11 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
@@ -795,15 +1004,15 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#begroeidOppervlak> a rdfs:Property;
+vegetatie:begroeidOppervlak a rdfs:Property;
     rdfs:label "\n                            \n                            begroeid oppervlak\n                          "@nl;
     rdfs:comment "Oppervlakte."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -811,7 +1020,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "De geometrie overeenkomstig met een bepaald object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#grondgebonden> a rdfs:Property;
+vegetatie:grondgebonden a rdfs:Property;
     rdfs:label "\n                            \n                            grondgebonden\n                          "@nl;
     rdfs:comment "Duidt aan of het object al dan niet in volle grond staat."@nl;
     vann:usageNote ""@nl.
@@ -819,11 +1028,11 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -831,11 +1040,11 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
@@ -843,27 +1052,27 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomplaat> a rdfs:Property;
+vegetatie:boomplaat a rdfs:Property;
     rdfs:label "\n                            \n                            boomplaat\n                          "@nl;
     rdfs:comment "Boomplaten worden aangebracht rond de stam van bomen, bosgoed en heesters en eventueel vastgezet met piketten. Ze hebben een centrale opening en een rechte snede, zodat ze op eenvoudige wijze rond de planten kunnen aangebracht worden. Boomplaten die aangewend worden voor bomen beschikken over extra openingen in de plaat voor het aanbrengen van een boompalen."@nl;
     vann:usageNote "Geeft aan of een boomplaat al dan niet aanwezig is. Naar AWV SB250."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomrooster> a rdfs:Property;
+vegetatie:boomrooster a rdfs:Property;
     rdfs:label "\n                            \n                            boomrooster\n                          "@nl;
     rdfs:comment "Een horizontale structuur die zorgt voor een adequate bescherming van bomen tegen betreding van de boomspiegel door voetgangers of verkeer. Bijkomend zorgen boomroosters voor veiligheid van vooral voetgangers en fietsers doordat het maaiveld rondom de bomen gelijk blijft met de rest van de verharding waarin ze gelegen zijn."@nl;
     vann:usageNote "Geeft aan of een boomrooster al dan niet aanwezig is."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiebeoordeling> a rdfs:Property;
+vegetatie:conditiebeoordeling a rdfs:Property;
     rdfs:label "\n                            \n                            conditiebeoordeling\n                          "@nl;
     rdfs:comment "De conditie beoordeeld volgens de kronenstructuur van Dr. A. Roloff, gelet op de scheutlengte ontwikkeling en vorming van dood hout."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiewaarde> a rdfs:Property;
+vegetatie:conditiewaarde a rdfs:Property;
     rdfs:label "\n                            \n                            conditiewaarde\n                          "@nl;
     rdfs:comment "De conditiewaarde van een boom is een coëfficiënt die iets vertelt over de gezondheidstoestand (vitaliteit, conditie) en de levensverwachting van een boom. Een dode boom heeft een conditiewaarde nul. Een kerngezonde boom met zeer hoge levensverwachting heeft een conditiewaarde 1."@nl;
     vann:usageNote "De conditiewaarde is te gebruiken in de context van de waardebepaling van bomen zoals vooropgesteld door de vereniging voor openbaar groen: http://www.vvog.info/default.asp?page=47 "@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -871,7 +1080,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "De geometrie overeenkomstig met een bepaald object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#groeifase> a rdfs:Property;
+vegetatie:groeifase a rdfs:Property;
     rdfs:label "\n                            \n                            groeifase\n                          "@nl;
     rdfs:comment "De levensfase van een Boomvorm."@nl;
     vann:usageNote "De mogelijke types zijn gedefinieerd vanuit Inverde."@nl.
@@ -879,19 +1088,19 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#kroondiameter> a rdfs:Property;
+vegetatie:kroondiameter a rdfs:Property;
     rdfs:label "\n                            \n                            kroondiameter\n                          "@nl;
     rdfs:comment "Diameter van de kroonprojectie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#markantElement> a rdfs:Property;
+vegetatie:markantElement a rdfs:Property;
     rdfs:label "\n                            \n                            markant element\n                          "@nl;
     rdfs:comment "Een kenmerk van een boom waardoor deze zich onderscheidt van andere bomen van dezelfde soort. Bijvoorbeeld door een bepaalde erfgoedwaarde."@nl;
     vann:usageNote "Voor de invulling van dit attribuut verwijzen we naar de taxonomie voor houtige beplanting van de erfgoedtypes thesaurus van Onroerend Erfgoed."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -899,27 +1108,27 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#stamomtrek> a rdfs:Property;
+vegetatie:stamomtrek a rdfs:Property;
     rdfs:label "\n                            \n                            stamomtrek\n                          "@nl;
     rdfs:comment "Stamomtrek, gemeten vanaf 1 meter boven de grond."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#takvrijeStamlengte> a rdfs:Property;
+vegetatie:takvrijeStamlengte a rdfs:Property;
     rdfs:label "\n                            \n                            takvrije stamlengte\n                          "@nl;
     rdfs:comment "De lengte in meters, gemeten vanop het aardoppervlak, van het gedeelte van de stam dat takvrij dient gehouden te worden. Alle takken die lager zitten dan de uiteindelijke takvrije stamlengte behoren tot de tijdelijke kroon en zullen gesnoeid worden in verschillende fasen gespreid over verschillende jaren."@nl;
     vann:usageNote "Definitie vrij naar Ecopedia: https://www.ecopedia.be/encyclopedie/begeleidingssnoei-bij-bomen"@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#vrijUitgroeiend> a rdfs:Property;
+vegetatie:vrijUitgroeiend a rdfs:Property;
     rdfs:label "\n                            \n                            vrij uitgroeiend\n                          "@nl;
     rdfs:comment "Geeft aan of de vegetatie of begroeiing al dan niet snoei vereist."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#vrijeDoorrijhoogte> a rdfs:Property;
+vegetatie:vrijeDoorrijhoogte a rdfs:Property;
     rdfs:label "\n                            \n                            vrije doorrijhoogte\n                          "@nl;
     rdfs:comment "Vrij te houden hoogte, voor het doorrijden van verkeer toe te laten."@nl;
     vann:usageNote ""@nl.
@@ -927,15 +1136,15 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#bereikbaar> a rdfs:Property;
+vegetatie:bereikbaar a rdfs:Property;
     rdfs:label "\n                            \n                            bereikbaar\n                          "@nl;
     rdfs:comment "Duidt aan of het element door de mens fysiek bereikbaar is zonder hulpmiddelen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -947,15 +1156,15 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#oppervlakte> a rdfs:Property;
+vegetatie:oppervlakte a rdfs:Property;
     rdfs:label "\n                            \n                            oppervlakte\n                          "@nl;
     rdfs:comment "De afmeting van het object."@nl;
     vann:usageNote ""@nl.
@@ -963,23 +1172,23 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#verplaatsbaar> a rdfs:Property;
+vegetatie:verplaatsbaar a rdfs:Property;
     rdfs:label "\n                            \n                            verplaatsbaar\n                          "@nl;
     rdfs:comment "Duidt aan of het element al dan niet verplaatsbaar is en dus niet permanent verankerd werd met het aardoppervlak."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#volume> a rdfs:Property;
+vegetatie:volume a rdfs:Property;
     rdfs:label "\n                            \n                            volume\n                          "@nl;
     rdfs:comment "De inhoud of grootte van het object in de ruimte in kubieke meter."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#voorkomen> a rdfs:Property;
+vegetatie:voorkomen a rdfs:Property;
     rdfs:label "\n                            \n                            voorkomen\n                          "@nl;
     rdfs:comment "Verwijst naar het voorkomen van de plantbakvorm."@nl;
     vann:usageNote ""@nl.
@@ -987,15 +1196,15 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#bereikbaar> a rdfs:Property;
+vegetatie:bereikbaar a rdfs:Property;
     rdfs:label "\n                            \n                            bereikbaar\n                          "@nl;
     rdfs:comment "Duidt aan of het element door de mens fysiek bereikbaar is zonder hulpmiddelen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -1007,15 +1216,15 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#oppervlakte> a rdfs:Property;
+vegetatie:oppervlakte a rdfs:Property;
     rdfs:label "\n                            \n                            oppervlakte\n                          "@nl;
     rdfs:comment "De afmeting van het object."@nl;
     vann:usageNote ""@nl.
@@ -1023,23 +1232,23 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#verplaatsbaar> a rdfs:Property;
+vegetatie:verplaatsbaar a rdfs:Property;
     rdfs:label "\n                            \n                            verplaatsbaar\n                          "@nl;
     rdfs:comment "Duidt aan of het element al dan niet verplaatsbaar is en dus niet permanent verankerd werd met het aardoppervlak."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#volume> a rdfs:Property;
+vegetatie:volume a rdfs:Property;
     rdfs:label "\n                            \n                            volume\n                          "@nl;
     rdfs:comment "De inhoud of grootte van het object in de ruimte in kubieke meter."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#voorkomen> a rdfs:Property;
+vegetatie:voorkomen a rdfs:Property;
     rdfs:label "\n                            \n                            voorkomen\n                          "@nl;
     rdfs:comment "Verwijst naar het voorkomen van de plantbakvorm."@nl;
     vann:usageNote ""@nl.
@@ -1047,11 +1256,11 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -1063,11 +1272,11 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -1075,11 +1284,11 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
@@ -1087,11 +1296,11 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -1103,11 +1312,11 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -1115,11 +1324,11 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
@@ -1127,15 +1336,15 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#bereikbaar> a rdfs:Property;
+vegetatie:bereikbaar a rdfs:Property;
     rdfs:label "\n                            \n                            bereikbaar\n                          "@nl;
     rdfs:comment "Duidt aan of het element door de mens fysiek bereikbaar is zonder hulpmiddelen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -1147,15 +1356,15 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#oppervlakte> a rdfs:Property;
+vegetatie:oppervlakte a rdfs:Property;
     rdfs:label "\n                            \n                            oppervlakte\n                          "@nl;
     rdfs:comment "De afmeting van het object."@nl;
     vann:usageNote ""@nl.
@@ -1163,23 +1372,23 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#verplaatsbaar> a rdfs:Property;
+vegetatie:verplaatsbaar a rdfs:Property;
     rdfs:label "\n                            \n                            verplaatsbaar\n                          "@nl;
     rdfs:comment "Duidt aan of het element al dan niet verplaatsbaar is en dus niet permanent verankerd werd met het aardoppervlak."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#volume> a rdfs:Property;
+vegetatie:volume a rdfs:Property;
     rdfs:label "\n                            \n                            volume\n                          "@nl;
     rdfs:comment "De inhoud of grootte van het object in de ruimte in kubieke meter."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#voorkomen> a rdfs:Property;
+vegetatie:voorkomen a rdfs:Property;
     rdfs:label "\n                            \n                            voorkomen\n                          "@nl;
     rdfs:comment "Verwijst naar het voorkomen van de plantbakvorm."@nl;
     vann:usageNote ""@nl.
@@ -1187,27 +1396,27 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomplaat> a rdfs:Property;
+vegetatie:boomplaat a rdfs:Property;
     rdfs:label "\n                            \n                            boomplaat\n                          "@nl;
     rdfs:comment "Boomplaten worden aangebracht rond de stam van bomen, bosgoed en heesters en eventueel vastgezet met piketten. Ze hebben een centrale opening en een rechte snede, zodat ze op eenvoudige wijze rond de planten kunnen aangebracht worden. Boomplaten die aangewend worden voor bomen beschikken over extra openingen in de plaat voor het aanbrengen van een boompalen."@nl;
     vann:usageNote "Geeft aan of een boomplaat al dan niet aanwezig is. Naar AWV SB250."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#boomrooster> a rdfs:Property;
+vegetatie:boomrooster a rdfs:Property;
     rdfs:label "\n                            \n                            boomrooster\n                          "@nl;
     rdfs:comment "Een horizontale structuur die zorgt voor een adequate bescherming van bomen tegen betreding van de boomspiegel door voetgangers of verkeer. Bijkomend zorgen boomroosters voor veiligheid van vooral voetgangers en fietsers doordat het maaiveld rondom de bomen gelijk blijft met de rest van de verharding waarin ze gelegen zijn."@nl;
     vann:usageNote "Geeft aan of een boomrooster al dan niet aanwezig is."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiebeoordeling> a rdfs:Property;
+vegetatie:conditiebeoordeling a rdfs:Property;
     rdfs:label "\n                            \n                            conditiebeoordeling\n                          "@nl;
     rdfs:comment "De conditie beoordeeld volgens de kronenstructuur van Dr. A. Roloff, gelet op de scheutlengte ontwikkeling en vorming van dood hout."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#conditiewaarde> a rdfs:Property;
+vegetatie:conditiewaarde a rdfs:Property;
     rdfs:label "\n                            \n                            conditiewaarde\n                          "@nl;
     rdfs:comment "De conditiewaarde van een boom is een coëfficiënt die iets vertelt over de gezondheidstoestand (vitaliteit, conditie) en de levensverwachting van een boom. Een dode boom heeft een conditiewaarde nul. Een kerngezonde boom met zeer hoge levensverwachting heeft een conditiewaarde 1."@nl;
     vann:usageNote "De conditiewaarde is te gebruiken in de context van de waardebepaling van bomen zoals vooropgesteld door de vereniging voor openbaar groen: http://www.vvog.info/default.asp?page=47 "@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -1215,7 +1424,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "De geometrie overeenkomstig met een bepaald object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#groeifase> a rdfs:Property;
+vegetatie:groeifase a rdfs:Property;
     rdfs:label "\n                            \n                            groeifase\n                          "@nl;
     rdfs:comment "De levensfase van een Boomvorm."@nl;
     vann:usageNote "De mogelijke types zijn gedefinieerd vanuit Inverde."@nl.
@@ -1223,19 +1432,19 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#kroondiameter> a rdfs:Property;
+vegetatie:kroondiameter a rdfs:Property;
     rdfs:label "\n                            \n                            kroondiameter\n                          "@nl;
     rdfs:comment "Diameter van de kroonprojectie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#markantElement> a rdfs:Property;
+vegetatie:markantElement a rdfs:Property;
     rdfs:label "\n                            \n                            markant element\n                          "@nl;
     rdfs:comment "Een kenmerk van een boom waardoor deze zich onderscheidt van andere bomen van dezelfde soort. Bijvoorbeeld door een bepaalde erfgoedwaarde."@nl;
     vann:usageNote "Voor de invulling van dit attribuut verwijzen we naar de taxonomie voor houtige beplanting van de erfgoedtypes thesaurus van Onroerend Erfgoed."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -1243,19 +1452,19 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#stamomtrek> a rdfs:Property;
+vegetatie:stamomtrek a rdfs:Property;
     rdfs:label "\n                            \n                            stamomtrek\n                          "@nl;
     rdfs:comment "Stamomtrek, gemeten vanaf 1 meter boven de grond."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#vrijeDoorrijhoogte> a rdfs:Property;
+vegetatie:vrijeDoorrijhoogte a rdfs:Property;
     rdfs:label "\n                            \n                            vrije doorrijhoogte\n                          "@nl;
     rdfs:comment "Vrij te houden hoogte, voor het doorrijden van verkeer toe te laten."@nl;
     vann:usageNote ""@nl.
@@ -1263,15 +1472,15 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#begindatum> a rdfs:Property;
+openbaardomein:begindatum a rdfs:Property;
     rdfs:label "\n                            \n                            begindatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#begroeidOppervlak> a rdfs:Property;
+vegetatie:begroeidOppervlak a rdfs:Property;
     rdfs:label "\n                            \n                            begroeid oppervlak\n                          "@nl;
     rdfs:comment "Oppervlakte."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#einddatum> a rdfs:Property;
+openbaardomein:einddatum a rdfs:Property;
     rdfs:label "\n                            \n                            einddatum\n                          "@nl;
     rdfs:comment "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen."@nl;
     vann:usageNote ""@nl.
@@ -1279,7 +1488,7 @@ locn:geometry a rdfs:Property;
     rdfs:label "\n                            \n                            geometrie\n                          "@nl;
     rdfs:comment "De geometrie overeenkomstig met een bepaald object."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#grondgebonden> a rdfs:Property;
+vegetatie:grondgebonden a rdfs:Property;
     rdfs:label "\n                            \n                            grondgebonden\n                          "@nl;
     rdfs:comment "Duidt aan of het object al dan niet in volle grond staat."@nl;
     vann:usageNote ""@nl.
@@ -1287,11 +1496,11 @@ schema:height a rdfs:Property;
     rdfs:label "\n                            \n                            hoogte\n                          "@nl;
     rdfs:comment "De hoogte van het object zelf."@nl;
     vann:usageNote "Niet te verwarren met de hoogte ten opzichte van de zeespiegel zoals gebruikt voor hoogtemeting, bijvoorbeeld Tweede Algemene Waterpassing (TAW)."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid> a rdfs:Property;
+openbaardomein:nauwkeurigheid a rdfs:Property;
     rdfs:label "\n                            \n                            nauwkeurigheid\n                          "@nl;
     rdfs:comment "De precisie waarmee het object opgemeten werd."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/openbaardomein#niveau> a rdfs:Property;
+openbaardomein:niveau a rdfs:Property;
     rdfs:label "\n                            \n                            niveau\n                          "@nl;
     rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
     vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
@@ -1299,11 +1508,11 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            relatie\n                          "@nl;
     rdfs:comment "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject."@nl;
     vann:usageNote "Bijvoorbeeld een verwijzing naar een object uit het wegenregister of grootschalig referentiebestand."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortcode> a rdfs:Property;
+vegetatie:soortcode a rdfs:Property;
     rdfs:label "\n                            \n                            soortcode\n                          "@nl;
     rdfs:comment "Een unieke identificator voor de soort van het vegetatie-element. "@nl;
     vann:usageNote "De soortcode wordt opgenomen onder de vorm van de 'GBIF Key'."@nl.
-<https://data.vlaanderen.be/ns/openbaardomein/vegetatie#soortnaamNederlands> a rdfs:Property;
+vegetatie:soortnaamNederlands a rdfs:Property;
     rdfs:label "\n                            \n                            soortnaam Nederlands\n                          "@nl;
     rdfs:comment "Soortnaam in het Nederlands."@nl;
     vann:usageNote ""@nl.
@@ -1311,7 +1520,7 @@ dcterms:relation a rdfs:Property;
     rdfs:label "\n                            \n                            wetenschappelijke soortnaam\n                          "@nl;
     rdfs:comment "De wetenschappelijke soortnaam van het vegetatie-element."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/#h2_sotd> vocab:role vocab:heading, vocab:heading.
 _:df_385_106 rdf:first _:df_385_1;
     rdf:rest rdf:nil.
 <https://data.vlaanderen.be/doc/applicatieprofiel/vegetatie-elementen/> foaf:maker _:df_385_106.

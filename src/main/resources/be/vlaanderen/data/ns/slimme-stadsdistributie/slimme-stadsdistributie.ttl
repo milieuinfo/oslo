@@ -1,55 +1,264 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Belading.afmeting> a owl:ObjectProperty;
     rdfs:label "afmeting"@nl;
     rdfs:comment "De fysieke dimensies van de totale lading die in een voertuig is geplaatst."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Belading>;
+    rdfs:domain slimme-stadsdistributie:Belading;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Afmeting>.
+    rdfs:range slimme-stadsdistributie:Afmeting.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Belading.resource> a owl:ObjectProperty;
     rdfs:label "Resource"@nl;
     rdfs:comment "Referentie naar verbonden klasse."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Belading>;
+    rdfs:domain slimme-stadsdistributie:Belading;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource>.
+    rdfs:range trips-en-aanbod:Resource.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Belading.routesegment> a owl:ObjectProperty;
     rdfs:label "Routesegment"@nl;
     rdfs:comment "Referentie naar verbonden klasse."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Belading>;
+    rdfs:domain slimme-stadsdistributie:Belading;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Decimal> a owl:Class;
+    rdfs:range trips-en-aanbod:Routesegment.
+slimme-stadsdistributie:Decimal a owl:Class;
     rdfs:label "Decimal"@nl;
     rdfs:comment "Een getal met een decimaalpunt gevolgd door cijfers die het breukdeel aangeven."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
@@ -57,263 +266,263 @@
     rdfs:label "bedieningswijze"@nl;
     vann:usageNote "Hier gaat het bijvoorbeeld over een badgesysteem dat je dient te gebruiken om toegang te bekomen."@nl;
     rdfs:comment "De bedieningswijze beschrijft de methode of het mechanisme waarmee een infrastructuurelement wordt bestuurd, gecontroleerd of bediend."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Infrastructuurelement>;
+    rdfs:domain infrastructuur:Infrastructuurelement;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Bedieningswijze>.
+    rdfs:range slimme-stadsdistributie:Bedieningswijze.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Infrastrcutuurelement.locatie> a owl:ObjectProperty;
     rdfs:label "locatie"@nl;
     rdfs:comment "De locatie beschrijft de geografische positie of plaats waar een infrastructuurelement zich bevindt."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Infrastructuurelement>;
+    rdfs:domain infrastructuur:Infrastructuurelement;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range prov:Location.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Infrastrcutuurelement.type> a owl:ObjectProperty;
     rdfs:label "type"@nl;
     vann:usageNote "Bv. Een parkeerplaats"@nl;
     rdfs:comment "Het type beschrijft de specifieke categorie of variant waartoe een infrastructuurelement behoort, gebaseerd op zijn functionele kenmerken, ontwerp of gebruiksdoel."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Infrastructuurelement>;
+    rdfs:domain infrastructuur:Infrastructuurelement;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#TypeInfrastructuurelement>.
+    rdfs:range slimme-stadsdistributie:TypeInfrastructuurelement.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.afgeleverdAan> a owl:ObjectProperty;
     rdfs:label "afgeleverd aan"@nl;
     rdfs:comment "De Agent waar de vergunning aan werd afgeleverd."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range dcterms:Agent.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.afgeleverdDoor> a owl:ObjectProperty;
     rdfs:label "afgeleverd door"@nl;
     rdfs:comment "De Agent die de vergunning afgeleverd heeft."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range dcterms:Agent.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.beweging> a owl:ObjectProperty;
     rdfs:label "beweging"@nl;
     rdfs:comment "De dynamische activiteit die plaatsvindt tijdens het transportproces van goederen binnen een stedelijk distributienetwerk."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Beweging>.
+    rdfs:range slimme-stadsdistributie:Beweging.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.identificator> a owl:ObjectProperty;
     rdfs:label "identificator"@nl;
     rdfs:comment "Een unieke code die specifiek wordt toegewezen aan een mobiliteitsvergunning om deze te identificeren."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <http://www.w3.org/ns/adms#Identifier>.
+    rdfs:range adms:Identifier.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.mobiliteitsdienst> a owl:ObjectProperty;
     rdfs:label "mobiliteitsdienst"@nl;
     rdfs:comment "Het specifieke type dienst of activiteit waarvoor de vergunning is verleend"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst>.
+    rdfs:range trips-en-aanbod:Mobiliteitsdienst.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.onderhevigAan> a owl:ObjectProperty;
     rdfs:label "onderhevig aan"@nl;
     rdfs:comment "De specifieke verkeersregelingen en -voorschriften waaraan de houder van een mobiliteitsvergunning zich moet blijven houden, ondanks de verleende vergunning."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range <https://datexbrowserv34.tamtamresearch.com/#/class/ns/TrafficRegulation/pkg/Classes.TrafficRegulation/cls/TrafficRegulation>.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.periode> a owl:ObjectProperty;
     rdfs:label "periode"@nl;
     vann:usageNote "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip maar kan hier ook een moment zijn."@nl;
     rdfs:comment "Moment of periode waar de vergunning van toepassing is."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object>.
+    rdfs:range TemporalObjects:TM_Object.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.typeVracht> a owl:ObjectProperty;
     rdfs:label "type vracht"@nl;
     rdfs:comment "De specifieke categorie of aard van de goederen die onder de vergunning mogen worden vervoerd"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vrachttype>.
+    rdfs:range slimme-stadsdistributie:Vrachttype.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.voertuig> a owl:ObjectProperty;
     rdfs:label "voertuig"@nl;
     rdfs:comment "Het transportmiddel dat onder de vergunning is goedgekeurd."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource>.
+    rdfs:range trips-en-aanbod:Resource.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.vrijgesteldVan> a owl:ObjectProperty;
     rdfs:label "vrijgesteldVan"@nl;
     rdfs:comment "De specifieke uitzonderingen of ontheffingen die aan een vergunning zijn verleend, waardoor bepaalde regels of beperkingen niet van toepassing zijn"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range <https://datexbrowserv34.tamtamresearch.com/#/class/ns/TrafficRegulation/pkg/Classes.TrafficRegulation/cls/TrafficRegulation>.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.werkingsgebied> a owl:ObjectProperty;
     rdfs:label "werkingsgebied"@nl;
     rdfs:comment "Het specifieke geografische gebied of de zones waarin de vergunning geldig is."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning>;
+    rdfs:domain slimme-stadsdistributie:Mobiliteitsvergunning;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range dcterms:Location.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Punt.geometrie> a owl:ObjectProperty;
     rdfs:label "geometrie"@nl;
     rdfs:comment "De ruimtelijke aanduiding van het punt."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Punt>;
+    rdfs:domain slimme-stadsdistributie:Punt;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Punt>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#RegelType> a owl:Class;
+    rdfs:range slimme-stadsdistributie:Punt.
+slimme-stadsdistributie:RegelType a owl:Class;
     rdfs:label "RegelType"@nl;
     rdfs:comment "Het type waartoe de specifieke regel behoort."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Resource.gewichtsklasse> a owl:ObjectProperty;
     rdfs:label "gewichtsklasse"@nl;
     rdfs:comment "Classificatie van een voertuig op basis van gewicht."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource>;
+    rdfs:domain trips-en-aanbod:Resource;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Gewichtsklasse>.
+    rdfs:range slimme-stadsdistributie:Gewichtsklasse.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Resource.maximaaltoegelatenmassa> a owl:DatatypeProperty;
     rdfs:label "maximaal toegelaten massa"@nl;
     rdfs:comment "Het hoogste gewicht dat een voertuig inclusief lading wettelijk mag hebben."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource>;
+    rdfs:domain trips-en-aanbod:Resource;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range xsd:integer.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Resource.milieuklasse> a owl:ObjectProperty;
     rdfs:label "milieuklasse"@nl;
     rdfs:comment "Classificatie van een voertuig op basis van milieunorm."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource>;
+    rdfs:domain trips-en-aanbod:Resource;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Milieuklasse>.
+    rdfs:range slimme-stadsdistributie:Milieuklasse.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Resource.startgewicht> a owl:DatatypeProperty;
     rdfs:label "start gewicht"@nl;
     rdfs:comment "Het gewicht van een Resource zonder lading, passagiers of brandstof."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource>;
+    rdfs:domain trips-en-aanbod:Resource;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range xsd:integer.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#VergunningsStatus> a owl:Class;
+slimme-stadsdistributie:VergunningsStatus a owl:Class;
     rdfs:label "VergunningsStatus"@nl;
     rdfs:comment "De status van een vergunning."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.afmetingen> a owl:ObjectProperty;
     rdfs:label "afmetingen"@nl;
     rdfs:comment "De afmetingen van de vracht."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht>;
+    rdfs:domain slimme-stadsdistributie:Vracht;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Afmeting>.
+    rdfs:range slimme-stadsdistributie:Afmeting.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.afzender> a owl:ObjectProperty;
     rdfs:label "afzender"@nl;
     rdfs:comment "De agent die de vracht heeft verzonden."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht>;
+    rdfs:domain slimme-stadsdistributie:Vracht;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range dcterms:Agent.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.beweging> a owl:ObjectProperty;
     rdfs:label "beweging"@nl;
     vann:usageNote "bv. pick-up"@nl;
     rdfs:comment "Het type van beweging van de vracht gedurende de mobiliteitsdienst"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht>;
+    rdfs:domain slimme-stadsdistributie:Vracht;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Beweging>.
+    rdfs:range slimme-stadsdistributie:Beweging.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.gewicht> a owl:DatatypeProperty;
     rdfs:label "gewicht"@nl;
     rdfs:comment "Het gewicht van de vracht."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht>;
+    rdfs:domain slimme-stadsdistributie:Vracht;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range xsd:decimal.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.status> a owl:ObjectProperty;
     rdfs:label "status"@nl;
     rdfs:comment "Status van de vracht binnen een belading."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht>;
+    rdfs:domain slimme-stadsdistributie:Vracht;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#VrachtStatus>.
+    rdfs:range slimme-stadsdistributie:VrachtStatus.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.verpakking> a owl:ObjectProperty;
     rdfs:label "verpakking"@nl;
     rdfs:comment "De verpakking waar de vracht in opgeborgen zit."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht>;
+    rdfs:domain slimme-stadsdistributie:Vracht;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Verpakking>.
+    rdfs:range slimme-stadsdistributie:Verpakking.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.vrachttype> a owl:ObjectProperty;
     rdfs:label "vrachttype"@nl;
     rdfs:comment "Het type goed waar de vracht uit bestaat."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht>;
+    rdfs:domain slimme-stadsdistributie:Vracht;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vrachttype>.
+    rdfs:range slimme-stadsdistributie:Vrachttype.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Zone.geometrie> a owl:ObjectProperty;
     rdfs:label "geometrie"@nl;
     rdfs:comment "De ruimtelijke afbakening van een zone."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Zone>;
+    rdfs:domain slimme-stadsdistributie:Zone;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <http://www.opengis.net/ont/sf#Polygon>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#type> a owl:ObjectProperty;
+    rdfs:range sf:Polygon.
+slimme-stadsdistributie:type a owl:ObjectProperty;
     rdfs:label "type"@nl;
     rdfs:comment "Het type dimensie waarop de afmeting van toepassing is"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Afmeting>;
+    rdfs:domain slimme-stadsdistributie:Afmeting;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:range <https://data.vlaanderen.be/ns/slimme-stadsdistributie#AfmetingType>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#waarde> a owl:ObjectProperty;
+    rdfs:range slimme-stadsdistributie:AfmetingType.
+slimme-stadsdistributie:waarde a owl:ObjectProperty;
     rdfs:label "waarde"@nl;
     rdfs:comment "De waarde van de afmeting"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Afmeting>;
+    rdfs:domain slimme-stadsdistributie:Afmeting;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:range schemas:QuantitativeValue.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#AfmetingType> a owl:Class;
+slimme-stadsdistributie:AfmetingType a owl:Class;
     rdfs:label "AfmetingType"@nl;
     rdfs:comment "Type van afmeting."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Bedieningswijze> a owl:Class;
+slimme-stadsdistributie:Bedieningswijze a owl:Class;
     rdfs:label "Bedieningswijze"@nl;
     rdfs:comment "Wijze waarop een toestel wordt bediend."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Gewichtsklasse> a owl:Class;
+slimme-stadsdistributie:Gewichtsklasse a owl:Class;
     rdfs:label "Gewichtsklasse"@nl;
     rdfs:comment "Classificatie van een voertuig op basis van gewicht."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Leveringsvergunning> a owl:Class;
+slimme-stadsdistributie:Leveringsvergunning a owl:Class;
     rdfs:label "Leveringsvergunning"@nl;
     rdfs:comment "Een toestemming die voertuigen toestaat om goederen te leveren binnen bepaalde zones van de stad."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Milieuklasse> a owl:Class;
+slimme-stadsdistributie:Milieuklasse a owl:Class;
     rdfs:label "Milieuklasse"@nl;
     rdfs:comment "Classificatie van een voertuig op basis van milieunorm."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Parkeervergunning> a owl:Class;
+slimme-stadsdistributie:Parkeervergunning a owl:Class;
     rdfs:label "Parkeervergunning"@nl;
     rdfs:comment "Een toestemming die voertuigen het recht geeft om te parkeren in bepaalde stadsgebieden of op specifieke parkeerplaatsen."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Toegangsvergunning> a owl:Class;
+slimme-stadsdistributie:Toegangsvergunning a owl:Class;
     rdfs:label "Toegangsvergunning"@nl;
     rdfs:comment "Een toestemming die voertuigen verleent om toegang te krijgen tot specifieke stedelijke gebieden."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#TypeInfrastructuurelement> a owl:Class;
+slimme-stadsdistributie:TypeInfrastructuurelement a owl:Class;
     rdfs:label "Type Infrastructuur element"@nl;
     rdfs:comment "Het type van het infrastructuurelement"@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Verpakking> a owl:Class;
+slimme-stadsdistributie:Verpakking a owl:Class;
     rdfs:label "Verpakking"@nl;
     rdfs:comment "De specifieke vorm, structuur of materiaal waaruit een verpakking is gemaakt."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#VrachtStatus> a owl:Class;
+slimme-stadsdistributie:VrachtStatus a owl:Class;
     rdfs:label "Vrachtstatus"@nl;
     rdfs:comment "De status van een vracht."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Zone> a owl:Class;
+slimme-stadsdistributie:Zone a owl:Class;
     rdfs:label "Zone"@nl;
     rdfs:comment "Een zone is een specifiek afgebakend gebied binnen een grotere ruimte, dat wordt gekenmerkt door bepaalde eigenschappen of functies."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:subClassOf dcterms:Location.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Beweging> a owl:Class;
+slimme-stadsdistributie:Beweging a owl:Class;
     rdfs:label "Beweging"@nl;
     rdfs:comment "Type van beweging van de logistieke stroom."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Punt> a owl:Class;
+slimme-stadsdistributie:Punt a owl:Class;
     rdfs:label "Punt"@nl;
     rdfs:comment "Een punt is een exacte locatie in de ruimte zonder afmetingen, die wordt gedefinieerd door coördinaten in een bepaald referentiesysteem."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
     rdfs:subClassOf dcterms:Location.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vrachttype> a owl:Class;
+slimme-stadsdistributie:Vrachttype a owl:Class;
     rdfs:label "Vrachttype"@nl;
     rdfs:comment "Aanduiding van de aard van goederen die worden vervoerd."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Belading> a owl:Class;
+slimme-stadsdistributie:Belading a owl:Class;
     rdfs:label "Belading"@nl;
     rdfs:comment "De hoeveelheid en verdeling van goederen, materialen of andere items die worden geladen in een voertuig."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Afmeting> a owl:Class;
+slimme-stadsdistributie:Afmeting a owl:Class;
     rdfs:label "Afmeting"@nl;
     rdfs:comment "De afmetingen van een object."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht> a owl:Class;
+slimme-stadsdistributie:Vracht a owl:Class;
     rdfs:label "Vracht"@nl;
     rdfs:comment "Elk element dat in het kader van een logistieke beweging vervoerd wordt."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning> a owl:Class;
+slimme-stadsdistributie:Mobiliteitsvergunning a owl:Class;
     rdfs:label "Mobiliteitsvergunning"@nl;
     rdfs:comment "Een toestemming die het beheer en de regulatie van logistieke stromen en personenvervoer binnen een bepaald gebied mogelijk maakt."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimme-stadsdistributie>;
-    rdfs:subClassOf <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Leveringsvergunning>, <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Toegangsvergunning>, <https://data.vlaanderen.be/ns/slimme-stadsdistributie#Parkeervergunning>, <https://data.vlaanderen.be/ns/omgevingsvergunning#Vergunning>.
+    rdfs:subClassOf slimme-stadsdistributie:Leveringsvergunning, slimme-stadsdistributie:Toegangsvergunning, slimme-stadsdistributie:Parkeervergunning, omgevingsvergunning:Vergunning.
 <https://data.vlaanderen.be/ns/slimme-stadsdistributie> a owl:Ontology;
     rdfs:label "slimme-stadsdistributie"@en, "slimme-stadsdistributie"@nl.
 _:n3-1955 a foaf:Person.
@@ -587,7 +796,7 @@ _:n3-2042 schema:affiliation _:n3-2043;
     foaf:firstName "Lorenzo";
     foaf:lastName "Vylders";
     foaf:mbox <mailto:lorenzo.vylders@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie> ns1:editor _:n3-2042.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie> rec54:editor _:n3-2042.
 _:n3-2044 a foaf:Person.
 _:n3-2045 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -595,7 +804,7 @@ _:n3-2044 schema:affiliation _:n3-2045;
     foaf:firstName "Pieter";
     foaf:lastName "Roeyen";
     foaf:mbox <mailto:pieter.roeyen@pwc.com>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie> ns1:editor _:n3-2044.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie> rec54:editor _:n3-2044.
 _:n3-2046 a foaf:Person.
 _:n3-2047 foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
     foaf:name "Digitaal Vlaanderen".
@@ -603,4 +812,4 @@ _:n3-2046 schema:affiliation _:n3-2047;
     foaf:firstName "Yaron ";
     foaf:lastName "Dassonneville";
     foaf:mbox <mailto:yaron.dassonneville@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimme-stadsdistributie> ns1:editor _:n3-2046.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie> rec54:editor _:n3-2046.

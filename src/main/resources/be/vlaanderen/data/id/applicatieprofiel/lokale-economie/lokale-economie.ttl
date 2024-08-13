@@ -1,40 +1,249 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/> a <http://purl.org/ontology/bibo/Document>;
     dcterms:language "nl"@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#status> vocab:role vocab:status.
+<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#respecHeader> vocab:role vocab:contentinfo.
 _:df_193_1 a foaf:Person;
     foaf:lastName "Cordonni"@nl;
     foaf:firstName "Liederik"@nl;
@@ -211,31 +420,31 @@ _:df_193_87 a foaf:Person;
     foaf:lastName "Wittesaele"@nl;
     foaf:firstName "Pim"@nl;
     foaf:workplaceHomepage <https://www.citymesh.com/>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#metainfo> vocab:role vocab:metainfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#main> vocab:role vocab:main.
+<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#h2_sotd> vocab:role vocab:heading.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#ref> a <http://purl.org/ontology/bibo/Chapter>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#ref>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#h2_sotd> vocab:role vocab:heading.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/> dcterms:type dcmitype:Text;
     dcterms:title "Deze specificatie"@nl;
-    <http://creativecommons.org/ns#attributionURL> <https://data.vlaanderen.be/id/organisatie/OVO002949>;
-    <http://creativecommons.org/ns#attributionName> "Digitaal Vlaanderen"@nl;
-    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
-<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
-<https://data.vlaanderen.be/ns/lokale-economie#aantal> a rdfs:Property;
+    creativecommons:attributionURL <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    creativecommons:attributionName "Digitaal Vlaanderen"@nl;
+    vocab:license <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#conformance> vocab:role vocab:heading.
+lokale-economie:aantal a rdfs:Property;
     rdfs:label "\n                            \n                            aantal\n                          "@nl;
     rdfs:comment "Aantal producten van eenzelfde soort."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#product> a rdfs:Property;
+lokale-economie:product a rdfs:Property;
     rdfs:label "\n                            \n                            product\n                          "@nl;
     rdfs:comment "Product dat het onderwerp vormt van de aankooplijn."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#promotie> a rdfs:Property;
+lokale-economie:promotie a rdfs:Property;
     rdfs:label "\n                            \n                            promotie\n                          "@nl;
     rdfs:comment "Promotie die van toepassing is op een specifiek product."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#transactie> a rdfs:Property;
+lokale-economie:transactie a rdfs:Property;
     rdfs:label "\n                            \n                            transactie\n                          "@nl;
     rdfs:comment "Transactie waartoe de aankooplijn behoort."@nl;
     vann:usageNote ""@nl.
@@ -247,7 +456,7 @@ _:df_193_87 a foaf:Person;
     rdfs:label "\n                            \n                            doelgroep\n                          "@nl;
     rdfs:comment "Het bedoelde of verwachte publiek van een Activiteit."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/cultuurparticipatie#ingerichtDoor> a rdfs:Property;
+cultuurparticipatie:ingerichtDoor a rdfs:Property;
     rdfs:label "\n                            \n                            ingerichtDoor\n                          "@nl;
     rdfs:comment "De inrichter van de activiteit."@nl;
     vann:usageNote ""@nl.
@@ -255,11 +464,11 @@ dcterms:type a rdfs:Property;
     rdfs:label "\n                            \n                            type\n                          "@nl;
     rdfs:comment "Het type van activiteit."@nl;
     vann:usageNote "Te gebruiken om zaken te capteren zoals lezing, concert, wandeling en bezoek."@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#bedrag> a rdfs:Property;
+lokale-economie:bedrag a rdfs:Property;
     rdfs:label "\n                            \n                            bedrag\n                          "@nl;
     rdfs:comment "Hoeveelheid geld of equivalent die wordt overgemaakt."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#betaalmethode> a rdfs:Property;
+lokale-economie:betaalmethode a rdfs:Property;
     rdfs:label "\n                            \n                            betaalmethode\n                          "@nl;
     rdfs:comment "Indicatie van het betaalmiddel dat gebruikt werd."@nl;
     vann:usageNote ""@nl.
@@ -267,7 +476,7 @@ dcterms:type a rdfs:Property;
     rdfs:label "\n                            \n                            tijdstip\n                          "@nl;
     rdfs:comment "Tijdstip waarop de betaling plaatsvindt."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#transactie> a rdfs:Property;
+lokale-economie:transactie a rdfs:Property;
     rdfs:label "\n                            \n                            transactie\n                          "@nl;
     rdfs:comment "Transactie waartoe de betaling behoort."@nl;
     vann:usageNote ""@nl.
@@ -275,7 +484,7 @@ dcterms:type a rdfs:Property;
     rdfs:label "\n                            \n                            locatie\n                          "@nl;
     rdfs:comment "Precieze locatie van het bezoekersgebied."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#naam> a rdfs:Property;
+lokale-economie:naam a rdfs:Property;
     rdfs:label "\n                            \n                            naam\n                          "@nl;
     rdfs:comment "Naam van het bezoekersgebied."@nl;
     vann:usageNote ""@nl.
@@ -287,15 +496,15 @@ dcterms:type a rdfs:Property;
     rdfs:label "\n                            \n                            waardeverschaffer\n                          "@nl;
     rdfs:comment "Observatie waarvan het domeinobject het onderwerp is."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#bezoekersProfiel> a rdfs:Property;
+lokale-economie:bezoekersProfiel a rdfs:Property;
     rdfs:label "\n                            \n                            bezoekersprofiel\n                          "@nl;
     rdfs:comment "Bezoekersprofiel dat geobserveerd wordt."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#bezoekHerkomst> a rdfs:Property;
+lokale-economie:bezoekHerkomst a rdfs:Property;
     rdfs:label "\n                            \n                            bezoekHerkomst\n                          "@nl;
     rdfs:comment "Bepaalde herkomst van bezoekers die geobserveerd wordt."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#koperprofiel> a rdfs:Property;
+lokale-economie:koperprofiel a rdfs:Property;
     rdfs:label "\n                            \n                            koperprofiel\n                          "@nl;
     rdfs:comment "Socio-demografisch profiel of organisatieprofiel dat geobserveerd wordt."@nl;
     vann:usageNote ""@nl.
@@ -331,7 +540,7 @@ dcterms:type a rdfs:Property;
     rdfs:label "\n                            \n                            organisatie\n                          "@nl;
     rdfs:comment "Organisatie waar de handelszaak zich mee associeert."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#publiekeVerkoopVloeroppervlakte> a rdfs:Property;
+lokale-economie:publiekeVerkoopVloeroppervlakte a rdfs:Property;
     rdfs:label "\n                            \n                            publiekeVerkoopVloeroppervlakte\n                          "@nl;
     rdfs:comment "Publiek toegankelijke oppervlakte van de winkel."@nl;
     vann:usageNote ""@nl.
@@ -387,15 +596,15 @@ org:classification a rdfs:Property;
     rdfs:label "\n                            \n                            classificatie\n                          "@nl;
     rdfs:comment "Rangschikking van de organisatie in een classificatiesysteem."@nl;
     vann:usageNote " "@nl.
-<https://data.vlaanderen.be/ns/organisatie#heeftVestiging> a rdfs:Property;
+organisatie:heeftVestiging a rdfs:Property;
     rdfs:label "\n                            \n                            heeftVestiging\n                          "@nl;
     rdfs:comment "Vestiging van een organisatie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/organisatie#voorkeursnaam> a rdfs:Property;
+organisatie:voorkeursnaam a rdfs:Property;
     rdfs:label "\n                            \n                            naam\n                          "@nl;
     rdfs:comment "De naam van een organisatie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/organisatie#profielinfo> a rdfs:Property;
+organisatie:profielinfo a rdfs:Property;
     rdfs:label "\n                            \n                            profielinfo\n                          "@nl;
     rdfs:comment "Profiel van een organisatie."@nl;
     vann:usageNote ""@nl.
@@ -419,11 +628,11 @@ foaf:givenName a rdfs:Property;
     rdfs:label "\n                            \n                            gegevenNaam\n                          "@nl;
     rdfs:comment "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."@nl;
     vann:usageNote " "@nl.
-<https://data.vlaanderen.be/ns/persoon#geslacht> a rdfs:Property;
+persoon:geslacht a rdfs:Property;
     rdfs:label "\n                            \n                            geslacht\n                          "@nl;
     rdfs:comment "Het feit of de persoon een man of een vrouw is."@nl;
     vann:usageNote " "@nl.
-<https://data.vlaanderen.be/ns/persoon#profiel> a rdfs:Property;
+persoon:profiel a rdfs:Property;
     rdfs:label "\n                            \n                            profiel\n                          "@nl;
     rdfs:comment "Socio-demografisch profiel van een persoon."@nl;
     vann:usageNote ""@nl.
@@ -439,7 +648,7 @@ rdfs:label a rdfs:Property;
     rdfs:label "\n                            \n                            plaatsnaam\n                          "@nl;
     rdfs:comment "Naam van de plaats of van het gebied."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#eenheidsprijs> a rdfs:Property;
+lokale-economie:eenheidsprijs a rdfs:Property;
     rdfs:label "\n                            \n                            eenheidsprijs\n                          "@nl;
     rdfs:comment "Prijs van één eenheid van het product."@nl;
     vann:usageNote ""@nl.
@@ -455,7 +664,7 @@ schemas:productID a rdfs:Property;
     rdfs:label "\n                            \n                            productID\n                          "@nl;
     rdfs:comment "Unieke identificator van het product."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#aankooplijn> a rdfs:Property;
+lokale-economie:aankooplijn a rdfs:Property;
     rdfs:label "\n                            \n                            aankooplijn\n                          "@nl;
     rdfs:comment "Een onderdeel van de transactie dat overeenstemt met één aankooplijn op een kassaticket."@nl;
     vann:usageNote ""@nl.
@@ -463,11 +672,11 @@ schemas:amount a rdfs:Property;
     rdfs:label "\n                            \n                            bedrag\n                          "@nl;
     rdfs:comment "Totale waarde van de transactie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#betaling> a rdfs:Property;
+lokale-economie:betaling a rdfs:Property;
     rdfs:label "\n                            \n                            betaling\n                          "@nl;
     rdfs:comment "Betaling waaruit transactie bestaat."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#klantenkaart> a rdfs:Property;
+lokale-economie:klantenkaart a rdfs:Property;
     rdfs:label "\n                            \n                            klantenkaart\n                          "@nl;
     rdfs:comment "Klantenkaart die gebruikt wordt bij de transactie."@nl;
     vann:usageNote ""@nl.
@@ -487,19 +696,19 @@ schemas:customer a rdfs:Property;
     rdfs:label "\n                            \n                            uitgevoerdDoor\n                          "@nl;
     rdfs:comment "Persoon of organisatie door wie de transactie werd uitgevoerd, i.e., de koper."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/persoon#verblijfsadres> a rdfs:Property;
+persoon:verblijfsadres a rdfs:Property;
     rdfs:label "\n                            \n                            verblijfsadres\n                          "@nl;
     rdfs:comment "Plaats waar een persoon al dan niet tijdelijk woont of logeert."@nl;
     vann:usageNote " "@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#bezoekersProfiel> a rdfs:Property;
+lokale-economie:bezoekersProfiel a rdfs:Property;
     rdfs:label "\n                            \n                            bezoekersprofiel\n                          "@nl;
     rdfs:comment "Bezoekersprofiel dat geobserveerd wordt."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#koperprofiel> a rdfs:Property;
+lokale-economie:koperprofiel a rdfs:Property;
     rdfs:label "\n                            \n                            koperprofiel\n                          "@nl;
     rdfs:comment "Socio-demografisch profiel of organisatieprofiel dat geobserveerd wordt."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#sector> a rdfs:Property;
+lokale-economie:sector a rdfs:Property;
     rdfs:label "\n                            \n                            sector\n                          "@nl;
     rdfs:comment "Sector die geobserveerd wordt."@nl;
     vann:usageNote ""@nl.
@@ -511,19 +720,19 @@ dcterms:type a rdfs:Property;
     rdfs:label "\n                            \n                            geobserveerdKenmerk\n                          "@nl;
     rdfs:comment "Verkoopkenmerk dat geobserveerd wordt."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#aantalWerknemers> a rdfs:Property;
+lokale-economie:aantalWerknemers a rdfs:Property;
     rdfs:label "\n                            \n                            aantalWerknemers\n                          "@nl;
     rdfs:comment "Aantal personen in dienst op een bepaald moment in een specifieke Vestiging van een Organisatie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/organisatie#beschikbaarheid> a rdfs:Property;
+organisatie:beschikbaarheid a rdfs:Property;
     rdfs:label "\n                            \n                            karakter\n                          "@nl;
     rdfs:comment "Specificatie van de dagen en/of periode waarop de openingsuren van toepassing zijn."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/organisatie#openingsuren> a rdfs:Property;
+organisatie:openingsuren a rdfs:Property;
     rdfs:label "\n                            \n                            openingsuren\n                          "@nl;
     rdfs:comment "Openingsuren van de vestiging."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/organisatie#organisatie> a rdfs:Property;
+organisatie:organisatie a rdfs:Property;
     rdfs:label "\n                            \n                            organisatie\n                          "@nl;
     rdfs:comment "Organisatie waartoe een vestiging behoort."@nl;
     vann:usageNote ""@nl.
@@ -535,7 +744,7 @@ org:siteAddress a rdfs:Property;
     rdfs:label "\n                            busnummer\n                          "@nl;
     rdfs:comment "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."@nl;
     vann:usageNote "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."@nl.
-<https://data.vlaanderen.be/ns/adres#gemeentenaam> a rdfs:Property;
+adres:gemeentenaam a rdfs:Property;
     rdfs:label "\n                            gemeentenaam\n                          "@nl;
     rdfs:comment "Gemeentenaam vh adres."@nl;
     vann:usageNote " "@nl.
@@ -543,7 +752,7 @@ org:siteAddress a rdfs:Property;
     rdfs:label "\n                            huisnummer\n                          "@nl;
     rdfs:comment "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."@nl;
     vann:usageNote "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."@nl.
-<https://data.vlaanderen.be/ns/adres#land> a rdfs:Property;
+adres:land a rdfs:Property;
     rdfs:label "\n                            land\n                          "@nl;
     rdfs:comment "Land waarin het adres gelegen is."@nl;
     vann:usageNote " "@nl.
@@ -591,15 +800,15 @@ schema:hoursAvailable a rdfs:Property;
     rdfs:label "\n                            urenBeschikbaarheid\n                          "@nl;
     rdfs:comment "Periode waarin contact kan worden opgenomen."@nl;
     vann:usageNote "Bv aanduiding van het seizoen waarin contact kan worden opgenomen. Begin- en einddatum volgens ISO8601 syntax."@nl.
-<http://www.opengis.net/ont/geosparql#asGML> a rdfs:Property;
+geosparql:asGML a rdfs:Property;
     rdfs:label "\n                            als GML\n                          "@nl;
     rdfs:comment "Geometrie uitgedrukt in gml-formaat."@nl;
     vann:usageNote "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype."@nl.
-<http://www.opengis.net/ont/geosparql#asWKT> a rdfs:Property;
+geosparql:asWKT a rdfs:Property;
     rdfs:label "\n                            als WKT\n                          "@nl;
     rdfs:comment "Geometrie uitgedrukt in wkt-formaat."@nl;
     vann:usageNote "Gebruik http://www.opengis.net/ont/geosparql#wktLiteral als datatype."@nl.
-<https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator> a rdfs:Property;
+generiek:gestructureerdeIdentificator a rdfs:Property;
     rdfs:label "\n                            gestructureerdeIdentificator\n                          "@nl;
     rdfs:comment "Identificator vh object opgesplitst in zijn onderdelen."@nl;
     vann:usageNote ""@nl.
@@ -611,7 +820,7 @@ skos:notation a rdfs:Property;
     rdfs:label "\n                            notatie\n                          "@nl;
     rdfs:comment "String gebruikt om het object uniek te identificeren."@nl;
     vann:usageNote "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."@nl.
-<http://www.w3.org/ns/adms#schemaAgency> a rdfs:Property;
+adms:schemaAgency a rdfs:Property;
     rdfs:label "\n                            toegekendDoor\n                          "@nl;
     rdfs:comment "Naam vd agent die de identificator heeft toegekend."@nl;
     vann:usageNote " "@nl.
@@ -619,7 +828,7 @@ dcterms:issued a rdfs:Property;
     rdfs:label "\n                            uitgegeven\n                          "@nl;
     rdfs:comment "Tijdstip waarop de identificator werd uitgegeven."@nl;
     vann:usageNote " "@nl.
-<https://data.vlaanderen.be/ns/generiek#referentie> a rdfs:Property;
+generiek:referentie a rdfs:Property;
     rdfs:label "\n                            referentie\n                          "@nl;
     rdfs:comment "Referentie naar het ruimtelijk object (plaats of adres) dat gebruikt wordt als indirecte locatie aanduiding."@nl;
     vann:usageNote ""@nl.
@@ -655,23 +864,23 @@ schema:opens a rdfs:Property;
     rdfs:label "\n                            open\n                          "@nl;
     rdfs:comment "Openingsuur vd plaats of dienst op de opgegeven dag vd week."@nl;
     vann:usageNote " "@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#affiliatietype> a rdfs:Property;
+lokale-economie:affiliatietype a rdfs:Property;
     rdfs:label "\n                            affiliatietype\n                          "@nl;
     rdfs:comment "Type van affiliatie, i.e., verbondenheid met een moederorganisatie."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#bedrijfsgrootte> a rdfs:Property;
+lokale-economie:bedrijfsgrootte a rdfs:Property;
     rdfs:label "\n                            bedrijfsgrootte\n                          "@nl;
     rdfs:comment "Classificatie van de grootte van een organisatie volgens een bepaald kenmerk."@nl;
     vann:usageNote "Mogelijke kenmerken zijn omzet, aantal werknemers of een combinatie daarvan."@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#gezinstype> a rdfs:Property;
+lokale-economie:gezinstype a rdfs:Property;
     rdfs:label "\n                            gezinstype\n                          "@nl;
     rdfs:comment "Classificatie van de gezinssamenstelling van een persoon of groep van personen."@nl;
     vann:usageNote "Voorbeelden van gezinstypes zijn kerngezin, een-oudergezin, uitgebreid gezin, alleenwonende, ongehuwd samenwonenden, LAT, LTA, enz."@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#inkomensklasse> a rdfs:Property;
+lokale-economie:inkomensklasse a rdfs:Property;
     rdfs:label "\n                            inkomensklasse\n                          "@nl;
     rdfs:comment "Inkomensklasse van een persoon of groep van personen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#leeftijdsgroep> a rdfs:Property;
+lokale-economie:leeftijdsgroep a rdfs:Property;
     rdfs:label "\n                            leeftijdsgroep\n                          "@nl;
     rdfs:comment "Leeftijdsgroep van een persoon of groep van personen."@nl;
     vann:usageNote ""@nl.
@@ -679,7 +888,7 @@ prov:Location a rdfs:Property;
     rdfs:label "\n                            locatie\n                          "@nl;
     rdfs:comment "Woonplaats van een persoon of groep van personen."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/lokale-economie#onderwijsniveau> a rdfs:Property;
+lokale-economie:onderwijsniveau a rdfs:Property;
     rdfs:label "\n                            onderwijsniveau\n                          "@nl;
     rdfs:comment "Onderwijsniveau van een persoon of groep van personen."@nl;
     vann:usageNote ""@nl.
@@ -687,7 +896,7 @@ schemas:repeatCount a rdfs:Property;
     rdfs:label "\n                            aantalHerhalingen\n                          "@nl;
     rdfs:comment "Aantal keer dat het plaatsvindt."@nl;
     vann:usageNote "Bv 10 keer vanaf de startdatum."@nl.
-<https://data.vlaanderen.be/ns/generiek#duur> a rdfs:Property;
+generiek:duur a rdfs:Property;
     rdfs:label "\n                            duur\n                          "@nl;
     rdfs:comment "De tijdsduur van iets."@nl;
     vann:usageNote "Uit te drukken als een interval volgens iso 8601, bv P1D 1 dag, P2H twee uur..."@nl.
@@ -715,7 +924,7 @@ schemas:byMonth a rdfs:Property;
     rdfs:label "\n                            perMaand\n                          "@nl;
     rdfs:comment "Maanden van het jaar waarop het plaatsvindt."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/generiek#perSetpositie> a rdfs:Property;
+generiek:perSetpositie a rdfs:Property;
     rdfs:label "\n                            perSetpositie\n                          "@nl;
     rdfs:comment "Specificatie van de dag(en) binnen een periode waarop het plaatsvindt."@nl;
     vann:usageNote "Bv als iets maandelijks plaatsvindt op maandag om te zeggen dat het bv de eerste maandag is vd maand. Frequentie is dan maandelijks, perDag is Maandag en de perSetpositie is dan 1. Ook negatieve cijfers zijn mogelijk, bv -1 zou aangeven dat het op de laatste maandag vd maand plaatsvindt."@nl.
@@ -731,7 +940,7 @@ schemas:exceptDate a rdfs:Property;
     rdfs:label "\n                            uitzonderingsdatum\n                          "@nl;
     rdfs:comment "Datums waarop het uitzonderlijk niet plaatsvindt."@nl;
     vann:usageNote ""@nl.
-<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/#h2_sotd> vocab:role vocab:heading, vocab:heading.
 _:df_193_88 rdf:first _:df_193_1;
     rdf:rest _:df_193_89.
 _:df_193_89 rdf:first _:df_193_3;

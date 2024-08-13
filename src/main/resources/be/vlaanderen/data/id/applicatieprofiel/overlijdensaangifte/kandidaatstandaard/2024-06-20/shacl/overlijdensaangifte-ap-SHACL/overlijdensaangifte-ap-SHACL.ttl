@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -50,7 +259,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ApgarscoreShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ApgarscoreShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ApgarscoreShape/236818a46442d5839007629fc7515b884fd201ef>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ApgarscoreShape/106b57041a16b0390b2a577b11b3a5c27df426df>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ApgarscoreShape/96d701fe8b891dacb889ea9f11c635a1c5b59c9b>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Apgarscore>.
+    shacl:targetClass gezondheidstoestand:Apgarscore.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ApgarscoreShape/106b57041a16b0390b2a577b11b3a5c27df426df> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Apgarscore.score";
     shacl:description "Een score van 0 tot 10 waarbij 5 aspecten van de pasgeborene worden beoordeeld (hartslag, ademhaling, spiertonus, reflexen en huidskleur)."@nl;
     shacl:maxCount 1;
@@ -60,12 +269,12 @@
     shacl:description "De tijdsduur van de meting voor de Apgarscore."@nl;
     shacl:maxCount 1;
     shacl:name "periode"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#periode>.
+    shacl:path gezondheidstoestand:periode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ApgarscoreShape/236818a46442d5839007629fc7515b884fd201ef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Apgarscore.periode";
     shacl:class eu:PeriodOfTime;
     shacl:description "De tijdsduur van de meting voor de Apgarscore."@nl;
     shacl:name "periode"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#periode>.
+    shacl:path gezondheidstoestand:periode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ApgarscoreShape/96d701fe8b891dacb889ea9f11c635a1c5b59c9b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Apgarscore.score";
     shacl:class schemas:QuantitativeValue;
     shacl:description "Een score van 0 tot 10 waarbij 5 aspecten van de pasgeborene worden beoordeeld (hartslag, ademhaling, spiertonus, reflexen en huidskleur)."@nl;
@@ -74,19 +283,19 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ArtsShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ArtsShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ArtsShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ArtsShape/610f61a48987206523a8858cb32593d71acc26d4>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ArtsShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ArtsShape/4d871a8c64cd7b5c991f16b4602497c3cbd2a7a1>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Arts>.
+    shacl:targetClass gezondheidstoestand:Arts.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ArtsShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Arts.type";
     shacl:class skos:Concept;
     shacl:description "Het type Arts die betrokken is bij de MedischeObservatie."@nl;
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ArtsShape/4d871a8c64cd7b5c991f16b4602497c3cbd2a7a1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Arts.wordtgeobserveerddoor";
-    shacl:class <https://build.fhir.org/observation-definitions.html#Observation>;
+    shacl:class observation-definitions.html:Observation;
     shacl:description "Wie was verantwoordelijk voor het vaststellen van de waargenomen waarde als \"waar\"?"@nl;
     shacl:name "wordt geobserveerd door"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#wordtGeobserveerdDoor>.
+    shacl:path gezondheidstoestand:wordtGeobserveerdDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ArtsShape/610f61a48987206523a8858cb32593d71acc26d4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Arts.steltop";
-    shacl:class <https://www.hl7.org/fhir/diagnosticreport-definitions.html#DiagnosticReport>;
+    shacl:class diagnosticreport-definitions:DiagnosticReport;
     shacl:description "De Arts stelt een Medisch Verslag op."@nl;
     shacl:name "stelt op"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Arts.steltOp>.
@@ -96,7 +305,7 @@
     shacl:name "registratie"@nl;
     shacl:path <https://hl7.org/fhir/practitioner-definitions.html#Practitioner.identifier>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ArtsShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Arts.registratie";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een identificatie dat van toepassing is op deze persoon in deze rol."@nl;
     shacl:name "registratie"@nl;
     shacl:path <https://hl7.org/fhir/practitioner-definitions.html#Practitioner.identifier>.
@@ -106,7 +315,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#AssistentieBevallingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#AssistentieBevallingShape/7b1214a6c49c3c258d8f5be89b74af1c8281dcae>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#AssistentieBevallingShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#AssistentieBevallingShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#AssistentieBevalling>.
+    shacl:targetClass gezondheidstoestand:AssistentieBevalling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#AssistentieBevallingShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#AssistentieBevalling.type";
     shacl:description "De aard van de AssistentieBevalling."@nl;
     shacl:maxCount 1;
@@ -118,7 +327,7 @@
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#AssistentieBevallingShape/7b1214a6c49c3c258d8f5be89b74af1c8281dcae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#AssistentieBevalling.heeftassistentie";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand>;
+    shacl:class gezondheidstoestand:Bevallingstoestand;
     shacl:description "Tijdens de Bevalling is er ondersteuning van externe zorgverleners."@nl;
     shacl:name "heeft assistentie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#AssistentieBevalling.heeftAssistentie>.
@@ -127,11 +336,11 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BatchShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Batch>.
+    shacl:targetClass gezondheidstoestand:Batch.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingShape/0fa5ffd8ef9e4163522210d4e3b8a67063cd50e5>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingShape/7b1214a6c49c3c258d8f5be89b74af1c8281dcae>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingShape/186c7b6157736c68b9a3354d186e2c488ca15f37>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingShape/40150f5eaf26024dcdafec26be3f7154a99ca7e0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingShape/b8dd1d369ff06ce97c07fe6e8ac815ea7f0f8ad2>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling>.
+    shacl:targetClass gezondheidstoestand:Bevalling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingShape/0fa5ffd8ef9e4163522210d4e3b8a67063cd50e5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Bevalling.heeftassistentie";
     shacl:description "De Assistentie die bij de Bevalling van een Persoon hoort."@nl;
     shacl:maxCount 1;
@@ -143,24 +352,24 @@
     shacl:name "heeft bevallingstoestand"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling.heeftBevallingstoestand>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingShape/40150f5eaf26024dcdafec26be3f7154a99ca7e0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Bevalling.heeftbevallingstoestand";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand>;
+    shacl:class gezondheidstoestand:Bevallingstoestand;
     shacl:description "De Bevallingstoestand die bij de Bevalling hoort van een Persoon."@nl;
     shacl:name "heeft bevallingstoestand"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling.heeftBevallingstoestand>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingShape/7b1214a6c49c3c258d8f5be89b74af1c8281dcae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Bevalling.heeftassistentie";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#AssistentieBevalling>;
+    shacl:class gezondheidstoestand:AssistentieBevalling;
     shacl:description "De Assistentie die bij de Bevalling van een Persoon hoort."@nl;
     shacl:name "heeft assistentie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling.heeftAssistentie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingShape/b8dd1d369ff06ce97c07fe6e8ac815ea7f0f8ad2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Bevalling.wordtgevolgddoor";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap>;
+    shacl:class gezondheidstoestand:Zwangerschap;
     shacl:description "De Zwangerschap wordt gevolgd door een Bevalling."@nl;
     shacl:name "wordt gevolgd door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap.wordtGevolgdDoor>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/b6e29eac4e7895f0296c27c822ddef6d50fb11bb>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/704ee0195a0afb2d549efe0f62e516aa6caf25e5>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/cf0659b181214714131d327df6b8d8bc1265898a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/816256fbcdf1af6e39b120437abf1461d94bd175>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/bd60d739bfa3aaea23cb3c21577873d349726958>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/186c7b6157736c68b9a3354d186e2c488ca15f37>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/40150f5eaf26024dcdafec26be3f7154a99ca7e0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/77cfc82315c573005e6fd3c54d8d558d1602b64e>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/0b3fc435de1aaa7663af03e017b7794b2556086d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/a3ec91973b48d024188fdbede9dddcab30a0a976>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/bab794467f232db6863c9d7a9ced940b38e50c86>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/c30bc1379e3376e0907c26c72188670adc176e40>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/e1dfd1408f32620e08ccf8db384f19846e876b50>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/3f877b0a92af815ec5da1bfff48d4a05e4fa747e>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand>.
+    shacl:targetClass gezondheidstoestand:Bevallingstoestand.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/0b3fc435de1aaa7663af03e017b7794b2556086d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Bevallingstoestand.intrapartale";
     shacl:description "De periode tijdens de Bevalling, vanaf het begin van de actieve arbeid tot aan de Geboorte van de baby en de nageboorte."@nl;
     shacl:maxCount 1;
@@ -177,7 +386,7 @@
     shacl:name "wijze"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.wijze>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/40150f5eaf26024dcdafec26be3f7154a99ca7e0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Bevallingstoestand.heeftbevallingstoestand";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#AssistentieBevalling>;
+    shacl:class gezondheidstoestand:AssistentieBevalling;
     shacl:description "De Bevallingstoestand die bij de specifieke AssistentieBevalling hoort."@nl;
     shacl:name "heeft bevallingstoestand"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#AssistentieBevalling.heeftBevallingstoestand>.
@@ -227,7 +436,7 @@
     shacl:name "gewicht persoon bevalling"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.gewichtPersoonBevalling>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BevallingstoestandShape/e1dfd1408f32620e08ccf8db384f19846e876b50> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Bevallingstoestand.nutritie";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Borstvoeding>;
+    shacl:class gezondheidstoestand:Borstvoeding;
     shacl:description "Geconsumeerd voedsel- of vloeistofproduct of -item."@nl;
     shacl:name "nutritie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.nutritie>.
@@ -284,7 +493,7 @@
     shacl:name "taal"@nl;
     shacl:path dcterms:language.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BewijsShape/b9053f64e04e62e94dd9cae9c69c4012ca7b9cf9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Bewijs.referentie";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Unieke verwijzing naar het Bewijs."@nl;
     shacl:name "referentie"@nl;
     shacl:path dcterms:identifier.
@@ -303,21 +512,21 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#BorstvoedingShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Borstvoeding>.
+    shacl:targetClass gezondheidstoestand:Borstvoeding.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ConceptieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ConceptieShape/02a4631eb0fee2f8446272f7a48e8f950fde9738>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ConceptieShape/25d3ef1fabb95c4cb6166a2c514366de1993c98b>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ConceptieShape/4a5b76b259d73c43064d402a1772f047dee56241>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ConceptieShape/5b2c8c8d4d81ac0e4a86a09c71d7b2a77bdc9e9f>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Conceptie>.
+    shacl:targetClass gezondheidstoestand:Conceptie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ConceptieShape/02a4631eb0fee2f8446272f7a48e8f950fde9738> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Conceptie.doetontstaan";
     shacl:description "Een Conceptie doet een of meerdere Foetussen ontstaan."@nl;
     shacl:maxCount 1;
     shacl:name "doet ontstaan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#doetOntstaan>.
+    shacl:path gezondheidstoestand:doetOntstaan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ConceptieShape/25d3ef1fabb95c4cb6166a2c514366de1993c98b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Conceptie.doetontstaan";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Foetus>;
+    shacl:class gezondheidstoestand:Foetus;
     shacl:description "Een Conceptie doet een of meerdere Foetussen ontstaan."@nl;
     shacl:name "doet ontstaan"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#doetOntstaan>.
+    shacl:path gezondheidstoestand:doetOntstaan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ConceptieShape/4a5b76b259d73c43064d402a1772f047dee56241> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Conceptie.techniek";
     shacl:class skos:Concept;
     shacl:description "Methode en/of medische interventie om de Zwangerschap te bevorderen."@nl;
@@ -333,17 +542,17 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#CrematieShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Crematie>.
+    shacl:targetClass overlijdensaangifte:Crematie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodgeboorteShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodgeboorte>.
+    shacl:targetClass overlijdensaangifte:Doodgeboorte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodgeboorteTypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/73d09b4a2f05066b3d7f4ddebac064c8ecc9c3e9>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/8f8d653e304153b908ef8c4ace8348d1e837fb08>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/137bd92b46054fa7bdb0825166fb27bcf604cf82>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/6e2f89288aa4a98d7db756c151fd8b0c041e198a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/18f7c25c9ae5ecf1b9fbd5acb4e09dee3d1b270c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/1aa51d9dc47f034c13d3ec834ae4328b901b7c7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/c10959ac5780de4c7ee9a8b144b95b3c85251b4d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/d4a3d1b7aff1041028c2afbbe7f49bda7924cf89>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak>.
+    shacl:targetClass overlijdensaangifte:Doodsoorzaak.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/137bd92b46054fa7bdb0825166fb27bcf604cf82> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Doodsoorzaak.gelinktaan";
     shacl:description "De geassocieerde oorzaak gelinkt aan een Doodsoorzaak."@nl;
     shacl:maxCount 1;
@@ -360,7 +569,7 @@
     shacl:name "hoofdoorzaak"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak.hoofdoorzaak>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/6e2f89288aa4a98d7db756c151fd8b0c041e198a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Doodsoorzaak.gelinktaan";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#GeassocieerdeOorzaak>;
+    shacl:class overlijdensaangifte:GeassocieerdeOorzaak;
     shacl:description "De geassocieerde oorzaak gelinkt aan een Doodsoorzaak."@nl;
     shacl:name "gelinkt aan"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak.gelinktAan>.
@@ -375,7 +584,7 @@
     shacl:name "duur"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak.duur>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#DoodsoorzaakShape/c10959ac5780de4c7ee9a8b144b95b3c85251b4d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Doodsoorzaak.volgtop";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak>;
+    shacl:class overlijdensaangifte:Doodsoorzaak;
     shacl:description "De Doodsoorzaak die volgt op een andere Doodsoorzaak."@nl;
     shacl:name "volgt op"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak.volgtOp>.
@@ -390,14 +599,14 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape/cd244c6c225151b171f7f621fea6d00264007704>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape/4a54c6182ea8bf17feaa090801e617a386a82fa0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape/75731af1130bd4f9db92d0af9102fa6a4e1e5119>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape/951ad311ef107d4ddf2ba6cdf59f8df355e23dea>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape/2e9565fa31a78d23d2554609c79de7d1f7df003f>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape/60a0d39dc3359c0f85466a71ab6c2b6e8e219578>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#FoetaalOverlijden>.
+    shacl:targetClass overlijdensaangifte:FoetaalOverlijden.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape/2e9565fa31a78d23d2554609c79de7d1f7df003f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijden.verwerking";
     shacl:description "De Stoffelijke Restverwerking van de overleden Foetus."@nl;
     shacl:maxCount 1;
     shacl:name "verwerking"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#FoetaalOverlijden.verwerking>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape/4a54c6182ea8bf17feaa090801e617a386a82fa0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijden.gedocumenteerddoor";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#OverlijdensfhandelingOutput>;
+    shacl:class overlijdensaangifte:OverlijdensfhandelingOutput;
     shacl:description "De documentatie van het Foetaal Overlijden."@nl;
     shacl:name "gedocumenteerd door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#FoetaalOverlijden.gedocumenteerdDoor>.
@@ -412,12 +621,12 @@
     shacl:name "gedocumenteerd door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#FoetaalOverlijden.gedocumenteerdDoor>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape/951ad311ef107d4ddf2ba6cdf59f8df355e23dea> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijden.vaststelling";
-    shacl:class <https://build.fhir.org/observation-definitions.html#Observation>;
+    shacl:class observation-definitions.html:Observation;
     shacl:description "De Medische Vaststelling van het Foetaal Overlijden door een Arts."@nl;
     shacl:name "vaststelling"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#FoetaalOverlijden.vaststelling>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijdenShape/cd244c6c225151b171f7f621fea6d00264007704> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetaalOverlijden.doodsoorzaak";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak>;
+    shacl:class overlijdensaangifte:Doodsoorzaak;
     shacl:description "Doodsoorzaak die heeft bijgedragen aan het Overlijden van een Foetus."@nl;
     shacl:name "doodsoorzaak"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#FoetaalOverlijden.hoofdoorzaak>.
@@ -427,7 +636,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/d123d121d87ae0030440d7c91c4a5928c58d887e>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/d3aadc6f54cf02a2f12c14f75041f2b77369c9c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/699c9186095ff849421fdd82c15f8eb00bceaf4a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/df8af188a6828ec8c8868d3e397809ba1071d0ff>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/41ef3c8e37be2bc3043b98acf27707173fec9f7c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/78c88eef20a53ff8033ad7d174c8c5aea3d8fc48>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/7ccf90019e20c20f1c61e332b76c7d519d900762>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/1356014cde9fd989a4bdabe37ca7e08150f7fcbc>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/de2556bcf774b315a1eecd4473e88cb2beb5cf3b>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Foetus>.
+    shacl:targetClass gezondheidstoestand:Foetus.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/1356014cde9fd989a4bdabe37ca7e08150f7fcbc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Foetus.wordt";
     shacl:description "Een Foetus wordt een Persoon."@nl;
     shacl:maxCount 1;
@@ -449,7 +658,7 @@
     shacl:name "leeftijd"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Foetus.leeftijd>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/7ccf90019e20c20f1c61e332b76c7d519d900762> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Foetus.ontstaatdoor";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Conceptie>;
+    shacl:class gezondheidstoestand:Conceptie;
     shacl:description "Een Foetus ontstaat door Conceptie."@nl;
     shacl:name "ontstaat door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Conceptie.onststaatDoor>.
@@ -459,7 +668,7 @@
     shacl:name "deel van"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Foetus.deelVan>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#FoetusShape/d3aadc6f54cf02a2f12c14f75041f2b77369c9c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Foetus.deelvan";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap>;
+    shacl:class gezondheidstoestand:Zwangerschap;
     shacl:description "Een Foetus is deel van de Zwangerschap."@nl;
     shacl:name "deel van"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Foetus.deelVan>.
@@ -476,7 +685,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaakShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaakShape/73d09b4a2f05066b3d7f4ddebac064c8ecc9c3e9>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaakShape/8f8d653e304153b908ef8c4ace8348d1e837fb08>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaakShape/137bd92b46054fa7bdb0825166fb27bcf604cf82>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaakShape/6e2f89288aa4a98d7db756c151fd8b0c041e198a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaakShape/18f7c25c9ae5ecf1b9fbd5acb4e09dee3d1b270c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaakShape/1aa51d9dc47f034c13d3ec834ae4328b901b7c7d>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#GeassocieerdeOorzaak>.
+    shacl:targetClass overlijdensaangifte:GeassocieerdeOorzaak.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaakShape/137bd92b46054fa7bdb0825166fb27bcf604cf82> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaak.gelinktaan";
     shacl:description "De Geassocieerde oorzaak gelinkt aan een oorzaak."@nl;
     shacl:maxCount 1;
@@ -493,7 +702,7 @@
     shacl:name "hoofdoorzaak"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak.hoofdoorzaak>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaakShape/6e2f89288aa4a98d7db756c151fd8b0c041e198a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeassocieerdeOorzaak.gelinktaan";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak>;
+    shacl:class overlijdensaangifte:Doodsoorzaak;
     shacl:description "De Geassocieerde oorzaak gelinkt aan een oorzaak."@nl;
     shacl:name "gelinkt aan"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#GeassocieerdeOorzaak.gelinktAan>.
@@ -589,21 +798,21 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboorteShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboorteShape/b7aef32a565054a6394cae32cea4d660bc05f6a0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboorteShape/fc94a2c9652bb92f3b27f79081a65708d230b449>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Geboorte>.
+    shacl:targetClass persoon:Geboorte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboorteShape/b7aef32a565054a6394cae32cea4d660bc05f6a0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Geboorte.heefttoestand";
     shacl:description "De Geboortetoestand die bij de Geboorte van een Persoon hoort."@nl;
     shacl:maxCount 1;
     shacl:name "heeft toestand"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Geboorte.heeftToestand>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboorteShape/fc94a2c9652bb92f3b27f79081a65708d230b449> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Geboorte.heefttoestand";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Geboortetoestand>;
+    shacl:class gezondheidstoestand:Geboortetoestand;
     shacl:description "De Geboortetoestand die bij de Geboorte van een Persoon hoort."@nl;
     shacl:name "heeft toestand"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Geboorte.heeftToestand>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboortetoestandShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboortetoestandShape/3119e3af4ab6cd7af83f14a6127c7ac7bf9fd5e5>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboortetoestandShape/7c4ed22ef05d716cbaf6886207b001975776da86>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboortetoestandShape/0ca907c18ca5aff9af9d75f1168c9415a2fe46d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboortetoestandShape/e1dfd1408f32620e08ccf8db384f19846e876b50>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboortetoestandShape/2c72cc432f64d66420f06f4c24f8bb02d8eec39f>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboortetoestandShape/c13fa550a0abc45ecd5ca2d9fa4919ae360d7f58>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Geboortetoestand>.
+    shacl:targetClass gezondheidstoestand:Geboortetoestand.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboortetoestandShape/0ca907c18ca5aff9af9d75f1168c9415a2fe46d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Geboortetoestand.nutritie";
     shacl:description "De Voedingsinname die wordt toegediend na de Geboorte."@nl;
     shacl:maxCount 1;
@@ -615,7 +824,7 @@
     shacl:name "rang"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Geboortetoestand.rang>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboortetoestandShape/3119e3af4ab6cd7af83f14a6127c7ac7bf9fd5e5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Geboortetoestand.apgarscore";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Apgarscore>;
+    shacl:class gezondheidstoestand:Apgarscore;
     shacl:description "Snelle beoordeling die onmiddellijk na de geboorte wordt uitgevoerd om de fysieke conditie van een pasgeborene te evalueren.?"@nl;
     shacl:name "apgarscore"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Geboortetoestand.apgarscore>.
@@ -628,25 +837,25 @@
     shacl:class skos:Concept;
     shacl:description "Gesimplificeerde informatie rond de status van de Zwangerschapstoestand."@nl;
     shacl:name "status zwangerschap"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#statusZwangerschap>.
+    shacl:path gezondheidstoestand:statusZwangerschap.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeboortetoestandShape/e1dfd1408f32620e08ccf8db384f19846e876b50> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Geboortetoestand.nutritie";
-    shacl:class <https://www.hl7.org/fhir/nutritionintake-definitions.html#NutritionIntake>;
+    shacl:class nutritionintake-definitions.html:NutritionIntake;
     shacl:description "De Voedingsinname die wordt toegediend na de Geboorte."@nl;
     shacl:name "nutritie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Geboortetoestand.nutritie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeregistreerdPersoonShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeregistreerdPersoonShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon>.
+    shacl:targetClass persoon:GeregistreerdPersoon.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeregistreerdPersoonShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GeregistreerdPersoon.registratie";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificatiecode vd persoon ih register."@nl;
     shacl:name "registratie"@nl;
-    shacl:path <http://www.w3.org/ns/adms#Identifier>.
+    shacl:path adms:Identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/db6b21e7ad3887546c4b8f9d57051796f9c84988>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/f838bb70b5c0c6bd9ba81d911d58765441ff9051>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/699c9186095ff849421fdd82c15f8eb00bceaf4a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/df8af188a6828ec8c8868d3e397809ba1071d0ff>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/7544b0373cc1769b5a6ed502b6b085ded42f46e8>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/f4c0df2ffe7e21c62e2c7f5f322c4c64829315d4>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/fddc7561fafe96880d4adf2302b6a29e3f2a682c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/e7d08a9cdf366da89fd17659b69d1bec94c946f2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/192563b86cda3e135f7a5d4103f42579f52b5e8d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/c142dda4a8e585cf9c2495aa62068fd13a263b46>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/f6aaceb4c1082a0bcc364987a179bab52d15276f>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/ca64e7f0cc2ba4cdf6c709cb10020372df2a88f8>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand>.
+    shacl:targetClass gezondheidstoestand:Gezondheidstoestand.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/192563b86cda3e135f7a5d4103f42579f52b5e8d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Gezondheidstoestand.toestandvan";
     shacl:class person:Person;
     shacl:description "De Persoon heeft een Gezondheidstoestand"@nl;
@@ -663,7 +872,7 @@
     shacl:name "heeft gebeurtenis"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand.heeftGebeurtenis>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/c142dda4a8e585cf9c2495aa62068fd13a263b46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Gezondheidstoestand.vastgestelddoor";
-    shacl:class <https://build.fhir.org/observation-definitions.html#Observation>;
+    shacl:class observation-definitions.html:Observation;
     shacl:description "De Medische Observatie stelt een Gezondheidstoestand vast."@nl;
     shacl:name "vastgesteld door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeObservatie.vastgesteldDoor>.
@@ -693,12 +902,12 @@
     shacl:name "lengte"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeToestand.lengte>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/f6aaceb4c1082a0bcc364987a179bab52d15276f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Gezondheidstoestand.wordtgevoeddoor";
-    shacl:class <https://www.hl7.org/fhir/diagnosticreport-definitions.html#DiagnosticReport>;
+    shacl:class diagnosticreport-definitions:DiagnosticReport;
     shacl:description "Een Medisch Toestand wordt gevoed door de Medische Verslagen van een Persoon."@nl;
     shacl:name "wordt gevoed door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeToestand.wordtGevoedDoor>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#GezondheidstoestandShape/f838bb70b5c0c6bd9ba81d911d58765441ff9051> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Gezondheidstoestand.gebruiktemedicatie";
-    shacl:class <https://hl7.org/fhir/medication-definitions.html#Medication>;
+    shacl:class medication-definitions.html:Medication;
     shacl:description "De Medicatie die wordt toegediend aan een Persoon."@nl;
     shacl:name "gebruikte medicatie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand.gebruikteMedicatie>.
@@ -715,19 +924,19 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#IngredientShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Ingredient>.
+    shacl:targetClass gezondheidstoestand:Ingredient.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#InkomensniveauShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#InwonerschapShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#InwonerschapShape/6d9e7e6e6136a021784a44245506f099660acd7b>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Inwonerschap>.
+    shacl:targetClass persoon:Inwonerschap.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#InwonerschapShape/6d9e7e6e6136a021784a44245506f099660acd7b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Inwonerschap.heeftverblijfplaats";
-    shacl:class <https://data.vlaanderen.be/ns/persoon#Verblijfplaats>;
+    shacl:class persoon:Verblijfplaats;
     shacl:description "Plaats waar een persoon verblijft."@nl;
     shacl:name "heeft verblijfplaats"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#heeftVerblijfplaats>.
+    shacl:path persoon:heeftVerblijfplaats.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#KwantitatieveWaardeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#KwantitatieveWaardeShape/72c15e74c4d0cb3548d621c127b1090e77f8481e>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#KwantitatieveWaardeShape/8a7cf46c8506736f2b7d04fe32bd522933417037>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#KwantitatieveWaardeShape/c20821e3eed03259199b041e55fb18a8fb877fb8>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#KwantitatieveWaardeShape/eb560a8d79aaa5350129cd0002f9a6a1bd1a4de0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#KwantitatieveWaardeShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#KwantitatieveWaardeShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#KwantitatieveWaardeShape/ca4892872b345b4fe994128b7c31877979275399>;
@@ -763,7 +972,7 @@
     shacl:name "waarde"@nl;
     shacl:path schemas:value.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#KwantitatieveWaardeShape/eb560a8d79aaa5350129cd0002f9a6a1bd1a4de0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#KwantitatieveWaarde.eenheidcode";
-    shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+    shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
     shacl:name "eenheidcode"@nl;
     shacl:path schemas:unitCode.
@@ -796,9 +1005,9 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/479988cf38799a83b12f7590e8ea9f15009060f8>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/986763ef6ba8c6badfbe72d6d65216ba029b8990>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/16e8860ab36d4118ac789d5ad95bea45c9befdd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/4dda78f023870bea875c7dd12bc7f3988692eff3>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/c79a7982721a94d841f049bc00569030a762c0a9>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/3f0c62d064801a14901bd15a679f9d43aee48651>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/824d5f4ab7b2af31bac06825b5a0fa5e1a61c4a2>;
-    shacl:targetClass <https://hl7.org/fhir/medication-definitions.html#Medication>.
+    shacl:targetClass medication-definitions.html:Medication.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Medicatie.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een code (of set van codes) die dit medicijn specificeert, of een tekstuele beschrijving als er geen code beschikbaar is."@nl;
     shacl:name "identificator"@nl;
     shacl:path <https://hl7.org/fhir/medication-definitions.html#Medication.identifier>.
@@ -828,7 +1037,7 @@
     shacl:name "totale volume"@nl;
     shacl:path <https://hl7.org/fhir/medication-definitions.html#Medication.totalVolume>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/986763ef6ba8c6badfbe72d6d65216ba029b8990> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Medicatie.batch";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Batch>;
+    shacl:class gezondheidstoestand:Batch;
     shacl:description "Details over verpakte Medicatie."@nl;
     shacl:name "batch"@nl;
     shacl:path <https://hl7.org/fhir/medication-definitions.html#Medication.batch>.
@@ -838,14 +1047,14 @@
     shacl:name "identificator"@nl;
     shacl:path <https://hl7.org/fhir/medication-definitions.html#Medication.identifier>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedicatieShape/c79a7982721a94d841f049bc00569030a762c0a9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Medicatie.ingredi%C3%ABnt";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Ingredient>;
+    shacl:class gezondheidstoestand:Ingredient;
     shacl:description "Identificeert een specifiek bestanddeel van belang in het product."@nl;
     shacl:name "ingrediënt"@nl;
     shacl:path <https://hl7.org/fhir/medication-definitions.html#Medication.ingredient>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagOverlijdenShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagOverlijdenShape/42c229648b457cc1af4f0ecc79cd2070a295345a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagOverlijdenShape/b94c0ffc92e105f2fe958eae739ea86a8996a971>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagOverlijdenShape/e7d08a9cdf366da89fd17659b69d1bec94c946f2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagOverlijdenShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagOverlijdenShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#MedischVerslagOverlijden>.
+    shacl:targetClass overlijdensaangifte:MedischVerslagOverlijden.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagOverlijdenShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagOverlijden.type";
     shacl:description "Aard van de het Medisch Verslag Overlijden."@nl;
     shacl:maxCount 1;
@@ -865,7 +1074,7 @@
     shacl:class skos:Concept;
     shacl:description "De maatregel die moet genomen worden als gevolg van het risico."@nl;
     shacl:name "maatregel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#MedischVerslagOverlijden>.
+    shacl:path overlijdensaangifte:MedischVerslagOverlijden.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagOverlijdenShape/e7d08a9cdf366da89fd17659b69d1bec94c946f2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagOverlijden.risico";
     shacl:class skos:Concept;
     shacl:description "Risico's gebonden aan de verdere verwerking van het lichaam van de overleden Persoon, aangehaald door de Arts."@nl;
@@ -877,7 +1086,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagShape/af808f98b47bf7b4a9a179ac933d07385d6d5e0e>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagShape/6f334f71b20d10a1e3dedd8e93fbed26e8774fb5>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagShape/0f6cb927d0d26f3819cba3fb903a075cd426180d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagShape/392b26276032d0335e722b48d6ff5a9ea08f4cb7>;
-    shacl:targetClass <https://www.hl7.org/fhir/diagnosticreport-definitions.html#DiagnosticReport>.
+    shacl:targetClass diagnosticreport-definitions:DiagnosticReport.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagShape/0f6cb927d0d26f3819cba3fb903a075cd426180d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslag.status";
     shacl:class skos:Concept;
     shacl:description "De status van het Medisch Verslag."@nl;
@@ -889,26 +1098,26 @@
     shacl:name "status"@nl;
     shacl:path <https://hl7.org/fhir/diagnosticreport-definitions.html#DiagnosticReport.status>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagShape/392b26276032d0335e722b48d6ff5a9ea08f4cb7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslag.voedt";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand>;
+    shacl:class gezondheidstoestand:Gezondheidstoestand;
     shacl:description "De Medische Toestand van een Persoon voedt een Medisch Verslag van een Persoon."@nl;
     shacl:name "voedt"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeToestand.aandoening>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagShape/6f334f71b20d10a1e3dedd8e93fbed26e8774fb5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslag.opgestelddoor";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Arts>;
+    shacl:class gezondheidstoestand:Arts;
     shacl:description "Het Medisch Verslag wordt opgesteld door een Arts."@nl;
     shacl:name "opgesteld door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#MedischVerslag.opgesteldDoor>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslagShape/af808f98b47bf7b4a9a179ac933d07385d6d5e0e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischVerslag.documenteert";
-    shacl:class <https://build.fhir.org/observation-definitions.html#Observation>;
+    shacl:class observation-definitions.html:Observation;
     shacl:description "De neerslag in de vorm van een MedischVerslag die de MedischeObservatie documenteert."@nl;
     shacl:name "documenteert"@nl;
     shacl:path <https://hl7.org/fhir/observation-definitions.html#Observation.issued>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/a2831f9b0a7f7c43de54657c7f8d992c5e10aad4>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/1ee700000ed015b4ef670b8248f8ccf26d3630a2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/66be64223b8ce8e54dab27b10c939c4c28f48996>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/4a54c6182ea8bf17feaa090801e617a386a82fa0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/e2017f72421063cd9ff494011ec78f35f9632a4a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/0f6cb927d0d26f3819cba3fb903a075cd426180d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/9817fade0fae8557bacb6c079c233ffb8a68cffa>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/bc6a7ad56abf21a084343dd3ced5d926576a2632>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/82fd69a511efb92843554d18c9838d265d796d6f>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/c911a4c8d1bb6e9ea1f13e740eda858d44a8e293>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/1ff5dd5ef5fccc64165b38356d71a0cf46f757c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/762f5094731b213d88d8a29332598749ea0eaa46>;
-    shacl:targetClass <https://build.fhir.org/observation-definitions.html#Observation>.
+    shacl:targetClass observation-definitions.html:Observation.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatie.waarde";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Observatiewaarde>;
+    shacl:class gezondheidstoestand:Observatiewaarde;
     shacl:description "\nDe informatie die is vastgesteld als gevolg van de observatie, indien de informatie een eenvoudige waarde heeft."@nl;
     shacl:name "waarde"@nl;
     shacl:path <https://hl7.org/fhir/observation-definitions.html#Observation.value_x_>.
@@ -923,7 +1132,7 @@
     shacl:name "effectief tijdstip"@nl;
     shacl:path <https://hl7.org/fhir/observation-definitions.html#Observation.effective>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/1ff5dd5ef5fccc64165b38356d71a0cf46f757c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatie.vastgesteld";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand>;
+    shacl:class gezondheidstoestand:Gezondheidstoestand;
     shacl:description "TODO"@nl;
     shacl:name "vastgesteld"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand.vastgesteld>.
@@ -933,7 +1142,7 @@
     shacl:name "status"@nl;
     shacl:path <https://hl7.org/fhir/observation-definitions.html#Observation.status>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/4a54c6182ea8bf17feaa090801e617a386a82fa0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatie.gedocumenteerddoor";
-    shacl:class <https://www.hl7.org/fhir/diagnosticreport-definitions.html#DiagnosticReport>;
+    shacl:class diagnosticreport-definitions:DiagnosticReport;
     shacl:description "Een Medisch Verslag documenteert één of meerdere Mediche Observaties."@nl;
     shacl:name "gedocumenteerd door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeObservatie.gedocumenteerdDoor>.
@@ -968,12 +1177,12 @@
     shacl:name "uitgevoerd op"@nl;
     shacl:path <https://hl7.org/fhir/observation-definitions.html#Observation.subject>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/c911a4c8d1bb6e9ea1f13e740eda858d44a8e293> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatie.uitvoerder";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Arts>;
+    shacl:class gezondheidstoestand:Arts;
     shacl:description "Wie was verantwoordelijk voor het vaststellen van de waargenomen waarde als \"waar\"?"@nl;
     shacl:name "uitvoerder"@nl;
     shacl:path <https://hl7.org/fhir/observation-definitions.html#Observation.performer>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatieShape/e2017f72421063cd9ff494011ec78f35f9632a4a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#MedischeObservatie.identifier";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Een unieke identificator toegewezen aan deze observatie."@nl;
     shacl:name "identifier"@nl;
     shacl:path <https://hl7.org/fhir/observation-definitions.html#Observation.identifier>.
@@ -982,7 +1191,7 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#NatuurlijkeEntiteitShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#NatuurlijkeEntiteit>.
+    shacl:targetClass gezondheidstoestand:NatuurlijkeEntiteit.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ObservatieTypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
@@ -991,16 +1200,16 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ObservatiewaardeShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Observatiewaarde>.
+    shacl:targetClass gezondheidstoestand:Observatiewaarde.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OnderwijsniveauShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OngevalShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OngevalShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OngevalShape/5b9a64449ee4deb9bc5a13a9051cffcae41ed532>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OngevalShape/2d91d8c93c6957dc9c57c48a5299b3e9dec500af>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OngevalShape/dd512feda8788998732ea8f88987f5d33f12b431>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Ongeval>.
+    shacl:targetClass overlijdensaangifte:Ongeval.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OngevalShape/2d91d8c93c6957dc9c57c48a5299b3e9dec500af> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Ongeval.veroorzaaktdoor";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Overlijdenstoestand>;
+    shacl:class overlijdensaangifte:Overlijdenstoestand;
     shacl:description "De Overlijdenstoestand kan veroorzaakt worden door een Ongeval."@nl;
     shacl:name "veroorzaakt door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Overlijdenstoestand.veroorzaaktDoor>.
@@ -1021,7 +1230,7 @@
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Overlijdenstoestand.veroorzaaktDoor>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OrgaandonatieShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Orgaandonatie>.
+    shacl:targetClass overlijdensaangifte:Orgaandonatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OutputShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OutputShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OutputShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OutputShape/5bfc49675eef06366e6309009f937f9d904ac377>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OutputShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OutputShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OutputShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OutputShape/322371a77364a50f049d46180f6192532eea26dc>;
@@ -1069,11 +1278,11 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Overlijden>.
+    shacl:targetClass persoon:Overlijden.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdensafhandelingDienstShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdensafhandelingDienstShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdensafhandelingDienstShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#OverlijdensafhandelingDienst>.
+    shacl:targetClass overlijdensaangifte:OverlijdensafhandelingDienst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdensafhandelingDienstShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdensafhandelingDienst.type";
     shacl:description "Aard van de output."@nl;
     shacl:maxCount 1;
@@ -1087,7 +1296,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdensfhandelingOutputShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdensfhandelingOutputShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#OverlijdensfhandelingOutput>.
+    shacl:targetClass overlijdensaangifte:OverlijdensfhandelingOutput.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdensfhandelingOutputShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdensafhandelingOutput.type";
     shacl:class skos:Concept;
     shacl:description "De aard van de OverlijdensafhandelingOutput."@nl;
@@ -1096,7 +1305,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenstoestandShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenstoestandShape/0df9776a9a4c0c10103b8029e9136b95ac4a4dd5>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenstoestandShape/40e68525b4aa4802ed9c5325aa41aea2cac8e70b>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenstoestandShape/891e46e83bd830958cd1e7dc5dbf22e56981638b>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenstoestandShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenstoestandShape/cd244c6c225151b171f7f621fea6d00264007704>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenstoestandShape/b43939a37c2b88a3e493f245d3493f7ece3ef220>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Overlijdenstoestand>.
+    shacl:targetClass overlijdensaangifte:Overlijdenstoestand.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenstoestandShape/0df9776a9a4c0c10103b8029e9136b95ac4a4dd5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Overlijdenstoestand.aard";
     shacl:description "Specifieke omstandigheden die hebben geleid tot het overlijden van een Persoon."@nl;
     shacl:minCount 1;
@@ -1118,12 +1327,12 @@
     shacl:name "aard"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Overlijdenstoestand.aard>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenstoestandShape/b43939a37c2b88a3e493f245d3493f7ece3ef220> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Overlijdenstoestand.veroorzaakt";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Ongeval>;
+    shacl:class overlijdensaangifte:Ongeval;
     shacl:description "Het ongeval veroorzaakt de Overlijdenstoestand."@nl;
     shacl:name "veroorzaakt"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Ongeval.veroorzaakt>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#OverlijdenstoestandShape/cd244c6c225151b171f7f621fea6d00264007704> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Overlijdenstoestand.doodsoorzaak";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak>;
+    shacl:class overlijdensaangifte:Doodsoorzaak;
     shacl:description "Specifieke ziekte, aandoening, verwonding of gebeurtenis die direct heeft geleid tot het Overlijden van een Persoon."@nl;
     shacl:name "doodsoorzaak"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Overlijdenstoestand.doodsoorzaak>.
@@ -1180,20 +1389,20 @@
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/ccc60f000e8255577f863856ca86c69a40f97951>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/1fc3167d1e703ceca25826f7b5a0078b3a2e876e>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/f72b0b73e970130fa1feea502a497e8e5e3ddbc1>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/c5bfbb225cd64521e192d2c8d5933f05b242312d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/c99a35822881662239b338e25b452ea57c6e15bc>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/6d8296a4e73c1c1d9218ff12f45dfd45d4557849>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/db8da67ad082417fefd1e4860015e74060924280>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/661cca0a5bd514c9ce9daff17f07ec90baef0972>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/fd9de3e456668ac246c6e059df34887e5214d488>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/2854b2fadb34d958c43301d98752608664b9e616>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/5d14d2606b1975c005d2e308dadda5b7d750309a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/50fcbe641e0beebe581cd8156751da59b81d14a2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/dccbaf8b9ca123087f5faa1ded7e6e69d388fea7>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/3f4119c110750ce137c6690c42ac9dc0d20844b9>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/6b986cf39aa829e44afcf7d0eac2b9c40fc2012a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/aab7e9edc336b572957807606008a7f9d22ecffa>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/0d876a2166a7d58ac0e81fd10b6bfea99e826517>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/3b7b6c2197d6f31d77af520da347aa335716547c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/11ccf90872a918f73f8729adb627e93ebbbde26c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/1e4e2f5038d888e3a646b12fbb0c7c590f470f13>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/8efbb64adfdd4ab14a02f02bdceddcac75b07cfc>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/80c5b978df69a6665fb1add2edfb91de450fa666>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/cac8dfc81a79ac32329e1394edc42d7f16461eb0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/cba0084dd610b69c432bb492bc3f970a76260160>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/fdd871a750ca20e71277d83120117d6acd9aa0fd>;
     shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Persoonsrelatie.persoon.source>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/0d876a2166a7d58ac0e81fd10b6bfea99e826517> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.heeftgezondheidstoestand";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand>;
+    shacl:class gezondheidstoestand:Gezondheidstoestand;
     shacl:description "De Persoon heeft een Gezondheidstoestand"@nl;
     shacl:name "heeft gezondheidstoestand"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand.heeftMedischeToestand>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/11ccf90872a918f73f8729adb627e93ebbbde26c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.heeftoverlijden";
-    shacl:class <https://data.vlaanderen.be/ns/persoon#Overlijden>;
+    shacl:class persoon:Overlijden;
     shacl:description "Verwijst naar de overlijdensgegevens vd persoon."@nl;
     shacl:name "heeft overlijden"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#heeftOverlijden>.
+    shacl:path persoon:heeftOverlijden.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/1e4e2f5038d888e3a646b12fbb0c7c590f470f13> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.heeftoverlijden";
     shacl:description "Verwijst naar de overlijdensgegevens vd persoon."@nl;
     shacl:maxCount 1;
     shacl:name "heeft overlijden"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#heeftOverlijden>.
+    shacl:path persoon:heeftOverlijden.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/1fc3167d1e703ceca25826f7b5a0078b3a2e876e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.contactpunt";
     shacl:description "Informatie zoals email, telefoon... die toelaat de Persoon te contacteren."@nl;
     shacl:maxCount 1;
@@ -1205,12 +1414,12 @@
     shacl:name "gegeven naam"@nl;
     shacl:path foaf:givenName.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/3b7b6c2197d6f31d77af520da347aa335716547c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.heeftinwonerschap";
-    shacl:class <https://data.vlaanderen.be/ns/persoon#Inwonerschap>;
+    shacl:class persoon:Inwonerschap;
     shacl:description "Inwonerschap vd persoon."@nl;
     shacl:name "heeft inwonerschap"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#heeftInwonerschap>.
+    shacl:path persoon:heeftInwonerschap.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/3f4119c110750ce137c6690c42ac9dc0d20844b9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.heeftbevalling";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling>;
+    shacl:class gezondheidstoestand:Bevalling;
     shacl:description "Verwijst naar de bevallingsgegevens van de Persoon."@nl;
     shacl:name "heeft bevalling"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling.heeftBevalling>.
@@ -1218,7 +1427,7 @@
     shacl:description "Het feit of de persoon een man of een vrouw is."@nl;
     shacl:maxCount 1;
     shacl:name "geslacht"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+    shacl:path persoon:geslacht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/5d14d2606b1975c005d2e308dadda5b7d750309a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.gegevennaam";
     shacl:description "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."@nl;
     shacl:minCount 1;
@@ -1228,19 +1437,19 @@
     shacl:datatype xsd:string;
     shacl:description "Belangrijkste vd voornamen ve persoon."@nl;
     shacl:name "gebruikte voornaam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>.
+    shacl:path persoon:gebruikteVoornaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/6b986cf39aa829e44afcf7d0eac2b9c40fc2012a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.heeftgeboorte";
-    shacl:class <https://data.vlaanderen.be/ns/persoon#Geboorte>;
+    shacl:class persoon:Geboorte;
     shacl:description "Verwijst naar de geboortegegevens vd persoon."@nl;
     shacl:name "heeft geboorte"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#heeftGeboorte>.
+    shacl:path persoon:heeftGeboorte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/6d8296a4e73c1c1d9218ff12f45dfd45d4557849> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.geboortenaam";
     shacl:description "Volledige naam vd persoon bij geboorte."@nl;
     shacl:maxCount 1;
     shacl:name "geboortenaam"@nl;
     shacl:path person:birthName.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/80c5b978df69a6665fb1add2edfb91de450fa666> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.heeftzwangerschap";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap>;
+    shacl:class gezondheidstoestand:Zwangerschap;
     shacl:description "Een Persoon heeft een Zwangerschap"@nl;
     shacl:name "heeft zwangerschap"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Persoon.heeftZwangerschap>.
@@ -1248,12 +1457,12 @@
     shacl:class person:Person;
     shacl:description "Persoon waarmee de persoon gerelateerd is."@nl;
     shacl:name "heeft relatie met"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#isRelatieMet>.
+    shacl:path persoon:isRelatieMet.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/aab7e9edc336b572957807606008a7f9d22ecffa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.heeftgeboorte";
     shacl:description "Verwijst naar de geboortegegevens vd persoon."@nl;
     shacl:maxCount 1;
     shacl:name "heeft geboorte"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#heeftGeboorte>.
+    shacl:path persoon:heeftGeboorte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/c5bfbb225cd64521e192d2c8d5933f05b242312d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.familienaam";
     shacl:datatype xsd:string;
     shacl:description "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."@nl;
@@ -1268,17 +1477,17 @@
     shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
     shacl:maxCount 1;
     shacl:name "volledige naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+    shacl:path persoon:volledigeNaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/cba0084dd610b69c432bb492bc3f970a76260160> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.volledigenaam";
     shacl:datatype xsd:string;
     shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
     shacl:name "volledige naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+    shacl:path persoon:volledigeNaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/ccc60f000e8255577f863856ca86c69a40f97951> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.alternatievenaam";
     shacl:datatype xsd:string;
     shacl:description "Alternatief voor de volledige naam vd persoon."@nl;
     shacl:name "alternatieve naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#alternatieveNaam>.
+    shacl:path persoon:alternatieveNaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/db8da67ad082417fefd1e4860015e74060924280> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.geboortenaam";
     shacl:datatype xsd:string;
     shacl:description "Volledige naam vd persoon bij geboorte."@nl;
@@ -1288,7 +1497,7 @@
     shacl:class skos:Concept;
     shacl:description "Het feit of de persoon een man of een vrouw is."@nl;
     shacl:name "geslacht"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+    shacl:path persoon:geslacht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/f72b0b73e970130fa1feea502a497e8e5e3ddbc1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.contactpunt";
     shacl:class schema:ContactPoint;
     shacl:description "Informatie zoals email, telefoon... die toelaat de Persoon te contacteren."@nl;
@@ -1298,12 +1507,12 @@
     shacl:description "Belangrijkste vd voornamen ve persoon."@nl;
     shacl:maxCount 1;
     shacl:name "gebruikte voornaam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>.
+    shacl:path persoon:gebruikteVoornaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonShape/fdd871a750ca20e71277d83120117d6acd9aa0fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoon.volledigenaam";
     shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
     shacl:minCount 1;
     shacl:name "volledige naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+    shacl:path persoon:volledigeNaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsgebeurtenisShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsgebeurtenisShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsgebeurtenisShape/4cf73cb6c7e2c3a952bbe571b8847614d893fec2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsgebeurtenisShape/39baabcdaa1762f4713bddd8309d016f5ee9d6cf>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsgebeurtenisShape/cfed717e052c47de56301458f327433a531e41a9>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsgebeurtenisShape/c7398e9c9a6a99f55ace8794058f97c1e1f27910>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsgebeurtenisShape/0cddbe6f4c3e09d26d40755c7fff524d52127fa8>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsgebeurtenisShape/4a3d29ca82b4f07e9ee89eff7205cf231146012b>;
@@ -1322,7 +1531,7 @@
     shacl:description "Land waar de gebeurtenis plaatsvond."@nl;
     shacl:maxCount 1;
     shacl:name "land"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#land>.
+    shacl:path persoon:land.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsgebeurtenisShape/4a3d29ca82b4f07e9ee89eff7205cf231146012b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoonsgebeurtenis.tijdspanne";
     shacl:description "De tijdspanne waarin een Persoonsgebeurtenis plaatsvindt."@nl;
     shacl:maxCount 1;
@@ -1337,16 +1546,16 @@
     shacl:class dcterms:Location;
     shacl:description "Plaats in het land waar de gebeurtenis plaatsvond."@nl;
     shacl:name "plaats"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#plaats>.
+    shacl:path persoon:plaats.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsgebeurtenisShape/cfed717e052c47de56301458f327433a531e41a9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoonsgebeurtenis.land";
     shacl:class dcterms:Location;
     shacl:description "Land waar de gebeurtenis plaatsvond."@nl;
     shacl:name "land"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#land>.
+    shacl:path persoon:land.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/3e299cbcfde07ae9ec0e0ab1b93bab4f4ba560e5>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/45ff7a9c9164b09dfadb99dd22e980e67596e8ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/d9b48a544ac4efa4919abd63990e05f3cae1e57c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/05de3e63a824760728bfaa358575907c2486f47d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/a3682e7d6f80582424161a3bb93041b0b32dd957>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/adddad0488ddae0b7dea769bb064e5f7eb25f727>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/4cf73cb6c7e2c3a952bbe571b8847614d893fec2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/5ce378617041b6c15d5825fd5a47ed411ae53571>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/f42330d51f35995820768d4cb05cb0a20489bc59>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/12bf89aa1878f241addb2be05e873870e17f1227>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/6cc89f1ca15d6d8ed496a0663ef0c0ea164f125c>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Persoonsrelatie>.
+    shacl:targetClass persoon:Persoonsrelatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PersoonsrelatieShape/05de3e63a824760728bfaa358575907c2486f47d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Persoonsrelatie.Persoon(target)";
     shacl:description "Referentie naar verbonden klasse."@nl;
     shacl:minCount 1;
@@ -1410,7 +1619,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ProcedureShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ProcedureShape/34d95733daf7d992483c679b8caea965979b76a8>;
-    shacl:targetClass <https://hl7.org/fhir/procedure-definitions.html#Procedure>.
+    shacl:targetClass procedure-definitions.html:Procedure.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ProcedureShape/34d95733daf7d992483c679b8caea965979b76a8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Procedure.code";
     shacl:class skos:Concept;
     shacl:description "De specifieke procedure die wordt uitgevoerd."@nl;
@@ -1440,7 +1649,7 @@
     shacl:class skos:Concept;
     shacl:description "Geeft aan of een publieke dienstverlening actief, inactief, in ontwikkeling etc is."@nl;
     shacl:name "status"@nl;
-    shacl:path <http://www.w3.org/ns/adms#status>.
+    shacl:path adms:status.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PubliekeDienstverlening(Consumptie)Shape/25d18a6e2598024ea186cc7be4391bdfd1bca21f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PubliekeDienstverlening.titel";
     shacl:description "Officiële naam van de publieke dienstverlening."@nl;
     shacl:minCount 1;
@@ -1450,7 +1659,7 @@
     shacl:description "Geeft aan of een publieke dienstverlening actief, inactief, in ontwikkeling etc is."@nl;
     shacl:maxCount 1;
     shacl:name "status"@nl;
-    shacl:path <http://www.w3.org/ns/adms#status>.
+    shacl:path adms:status.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PubliekeDienstverlening(Consumptie)Shape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PubliekeDienstverlening.type";
     shacl:class skos:Concept;
     shacl:description "Soort publieke dienstverlening."@nl;
@@ -1475,7 +1684,7 @@
     shacl:class cpsv:PublicService;
     shacl:description "Linkt een bepaalde consumptie van een publieke dienstverlening (een transactie) met het product uit het dienstverleningsregister."@nl;
     shacl:name "is instantie van"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/transactie#isInstantieVan>.
+    shacl:path transactie:isInstantieVan.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PubliekeDienstverlening(Consumptie)Shape/44f6426e2306c5bc0421823eb4a1a034b615f715> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#PubliekeDienstverlening.trefwoord";
     shacl:datatype rdf:langString;
     shacl:description "Sleutelwoord, term, begrip dat de publieke dienst beschrijft."@nl;
@@ -1584,7 +1793,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#SociodemografischKenmerkShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#SociodemografischKenmerkShape/a8ce32805556ac51cd3399d626293c000c2676f6>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#SociodemografischKenmerkShape/3320806f20d2c4caea9147b1ce709764c03043ca>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#SociodemografischKenmerkShape/befee8b3a9b46a2fb52e485f2d098b7655088045>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#SociodemografischKenmerkShape/bdf39aa4bec5e5c0c7b49293c22093d918e252e0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#SociodemografischKenmerkShape/d0b78f38938d4a601085cb8e751efba3354d48ad>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#SociodemografischKenmerkShape/1b3500b6275c16a7a7ebf60ee8ee1c1c727e867d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#SociodemografischKenmerkShape/205f46bc6face3662236a61ff6d1af5869cd5441>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/cultuurparticipatie#SociodemografischKenmerk>.
+    shacl:targetClass cultuurparticipatie:SociodemografischKenmerk.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#SociodemografischKenmerkShape/1b3500b6275c16a7a7ebf60ee8ee1c1c727e867d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#SociodemografischKenmerk.onderwijsniveau";
     shacl:description "Het onderwijsniveau waarvan de participant heeft genoten"@nl;
     shacl:maxCount 1;
@@ -1632,7 +1841,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestShape/421d78c27acf98a3c52191db36ac97de764ae8b5>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestShape/2313e6802443e74fd69f7c896b2b61910c6d9442>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestShape/e23e8b686e1e4f16e4efd750151672633337469c>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRest>.
+    shacl:targetClass overlijdensaangifte:StoffelijkeRest.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestShape/2313e6802443e74fd69f7c896b2b61910c6d9442> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRest.wordtgeproduceerddoor";
     shacl:description "Stoffelijke Rest wordt geproduceerd door de Stoffelijke Restverwerking."@nl;
     shacl:maxCount 1;
@@ -1659,16 +1868,16 @@
     shacl:name "locatie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRest.locatie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestShape/e23e8b686e1e4f16e4efd750151672633337469c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRest.wordtgeproduceerddoor";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRestverwerking>;
+    shacl:class overlijdensaangifte:StoffelijkeRestverwerking;
     shacl:description "Stoffelijke Rest wordt geproduceerd door de Stoffelijke Restverwerking."@nl;
     shacl:name "wordt geproduceerd door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRest.wordtGeproduceerdDoor>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestverwerkingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestverwerkingShape/5bfc49675eef06366e6309009f937f9d904ac377>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestverwerkingShape/7bb82019007214082710cff0188a6d7fbdf391e5>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRestverwerking>.
+    shacl:targetClass overlijdensaangifte:StoffelijkeRestverwerking.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestverwerkingShape/5bfc49675eef06366e6309009f937f9d904ac377> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#StoffelijkeRestverwerking.produceert";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRest>;
+    shacl:class overlijdensaangifte:StoffelijkeRest;
     shacl:description "Stoffelijke Restverwerking produceert een Stoffelijke Rest."@nl;
     shacl:name "produceert"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRest.produceert>.
@@ -1679,21 +1888,21 @@
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRest.produceert>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#TeraardestellingShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Teraardestelling>.
+    shacl:targetClass overlijdensaangifte:Teraardestelling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#TijdspanneShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass crm:E52_Time-Span.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape/aa3982088fa37360471eb039a5b1757b97edd0c3>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape/aefa3bfd10b3e92373005dc1bd049bd7b3731b36>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape/0297449e10af0ea5b49b3ee3c19a5a42f4c17e38>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape/bd58ec8402a73fcd3a147a357b4fd09fdbf4e469>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape/03d6a6f00b55c26e86ca66f72c684f517720efa3>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape/cc5d79a06ec373797da4e0fc868dbc7574993c49>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaart>.
+    shacl:targetClass overlijdensaangifte:Uitvaart.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape/0297449e10af0ea5b49b3ee3c19a5a42f4c17e38> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Uitvaart.wordtbepaalddoor";
     shacl:description "De Uitvaart wordt bepaald door de Wilsbeschikking."@nl;
     shacl:maxCount 1;
     shacl:name "wordt bepaald door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.wordtBepaaldDoor>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape/03d6a6f00b55c26e86ca66f72c684f517720efa3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Uitvaart.wordtgeorganiseerddoor";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartondernemer>;
+    shacl:class overlijdensaangifte:Uitvaartondernemer;
     shacl:description "De Uitvaart wordt georganiseerd door de Uitvaartondernemer."@nl;
     shacl:name "wordt georganiseerd door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaart.wordtGeorganiseerdDoor>.
@@ -1703,12 +1912,12 @@
     shacl:name "leidt tot"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRestVerwerking.leidtTot>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape/aefa3bfd10b3e92373005dc1bd049bd7b3731b36> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Uitvaart.leidttot";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRestverwerking>;
+    shacl:class overlijdensaangifte:StoffelijkeRestverwerking;
     shacl:description "Verwijst naar het gevolg van de StoffelijkeRestVerwerking."@nl;
     shacl:name "leidt tot"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRestVerwerking.leidtTot>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartShape/bd58ec8402a73fcd3a147a357b4fd09fdbf4e469> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Uitvaart.wordtbepaalddoor";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking>;
+    shacl:class overlijdensaangifte:Wilsbeschikking;
     shacl:description "De Uitvaart wordt bepaald door de Wilsbeschikking."@nl;
     shacl:name "wordt bepaald door"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.wordtBepaaldDoor>.
@@ -1720,7 +1929,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartcontractShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartcontractShape/96a46f95b2403680c7ba9b704f63905f931fc7ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartcontractShape/9f4db8a61121dbac33fe60bfcd3c9b205f164fe0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartcontractShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartcontractShape/4cf73cb6c7e2c3a952bbe571b8847614d893fec2>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartcontractShape/02017213c4ab4599577022ed9f11fc09c4a537db>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartcontractShape/5297b66e464481c43417c37c3d10b7b334b7427a>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartcontract>.
+    shacl:targetClass overlijdensaangifte:Uitvaartcontract.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartcontractShape/02017213c4ab4599577022ed9f11fc09c4a537db> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Uitvaartcontract.firma";
     shacl:description "De gegevens van de Uitvaardondernemer."@nl;
     shacl:maxCount 1;
@@ -1747,28 +1956,28 @@
     shacl:name "contractnummer"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartcontract.contractnummer>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartcontractShape/9f4db8a61121dbac33fe60bfcd3c9b205f164fe0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Uitvaartcontract.contractnummer";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Numerieke waarde waarmee het contract uniek wordt herkend."@nl;
     shacl:name "contractnummer"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartcontract.contractnummer>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartondernemerShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartondernemerShape/39d8d0f58ea15fa7a26d71d5709aa3a1465ede9f>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartondernemerShape/45f0723c7eda8355ca0cb1e44a9ab6cecd076e00>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartondernemer>.
+    shacl:targetClass overlijdensaangifte:Uitvaartondernemer.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartondernemerShape/39d8d0f58ea15fa7a26d71d5709aa3a1465ede9f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Uitvaartondernemer.organiseert";
     shacl:description "Een Uitvaartondernemer organiseert een Uitvaart."@nl;
     shacl:maxCount 1;
     shacl:name "organiseert"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartondernemer.organiseert>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#UitvaartondernemerShape/45f0723c7eda8355ca0cb1e44a9ab6cecd076e00> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Uitvaartondernemer.organiseert";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaart>;
+    shacl:class overlijdensaangifte:Uitvaart;
     shacl:description "Een Uitvaartondernemer organiseert een Uitvaart."@nl;
     shacl:name "organiseert"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartondernemer.organiseert>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VerblijfplaatsShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VerblijfplaatsShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VerblijfplaatsShape/6e6059dfbbd1a982f957a7733e8013e453faf721>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VerblijfplaatsShape/8a4e31eb18342aba08302f513be3047bd4ae2192>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VerblijfplaatsShape/f876a506d82560816aced51418c7be779db8aa5f>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Verblijfplaats>.
+    shacl:targetClass persoon:Verblijfplaats.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VerblijfplaatsShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Verblijfplaats.type";
     shacl:datatype rdf:langString;
     shacl:description "De typering van de verblijfsplaats."@nl;
@@ -1778,24 +1987,24 @@
     shacl:class locn:Address;
     shacl:description "Plaats waar een persoon al dan niet tijdelijk woont of logeert."@nl;
     shacl:name "verblijfsadres"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#verblijfsadres>.
+    shacl:path persoon:verblijfsadres.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VerblijfplaatsShape/8a4e31eb18342aba08302f513be3047bd4ae2192> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Verblijfplaats.verblijfsadres";
     shacl:description "Plaats waar een persoon al dan niet tijdelijk woont of logeert."@nl;
     shacl:minCount 1;
     shacl:name "verblijfsadres"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#verblijfsadres>.
+    shacl:path persoon:verblijfsadres.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VerblijfplaatsShape/f876a506d82560816aced51418c7be779db8aa5f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Verblijfplaats.verblijfsadres";
     shacl:description "Plaats waar een persoon al dan niet tijdelijk woont of logeert."@nl;
     shacl:maxCount 1;
     shacl:name "verblijfsadres"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#verblijfsadres>.
+    shacl:path persoon:verblijfsadres.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VoedingsinnameItemShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VoedingsinnameShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VoedingsinnameShape/69bf97f3ae817813269976ac52cd7ecdfd0114de>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VoedingsinnameShape/8e6f5e6878493248fa3db1e67d0a4a1a383ea523>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VoedingsinnameShape/204af3d413fdf6f9eae13f1a258d52b7f1e6c470>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VoedingsinnameShape/732bf160dea0dd64346259d8ab74d21fac2858e0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VoedingsinnameShape/82fd69a511efb92843554d18c9838d265d796d6f>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VoedingsinnameShape/c911a4c8d1bb6e9ea1f13e740eda858d44a8e293>;
-    shacl:targetClass <https://www.hl7.org/fhir/nutritionintake-definitions.html#NutritionIntake>.
+    shacl:targetClass nutritionintake-definitions.html:NutritionIntake.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#VoedingsinnameShape/204af3d413fdf6f9eae13f1a258d52b7f1e6c470> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Voedingsinname.geconsumeerditem";
     shacl:description "Welk voedsel- of vloeistofproduct of item is geconsumeerd."@nl;
     shacl:maxCount 1;
@@ -1829,7 +2038,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/900d3845e541ccb7707b248a6f9755924316794a>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/e6cfe888f7ede427982f488da9d49785b4fcca39>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/08baf279d06b43d75ac6243dddefc60abba1ef62>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/e6ecafc0c082c0affde56ddb162f227f330208d7>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/e93b7dcff87357ba687f91c6569aaa2fa7ed76a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/4220bafbae169963980c5024e2f472eec138e5fb>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/74f551da1a54dd39053d7c04436e1d7b3840327e>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/4bdbedd9401ded88c5c1ae7cc1c97469dbb2af7c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/5790314604585feec0530e498f6ab9792f93e281>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/981fb560aae6694079064214c70cc9687f9bc198>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/e6978029d1e47f027ca29f78c260990429223b8e>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/ed9e135b2f38d80f9634c478d48078639851c05b>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/1b6bdfe22e1964797ba04273ba921c13de010c91>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/2010021d775b74c1f8cb91919cf648306701df28>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/2227212d3ad5130c73bea40680aa323df31c1067>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/e98163d17a363507aa5dfed8e2a76c0b98813f43>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking>.
+    shacl:targetClass overlijdensaangifte:Wilsbeschikking.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/08baf279d06b43d75ac6243dddefc60abba1ef62> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Wilsbeschikking.bijbegraving";
     shacl:class person:Person;
     shacl:description "Het begraven van een Persoon naast een reeds overleden Persoon."@nl;
@@ -1846,7 +2055,7 @@
     shacl:name "ritueel"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.ritueel>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/2227212d3ad5130c73bea40680aa323df31c1067> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Wilsbeschikking.uitvaartcontract";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartcontract>;
+    shacl:class overlijdensaangifte:Uitvaartcontract;
     shacl:description "Overeenkomst waarin een Persoon de wensen voor de Uitvaart in vastlegt."@nl;
     shacl:name "uitvaartcontract"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.uitvaartcontract>.
@@ -1886,7 +2095,7 @@
     shacl:name "opgesteld bij"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.opgesteldBij>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/e6cfe888f7ede427982f488da9d49785b4fcca39> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Wilsbeschikking.bepaalt";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaart>;
+    shacl:class overlijdensaangifte:Uitvaart;
     shacl:description "De Wilsbeschikking bepaalt potentieel de invulling van de Uitvaart."@nl;
     shacl:name "bepaalt"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.bepaalt>.
@@ -1906,34 +2115,34 @@
     shacl:name "uitvaartcontract"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.uitvaartcontract>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#WilsbeschikkingShape/ed9e135b2f38d80f9634c478d48078639851c05b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Wilsbeschikking.orgaandonatie";
-    shacl:class <https://data.vlaanderen.be/ns/overlijdensaangifte#Orgaandonatie>;
+    shacl:class overlijdensaangifte:Orgaandonatie;
     shacl:description "De bepalingen rond Orgaandonatie binnen de Wilsbeschikking."@nl;
     shacl:name "orgaandonatie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.orgaandonatie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZorgverlenerShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://hl7.org/fhir/practitioner-definitions.html#Practitioner>.
+    shacl:targetClass practitioner-definitions.html:Practitioner.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapShape/8de69216282db4fc4a156b9afa65ce48a118a1f6>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapShape/2c279d11f4b3fec15e11c62b03fea850e51d278c>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapShape/7a8d08915636bb7cb8eda2c867d8399aba767489>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapShape/c10959ac5780de4c7ee9a8b144b95b3c85251b4d>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapShape/d4a3d1b7aff1041028c2afbbe7f49bda7924cf89>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap>.
+    shacl:targetClass gezondheidstoestand:Zwangerschap.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapShape/2c279d11f4b3fec15e11c62b03fea850e51d278c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Zwangerschap.toestand";
     shacl:description "De toestand die bij de Zwangerschap hoort."@nl;
     shacl:maxCount 1;
     shacl:name "toestand"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap.toestand>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapShape/7a8d08915636bb7cb8eda2c867d8399aba767489> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Zwangerschap.toestand";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschapstoestand>;
+    shacl:class gezondheidstoestand:Zwangerschapstoestand;
     shacl:description "De toestand die bij de Zwangerschap hoort."@nl;
     shacl:name "toestand"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap.toestand>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapShape/8de69216282db4fc4a156b9afa65ce48a118a1f6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Zwangerschap.heeftfoetus";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Foetus>;
+    shacl:class gezondheidstoestand:Foetus;
     shacl:description "Een Zwangerschap heeft een of meerdere Foetussen."@nl;
     shacl:name "heeft foetus"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap.heeftFoetus>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapShape/c10959ac5780de4c7ee9a8b144b95b3c85251b4d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Zwangerschap.volgtop";
-    shacl:class <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling>;
+    shacl:class gezondheidstoestand:Bevalling;
     shacl:description "De Bevalling volgt op een Zwangerschap."@nl;
     shacl:name "volgt op"@nl;
     shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling.volgtOp>.
@@ -1945,7 +2154,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapstoestandShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapstoestandShape/73d09b4a2f05066b3d7f4ddebac064c8ecc9c3e9>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapstoestandShape/8f8d653e304153b908ef8c4ace8348d1e837fb08>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapstoestandShape/a163d6668a14b1d370cd26155dba3808e2b6afb5>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapstoestandShape/d1d8ad06c0b27416aaa2c480db3899b18cb7b4c0>, <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapstoestandShape/c13fa550a0abc45ecd5ca2d9fa4919ae360d7f58>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschapstoestand>.
+    shacl:targetClass gezondheidstoestand:Zwangerschapstoestand.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapstoestandShape/73d09b4a2f05066b3d7f4ddebac064c8ecc9c3e9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Zwangerschapstoestand.duur";
     shacl:description "De periode van de Zwangerschap."@nl;
     shacl:maxCount 1;
@@ -1965,7 +2174,7 @@
     shacl:class skos:Concept;
     shacl:description "Gesimplificeerde informatie rond de status van de Zwangerschapstoestand."@nl;
     shacl:name "status zwangerschap"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#statusZwangerschap>.
+    shacl:path gezondheidstoestand:statusZwangerschap.
 <https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#ZwangerschapstoestandShape/d1d8ad06c0b27416aaa2c480db3899b18cb7b4c0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/overlijdensaangifte/kandidaatstandaard/2024-06-20#Zwangerschapstoestand.liggingkind";
     shacl:description "De positie waarin de Foetus zich bevindt in de baarmoeder (van de Persoon)."@nl;
     shacl:maxCount 1;

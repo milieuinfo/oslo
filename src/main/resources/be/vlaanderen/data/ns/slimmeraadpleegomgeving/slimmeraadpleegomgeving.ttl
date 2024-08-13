@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -42,51 +251,51 @@ oa:TextQuoteSelector a rdfs:Class.
 oa:TextualBody a rdfs:Class.
 schemas:WebSite a rdfs:Class;
     rdfs:label "Website"@nl.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#AdviesAntwoord> a owl:Class;
+slimmeraadpleegomgeving:AdviesAntwoord a owl:Class;
     rdfs:label "Adviesantwoord"@nl;
     rdfs:comment "Input van een organisatie of persoon die bijdraagt aan het beslissingsproces."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving>;
-    rdfs:subClassOf <http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#AdviesVraag> a owl:Class;
+    rdfs:subClassOf eli-draft-legislation-ontology:LegislativeActivity.
+slimmeraadpleegomgeving:AdviesVraag a owl:Class;
     rdfs:label "Adviesvraag"@nl;
     rdfs:comment "Vraag aan een organisatie of persoon om een opinie die bijdraagt aan het beslissingsproces"@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving>;
-    rdfs:subClassOf <http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#InitiatiefrechtAntwoord> a owl:Class;
+    rdfs:subClassOf eli-draft-legislation-ontology:LegislativeActivity.
+slimmeraadpleegomgeving:InitiatiefrechtAntwoord a owl:Class;
     rdfs:label "Initiatiefrechtantwoord"@nl;
     rdfs:comment "Antwoord van de bevoegde mandataris op een initiatiefrechtVraag"@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving>;
-    rdfs:subClassOf <http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#ShaclPathSelector> a owl:Class;
+    rdfs:subClassOf eli-draft-legislation-ontology:LegislativeActivity.
+slimmeraadpleegomgeving:ShaclPathSelector a owl:Class;
     rdfs:label "Shaclpathselector"@nl;
     rdfs:comment "Afbakening van een resource met behulp van een SHACL property path."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving>;
     rdfs:subClassOf oa:Selector.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#datumAntwoordVerwacht> a owl:DatatypeProperty;
+slimmeraadpleegomgeving:datumAntwoordVerwacht a owl:DatatypeProperty;
     rdfs:label "datum antwoord verwacht"@nl;
     rdfs:comment "Datum waarop het antwoord op de initiatiefrechtvraag verwacht wordt."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#InitiatiefrechtVraag>;
+    rdfs:domain slimmeraadpleegomgeving:InitiatiefrechtVraag;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving>;
     rdfs:range xsd:dateTime.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#heeftModaliteit> a owl:ObjectProperty;
+slimmeraadpleegomgeving:heeftModaliteit a owl:ObjectProperty;
     rdfs:label "heeft modaliteit"@nl;
     rdfs:comment "Voorwaarde die verbonden is met een bepaalde verbintenis."@nl, "Voorwaarde die verbonden is met een bepaald recht."@nl;
-    rdfs:domain <http://ontology.tno.nl/normengineering/flint#Duty>, crm:E30_Right;
+    rdfs:domain flint:Duty, crm:E30_Right;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving>;
     rdfs:range eu:Requirement.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#indieningsdatum> a owl:DatatypeProperty;
+slimmeraadpleegomgeving:indieningsdatum a owl:DatatypeProperty;
     rdfs:label "indieningsdatum"@nl;
     rdfs:comment "Datum waarop de initiatiefrechtvraag ingediend werd."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#InitiatiefrechtVraag>;
+    rdfs:domain slimmeraadpleegomgeving:InitiatiefrechtVraag;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving>;
     rdfs:range xsd:dateTime.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#motivering> a owl:DatatypeProperty;
+slimmeraadpleegomgeving:motivering a owl:DatatypeProperty;
     rdfs:label "motivering"@nl;
     rdfs:comment "Beschrijving van de juridische en feitelijke motivering achter de initiatiefrechtvraag.\t"@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#InitiatiefrechtVraag>;
+    rdfs:domain slimmeraadpleegomgeving:InitiatiefrechtVraag;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving>;
     rdfs:range rdf:langString.
-<http://data.europa.eu/eli/eli-draft-legislation-ontology#was_motivated_by> a rdf:Property.
+eli-draft-legislation-ontology:was_motivated_by a rdf:Property.
 dc11:format a rdf:Property.
 dc11:language a rdf:Property.
 dcterms:description a rdf:Property;
@@ -110,11 +319,11 @@ oa:start a rdf:Property.
 oa:suffix a rdf:Property.
 schemas:url a rdf:Property;
     rdfs:label "locatie"@nl.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#InitiatiefrechtVraag> a owl:Class;
+slimmeraadpleegomgeving:InitiatiefrechtVraag a owl:Class;
     rdfs:label "Initiatiefrechtvraag"@nl;
     rdfs:comment "Uitoefening van de bevoegdheden van de mandataris om informatie te bekomen die toegankelijk is via het inzage- en controlerecht, alsook het maken van voorstellen met het oog op uitlokken van besluitvorming."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving>;
-    rdfs:subClassOf <http://data.europa.eu/eli/eli-draft-legislation-ontology#LegislativeActivity>.
+    rdfs:subClassOf eli-draft-legislation-ontology:LegislativeActivity.
 <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> a owl:Ontology;
     rdfs:label "slimmeraadpleegomgeving"@en, "slimmeraadpleegomgeving"@nl.
 _:n3-2321 a foaf:Person.
@@ -235,7 +444,7 @@ _:n3-2353 foaf:homepage <https://data.vlaanderen.be>;
     foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
     foaf:name "Data Vlaanderen".
 <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> dcterms:mediator _:n3-2353;
-    rdfs:seeAlso rdfs:Resource, skos:Concept, oa:Annotation, oa:FragmentSelector, oa:Selector, oa:SpecificResource, oa:TextPositionSelector, oa:TextQuoteSelector, oa:TextualBody, schemas:WebSite, schemas:url, oa:suffix, oa:start, oa:refinedBy, oa:prefix, oa:motivatedBy, oa:hasTarget, oa:hasSource, oa:hasSelector, oa:hasBody, oa:exact, oa:end, oa:body, skos:broader, skos:broadMatch, rdf:value, dcterms:title, dcterms:description, dc11:language, dc11:format, <http://data.europa.eu/eli/eli-draft-legislation-ontology#was_motivated_by>.
+    rdfs:seeAlso rdfs:Resource, skos:Concept, oa:Annotation, oa:FragmentSelector, oa:Selector, oa:SpecificResource, oa:TextPositionSelector, oa:TextQuoteSelector, oa:TextualBody, schemas:WebSite, schemas:url, oa:suffix, oa:start, oa:refinedBy, oa:prefix, oa:motivatedBy, oa:hasTarget, oa:hasSource, oa:hasSelector, oa:hasBody, oa:exact, oa:end, oa:body, skos:broader, skos:broadMatch, rdf:value, dcterms:title, dcterms:description, dc11:language, dc11:format, eli-draft-legislation-ontology:was_motivated_by.
 _:n3-2354 a foaf:Person.
 _:n3-2355 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
     foaf:name "Digitaal Vlaanderen".
@@ -243,7 +452,7 @@ _:n3-2354 schema:affiliation _:n3-2355;
     foaf:firstName "Eveline";
     foaf:lastName "Vlassenroot";
     foaf:mbox <mailto:eveline.vlassenroot@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> ns1:editor _:n3-2354.
+<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> rec54:editor _:n3-2354.
 _:n3-2356 a foaf:Person.
 _:n3-2357 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
     foaf:name "Digitaal Vlaanderen".
@@ -251,7 +460,7 @@ _:n3-2356 schema:affiliation _:n3-2357;
     foaf:firstName "Laurens";
     foaf:lastName "Vercauteren";
     foaf:mbox <mailto:laurens.vercauteren@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> ns1:editor _:n3-2356.
+<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> rec54:editor _:n3-2356.
 _:n3-2358 a foaf:Person.
 _:n3-2359 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
     foaf:name "Digitaal Vlaanderen".
@@ -259,7 +468,7 @@ _:n3-2358 schema:affiliation _:n3-2359;
     foaf:firstName "William";
     foaf:lastName "Verbeeck";
     foaf:mbox <mailto:william.verbeeck@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> ns1:editor _:n3-2358.
+<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> rec54:editor _:n3-2358.
 _:n3-2360 a foaf:Person.
 _:n3-2361 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
     foaf:name "Digitaal Vlaanderen".
@@ -267,7 +476,7 @@ _:n3-2360 schema:affiliation _:n3-2361;
     foaf:firstName "Ziggy";
     foaf:lastName "Vanlishout";
     foaf:mbox <mailto:ziggy.vanlishout@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> ns1:editor _:n3-2360.
+<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> rec54:editor _:n3-2360.
 _:n3-2362 a foaf:Person.
 _:n3-2363 foaf:homepage <https://data.vlaanderen.be/doc/organisatie/OVO001835>;
     foaf:name "Red pencil".
@@ -275,7 +484,7 @@ _:n3-2362 schema:affiliation _:n3-2363;
     foaf:firstName "Niels";
     foaf:lastName "Vandekeybus";
     foaf:mbox <mailto:niels.vandekeybus@redpencil.io>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> ns1:editor _:n3-2362.
+<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> rec54:editor _:n3-2362.
 _:n3-2364 a foaf:Person.
 _:n3-2365 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
     foaf:name "Digitaal Vlaanderen".
@@ -283,7 +492,7 @@ _:n3-2364 schema:affiliation _:n3-2365;
     foaf:firstName "Liesbeth";
     foaf:lastName "Van der Haegen";
     foaf:mbox <mailto:liesbeth.vanderhaegen@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> ns1:editor _:n3-2364.
+<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> rec54:editor _:n3-2364.
 _:n3-2366 a foaf:Person.
 _:n3-2367 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
     foaf:name "Agentschap Binnenlands Bestuur".
@@ -291,7 +500,7 @@ _:n3-2366 schema:affiliation _:n3-2367;
     foaf:firstName "Brecht";
     foaf:lastName "Van de Vyvere";
     foaf:mbox <mailto:brecht.vandevyvere@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> ns1:editor _:n3-2366.
+<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> rec54:editor _:n3-2366.
 _:n3-2368 a foaf:Person.
 _:n3-2369 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
     foaf:name "Digitaal Vlaanderen".
@@ -299,7 +508,7 @@ _:n3-2368 schema:affiliation _:n3-2369;
     foaf:firstName "Jitse";
     foaf:lastName "De Cock";
     foaf:mbox <mailto:jitse.decock@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> ns1:editor _:n3-2368.
+<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> rec54:editor _:n3-2368.
 _:n3-2370 a foaf:Person.
 _:n3-2371 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
     foaf:name "Digitaal Vlaanderen".
@@ -307,7 +516,7 @@ _:n3-2370 schema:affiliation _:n3-2371;
     foaf:firstName "Raf";
     foaf:lastName "Buyle";
     foaf:mbox <mailto:raf.buyle@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> ns1:editor _:n3-2370.
+<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> rec54:editor _:n3-2370.
 _:n3-2372 a foaf:Person.
 _:n3-2373 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
     foaf:name "Digitaal Vlaanderen".
@@ -315,7 +524,7 @@ _:n3-2372 schema:affiliation _:n3-2373;
     foaf:firstName "Veerle";
     foaf:lastName "Beyaert";
     foaf:mbox <mailto:veerle.beyaert@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> ns1:editor _:n3-2372.
+<https://data.vlaanderen.be/ns/slimmeraadpleegomgeving> rec54:editor _:n3-2372.
 _:n3-2374 a foaf:Person.
 _:n3-2375 foaf:homepage <https://data.vlaanderen.be/doc/organisatie/OVO001835>;
     foaf:name "Agentschap Binnenlands Bestuur".

@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -35,7 +244,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#BeschrijvendResultaatShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#BeschrijvendResultaatShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#BeschrijvendResultaatShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#BeschrijvendResultaatShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult>.
+    shacl:targetClass DataQualityResult:DQ_DescriptiveResult.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#BeschrijvendResultaatShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#BeschrijvendResultaat.beschrijving";
     shacl:datatype xsd:string;
     shacl:description "De tekst.."@nl;
@@ -53,14 +262,14 @@
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_DescriptiveResult.statement>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#BruikbaarheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_UsabilityElement>.
+    shacl:targetClass DataQuality_2:DQ_UsabilityElement.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#CitatieShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation>.
+    shacl:targetClass CitationAndResponsiblePartyInformation2:CI_Citation.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape/9658f3426a15a6e5cab6f2037bb83a8913b695b1>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape/c6b29a010bfaa98f625686fbac1589eff7f4ba05>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape/fa2f415ff5a0b9f47c45e34bbdb3a41e31170e44>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape/447c020409824c97edbc81143af62e70b7d45866>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape/962526cfa522d1d4c2d882bf33538c0c1c699938>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape/a9a136f29614daa96027ca725ba119d518db96c0>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape/39f83f6eb85c57ca51e4fc815202efabe0a4f551>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape/a89d410c5eaf1fa79b5ada70c26385b1ff5aac79>;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult>.
+    shacl:targetClass DataQualityResult:DQ_ConformanceResult.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape/39f83f6eb85c57ca51e4fc815202efabe0a4f551> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaat.toelichting";
     shacl:datatype xsd:string;
     shacl:description "Verdere uitleg over de conformiteit van de data."@nl;
@@ -87,7 +296,7 @@
     shacl:name "toelichting"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult.explanation>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaatShape/a9a136f29614daa96027ca725ba119d518db96c0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ConformiteitResultaat.specificatie";
-    shacl:class <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation>;
+    shacl:class CitationAndResponsiblePartyInformation2:CI_Citation;
     shacl:description "Verwijzing naar de specifiatie waartegen de data gevalueerd wordt."@nl;
     shacl:name "specificatie"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_ConformanceResult.specification>.
@@ -104,14 +313,14 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/e198a5d6b28778f6a6591c6d5abd0b9e673eab0c>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/fc46f102e33faa8ce49351c15fbc7c58570ce993>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/3f3372173982730f81a04a4713c4f096579ee393>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/f2caa5a6524cfa5bda0f5eb387723ea3c0a144c0>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/b500f2141f2b659c0ca5c2e41738f6f4fc9a7982>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/f191d4ee803c758fb4cd3e4c6e79f8e6e74c7165>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/4008304d36b3be218df70c4c439fdff20f03d934>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/4871811d8d5f50d25ff627cd32699aace01c70a4>;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod>.
+    shacl:targetClass DataQualityEvaluation:DQ_EvaluationMethod.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/3f3372173982730f81a04a4713c4f096579ee393> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethode.evaluatieMethodeType";
     shacl:class skos:Concept;
     shacl:description "Type van de evaluatiemethode."@nl;
     shacl:name "evaluatieMethodeType"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.evaluationMethodType>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/4008304d36b3be218df70c4c439fdff20f03d934> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethode.referentieDoc";
-    shacl:class <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation>;
+    shacl:class CitationAndResponsiblePartyInformation2:CI_Citation;
     shacl:description "Verwijzing naar een document dat de methode en/of procedure beschrijft."@nl;
     shacl:name "referentieDoc"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.referenceDoc>.
@@ -131,7 +340,7 @@
     shacl:name "evaluatieMethodeBeschrijving"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.evaluationMethodDescription>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethodeShape/f191d4ee803c758fb4cd3e4c6e79f8e6e74c7165> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#EvaluatieMethode.evaluatieProcedure";
-    shacl:class <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_Citation>;
+    shacl:class CitationAndResponsiblePartyInformation2:CI_Citation;
     shacl:description "Verwijzing naar de procedure die werd gevolgd."@nl;
     shacl:name "evaluatieProcedure"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod.evaluationProcedure>.
@@ -150,13 +359,13 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#IdentificatorShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+    shacl:targetClass adms:Identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/2a28d5ddffad3c8f9bf6cc58fa37dfddb185547d>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/4ae1d67bf80bf4c3d8afa1e7afbacce5ee4dcd8a>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/c4fe598ea1782bffd8c5cf65c094c269f0dcc33f>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/28043a4869de7794516633ae412fead1f08512a9>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/c4064b3f3e92adf66be73da88251aaf91bea673b>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/09ed995683a26095de4577d13e597160f260ecb2>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/8e05d75bd387c53aef314baad0b75114a0fc2922>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/f7e1c2fd6e64de79093385ad1885906730164ec7>;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element>.
+    shacl:targetClass DataQuality_2:DQ_Element.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/09ed995683a26095de4577d13e597160f260ecb2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElement.resultaat";
-    shacl:class <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_Result>;
+    shacl:class DataQualityResult:DQ_Result;
     shacl:description "Verwijzing naar het resultaat van de kwaliteitsevaluatie."@nl;
     shacl:name "resultaat"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.result>.
@@ -171,12 +380,12 @@
     shacl:name "maat"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.measure>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/2a28d5ddffad3c8f9bf6cc58fa37dfddb185547d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElement.afgeleidElement";
-    shacl:class <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element>;
+    shacl:class DataQuality_2:DQ_Element;
     shacl:description "Verwijzing naar een Kwaliteitselement waarvan dit element is afgekleid."@nl;
     shacl:name "afgeleidElement"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.derivedElement>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/4ae1d67bf80bf4c3d8afa1e7afbacce5ee4dcd8a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElement.evaluatieMethode";
-    shacl:class <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#DQ_EvaluationMethod>;
+    shacl:class DataQualityEvaluation:DQ_EvaluationMethod;
     shacl:description "Verwijzing naar de methode die werd gebruikt om de kwaliteit te evalueren."@nl;
     shacl:name "evaluatieMethode"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.evaluationMethod>.
@@ -186,7 +395,7 @@
     shacl:name "standaloneKwaliteitRapportDetails"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.standaloneQualityReportDetails>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElementShape/c4064b3f3e92adf66be73da88251aaf91bea673b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsElement.maat";
-    shacl:class <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference>;
+    shacl:class DataQuality_2:DQ_MeasureReference;
     shacl:description "Verwijzing naar de kwaliteitsmaat die werd gebruikt om de kwaliteit uit te drukken."@nl;
     shacl:name "maat"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Element.measure>.
@@ -203,7 +412,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsResultaatShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsResultaatShape/1f3c9ccd782c7d08b35eaf21ca7e092017a6c8a8>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsResultaatShape/640dca78325fae41eb74eb6497b620bafdd0c2f0>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsResultaatShape/4871811d8d5f50d25ff627cd32699aace01c70a4>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsResultaatShape/b0b353ad4e427329f8695e342e66f3bc193529d7>;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_Result>.
+    shacl:targetClass DataQualityResult:DQ_Result.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsResultaatShape/1f3c9ccd782c7d08b35eaf21ca7e092017a6c8a8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsResultaat.resultaatScope";
     shacl:description "Het bereik van het resultaat."@nl;
     shacl:maxCount 1;
@@ -215,7 +424,7 @@
     shacl:name "tijdstip"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_Result.dateTime>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsResultaatShape/640dca78325fae41eb74eb6497b620bafdd0c2f0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwaliteitsResultaat.resultaatScope";
-    shacl:class <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Scope>;
+    shacl:class CommonClasses:MD_Scope;
     shacl:description "Het bereik van het resultaat."@nl;
     shacl:name "resultaatScope"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_Result.resultScope>.
@@ -227,9 +436,9 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaatShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaatShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaatShape/ca4892872b345b4fe994128b7c31877979275399>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaatShape/8f3289e350cb5e6ffc5f732b3b79c54d282acbff>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaatShape/f4077b987c22e6cd158512105762119bf56104ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaatShape/8670dfae67df3e42de043675f8d0d35e1c81de06>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaatShape/e8e98c93cbfc09b9344f16f448c78dcc96c028be>;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult>.
+    shacl:targetClass DataQualityResult:DQ_QuantitativeResult.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaatShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaat.waarde";
-    shacl:class <https://data.vlaanderen.be/ns/generiek#Record>;
+    shacl:class generiek:Record;
     shacl:description "De kwantiteit van de grootheid die wordt bepaald."@nl;
     shacl:name "waarde"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.value>.
@@ -239,7 +448,7 @@
     shacl:name "waardeRecordType"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.valueRecordType>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaatShape/8f3289e350cb5e6ffc5f732b3b79c54d282acbff> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaat.waardeEenheid";
-    shacl:class <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#UnitOfMeasure>;
+    shacl:class UnitsOfMeasure:UnitOfMeasure;
     shacl:description "De eenheid waarin de waarde wordt uitgedrukt."@nl;
     shacl:name "waardeEenheid"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.valueUnit>.
@@ -249,7 +458,7 @@
     shacl:name "waarde"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.value>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaatShape/e8e98c93cbfc09b9344f16f448c78dcc96c028be> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#KwantitatiefResultaat.waardeRecordType";
-    shacl:class <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#RecordType>;
+    shacl:class RecordsAndClassMetadata:RecordType;
     shacl:description "Datatype van de waarde."@nl;
     shacl:name "waardeRecordType"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.valueRecordType>.
@@ -260,18 +469,18 @@
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQualityResult#DQ_QuantitativeResult.valueUnit>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#LogischeConsistentieShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_LogicalConsistency>.
+    shacl:targetClass DataQuality_2:DQ_LogicalConsistency.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaatReferentieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaatReferentieShape/4fcac0edc7e5d7ae25f0d3c8f49d0ed57c3a3937>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaatReferentieShape/967ceeebb94bc56e092f6df2a27eedb7b212e084>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaatReferentieShape/1e8dd9b5c8d7dd9772ba6c70b9216a757d609691>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaatReferentieShape/fc45e115d6e40981fa08e8e6d21820caf23ca31c>, <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaatReferentieShape/1896bf1d0838c3f8949ba11ec3cddf1d81dea5e2>;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference>.
+    shacl:targetClass DataQuality_2:DQ_MeasureReference.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaatReferentieShape/1896bf1d0838c3f8949ba11ec3cddf1d81dea5e2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaatReferentie.maatNaam";
     shacl:datatype xsd:string;
     shacl:description "Naam van de gebruikte maat."@nl;
     shacl:name "maatNaam"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference.nameOfMeasure>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaatReferentieShape/1e8dd9b5c8d7dd9772ba6c70b9216a757d609691> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaatReferentie.maatIdentificatie";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Identificator van de gebruikte maat."@nl;
     shacl:name "maatIdentificatie"@nl;
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference.measureIdentification>.
@@ -292,25 +501,25 @@
     shacl:path <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_MeasureReference.measureIdentification>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#MaateenheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#UnitOfMeasure>.
+    shacl:targetClass UnitsOfMeasure:UnitOfMeasure.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#PositioneleNauwkeurigheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_PositionalAccuracy>.
+    shacl:targetClass DataQuality_2:DQ_PositionalAccuracy.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#RecordShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Record>.
+    shacl:targetClass RecordsAndClassMetadata:Record.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#RecordTypeShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#RecordType>.
+    shacl:targetClass RecordsAndClassMetadata:RecordType.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ScopeShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#MD_Scope>.
+    shacl:targetClass CommonClasses:MD_Scope.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#TemporeleKwaliteitShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_TemporalQuality>.
+    shacl:targetClass DataQuality_2:DQ_TemporalQuality.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#ThematischeNauwkeurigheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_ThematicAccuracy>.
+    shacl:targetClass DataQuality_2:DQ_ThematicAccuracy.
 <https://data.vlaanderen.be/doc/applicatieprofiel/datakwaliteit/kandidaatstandaard/2023-06-01#VolledigheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_Completeness>.
+    shacl:targetClass DataQuality_2:DQ_Completeness.

@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -103,67 +312,67 @@ crm:E9_Move a rdfs:Class;
     rdfs:label "Verhuis"@nl.
 skos:Concept a rdfs:Class;
     rdfs:label "Type Dimensie"@nl, "Type Conditie"@nl, "Type Materiaal"@nl, "Type Entiteit"@nl, "Type Beschrijving"@nl, "Type Recht"@nl, "Type Rol"@nl, "Type Techniek"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F1> a rdfs:Class;
+frbroo:F1 a rdfs:Class;
     rdfs:label "Werk"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F14> a rdfs:Class;
+frbroo:F14 a rdfs:Class;
     rdfs:label "Individueel Werk"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F15> a rdfs:Class;
+frbroo:F15 a rdfs:Class;
     rdfs:label "Complex Werk"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F17> a rdfs:Class;
+frbroo:F17 a rdfs:Class;
     rdfs:label "Aggregatiewerk"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F18> a rdfs:Class;
+frbroo:F18 a rdfs:Class;
     rdfs:label "Serieel Werk"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F19> a rdfs:Class;
+frbroo:F19 a rdfs:Class;
     rdfs:label "Publicatiewerk"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F20> a rdfs:Class;
+frbroo:F20 a rdfs:Class;
     rdfs:label "Voorstellingswerk"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F21> a rdfs:Class;
+frbroo:F21 a rdfs:Class;
     rdfs:label "Opnamewerk"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F22> a rdfs:Class;
+frbroo:F22 a rdfs:Class;
     rdfs:label "Zelfstandige Expressie"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F24> a rdfs:Class;
+frbroo:F24 a rdfs:Class;
     rdfs:label "Publicatie-expressie"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F25> a rdfs:Class;
+frbroo:F25 a rdfs:Class;
     rdfs:label "Voorstellingsplan"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F26> a rdfs:Class;
+frbroo:F26 a rdfs:Class;
     rdfs:label "Opname"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F27> a rdfs:Class;
+frbroo:F27 a rdfs:Class;
     rdfs:label "Werk Conceptie"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F28> a rdfs:Class;
+frbroo:F28 a rdfs:Class;
     rdfs:label "Expressiecreatie"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F29> a rdfs:Class;
+frbroo:F29 a rdfs:Class;
     rdfs:label "Opnamegebeurtenis"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F30> a rdfs:Class;
+frbroo:F30 a rdfs:Class;
     rdfs:label "Publicatiegebeurtenis"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#F31> a rdfs:Class;
+frbroo:F31 a rdfs:Class;
     rdfs:label "Voorstelling"@nl.
 <https://data.vlaanderen.be/ns/cultureel-erfgoed#Rol.activiteit> a owl:ObjectProperty;
     rdfs:label "Activiteit"@nl;
     rdfs:comment "Referentie naar verbonden klasse."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/cultureel-erfgoed#Rol>;
+    rdfs:domain cultureel-erfgoed:Rol;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/cultureel-erfgoed>;
     rdfs:range crm:E7_Activity.
 <https://data.vlaanderen.be/ns/cultureel-erfgoed#Rol.agent> a owl:ObjectProperty;
     rdfs:label "Agent"@nl;
     rdfs:comment "Referentie naar verbonden klasse."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/cultureel-erfgoed#Rol>;
+    rdfs:domain cultureel-erfgoed:Rol;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/cultureel-erfgoed>;
     rdfs:range dcterms:Agent.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed#Waarde> a owl:Class;
+cultureel-erfgoed:Waarde a owl:Class;
     rdfs:label "Waarde"@nl;
     vann:usageNote "Kwantitatief bv gewicht, kwalitatief bv categorie. Het datatype wordt overeenkomstig de invulling gekozen, bv Getal voor een kwantitatieve grootheid en een enumeratie voor een kwalitatieve grootheid."@nl;
     rdfs:comment "De concrete, kwantitatieve of kwalitatieve invulling van een grootheid of categorie."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/cultureel-erfgoed>.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed#tekst> a owl:DatatypeProperty;
+cultureel-erfgoed:tekst a owl:DatatypeProperty;
     rdfs:label "tekst"@nl;
     rdfs:comment "Tekst van de beschrijving."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/cultureel-erfgoed#Beschrijving>;
+    rdfs:domain cultureel-erfgoed:Beschrijving;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/cultureel-erfgoed>;
     rdfs:range rdf:langString.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed#type> a owl:ObjectProperty;
+cultureel-erfgoed:type a owl:ObjectProperty;
     rdfs:label "type"@nl;
     rdfs:comment "Aard van de beschrijving."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/cultureel-erfgoed#Beschrijving>;
+    rdfs:domain cultureel-erfgoed:Beschrijving;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/cultureel-erfgoed>;
     rdfs:range skos:Concept.
 dc11:title a rdf:Property;
@@ -366,7 +575,7 @@ crm:P94_has_created a rdf:Property;
     rdfs:label "heeft gecreëerd"@nl.
 crm:P94i_was_created_by a rdf:Property;
     rdfs:label "werd gecreëerd door"@nl.
-<http://www.w3.org/ns/adms#identifier> a rdf:Property;
+adms:identifier a rdf:Property;
     rdfs:label "identificator"@nl.
 schemas:unitCode a rdf:Property;
     rdfs:label "eenheidscode"@nl.
@@ -374,61 +583,61 @@ schemas:unitText a rdf:Property;
     rdfs:label "eenheidstekst"@nl.
 schemas:value a rdf:Property;
     rdfs:label "waarde"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R10> a rdf:Property;
+frbroo:R10 a rdf:Property;
     rdfs:label "heeft lid"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R11> a rdf:Property;
+frbroo:R11 a rdf:Property;
     rdfs:label "heeft uitgaveregel"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R16> a rdf:Property;
+frbroo:R16 a rdf:Property;
     rdfs:label "initieerde"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R16i> a rdf:Property;
+frbroo:R16i a rdf:Property;
     rdfs:label "is geïnitieerd door"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R17> a rdf:Property;
+frbroo:R17 a rdf:Property;
     rdfs:label "creëerde"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R17i> a rdf:Property;
+frbroo:R17i a rdf:Property;
     rdfs:label "werd gecreëerd door"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R19> a rdf:Property;
+frbroo:R19 a rdf:Property;
     rdfs:label "creëerde een realisatie van"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R19i> a rdf:Property;
+frbroo:R19i a rdf:Property;
     rdfs:label "werd gerealiseerd door"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R2> a rdf:Property;
+frbroo:R2 a rdf:Property;
     rdfs:label "is afgeleid van"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R20> a rdf:Property;
+frbroo:R20 a rdf:Property;
     rdfs:label "opgenomen"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R21> a rdf:Property;
+frbroo:R21 a rdf:Property;
     rdfs:label "creëerde"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R21i> a rdf:Property;
+frbroo:R21i a rdf:Property;
     rdfs:label "werd gecreëerd door"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R22> a rdf:Property;
+frbroo:R22 a rdf:Property;
     rdfs:label "creëerde een realisatie van"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R22i> a rdf:Property;
+frbroo:R22i a rdf:Property;
     rdfs:label "werd gerealiseerd door"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R23> a rdf:Property;
+frbroo:R23 a rdf:Property;
     rdfs:label "creëerde een realisatie van"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R23i> a rdf:Property;
+frbroo:R23i a rdf:Property;
     rdfs:label "werd gerealiseerd door"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R24> a rdf:Property;
+frbroo:R24 a rdf:Property;
     rdfs:label "creëerde"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R24i> a rdf:Property;
+frbroo:R24i a rdf:Property;
     rdfs:label "werd gecreëerd door"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R25> a rdf:Property;
+frbroo:R25 a rdf:Property;
     rdfs:label "voerde uit"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R25i> a rdf:Property;
+frbroo:R25i a rdf:Property;
     rdfs:label "werd uitgevoerd in"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R3> a rdf:Property;
+frbroo:R3 a rdf:Property;
     rdfs:label "wordt gerealiseerd in"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R3i> a rdf:Property;
+frbroo:R3i a rdf:Property;
     rdfs:label "realiseert"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R66> a rdf:Property;
+frbroo:R66 a rdf:Property;
     rdfs:label "inbegrepen uitgevoerde versie van"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R9> a rdf:Property;
+frbroo:R9 a rdf:Property;
     rdfs:label "is gerealiseerd in"@nl.
-<https://www.iflastandards.info/fr/frbr/frbroo#R9i> a rdf:Property;
+frbroo:R9i a rdf:Property;
     rdfs:label "realiseert"@nl.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed#Beschrijving> a owl:Class;
+cultureel-erfgoed:Beschrijving a owl:Class;
     rdfs:label "Beschrijving"@nl;
     rdfs:comment "Schriftelijke weergave van kenmerken van iets of iemand."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/cultureel-erfgoed>.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed#Rol> a owl:Class;
+cultureel-erfgoed:Rol a owl:Class;
     rdfs:label "Rol"@nl;
     vann:usageNote "Bv schilder bij de Productie van een schilderij of muzikant bij de uitvoering van een Voorstelling."@nl;
     rdfs:comment "Aard van de deelname van de Agent aan de Activiteit."@nl;
@@ -543,7 +752,7 @@ _:n3-751 foaf:homepage <https://data.vlaanderen.be>;
     foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
     foaf:name "Data Vlaanderen".
 <https://data.vlaanderen.be/ns/cultureel-erfgoed> dcterms:mediator _:n3-751;
-    rdfs:seeAlso <http://id.loc.gov/datatypes/edtf/EDTF>, dcmitype:Collection, crm:E10_Transfer_of_Custody, crm:E11_Modification, crm:E12_Production, crm:E13_Attribute_Assignment, crm:E14_Condition_Assessment, crm:E16_Measurement, crm:E17_Type_Assignment, crm:E18_Physical_Thing, crm:E1_CRM_Entity, crm:E22_Man-Made_Object, crm:E25_Man-Made_Feature, crm:E28_Conceptual_Object, crm:E29_Design_or_Procedure, crm:E2_Temporal_Entity, crm:E30_Right, crm:E31_Document, crm:E33_Linguistic_Object, crm:E36_Visual_Item, crm:E3_Condition_State, crm:E54_Dimension, crm:E5_Event, crm:E65_Creation, crm:E6_Destruction, crm:E70_Thing, crm:E72_Legal_Object, crm:E73_Information_Object, crm:E78_Collection, crm:E79_Part_Addition, crm:E7_Activity, crm:E80_Part_Removal, crm:E87_Curation_Activity, crm:E8_Acquisition, crm:E9_Move, skos:Concept, <https://www.iflastandards.info/fr/frbr/frbroo#F1>, <https://www.iflastandards.info/fr/frbr/frbroo#F14>, <https://www.iflastandards.info/fr/frbr/frbroo#F15>, <https://www.iflastandards.info/fr/frbr/frbroo#F17>, <https://www.iflastandards.info/fr/frbr/frbroo#F18>, <https://www.iflastandards.info/fr/frbr/frbroo#F19>, <https://www.iflastandards.info/fr/frbr/frbroo#F20>, <https://www.iflastandards.info/fr/frbr/frbroo#F21>, <https://www.iflastandards.info/fr/frbr/frbroo#F22>, <https://www.iflastandards.info/fr/frbr/frbroo#F24>, <https://www.iflastandards.info/fr/frbr/frbroo#F25>, <https://www.iflastandards.info/fr/frbr/frbroo#F26>, <https://www.iflastandards.info/fr/frbr/frbroo#F27>, <https://www.iflastandards.info/fr/frbr/frbroo#F28>, <https://www.iflastandards.info/fr/frbr/frbroo#F29>, <https://www.iflastandards.info/fr/frbr/frbroo#F30>, <https://www.iflastandards.info/fr/frbr/frbroo#F31>, dc11:title, dcterms:hasPart, dcterms:isPartOf, crm:P102_has_title, crm:P104_is_subject_to, crm:P104i_applies_to, crm:P105_right_held_by, crm:P105i_has_right_on, crm:P108_has_produced, crm:P108i_was_produced_by, crm:P109_has_current_or_former_curator, crm:P110_augmented, crm:P110i_was_augmented_by, crm:P111_added, crm:P111i_was_added_by, crm:P112_diminished, crm:P112i_was_diminished_by, crm:P113_removed, crm:P113i_was_removed_by, crm:P11_had_participant, crm:P126_employed, crm:P128_carries, crm:P128i_is_carried_by, crm:P129_is_about, crm:P129i_is_subject_of, crm:P138_represents, crm:P138i_has_representation, crm:P13_destroyed, crm:P13i_was_destroyed_by, <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of>, crm:P140_assigned_attribute_to, crm:P140i_was_attributed_by, crm:P141_assigned, crm:P147_curated, crm:P147i_was_curated_by, crm:P148_has_component, crm:P14_carried_out_by, crm:P14i_performed, crm:P165_incorporates, crm:P16_used_specific_object, crm:P177_assigned_property_type, crm:P190_has_symbolic_content, crm:P1_is_identified_by, crm:P22_transferred_title_to, crm:P22i_acquired_title_through, crm:P23_transfered_title_from, crm:P23i_surrendered_title_through, crm:P24_transferred_title_of, crm:P24i_changed_ownership_through, crm:P25_moved, crm:P25i_moved_by, crm:P26_moved_to, crm:P27_moved_from, crm:P28_custody_surrendered_by, crm:P28i_surrendered_custody_through, crm:P29_custody_received_by, crm:P29i_received_custody_through, crm:P2_has_type, crm:P30_transferred_custody_of, crm:P30i_custody_transferred_through, crm:P31_has_modified, crm:P31i_was_modified_by, crm:P32_used_general_technique, crm:P34_concerned, crm:P34i_was_assessed_by, crm:P35_has_identified, crm:P39_measured, crm:P39i_was_measured_by, crm:P3_has_note, crm:P40_observed_dimension, crm:P41_classified, crm:P41i_was_classified_by, crm:P42_assigned, crm:P43_has_dimension, crm:P44_has_condition, crm:P45_consists_of, crm:P46_is_composed_of, crm:P46i_forms_part_of, crm:P4_has_time-span, crm:P50_has_current_keeper, crm:P52_has_current_owner, crm:P53_has_former_or_current_location, crm:P54_has_current_permanent_location, crm:P55_has_current_location, crm:P62_depicts, crm:P62i_is_depicted_by, crm:P67_refers_to, crm:P67i_is_referred_to_by, crm:P69_is_associated_with, crm:P70_documents, crm:P70i_is_documented_in, crm:P72_has_language, crm:P73i_is_translation_of, crm:P74_has_current_or_former_residence, crm:P75_possesses, crm:P75i_is_possessed_by, crm:P76_has_contact_point, crm:P7_took_place_at, crm:P94_has_created, crm:P94i_was_created_by, <http://www.w3.org/ns/adms#identifier>, schemas:unitCode, schemas:unitText, schemas:value, <https://www.iflastandards.info/fr/frbr/frbroo#R10>, <https://www.iflastandards.info/fr/frbr/frbroo#R11>, <https://www.iflastandards.info/fr/frbr/frbroo#R16>, <https://www.iflastandards.info/fr/frbr/frbroo#R16i>, <https://www.iflastandards.info/fr/frbr/frbroo#R17>, <https://www.iflastandards.info/fr/frbr/frbroo#R17i>, <https://www.iflastandards.info/fr/frbr/frbroo#R19>, <https://www.iflastandards.info/fr/frbr/frbroo#R19i>, <https://www.iflastandards.info/fr/frbr/frbroo#R2>, <https://www.iflastandards.info/fr/frbr/frbroo#R20>, <https://www.iflastandards.info/fr/frbr/frbroo#R21>, <https://www.iflastandards.info/fr/frbr/frbroo#R21i>, <https://www.iflastandards.info/fr/frbr/frbroo#R22>, <https://www.iflastandards.info/fr/frbr/frbroo#R22i>, <https://www.iflastandards.info/fr/frbr/frbroo#R23>, <https://www.iflastandards.info/fr/frbr/frbroo#R23i>, <https://www.iflastandards.info/fr/frbr/frbroo#R24>, <https://www.iflastandards.info/fr/frbr/frbroo#R24i>, <https://www.iflastandards.info/fr/frbr/frbroo#R25>, <https://www.iflastandards.info/fr/frbr/frbroo#R25i>, <https://www.iflastandards.info/fr/frbr/frbroo#R3>, <https://www.iflastandards.info/fr/frbr/frbroo#R3i>, <https://www.iflastandards.info/fr/frbr/frbroo#R66>, <https://www.iflastandards.info/fr/frbr/frbroo#R9>, <https://www.iflastandards.info/fr/frbr/frbroo#R9i>.
+    rdfs:seeAlso <http://id.loc.gov/datatypes/edtf/EDTF>, dcmitype:Collection, crm:E10_Transfer_of_Custody, crm:E11_Modification, crm:E12_Production, crm:E13_Attribute_Assignment, crm:E14_Condition_Assessment, crm:E16_Measurement, crm:E17_Type_Assignment, crm:E18_Physical_Thing, crm:E1_CRM_Entity, crm:E22_Man-Made_Object, crm:E25_Man-Made_Feature, crm:E28_Conceptual_Object, crm:E29_Design_or_Procedure, crm:E2_Temporal_Entity, crm:E30_Right, crm:E31_Document, crm:E33_Linguistic_Object, crm:E36_Visual_Item, crm:E3_Condition_State, crm:E54_Dimension, crm:E5_Event, crm:E65_Creation, crm:E6_Destruction, crm:E70_Thing, crm:E72_Legal_Object, crm:E73_Information_Object, crm:E78_Collection, crm:E79_Part_Addition, crm:E7_Activity, crm:E80_Part_Removal, crm:E87_Curation_Activity, crm:E8_Acquisition, crm:E9_Move, skos:Concept, frbroo:F1, frbroo:F14, frbroo:F15, frbroo:F17, frbroo:F18, frbroo:F19, frbroo:F20, frbroo:F21, frbroo:F22, frbroo:F24, frbroo:F25, frbroo:F26, frbroo:F27, frbroo:F28, frbroo:F29, frbroo:F30, frbroo:F31, dc11:title, dcterms:hasPart, dcterms:isPartOf, crm:P102_has_title, crm:P104_is_subject_to, crm:P104i_applies_to, crm:P105_right_held_by, crm:P105i_has_right_on, crm:P108_has_produced, crm:P108i_was_produced_by, crm:P109_has_current_or_former_curator, crm:P110_augmented, crm:P110i_was_augmented_by, crm:P111_added, crm:P111i_was_added_by, crm:P112_diminished, crm:P112i_was_diminished_by, crm:P113_removed, crm:P113i_was_removed_by, crm:P11_had_participant, crm:P126_employed, crm:P128_carries, crm:P128i_is_carried_by, crm:P129_is_about, crm:P129i_is_subject_of, crm:P138_represents, crm:P138i_has_representation, crm:P13_destroyed, crm:P13i_was_destroyed_by, <http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of>, crm:P140_assigned_attribute_to, crm:P140i_was_attributed_by, crm:P141_assigned, crm:P147_curated, crm:P147i_was_curated_by, crm:P148_has_component, crm:P14_carried_out_by, crm:P14i_performed, crm:P165_incorporates, crm:P16_used_specific_object, crm:P177_assigned_property_type, crm:P190_has_symbolic_content, crm:P1_is_identified_by, crm:P22_transferred_title_to, crm:P22i_acquired_title_through, crm:P23_transfered_title_from, crm:P23i_surrendered_title_through, crm:P24_transferred_title_of, crm:P24i_changed_ownership_through, crm:P25_moved, crm:P25i_moved_by, crm:P26_moved_to, crm:P27_moved_from, crm:P28_custody_surrendered_by, crm:P28i_surrendered_custody_through, crm:P29_custody_received_by, crm:P29i_received_custody_through, crm:P2_has_type, crm:P30_transferred_custody_of, crm:P30i_custody_transferred_through, crm:P31_has_modified, crm:P31i_was_modified_by, crm:P32_used_general_technique, crm:P34_concerned, crm:P34i_was_assessed_by, crm:P35_has_identified, crm:P39_measured, crm:P39i_was_measured_by, crm:P3_has_note, crm:P40_observed_dimension, crm:P41_classified, crm:P41i_was_classified_by, crm:P42_assigned, crm:P43_has_dimension, crm:P44_has_condition, crm:P45_consists_of, crm:P46_is_composed_of, crm:P46i_forms_part_of, crm:P4_has_time-span, crm:P50_has_current_keeper, crm:P52_has_current_owner, crm:P53_has_former_or_current_location, crm:P54_has_current_permanent_location, crm:P55_has_current_location, crm:P62_depicts, crm:P62i_is_depicted_by, crm:P67_refers_to, crm:P67i_is_referred_to_by, crm:P69_is_associated_with, crm:P70_documents, crm:P70i_is_documented_in, crm:P72_has_language, crm:P73i_is_translation_of, crm:P74_has_current_or_former_residence, crm:P75_possesses, crm:P75i_is_possessed_by, crm:P76_has_contact_point, crm:P7_took_place_at, crm:P94_has_created, crm:P94i_was_created_by, adms:identifier, schemas:unitCode, schemas:unitText, schemas:value, frbroo:R10, frbroo:R11, frbroo:R16, frbroo:R16i, frbroo:R17, frbroo:R17i, frbroo:R19, frbroo:R19i, frbroo:R2, frbroo:R20, frbroo:R21, frbroo:R21i, frbroo:R22, frbroo:R22i, frbroo:R23, frbroo:R23i, frbroo:R24, frbroo:R24i, frbroo:R25, frbroo:R25i, frbroo:R3, frbroo:R3i, frbroo:R66, frbroo:R9, frbroo:R9i.
 _:n3-752 a foaf:Person.
 _:n3-753 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
     foaf:name "Informatie Vlaanderen".
@@ -551,7 +760,7 @@ _:n3-752 schema:affiliation _:n3-753;
     foaf:firstName "Raf";
     foaf:lastName "Buyle";
     foaf:mbox <mailto:raf.buyle@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed> ns1:editor _:n3-752.
+<https://data.vlaanderen.be/ns/cultureel-erfgoed> rec54:editor _:n3-752.
 _:n3-754 a foaf:Person.
 _:n3-755 foaf:homepage <https://www.pwc.be>;
     foaf:name "PwC".
@@ -559,7 +768,7 @@ _:n3-754 schema:affiliation _:n3-755;
     foaf:firstName "Dimitri";
     foaf:lastName "Schepers";
     foaf:mbox <mailto:dimitri.schepers@pwc.com>.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed> ns1:editor _:n3-754.
+<https://data.vlaanderen.be/ns/cultureel-erfgoed> rec54:editor _:n3-754.
 _:n3-756 a foaf:Person.
 _:n3-757 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
     foaf:name "Informatie Vlaanderen".
@@ -567,7 +776,7 @@ _:n3-756 schema:affiliation _:n3-757;
     foaf:firstName "Geert";
     foaf:lastName "Thijs";
     foaf:mbox <mailto:geert.thijs@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed> ns1:editor _:n3-756.
+<https://data.vlaanderen.be/ns/cultureel-erfgoed> rec54:editor _:n3-756.
 _:n3-758 a foaf:Person.
 _:n3-759 foaf:homepage <https://www.pwc.be>;
     foaf:name "PwC".
@@ -575,7 +784,7 @@ _:n3-758 schema:affiliation _:n3-759;
     foaf:firstName "Anthony";
     foaf:lastName "Van Heymbeeck";
     foaf:mbox <mailto:anthony.van.heymbeeck@pwc.com>.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed> ns1:editor _:n3-758.
+<https://data.vlaanderen.be/ns/cultureel-erfgoed> rec54:editor _:n3-758.
 _:n3-760 a foaf:Person.
 _:n3-761 foaf:homepage <https://imec.be>;
     foaf:name "UGent - imec".
@@ -583,7 +792,7 @@ _:n3-760 schema:affiliation _:n3-761;
     foaf:firstName "Brecht";
     foaf:lastName "Van de Vyvere";
     foaf:mbox <mailto:brecht.vandevyvere@ugent.be>.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed> ns1:editor _:n3-760.
+<https://data.vlaanderen.be/ns/cultureel-erfgoed> rec54:editor _:n3-760.
 _:n3-762 a foaf:Person.
 _:n3-763 foaf:homepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
     foaf:name "Informatie Vlaanderen".
@@ -591,7 +800,7 @@ _:n3-762 schema:affiliation _:n3-763;
     foaf:firstName "Martin";
     foaf:lastName "Vanbrabant";
     foaf:mbox <mailto:martin.vanbrabant@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed> ns1:editor _:n3-762.
+<https://data.vlaanderen.be/ns/cultureel-erfgoed> rec54:editor _:n3-762.
 _:n3-764 a foaf:Person.
 _:n3-765 foaf:homepage <https://www.pwc.be>;
     foaf:name "PwC".
@@ -599,7 +808,7 @@ _:n3-764 schema:affiliation _:n3-765;
     foaf:firstName "Laurens";
     foaf:lastName "Vercauteren";
     foaf:mbox <mailto:laurens.vercauteren@pwc.com>.
-<https://data.vlaanderen.be/ns/cultureel-erfgoed> ns1:editor _:n3-764.
+<https://data.vlaanderen.be/ns/cultureel-erfgoed> rec54:editor _:n3-764.
 _:n3-766 a foaf:Person.
 _:n3-767 foaf:homepage <https://www.vlaanderen.be/cjm/nl>;
     foaf:name "Departement Cultuur, Jeugd en Media".

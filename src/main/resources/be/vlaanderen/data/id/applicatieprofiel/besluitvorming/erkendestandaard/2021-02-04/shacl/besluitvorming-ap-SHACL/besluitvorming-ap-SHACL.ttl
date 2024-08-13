@@ -1,38 +1,247 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<https://data.vlaanderen.be/shacl/besluitvorming-ap> <https://data.vlaanderen.be/shacl/besluitvorming-apshapes> <https://data.vlaanderen.be/shacl/besluitvorming-ap#AanleidingShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendaShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#AgenderingShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#BeslissingsactiviteitShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitvormingsaangelegenheidShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#VerslagShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#RechtsgrondShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#PubliekeOrganisatieShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#BehandelingVanAgendapuntShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#BestuurseenheidShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#BestuursorgaanShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#StemmingShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#VergaderactiviteitShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#AgentShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#IdentificatorShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#OrganisatieShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#AgentInRolShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#LocatieShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#DossierShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#ProcedurestapShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape>, <https://data.vlaanderen.be/shacl/besluitvorming-ap#GestructureerdeIdentificatorShape>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AanleidingShape> a shacl:NodeShape;
+<https://data.vlaanderen.be/shacl/besluitvorming-ap> <https://data.vlaanderen.be/shacl/besluitvorming-apshapes> besluitvorming-ap:AanleidingShape, besluitvorming-ap:AgendaShape, besluitvorming-ap:AgenderingShape, besluitvorming-ap:BeslissingsactiviteitShape, besluitvorming-ap:BesluitvormingsaangelegenheidShape, besluitvorming-ap:VerslagShape, besluitvorming-ap:RechtsgrondShape, besluitvorming-ap:PubliekeOrganisatieShape, besluitvorming-ap:AgendapuntShape, besluitvorming-ap:BehandelingVanAgendapuntShape, besluitvorming-ap:BesluitShape, besluitvorming-ap:BestuurseenheidShape, besluitvorming-ap:BestuursorgaanShape, besluitvorming-ap:StemmingShape, besluitvorming-ap:VergaderactiviteitShape, besluitvorming-ap:AgentShape, besluitvorming-ap:IdentificatorShape, besluitvorming-ap:OrganisatieShape, besluitvorming-ap:ActiviteitShape, besluitvorming-ap:AgentInRolShape, besluitvorming-ap:LocatieShape, besluitvorming-ap:DossierShape, besluitvorming-ap:ProcedurestapShape, besluitvorming-ap:StukShape, besluitvorming-ap:GestructureerdeIdentificatorShape.
+besluitvorming-ap:AanleidingShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-88 shacl:datatype xsd:string;
     shacl:description "Een omschrijving van de aanleiding";
@@ -40,163 +249,163 @@ _:n3-88 shacl:datatype xsd:string;
     shacl:minCount 1;
     shacl:name "beschrijving";
     shacl:path dcterms:description.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AanleidingShape> shacl:property _:n3-88.
-_:n3-89 shacl:class <https://data.vlaanderen.be/ns/dossier#Stuk>;
+besluitvorming-ap:AanleidingShape shacl:property _:n3-88.
+_:n3-89 shacl:class dossier:Stuk;
     shacl:description "Het stuk waarop de aanleiding zich baseert.";
     shacl:name "heeftOorsprongIn";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#heeftOorsprongIn>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AanleidingShape> shacl:property _:n3-89;
-    shacl:targetClass <https://data.vlaanderen.be/ns/besluitvorming#Aanleiding>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> a shacl:NodeShape;
+    shacl:path besluitvorming:heeftOorsprongIn.
+besluitvorming-ap:AanleidingShape shacl:property _:n3-89;
+    shacl:targetClass besluitvorming:Aanleiding.
+besluitvorming-ap:ActiviteitShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-90 shacl:datatype xsd:dateTime;
     shacl:description "De einddatum van de activiteit.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path <https://data.vlaanderen.be/ns/dossier#Activiteit.einddatum>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> shacl:property _:n3-90.
-_:n3-91 shacl:class <https://data.vlaanderen.be/ns/dossier#Stuk>;
+besluitvorming-ap:ActiviteitShape shacl:property _:n3-90.
+_:n3-91 shacl:class dossier:Stuk;
     shacl:description "De stukken die werden gebruikt voor de activiteit.";
     shacl:name "gebruikt";
     shacl:path prov:used.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> shacl:property _:n3-91.
-_:n3-92 shacl:class <https://data.vlaanderen.be/ns/dossier#Stuk>;
+besluitvorming-ap:ActiviteitShape shacl:property _:n3-91.
+_:n3-92 shacl:class dossier:Stuk;
     shacl:description "Een activiteit kan een stuk genereren.";
     shacl:name "genereert";
-    shacl:path <https://data.vlaanderen.be/ns/dossier#genereert>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> shacl:property _:n3-92.
+    shacl:path dossier:genereert.
+besluitvorming-ap:ActiviteitShape shacl:property _:n3-92.
 _:n3-93 shacl:datatype xsd:dateTime;
     shacl:description "Het tijdstip waarop de activiteit gepland is om te beginnen.";
     shacl:maxCount 1;
     shacl:name "geplandeStart";
-    shacl:path <https://data.vlaanderen.be/ns/generiek#geplandeStart>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> shacl:property _:n3-93.
+    shacl:path generiek:geplandeStart.
+besluitvorming-ap:ActiviteitShape shacl:property _:n3-93.
 _:n3-94 shacl:class prov:Association;
     shacl:description "Persoon of organisatie die binnen een bepaalde rol een verantwoordelijkheid opneemt voor deze activiteit.";
     shacl:name "heeftDeelnemer";
     shacl:path prov:qualifiedAssociation.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> shacl:property _:n3-94.
+besluitvorming-ap:ActiviteitShape shacl:property _:n3-94.
 _:n3-95 shacl:datatype xsd:string;
     shacl:description "De naam van de activiteit.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> shacl:property _:n3-95.
+besluitvorming-ap:ActiviteitShape shacl:property _:n3-95.
 _:n3-96 shacl:datatype xsd:dateTime;
     shacl:description "De startdatum van de activiteit.";
     shacl:maxCount 1;
     shacl:name "startdatum";
     shacl:path <https://data.vlaanderen.be/ns/dossier#Activiteit.startdatum>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> shacl:property _:n3-96.
+besluitvorming-ap:ActiviteitShape shacl:property _:n3-96.
 _:n3-97 shacl:class skos:Concept;
     shacl:description "Categorie waartoe deze activiteit behoord.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> shacl:property _:n3-97.
-_:n3-98 shacl:class <https://data.vlaanderen.be/ns/dossier#Procedurestap>;
+besluitvorming-ap:ActiviteitShape shacl:property _:n3-97.
+_:n3-98 shacl:class dossier:Procedurestap;
     shacl:description "Een activiteit vindt plaats tijdens een procedurestap.";
     shacl:maxCount 1;
     shacl:name "vindtPlaatsTijdens";
-    shacl:path <https://data.vlaanderen.be/ns/dossier#vindtPlaatsTijdens>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> shacl:property _:n3-98.
+    shacl:path dossier:vindtPlaatsTijdens.
+besluitvorming-ap:ActiviteitShape shacl:property _:n3-98.
 _:n3-99 shacl:class dcterms:Agent;
     shacl:description "Een toewijzing van verantwoordelijkheid aan een agent voor een activiteit, wat aangeeft dat de agent een rol in de activiteit had.";
     shacl:minCount 1;
     shacl:name "wasGeassocieerdMet";
     shacl:path prov:wasAssociatedWith.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ActiviteitShape> shacl:property _:n3-99;
+besluitvorming-ap:ActiviteitShape shacl:property _:n3-99;
     shacl:targetClass prov:Activity.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendaShape> a shacl:NodeShape;
+besluitvorming-ap:AgendaShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-100 shacl:class skos:Concept;
     shacl:description "De toestand waarin de agenda zich bevindt voor een specifiek type.";
     shacl:maxCount 1;
     shacl:name "agendaStatus";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#agendaStatus>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendaShape> shacl:property _:n3-100.
+    shacl:path besluitvorming:agendaStatus.
+besluitvorming-ap:AgendaShape shacl:property _:n3-100.
 _:n3-101 shacl:class skos:Concept;
     shacl:description "Soort agenda.";
     shacl:maxCount 1;
     shacl:name "agendaType";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#agendaType>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendaShape> shacl:property _:n3-101.
+    shacl:path besluitvorming:agendaType.
+besluitvorming-ap:AgendaShape shacl:property _:n3-101.
 _:n3-102 shacl:class besluit:Vergaderactiviteit;
     shacl:description "De Vergaderactiviteit waarvoor de Agenda wordt voorbereid.";
     shacl:maxCount 1;
     shacl:name "isAgendaVoor";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#isAgendaVoor>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendaShape> shacl:property _:n3-102;
-    shacl:targetClass <https://data.vlaanderen.be/ns/besluitvorming#Agenda>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape> a shacl:NodeShape;
+    shacl:path besluitvorming:isAgendaVoor.
+besluitvorming-ap:AgendaShape shacl:property _:n3-102;
+    shacl:targetClass besluitvorming:Agenda.
+besluitvorming-ap:AgendapuntShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-103 shacl:datatype xsd:string;
     shacl:description "Korte beschrijving van het agendapunt.";
     shacl:maxCount 1;
     shacl:name "beschrijving";
     shacl:path dcterms:description.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape> shacl:property _:n3-103.
-_:n3-104 shacl:class <https://data.vlaanderen.be/ns/dossier#Stuk>;
+besluitvorming-ap:AgendapuntShape shacl:property _:n3-103.
+_:n3-104 shacl:class dossier:Stuk;
     shacl:description "Een gerelateerd stuk waarnaar wordt verwezen, geciteerd of anderszins aangegeven in het agendapunt";
     shacl:name "geagendeerdStuk";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#geagendeerdStuk>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape> shacl:property _:n3-104.
+    shacl:path besluitvorming:geagendeerdStuk.
+besluitvorming-ap:AgendapuntShape shacl:property _:n3-104.
 _:n3-105 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of het al dan niet de bedoeling is om het agendapunt publiek te maken.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geplandOpenbaar";
     shacl:path besluit:geplandOpenbaar.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape> shacl:property _:n3-105.
+besluitvorming-ap:AgendapuntShape shacl:property _:n3-105.
 _:n3-106 shacl:class besluit:Agendapunt;
     shacl:description "Duidt aan dat een agendapunt na een ander agendapunt is aangebracht op een vergadering.";
     shacl:maxCount 1;
     shacl:name "isAangebrachtNa";
     shacl:path besluit:aangebrachtNa.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape> shacl:property _:n3-106.
-_:n3-107 shacl:class <https://data.vlaanderen.be/ns/besluitvorming#Agenda>;
+besluitvorming-ap:AgendapuntShape shacl:property _:n3-106.
+_:n3-107 shacl:class besluitvorming:Agenda;
     shacl:description "De Agenda waarvan dit Agendapunt een onderdeel is.";
     shacl:name "isOnderdeelVan";
     shacl:path dcterms:isPartOf.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape> shacl:property _:n3-107.
+besluitvorming-ap:AgendapuntShape shacl:property _:n3-107.
 _:n3-108 shacl:datatype xsd:string;
     shacl:description "Een verkorte vorm van de naam.";
     shacl:maxCount 1;
     shacl:name "korteTitel";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#korteTitel>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape> shacl:property _:n3-108.
+    shacl:path besluitvorming:korteTitel.
+besluitvorming-ap:AgendapuntShape shacl:property _:n3-108.
 _:n3-109 shacl:datatype xsd:string;
     shacl:description "De volledige naam van het agendapunt";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "titel";
     shacl:path dcterms:title.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape> shacl:property _:n3-109.
+besluitvorming-ap:AgendapuntShape shacl:property _:n3-109.
 _:n3-110 shacl:class skos:Concept;
     shacl:description "Type van het agendapunt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path <http://data.vlaanderen.be/ns/besluit#Agendapunt.type>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape> shacl:property _:n3-110.
+besluitvorming-ap:AgendapuntShape shacl:property _:n3-110.
 _:n3-111 shacl:class besluit:Agendapunt;
     shacl:description "Origineel agendapunt waarvan dit agendapunt een herziening is.";
     shacl:name "vervangt";
     shacl:path prov:wasRevisionOf.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgendapuntShape> shacl:property _:n3-111;
+besluitvorming-ap:AgendapuntShape shacl:property _:n3-111;
     shacl:targetClass besluit:Agendapunt.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgenderingShape> a shacl:NodeShape;
+besluitvorming-ap:AgenderingShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-112 shacl:class besluit:Agendapunt;
     shacl:description "Het agendapunt of de agendapunten die werden aangemaakt als gevolg van de agendering.";
     shacl:minCount 1;
     shacl:name "genereertAgendapunt";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#genereertAgendapunt>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgenderingShape> shacl:property _:n3-112;
-    shacl:targetClass <https://data.vlaanderen.be/ns/besluitvorming#Agendering>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgentInRolShape> a shacl:NodeShape;
+    shacl:path besluitvorming:genereertAgendapunt.
+besluitvorming-ap:AgenderingShape shacl:property _:n3-112;
+    shacl:targetClass besluitvorming:Agendering.
+besluitvorming-ap:AgentInRolShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-113 shacl:class dcterms:Agent;
     shacl:description "Duidt de agent aan waarvan deze entiteit een rol toewijst.";
@@ -204,71 +413,71 @@ _:n3-113 shacl:class dcterms:Agent;
     shacl:minCount 1;
     shacl:name "isRolspecialisatieVan";
     shacl:path prov:agent.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgentInRolShape> shacl:property _:n3-113.
+besluitvorming-ap:AgentInRolShape shacl:property _:n3-113.
 _:n3-114 shacl:class org:Role;
     shacl:description "De functie van een agent met betrekking tot een activiteit.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "rol";
     shacl:path prov:hadRole.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgentInRolShape> shacl:property _:n3-114;
+besluitvorming-ap:AgentInRolShape shacl:property _:n3-114;
     shacl:targetClass prov:Association.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#AgentShape> a shacl:NodeShape;
+besluitvorming-ap:AgentShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass dcterms:Agent.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BehandelingVanAgendapuntShape> a shacl:NodeShape;
+besluitvorming-ap:BehandelingVanAgendapuntShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-115 shacl:class besluit:BehandelingVanAgendapunt;
     shacl:description "Verwijzing naar het voorgaand behandeld agendapunt binnen dezelfde vergadering. Laat toe om de volgorde van de behandelingen op te bouwen.";
     shacl:name "gebeurtNa";
     shacl:path besluit:gebeurtNa.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BehandelingVanAgendapuntShape> shacl:property _:n3-115.
-_:n3-116 shacl:class <https://data.vlaanderen.be/ns/besluitvorming#Verslag>;
+besluitvorming-ap:BehandelingVanAgendapuntShape shacl:property _:n3-115.
+_:n3-116 shacl:class besluitvorming:Verslag;
     shacl:description "de schriftelijke neerslag van (een onderdeel) van deze behandeling van agendapunt.";
     shacl:name "genereertVerslag";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#genereertVerslag>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BehandelingVanAgendapuntShape> shacl:property _:n3-116.
-_:n3-117 shacl:class <https://data.vlaanderen.be/ns/besluitvorming#Beslissingsactiviteit>;
+    shacl:path besluitvorming:genereertVerslag.
+besluitvorming-ap:BehandelingVanAgendapuntShape shacl:property _:n3-116.
+_:n3-117 shacl:class besluitvorming:Beslissingsactiviteit;
     shacl:description "De Beslissing die volgt uit de Behandeling van het Agendapunt.";
     shacl:name "heeftBeslissing";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#heeftBeslissing>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BehandelingVanAgendapuntShape> shacl:property _:n3-117.
+    shacl:path besluitvorming:heeftBeslissing.
+besluitvorming-ap:BehandelingVanAgendapuntShape shacl:property _:n3-117.
 _:n3-118 shacl:class besluit:Agendapunt;
     shacl:description "Het onderwerp van de activiteit.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "heeftOnderwerp";
     shacl:path dcterms:subject.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BehandelingVanAgendapuntShape> shacl:property _:n3-118.
+besluitvorming-ap:BehandelingVanAgendapuntShape shacl:property _:n3-118.
 _:n3-119 shacl:class besluit:Stemming;
     shacl:description "Een stemming die plaatsvond tijdens de behandeling van het agendapunt.";
     shacl:name "heeftStemming";
     shacl:path besluit:heeftStemming.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BehandelingVanAgendapuntShape> shacl:property _:n3-119.
+besluitvorming-ap:BehandelingVanAgendapuntShape shacl:property _:n3-119.
 _:n3-120 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan dat de behandeling van het agendapunt publiek is.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "openbaar";
     shacl:path besluit:openbaar.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BehandelingVanAgendapuntShape> shacl:property _:n3-120;
+besluitvorming-ap:BehandelingVanAgendapuntShape shacl:property _:n3-120;
     shacl:targetClass besluit:BehandelingVanAgendapunt.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BeslissingsactiviteitShape> a shacl:NodeShape;
+besluitvorming-ap:BeslissingsactiviteitShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-121 shacl:class besluit:Besluit;
     shacl:description "Het Besluit dat werd goedgekeurd door deze beslissing";
     shacl:name "geeftAanleidingTot";
     shacl:path prov:generated.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BeslissingsactiviteitShape> shacl:property _:n3-121.
+besluitvorming-ap:BeslissingsactiviteitShape shacl:property _:n3-121.
 _:n3-122 shacl:class skos:Concept;
     shacl:description "Eindoordeel van de beoordeling.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "resultaat";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#resultaat>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BeslissingsactiviteitShape> shacl:property _:n3-122;
-    shacl:targetClass <https://data.vlaanderen.be/ns/besluitvorming#Beslissingsactiviteit>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitShape> a shacl:NodeShape;
+    shacl:path besluitvorming:resultaat.
+besluitvorming-ap:BeslissingsactiviteitShape shacl:property _:n3-122;
+    shacl:targetClass besluitvorming:Beslissingsactiviteit.
+besluitvorming-ap:BesluitShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-123 shacl:datatype xsd:string;
     shacl:description "De beknopte beschrijving van de beslissing.";
@@ -276,99 +485,99 @@ _:n3-123 shacl:datatype xsd:string;
     shacl:minCount 1;
     shacl:name "beschrijving";
     shacl:path eli:description.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitShape> shacl:property _:n3-123.
+besluitvorming-ap:BesluitShape shacl:property _:n3-123.
 _:n3-124 shacl:datatype xsd:string;
     shacl:description "De beknopte titel of officiële korte naam van een decreet, wet, besluit... Deze wordt officieel vastgelegd. Deze benaming wordt in de praktijk gebruikt om naar de rechtsgrond te verwijzen.";
     shacl:maxCount 1;
     shacl:name "citeeropschrift";
     shacl:path eli:title_short.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitShape> shacl:property _:n3-124.
+besluitvorming-ap:BesluitShape shacl:property _:n3-124.
 _:n3-125 shacl:datatype rdfs:Literal;
     shacl:description "De beschrijving van de beoogde rechtsgevolgen, het zogenaamde beschikkend gedeelte.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "inhoud";
     shacl:path prov:value.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitShape> shacl:property _:n3-125.
+besluitvorming-ap:BesluitShape shacl:property _:n3-125.
 _:n3-126 shacl:datatype xsd:string;
     shacl:description "Beschrijving van de juridische en feitelijke motivering achter de beslissing die wordt uitgedrukt in het besluit.";
     shacl:maxCount 1;
     shacl:name "motivering";
     shacl:path besluit:motivering.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitShape> shacl:property _:n3-126.
+besluitvorming-ap:BesluitShape shacl:property _:n3-126.
 _:n3-127 shacl:datatype xsd:date;
     shacl:description "De officiële publicatiedatum van het besluit.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "publicatiedatum";
     shacl:path eli:date_publication.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitShape> shacl:property _:n3-127.
+besluitvorming-ap:BesluitShape shacl:property _:n3-127.
 _:n3-128 shacl:class eli:LegalResource;
     shacl:description "De rechtsgrond (rechtsbron) beschreven door dit besluit.";
     shacl:name "realiseert";
     shacl:path eli:realizes.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitShape> shacl:property _:n3-128.
+besluitvorming-ap:BesluitShape shacl:property _:n3-128.
 _:n3-129 shacl:class skos:Concept;
     shacl:description "De taal van de verschijningsvorm.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "taal";
     shacl:path eli:language.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitShape> shacl:property _:n3-129.
+besluitvorming-ap:BesluitShape shacl:property _:n3-129.
 _:n3-130 shacl:datatype xsd:string;
     shacl:description "Titel van de legale verschijningsvorm.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "titel";
     shacl:path eli:title.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitShape> shacl:property _:n3-130;
+besluitvorming-ap:BesluitShape shacl:property _:n3-130;
     shacl:targetClass besluit:Besluit.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitvormingsaangelegenheidShape> a shacl:NodeShape;
+besluitvorming-ap:BesluitvormingsaangelegenheidShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-131 shacl:datatype xsd:string;
     shacl:description "Niet formele benaming van de besluitvormingsaangelegenheid.";
     shacl:name "alternatieveNaam";
     shacl:path dcterms:alternative.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitvormingsaangelegenheidShape> shacl:property _:n3-131.
+besluitvorming-ap:BesluitvormingsaangelegenheidShape shacl:property _:n3-131.
 _:n3-132 shacl:class skos:Concept;
     shacl:description "De beleidsvelden waar deze besluitvormingsaangelegenheid onder valt.";
     shacl:minCount 1;
     shacl:name "beleidsveld";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#beleidsveld>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitvormingsaangelegenheidShape> shacl:property _:n3-132.
-_:n3-133 shacl:class <https://data.vlaanderen.be/ns/dossier#Procedurestap>;
+    shacl:path besluitvorming:beleidsveld.
+besluitvorming-ap:BesluitvormingsaangelegenheidShape shacl:property _:n3-132.
+_:n3-133 shacl:class dossier:Procedurestap;
     shacl:description "Een Besluitvormingsaangelegenheid doorloopt Procedurestappen.";
     shacl:minCount 1;
     shacl:name "doorloopt";
-    shacl:path <https://data.vlaanderen.be/ns/dossier#doorloopt>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitvormingsaangelegenheidShape> shacl:property _:n3-133.
-_:n3-134 shacl:class <https://data.vlaanderen.be/ns/besluitvorming#Aanleiding>;
+    shacl:path dossier:doorloopt.
+besluitvorming-ap:BesluitvormingsaangelegenheidShape shacl:property _:n3-133.
+_:n3-134 shacl:class besluitvorming:Aanleiding;
     shacl:description "De motivatie voor het opstarten van de Besluitvormingsaangelegenheid.";
     shacl:name "heeftAanleiding";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#heeftAanleiding>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitvormingsaangelegenheidShape> shacl:property _:n3-134.
+    shacl:path besluitvorming:heeftAanleiding.
+besluitvorming-ap:BesluitvormingsaangelegenheidShape shacl:property _:n3-134.
 _:n3-135 shacl:datatype xsd:string;
     shacl:description "De naam van de besluitvormingsaangelegenheid";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitvormingsaangelegenheidShape> shacl:property _:n3-135.
+besluitvorming-ap:BesluitvormingsaangelegenheidShape shacl:property _:n3-135.
 _:n3-136 shacl:datatype xsd:date;
     shacl:description "De openingsdatum van de zaak.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "openingsdatum";
-    shacl:path <https://data.vlaanderen.be/ns/dossier#openingsdatum>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitvormingsaangelegenheidShape> shacl:property _:n3-136.
+    shacl:path dossier:openingsdatum.
+besluitvorming-ap:BesluitvormingsaangelegenheidShape shacl:property _:n3-136.
 _:n3-137 shacl:datatype xsd:date;
     shacl:description "De sluitingsdatum van de zaak.";
     shacl:maxCount 1;
     shacl:name "sluitingsdatum";
-    shacl:path <https://data.vlaanderen.be/ns/dossier#sluitingsdatum>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BesluitvormingsaangelegenheidShape> shacl:property _:n3-137;
-    shacl:targetClass <https://data.vlaanderen.be/ns/besluitvorming#Besluitvormingsaangelegenheid>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BestuurseenheidShape> a shacl:NodeShape;
+    shacl:path dossier:sluitingsdatum.
+besluitvorming-ap:BesluitvormingsaangelegenheidShape shacl:property _:n3-137;
+    shacl:targetClass besluitvorming:Besluitvormingsaangelegenheid.
+besluitvorming-ap:BestuurseenheidShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-138 shacl:class skos:Concept;
     shacl:description "Classificatie van de bestuurseenheid.";
@@ -376,175 +585,175 @@ _:n3-138 shacl:class skos:Concept;
     shacl:minCount 1;
     shacl:name "classificatie";
     shacl:path org:classification.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BestuurseenheidShape> shacl:property _:n3-138.
+besluitvorming-ap:BestuurseenheidShape shacl:property _:n3-138.
 _:n3-139 shacl:datatype rdfs:Literal;
     shacl:description "Naam van de bestuurseenheid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path skos:prefLabel.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BestuurseenheidShape> shacl:property _:n3-139.
+besluitvorming-ap:BestuurseenheidShape shacl:property _:n3-139.
 _:n3-140 shacl:class prov:Location;
     shacl:description "Geografische gebied waarbinnen de bestuurseenheid bepaalde verantwoordelijkheden heeft waarbinnen het bestuurshandelingen kan stellen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "werkingsgebied";
     shacl:path besluit:werkingsgebied.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BestuurseenheidShape> shacl:property _:n3-140;
+besluitvorming-ap:BestuurseenheidShape shacl:property _:n3-140;
     shacl:targetClass besluit:Bestuurseenheid.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BestuursorgaanShape> a shacl:NodeShape;
+besluitvorming-ap:BestuursorgaanShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-141 shacl:class besluit:Bestuurseenheid;
     shacl:description "De bestuurseenheid die door het orgaan bestuurd wordt.";
     shacl:name "bestuurt";
     shacl:path besluit:bestuurt.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BestuursorgaanShape> shacl:property _:n3-141.
+besluitvorming-ap:BestuursorgaanShape shacl:property _:n3-141.
 _:n3-142 shacl:class skos:Concept;
     shacl:description "Het type bestuursorgaan.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "classificatie";
     shacl:path org:classification.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BestuursorgaanShape> shacl:property _:n3-142.
+besluitvorming-ap:BestuursorgaanShape shacl:property _:n3-142.
 _:n3-143 shacl:datatype rdfs:Literal;
     shacl:description "Naam van de eenheid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path skos:prefLabel.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#BestuursorgaanShape> shacl:property _:n3-143;
+besluitvorming-ap:BestuursorgaanShape shacl:property _:n3-143;
     shacl:targetClass besluit:Bestuursorgaan.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#DossierShape> a shacl:NodeShape;
+besluitvorming-ap:DossierShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-144 shacl:class <https://data.vlaanderen.be/ns/dossier#Stuk>;
+_:n3-144 shacl:class dossier:Stuk;
     shacl:description "Een dossier bestaat uit dossierstukken.";
     shacl:name "bestaatUit";
     shacl:path <https://data.vlaanderen.be/ns/dossier#Dossier.bestaatUit>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#DossierShape> shacl:property _:n3-144.
+besluitvorming-ap:DossierShape shacl:property _:n3-144.
 _:n3-145 shacl:class skos:Concept;
     shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden.";
     shacl:maxCount 1;
     shacl:name "informatieclassificatie";
-    shacl:path <https://data.vlaanderen.be/ns/dossier#informatieclassificatie>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#DossierShape> shacl:property _:n3-145.
-_:n3-146 shacl:class <https://data.vlaanderen.be/ns/besluitvorming#Besluitvormingsaangelegenheid>;
+    shacl:path dossier:informatieclassificatie.
+besluitvorming-ap:DossierShape shacl:property _:n3-145.
+_:n3-146 shacl:class besluitvorming:Besluitvormingsaangelegenheid;
     shacl:description "Een Dossier is een neerslag van een Besluitvormingsaangelegenheid";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "isNeerslagVan";
     shacl:path <https://data.vlaanderen.be/ns/dossier#Dossier.isNeerslagVan>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#DossierShape> shacl:property _:n3-146.
+besluitvorming-ap:DossierShape shacl:property _:n3-146.
 _:n3-147 shacl:datatype xsd:string;
     shacl:description "De naam van het dossier.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#DossierShape> shacl:property _:n3-147;
-    shacl:targetClass <https://data.vlaanderen.be/ns/dossier#Dossier>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#GestructureerdeIdentificatorShape> a shacl:NodeShape;
+besluitvorming-ap:DossierShape shacl:property _:n3-147;
+    shacl:targetClass dossier:Dossier.
+besluitvorming-ap:GestructureerdeIdentificatorShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-148 shacl:datatype xsd:string;
     shacl:description "String gebruikt om het object uniek te identificeren binnen de naamruimte.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "lokaleIdentificator";
-    shacl:path <https://data.vlaanderen.be/ns/generiek#lokaleIdentificator>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#GestructureerdeIdentificatorShape> shacl:property _:n3-148.
+    shacl:path generiek:lokaleIdentificator.
+besluitvorming-ap:GestructureerdeIdentificatorShape shacl:property _:n3-148.
 _:n3-149 shacl:datatype xsd:string;
     shacl:description "String die toegvoegd wordt aan de lokaleidentificator om deze globaal uniek te maken.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naamruimte";
-    shacl:path <https://data.vlaanderen.be/ns/generiek#naamruimte>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#GestructureerdeIdentificatorShape> shacl:property _:n3-149.
+    shacl:path generiek:naamruimte.
+besluitvorming-ap:GestructureerdeIdentificatorShape shacl:property _:n3-149.
 _:n3-150 shacl:datatype xsd:string;
     shacl:description "Identificator van de specifieke versie van een object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "versieIdentificator";
-    shacl:path <https://data.vlaanderen.be/ns/generiek#versieIdentificator>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#GestructureerdeIdentificatorShape> shacl:property _:n3-150;
-    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#IdentificatorShape> a shacl:NodeShape;
+    shacl:path generiek:versieIdentificator.
+besluitvorming-ap:GestructureerdeIdentificatorShape shacl:property _:n3-150;
+    shacl:targetClass generiek:GestructureerdeIdentificator.
+besluitvorming-ap:IdentificatorShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-151 shacl:class <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator>;
+_:n3-151 shacl:class generiek:GestructureerdeIdentificator;
     shacl:description "Identificator vh object opgesplitst in zijn onderdelen.";
     shacl:maxCount 1;
     shacl:name "gestructureerdeIdentificator";
-    shacl:path <https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#IdentificatorShape> shacl:property _:n3-151.
+    shacl:path generiek:gestructureerdeIdentificator.
+besluitvorming-ap:IdentificatorShape shacl:property _:n3-151.
 _:n3-152 shacl:datatype rdfs:Literal;
     shacl:description "String gebruikt om het object uniek te identificeren. ";
     shacl:maxCount 1;
     shacl:name "identificator";
     shacl:path skos:notation.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#IdentificatorShape> shacl:property _:n3-152.
+besluitvorming-ap:IdentificatorShape shacl:property _:n3-152.
 _:n3-153 shacl:class dcterms:Agent;
     shacl:description "Link naar de agent die de identificator heeft uitgegeven.";
     shacl:maxCount 1;
     shacl:name "toegekendDoor";
     shacl:path dcterms:creator.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#IdentificatorShape> shacl:property _:n3-153.
+besluitvorming-ap:IdentificatorShape shacl:property _:n3-153.
 _:n3-154 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de identificator werd uitgegeven.";
     shacl:maxCount 1;
     shacl:name "toegekendOp";
     shacl:path dcterms:issued.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#IdentificatorShape> shacl:property _:n3-154;
-    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#LocatieShape> a shacl:NodeShape;
+besluitvorming-ap:IdentificatorShape shacl:property _:n3-154;
+    shacl:targetClass adms:Identifier.
+besluitvorming-ap:LocatieShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass prov:Location.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#OrganisatieShape> a shacl:NodeShape;
+besluitvorming-ap:OrganisatieShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass org:Organization.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ProcedurestapShape> a shacl:NodeShape;
+besluitvorming-ap:ProcedurestapShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-155 shacl:datatype xsd:date;
     shacl:description "De einddatum van de procedurestap.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path <https://data.vlaanderen.be/ns/dossier#Procedurestap.einddatum>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ProcedurestapShape> shacl:property _:n3-155.
+besluitvorming-ap:ProcedurestapShape shacl:property _:n3-155.
 _:n3-156 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan over de procedurestap al dan niet openbaar zal zijn.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geplandOpenbaar";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#geplandOpenbaar>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ProcedurestapShape> shacl:property _:n3-156.
+    shacl:path besluitvorming:geplandOpenbaar.
+besluitvorming-ap:ProcedurestapShape shacl:property _:n3-156.
 _:n3-157 shacl:datatype xsd:string;
     shacl:description "De naam van de procedurestap.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ProcedurestapShape> shacl:property _:n3-157.
+besluitvorming-ap:ProcedurestapShape shacl:property _:n3-157.
 _:n3-158 shacl:datatype xsd:date;
     shacl:description "De startdatum van de procedurestap.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "startdatum";
     shacl:path <https://data.vlaanderen.be/ns/dossier#Procedurestap.startdatum>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ProcedurestapShape> shacl:property _:n3-158.
+besluitvorming-ap:ProcedurestapShape shacl:property _:n3-158.
 _:n3-159 shacl:class skos:Concept;
     shacl:description "Soort procedurestap.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#ProcedurestapShape> shacl:property _:n3-159;
-    shacl:targetClass <https://data.vlaanderen.be/ns/dossier#Procedurestap>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#PubliekeOrganisatieShape> a shacl:NodeShape;
+besluitvorming-ap:ProcedurestapShape shacl:property _:n3-159;
+    shacl:targetClass dossier:Procedurestap.
+besluitvorming-ap:PubliekeOrganisatieShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-160 shacl:class dcterms:Location;
     shacl:description "Administratief gebied dat de Publieke Organisatie dekt.";
     shacl:name "werkingsgebied";
     shacl:path dcterms:spatial.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#PubliekeOrganisatieShape> shacl:property _:n3-160;
+besluitvorming-ap:PubliekeOrganisatieShape shacl:property _:n3-160;
     shacl:targetClass eu:PublicOrganisation.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#RechtsgrondShape> a shacl:NodeShape;
+besluitvorming-ap:RechtsgrondShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-161 shacl:datatype xsd:date;
     shacl:description "De laatste dag waarop de regelgeving nog van kracht is.";
@@ -552,23 +761,23 @@ _:n3-161 shacl:datatype xsd:date;
     shacl:minCount 1;
     shacl:name "buitenwerkingtreding";
     shacl:path eli:date_no_longer_in_force.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#RechtsgrondShape> shacl:property _:n3-161.
+besluitvorming-ap:RechtsgrondShape shacl:property _:n3-161.
 _:n3-162 shacl:datatype xsd:date;
     shacl:description "De datum waarop de regelgeving van kracht wordt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "inwerkingtreding";
     shacl:path eli:first_date_entry_in_force.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#RechtsgrondShape> shacl:property _:n3-162.
+besluitvorming-ap:RechtsgrondShape shacl:property _:n3-162.
 _:n3-163 shacl:class eli:ResourceType;
     shacl:description "Het type van de rechtsgrond.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "typeDocument";
     shacl:path eli:type_document.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#RechtsgrondShape> shacl:property _:n3-163;
+besluitvorming-ap:RechtsgrondShape shacl:property _:n3-163;
     shacl:targetClass eli:LegalResource.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StemmingShape> a shacl:NodeShape;
+besluitvorming-ap:StemmingShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-164 shacl:datatype xsd:integer;
     shacl:description "Het aantal stemmers dat als onthouding heeft gestemd.";
@@ -576,164 +785,164 @@ _:n3-164 shacl:datatype xsd:integer;
     shacl:minCount 1;
     shacl:name "aantalOnthouders";
     shacl:path besluit:aantalOnthouders.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StemmingShape> shacl:property _:n3-164.
+besluitvorming-ap:StemmingShape shacl:property _:n3-164.
 _:n3-165 shacl:datatype xsd:integer;
     shacl:description "Het aantal stemmers dat als tegenstander heeft gestemd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "aantalTegenstanders";
     shacl:path besluit:aantalTegenstanders.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StemmingShape> shacl:property _:n3-165.
+besluitvorming-ap:StemmingShape shacl:property _:n3-165.
 _:n3-166 shacl:datatype xsd:integer;
     shacl:description "Het aantal stemmers dat als voorstander heeft gestemd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "aantalVoorstanders";
     shacl:path besluit:aantalVoorstanders.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StemmingShape> shacl:property _:n3-166.
+besluitvorming-ap:StemmingShape shacl:property _:n3-166.
 _:n3-167 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de stemming geheim was. Bij een geheime stemming wordt niet individueel bekend gemaakt wie op wat heeft gestemd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geheim";
     shacl:path besluit:geheim.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StemmingShape> shacl:property _:n3-167.
+besluitvorming-ap:StemmingShape shacl:property _:n3-167.
 _:n3-168 shacl:datatype rdf:langString;
     shacl:description "Het gevolg van de stemming.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "gevolg";
     shacl:path besluit:gevolg.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StemmingShape> shacl:property _:n3-168.
+besluitvorming-ap:StemmingShape shacl:property _:n3-168.
 _:n3-169 shacl:datatype rdf:langString;
     shacl:description "De beschrijving van het onderwerp waarover de stemming gaat.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "onderwerp";
     shacl:path besluit:onderwerp.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StemmingShape> shacl:property _:n3-169;
+besluitvorming-ap:StemmingShape shacl:property _:n3-169;
     shacl:targetClass besluit:Stemming.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> a shacl:NodeShape;
+besluitvorming-ap:StukShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-170 shacl:class dcterms:Agent;
     shacl:description "De auteur van het stuk.";
     shacl:name "auteur";
-    shacl:path <https://data.vlaanderen.be/ns/dossier#auteur>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-170.
+    shacl:path dossier:auteur.
+besluitvorming-ap:StukShape shacl:property _:n3-170.
 _:n3-171 shacl:datatype xsd:dateTime;
     shacl:description "De creatiedatum van het stuk.";
     shacl:maxCount 1;
     shacl:name "creatiedatum";
     shacl:path dcterms:created.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-171.
+besluitvorming-ap:StukShape shacl:property _:n3-171.
 _:n3-172 shacl:datatype xsd:dateTime;
     shacl:description "De datum van het stuk.";
     shacl:minCount 1;
     shacl:name "datum";
     shacl:path dcterms:date.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-172.
-_:n3-173 shacl:class <https://data.vlaanderen.be/ns/dossier#Stuk>;
+besluitvorming-ap:StukShape shacl:property _:n3-172.
+_:n3-173 shacl:class dossier:Stuk;
     shacl:description "Een gerelateerd Stuk dat vereist is om het stuk zijn functie of samenhang te ondersteunen.";
     shacl:name "heeftBijlage";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#heeftBijlage>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-173.
-_:n3-174 shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:path besluitvorming:heeftBijlage.
+besluitvorming-ap:StukShape shacl:property _:n3-173.
+_:n3-174 shacl:class adms:Identifier;
     shacl:description "Identificator van het object.";
     shacl:name "identificator";
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-174.
+    shacl:path adms:identifier.
+besluitvorming-ap:StukShape shacl:property _:n3-174.
 _:n3-175 shacl:class skos:Concept;
     shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden.";
     shacl:maxCount 1;
     shacl:name "informatieclassificatie";
-    shacl:path <https://data.vlaanderen.be/ns/dossier#informatieclassificatie>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-175.
+    shacl:path dossier:informatieclassificatie.
+besluitvorming-ap:StukShape shacl:property _:n3-175.
 _:n3-176 shacl:datatype rdfs:Literal;
     shacl:description "Digitale voorstelling van de data vervat in het stuk, al dan niet geencodeerd in een binair formaat.";
     shacl:maxCount 1;
     shacl:name "inhoud";
     shacl:path prov:value.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-176.
+besluitvorming-ap:StukShape shacl:property _:n3-176.
 _:n3-177 shacl:datatype xsd:string;
     shacl:description "De naam van het stuk.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-177.
+besluitvorming-ap:StukShape shacl:property _:n3-177.
 _:n3-178 shacl:datatype xsd:dateTime;
     shacl:description "Datum van formele uitgifte van het stuk.";
     shacl:maxCount 1;
     shacl:name "publicatiedatum";
     shacl:path dcterms:issued.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-178.
-_:n3-179 <http://purl.org/linked-data/cube#codeList> <http://publications.europa.eu/resource/dataset/language>;
+besluitvorming-ap:StukShape shacl:property _:n3-178.
+_:n3-179 cube:codeList <http://publications.europa.eu/resource/dataset/language>;
     shacl:class skos:Concept;
     shacl:description "De taal van het stuk";
     shacl:maxCount 1;
     shacl:name "taal";
     shacl:path dcterms:language.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-179.
+besluitvorming-ap:StukShape shacl:property _:n3-179.
 _:n3-180 shacl:class skos:Concept;
     shacl:description "Categorie waartoe het stuk behoord.";
     shacl:maxCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-180.
+besluitvorming-ap:StukShape shacl:property _:n3-180.
 _:n3-181 shacl:class skos:Concept;
     shacl:description "Indicatie van de gevoeligheid van het stuk en welke beperkingen gelden.";
     shacl:maxCount 1;
     shacl:name "vertrouwelijkheidsniveau";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#vertrouwelijkheidsniveau>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-181.
-_:n3-182 shacl:class <https://data.vlaanderen.be/ns/dossier#Stuk>;
+    shacl:path besluitvorming:vertrouwelijkheidsniveau.
+besluitvorming-ap:StukShape shacl:property _:n3-181.
+_:n3-182 shacl:class dossier:Stuk;
     shacl:description "Origineel stuk waarvan dit stuk een herziening is.";
     shacl:name "vervangt";
     shacl:path dcterms:replaces.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-182.
+besluitvorming-ap:StukShape shacl:property _:n3-182.
 _:n3-183 shacl:datatype xsd:string;
     shacl:description "Nummer van het stuk binnen een serie, kan bestaan uit cijfers of een combinatie van cijfers en alfanummerieke tekens.";
     shacl:maxCount 1;
     shacl:name "volgnummer";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#volgnummer>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#StukShape> shacl:property _:n3-183;
-    shacl:targetClass <https://data.vlaanderen.be/ns/dossier#Stuk>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#VergaderactiviteitShape> a shacl:NodeShape;
+    shacl:path besluitvorming:volgnummer.
+besluitvorming-ap:StukShape shacl:property _:n3-183;
+    shacl:targetClass dossier:Stuk.
+besluitvorming-ap:VergaderactiviteitShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-184 shacl:class <https://data.vlaanderen.be/ns/besluitvorming#Agenda>;
+_:n3-184 shacl:class besluitvorming:Agenda;
     shacl:description "De Agenda die effectief wordt behandeld op de Vergaderactiviteit.";
     shacl:maxCount 1;
     shacl:name "behandelt";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#behandelt>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#VergaderactiviteitShape> shacl:property _:n3-184.
+    shacl:path besluitvorming:behandelt.
+besluitvorming-ap:VergaderactiviteitShape shacl:property _:n3-184.
 _:n3-185 shacl:class dcterms:Agent;
     shacl:description "Een agent (bvb: mandataris) die aanwezig was tijdens (een deel van) de activiteit waar hij een zekere verantwoordelijkheid had.";
     shacl:name "heeftAanwezige";
     shacl:path besluit:heeftAanwezige.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#VergaderactiviteitShape> shacl:property _:n3-185.
-_:n3-186 shacl:class <https://data.vlaanderen.be/ns/dossier#Stuk>;
+besluitvorming-ap:VergaderactiviteitShape shacl:property _:n3-185.
+_:n3-186 shacl:class dossier:Stuk;
     shacl:description "De formele notulen van de vergadering.";
     shacl:maxCount 1;
     shacl:name "heeftNotulen";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#heeftNotulen>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#VergaderactiviteitShape> shacl:property _:n3-186.
+    shacl:path besluitvorming:heeftNotulen.
+besluitvorming-ap:VergaderactiviteitShape shacl:property _:n3-186.
 _:n3-187 shacl:class besluit:Bestuursorgaan;
     shacl:description "Duidt aan door welk orgaan de vergadering is gehouden.";
     shacl:name "isGehoudenDoor";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#isGehoudenDoor>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#VergaderactiviteitShape> shacl:property _:n3-187.
+    shacl:path besluitvorming:isGehoudenDoor.
+besluitvorming-ap:VergaderactiviteitShape shacl:property _:n3-187.
 _:n3-188 shacl:class prov:Location;
     shacl:description "Locatie waar de vergaderactiviteit plaatsvindt. Doorgaans is dit een zaal in een gebouw.";
     shacl:maxCount 1;
     shacl:name "opLocatie";
     shacl:path prov:atLocation.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#VergaderactiviteitShape> shacl:property _:n3-188;
+besluitvorming-ap:VergaderactiviteitShape shacl:property _:n3-188;
     shacl:targetClass besluit:Vergaderactiviteit.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#VerslagShape> a shacl:NodeShape;
+besluitvorming-ap:VerslagShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-189 shacl:class <https://data.vlaanderen.be/ns/besluitvorming#Beslissingsactiviteit>;
+_:n3-189 shacl:class besluitvorming:Beslissingsactiviteit;
     shacl:description "De beslissing(en) die in dit verslag beschreven zijn.";
     shacl:name "beschrijft";
-    shacl:path <https://data.vlaanderen.be/ns/besluitvorming#beschrijft>.
-<https://data.vlaanderen.be/shacl/besluitvorming-ap#VerslagShape> shacl:property _:n3-189;
-    shacl:targetClass <https://data.vlaanderen.be/ns/besluitvorming#Verslag>.
+    shacl:path besluitvorming:beschrijft.
+besluitvorming-ap:VerslagShape shacl:property _:n3-189;
+    shacl:targetClass besluitvorming:Verslag.

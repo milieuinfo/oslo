@@ -1,33 +1,242 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
@@ -35,62 +244,62 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/cf827b426dea22706df61185227553de37e70106>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/ef19f7e17aea0d0905db8e0b7ecb753947f7a51c>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/fb9d31605670308c2013bc7f60208841611633ce>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/6e6b5a16c51171fa6cadf81c6ce9b763429f4ffc>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/945ea2be2a71a26b704d3cbb29ae3daff81326c0>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/b67cc06a63ff51a4496c08e8e22d80e6c5518e4e>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/a027783a43fa4a2390a36edd2e229a86a71ef3b6>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/d7d2dcafa5ef5a1f79411d9fde67aa6cf4627e21>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/879341651e3c340cecf1e909795fa7a8caf72ea1>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/90ff8d11bfc9c73e2a40fde3b3c655a4ca50ae1e>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/cc4a7c4da1ced734b0507689d75a8c53742fca66>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Aankooplijn>.
+    shacl:targetClass lokale-economie:Aankooplijn.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/6e6b5a16c51171fa6cadf81c6ce9b763429f4ffc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.product";
     shacl:description "Product dat het onderwerp vormt van de aankooplijn."@nl;
     shacl:maxCount 1;
     shacl:name "product"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#product>.
+    shacl:path lokale-economie:product.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/879341651e3c340cecf1e909795fa7a8caf72ea1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.transactie";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Transactie>;
+    shacl:class lokale-economie:Transactie;
     shacl:description "Transactie waartoe de aankooplijn behoort."@nl;
     shacl:name "transactie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#transactie>.
+    shacl:path lokale-economie:transactie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/90ff8d11bfc9c73e2a40fde3b3c655a4ca50ae1e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.transactie";
     shacl:description "Transactie waartoe de aankooplijn behoort."@nl;
     shacl:maxCount 1;
     shacl:name "transactie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#transactie>.
+    shacl:path lokale-economie:transactie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/945ea2be2a71a26b704d3cbb29ae3daff81326c0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.product";
     shacl:class schemas:Product;
     shacl:description "Product dat het onderwerp vormt van de aankooplijn."@nl;
     shacl:name "product"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#product>.
+    shacl:path lokale-economie:product.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/a027783a43fa4a2390a36edd2e229a86a71ef3b6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.promotie";
     shacl:description "Promotie die van toepassing is op een specifiek product."@nl;
     shacl:maxCount 1;
     shacl:name "promotie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#promotie>.
+    shacl:path lokale-economie:promotie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/b67cc06a63ff51a4496c08e8e22d80e6c5518e4e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.product";
     shacl:description "Product dat het onderwerp vormt van de aankooplijn."@nl;
     shacl:minCount 1;
     shacl:name "product"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#product>.
+    shacl:path lokale-economie:product.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/cc4a7c4da1ced734b0507689d75a8c53742fca66> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.transactie";
     shacl:description "Transactie waartoe de aankooplijn behoort."@nl;
     shacl:minCount 1;
     shacl:name "transactie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#transactie>.
+    shacl:path lokale-economie:transactie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/cf827b426dea22706df61185227553de37e70106> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.aantal";
     shacl:description "Aantal producten van eenzelfde soort."@nl;
     shacl:maxCount 1;
     shacl:name "aantal"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#aantal>.
+    shacl:path lokale-economie:aantal.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/d7d2dcafa5ef5a1f79411d9fde67aa6cf4627e21> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.promotie";
     shacl:class schemas:QuantitativeValue;
     shacl:description "Promotie die van toepassing is op een specifiek product."@nl;
     shacl:name "promotie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#promotie>.
+    shacl:path lokale-economie:promotie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/ef19f7e17aea0d0905db8e0b7ecb753947f7a51c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.aantal";
     shacl:description "Aantal producten van eenzelfde soort."@nl;
     shacl:minCount 1;
     shacl:name "aantal"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#aantal>.
+    shacl:path lokale-economie:aantal.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AankooplijnShape/fb9d31605670308c2013bc7f60208841611633ce> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Aankooplijn.aantal";
     shacl:datatype xsd:integer;
     shacl:description "Aantal producten van eenzelfde soort."@nl;
     shacl:name "aantal"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#aantal>.
+    shacl:path lokale-economie:aantal.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AantalWerknemersShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
@@ -117,23 +326,23 @@
     shacl:description "De inrichter van de activiteit."@nl;
     shacl:maxCount 1;
     shacl:name "ingerichtDoor"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ingerichtDoor>.
+    shacl:path cultuurparticipatie:ingerichtDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ActiviteitShape/f164a9ead1dddbf4e04eebe769dcfe2171d611b0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Activiteit.ingerichtDoor";
     shacl:description "De inrichter van de activiteit."@nl;
     shacl:minCount 1;
     shacl:name "ingerichtDoor"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ingerichtDoor>.
+    shacl:path cultuurparticipatie:ingerichtDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ActiviteitShape/fdeed340b519727a7a3f0976281f25a321093930> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Activiteit.ingerichtDoor";
     shacl:class dcterms:Agent;
     shacl:description "De inrichter van de activiteit."@nl;
     shacl:name "ingerichtDoor"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/cultuurparticipatie#ingerichtDoor>.
+    shacl:path cultuurparticipatie:ingerichtDoor.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ActiviteitTypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/adres#Adres>.
+    shacl:targetClass adres:Adres.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/abfc06b457fcde1ee965f226e532bf6f3a39a2c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/f648c2d4eacbd1d07bd50057ffcd80c7530fee82>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/5b5c9660dee8c2fe5e12a2171df9ca8f65e56afe>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/9c835625155376a4ace080d75f0e6a1de34e125f>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/133ddf2f2dface49550bac70c2d3c0e1cbcc1814>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/4377bdb4b159b2d102367c80a69ddb81c3b07d5c>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/39baabcdaa1762f4713bddd8309d016f5ee9d6cf>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/cfed717e052c47de56301458f327433a531e41a9>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/37246edbcb4a7afcd798b2cb2c36c3c01062c58d>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/a5dc410fc15e90c98bcfa80de12bb9ed0c53d325>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/616718c1e32ca05fef2798f755da77ea3dc306bf>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/66b53707d4d92cacc0ec66c150d6ea0125aee989>;
@@ -152,7 +361,7 @@
     shacl:description "Land waarin het adres gelegen is."@nl;
     shacl:maxCount 1;
     shacl:name "land"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/adres#land>.
+    shacl:path adres:land.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/4377bdb4b159b2d102367c80a69ddb81c3b07d5c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Adresvoorstelling.huisnummer";
     shacl:datatype xsd:string;
     shacl:description "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."@nl;
@@ -162,7 +371,7 @@
     shacl:datatype rdf:langString;
     shacl:description "Gemeentenaam vh adres."@nl;
     shacl:name "gemeentenaam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/adres#gemeentenaam>.
+    shacl:path adres:gemeentenaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/616718c1e32ca05fef2798f755da77ea3dc306bf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Adresvoorstelling.straatnaam";
     shacl:datatype rdf:langString;
     shacl:description "Straatnaam vh adres."@nl;
@@ -177,7 +386,7 @@
     shacl:description "Gemeentenaam vh adres."@nl;
     shacl:maxCount 1;
     shacl:name "gemeentenaam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/adres#gemeentenaam>.
+    shacl:path adres:gemeentenaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/a5dc410fc15e90c98bcfa80de12bb9ed0c53d325> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Adresvoorstelling.postcode";
     shacl:description "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."@nl;
     shacl:maxCount 1;
@@ -192,7 +401,7 @@
     shacl:datatype rdf:langString;
     shacl:description "Land waarin het adres gelegen is."@nl;
     shacl:name "land"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/adres#land>.
+    shacl:path adres:land.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#AdresvoorstellingShape/f648c2d4eacbd1d07bd50057ffcd80c7530fee82> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Adresvoorstelling.busnummer";
     shacl:description "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."@nl;
     shacl:maxCount 1;
@@ -218,7 +427,7 @@
     shacl:description "Indicatie van het betaalmiddel dat gebruikt werd."@nl;
     shacl:minCount 1;
     shacl:name "betaalmethode"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#betaalmethode>.
+    shacl:path lokale-economie:betaalmethode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BetalingShape/4871811d8d5f50d25ff627cd32699aace01c70a4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Betaling.tijdstip";
     shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de betaling plaatsvindt."@nl;
@@ -233,56 +442,56 @@
     shacl:class skos:Concept;
     shacl:description "Indicatie van het betaalmiddel dat gebruikt werd."@nl;
     shacl:name "betaalmethode"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#betaalmethode>.
+    shacl:path lokale-economie:betaalmethode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BetalingShape/879341651e3c340cecf1e909795fa7a8caf72ea1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Betaling.transactie";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Transactie>;
+    shacl:class lokale-economie:Transactie;
     shacl:description "Transactie waartoe de betaling behoort."@nl;
     shacl:name "transactie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#transactie>.
+    shacl:path lokale-economie:transactie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BetalingShape/90ff8d11bfc9c73e2a40fde3b3c655a4ca50ae1e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Betaling.transactie";
     shacl:description "Transactie waartoe de betaling behoort."@nl;
     shacl:maxCount 1;
     shacl:name "transactie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#transactie>.
+    shacl:path lokale-economie:transactie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BetalingShape/a35b4aaa223f7b34a22812ada63b2f5eca204f2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Betaling.betaalmethode";
     shacl:description "Indicatie van het betaalmiddel dat gebruikt werd."@nl;
     shacl:maxCount 1;
     shacl:name "betaalmethode"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#betaalmethode>.
+    shacl:path lokale-economie:betaalmethode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BetalingShape/a88d06f343359b7b95af028292e348810924e355> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Betaling.bedrag";
     shacl:description "Hoeveelheid geld of equivalent die wordt overgemaakt."@nl;
     shacl:maxCount 1;
     shacl:name "bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#bedrag>.
+    shacl:path lokale-economie:bedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BetalingShape/b0b353ad4e427329f8695e342e66f3bc193529d7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Betaling.tijdstip";
     shacl:description "Tijdstip waarop de betaling plaatsvindt."@nl;
     shacl:maxCount 1;
     shacl:name "tijdstip"@nl;
     shacl:path <https://data.vlaanderen.be/ns/lokale-economie#Betaling.tijdstip>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BetalingShape/c9584bd112099eab9ac3f9319f715d4125ab5eda> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Betaling.bedrag";
-    shacl:class <https://data.vlaanderen.be/ns/financiele-data#Monetair>;
+    shacl:class financiele-data:Monetair;
     shacl:description "Hoeveelheid geld of equivalent die wordt overgemaakt."@nl;
     shacl:name "bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#bedrag>.
+    shacl:path lokale-economie:bedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BetalingShape/cc4a7c4da1ced734b0507689d75a8c53742fca66> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Betaling.transactie";
     shacl:description "Transactie waartoe de betaling behoort."@nl;
     shacl:minCount 1;
     shacl:name "transactie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#transactie>.
+    shacl:path lokale-economie:transactie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BetalingShape/e9d2a4ff25a2b10061aeeb96d1ba40f32345c7c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Betaling.bedrag";
     shacl:description "Hoeveelheid geld of equivalent die wordt overgemaakt."@nl;
     shacl:minCount 1;
     shacl:name "bedrag"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#bedrag>.
+    shacl:path lokale-economie:bedrag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape/421d78c27acf98a3c52191db36ac97de764ae8b5>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape/d000adb186880cbcc53d4d31cf1f6bfd06d1ae82>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Bezoekersgebied>.
+    shacl:targetClass lokale-economie:Bezoekersgebied.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Bezoekersgebied.naam";
     shacl:datatype rdf:langString;
     shacl:description "Naam van het bezoekersgebied."@nl;
     shacl:name "naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#naam>.
+    shacl:path lokale-economie:naam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Bezoekersgebied.type";
     shacl:description "Type van het bezoekersgebied."@nl;
     shacl:maxCount 1;
@@ -302,9 +511,9 @@
     shacl:description "Naam van het bezoekersgebied."@nl;
     shacl:maxCount 1;
     shacl:name "naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#naam>.
+    shacl:path lokale-economie:naam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#BezoekersgebiedShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Bezoekersgebied.locatie";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Locatie>;
+    shacl:class lokale-economie:Locatie;
     shacl:description "Precieze locatie van het bezoekersgebied."@nl;
     shacl:name "locatie"@nl;
     shacl:path <https://www.w3.org/ns/prov#atLocation>.
@@ -410,7 +619,7 @@
     shacl:path locn:address.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DirecteLocatieAanduidingShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/RuimtelijkPlannen#DirecteLocatieAanduiding>.
+    shacl:targetClass RuimtelijkPlannen:DirecteLocatieAanduiding.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DoelgroepTypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
@@ -426,12 +635,12 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape/15397f169c0820f29a691668caf2b8a02bb1d92a>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape/795a43b321c286b262922736ff3c2f9eed844ae4>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape/72ea0b99788268f500d5aaa5a0d8e61dbb97b07c>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Druktekenmerk>.
+    shacl:targetClass lokale-economie:Druktekenmerk.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape/15397f169c0820f29a691668caf2b8a02bb1d92a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Druktekenmerk.bezoekHerkomst";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Locatie>;
+    shacl:class lokale-economie:Locatie;
     shacl:description "Bepaalde herkomst van bezoekers die geobserveerd wordt."@nl;
     shacl:name "bezoekHerkomst"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#bezoekHerkomst>.
+    shacl:path lokale-economie:bezoekHerkomst.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Druktekenmerk.type";
     shacl:description "Type van druktekenmerk."@nl;
     shacl:maxCount 1;
@@ -443,10 +652,10 @@
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape/72ea0b99788268f500d5aaa5a0d8e61dbb97b07c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Druktekenmerk.koperprofiel";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Profiel>;
+    shacl:class lokale-economie:Profiel;
     shacl:description "Socio-demografisch profiel of organisatieprofiel dat geobserveerd wordt."@nl;
     shacl:name "koperprofiel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#koperprofiel>.
+    shacl:path lokale-economie:koperprofiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Druktekenmerk.type";
     shacl:description "Type van druktekenmerk."@nl;
     shacl:minCount 1;
@@ -456,14 +665,14 @@
     shacl:class skos:Concept;
     shacl:description "Bezoekersprofiel dat geobserveerd wordt."@nl;
     shacl:name "bezoekersprofiel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#bezoekersProfiel>.
+    shacl:path lokale-economie:bezoekersProfiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktekenmerkTypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktemetingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktemetingShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktemetingShape/60638eca218f8b9f8ea1b79fb9b42510aa9f03fe>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktemetingShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Druktemeting>.
+    shacl:targetClass lokale-economie:Druktemeting.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktemetingShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Druktemeting.geobserveerdKenmerk";
     shacl:description "Druktekenmerk dat geobserveerd wordt."@nl;
     shacl:minCount 1;
@@ -475,7 +684,7 @@
     shacl:name "geobserveerdKenmerk"@nl;
     shacl:path <https://data.vlaanderen.be/ns/lokale-economie#Druktemeting.geobserveerdKenmerk>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#DruktemetingShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Druktemeting.geobserveerdKenmerk";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Druktekenmerk>;
+    shacl:class lokale-economie:Druktekenmerk;
     shacl:description "Druktekenmerk dat geobserveerd wordt."@nl;
     shacl:name "geobserveerdKenmerk"@nl;
     shacl:path <https://data.vlaanderen.be/ns/lokale-economie#Druktemeting.geobserveerdKenmerk>.
@@ -524,7 +733,7 @@
     shacl:name "titel"@nl;
     shacl:path dcterms:title.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#GebeurtenisShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Gebeurtenis.locatie";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Locatie>;
+    shacl:class lokale-economie:Locatie;
     shacl:description "Locatie waarop een gebeurtenis plaatsvindt."@nl;
     shacl:name "locatie"@nl;
     shacl:path <https://www.w3.org/ns/prov#atLocation>.
@@ -559,12 +768,12 @@
     shacl:description "Geometrie uitgedrukt in wkt-formaat."@nl;
     shacl:maxCount 1;
     shacl:name "als WKT"@nl;
-    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>.
+    shacl:path geosparql:asWKT.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#GeometrieShape/ef783f39afdef3741189b6db0049f2a4fe522ca4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Geometrie.alsGML";
     shacl:description "Geometrie uitgedrukt in gml-formaat."@nl;
     shacl:maxCount 1;
     shacl:name "als GML"@nl;
-    shacl:path <http://www.opengis.net/ont/geosparql#asGML>.
+    shacl:path geosparql:asGML.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#GetalShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass schemas:Number.
@@ -574,12 +783,12 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/407ad83e3ef9ebe4ccda85158fa65d57f7383e1d>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/7bef42c774a76e91230868157163b1a1534df524>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/24905ee0f475777e37f07cee254c458de0761b2c>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/4b3dbf014d47148d9d7ef51df399c1cf82c5278b>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/38a9e51d01d2b0fbc697037f520dd6da3ce0e24a>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/3dc480c515bab20b2b0d0bafd53ca63fb68d1eae>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/8fbda6a85077de4ad917a0e8d35e1cdbfa7ec8fa>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Handelszaak>.
+    shacl:targetClass lokale-economie:Handelszaak.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/24905ee0f475777e37f07cee254c458de0761b2c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Handelszaak.publiekeVerkoopVloeroppervlakte";
     shacl:class schemas:QuantitativeValue;
     shacl:description "Publiek toegankelijke oppervlakte van de winkel."@nl;
     shacl:name "publiekeVerkoopVloeroppervlakte"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#publiekeVerkoopVloeroppervlakte>.
+    shacl:path lokale-economie:publiekeVerkoopVloeroppervlakte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/38a9e51d01d2b0fbc697037f520dd6da3ce0e24a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Handelszaak.vestigingsadres";
     shacl:description "Adres vd vestiging."@nl;
     shacl:minCount 1;
@@ -598,9 +807,9 @@
     shacl:description "Publiek toegankelijke oppervlakte van de winkel."@nl;
     shacl:maxCount 1;
     shacl:name "publiekeVerkoopVloeroppervlakte"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#publiekeVerkoopVloeroppervlakte>.
+    shacl:path lokale-economie:publiekeVerkoopVloeroppervlakte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/7bef42c774a76e91230868157163b1a1534df524> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Handelszaak.organisatie";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Organisatie>;
+    shacl:class lokale-economie:Organisatie;
     shacl:description "Organisatie waar de handelszaak zich mee associeert."@nl;
     shacl:name "organisatie"@nl.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#HandelszaakShape/8fbda6a85077de4ad917a0e8d35e1cdbfa7ec8fa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Handelszaak.vestigingsadres";
@@ -611,12 +820,12 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/3b62c8875fa593d62803b323165ad0f1e898b179>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/a54ad5d3ce386d34de6090294897c84059b0b2c2>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/82038e4aa0ab9291580127637fd635a51cf3f443>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/ab8fde000a57c43757a83014049b6bcf0b019f13>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/ccb2d543d17baa8b6b0ca2a42156eed6f23e3f6e>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/7f2b54457005d708779ef878ddc05544511cd276>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/87ab68ad7e96a795d374073c3273fd5c101efdb1>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/79ffe4aa852c00721bdb05b85fef875be81aa0e2>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/992a14aa1edf7876c1c129f5d2ec0cb551142510>;
-    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+    shacl:targetClass adms:Identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/3b62c8875fa593d62803b323165ad0f1e898b179> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Identificator.gestructureerdeIdentificator";
     shacl:description "Identificator vh object opgesplitst in zijn onderdelen."@nl;
     shacl:maxCount 1;
     shacl:name "gestructureerdeIdentificator"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator>.
+    shacl:path generiek:gestructureerdeIdentificator.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/79ffe4aa852c00721bdb05b85fef875be81aa0e2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Identificator.uitgegeven";
     shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
     shacl:maxCount 1;
@@ -626,7 +835,7 @@
     shacl:datatype xsd:string;
     shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
     shacl:name "toegekendDoor"@nl;
-    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+    shacl:path adms:schemaAgency.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/82038e4aa0ab9291580127637fd635a51cf3f443> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Identificator.maker";
     shacl:class dcterms:Agent;
     shacl:description "Link naar de agent die de identificator heeft uitgegeven."@nl;
@@ -636,17 +845,17 @@
     shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
     shacl:maxCount 1;
     shacl:name "toegekendDoor"@nl;
-    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+    shacl:path adms:schemaAgency.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/992a14aa1edf7876c1c129f5d2ec0cb551142510> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Identificator.uitgegeven";
     shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
     shacl:name "uitgegeven"@nl;
     shacl:path dcterms:issued.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/a54ad5d3ce386d34de6090294897c84059b0b2c2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Identificator.gestructureerdeIdentificator";
-    shacl:class <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator>;
+    shacl:class generiek:GestructureerdeIdentificator;
     shacl:description "Identificator vh object opgesplitst in zijn onderdelen."@nl;
     shacl:name "gestructureerdeIdentificator"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator>.
+    shacl:path generiek:gestructureerdeIdentificator.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IdentificatorShape/ab8fde000a57c43757a83014049b6bcf0b019f13> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Identificator.maker";
     shacl:description "Link naar de agent die de identificator heeft uitgegeven."@nl;
     shacl:maxCount 1;
@@ -660,28 +869,28 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IndirecteLocatieAanduidingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IndirecteLocatieAanduidingShape/321fec73314bc69b7e730eb4f2316f8c8c68ceed>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IndirecteLocatieAanduidingShape/6bf44886c5752b84f588098f8bbd5578ab7426e0>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IndirecteLocatieAanduidingShape/b9053f64e04e62e94dd9cae9c69c4012ca7b9cf9>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/RuimtelijkPlannen#IndirecteLocatieAanduiding>.
+    shacl:targetClass RuimtelijkPlannen:IndirecteLocatieAanduiding.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IndirecteLocatieAanduidingShape/321fec73314bc69b7e730eb4f2316f8c8c68ceed> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IndirecteLocatieAanduiding.referentie";
     shacl:description "Referentie naar het ruimtelijk object (plaats of adres) dat gebruikt wordt als indirecte locatie aanduiding."@nl;
     shacl:minCount 1;
     shacl:name "referentie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#referentie>.
+    shacl:path generiek:referentie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IndirecteLocatieAanduidingShape/6bf44886c5752b84f588098f8bbd5578ab7426e0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IndirecteLocatieAanduiding.referentie";
     shacl:description "Referentie naar het ruimtelijk object (plaats of adres) dat gebruikt wordt als indirecte locatie aanduiding."@nl;
     shacl:maxCount 1;
     shacl:name "referentie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#referentie>.
+    shacl:path generiek:referentie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IndirecteLocatieAanduidingShape/b9053f64e04e62e94dd9cae9c69c4012ca7b9cf9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#IndirecteLocatieAanduiding.referentie";
-    shacl:class <https://data.vlaanderen.be/ns/RuimtelijkPlannen#RuimtelijkObject>;
+    shacl:class RuimtelijkPlannen:RuimtelijkObject;
     shacl:description "Referentie naar het ruimtelijk object (plaats of adres) dat gebruikt wordt als indirecte locatie aanduiding."@nl;
     shacl:name "referentie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#referentie>.
+    shacl:path generiek:referentie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#InkomensklasseShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#KenmerktypeShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>.
+    shacl:targetClass GeneralFeatureModel:GF_PropertyType.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#KlantenkaartShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
@@ -720,7 +929,7 @@
     shacl:name "standaard eenheid"@nl;
     shacl:path schemas:unitCode.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#KwantitatieveWaardeShape/dcf18241c7695eee6abe5c99b390387f700ef44c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#KwantitatieveWaarde.standaardeenheid";
-    shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+    shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
     shacl:name "standaard eenheid"@nl;
     shacl:path schemas:unitCode.
@@ -732,11 +941,11 @@
     shacl:targetClass prov:Location.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#MonetairShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/financiele-data#Monetair>.
+    shacl:targetClass financiele-data:Monetair.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ObservatieContextShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ObservatieContextShape/68837b0eda962a941b0162e1ae4c5f0e471e0c51>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ObservatieContextShape/acb59b00c5c67fec8d3f0b2543d5259a09b17d18>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ObservatieContextShape/e5ccf692ee38c28199531eb5e0c59554153a57c3>;
-    shacl:targetClass <https://def.isotc211.org/iso19156/2011/Observation#ObservationContext>.
+    shacl:targetClass Observation:ObservationContext.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ObservatieContextShape/68837b0eda962a941b0162e1ae4c5f0e471e0c51> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ObservatieContext.rol";
     shacl:description "Rol die één observatie speelt bij het verklaren van een andere observatie."@nl;
     shacl:minCount 1;
@@ -748,7 +957,7 @@
     shacl:name "rol"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#ObservationContext.role>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ObservatieContextShape/e5ccf692ee38c28199531eb5e0c59554153a57c3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ObservatieContext.rol";
-    shacl:class <http://def.isotc211.org/iso19103/2005/Names#GenericName>;
+    shacl:class Names:GenericName;
     shacl:description "Rol die één observatie speelt bij het verklaren van een andere observatie."@nl;
     shacl:name "rol"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#ObservationContext.role>.
@@ -782,7 +991,7 @@
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ObservatieShape/3dcf5d118694daa2984ccba001a7511086077310> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Observatie.fenomeentijd";
-    shacl:class <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object>;
+    shacl:class TemporalObjects:TM_Object;
     shacl:description "Het moment waarop het resultaat van de Observatie van toepassing was."@nl;
     shacl:name "fenomeentijd"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime>.
@@ -792,7 +1001,7 @@
     shacl:name "fenomeentijd"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ObservatieShape/8d7b393f7e5b9ba276227b0389883c961068567c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Observatie.resultaatkwaliteit";
-    shacl:class <http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_Element>;
+    shacl:class DataQualityInformation:DQ_Element;
     shacl:description "Mate waarin het resultaat van de Observatie voldoet aan de vereisten of verwachtingen."@nl;
     shacl:name "resultaatkwaliteit"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultQuality>.
@@ -862,7 +1071,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingsObservatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingsObservatieShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingsObservatieShape/60638eca218f8b9f8ea1b79fb9b42510aa9f03fe>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingsObservatieShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Omgevingsobservatie>.
+    shacl:targetClass lokale-economie:Omgevingsobservatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingsObservatieShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingsObservatie.geobserveerdKenmerk";
     shacl:description "Kenmerk van de omgeving dat geobserveerd wordt."@nl;
     shacl:minCount 1;
@@ -874,14 +1083,14 @@
     shacl:name "geobserveerdKenmerk"@nl;
     shacl:path <https://data.vlaanderen.be/ns/lokale-economie#OmgevingsObservatie.geobserveerdKenmerk>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingsObservatieShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingsObservatie.geobserveerdKenmerk";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Omgevingskenmerk>;
+    shacl:class lokale-economie:Omgevingskenmerk;
     shacl:description "Kenmerk van de omgeving dat geobserveerd wordt."@nl;
     shacl:name "geobserveerdKenmerk"@nl;
     shacl:path <https://data.vlaanderen.be/ns/lokale-economie#OmgevingsObservatie.geobserveerdKenmerk>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingskenmerkShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingskenmerkShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingskenmerkShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingskenmerkShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Omgevingskenmerk>.
+    shacl:targetClass lokale-economie:Omgevingskenmerk.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OmgevingskenmerkShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Omgevingskenmerk.type";
     shacl:description "Type van omgevingskenmerk dat geobserveerd wordt."@nl;
     shacl:maxCount 1;
@@ -968,12 +1177,12 @@
     shacl:datatype rdf:langString;
     shacl:description "De naam van een organisatie."@nl;
     shacl:name "naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#voorkeursnaam>.
+    shacl:path organisatie:voorkeursnaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Organisatie.naam";
     shacl:description "De naam van een organisatie."@nl;
     shacl:maxCount 1;
     shacl:name "naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#voorkeursnaam>.
+    shacl:path organisatie:voorkeursnaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieShape/72d196f39d114d410023dfae67396fa111bb5641> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Organisatie.classificatie";
     shacl:class skos:Concept;
     shacl:description "Rangschikking van de organisatie in een classificatiesysteem."@nl;
@@ -983,41 +1192,41 @@
     shacl:class org:Site;
     shacl:description "Vestiging van een organisatie."@nl;
     shacl:name "heeftVestiging"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#heeftVestiging>.
+    shacl:path organisatie:heeftVestiging.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieShape/af65cbe204975f8f205938b0b24c0c3c7b9e6e2d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Organisatie.profielinfo";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Organisatieprofiel>;
+    shacl:class lokale-economie:Organisatieprofiel;
     shacl:description "Profiel van een organisatie."@nl;
     shacl:name "profielinfo"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#profielinfo>.
+    shacl:path organisatie:profielinfo.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Organisatie.naam";
     shacl:description "De naam van een organisatie."@nl;
     shacl:minCount 1;
     shacl:name "naam"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#voorkeursnaam>.
+    shacl:path organisatie:voorkeursnaam.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieprofielShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieprofielShape/5b8e81f3cdea00e47bee997cf3e240fdbff057f0>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieprofielShape/ccd6f22933a1cc5e2435cf77449691605c9f2045>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieprofielShape/6f4826c397fe82b7daf35f048dd03bd4a3f6c02a>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieprofielShape/fd80d415c90911ba0bb88502b8bb99d97be883c7>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Organisatieprofiel>.
+    shacl:targetClass lokale-economie:Organisatieprofiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieprofielShape/5b8e81f3cdea00e47bee997cf3e240fdbff057f0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Organisatieprofiel.affiliatietype";
     shacl:class skos:Concept;
     shacl:description "Type van affiliatie, i.e., verbondenheid met een moederorganisatie."@nl;
     shacl:name "affiliatietype"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#affiliatietype>.
+    shacl:path lokale-economie:affiliatietype.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieprofielShape/6f4826c397fe82b7daf35f048dd03bd4a3f6c02a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Organisatieprofiel.bedrijfsgrootte";
     shacl:class skos:Concept;
     shacl:description "Classificatie van de grootte van een organisatie volgens een bepaald kenmerk."@nl;
     shacl:name "bedrijfsgrootte"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#bedrijfsgrootte>.
+    shacl:path lokale-economie:bedrijfsgrootte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieprofielShape/ccd6f22933a1cc5e2435cf77449691605c9f2045> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Organisatieprofiel.affiliatietype";
     shacl:description "Type van affiliatie, i.e., verbondenheid met een moederorganisatie."@nl;
     shacl:maxCount 1;
     shacl:name "affiliatietype"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#affiliatietype>.
+    shacl:path lokale-economie:affiliatietype.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#OrganisatieprofielShape/fd80d415c90911ba0bb88502b8bb99d97be883c7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Organisatieprofiel.bedrijfsgrootte";
     shacl:description "Classificatie van de grootte van een organisatie volgens een bepaald kenmerk."@nl;
     shacl:maxCount 1;
     shacl:name "bedrijfsgrootte"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#bedrijfsgrootte>.
+    shacl:path lokale-economie:bedrijfsgrootte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/1fc3167d1e703ceca25826f7b5a0078b3a2e876e>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/f72b0b73e970130fa1feea502a497e8e5e3ddbc1>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/6d439595fae48a79283d5e4b9e24720ca23ff36e>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/6fb759dddc58b69f5215d0456d5bc21d6c8bc0c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/e70adb31a171dc08cabd71f16487b80f24a5be80>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/bdd02fa605eaa159ac6b17ebc0a8c76a953dcf91>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/c5bfbb225cd64521e192d2c8d5933f05b242312d>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/c99a35822881662239b338e25b452ea57c6e15bc>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/1478bf491dfb068eca0beda7d4ae1675e4cdf199>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/42f3aa723a71642505c58a3a619d5e56938dadf9>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/d4d1b012d3e5393e2a525e21ca8152f0b056d4f3>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/440598f01e8940c3c868060388c82c4d946bf0ff>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/c93f2128bdd9cddf42500c3e03bc5b379d980458>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/04e0b5ea249e38e092ead10a2ed1c6721fade4b7>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/50fcbe641e0beebe581cd8156751da59b81d14a2>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/dccbaf8b9ca123087f5faa1ded7e6e69d388fea7>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/b890b85bfc535cb9d07cffd537b8182e43e66c53>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/68a7a4f750c54f3ef7c0175693a059f27b7b99ba>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/906ca4ad603d66385bfd13403f130a4ba32f52ee>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/97392ce7e906c5b31fb192f346c52b92dbce12cd>;
@@ -1026,7 +1235,7 @@
     shacl:description "Het feit of de persoon een man of een vrouw is."@nl;
     shacl:minCount 1;
     shacl:name "geslacht"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+    shacl:path persoon:geslacht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/1478bf491dfb068eca0beda7d4ae1675e4cdf199> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Persoon.geboortejaar";
     shacl:description "Geboortejaar van een persoon."@nl;
     shacl:minCount 1;
@@ -1051,7 +1260,7 @@
     shacl:description "Het feit of de persoon een man of een vrouw is."@nl;
     shacl:maxCount 1;
     shacl:name "geslacht"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+    shacl:path persoon:geslacht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/68a7a4f750c54f3ef7c0175693a059f27b7b99ba> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Persoon.verblijfplaats";
     shacl:description "Verblijfplaats van een persoon."@nl;
     shacl:minCount 1;
@@ -1068,7 +1277,7 @@
     shacl:name "domicilie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/persoon#/domicilie>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/906ca4ad603d66385bfd13403f130a4ba32f52ee> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Persoon.verblijfplaats";
-    shacl:class <https://data.vlaanderen.be/ns/persoon#Verblijfplaats>;
+    shacl:class persoon:Verblijfplaats;
     shacl:description "Verblijfplaats van een persoon."@nl;
     shacl:name "verblijfplaats"@nl;
     shacl:path <https://data.vlaanderen.be/ns/persoon#/verblijfplaats>.
@@ -1078,10 +1287,10 @@
     shacl:name "verblijfplaats"@nl;
     shacl:path <https://data.vlaanderen.be/ns/persoon#/verblijfplaats>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/b890b85bfc535cb9d07cffd537b8182e43e66c53> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Persoon.profiel";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#SocioDemografischProfiel>;
+    shacl:class lokale-economie:SocioDemografischProfiel;
     shacl:description "Socio-demografisch profiel van een persoon."@nl;
     shacl:name "profiel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#profiel>.
+    shacl:path persoon:profiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/bdd02fa605eaa159ac6b17ebc0a8c76a953dcf91> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Persoon.familienaam";
     shacl:description "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."@nl;
     shacl:minCount 1;
@@ -1111,9 +1320,9 @@
     shacl:class skos:Concept;
     shacl:description "Het feit of de persoon een man of een vrouw is."@nl;
     shacl:name "geslacht"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+    shacl:path persoon:geslacht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#PersoonShape/e70adb31a171dc08cabd71f16487b80f24a5be80> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Persoon.domicilie";
-    shacl:class <https://data.vlaanderen.be/ns/persoon#Domicilie>;
+    shacl:class persoon:Domicilie;
     shacl:description "Hoofdverblijfplaats van een persoon."@nl;
     shacl:name "domicilie"@nl;
     shacl:path <https://data.vlaanderen.be/ns/persoon#/domicilie>.
@@ -1156,10 +1365,10 @@
     shacl:name "productID"@nl;
     shacl:path schemas:productID.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ProductShape/77153512ebf835c9e93d6824bd5ba6b016dc5569> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Product.eenheidsprijs";
-    shacl:class <https://data.vlaanderen.be/ns/financiele-data#Monetair>;
+    shacl:class financiele-data:Monetair;
     shacl:description "Prijs van één eenheid van het product."@nl;
     shacl:name "eenheidsprijs"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#eenheidsprijs>.
+    shacl:path lokale-economie:eenheidsprijs.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ProductShape/7b5b78ead16c8af2ff3fbf5185ea8c84dcc0c268> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Product.productID";
     shacl:description "Unieke identificator van het product."@nl;
     shacl:maxCount 1;
@@ -1174,7 +1383,7 @@
     shacl:description "Prijs van één eenheid van het product."@nl;
     shacl:minCount 1;
     shacl:name "eenheidsprijs"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#eenheidsprijs>.
+    shacl:path lokale-economie:eenheidsprijs.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ProductShape/c2560f9a3adb29e0f5d249a9e066ac69b88423a4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Product.productbeschrijving";
     shacl:description "Beschrijving van het product."@nl;
     shacl:maxCount 1;
@@ -1186,7 +1395,7 @@
     shacl:name "productbeschrijving"@nl;
     shacl:path schemas:description.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ProductShape/e9f29198f5d3734034d5ed903a804d4f7254729c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Product.productID";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Unieke identificator van het product."@nl;
     shacl:name "productID"@nl;
     shacl:path schemas:productID.
@@ -1195,24 +1404,24 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#ProfielShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Profiel>.
+    shacl:targetClass lokale-economie:Profiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#RuimtelijkObjectShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/RuimtelijkPlannen#RuimtelijkObject>.
+    shacl:targetClass RuimtelijkPlannen:RuimtelijkObject.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/510e5e633e7bacab44a742a5aadfa4510f450d6d>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/bccb5f6cca68c4de0f04f20824d2c39722ce91eb>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/536a501d5eeb40b61ab03dbd4d4a979ecb6b507d>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/c4d6876a23e7cca9beab2ff5c57ad1ccdae3e730>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/bdf39aa4bec5e5c0c7b49293c22093d918e252e0>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/d0b78f38938d4a601085cb8e751efba3354d48ad>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/421d78c27acf98a3c52191db36ac97de764ae8b5>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/1b3500b6275c16a7a7ebf60ee8ee1c1c727e867d>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/205f46bc6face3662236a61ff6d1af5869cd5441>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#SocioDemografischProfiel>.
+    shacl:targetClass lokale-economie:SocioDemografischProfiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/1b3500b6275c16a7a7ebf60ee8ee1c1c727e867d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfiel.onderwijsniveau";
     shacl:description "Onderwijsniveau van een persoon of groep van personen."@nl;
     shacl:maxCount 1;
     shacl:name "onderwijsniveau"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#onderwijsniveau>.
+    shacl:path lokale-economie:onderwijsniveau.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/205f46bc6face3662236a61ff6d1af5869cd5441> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfiel.onderwijsniveau";
     shacl:class skos:Concept;
     shacl:description "Onderwijsniveau van een persoon of groep van personen."@nl;
     shacl:name "onderwijsniveau"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#onderwijsniveau>.
+    shacl:path lokale-economie:onderwijsniveau.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/421d78c27acf98a3c52191db36ac97de764ae8b5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfiel.locatie";
     shacl:description "Woonplaats van een persoon of groep van personen."@nl;
     shacl:maxCount 1;
@@ -1222,14 +1431,14 @@
     shacl:class skos:Concept;
     shacl:description "Classificatie van de gezinssamenstelling van een persoon of groep van personen."@nl;
     shacl:name "gezinstype"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#gezinstype>.
+    shacl:path lokale-economie:gezinstype.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/536a501d5eeb40b61ab03dbd4d4a979ecb6b507d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfiel.inkomensklasse";
     shacl:class skos:Concept;
     shacl:description "Inkomensklasse van een persoon of groep van personen."@nl;
     shacl:name "inkomensklasse"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#inkomensklasse>.
+    shacl:path lokale-economie:inkomensklasse.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfiel.locatie";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Locatie>;
+    shacl:class lokale-economie:Locatie;
     shacl:description "Woonplaats van een persoon of groep van personen."@nl;
     shacl:name "locatie"@nl;
     shacl:path prov:Location.
@@ -1237,31 +1446,31 @@
     shacl:description "Classificatie van de gezinssamenstelling van een persoon of groep van personen."@nl;
     shacl:maxCount 1;
     shacl:name "gezinstype"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#gezinstype>.
+    shacl:path lokale-economie:gezinstype.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/bdf39aa4bec5e5c0c7b49293c22093d918e252e0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfiel.leeftijdsgroep";
     shacl:description "Leeftijdsgroep van een persoon of groep van personen."@nl;
     shacl:maxCount 1;
     shacl:name "leeftijdsgroep"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#leeftijdsgroep>.
+    shacl:path lokale-economie:leeftijdsgroep.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/c4d6876a23e7cca9beab2ff5c57ad1ccdae3e730> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfiel.inkomensklasse";
     shacl:description "Inkomensklasse van een persoon of groep van personen."@nl;
     shacl:maxCount 1;
     shacl:name "inkomensklasse"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#inkomensklasse>.
+    shacl:path lokale-economie:inkomensklasse.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfielShape/d0b78f38938d4a601085cb8e751efba3354d48ad> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#SocioDemografischProfiel.leeftijdsgroep";
     shacl:class skos:Concept;
     shacl:description "Leeftijdsgroep van een persoon of groep van personen."@nl;
     shacl:name "leeftijdsgroep"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#leeftijdsgroep>.
+    shacl:path lokale-economie:leeftijdsgroep.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#StandaardEenheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>.
+    shacl:targetClass generiek:StandaardEenheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TaalStringShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass rdf:langString.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TemporeleEntiteitShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object>.
+    shacl:targetClass TemporalObjects:TM_Object.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/8b1f221245327be0bd1a1e098b4e507e91c4ec35>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/f56150d3db3608a24a0eb55789ac3a8b3802f0f8>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/73d09b4a2f05066b3d7f4ddebac064c8ecc9c3e9>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/8f8d653e304153b908ef8c4ace8348d1e837fb08>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/6a142d51e1996cc547859eb790c61b8be7bf71d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/7da8172d0a595049f5316161a5496c858bc96022>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/2fe5eb0d21c49326b6150e5469085db718df31fd>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/d1f7e4fcfb69fd617172de4a3637bff635f570c2>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/72d8e53b4c1763e3a015f9673d4143aff92643cc>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/786cc0308f770e710c4e2b1844555533091028ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/fd79be3f209d2ad7c806dec4641965b480e07d9c>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/53aa8b0fe927c9bd7a5263513cc209f57fb71ac9>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/9311b21abf1842a227e696efa0a36a60d2ab5912>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/587320a451cf4a103d5701d9f40b2ef3c9e24631>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/3c2ecaaffab41a98c0ec74069801771420f97fb8>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/b8d4dff5c6cce5ab9cf56b42384ab8db942a0e3d>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/f844de6533252e5b38c84162d753e37a42b7c108>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/afec63dab78a941c1f4d9a120593b0b0459f2500>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/f13fd70818b720df39bb71d4a35a030fc4a4e0a4>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/97380160cedd2c30feb52f5890767e85010fd4d8>;
@@ -1275,7 +1484,7 @@
     shacl:datatype xsd:integer;
     shacl:description "Specificatie van de dag(en) binnen een periode waarop het plaatsvindt."@nl;
     shacl:name "perSetpositie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#perSetpositie>.
+    shacl:path generiek:perSetpositie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/53aa8b0fe927c9bd7a5263513cc209f57fb71ac9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Tijdschema.perDag";
     shacl:datatype xsd:anyURI;
     shacl:description "Dagen van de week waarop het plaatsvindt."@nl;
@@ -1300,7 +1509,7 @@
     shacl:description "De tijdsduur van iets."@nl;
     shacl:maxCount 1;
     shacl:name "duur"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#duur>.
+    shacl:path generiek:duur.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/786cc0308f770e710c4e2b1844555533091028ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Tijdschema.frequentie";
     shacl:description "Frequentie waarmee het plaatsvindt."@nl;
     shacl:minCount 1;
@@ -1320,7 +1529,7 @@
     shacl:datatype xsd:duration;
     shacl:description "De tijdsduur van iets."@nl;
     shacl:name "duur"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#duur>.
+    shacl:path generiek:duur.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/9311b21abf1842a227e696efa0a36a60d2ab5912> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Tijdschema.perDagVanDeMaand";
     shacl:datatype xsd:integer;
     shacl:description "Dagen van de maand waarop het plaatsvindt."@nl;
@@ -1345,7 +1554,7 @@
     shacl:description "Specificatie van de dag(en) binnen een periode waarop het plaatsvindt."@nl;
     shacl:maxCount 1;
     shacl:name "perSetpositie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#perSetpositie>.
+    shacl:path generiek:perSetpositie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TijdschemaShape/d1f7e4fcfb69fd617172de4a3637bff635f570c2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Tijdschema.eindtijd";
     shacl:description "Tijdstip waarop het eindigt."@nl;
     shacl:maxCount 1;
@@ -1374,12 +1583,12 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/2e1fa3c0af6bdc66290d8fb4c05c6fc921210dfa>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/e8ba193cbe4fb0d1d1b7f7b65ecf695fb34785ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/a88d06f343359b7b95af028292e348810924e355>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/c9584bd112099eab9ac3f9319f715d4125ab5eda>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/e9d2a4ff25a2b10061aeeb96d1ba40f32345c7c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/0bbc284d3a6d967b11d23560d1d01da19ff8eeea>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/74db766b0cfcffd0deee82f993b28207ab13cbd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/83a310aa89729e72b2ad8ae0c46c7d607ebdd0a5>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/d7d2dcafa5ef5a1f79411d9fde67aa6cf4627e21>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/74feba662f4f65577bf45a8dd94f8faec0f03592>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/3c71f024c589c5e3f11458f0fbc7eca5e192d0c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/834db572a8696f0b76e3030a23f98b4f28240c74>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/ff1e5aa16132074807923d31aec5777422c4a213>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/a825ef9ed99d3af5d19a15985b5127033b6c35ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/b60cbb1f5aefd2bfc3349aed95e6c89745dd980d>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/cca2c488938324b89e759dd60201a611e0f43485>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Transactie>.
+    shacl:targetClass lokale-economie:Transactie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/0bbc284d3a6d967b11d23560d1d01da19ff8eeea> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Transactie.betaling";
     shacl:description "Betaling waaruit transactie bestaat."@nl;
     shacl:minCount 1;
     shacl:name "betaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#betaling>.
+    shacl:path lokale-economie:betaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Transactie.type";
     shacl:description "Type van transactie."@nl;
     shacl:maxCount 1;
@@ -1389,7 +1598,7 @@
     shacl:description "Een onderdeel van de transactie dat overeenstemt met één aankooplijn op een kassaticket."@nl;
     shacl:minCount 1;
     shacl:name "aankooplijn"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#aankooplijn>.
+    shacl:path lokale-economie:aankooplijn.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Transactie.type";
     shacl:class skos:Concept;
     shacl:description "Type van transactie."@nl;
@@ -1404,14 +1613,14 @@
     shacl:class schemas:MoneyTransfer;
     shacl:description "Betaling waaruit transactie bestaat."@nl;
     shacl:name "betaling"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#betaling>.
+    shacl:path lokale-economie:betaling.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Transactie.type";
     shacl:description "Type van transactie."@nl;
     shacl:minCount 1;
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/834db572a8696f0b76e3030a23f98b4f28240c74> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Transactie.uitgevoerdBij";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Organisatie>;
+    shacl:class lokale-economie:Organisatie;
     shacl:description "Organisatie waarbij de transactie werd uitgevoerd, i.e., de verkoper."@nl;
     shacl:name "uitgevoerdBij"@nl;
     shacl:path schemas:seller.
@@ -1419,7 +1628,7 @@
     shacl:class skos:Concept;
     shacl:description "Klantenkaart die gebruikt wordt bij de transactie."@nl;
     shacl:name "klantenkaart"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#klantenkaart>.
+    shacl:path lokale-economie:klantenkaart.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/a825ef9ed99d3af5d19a15985b5127033b6c35ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Transactie.uitgevoerdDoor";
     shacl:class dcterms:Agent;
     shacl:description "Persoon of organisatie door wie de transactie werd uitgevoerd, i.e., de koper."@nl;
@@ -1436,7 +1645,7 @@
     shacl:name "uitgevoerdDoor"@nl;
     shacl:path schemas:customer.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/c9584bd112099eab9ac3f9319f715d4125ab5eda> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Transactie.bedrag";
-    shacl:class <https://data.vlaanderen.be/ns/financiele-data#Monetair>;
+    shacl:class financiele-data:Monetair;
     shacl:description "Totale waarde van de transactie."@nl;
     shacl:name "bedrag"@nl;
     shacl:path schemas:amount.
@@ -1451,10 +1660,10 @@
     shacl:name "promotie"@nl;
     shacl:path schemas:discount.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/e8ba193cbe4fb0d1d1b7f7b65ecf695fb34785ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Transactie.aankooplijn";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Aankooplijn>;
+    shacl:class lokale-economie:Aankooplijn;
     shacl:description "Een onderdeel van de transactie dat overeenstemt met één aankooplijn op een kassaticket."@nl;
     shacl:name "aankooplijn"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#aankooplijn>.
+    shacl:path lokale-economie:aankooplijn.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#TransactieShape/e9d2a4ff25a2b10061aeeb96d1ba40f32345c7c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Transactie.bedrag";
     shacl:description "Totale waarde van de transactie."@nl;
     shacl:minCount 1;
@@ -1471,29 +1680,29 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerblijfplaatsShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerblijfplaatsShape/6e6059dfbbd1a982f957a7733e8013e453faf721>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerblijfplaatsShape/8a4e31eb18342aba08302f513be3047bd4ae2192>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerblijfplaatsShape/f876a506d82560816aced51418c7be779db8aa5f>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Verblijfplaats>.
+    shacl:targetClass persoon:Verblijfplaats.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerblijfplaatsShape/6e6059dfbbd1a982f957a7733e8013e453faf721> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Verblijfplaats.verblijfsadres";
     shacl:class locn:Address;
     shacl:description "Plaats waar een persoon al dan niet tijdelijk woont of logeert."@nl;
     shacl:name "verblijfsadres"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#verblijfsadres>.
+    shacl:path persoon:verblijfsadres.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerblijfplaatsShape/8a4e31eb18342aba08302f513be3047bd4ae2192> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Verblijfplaats.verblijfsadres";
     shacl:description "Plaats waar een persoon al dan niet tijdelijk woont of logeert."@nl;
     shacl:minCount 1;
     shacl:name "verblijfsadres"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#verblijfsadres>.
+    shacl:path persoon:verblijfsadres.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerblijfplaatsShape/f876a506d82560816aced51418c7be779db8aa5f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Verblijfplaats.verblijfsadres";
     shacl:description "Plaats waar een persoon al dan niet tijdelijk woont of logeert."@nl;
     shacl:maxCount 1;
     shacl:name "verblijfsadres"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/persoon#verblijfsadres>.
+    shacl:path persoon:verblijfsadres.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkeersobjectShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersobject>.
+    shacl:targetClass verkeersmetingen:Verkeersobject.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkShape/795a43b321c286b262922736ff3c2f9eed844ae4>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkShape/72ea0b99788268f500d5aaa5a0d8e61dbb97b07c>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkShape/3833ee6007343a68911e59f730b9c7d5625a15e1>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Verkoopkenmerk>.
+    shacl:targetClass lokale-economie:Verkoopkenmerk.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Verkoopkenmerk.type";
     shacl:description "Type van verkoopkenmerk dat geobserveerd wordt."@nl;
     shacl:maxCount 1;
@@ -1508,12 +1717,12 @@
     shacl:class skos:Concept;
     shacl:description "Sector die geobserveerd wordt."@nl;
     shacl:name "sector"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#sector>.
+    shacl:path lokale-economie:sector.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkShape/72ea0b99788268f500d5aaa5a0d8e61dbb97b07c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Verkoopkenmerk.koperprofiel";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Profiel>;
+    shacl:class lokale-economie:Profiel;
     shacl:description "Socio-demografisch profiel of organisatieprofiel dat geobserveerd wordt."@nl;
     shacl:name "koperprofiel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#koperprofiel>.
+    shacl:path lokale-economie:koperprofiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Verkoopkenmerk.type";
     shacl:description "Type van verkoopkenmerk dat geobserveerd wordt."@nl;
     shacl:minCount 1;
@@ -1523,14 +1732,14 @@
     shacl:class skos:Concept;
     shacl:description "Bezoekersprofiel dat geobserveerd wordt."@nl;
     shacl:name "bezoekersprofiel"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#bezoekersProfiel>.
+    shacl:path lokale-economie:bezoekersProfiel.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopkenmerkTypeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopmetingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopmetingShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopmetingShape/60638eca218f8b9f8ea1b79fb9b42510aa9f03fe>, <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopmetingShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/lokale-economie#Verkoopmeting>.
+    shacl:targetClass lokale-economie:Verkoopmeting.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopmetingShape/0b8f1cfacc6c877b4618f064aa070495c9ee15e3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Verkoopmeting.geobserveerdKenmerk";
     shacl:description "Verkoopkenmerk dat geobserveerd wordt."@nl;
     shacl:minCount 1;
@@ -1542,7 +1751,7 @@
     shacl:name "geobserveerdKenmerk"@nl;
     shacl:path <https://data.vlaanderen.be/ns/lokale-economie#Verkoopmeting.geobserveerdKenmerk>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VerkoopmetingShape/af62feb10fc401a33b0ef1ef3d3dc3a9dc30f436> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Verkoopmeting.geobserveerdKenmerk";
-    shacl:class <https://data.vlaanderen.be/ns/lokale-economie#Verkoopkenmerk>;
+    shacl:class lokale-economie:Verkoopkenmerk;
     shacl:description "Verkoopkenmerk dat geobserveerd wordt."@nl;
     shacl:name "geobserveerdKenmerk"@nl;
     shacl:path <https://data.vlaanderen.be/ns/lokale-economie#Verkoopmeting.geobserveerdKenmerk>.
@@ -1554,17 +1763,17 @@
     shacl:description "Specificatie van de dagen en/of periode waarop de openingsuren van toepassing zijn."@nl;
     shacl:maxCount 1;
     shacl:name "karakter"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#beschikbaarheid>.
+    shacl:path organisatie:beschikbaarheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VestigingShape/1d6050a5b9d5e65ec3f3d4c5ee17f26301781535> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Vestiging.aantalWerknemers";
     shacl:description "Aantal personen in dienst op een bepaald moment in een specifieke Vestiging van een Organisatie."@nl;
     shacl:minCount 1;
     shacl:name "aantalWerknemers"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#aantalWerknemers>.
+    shacl:path lokale-economie:aantalWerknemers.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VestigingShape/30ff6bd41fb3e328220295188af3680c524b5704> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Vestiging.karakter";
     shacl:class schema:OpeningHoursSpecification;
     shacl:description "Specificatie van de dagen en/of periode waarop de openingsuren van toepassing zijn."@nl;
     shacl:name "karakter"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#beschikbaarheid>.
+    shacl:path organisatie:beschikbaarheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VestigingShape/3dc480c515bab20b2b0d0bafd53ca63fb68d1eae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Vestiging.vestigingsadres";
     shacl:description "Adres vd vestiging."@nl;
     shacl:maxCount 1;
@@ -1574,27 +1783,27 @@
     shacl:description "Organisatie waartoe een vestiging behoort."@nl;
     shacl:maxCount 1;
     shacl:name "organisatie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#organisatie>.
+    shacl:path organisatie:organisatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VestigingShape/45bd38f11cc6a267309ca2281bf8c4dd21040d67> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Vestiging.karakter";
     shacl:description "Specificatie van de dagen en/of periode waarop de openingsuren van toepassing zijn."@nl;
     shacl:minCount 1;
     shacl:name "karakter"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#beschikbaarheid>.
+    shacl:path organisatie:beschikbaarheid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VestigingShape/6ba12d29269644ea654ce346cfdce05b4b516a07> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Vestiging.aantalWerknemers";
     shacl:description "Aantal personen in dienst op een bepaald moment in een specifieke Vestiging van een Organisatie."@nl;
     shacl:maxCount 1;
     shacl:name "aantalWerknemers"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#aantalWerknemers>.
+    shacl:path lokale-economie:aantalWerknemers.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VestigingShape/7bef42c774a76e91230868157163b1a1534df524> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Vestiging.organisatie";
     shacl:class org:Organization;
     shacl:description "Organisatie waartoe een vestiging behoort."@nl;
     shacl:name "organisatie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#organisatie>.
+    shacl:path organisatie:organisatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VestigingShape/81ec09f7f927a557a44cc1f91988302413804bca> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Vestiging.openingsuren";
     shacl:description "Openingsuren van de vestiging."@nl;
     shacl:minCount 1;
     shacl:name "openingsuren"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#openingsuren>.
+    shacl:path organisatie:openingsuren.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VestigingShape/8fbda6a85077de4ad917a0e8d35e1cdbfa7ec8fa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Vestiging.vestigingsadres";
     shacl:class schema:ContactPoint;
     shacl:description "Adres vd vestiging."@nl;
@@ -1604,14 +1813,14 @@
     shacl:class skos:Concept;
     shacl:description "Aantal personen in dienst op een bepaald moment in een specifieke Vestiging van een Organisatie."@nl;
     shacl:name "aantalWerknemers"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/lokale-economie#aantalWerknemers>.
+    shacl:path lokale-economie:aantalWerknemers.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VestigingShape/e6ada4b25599dde7d63c9b717df99ba62230ba58> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Vestiging.openingsuren";
     shacl:description "Openingsuren van de vestiging."@nl;
     shacl:maxCount 1;
     shacl:name "openingsuren"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#openingsuren>.
+    shacl:path organisatie:openingsuren.
 <https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#VestigingShape/ed8119027c8e4e415f1686f4309f330755bb43a2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/lokale-economie/ontwerpstandaard/2024-01-17#Vestiging.organisatie";
     shacl:description "Organisatie waartoe een vestiging behoort."@nl;
     shacl:minCount 1;
     shacl:name "organisatie"@nl;
-    shacl:path <https://data.vlaanderen.be/ns/organisatie#organisatie>.
+    shacl:path organisatie:organisatie.

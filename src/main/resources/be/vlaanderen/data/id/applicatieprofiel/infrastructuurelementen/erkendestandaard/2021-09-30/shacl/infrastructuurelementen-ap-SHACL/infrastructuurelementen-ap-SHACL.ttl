@@ -1,611 +1,820 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap> <https://data.vlaanderen.be/shacl/infrastructuurelementen-apshapes> <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#AanplakbordShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#AfsluitingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BedieningszuilShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BestendigeAfsluitingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BetaalautomaatShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BiggetjeShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BoombeugelShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BorstweringShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BovengrondseBrandkraanShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BushokShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#CameraShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#CommunicatiemastShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#CultuurhistorischMonumentShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DebietmeterShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DekselShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DetectielusShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DraadafsluitingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DwarsliggerShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ElektriciteitspaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FietsstallingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FietstelpaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FlitspaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#GSM-paalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#GeluidschermShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#GrenspaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#HaltepaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#HondenpoepbuisShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#HoogspanningsmastShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#HoogspanningspaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#HuisaansluitingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#InfozuilShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#InfrastructuurelementShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#KeldergatShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#KleineWindturbineShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#KnipperlichtShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#KopmuurShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#KrooshekShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#LichtpuntShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#LijnvormigeWegmarkeringShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#LongitudinaleWeginrichtingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MastShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MeerpaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MeteopaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MuurShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MuurBinnenWegbaanShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NormandischeAfsluitingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NutskastShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NutspaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OmklapbareWegmonolietShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbaarToiletShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbareBrievenbusShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbareStraatverlichtingAanGevelOfMuurShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbareVerlichtingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbareVuilnisbakShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OplaadpuntShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PaalBovenleidingTramTreinTrolleyShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PaneelafsluitingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ParkeersensorShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PicknicktafelShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PijlerShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PlooibakenShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PuntvormigeWegmarkeringShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PutdekselShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#RecyclagecontainerShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ReddingsbandShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ReflectorpaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#RijbaankussenShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#RoosterShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SchampblokShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SeininstallatieOvergangSpoorbeddingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SelectieveAfsluitingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SensoropstellingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieEnLeidingenportiekShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieScheepvaartShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieScheepvaartElektrischShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieScheepvaartNietElektrischShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SiloShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SlagboomShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SpandraadKettingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SpeelEnSportvoorzieningShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SpuitkopShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StatischeWegmonolietShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StootbandShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StootbandDupuisShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StootbandNewJerseyShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatkapShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatkolkShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatmeubilairShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatspiegelShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#TV-mastShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#TelefoonpaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ToegangspoortShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#TractorsluisShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#TransversaleWeginrichtingShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#TreinbielsShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VangrailShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VeeroosterShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VeiligheidsbandShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerkeersbordShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerkeersdrempelShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerkeerslichtShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerkeerslichtVoetgangerFietserShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerlichtingspaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerluchtingsroosterShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerzinkbareWegmonolietShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VlaggenpaalShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VlakvormigeWegmarkeringShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WaterpuntShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WeginrichtingselementShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WegmarkeringShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WegmonolietShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WegneembareWegmonolietShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WegsignalisatieShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WindturbineShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ZichtbaarDekselOfLuikShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ZitbankShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FonteinShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MaterialenShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SorteerfractiesShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VervoersmiddelenShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SpeelEnSportvoorzieningTypeShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OplaadwijzesShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OplaadpuntStekkertypesShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatkolktypesShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NutsvoorzieningscodesShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DekselVormShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NauwkeurigsheidsklassenShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#RioleringscodeShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ElementShape>, <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FysiekObjectShape>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#AanplakbordShape> a shacl:NodeShape;
+<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap> <https://data.vlaanderen.be/shacl/infrastructuurelementen-apshapes> infrastructuurelementen-ap:AanplakbordShape, infrastructuurelementen-ap:AfsluitingShape, infrastructuurelementen-ap:BedieningszuilShape, infrastructuurelementen-ap:BestendigeAfsluitingShape, infrastructuurelementen-ap:BetaalautomaatShape, infrastructuurelementen-ap:BiggetjeShape, infrastructuurelementen-ap:BoombeugelShape, infrastructuurelementen-ap:BorstweringShape, infrastructuurelementen-ap:BovengrondseBrandkraanShape, infrastructuurelementen-ap:BushokShape, infrastructuurelementen-ap:CameraShape, infrastructuurelementen-ap:CommunicatiemastShape, infrastructuurelementen-ap:CultuurhistorischMonumentShape, infrastructuurelementen-ap:DebietmeterShape, infrastructuurelementen-ap:DekselShape, infrastructuurelementen-ap:DetectielusShape, infrastructuurelementen-ap:DraadafsluitingShape, infrastructuurelementen-ap:DwarsliggerShape, infrastructuurelementen-ap:ElektriciteitspaalShape, infrastructuurelementen-ap:FietsstallingShape, infrastructuurelementen-ap:FietstelpaalShape, infrastructuurelementen-ap:FlitspaalShape, infrastructuurelementen-ap:GSM-paalShape, infrastructuurelementen-ap:GeluidschermShape, infrastructuurelementen-ap:GrenspaalShape, infrastructuurelementen-ap:HaltepaalShape, infrastructuurelementen-ap:HondenpoepbuisShape, infrastructuurelementen-ap:HoogspanningsmastShape, infrastructuurelementen-ap:HoogspanningspaalShape, infrastructuurelementen-ap:HuisaansluitingShape, infrastructuurelementen-ap:InfozuilShape, infrastructuurelementen-ap:InfrastructuurelementShape, infrastructuurelementen-ap:KeldergatShape, infrastructuurelementen-ap:KleineWindturbineShape, infrastructuurelementen-ap:KnipperlichtShape, infrastructuurelementen-ap:KopmuurShape, infrastructuurelementen-ap:KrooshekShape, infrastructuurelementen-ap:LichtpuntShape, infrastructuurelementen-ap:LijnvormigeWegmarkeringShape, infrastructuurelementen-ap:LongitudinaleWeginrichtingShape, infrastructuurelementen-ap:MastShape, infrastructuurelementen-ap:MeerpaalShape, infrastructuurelementen-ap:MeteopaalShape, infrastructuurelementen-ap:MuurShape, infrastructuurelementen-ap:MuurBinnenWegbaanShape, infrastructuurelementen-ap:NormandischeAfsluitingShape, infrastructuurelementen-ap:NutskastShape, infrastructuurelementen-ap:NutspaalShape, infrastructuurelementen-ap:OmklapbareWegmonolietShape, infrastructuurelementen-ap:OpenbaarToiletShape, infrastructuurelementen-ap:OpenbareBrievenbusShape, infrastructuurelementen-ap:OpenbareStraatverlichtingAanGevelOfMuurShape, infrastructuurelementen-ap:OpenbareVerlichtingShape, infrastructuurelementen-ap:OpenbareVuilnisbakShape, infrastructuurelementen-ap:OplaadpuntShape, infrastructuurelementen-ap:PaalBovenleidingTramTreinTrolleyShape, infrastructuurelementen-ap:PaneelafsluitingShape, infrastructuurelementen-ap:ParkeersensorShape, infrastructuurelementen-ap:PicknicktafelShape, infrastructuurelementen-ap:PijlerShape, infrastructuurelementen-ap:PlooibakenShape, infrastructuurelementen-ap:PuntvormigeWegmarkeringShape, infrastructuurelementen-ap:PutdekselShape, infrastructuurelementen-ap:RecyclagecontainerShape, infrastructuurelementen-ap:ReddingsbandShape, infrastructuurelementen-ap:ReflectorpaalShape, infrastructuurelementen-ap:RijbaankussenShape, infrastructuurelementen-ap:RoosterShape, infrastructuurelementen-ap:SchampblokShape, infrastructuurelementen-ap:SeininstallatieOvergangSpoorbeddingShape, infrastructuurelementen-ap:SelectieveAfsluitingShape, infrastructuurelementen-ap:SensoropstellingShape, infrastructuurelementen-ap:SignalisatieShape, infrastructuurelementen-ap:SignalisatieEnLeidingenportiekShape, infrastructuurelementen-ap:SignalisatieScheepvaartShape, infrastructuurelementen-ap:SignalisatieScheepvaartElektrischShape, infrastructuurelementen-ap:SignalisatieScheepvaartNietElektrischShape, infrastructuurelementen-ap:SiloShape, infrastructuurelementen-ap:SlagboomShape, infrastructuurelementen-ap:SpandraadKettingShape, infrastructuurelementen-ap:SpeelEnSportvoorzieningShape, infrastructuurelementen-ap:SpuitkopShape, infrastructuurelementen-ap:StatischeWegmonolietShape, infrastructuurelementen-ap:StootbandShape, infrastructuurelementen-ap:StootbandDupuisShape, infrastructuurelementen-ap:StootbandNewJerseyShape, infrastructuurelementen-ap:StraatkapShape, infrastructuurelementen-ap:StraatkolkShape, infrastructuurelementen-ap:StraatmeubilairShape, infrastructuurelementen-ap:StraatspiegelShape, infrastructuurelementen-ap:TV-mastShape, infrastructuurelementen-ap:TelefoonpaalShape, infrastructuurelementen-ap:ToegangspoortShape, infrastructuurelementen-ap:TractorsluisShape, infrastructuurelementen-ap:TransversaleWeginrichtingShape, infrastructuurelementen-ap:TreinbielsShape, infrastructuurelementen-ap:VangrailShape, infrastructuurelementen-ap:VeeroosterShape, infrastructuurelementen-ap:VeiligheidsbandShape, infrastructuurelementen-ap:VerkeersbordShape, infrastructuurelementen-ap:VerkeersdrempelShape, infrastructuurelementen-ap:VerkeerslichtShape, infrastructuurelementen-ap:VerkeerslichtVoetgangerFietserShape, infrastructuurelementen-ap:VerlichtingspaalShape, infrastructuurelementen-ap:VerluchtingsroosterShape, infrastructuurelementen-ap:VerzinkbareWegmonolietShape, infrastructuurelementen-ap:VlaggenpaalShape, infrastructuurelementen-ap:VlakvormigeWegmarkeringShape, infrastructuurelementen-ap:WaterpuntShape, infrastructuurelementen-ap:WeginrichtingselementShape, infrastructuurelementen-ap:WegmarkeringShape, infrastructuurelementen-ap:WegmonolietShape, infrastructuurelementen-ap:WegneembareWegmonolietShape, infrastructuurelementen-ap:WegsignalisatieShape, infrastructuurelementen-ap:WindturbineShape, infrastructuurelementen-ap:ZichtbaarDekselOfLuikShape, infrastructuurelementen-ap:ZitbankShape, infrastructuurelementen-ap:FonteinShape, infrastructuurelementen-ap:MaterialenShape, infrastructuurelementen-ap:SorteerfractiesShape, infrastructuurelementen-ap:VervoersmiddelenShape, infrastructuurelementen-ap:SpeelEnSportvoorzieningTypeShape, infrastructuurelementen-ap:OplaadwijzesShape, infrastructuurelementen-ap:OplaadpuntStekkertypesShape, infrastructuurelementen-ap:StraatkolktypesShape, infrastructuurelementen-ap:NutsvoorzieningscodesShape, infrastructuurelementen-ap:DekselVormShape, infrastructuurelementen-ap:NauwkeurigsheidsklassenShape, infrastructuurelementen-ap:RioleringscodeShape, infrastructuurelementen-ap:ElementShape, infrastructuurelementen-ap:FysiekObjectShape.
+infrastructuurelementen-ap:AanplakbordShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Aanplakbord>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#AfsluitingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Aanplakbord.
+infrastructuurelementen-ap:AfsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Afsluiting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BedieningszuilShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Afsluiting.
+infrastructuurelementen-ap:BedieningszuilShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Bedieningszuil>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BestendigeAfsluitingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Bedieningszuil.
+infrastructuurelementen-ap:BestendigeAfsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#BestendigeAfsluiting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BetaalautomaatShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:BestendigeAfsluiting.
+infrastructuurelementen-ap:BetaalautomaatShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Betaalautomaat>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BiggetjeShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Betaalautomaat.
+infrastructuurelementen-ap:BiggetjeShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Biggetje>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BoombeugelShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Biggetje.
+infrastructuurelementen-ap:BoombeugelShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Boombeugel>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BorstweringShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Boombeugel.
+infrastructuurelementen-ap:BorstweringShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Borstwering>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BovengrondseBrandkraanShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Borstwering.
+infrastructuurelementen-ap:BovengrondseBrandkraanShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#BovengrondseBrandkraan>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#BushokShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:BovengrondseBrandkraan.
+infrastructuurelementen-ap:BushokShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Bushok>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#CameraShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Bushok.
+infrastructuurelementen-ap:CameraShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Camera>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#CommunicatiemastShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Camera.
+infrastructuurelementen-ap:CommunicatiemastShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Communicatiemast>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#CultuurhistorischMonumentShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Communicatiemast.
+infrastructuurelementen-ap:CultuurhistorischMonumentShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#CultuurhistorischMonument>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DebietmeterShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:CultuurhistorischMonument.
+infrastructuurelementen-ap:DebietmeterShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Debietmeter>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DekselShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Debietmeter.
+infrastructuurelementen-ap:DekselShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2313 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/DekselVorm>;
+_:n3-2313 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/DekselVorm>;
     shacl:class skos:Concept;
     shacl:description "De vorm van het deksel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "dekselVorm";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#dekselVorm>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DekselShape> shacl:property _:n3-2313.
-_:n3-2314 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
+    shacl:path infrastructuur:dekselVorm.
+infrastructuurelementen-ap:DekselShape shacl:property _:n3-2313.
+_:n3-2314 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
     shacl:class skos:Concept;
     shacl:description "Aanduiding van de soort nutsvoorziening.";
     shacl:maxCount 1;
     shacl:name "nutsvoorzieningscode";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#nutsvoorzieningscode>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DekselShape> shacl:property _:n3-2314.
-_:n3-2315 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Rioleringscode>;
+    shacl:path infrastructuur:nutsvoorzieningscode.
+infrastructuurelementen-ap:DekselShape shacl:property _:n3-2314.
+_:n3-2315 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Rioleringscode>;
     shacl:class skos:Concept;
     shacl:description "De rioleringscode is een arbitraire notitie van waarneembare eigenschappen van het deksel m.b.t. de beheerder en de functie van de ondergrondse ioleringsleiding.";
     shacl:maxCount 1;
     shacl:name "rioleringscode";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#rioleringscode>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DekselShape> shacl:property _:n3-2315;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Deksel>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DekselVormShape> a shacl:NodeShape;
+    shacl:path infrastructuur:rioleringscode.
+infrastructuurelementen-ap:DekselShape shacl:property _:n3-2315;
+    shacl:targetClass infrastructuur:Deksel.
+infrastructuurelementen-ap:DekselVormShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DetectielusShape> a shacl:NodeShape;
+infrastructuurelementen-ap:DetectielusShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Detectielus>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DraadafsluitingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Detectielus.
+infrastructuurelementen-ap:DraadafsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Draadafsluiting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#DwarsliggerShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Draadafsluiting.
+infrastructuurelementen-ap:DwarsliggerShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Dwarsligger>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ElektriciteitspaalShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Dwarsligger.
+infrastructuurelementen-ap:ElektriciteitspaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Elektriciteitspaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ElementShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Elektriciteitspaal.
+infrastructuurelementen-ap:ElementShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein#Element>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FietsstallingShape> a shacl:NodeShape;
+    shacl:targetClass openbaardomein:Element.
+infrastructuurelementen-ap:FietsstallingShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2316 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet kan afgesloten worden om toegang voor onbevoegden te verhinderen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "afsluitbaar";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#afsluitbaar>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FietsstallingShape> shacl:property _:n3-2316.
+    shacl:path infrastructuur:afsluitbaar.
+infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2316.
 _:n3-2317 shacl:datatype xsd:integer;
     shacl:description "Geeft aan hoeveel fietsen gestald kunnen worden aan of in de fietsenstalling.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "capaciteit";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#capaciteit>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FietsstallingShape> shacl:property _:n3-2317.
+    shacl:path infrastructuur:capaciteit.
+infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2317.
 _:n3-2318 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet gebruikt wordt voor deelfietsen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "fietsdelen";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#fietsdelen>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FietsstallingShape> shacl:property _:n3-2318.
+    shacl:path infrastructuur:fietsdelen.
+infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2318.
 _:n3-2319 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet overdekt is.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "overdekt";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#overdekt>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FietsstallingShape> shacl:property _:n3-2319;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Fietsstalling>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FietstelpaalShape> a shacl:NodeShape;
+    shacl:path infrastructuur:overdekt.
+infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2319;
+    shacl:targetClass infrastructuur:Fietsstalling.
+infrastructuurelementen-ap:FietstelpaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Fietstelpaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FlitspaalShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Fietstelpaal.
+infrastructuurelementen-ap:FlitspaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Flitspaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FonteinShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Flitspaal.
+infrastructuurelementen-ap:FonteinShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass <http://dbpedia.org/resource/Fountain>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FysiekObjectShape> a shacl:NodeShape;
+infrastructuurelementen-ap:FysiekObjectShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2320 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#begindatum>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FysiekObjectShape> shacl:property _:n3-2320.
+    shacl:path openbaardomein:begindatum.
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2320.
 _:n3-2321 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#einddatum>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FysiekObjectShape> shacl:property _:n3-2321.
-_:n3-2322 shacl:class <http://www.opengis.net/ont/geosparql#Geometry>;
+    shacl:path openbaardomein:einddatum.
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2321.
+_:n3-2322 shacl:class geosparql:Geometry;
     shacl:description "De geometrie overeenkomstig met een bepaald object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FysiekObjectShape> shacl:property _:n3-2322.
-_:n3-2323 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2322.
+_:n3-2323 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
     shacl:class skos:Concept;
     shacl:description "De precisie waarmee het object opgemeten werd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nauwkeurigheid";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#nauwkeurigheid>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FysiekObjectShape> shacl:property _:n3-2323.
+    shacl:path openbaardomein:nauwkeurigheid.
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2323.
 _:n3-2324 shacl:datatype xsd:integer;
     shacl:description "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten.";
     shacl:maxCount 1;
     shacl:name "niveau";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein#niveau>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FysiekObjectShape> shacl:property _:n3-2324.
+    shacl:path openbaardomein:niveau.
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2324.
 _:n3-2325 shacl:class rdfs:Resource;
     shacl:description "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject.";
     shacl:name "relatie";
     shacl:path dcterms:relation.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#FysiekObjectShape> shacl:property _:n3-2325;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein#FysiekObject>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#GSM-paalShape> a shacl:NodeShape;
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2325;
+    shacl:targetClass openbaardomein:FysiekObject.
+infrastructuurelementen-ap:GSM-paalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#GSM-paal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#GeluidschermShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:GSM-paal.
+infrastructuurelementen-ap:GeluidschermShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Geluidscherm>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#GrenspaalShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Geluidscherm.
+infrastructuurelementen-ap:GrenspaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Grenspaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#HaltepaalShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Grenspaal.
+infrastructuurelementen-ap:HaltepaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Haltepaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#HondenpoepbuisShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Haltepaal.
+infrastructuurelementen-ap:HondenpoepbuisShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Hondenpoepbuis>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#HoogspanningsmastShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Hondenpoepbuis.
+infrastructuurelementen-ap:HoogspanningsmastShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Hoogspanningsmast>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#HoogspanningspaalShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Hoogspanningsmast.
+infrastructuurelementen-ap:HoogspanningspaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Hoogspanningspaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#HuisaansluitingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Hoogspanningspaal.
+infrastructuurelementen-ap:HuisaansluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Huisaansluiting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#InfozuilShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Huisaansluiting.
+infrastructuurelementen-ap:InfozuilShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Infozuil>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#InfrastructuurelementShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Infozuil.
+infrastructuurelementen-ap:InfrastructuurelementShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2326 <http://purl.org/linked-data/cube#codeList> <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
+_:n3-2326 cube:codeList <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
     shacl:class skos:Concept;
     shacl:description "Materiaal waar het object uit vervaardigd is.";
     shacl:name "materiaal";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#materiaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#InfrastructuurelementShape> shacl:property _:n3-2326;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Infrastructuurelement>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#KeldergatShape> a shacl:NodeShape;
+    shacl:path infrastructuur:materiaal.
+infrastructuurelementen-ap:InfrastructuurelementShape shacl:property _:n3-2326;
+    shacl:targetClass infrastructuur:Infrastructuurelement.
+infrastructuurelementen-ap:KeldergatShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Keldergat>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#KleineWindturbineShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Keldergat.
+infrastructuurelementen-ap:KleineWindturbineShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#KleineWindturbine>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#KnipperlichtShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:KleineWindturbine.
+infrastructuurelementen-ap:KnipperlichtShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Knipperlicht>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#KopmuurShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Knipperlicht.
+infrastructuurelementen-ap:KopmuurShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Kopmuur>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#KrooshekShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Kopmuur.
+infrastructuurelementen-ap:KrooshekShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Krooshek>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#LichtpuntShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Krooshek.
+infrastructuurelementen-ap:LichtpuntShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Lichtpunt>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#LijnvormigeWegmarkeringShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Lichtpunt.
+infrastructuurelementen-ap:LijnvormigeWegmarkeringShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#LijnvormigeWegmarkering>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#LongitudinaleWeginrichtingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:LijnvormigeWegmarkering.
+infrastructuurelementen-ap:LongitudinaleWeginrichtingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#LongitudinaleWeginrichting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MastShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:LongitudinaleWeginrichting.
+infrastructuurelementen-ap:MastShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2327 shacl:datatype xsd:integer;
     shacl:description "Het aantal bevestigingspunten waarmee de mast verankerd is aan het aardoppervlak.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "aantalAnkerpunten";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#aantalAnkerpunten>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MastShape> shacl:property _:n3-2327;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Mast>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MaterialenShape> a shacl:NodeShape;
+    shacl:path infrastructuur:aantalAnkerpunten.
+infrastructuurelementen-ap:MastShape shacl:property _:n3-2327;
+    shacl:targetClass infrastructuur:Mast.
+infrastructuurelementen-ap:MaterialenShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MeerpaalShape> a shacl:NodeShape;
+infrastructuurelementen-ap:MeerpaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Meerpaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MeteopaalShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Meerpaal.
+infrastructuurelementen-ap:MeteopaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Meteopaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MuurBinnenWegbaanShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Meteopaal.
+infrastructuurelementen-ap:MuurBinnenWegbaanShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#MuurBinnenWegbaan>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#MuurShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:MuurBinnenWegbaan.
+infrastructuurelementen-ap:MuurShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Muur>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NauwkeurigsheidsklassenShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Muur.
+infrastructuurelementen-ap:NauwkeurigsheidsklassenShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NormandischeAfsluitingShape> a shacl:NodeShape;
+infrastructuurelementen-ap:NormandischeAfsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#NormandischeAfsluiting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NutskastShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:NormandischeAfsluiting.
+infrastructuurelementen-ap:NutskastShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2328 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
+_:n3-2328 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
     shacl:class skos:Concept;
     shacl:description "Aanduiding van de soort nutsvoorziening.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nutsvoorzieningscode";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#nutsvoorzieningscode>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NutskastShape> shacl:property _:n3-2328;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Nutskast>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NutspaalShape> a shacl:NodeShape;
+    shacl:path infrastructuur:nutsvoorzieningscode.
+infrastructuurelementen-ap:NutskastShape shacl:property _:n3-2328;
+    shacl:targetClass infrastructuur:Nutskast.
+infrastructuurelementen-ap:NutspaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Nutspaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#NutsvoorzieningscodesShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Nutspaal.
+infrastructuurelementen-ap:NutsvoorzieningscodesShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OmklapbareWegmonolietShape> a shacl:NodeShape;
+infrastructuurelementen-ap:OmklapbareWegmonolietShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#OmklapbareWegmonoliet>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbaarToiletShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:OmklapbareWegmonoliet.
+infrastructuurelementen-ap:OpenbaarToiletShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2329 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan dat het element ondergronds opgeborgen kan worden.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "verzinkbaar";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#verzinkbaar>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbaarToiletShape> shacl:property _:n3-2329;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#OpenbaarToilet>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbareBrievenbusShape> a shacl:NodeShape;
+    shacl:path infrastructuur:verzinkbaar.
+infrastructuurelementen-ap:OpenbaarToiletShape shacl:property _:n3-2329;
+    shacl:targetClass infrastructuur:OpenbaarToilet.
+infrastructuurelementen-ap:OpenbareBrievenbusShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#OpenbareBrievenbus>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbareStraatverlichtingAanGevelOfMuurShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:OpenbareBrievenbus.
+infrastructuurelementen-ap:OpenbareStraatverlichtingAanGevelOfMuurShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#OpenbareStraatverlichtingAanGevelOfMuur>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbareVerlichtingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:OpenbareStraatverlichtingAanGevelOfMuur.
+infrastructuurelementen-ap:OpenbareVerlichtingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#OpenbareVerlichting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OpenbareVuilnisbakShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:OpenbareVerlichting.
+infrastructuurelementen-ap:OpenbareVuilnisbakShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#OpenbareVuilnisbak>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OplaadpuntShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:OpenbareVuilnisbak.
+infrastructuurelementen-ap:OplaadpuntShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2330 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Vervoersmiddelen>;
+_:n3-2330 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Vervoersmiddelen>;
     shacl:class skos:Concept;
     shacl:description "Duidt het vervoersmiddel aan waarvoor het oplaadpunt geschikt is: auto, fiets,...";
     shacl:minCount 1;
     shacl:name "geschiktVoor";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#geschiktVoor>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OplaadpuntShape> shacl:property _:n3-2330.
-_:n3-2331 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Oplaadwijzes>;
+    shacl:path infrastructuur:geschiktVoor.
+infrastructuurelementen-ap:OplaadpuntShape shacl:property _:n3-2330.
+_:n3-2331 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Oplaadwijzes>;
     shacl:class skos:Concept;
     shacl:description "De oplaadwijze volgens de IEC norm 62196.";
     shacl:minCount 1;
     shacl:name "oplaadwijze";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#oplaadwijze>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OplaadpuntShape> shacl:property _:n3-2331.
-_:n3-2332 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/OplaadpuntStekkertypes>;
+    shacl:path infrastructuur:oplaadwijze.
+infrastructuurelementen-ap:OplaadpuntShape shacl:property _:n3-2331.
+_:n3-2332 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/OplaadpuntStekkertypes>;
     shacl:class skos:Concept;
     shacl:description "Het stekkertype volgens de IEC norm 62196.";
     shacl:minCount 1;
     shacl:name "stekkertype";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#stekkertype>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OplaadpuntShape> shacl:property _:n3-2332;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Oplaadpunt>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OplaadpuntStekkertypesShape> a shacl:NodeShape;
+    shacl:path infrastructuur:stekkertype.
+infrastructuurelementen-ap:OplaadpuntShape shacl:property _:n3-2332;
+    shacl:targetClass infrastructuur:Oplaadpunt.
+infrastructuurelementen-ap:OplaadpuntStekkertypesShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#OplaadwijzesShape> a shacl:NodeShape;
+infrastructuurelementen-ap:OplaadwijzesShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PaalBovenleidingTramTreinTrolleyShape> a shacl:NodeShape;
+infrastructuurelementen-ap:PaalBovenleidingTramTreinTrolleyShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#PaalBovenleidingTramTreinTrolley>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PaneelafsluitingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:PaalBovenleidingTramTreinTrolley.
+infrastructuurelementen-ap:PaneelafsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Paneelafsluiting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ParkeersensorShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Paneelafsluiting.
+infrastructuurelementen-ap:ParkeersensorShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Parkeersensor>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PicknicktafelShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Parkeersensor.
+infrastructuurelementen-ap:PicknicktafelShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Picknicktafel>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PijlerShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Picknicktafel.
+infrastructuurelementen-ap:PijlerShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Pijler>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PlooibakenShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Pijler.
+infrastructuurelementen-ap:PlooibakenShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Plooibaken>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PuntvormigeWegmarkeringShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Plooibaken.
+infrastructuurelementen-ap:PuntvormigeWegmarkeringShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#PuntvormigeWegmarkering>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#PutdekselShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:PuntvormigeWegmarkering.
+infrastructuurelementen-ap:PutdekselShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Putdeksel>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#RecyclagecontainerShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Putdeksel.
+infrastructuurelementen-ap:RecyclagecontainerShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2333 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Sorteerfracties>;
+_:n3-2333 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Sorteerfracties>;
     shacl:class skos:Concept;
     shacl:description "Duidt het materiaal aan om te sorteren.";
     shacl:name "sorteerfractie";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#sorteerfractie>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#RecyclagecontainerShape> shacl:property _:n3-2333;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Recyclagecontainer>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ReddingsbandShape> a shacl:NodeShape;
+    shacl:path infrastructuur:sorteerfractie.
+infrastructuurelementen-ap:RecyclagecontainerShape shacl:property _:n3-2333;
+    shacl:targetClass infrastructuur:Recyclagecontainer.
+infrastructuurelementen-ap:ReddingsbandShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Reddingsband>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ReflectorpaalShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Reddingsband.
+infrastructuurelementen-ap:ReflectorpaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Reflectorpaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#RijbaankussenShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Reflectorpaal.
+infrastructuurelementen-ap:RijbaankussenShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Rijbaankussen>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#RioleringscodeShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Rijbaankussen.
+infrastructuurelementen-ap:RioleringscodeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#RoosterShape> a shacl:NodeShape;
+infrastructuurelementen-ap:RoosterShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Rooster>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SchampblokShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Rooster.
+infrastructuurelementen-ap:SchampblokShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Schampblok>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SeininstallatieOvergangSpoorbeddingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Schampblok.
+infrastructuurelementen-ap:SeininstallatieOvergangSpoorbeddingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#SeininstallatieOvergangSpoorbedding>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SelectieveAfsluitingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:SeininstallatieOvergangSpoorbedding.
+infrastructuurelementen-ap:SelectieveAfsluitingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#SelectieveAfsluiting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SensoropstellingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:SelectieveAfsluiting.
+infrastructuurelementen-ap:SensoropstellingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Sensoropstelling>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieEnLeidingenportiekShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Sensoropstelling.
+infrastructuurelementen-ap:SignalisatieEnLeidingenportiekShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2334 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
+_:n3-2334 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
     shacl:class skos:Concept;
     shacl:description "Aanduiding van de soort nutsvoorziening.";
     shacl:name "nutsvoorzieningscode";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#nutsvoorzieningscode>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieEnLeidingenportiekShape> shacl:property _:n3-2334;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#SignalisatieEnLeidingenportiek>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieScheepvaartElektrischShape> a shacl:NodeShape;
+    shacl:path infrastructuur:nutsvoorzieningscode.
+infrastructuurelementen-ap:SignalisatieEnLeidingenportiekShape shacl:property _:n3-2334;
+    shacl:targetClass infrastructuur:SignalisatieEnLeidingenportiek.
+infrastructuurelementen-ap:SignalisatieScheepvaartElektrischShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#SignalisatieScheepvaartElektrisch>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieScheepvaartNietElektrischShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:SignalisatieScheepvaartElektrisch.
+infrastructuurelementen-ap:SignalisatieScheepvaartNietElektrischShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#SignalisatieScheepvaartNietElektrisch>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieScheepvaartShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:SignalisatieScheepvaartNietElektrisch.
+infrastructuurelementen-ap:SignalisatieScheepvaartShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#SignalisatieScheepvaart>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:SignalisatieScheepvaart.
+infrastructuurelementen-ap:SignalisatieShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2335 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het element al dan niet inwendig verlicht is.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "inwendigVerlicht";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#inwendigVerlicht>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SignalisatieShape> shacl:property _:n3-2335;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Signalisatie>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SiloShape> a shacl:NodeShape;
+    shacl:path infrastructuur:inwendigVerlicht.
+infrastructuurelementen-ap:SignalisatieShape shacl:property _:n3-2335;
+    shacl:targetClass infrastructuur:Signalisatie.
+infrastructuurelementen-ap:SiloShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Silo>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SlagboomShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Silo.
+infrastructuurelementen-ap:SlagboomShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Slagboom>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SorteerfractiesShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Slagboom.
+infrastructuurelementen-ap:SorteerfractiesShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SpandraadKettingShape> a shacl:NodeShape;
+infrastructuurelementen-ap:SpandraadKettingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#SpandraadKetting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SpeelEnSportvoorzieningShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:SpandraadKetting.
+infrastructuurelementen-ap:SpeelEnSportvoorzieningShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2336 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/SpeelEnSportvoorzieningType>;
+_:n3-2336 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/SpeelEnSportvoorzieningType>;
     shacl:class skos:Concept;
     shacl:description "Het type speeltoestel.";
     shacl:maxCount 1;
     shacl:name "speeltoesteltype";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#speeltoesteltype>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SpeelEnSportvoorzieningShape> shacl:property _:n3-2336;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#SpeelEnSportvoorziening>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SpeelEnSportvoorzieningTypeShape> a shacl:NodeShape;
+    shacl:path infrastructuur:speeltoesteltype.
+infrastructuurelementen-ap:SpeelEnSportvoorzieningShape shacl:property _:n3-2336;
+    shacl:targetClass infrastructuur:SpeelEnSportvoorziening.
+infrastructuurelementen-ap:SpeelEnSportvoorzieningTypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#SpuitkopShape> a shacl:NodeShape;
+infrastructuurelementen-ap:SpuitkopShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Spuitkop>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StatischeWegmonolietShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Spuitkop.
+infrastructuurelementen-ap:StatischeWegmonolietShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#StatischeWegmonoliet>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StootbandDupuisShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:StatischeWegmonoliet.
+infrastructuurelementen-ap:StootbandDupuisShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#StootbandDupuis>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StootbandNewJerseyShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:StootbandDupuis.
+infrastructuurelementen-ap:StootbandNewJerseyShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#StootbandNewJersey>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StootbandShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:StootbandNewJersey.
+infrastructuurelementen-ap:StootbandShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Stootband>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatkapShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Stootband.
+infrastructuurelementen-ap:StraatkapShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Straatkap>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatkolkShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Straatkap.
+infrastructuurelementen-ap:StraatkolkShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2337 <http://purl.org/linked-data/cube#codeList> <https://data.vlaanderen.be/id/conceptscheme/Straatkolktypes>;
+_:n3-2337 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Straatkolktypes>;
     shacl:class skos:Concept;
     shacl:description "Het type straatkolk.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "straatkolktype";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#straatkolktype>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatkolkShape> shacl:property _:n3-2337;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Straatkolk>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatkolktypesShape> a shacl:NodeShape;
+    shacl:path infrastructuur:straatkolktype.
+infrastructuurelementen-ap:StraatkolkShape shacl:property _:n3-2337;
+    shacl:targetClass infrastructuur:Straatkolk.
+infrastructuurelementen-ap:StraatkolktypesShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatmeubilairShape> a shacl:NodeShape;
+infrastructuurelementen-ap:StraatmeubilairShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2338 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het element al dan niet verplaatsbaar is en dus niet permanent verankerd werd met het aardoppervlak.";
     shacl:maxCount 1;
     shacl:name "verplaatsbaar";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#verplaatsbaar>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatmeubilairShape> shacl:property _:n3-2338;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Straatmeubilair>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#StraatspiegelShape> a shacl:NodeShape;
+    shacl:path infrastructuur:verplaatsbaar.
+infrastructuurelementen-ap:StraatmeubilairShape shacl:property _:n3-2338;
+    shacl:targetClass infrastructuur:Straatmeubilair.
+infrastructuurelementen-ap:StraatspiegelShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Straatspiegel>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#TV-mastShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Straatspiegel.
+infrastructuurelementen-ap:TV-mastShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#TV-mast>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#TelefoonpaalShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:TV-mast.
+infrastructuurelementen-ap:TelefoonpaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Telefoonpaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ToegangspoortShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Telefoonpaal.
+infrastructuurelementen-ap:ToegangspoortShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Toegangspoort>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#TractorsluisShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Toegangspoort.
+infrastructuurelementen-ap:TractorsluisShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Tractorsluis>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#TransversaleWeginrichtingShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Tractorsluis.
+infrastructuurelementen-ap:TransversaleWeginrichtingShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#TransversaleWeginrichting>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#TreinbielsShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:TransversaleWeginrichting.
+infrastructuurelementen-ap:TreinbielsShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Treinbiels>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VangrailShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Treinbiels.
+infrastructuurelementen-ap:VangrailShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Vangrail>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VeeroosterShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Vangrail.
+infrastructuurelementen-ap:VeeroosterShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Veerooster>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VeiligheidsbandShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Veerooster.
+infrastructuurelementen-ap:VeiligheidsbandShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Veiligheidsband>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerkeersbordShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Veiligheidsband.
+infrastructuurelementen-ap:VerkeersbordShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Verkeersbord>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerkeersdrempelShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Verkeersbord.
+infrastructuurelementen-ap:VerkeersdrempelShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Verkeersdrempel>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerkeerslichtShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Verkeersdrempel.
+infrastructuurelementen-ap:VerkeerslichtShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Verkeerslicht>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerkeerslichtVoetgangerFietserShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Verkeerslicht.
+infrastructuurelementen-ap:VerkeerslichtVoetgangerFietserShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#VerkeerslichtVoetgangerFietser>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerlichtingspaalShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:VerkeerslichtVoetgangerFietser.
+infrastructuurelementen-ap:VerlichtingspaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Verlichtingspaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerluchtingsroosterShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Verlichtingspaal.
+infrastructuurelementen-ap:VerluchtingsroosterShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Verluchtingsrooster>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VervoersmiddelenShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Verluchtingsrooster.
+infrastructuurelementen-ap:VervoersmiddelenShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VerzinkbareWegmonolietShape> a shacl:NodeShape;
+infrastructuurelementen-ap:VerzinkbareWegmonolietShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#VerzinkbareWegmonoliet>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VlaggenpaalShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:VerzinkbareWegmonoliet.
+infrastructuurelementen-ap:VlaggenpaalShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Vlaggenpaal>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#VlakvormigeWegmarkeringShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Vlaggenpaal.
+infrastructuurelementen-ap:VlakvormigeWegmarkeringShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#VlakvormigeWegmarkering>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WaterpuntShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:VlakvormigeWegmarkering.
+infrastructuurelementen-ap:WaterpuntShape a shacl:NodeShape;
     shacl:closed false.
 _:n3-2339 shacl:datatype xsd:boolean;
     shacl:description "Geschikt voor menselijke consumptie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "drinkbaar";
-    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#drinkbaar>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WaterpuntShape> shacl:property _:n3-2339;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Waterpunt>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WeginrichtingselementShape> a shacl:NodeShape;
+    shacl:path infrastructuur:drinkbaar.
+infrastructuurelementen-ap:WaterpuntShape shacl:property _:n3-2339;
+    shacl:targetClass infrastructuur:Waterpunt.
+infrastructuurelementen-ap:WeginrichtingselementShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Weginrichtingselement>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WegmarkeringShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Weginrichtingselement.
+infrastructuurelementen-ap:WegmarkeringShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Wegmarkering>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WegmonolietShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Wegmarkering.
+infrastructuurelementen-ap:WegmonolietShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Wegmonoliet>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WegneembareWegmonolietShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Wegmonoliet.
+infrastructuurelementen-ap:WegneembareWegmonolietShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#WegneembareWegmonoliet>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WegsignalisatieShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:WegneembareWegmonoliet.
+infrastructuurelementen-ap:WegsignalisatieShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Wegsignalisatie>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#WindturbineShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Wegsignalisatie.
+infrastructuurelementen-ap:WindturbineShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Windturbine>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ZichtbaarDekselOfLuikShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:Windturbine.
+infrastructuurelementen-ap:ZichtbaarDekselOfLuikShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#ZichtbaarDekselOfLuik>.
-<https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#ZitbankShape> a shacl:NodeShape;
+    shacl:targetClass infrastructuur:ZichtbaarDekselOfLuik.
+infrastructuurelementen-ap:ZitbankShape a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Zitbank>.
+    shacl:targetClass infrastructuur:Zitbank.

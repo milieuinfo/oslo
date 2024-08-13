@@ -1,40 +1,249 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
 @prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dc11: <http://purl.org/dc/elements/1.1/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/terms/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
 @prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
 @prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
 @prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
 @prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
 @prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
 @prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
 @prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
 @prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
 @prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
 @prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28> rdfs:member <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_RuimtelijkBemonsteringsobjectShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BoringShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DiepteShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ErkenningShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingresultaatShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#InterpretatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#LaagShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaaiveldShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksresultaatShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreekswaardeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpdrachtShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielelementShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeneriekeNaamShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RecordShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaatShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#KenmerktypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#PositioneleNauwkeurigheidShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#HerkomstShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DomeinobjectShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ObjectShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BenoemdeWaardeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ObservatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProcesShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringscurveShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobjectShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#AgentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#VlakShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#3DobjectShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#CurveShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#PuntShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#AnyShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaaiveldtypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjecttypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MateriaalklasseShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ErkenningtypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpmetingmethodeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeometrieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#LocatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpmetingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectComplexShape>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#3DobjectShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.opengis.net/ont/gml#Solid>.
+    shacl:targetClass gml:Solid.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#AgentShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass dcterms:Agent.
@@ -44,19 +253,19 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/722a1f18cabb107c684fe4ca857876ade00b0d01>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/d7e4e623022693159b355b9e717ac7ec1a50695c>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/8ac820614f67c62d61761409c73d3f7245b376b2>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/e60c75e17cc4f0e53ed35757c3998342248c220f>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/ca4892872b345b4fe994128b7c31877979275399>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_CurveWaardepaar>.
+    shacl:targetClass bodem-en-ondergrond:BO_CurveWaardepaar.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaar.geometrie";
     shacl:description "Geometrie van het element."@nl;
     shacl:maxCount 1;
     shacl:name "geometrie"@nl;
     shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaar.waarde";
-    shacl:class <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Record>;
+    shacl:class RecordsAndClassMetadata:Record;
     shacl:description "Waarde van het element."@nl;
     shacl:name "waarde"@nl;
     shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/722a1f18cabb107c684fe4ca857876ade00b0d01> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaar.geometrie";
-    shacl:class <http://www.opengis.net/ont/sf#Curve>;
+    shacl:class sf:Curve;
     shacl:description "Geometrie van het element."@nl;
     shacl:name "geometrie"@nl;
     shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry>.
@@ -66,7 +275,7 @@
     shacl:name "waarde"@nl;
     shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaarShape/8ac820614f67c62d61761409c73d3f7245b376b2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_CurveWaardepaar.laag";
-    shacl:class <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Profielelement>;
+    shacl:class bodem-en-ondergrond:Profielelement;
     shacl:description "Overeenstemmend Profielelement."@nl;
     shacl:name "laag"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_Curvewaardepaar.laag>.
@@ -88,14 +297,14 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_RuimtelijkBemonsteringsobjectShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_RuimtelijkBemonsteringsobjectShape/1de151e9a81413b8a996b6f7bc78775471630bd6>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_RuimtelijkBemonsteringsobjectShape/9e5a675767795727e3edbd03239b7dd1082942ec>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_RuimtelijkBemonsteringsobjectShape/7c8605c3338335abe4771b8126140af61a98ddc1>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_RuimtelijkBemonsteringsobjectShape/0510a8f618b0e7ddc3f85a4fb299ab12484e595e>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject>.
+    shacl:targetClass bodem-en-ondergrond:BO_RuimtelijkBemonsteringsobject.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_RuimtelijkBemonsteringsobjectShape/0510a8f618b0e7ddc3f85a4fb299ab12484e595e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_RuimtelijkBemonsteringsobject.maaiveld";
-    shacl:class <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld>;
+    shacl:class bodem-en-ondergrond:Maaiveld;
     shacl:description "Het Maaiveld vh Bemonsteringsobject."@nl;
     shacl:name "maaiveld"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_RuimtelijkBemonsteringsobjectShape/1de151e9a81413b8a996b6f7bc78775471630bd6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BO_RuimtelijkBemonsteringsobject.diepte";
-    shacl:class <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte>;
+    shacl:class bodem-en-ondergrond:Diepte;
     shacl:description "De Diepte vh Bemonsteringsobject."@nl;
     shacl:name "diepte"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte>.
@@ -111,7 +320,7 @@
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringscurveShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19156/2011/SamplingCurve#SF_SamplingCurve>.
+    shacl:targetClass SamplingCurve:SF_SamplingCurve.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectComplexShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectComplexShape/0a53b3830c8d942787cf45e508ba23c8504b1ddb>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectComplexShape/908ffcd9a2211e3124d98027783942e22a6273d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectComplexShape/c87390962fcdae2a8af7e210392c012c763767f3>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectComplexShape/49e2e5c6029b48e73b1bc25b9dd3a952d23b1e2f>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectComplexShape/8cf4d9eaab4639fb8bdf802e3e1ee5361a1576a9>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectComplexShape/b46b6d2b100d495ceab7a8bc658af5f039d9771b>.
@@ -136,12 +345,12 @@
     shacl:name "Bemonsteringsobject (source)"@nl;
     shacl:path <https://data.vlaanderen.be/ns/observaties-en-metingen#BemonsteringsobjectComplex.bemonsteringsobject.source>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectComplexShape/b46b6d2b100d495ceab7a8bc658af5f039d9771b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#undefined.Bemonsteringsobject(target)";
-    shacl:class <http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature>;
+    shacl:class SamplingFeature:SF_SamplingFeature;
     shacl:description "Referentie naar verbonden klasse."@nl;
     shacl:name "Bemonsteringsobject (target)"@nl;
     shacl:path <https://data.vlaanderen.be/ns/observaties-en-metingen#BemonsteringsobjectComplex.bemonsteringsobject.target>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectComplexShape/c87390962fcdae2a8af7e210392c012c763767f3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#undefined.Bemonsteringsobject(source)";
-    shacl:class <http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature>;
+    shacl:class SamplingFeature:SF_SamplingFeature;
     shacl:description "Referentie naar verbonden klasse."@nl;
     shacl:name "Bemonsteringsobject (source)"@nl;
     shacl:path <https://data.vlaanderen.be/ns/observaties-en-metingen#BemonsteringsobjectComplex.bemonsteringsobject.source>.
@@ -150,10 +359,10 @@
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/bff6e3438377968c492a6ca0fe2e7df779731318>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/2ad9fcaea8c54f3993381acf97bd6401ba6549dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/7f7729e4df614394423f92badbe4304148f90b07>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/09c0c3a9baa1d16aecc7fc56bca94b26629162e5>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/322371a77364a50f049d46180f6192532eea26dc>;
     shacl:targetClass <https://data.vlaanderen.be/ns/observaties-en-metingen#BemonsteringsobjectComplex.bemonsteringsobject.source>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Bemonsteringsobject.identificator";
-    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:class adms:Identifier;
     shacl:description "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert."@nl;
     shacl:name "identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/09c0c3a9baa1d16aecc7fc56bca94b26629162e5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Bemonsteringsobject.parameter";
     shacl:class <http://def.isotc211.org/iso19156/2011/Observation#NamedValue>;
     shacl:description "Willekeurig gegeven gassocieerd met het Bemonsteringsobject."@nl;
@@ -175,7 +384,7 @@
     shacl:name "type"@nl;
     shacl:path dcterms:type.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/7f7729e4df614394423f92badbe4304148f90b07> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Bemonsteringsobject.herkomst";
-    shacl:class <http://def.isotc211.org/iso19115/2006/DataQualityInformation#LI_Lineage>;
+    shacl:class DataQualityInformation:LI_Lineage;
     shacl:description "Verwijzing naar de Herkomst van een Bemonsteringsobject."@nl;
     shacl:name "herkomst"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.lineage>.
@@ -183,9 +392,9 @@
     shacl:description "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert."@nl;
     shacl:minCount 1;
     shacl:name "identificator"@nl;
-    shacl:path <http://www.w3.org/ns/adms#identifier>.
+    shacl:path adms:identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BemonsteringsobjectShape/bff6e3438377968c492a6ca0fe2e7df779731318> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Bemonsteringsobject.geassocieerdBemonsteringsobject";
-    shacl:class <http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature>;
+    shacl:class SamplingFeature:SF_SamplingFeature;
     shacl:description "Ander Bemonsteringsobject waarmee het Bemonsteringsobject geassocieerd is."@nl;
     shacl:name "geassocieerdBemonsteringsobject"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/SamplingFeature#SamplingFeatureComplex.relatedSamplingFeature>.
@@ -202,7 +411,7 @@
     shacl:name "waarde"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BenoemdeWaardeShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BenoemdeWaarde.naam";
-    shacl:class <http://def.isotc211.org/iso19103/2005/Names#GenericName>;
+    shacl:class Names:GenericName;
     shacl:description "Naam vh type van de waarde."@nl;
     shacl:name "naam"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name>.
@@ -228,41 +437,41 @@
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#BoringShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Boring>.
+    shacl:targetClass bodem-en-ondergrond:Boring.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#CurveShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.opengis.net/ont/sf#Curve>.
+    shacl:targetClass sf:Curve.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DiepteShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Diepte>.
+    shacl:targetClass bodem-en-ondergrond:Diepte.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositieShape/1fa2e16d78d8fce7d565e8b0d0b295ccfce4ccf1>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositieShape/924fa0891e29beb42edc03865640a804126d1a9f>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositieShape/c61a6fcf48222cfd263d87bb92f5ef2035d7b7dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositieShape/412041a7e5eb713d30c26685c48cbbc05c934a2f>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#DirectePositie>.
+    shacl:targetClass generiek:DirectePositie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositieShape/1fa2e16d78d8fce7d565e8b0d0b295ccfce4ccf1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositie.gml";
     shacl:description "Directe positie uitgedrukt in gml-formaat."@nl;
     shacl:maxCount 1;
     shacl:name "gml"@nl;
-    shacl:path <http://www.opengis.net/ont/geosparql#asGML>.
+    shacl:path geosparql:asGML.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositieShape/412041a7e5eb713d30c26685c48cbbc05c934a2f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositie.wkt";
     shacl:description "Directe positie uitgedrukt in wkt-formaat."@nl;
     shacl:maxCount 1;
     shacl:name "wkt"@nl;
-    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>.
+    shacl:path geosparql:asWKT.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositieShape/924fa0891e29beb42edc03865640a804126d1a9f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositie.opmeting";
     shacl:description "De manier waarop de positie werd bepaald."@nl;
     shacl:maxCount 1;
     shacl:name "opmeting"@nl;
     shacl:path <https://data.vlaanderen.be/ns/generiek#DirectePositie.opmeting>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositieShape/c61a6fcf48222cfd263d87bb92f5ef2035d7b7dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DirectePositie.opmeting";
-    shacl:class <https://data.vlaanderen.be/ns/generiek#Opmeting>;
+    shacl:class generiek:Opmeting;
     shacl:description "De manier waarop de positie werd bepaald."@nl;
     shacl:name "opmeting"@nl;
     shacl:path <https://data.vlaanderen.be/ns/generiek#DirectePositie.opmeting>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DomeinobjectShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DomeinobjectShape/802f5cbc7a47bc2682a3b764c7ef735e4bf374fd>;
-    shacl:targetClass <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_Domainobject>.
+    shacl:targetClass DiscreteCoverages:CV_Domainobject.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#DomeinobjectShape/802f5cbc7a47bc2682a3b764c7ef735e4bf374fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Domeinobject.ruimtelijkeSamenstelling";
     shacl:class locn:Geometry;
     shacl:description "TODO"@nl;
@@ -271,7 +480,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ErkenningShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ErkenningShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ErkenningShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ErkenningShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning>.
+    shacl:targetClass bodem-en-ondergrond:Erkenning.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ErkenningShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Erkenning.type";
     shacl:description "et soort activiteit dat mag worden uitgevoerd."@nl;
     shacl:maxCount 1;
@@ -293,14 +502,14 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape/69ee2bce4423375cdcc96228dc9c0e9e40486463>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape/dda5730aa96c22f03c7ca7ec75f9535c6b7d2351>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape/e3c5bfafcf616070379e75b986f55b6a15a69452>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape/adf89b4ee23069c19022d33ef481e715dfdbbf95>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape/c17934143dd444db3a229ceceac2a847b934675d>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape/e32da2f299df17554a8df05b1f7ff8b41525bfd2>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemeting>.
+    shacl:targetClass bodem-en-ondergrond:Fractiemeting.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape/69ee2bce4423375cdcc96228dc9c0e9e40486463> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Fractiemeting.fractiemetingresultaat";
     shacl:description "Het resultaat van de Fractiemeting."@nl;
     shacl:minCount 1;
     shacl:name "fractiemetingresultaat"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape/adf89b4ee23069c19022d33ef481e715dfdbbf95> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Fractiemeting.meetwaardeparameter";
-    shacl:class <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>;
+    shacl:class GeneralFeatureModel:GF_PropertyType;
     shacl:description "Het geobserveerdKenmerk."@nl;
     shacl:name "meetwaardeparameter"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty>.
@@ -320,30 +529,30 @@
     shacl:name "meetwaardeparameter"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingShape/e3c5bfafcf616070379e75b986f55b6a15a69452> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Fractiemeting.fractiemetingresultaat";
-    shacl:class <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingresultaat>;
+    shacl:class bodem-en-ondergrond:Fractiemetingresultaat;
     shacl:description "Het resultaat van de Fractiemeting."@nl;
     shacl:name "fractiemetingresultaat"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingresultaatShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingresultaatShape/334a9c386d8e8301a096e180be9eb9b3035822be>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingresultaatShape/92ef2e6d893d272585747659d79a813f6f4d2c81>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingresultaat>.
+    shacl:targetClass bodem-en-ondergrond:Fractiemetingresultaat.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingresultaatShape/334a9c386d8e8301a096e180be9eb9b3035822be> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Fractiemetingresultaat.fractiemetingwaarde";
     shacl:description "Waarde ve individuele Meting in de Meetreeks.."@nl;
     shacl:minCount 1;
     shacl:name "fractiemetingwaarde"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeksresultaat.meetreekswaarde>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingresultaatShape/92ef2e6d893d272585747659d79a813f6f4d2c81> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Fractiemetingresultaat.fractiemetingwaarde";
-    shacl:class <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde>;
+    shacl:class bodem-en-ondergrond:Fractiemetingwaarde;
     shacl:description "Waarde ve individuele Meting in de Meetreeks.."@nl;
     shacl:name "fractiemetingwaarde"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeksresultaat.meetreekswaarde>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/143816e736285799337c92a091d840ee8ba58846>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/1ee8a2162aa8464fd0864de25fa293a5dbcdb055>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/25b1d12c1fd1c1e81d3f5d0fa64e1a87b443bdae>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/c8ff1b345f2f2b1128f03ab87dc7e951896f506f>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/8536832610daf30b508802527b8efd5c726fcbbc>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/fad3de1c8dcfc101e9a945c1c47a46c3455969de>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/5c6151142dcd2cb22414efa074537c9f68c436e2>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/e404da639e784a88e3b2e1ac96434468bc38b1fb>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde>.
+    shacl:targetClass bodem-en-ondergrond:Fractiemetingwaarde.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/143816e736285799337c92a091d840ee8ba58846> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Fractiemetingwaarde.meetpunt";
-    shacl:class <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>;
+    shacl:class UnitsOfMeasure:Measure;
     shacl:description "Waarde van het meetpunt."@nl;
     shacl:name "meetpunt"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpunt>.
@@ -353,17 +562,17 @@
     shacl:name "meetpunt"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpunt>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/25b1d12c1fd1c1e81d3f5d0fa64e1a87b443bdae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Fractiemetingwaarde.meetpuntBovengrens";
-    shacl:class <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>;
+    shacl:class UnitsOfMeasure:Measure;
     shacl:description "Bovengrens van een klasse van waarden van meetpunten."@nl;
     shacl:name "meetpuntBovengrens"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpuntBovengrens>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/5c6151142dcd2cb22414efa074537c9f68c436e2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Fractiemetingwaarde.meetwaarde";
-    shacl:class <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>;
+    shacl:class UnitsOfMeasure:Measure;
     shacl:description "Waarde van de fractie."@nl;
     shacl:name "meetwaarde"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetwaarde>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#FractiemetingwaardeShape/8536832610daf30b508802527b8efd5c726fcbbc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Fractiemetingwaarde.meetpuntOndergrens";
-    shacl:class <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>;
+    shacl:class UnitsOfMeasure:Measure;
     shacl:description "Ondergrens van een klasse van waarden van meetpunten."@nl;
     shacl:name "meetpuntOndergrens"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpuntOndergrens>.
@@ -384,7 +593,7 @@
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpuntOndergrens>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeneriekeNaamShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19103/2005/Names#GenericName>.
+    shacl:targetClass Names:GenericName.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeometrieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeometrieShape/1fa2e16d78d8fce7d565e8b0d0b295ccfce4ccf1>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeometrieShape/924fa0891e29beb42edc03865640a804126d1a9f>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeometrieShape/c61a6fcf48222cfd263d87bb92f5ef2035d7b7dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeometrieShape/412041a7e5eb713d30c26685c48cbbc05c934a2f>;
@@ -393,29 +602,29 @@
     shacl:description "Geometrie uitgedrukt in gml-formaat."@nl;
     shacl:maxCount 1;
     shacl:name "gml"@nl;
-    shacl:path <http://www.opengis.net/ont/geosparql#asGML>.
+    shacl:path geosparql:asGML.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeometrieShape/412041a7e5eb713d30c26685c48cbbc05c934a2f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Geometrie.wkt";
     shacl:description "Geometrie uitgedrukt in wkt-formaat."@nl;
     shacl:maxCount 1;
     shacl:name "wkt"@nl;
-    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>.
+    shacl:path geosparql:asWKT.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeometrieShape/924fa0891e29beb42edc03865640a804126d1a9f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Geometrie.opmeting";
     shacl:description "De manier waarop de geometrie werd bepaald."@nl;
     shacl:maxCount 1;
     shacl:name "opmeting"@nl;
     shacl:path <https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#GeometrieShape/c61a6fcf48222cfd263d87bb92f5ef2035d7b7dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Geometrie.opmeting";
-    shacl:class <https://data.vlaanderen.be/ns/generiek#Opmeting>;
+    shacl:class generiek:Opmeting;
     shacl:description "De manier waarop de geometrie werd bepaald."@nl;
     shacl:name "opmeting"@nl;
     shacl:path <https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#HerkomstShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19115/2006/DataQualityInformation#LI_Lineage>.
+    shacl:targetClass DataQualityInformation:LI_Lineage.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape/ed560feb860205e0339910c9b2942564c01b5e11>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape/5f023c37e7d18ecf8aecd2bb45eae0a05687cd6f>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape/9f8532791e13c302ae6dcc70ef353c796f948c85>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape/3b5973d35f612c133f22e9f710f65db63d861b6b>;
-    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+    shacl:targetClass adms:Identifier.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Identificator.toegekendop";
     shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
@@ -430,12 +639,12 @@
     shacl:datatype xsd:string;
     shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
     shacl:name "toegekend door (String)"@nl;
-    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+    shacl:path adms:schemaAgency.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape/9f8532791e13c302ae6dcc70ef353c796f948c85> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Identificator.toegekenddoor(String)";
     shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
     shacl:maxCount 1;
     shacl:name "toegekend door (String)"@nl;
-    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+    shacl:path adms:schemaAgency.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#IdentificatorShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Identificator.identificator";
     shacl:description "String gebruikt om het object uniek te identificeren."@nl;
     shacl:maxCount 1;
@@ -453,20 +662,20 @@
     shacl:path dcterms:creator.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#InterpretatieShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Interpretatie>.
+    shacl:targetClass bodem-en-ondergrond:Interpretatie.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#KenmerktypeShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>.
+    shacl:targetClass GeneralFeatureModel:GF_PropertyType.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#LaagShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Laag>.
+    shacl:targetClass bodem-en-ondergrond:Laag.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#LocatieShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass prov:Location.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaaiveldShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaaiveldShape/26c82473d9592c85e2b3fb79c0437383ae61cbab>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaaiveldShape/893923a56eea76c21e839fbc77bd626348033b77>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaaiveldShape/d460f38b8f0a56bc691dae4093fdfcc3936e8e4d>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaaiveldShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaaiveldShape/322371a77364a50f049d46180f6192532eea26dc>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld>.
+    shacl:targetClass bodem-en-ondergrond:Maaiveld.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaaiveldShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Maaiveld.type";
     shacl:description "Het type Maaiveld."@nl;
     shacl:maxCount 1;
@@ -488,7 +697,7 @@
     shacl:name "hoogte"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaaiveldShape/d460f38b8f0a56bc691dae4093fdfcc3936e8e4d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Maaiveld.hoogte";
-    shacl:class <https://data.vlaanderen.be/ns/generiek#DirectePositie>;
+    shacl:class generiek:DirectePositie;
     shacl:description "Verticale maat naar boven vanaf het grondoppervlak van het maaiveld."@nl;
     shacl:name "hoogte"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte>.
@@ -497,16 +706,16 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MaatShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>.
+    shacl:targetClass UnitsOfMeasure:Measure.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MateriaalklasseShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/2b8779f62d34dbab55afe13d9d357f942d4e357c>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/4d62d4f64bf37cc9d797b13bfedbd77a25bc9e18>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/522d8252638ed7936cde3883d776718db3f7b688>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/23a881d8c3d26b8f43b7a144e17a48196e0b7624>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/8f4bf8d34853d06670270568cd6d7dd570a5ae4b>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/c5d2c493a3e300069732c0f335c618112f6cb0ce>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/adf89b4ee23069c19022d33ef481e715dfdbbf95>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/c17934143dd444db3a229ceceac2a847b934675d>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/e32da2f299df17554a8df05b1f7ff8b41525bfd2>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks>.
+    shacl:targetClass bodem-en-ondergrond:Meetreeks.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/23a881d8c3d26b8f43b7a144e17a48196e0b7624> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Meetreeks.meetreeksresultaat";
-    shacl:class <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeksresultaat>;
+    shacl:class bodem-en-ondergrond:Meetreeksresultaat;
     shacl:description "Het resultaat van de Meetreeks."@nl;
     shacl:name "meetreeksresultaat"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result>.
@@ -516,7 +725,7 @@
     shacl:name "meetpuntparameter"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/4d62d4f64bf37cc9d797b13bfedbd77a25bc9e18> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Meetreeks.meetpuntparameter";
-    shacl:class <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>;
+    shacl:class GeneralFeatureModel:GF_PropertyType;
     shacl:description "Het kenmerk in functie waarvan het geobserveerdKenmerk verandert."@nl;
     shacl:name "meetpuntparameter"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter>.
@@ -531,7 +740,7 @@
     shacl:name "meetreeksresultaat"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksShape/adf89b4ee23069c19022d33ef481e715dfdbbf95> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Meetreeks.meetwaardeparameter";
-    shacl:class <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>;
+    shacl:class GeneralFeatureModel:GF_PropertyType;
     shacl:description "Het geobserveerdKenmerk."@nl;
     shacl:name "meetwaardeparameter"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty>.
@@ -553,9 +762,9 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksresultaatShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksresultaatShape/0c1b99d004f99eeb9ce2b1a4490e9044bd7bd9c3>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksresultaatShape/2f399b9a0d295c333c6c83f8f31842c8c8168874>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeksresultaat>.
+    shacl:targetClass bodem-en-ondergrond:Meetreeksresultaat.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreeksresultaatShape/0c1b99d004f99eeb9ce2b1a4490e9044bd7bd9c3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Meetreeksresultaat.meetreekswaarde";
-    shacl:class <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde>;
+    shacl:class bodem-en-ondergrond:Meetreekswaarde;
     shacl:description "Eén waarde in het resultaat van een Meetreeks."@nl;
     shacl:name "meetreekswaarde"@nl;
     shacl:path <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeksresultaat.meetreekswaarde>.
@@ -567,7 +776,7 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreekswaardeShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreekswaardeShape/143816e736285799337c92a091d840ee8ba58846>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreekswaardeShape/1ee8a2162aa8464fd0864de25fa293a5dbcdb055>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreekswaardeShape/75677384f32bf56d1a89d69467de40a90176691c>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreekswaardeShape/5c6151142dcd2cb22414efa074537c9f68c436e2>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreekswaardeShape/867edfdca278ac1e6ba059777f7e74fc610bff24>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreekswaardeShape/e404da639e784a88e3b2e1ac96434468bc38b1fb>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde>.
+    shacl:targetClass bodem-en-ondergrond:Meetreekswaarde.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#MeetreekswaardeShape/143816e736285799337c92a091d840ee8ba58846> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Meetreekswaarde.meetpunt";
     shacl:class rdfs:Resource;
     shacl:description "Waarde van het meetpunt."@nl;
@@ -606,11 +815,11 @@
     shacl:targetClass <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpdrachtShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht>.
+    shacl:targetClass bodem-en-ondergrond:Opdracht.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpmetingShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpmetingShape/6890e1def304cb2b3a13ab957c88611b3da3a34e>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpmetingShape/c192eb0d5e5c85399936518a4f4503c049d71714>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpmetingShape/c5ab93f3649a701e1fefd1ffdb8529899ed6675c>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpmetingShape/a825ef9ed99d3af5d19a15985b5127033b6c35ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpmetingShape/b60cbb1f5aefd2bfc3349aed95e6c89745dd980d>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpmetingShape/cca2c488938324b89e759dd60201a611e0f43485>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#Opmeting>.
+    shacl:targetClass generiek:Opmeting.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#OpmetingShape/6890e1def304cb2b3a13ab957c88611b3da3a34e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Opmeting.methode";
     shacl:description "Aard van de gebruikte methode."@nl;
     shacl:maxCount 1;
@@ -646,21 +855,21 @@
     shacl:targetClass skos:Concept.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#PositioneleNauwkeurigheidShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy>.
+    shacl:targetClass DataQualityInformation:DQ_PositionalAccuracy.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProcesShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass <http://def.isotc211.org/iso19156/2011/Observation#OM_Process>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielShape/722a1f18cabb107c684fe4ca857876ade00b0d01>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielShape/d7e4e623022693159b355b9e717ac7ec1a50695c>;
-    shacl:targetClass <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Profile>.
+    shacl:targetClass DomainSpecificSamplingFeatures:Profile.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Profiel.geometrie";
     shacl:description "Geometrie vh Profiel."@nl;
     shacl:maxCount 1;
     shacl:name "geometrie"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingCurve.shape>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielShape/722a1f18cabb107c684fe4ca857876ade00b0d01> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Profiel.geometrie";
-    shacl:class <http://www.opengis.net/ont/sf#Curve>;
+    shacl:class sf:Curve;
     shacl:description "Geometrie vh Profiel."@nl;
     shacl:name "geometrie"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingCurve.shape>.
@@ -672,14 +881,14 @@
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielelementShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielelementShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielelementShape/722a1f18cabb107c684fe4ca857876ade00b0d01>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielelementShape/d7e4e623022693159b355b9e717ac7ec1a50695c>;
-    shacl:targetClass <https://data.vlaanderen.be/ns/bodem-en-ondergrond#Profielelement>.
+    shacl:targetClass bodem-en-ondergrond:Profielelement.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielelementShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Profielelement.geometrie";
     shacl:description "Geometrie vh Profielelement."@nl;
     shacl:maxCount 1;
     shacl:name "geometrie"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingCurve.shape>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#ProfielelementShape/722a1f18cabb107c684fe4ca857876ade00b0d01> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#Profielelement.geometrie";
-    shacl:class <http://www.opengis.net/ont/sf#Curve>;
+    shacl:class sf:Curve;
     shacl:description "Geometrie vh Profielelement."@nl;
     shacl:name "geometrie"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingCurve.shape>.
@@ -690,14 +899,14 @@
     shacl:path <http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingCurve.shape>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#PuntShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.opengis.net/ont/sf#Point>.
+    shacl:targetClass sf:Point.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RecordShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Record>.
+    shacl:targetClass RecordsAndClassMetadata:Record.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobjectShape> a shacl:NodeShape;
     shacl:closed false;
     shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobjectShape/e43d85a7010b5cf3b536d17e7fb055db04ea3e12>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobjectShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobjectShape/722a1f18cabb107c684fe4ca857876ade00b0d01>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobjectShape/d7e4e623022693159b355b9e717ac7ec1a50695c>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobjectShape/6bdbc5157124b302cc9bf28ff5abf928f859badd>, <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobjectShape/ca9e75a6a8664f0da29ea7c32c242aaeef56005b>;
-    shacl:targetClass <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature>.
+    shacl:targetClass SpatialSamplingFeature:SF_SpatialSamplingFeature.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobjectShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobject.geometrie";
     shacl:description "Geometrie van het RuimtelijkBemonsteringsobject."@nl;
     shacl:maxCount 1;
@@ -714,7 +923,7 @@
     shacl:name "geometrie"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.shape>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobjectShape/ca9e75a6a8664f0da29ea7c32c242aaeef56005b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#RuimtelijkBemonsteringsobject.positioneleNauwkeurigheid";
-    shacl:class <http://def.isotc211.org/iso19115/2006/DataQualityInformation#DQ_PositionalAccuracy>;
+    shacl:class DataQualityInformation:DQ_PositionalAccuracy;
     shacl:description "Nauwkeurigheid waarmee de geometrie is bepaald."@nl;
     shacl:name "positioneleNauwkeurigheid"@nl;
     shacl:path <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.positionalAccuracy>.
@@ -730,4 +939,4 @@
     shacl:path <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature.hostedProcedure>.
 <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bodem-en-ondergrond/kandidaatstandaard/2022-04-28#VlakShape> a shacl:NodeShape;
     shacl:closed false;
-    shacl:targetClass <http://www.opengis.net/ont/geosparql#Surface>.
+    shacl:targetClass geosparql:Surface.
