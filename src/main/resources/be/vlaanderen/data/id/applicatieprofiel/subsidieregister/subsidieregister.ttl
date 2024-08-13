@@ -1,0 +1,269 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/> a <http://purl.org/ontology/bibo/Document>;
+    dcterms:language "nl"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+_:df_9_1 a foaf:Person;
+    foaf:lastName "Bauwens"@nl;
+    foaf:firstName "Dorien"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:dorien.bauwens@bz.vlaanderen.be>.
+_:df_9_3 a foaf:Person;
+    foaf:lastName "Spiessens"@nl;
+    foaf:firstName "Sarah"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:sarah.spiessens@bz.vlaanderen.be>.
+_:df_9_5 a foaf:Person;
+    foaf:lastName "De Keyzer"@nl;
+    foaf:firstName "Michiel"@nl;
+    foaf:workplaceHomepage <http://www.pwc.be>;
+    foaf:mbox <mailto:michiel.de.keyzer@pwc.com>.
+_:df_9_7 a foaf:Person;
+    foaf:lastName "Scheerlinck"@nl;
+    foaf:firstName "Jens"@nl;
+    foaf:workplaceHomepage <http://www.pwc.be>;
+    foaf:mbox <mailto:jens.scheerlinck@pwc.com>.
+_:df_9_9 a foaf:Person;
+    foaf:lastName "Vandeloo"@nl;
+    foaf:firstName "Carmen"@nl;
+    foaf:workplaceHomepage <http://www.pwc.be>;
+    foaf:mbox <mailto:carmen.vandeloo@pwc.com>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/#ref> a <http://purl.org/ontology/bibo/Chapter>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/#ref>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/> dcterms:type dcmitype:Text;
+    dcterms:title "Deze specificatie"@nl;
+    <http://creativecommons.org/ns#attributionURL> <http://vlaanderen.be/informatievlaanderen>;
+    <http://creativecommons.org/ns#attributionName> "Informatie Vlaanderen"@nl;
+    <http://www.w3.org/1999/xhtml/vocab#license> <https://overheid.vlaanderen.be/sites/default/files/documenten/ict-egov/licenties/hergebruik/modellicentie_gratis_hergebruik_v1_0.html>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+eu:hasAddress a rdfs:Property;
+    rdfs:label "\n                            \n                            adres\n                          "@nl;
+    rdfs:comment "Adres vd dienstverlener."@nl;
+    vann:usageNote "Het adres moet gehaald worden bij de instantie vd subklasse (vb vestigingsadres bij Organisatie, verblijfsadres bij Persoon)"@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Naam vd dienstverlener."@nl;
+    vann:usageNote "De naam moet gehaald worden bij de instantie vd subklasse (vb voorkeurnaam bij Organisatie, volledigeNaam bij Persoon)."@nl.
+eu:playsRole a rdfs:Property;
+    rdfs:label "\n                            \n                            speelt rol\n                          "@nl;
+    rdfs:comment "De manier waarop de agent participeert wordt beschreven door de entiteit Participatie. Laat oa toe om de bestaande associaties PubliekeDienstverlening-wordtUitgevoerdDoor-Agent en PubliekeDienstverlening-heeftVerantwoordelijke-PubliekeOrganisatie meer in detail te beschrijven."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/adms#identifier> a rdfs:Property;
+    rdfs:label "\n                            \n                            referentie\n                          "@nl;
+    rdfs:comment "Een identificator voor het dossier."@nl;
+    vann:usageNote "Bijvoorbeeld het dossiernummer."@nl.
+<https://data.vlaanderen.be/ns/subsidie#vastgelegdBedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            vastgelegd bedrag\n                          "@nl;
+    rdfs:comment "Het bedrag dat werd vastgelegd voor uitbetaling aan de begunstigde van een subsidiemaatregel of een intermediaire betrokkene in een bepaalde periode."@nl;
+    vann:usageNote "Dit bedrag kan kleiner zijn of gelijk aan het toegekende bedrag."@nl.
+dcterms:date a rdfs:Property;
+    rdfs:label "\n                            \n                            datum\n                          "@nl;
+    rdfs:comment "De datum waarop de FinanciëleOutput werd uitebetaald of teruggevorderd. "@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/adms#identifier> a rdfs:Property;
+    rdfs:label "\n                            \n                            referentie\n                          "@nl;
+    rdfs:comment "Identificator voor het dossier."@nl;
+    vann:usageNote "Bijvoorbeeld het nummer gelinkt aan de overschrijving."@nl.
+<https://data.vlaanderen.be/ns/subsidie#uitgekeerdBedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            uitgekeerd bedrag\n                          "@nl;
+    rdfs:comment "Het bedrag dat werd uitbetaald aan de begunstigde, of een intermediaire betrokkene, van de subsidiemaatregel op een bepaalde datum."@nl;
+    vann:usageNote "Dit bedrag kan kleiner zijn of gelijk aan het vastgelegde bedrag voor een bepaalde periode."@nl.
+<https://data.vlaanderen.be/ns/organisatie#rechtspersoonlijkheid> a rdfs:Property;
+    rdfs:label "\n                            \n                            rechtspersoonlijkheid\n                          "@nl;
+    rdfs:comment "Geeft aan of de rechtspersoonlijkheid van de geregistreerde organisatie deze is van een natuurlijk persoon of van een rechtspersoon. "@nl;
+    vann:usageNote "Een rechtspersoon is een juridische constructie die een organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc). Vb privaatrechterlijke rechtspersonen: vennootschappen, vzw's etc.; vb publiekrechterlijke rechtspersonen: steden, gemeenten etc. Een feitelijke vereniging is in principe geen rechtspersoon maar wordt als ze geregistreerd is id KBO toch als dusdanig geklasseerd."@nl.
+<https://data.vlaanderen.be/ns/organisatie#rechtstoestand> a rdfs:Property;
+    rdfs:label "\n                            \n                            rechtstoestand\n                          "@nl;
+    rdfs:comment "Status van de geregistreerde organisatie."@nl;
+    vann:usageNote "Stemt in de KBO overeen met rechtstoestand, bvb normale toestand, gerechtelijk akkoord, opening faillissement etc."@nl.
+<https://data.vlaanderen.be/ns/organisatie#rechtsvorm> a rdfs:Property;
+    rdfs:label "\n                            \n                            rechtsvorm\n                          "@nl;
+    rdfs:comment "Juridisch statuut van de geregistreerde organisatie."@nl;
+    vann:usageNote "Stemt in de KBO overeen met rechtsvorm, bvb NV, VZW, Stad/Gemeente, OCMW etc."@nl.
+rov:registration a rdfs:Property;
+    rdfs:label "\n                            \n                            registratie\n                          "@nl;
+    rdfs:comment "Identificator dat de organisatie verkreeg bij registratie."@nl;
+    vann:usageNote "In de KBO is dit het ondernemingsnummer."@nl.
+rov:legalName a rdfs:Property;
+    rdfs:label "\n                            \n                            wettelijke naam\n                          "@nl;
+    rdfs:comment "Wettelijk geregistreerde naam vd organisatie."@nl;
+    vann:usageNote "Evt in verschillende talen."@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Tekstuele beschrijving gerelateerd aan de consumptie van een subsidiemaatregel."@nl;
+    vann:usageNote "Kan bijvoorbeeld meer informatie bevatten over de activiteit die gesubsidieerd wordt."@nl.
+eu:serviceProvider a rdfs:Property;
+    rdfs:label "\n                            \n                            dienstverlener\n                          "@nl;
+    rdfs:comment "Agent die de Publieke Dienstverlening verstrekt."@nl;
+    vann:usageNote "Staat los van de rol die de bevoegde instantie speelt, kan een externe aannemer zijn."@nl.
+eu:hasParticipation a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft participatie\n                          "@nl;
+    rdfs:comment "Participatie (van een agent) aan de publieke dienstverlening."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/subsidie#heeftRechtsgrond> a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft rechtsgrond\n                          "@nl;
+    rdfs:comment "De rechtsgrond op basis waarvan de subsidiemaatregel werd toegekend."@nl;
+    vann:usageNote ""@nl.
+eu:hasCompetentAuthority a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft verantwoordelijke autoriteit\n                          "@nl;
+    rdfs:comment "Publieke Organisatie die verantwoordelijk is voor het aanbieden en beheren van de Publieke dienstverlening."@nl;
+    vann:usageNote "Of de Publieke Organisatie zelf de dienstverlening aanbiedt of deze uitbesteedt is irrelevant. De Publieke Organisatie verantwoordelijk voor het aanbieden en beheren van de dienstverlening wordt ook wel de Bevoegde Instantie genoemd en wordt in Europese Richtlijn 2006/123/EC gedefinieerd als volgt: \"elk orgaan of autoriteit dat in een lidstaat en toezichthoudende of regelgevende rol vervult ten aanzien van dienstenactiviteiten, met name bestuurlijke instanties, met inbegrip van rechterlijke instanties die als zodanig optreden, beroepsorden en de beroepsverenigingen en -organisaties of andere beroepsorganisaties die in de uitoefening van hun juridisch autonome bevoegdheden de toegang tot of de uitoefening van dienstenactiviteiten collectief reguleren\"."@nl.
+<https://data.vlaanderen.be/ns/transactie#isInstantieVan> a rdfs:Property;
+    rdfs:label "\n                            \n                            is instantie van\n                          "@nl;
+    rdfs:comment "Linkt een bepaalde consumptie van een subsidiemaatregel (een tansactie) met de subsidiemaatregel uit het dienstverleningsregister.\t"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/transactie#isGedocumenteerdDoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            isGedocumenteerdDoor\n                          "@nl;
+    rdfs:comment "Verwijzing naar een dossier met een logische bundeling van documenten binnen een bepaalde consumptie van een Subsidiemaatregel."@nl;
+    vann:usageNote ""@nl.
+cpsv:produces a rdfs:Property;
+    rdfs:label "\n                            \n                            produceert\n                          "@nl;
+    rdfs:comment "Het werkelijke resultaat van de uitvoering vd Publieke Dienstverlening."@nl;
+    vann:usageNote "Bvb een erkenning, financieel voordeel, code, fysiek object"@nl.
+<https://data.vlaanderen.be/ns/subsidie#begrotingsartikel> a rdfs:Property;
+    rdfs:label "\n                            \n                            begrotingsartikel\n                          "@nl;
+    rdfs:comment "Het laagste niveau binnen de Vlaamse begrotingstabel. Begrotingsartikelen vormen de basis bij het opstellen, aanpassen en uitvoeren van de begroting."@nl;
+    vann:usageNote "Bijvoorbeeld DB0/9DG-C-T-G/OW. Voor meer informatie zie: http://vormingbegroting.fenb.be/handboek-begroting/begrotingsartikelen"@nl.
+<https://data.vlaanderen.be/ns/subsidie#de-minimis> a rdfs:Property;
+    rdfs:label "\n                            \n                            de-minimis\n                          "@nl;
+    rdfs:comment "True wanneer de steun die niet onder een vrijstellingsgrond valt en de subsidiemaatregel onderhevig is aan de de-minimisregel. "@nl;
+    vann:usageNote ""@nl.
+eu:sector a rdfs:Property;
+    rdfs:label "\n                            \n                            sector\n                          "@nl;
+    rdfs:comment "Sector of bedrijvigheid waarop de publieke dienstverlening betrekking heeft of waarvoor deze is bedoeld."@nl;
+    vann:usageNote "Bv milieu, veiligheid, wonen... "@nl.
+sat:aidMeasure a rdfs:Property;
+    rdfs:label "\n                            \n                            staatssteunnummer\n                          "@nl;
+    rdfs:comment "Identificatie van de steunmaatregel. Dit is de identificator van het State Aid Case Management systeem van de Europese Commissie."@nl;
+    vann:usageNote ""@nl.
+sat:aidInstrument a rdfs:Property;
+    rdfs:label "\n                            \n                            subsidie-instrument\n                          "@nl;
+    rdfs:comment "\tType van de steunmaatregel. Bv. belastingsvermindering, subsidie, etc."@nl;
+    vann:usageNote "In de context van het Subsidieregister ontwikkeld door Informatie Vlaanderen zal het subsidie-instrument steeds \"Grant\" zijn (cf. codelijst)."@nl.
+<https://data.vlaanderen.be/ns/subsidie#gesubsidieerdePeriode> a rdfs:Property;
+    rdfs:label "\n                            \n                            gesubsidieerde periode\n                          "@nl;
+    rdfs:comment "De periode waarop de subsidie betrekking heeft."@nl;
+    vann:usageNote "Beschreven aan de hand van een begin- en einddatum. Dit attribuut kan gebruikt worden om dubbele subsidiëring op te sporen."@nl.
+<https://data.vlaanderen.be/ns/subsidie#toegekendBedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            toegekend bedrag\n                          "@nl;
+    rdfs:comment "Het bedrag dat werd toegekend aan de begunstigde van de subsidiemaatregel en waar deze bijgevolg recht op heeft om te ontvangen."@nl;
+    vann:usageNote ""@nl.
+locn:adminUnitL1 a rdfs:Property;
+    rdfs:label "\n                            administratieve eenheid niveau 1\n                          "@nl;
+    rdfs:comment "Hoogste Administratieve eenheid vh adres, doorgaans een land."@nl;
+    vann:usageNote " "@nl.
+locn:adminUnitL2 a rdfs:Property;
+    rdfs:label "\n                            administratieve eenheid niveau 2\n                          "@nl;
+    rdfs:comment "De regio vh adres, doorgaans een provincie of deelstaat of gelijkaardig gebied dat typisch meerdere plaatsen omvat."@nl;
+    vann:usageNote " "@nl.
+locn:addressArea a rdfs:Property;
+    rdfs:label "\n                            adresgebied\n                          "@nl;
+    rdfs:comment "Naam ve geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is"@nl;
+    vann:usageNote "Bvb de naam vh gehucht waarin het adres ligt."@nl.
+<https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer> a rdfs:Property;
+    rdfs:label "\n                            busnummer\n                          "@nl;
+    rdfs:comment "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."@nl;
+    vann:usageNote "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."@nl.
+<https://data.vlaanderen.be/ns/adres#gemeentenaam> a rdfs:Property;
+    rdfs:label "\n                            gemeentenaam\n                          "@nl;
+    rdfs:comment "Gemeentenaam vh adres."@nl;
+    vann:usageNote " "@nl.
+<https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer> a rdfs:Property;
+    rdfs:label "\n                            huisnummer\n                          "@nl;
+    rdfs:comment "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."@nl;
+    vann:usageNote "Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen."@nl.
+<https://data.vlaanderen.be/ns/adres#land> a rdfs:Property;
+    rdfs:label "\n                            land\n                          "@nl;
+    rdfs:comment "Land waarin het adres gelegen is."@nl;
+    vann:usageNote " "@nl.
+locn:locatorDesignator a rdfs:Property;
+    rdfs:label "\n                            locatieaanduiding\n                          "@nl;
+    rdfs:comment "Alfanumerieke code die de adreslocator uniek identificeert binnen de straat, administratieve eenheid etc."@nl;
+    vann:usageNote " "@nl.
+locn:locatorName a rdfs:Property;
+    rdfs:label "\n                            locatienaam\n                          "@nl;
+    rdfs:comment "Naam of omschrijving vh het geografisch object dat de adreslocator aanduidt."@nl;
+    vann:usageNote " "@nl.
+locn:poBox a rdfs:Property;
+    rdfs:label "\n                            postbus\n                          "@nl;
+    rdfs:comment "Postbusnummer in een postkantoor."@nl;
+    vann:usageNote " "@nl.
+locn:postCode a rdfs:Property;
+    rdfs:label "\n                            postcode\n                          "@nl;
+    rdfs:comment "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."@nl;
+    vann:usageNote " "@nl.
+locn:postName a rdfs:Property;
+    rdfs:label "\n                            postnaam\n                          "@nl;
+    rdfs:comment "Naam waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."@nl;
+    vann:usageNote " "@nl.
+locn:thoroughfare a rdfs:Property;
+    rdfs:label "\n                            straatnaam\n                          "@nl;
+    rdfs:comment "Straatnaam vh adres."@nl;
+    vann:usageNote " "@nl.
+locn:fullAddress a rdfs:Property;
+    rdfs:label "\n                            volledig adres\n                          "@nl;
+    rdfs:comment "Het complete adres in één string, al dan niet geformatteerd."@nl;
+    vann:usageNote "Vermijdt fouten tgv het opsplitsen ve adres in zijn onderdelen. Geeft de voorgeschreven volgorde vd verschillende onderdelen weer. "@nl.
+skos:notation a rdfs:Property;
+    rdfs:label "\n                            identificator\n                          "@nl;
+    rdfs:comment "String gebruikt om de instantie ve object uniek te identificeren. "@nl;
+    vann:usageNote "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."@nl.
+dcterms:creator a rdfs:Property;
+    rdfs:label "\n                            toegekend door\n                          "@nl;
+    rdfs:comment "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    vann:usageNote " "@nl.
+<http://www.w3.org/ns/adms#schemaAgency> a rdfs:Property;
+    rdfs:label "\n                            toegekend door (String)\n                          "@nl;
+    rdfs:comment "Naam vd agent die de identificator heeft toegekend."@nl;
+    vann:usageNote " "@nl.
+dcterms:issued a rdfs:Property;
+    rdfs:label "\n                            toegekend op\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    vann:usageNote " "@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+_:df_9_10 rdf:first _:df_9_1;
+    rdf:rest _:df_9_11.
+_:df_9_11 rdf:first _:df_9_3;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/> foaf:maker _:df_9_10.
+_:df_9_12 rdf:first _:df_9_5;
+    rdf:rest _:df_9_13.
+_:df_9_13 rdf:first _:df_9_7;
+    rdf:rest _:df_9_14.
+_:df_9_14 rdf:first _:df_9_9;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/> <http://purl.org/ontology/bibo/editor> _:df_9_12.

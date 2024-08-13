@@ -1,0 +1,703 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/> a <http://purl.org/ontology/bibo/Document>;
+    dcterms:language "nl"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+_:df_11_1 a foaf:Person;
+    foaf:lastName "Demeyer"@nl;
+    foaf:firstName "Alvin"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:alvin.demeyer@vlaanderen.be>.
+_:df_11_3 a foaf:Person;
+    foaf:lastName "Musschoot"@nl;
+    foaf:firstName "Karl"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:karl.musschoot@vlaanderen.be>.
+_:df_11_5 a foaf:Person;
+    foaf:lastName "De Meester"@nl;
+    foaf:firstName "Ben"@nl;
+    foaf:workplaceHomepage <https://www.ugent.be>;
+    foaf:mbox <mailto:ben.demeester@ugent.be>.
+_:df_11_7 a foaf:Person;
+    foaf:lastName "Schepers"@nl;
+    foaf:firstName "Dimitri"@nl;
+    foaf:workplaceHomepage <https://www.pwc.be>;
+    foaf:mbox <mailto:dimitri.schepers@pwc.com>.
+_:df_11_9 a foaf:Person;
+    foaf:lastName "Vandekeybus"@nl;
+    foaf:firstName "Niels"@nl;
+    foaf:workplaceHomepage <https://redpencil.io>;
+    foaf:mbox <mailto:niels.vandekeybus@redpencil.io>.
+_:df_11_11 a foaf:Person;
+    foaf:lastName "Bemelmans"@nl;
+    foaf:firstName "Ward"@nl.
+_:df_11_13 a foaf:Person;
+    foaf:lastName "Brouwer"@nl;
+    foaf:firstName "Thierry"@nl.
+_:df_11_15 a foaf:Person;
+    foaf:lastName "Buyle"@nl;
+    foaf:firstName "Raf"@nl.
+_:df_11_17 a foaf:Person;
+    foaf:lastName "De Raymaeker"@nl;
+    foaf:firstName "Alexander"@nl.
+_:df_11_19 a foaf:Person;
+    foaf:lastName "De Smet"@nl;
+    foaf:firstName "Katrien"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:mbox <mailto:katrien.desmet@kb.vlaanderen.be>.
+_:df_11_21 a foaf:Person;
+    foaf:lastName "Decruyenaere"@nl;
+    foaf:firstName "Bart"@nl.
+_:df_11_23 a foaf:Person;
+    foaf:lastName "Degueldre"@nl;
+    foaf:firstName "Ysaline"@nl.
+_:df_11_25 a foaf:Person;
+    foaf:lastName "Delaure"@nl;
+    foaf:firstName "Johan"@nl;
+    foaf:workplaceHomepage <http://redpencil.io>;
+    foaf:mbox <mailto:johan.delaure@redpencil.io>.
+_:df_11_27 a foaf:Person;
+    foaf:lastName "Dierick"@nl;
+    foaf:firstName "Michaël"@nl;
+    foaf:workplaceHomepage <https://redpencil.io>;
+    foaf:mbox <mailto:michael.dierick@redpencil.io>.
+_:df_11_29 a foaf:Person;
+    foaf:lastName "Dopchie"@nl;
+    foaf:firstName "Nicolas"@nl.
+_:df_11_31 a foaf:Person;
+    foaf:lastName "Goossens"@nl;
+    foaf:firstName "Leslie"@nl.
+_:df_11_33 a foaf:Person;
+    foaf:lastName "Heyvaert"@nl;
+    foaf:firstName "Brieuc"@nl.
+_:df_11_35 a foaf:Person;
+    foaf:lastName "Huylebroeck"@nl;
+    foaf:firstName "Kaat"@nl.
+_:df_11_37 a foaf:Person;
+    foaf:lastName "Jolling"@nl;
+    foaf:firstName "Cedric"@nl.
+_:df_11_39 a foaf:Person;
+    foaf:lastName "Lwabandji Wiragi"@nl;
+    foaf:firstName "Olga"@nl.
+_:df_11_41 a foaf:Person;
+    foaf:lastName "Mestdagh"@nl;
+    foaf:firstName "Isabelle"@nl.
+_:df_11_43 a foaf:Person;
+    foaf:lastName "Moenaert"@nl;
+    foaf:firstName "Bram"@nl.
+_:df_11_45 a foaf:Person;
+    foaf:lastName "Nidlahcen"@nl;
+    foaf:firstName "Mina"@nl.
+_:df_11_47 a foaf:Person;
+    foaf:lastName "Ornelis"@nl;
+    foaf:firstName "Frank"@nl.
+_:df_11_49 a foaf:Person;
+    foaf:lastName "Quertinmont"@nl;
+    foaf:firstName "Jean-Charles"@nl.
+_:df_11_51 a foaf:Person;
+    foaf:lastName "Roete"@nl;
+    foaf:firstName "Kristien"@nl.
+_:df_11_53 a foaf:Person;
+    foaf:lastName "Scharlaeken"@nl;
+    foaf:firstName "Cindy"@nl.
+_:df_11_55 a foaf:Person;
+    foaf:lastName "Steenput"@nl;
+    foaf:firstName "Frank"@nl.
+_:df_11_57 a foaf:Person;
+    foaf:lastName "Thaens"@nl;
+    foaf:firstName "Norah"@nl.
+_:df_11_59 a foaf:Person;
+    foaf:lastName "Trznadel"@nl;
+    foaf:firstName "Martine"@nl.
+_:df_11_61 a foaf:Person;
+    foaf:lastName "Van De Velde"@nl;
+    foaf:firstName "Daisy"@nl.
+_:df_11_63 a foaf:Person;
+    foaf:lastName "Van Dorst"@nl;
+    foaf:firstName "Yana"@nl;
+    foaf:workplaceHomepage <https://changelab.be>;
+    foaf:mbox <mailto:yana@changelab.be>.
+_:df_11_65 a foaf:Person;
+    foaf:lastName "Van Grootel"@nl;
+    foaf:firstName "Geert"@nl.
+_:df_11_67 a foaf:Person;
+    foaf:lastName "Van Haele"@nl;
+    foaf:firstName "Hendrik"@nl.
+_:df_11_69 a foaf:Person;
+    foaf:lastName "Van Keer"@nl;
+    foaf:firstName "Christel"@nl.
+_:df_11_71 a foaf:Person;
+    foaf:lastName "Vanbossegem"@nl;
+    foaf:firstName "Stephan"@nl.
+_:df_11_73 a foaf:Person;
+    foaf:lastName "Vanlaere"@nl;
+    foaf:firstName "Frederik"@nl.
+_:df_11_75 a foaf:Person;
+    foaf:lastName "Vantroyen"@nl;
+    foaf:firstName "Hilde"@nl.
+_:df_11_77 a foaf:Person;
+    foaf:lastName "Vermeylen"@nl;
+    foaf:firstName "Gerit"@nl.
+_:df_11_79 a foaf:Person;
+    foaf:lastName "Verrezen"@nl;
+    foaf:firstName "Wilfried"@nl.
+_:df_11_81 a foaf:Person;
+    foaf:lastName "Vertongen"@nl;
+    foaf:firstName "Veerle"@nl.
+_:df_11_83 a foaf:Person;
+    foaf:lastName "Vlassenroot"@nl;
+    foaf:firstName "Eveline"@nl;
+    foaf:workplaceHomepage <https://www.ugent.be/ps/communicatiewetenschappen/mict>;
+    foaf:mbox <mailto:eveline.vlassenroot@ugent.be>.
+_:df_11_85 a foaf:Person;
+    foaf:lastName "Volders"@nl;
+    foaf:firstName "Veronique"@nl;
+    foaf:workplaceHomepage <http://binnenland.vlaanderen.be/>;
+    foaf:mbox <mailto:veronique.volders@bz.vlaanderen.be>.
+_:df_11_87 a foaf:Person;
+    foaf:lastName "Zwaenepoel"@nl;
+    foaf:firstName "Hugo"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/#ref> a <http://purl.org/ontology/bibo/Chapter>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/#ref>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/> dcterms:type dcmitype:Text;
+    dcterms:title "Deze specificatie"@nl;
+    <http://creativecommons.org/ns#attributionURL> <http://vlaanderen.be/informatievlaanderen>;
+    <http://creativecommons.org/ns#attributionName> "Informatie Vlaanderen"@nl;
+    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Een omschrijving van de aanleiding"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#heeftOorsprongIn> a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft oorsprong in\n                          "@nl;
+    rdfs:comment "Het stuk waarop de aanleiding zich baseert."@nl;
+    vann:usageNote "bv andere wetgeving."@nl.
+<https://data.vlaanderen.be/ns/dossier#Activiteit.einddatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            einddatum\n                          "@nl;
+    rdfs:comment "De einddatum van de activiteit."@nl;
+    vann:usageNote ""@nl.
+prov:used a rdfs:Property;
+    rdfs:label "\n                            \n                            gebruikt\n                          "@nl;
+    rdfs:comment "De stukken die werden gebruikt voor de activiteit."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#genereert> a rdfs:Property;
+    rdfs:label "\n                            \n                            genereert\n                          "@nl;
+    rdfs:comment "Een activiteit kan een stuk genereren."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/generiek#geplandeStart> a rdfs:Property;
+    rdfs:label "\n                            \n                            geplande start\n                          "@nl;
+    rdfs:comment "Het tijdstip waarop de activiteit gepland is om te beginnen."@nl;
+    vann:usageNote ""@nl.
+prov:qualifiedAssociation a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft deelnemer\n                          "@nl;
+    rdfs:comment "Persoon of organisatie die binnen een bepaalde rol een verantwoordelijkheid opneemt voor deze activiteit."@nl;
+    vann:usageNote ""@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "De naam van de activiteit."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#Activiteit.startdatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            startdatum\n                          "@nl;
+    rdfs:comment "De startdatum van de activiteit."@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Categorie waartoe deze activiteit behoord."@nl;
+    vann:usageNote "Voor subklassen van activiteit zoals Agendering en BehandelingVanAgendapunt  mag de klasse als type worden gebruikt."@nl.
+<https://data.vlaanderen.be/ns/dossier#vindtPlaatsTijdens> a rdfs:Property;
+    rdfs:label "\n                            \n                            vindt plaats tijdens\n                          "@nl;
+    rdfs:comment "Een activiteit vindt plaats tijdens een procedurestap."@nl;
+    vann:usageNote "Tijdens een procedurestappen vinden typisch meerdere activiteiten plaats."@nl.
+prov:wasAssociatedWith a rdfs:Property;
+    rdfs:label "\n                            \n                            was geassocieerd met\n                          "@nl;
+    rdfs:comment "Een toewijzing van verantwoordelijkheid aan een agent voor een activiteit, wat aangeeft dat de agent een rol in de activiteit had."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#agendaStatus> a rdfs:Property;
+    rdfs:label "\n                            \n                            agenda status\n                          "@nl;
+    rdfs:comment "De toestand waarin de agenda zich bevindt voor een specifiek type."@nl;
+    vann:usageNote "Bijvoorbeeld Ontwerp, Tussentijds goedgekeurd, Definitief, etc."@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#agendaType> a rdfs:Property;
+    rdfs:label "\n                            \n                            agenda type\n                          "@nl;
+    rdfs:comment "Soort agenda."@nl;
+    vann:usageNote "Bijvoorbeeld Spoedeisend, Aanvullend, etc."@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#isAgendaVoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            is agenda voor\n                          "@nl;
+    rdfs:comment "De Vergaderactiviteit waarvoor de Agenda wordt voorbereid."@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Korte beschrijving van het agendapunt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#geagendeerdStuk> a rdfs:Property;
+    rdfs:label "\n                            \n                            geagendeerd stuk\n                          "@nl;
+    rdfs:comment "Een gerelateerd stuk waarnaar wordt verwezen, geciteerd of anderszins aangegeven in het agendapunt"@nl;
+    vann:usageNote ""@nl.
+besluit:geplandOpenbaar a rdfs:Property;
+    rdfs:label "\n                            \n                            gepland openbaar\n                          "@nl;
+    rdfs:comment "Geeft aan of het al dan niet de bedoeling is om het agendapunt publiek te maken."@nl;
+    vann:usageNote ""@nl.
+besluit:aangebrachtNa a rdfs:Property;
+    rdfs:label "\n                            \n                            is aangebracht na\n                          "@nl;
+    rdfs:comment "Duidt aan dat een agendapunt na een ander agendapunt is aangebracht op een vergadering."@nl;
+    vann:usageNote ""@nl.
+dcterms:isPartOf a rdfs:Property;
+    rdfs:label "\n                            \n                            is onderdeel van\n                          "@nl;
+    rdfs:comment "De Agenda waarvan dit Agendapunt een onderdeel is."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#korteTitel> a rdfs:Property;
+    rdfs:label "\n                            \n                            korte titel\n                          "@nl;
+    rdfs:comment "Een verkorte vorm van de naam."@nl;
+    vann:usageNote ""@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            titel\n                          "@nl;
+    rdfs:comment "De volledige naam van het agendapunt"@nl;
+    vann:usageNote ""@nl.
+<http://data.vlaanderen.be/ns/besluit#Agendapunt.type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Type van het agendapunt."@nl;
+    vann:usageNote ""@nl.
+prov:wasRevisionOf a rdfs:Property;
+    rdfs:label "\n                            \n                            vervangt\n                          "@nl;
+    rdfs:comment "Origineel agendapunt waarvan dit agendapunt een herziening is."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#genereertAgendapunt> a rdfs:Property;
+    rdfs:label "\n                            \n                            genereert agendapunt\n                          "@nl;
+    rdfs:comment "Het agendapunt of de agendapunten die werden aangemaakt als gevolg van de agendering."@nl;
+    vann:usageNote ""@nl.
+prov:agent a rdfs:Property;
+    rdfs:label "\n                            \n                            is rolspecialisatie van\n                          "@nl;
+    rdfs:comment "Duidt de agent aan waarvan deze entiteit een rol toewijst."@nl;
+    vann:usageNote ""@nl.
+prov:hadRole a rdfs:Property;
+    rdfs:label "\n                            \n                            rol\n                          "@nl;
+    rdfs:comment "De functie van een agent met betrekking tot een activiteit."@nl;
+    vann:usageNote ""@nl.
+besluit:gebeurtNa a rdfs:Property;
+    rdfs:label "\n                            \n                            gebeurt na\n                          "@nl;
+    rdfs:comment "Verwijzing naar het voorgaand behandeld agendapunt binnen dezelfde vergadering. Laat toe om de volgorde van de behandelingen op te bouwen."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#genereertVerslag> a rdfs:Property;
+    rdfs:label "\n                            \n                            genereert verslag\n                          "@nl;
+    rdfs:comment "de schriftelijke neerslag van (een onderdeel) van deze behandeling van agendapunt."@nl;
+    vann:usageNote "Normaal gezien 1 verslag voor de hele behandeling, maar het is toegelaten om 1 verslag per beslissing op te maken. Er zijn meerdere verslagen van de behandeling (1 per beslissing die tijdens de behandeling is genomen)."@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#heeftBeslissing> a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft beslissing\n                          "@nl;
+    rdfs:comment "De Beslissing die volgt uit de Behandeling van het Agendapunt."@nl;
+    vann:usageNote ""@nl.
+dcterms:subject a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft onderwerp\n                          "@nl;
+    rdfs:comment "Het onderwerp van de activiteit."@nl;
+    vann:usageNote ""@nl.
+besluit:heeftStemming a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft stemming\n                          "@nl;
+    rdfs:comment "Een stemming die plaatsvond tijdens de behandeling van het agendapunt."@nl;
+    vann:usageNote ""@nl.
+besluit:openbaar a rdfs:Property;
+    rdfs:label "\n                            \n                            openbaar\n                          "@nl;
+    rdfs:comment "Geeft aan dat de behandeling van het agendapunt publiek is."@nl;
+    vann:usageNote ""@nl.
+prov:generated a rdfs:Property;
+    rdfs:label "\n                            \n                            geeft aanleiding tot\n                          "@nl;
+    rdfs:comment "Het Besluit dat werd goedgekeurd door deze beslissing"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#resultaat> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "Eindoordeel van de beoordeling."@nl;
+    vann:usageNote "bijvoorbeeld goedkeuring, goedkeuring mits voorwaarden,afkeuring, verdaging,..."@nl.
+eli:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "De beknopte beschrijving van de beslissing."@nl;
+    vann:usageNote ""@nl.
+eli:title_short a rdfs:Property;
+    rdfs:label "\n                            \n                            citeeropschrift\n                          "@nl;
+    rdfs:comment "De beknopte titel of officiële korte naam van een decreet, wet, besluit... Deze wordt officieel vastgelegd. Deze benaming wordt in de praktijk gebruikt om naar de rechtsgrond te verwijzen."@nl;
+    vann:usageNote ""@nl.
+prov:value a rdfs:Property;
+    rdfs:label "\n                            \n                            inhoud\n                          "@nl;
+    rdfs:comment "De beschrijving van de beoogde rechtsgevolgen, het zogenaamde beschikkend gedeelte."@nl;
+    vann:usageNote ""@nl.
+besluit:motivering a rdfs:Property;
+    rdfs:label "\n                            \n                            motivering\n                          "@nl;
+    rdfs:comment "Beschrijving van de juridische en feitelijke motivering achter de beslissing die wordt uitgedrukt in het besluit."@nl;
+    vann:usageNote ""@nl.
+eli:date_publication a rdfs:Property;
+    rdfs:label "\n                            \n                            publicatiedatum\n                          "@nl;
+    rdfs:comment "De officiële publicatiedatum van het besluit."@nl;
+    vann:usageNote ""@nl.
+eli:realizes a rdfs:Property;
+    rdfs:label "\n                            \n                            realiseert\n                          "@nl;
+    rdfs:comment "De rechtsgrond (rechtsbron) beschreven door dit besluit."@nl;
+    vann:usageNote ""@nl.
+eli:language a rdfs:Property;
+    rdfs:label "\n                            \n                            taal\n                          "@nl;
+    rdfs:comment "De taal van de verschijningsvorm."@nl;
+    vann:usageNote ""@nl.
+eli:title a rdfs:Property;
+    rdfs:label "\n                            \n                            titel\n                          "@nl;
+    rdfs:comment "Titel van de legale verschijningsvorm."@nl;
+    vann:usageNote ""@nl.
+dcterms:alternative a rdfs:Property;
+    rdfs:label "\n                            \n                            alternatieve naam\n                          "@nl;
+    rdfs:comment "Niet formele benaming van de besluitvormingsaangelegenheid."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#beleidsveld> a rdfs:Property;
+    rdfs:label "\n                            \n                            beleidsveld\n                          "@nl;
+    rdfs:comment "De beleidsvelden waar deze besluitvormingsaangelegenheid onder valt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#doorloopt> a rdfs:Property;
+    rdfs:label "\n                            \n                            doorloopt\n                          "@nl;
+    rdfs:comment "Een Besluitvormingsaangelegenheid doorloopt Procedurestappen."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#heeftAanleiding> a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft aanleiding\n                          "@nl;
+    rdfs:comment "De motivatie voor het opstarten van de Besluitvormingsaangelegenheid."@nl;
+    vann:usageNote ""@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "De naam van de besluitvormingsaangelegenheid"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#openingsdatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            openingsdatum\n                          "@nl;
+    rdfs:comment "De openingsdatum van de zaak."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#sluitingsdatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            sluitingsdatum\n                          "@nl;
+    rdfs:comment "De sluitingsdatum van de zaak."@nl;
+    vann:usageNote ""@nl.
+org:classification a rdfs:Property;
+    rdfs:label "\n                            \n                            classificatie\n                          "@nl;
+    rdfs:comment "Classificatie van de bestuurseenheid."@nl;
+    vann:usageNote ""@nl.
+skos:prefLabel a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Naam van de bestuurseenheid."@nl;
+    vann:usageNote ""@nl.
+besluit:werkingsgebied a rdfs:Property;
+    rdfs:label "\n                            \n                            werkingsgebied\n                          "@nl;
+    rdfs:comment "Geografische gebied waarbinnen de bestuurseenheid bepaalde verantwoordelijkheden heeft waarbinnen het bestuurshandelingen kan stellen."@nl;
+    vann:usageNote ""@nl.
+besluit:bestuurt a rdfs:Property;
+    rdfs:label "\n                            \n                            bestuurt\n                          "@nl;
+    rdfs:comment "De bestuurseenheid die door het orgaan bestuurd wordt."@nl;
+    vann:usageNote ""@nl.
+org:classification a rdfs:Property;
+    rdfs:label "\n                            \n                            classificatie\n                          "@nl;
+    rdfs:comment "Het type bestuursorgaan."@nl;
+    vann:usageNote ""@nl.
+skos:prefLabel a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Naam van de eenheid."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#Dossier.bestaatUit> a rdfs:Property;
+    rdfs:label "\n                            \n                            bestaat uit\n                          "@nl;
+    rdfs:comment "Een dossier bestaat uit dossierstukken."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#informatieclassificatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            informatieclassificatie\n                          "@nl;
+    rdfs:comment "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#Dossier.isNeerslagVan> a rdfs:Property;
+    rdfs:label "\n                            \n                            is neerslag van\n                          "@nl;
+    rdfs:comment "Een Dossier is een neerslag van een Besluitvormingsaangelegenheid"@nl;
+    vann:usageNote ""@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "De naam van het dossier."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#Procedurestap.einddatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            einddatum\n                          "@nl;
+    rdfs:comment "De einddatum van de procedurestap."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#geplandOpenbaar> a rdfs:Property;
+    rdfs:label "\n                            \n                            gepland openbaar\n                          "@nl;
+    rdfs:comment "Geeft aan over de procedurestap al dan niet openbaar zal zijn."@nl;
+    vann:usageNote ""@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "De naam van de procedurestap."@nl;
+    vann:usageNote "Het is aangeraden om de samenstelling van het type van de procedurestap en de naam van de besluitvormingsaangelegenheid te gebruiken."@nl.
+<https://data.vlaanderen.be/ns/dossier#Procedurestap.startdatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            startdatum\n                          "@nl;
+    rdfs:comment "De startdatum van de procedurestap."@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Soort procedurestap."@nl;
+    vann:usageNote ""@nl.
+dcterms:spatial a rdfs:Property;
+    rdfs:label "\n                            \n                            werkingsgebied\n                          "@nl;
+    rdfs:comment "Administratief gebied dat de Publieke Organisatie dekt."@nl;
+    vann:usageNote ""@nl.
+eli:date_no_longer_in_force a rdfs:Property;
+    rdfs:label "\n                            \n                            buitenwerkingtreding\n                          "@nl;
+    rdfs:comment "De laatste dag waarop de regelgeving nog van kracht is."@nl;
+    vann:usageNote ""@nl.
+eli:first_date_entry_in_force a rdfs:Property;
+    rdfs:label "\n                            \n                            inwerkingtreding\n                          "@nl;
+    rdfs:comment "De datum waarop de regelgeving van kracht wordt."@nl;
+    vann:usageNote "Dit is niet hetzelfde als wanneer de regelgeving toepasbaar (in de praktijk uitvoerbaar) wordt. De toepasbaarheid van de regelgeving kan op of na de inwerkingtreding liggen."@nl.
+eli:type_document a rdfs:Property;
+    rdfs:label "\n                            \n                            type document\n                          "@nl;
+    rdfs:comment "Het type van de rechtsgrond."@nl;
+    vann:usageNote "Bijvoorbeeld: reglement, wet, voorstel."@nl.
+besluit:aantalOnthouders a rdfs:Property;
+    rdfs:label "\n                            \n                            aantal onthouders\n                          "@nl;
+    rdfs:comment "Het aantal stemmers dat als onthouding heeft gestemd."@nl;
+    vann:usageNote ""@nl.
+besluit:aantalTegenstanders a rdfs:Property;
+    rdfs:label "\n                            \n                            aantal tegenstanders\n                          "@nl;
+    rdfs:comment "Het aantal stemmers dat als tegenstander heeft gestemd."@nl;
+    vann:usageNote ""@nl.
+besluit:aantalVoorstanders a rdfs:Property;
+    rdfs:label "\n                            \n                            aantal voorstanders\n                          "@nl;
+    rdfs:comment "Het aantal stemmers dat als voorstander heeft gestemd."@nl;
+    vann:usageNote ""@nl.
+besluit:geheim a rdfs:Property;
+    rdfs:label "\n                            \n                            geheim\n                          "@nl;
+    rdfs:comment "Geeft aan of de stemming geheim was. Bij een geheime stemming wordt niet individueel bekend gemaakt wie op wat heeft gestemd."@nl;
+    vann:usageNote ""@nl.
+besluit:gevolg a rdfs:Property;
+    rdfs:label "\n                            \n                            gevolg\n                          "@nl;
+    rdfs:comment "Het gevolg van de stemming."@nl;
+    vann:usageNote ""@nl.
+besluit:onderwerp a rdfs:Property;
+    rdfs:label "\n                            \n                            onderwerp\n                          "@nl;
+    rdfs:comment "De beschrijving van het onderwerp waarover de stemming gaat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#auteur> a rdfs:Property;
+    rdfs:label "\n                            \n                            auteur\n                          "@nl;
+    rdfs:comment "De auteur van het stuk."@nl;
+    vann:usageNote ""@nl.
+dcterms:created a rdfs:Property;
+    rdfs:label "\n                            \n                            creatiedatum\n                          "@nl;
+    rdfs:comment "De creatiedatum van het stuk."@nl;
+    vann:usageNote ""@nl.
+dcterms:date a rdfs:Property;
+    rdfs:label "\n                            \n                            datum\n                          "@nl;
+    rdfs:comment "De datum van het stuk."@nl;
+    vann:usageNote "Indien mogelijk, wordt idealiter een subproperty (created, dateSubmitted, issued, ...) gebruikt."@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#heeftBijlage> a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft bijlage\n                          "@nl;
+    rdfs:comment "Een gerelateerd Stuk dat vereist is om het stuk zijn functie of samenhang te ondersteunen."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/adms#identifier> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Identificator van het object."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#informatieclassificatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            informatieclassificatie\n                          "@nl;
+    rdfs:comment "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden."@nl;
+    vann:usageNote ""@nl.
+prov:value a rdfs:Property;
+    rdfs:label "\n                            \n                            inhoud\n                          "@nl;
+    rdfs:comment "Digitale voorstelling van de data vervat in het stuk, al dan niet geencodeerd in een binair formaat."@nl;
+    vann:usageNote ""@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "De naam van het stuk."@nl;
+    vann:usageNote ""@nl.
+dcterms:issued a rdfs:Property;
+    rdfs:label "\n                            \n                            publicatiedatum\n                          "@nl;
+    rdfs:comment "Datum van formele uitgifte van het stuk."@nl;
+    vann:usageNote ""@nl.
+dcterms:language a rdfs:Property;
+    rdfs:label "\n                            \n                            taal\n                          "@nl;
+    rdfs:comment "De taal van het stuk"@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Categorie waartoe het stuk behoord."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#vertrouwelijkheidsniveau> a rdfs:Property;
+    rdfs:label "\n                            \n                            vertrouwelijkheidsniveau\n                          "@nl;
+    rdfs:comment "Indicatie van de gevoeligheid van het stuk en welke beperkingen gelden."@nl;
+    vann:usageNote "Bijvoorbeeld: openbaar, beperkt openbaar, niet openbaar, vertrouwelijk, zeer vertrouwelijk."@nl.
+dcterms:replaces a rdfs:Property;
+    rdfs:label "\n                            \n                            vervangt\n                          "@nl;
+    rdfs:comment "Origineel stuk waarvan dit stuk een herziening is."@nl;
+    vann:usageNote "De implicatie hier is dat het vervangende stuk substantiële inhoud van het origineel bevat. "@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#volgnummer> a rdfs:Property;
+    rdfs:label "\n                            \n                            volgnummer\n                          "@nl;
+    rdfs:comment "Nummer van het stuk binnen een serie, kan bestaan uit cijfers of een combinatie van cijfers en alfanummerieke tekens."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#behandelt> a rdfs:Property;
+    rdfs:label "\n                            \n                            behandelt\n                          "@nl;
+    rdfs:comment "De Agenda die effectief wordt behandeld op de Vergaderactiviteit."@nl;
+    vann:usageNote ""@nl.
+besluit:heeftAanwezige a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft aanwezige\n                          "@nl;
+    rdfs:comment "Een agent (bvb: mandataris) die aanwezig was tijdens (een deel van) de activiteit waar hij een zekere verantwoordelijkheid had."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#heeftNotulen> a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft notulen\n                          "@nl;
+    rdfs:comment "De formele notulen van de vergadering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#isGehoudenDoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            is gehouden door\n                          "@nl;
+    rdfs:comment "Duidt aan door welk orgaan de vergadering is gehouden."@nl;
+    vann:usageNote ""@nl.
+prov:atLocation a rdfs:Property;
+    rdfs:label "\n                            \n                            op locatie\n                          "@nl;
+    rdfs:comment "Locatie waar de vergaderactiviteit plaatsvindt. Doorgaans is dit een zaal in een gebouw."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/besluitvorming#beschrijft> a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijft\n                          "@nl;
+    rdfs:comment "De beslissing(en) die in dit verslag beschreven zijn."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/generiek#lokaleIdentificator> a rdfs:Property;
+    rdfs:label "\n                            lokale identificator\n                          "@nl;
+    rdfs:comment "String gebruikt om het object uniek te identificeren binnen de naamruimte."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/generiek#naamruimte> a rdfs:Property;
+    rdfs:label "\n                            naamruimte\n                          "@nl;
+    rdfs:comment "String die toegvoegd wordt aan de lokaleidentificator om deze globaal uniek te maken."@nl;
+    vann:usageNote "Laat toe om objecten met dezelfde identificator maar van verschillend type en/of afkomstig uit verschillende domeinen uiteen te houden. In praktijk bv een uri samengesteld uit betekenisvolle elementen zoals een domeinnaam, type en concept (bv https://data.vlaanderen.be/id/adres/). "@nl.
+<https://data.vlaanderen.be/ns/generiek#versieIdentificator> a rdfs:Property;
+    rdfs:label "\n                            versie-identificator\n                          "@nl;
+    rdfs:comment "Identificator van de specifieke versie van een object."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator> a rdfs:Property;
+    rdfs:label "\n                            gestructureerde identificator\n                          "@nl;
+    rdfs:comment "Identificator vh object opgesplitst in zijn onderdelen."@nl;
+    vann:usageNote ""@nl.
+skos:notation a rdfs:Property;
+    rdfs:label "\n                            notatie\n                          "@nl;
+    rdfs:comment "String gebruikt om het object uniek te identificeren. "@nl;
+    vann:usageNote "Type vd string slaat op het identifierscheme (incl de version ervan), de string zelf op de eigenlijke identifier. Zie definitie Identificator."@nl.
+dcterms:creator a rdfs:Property;
+    rdfs:label "\n                            toegekend door\n                          "@nl;
+    rdfs:comment "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    vann:usageNote ""@nl.
+dcterms:issued a rdfs:Property;
+    rdfs:label "\n                            toegekend op\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+_:df_11_88 rdf:first _:df_11_1;
+    rdf:rest _:df_11_89.
+_:df_11_89 rdf:first _:df_11_3;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/> foaf:maker _:df_11_88.
+_:df_11_90 rdf:first _:df_11_5;
+    rdf:rest _:df_11_91.
+_:df_11_91 rdf:first _:df_11_7;
+    rdf:rest _:df_11_92.
+_:df_11_92 rdf:first _:df_11_9;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/> <http://purl.org/ontology/bibo/editor> _:df_11_90.
+_:df_11_93 rdf:first _:df_11_11;
+    rdf:rest _:df_11_94.
+_:df_11_94 rdf:first _:df_11_13;
+    rdf:rest _:df_11_95.
+_:df_11_95 rdf:first _:df_11_15;
+    rdf:rest _:df_11_96.
+_:df_11_96 rdf:first _:df_11_17;
+    rdf:rest _:df_11_97.
+_:df_11_97 rdf:first _:df_11_19;
+    rdf:rest _:df_11_98.
+_:df_11_98 rdf:first _:df_11_21;
+    rdf:rest _:df_11_99.
+_:df_11_99 rdf:first _:df_11_23;
+    rdf:rest _:df_11_100.
+_:df_11_100 rdf:first _:df_11_25;
+    rdf:rest _:df_11_101.
+_:df_11_101 rdf:first _:df_11_27;
+    rdf:rest _:df_11_102.
+_:df_11_102 rdf:first _:df_11_29;
+    rdf:rest _:df_11_103.
+_:df_11_103 rdf:first _:df_11_31;
+    rdf:rest _:df_11_104.
+_:df_11_104 rdf:first _:df_11_33;
+    rdf:rest _:df_11_105.
+_:df_11_105 rdf:first _:df_11_35;
+    rdf:rest _:df_11_106.
+_:df_11_106 rdf:first _:df_11_37;
+    rdf:rest _:df_11_107.
+_:df_11_107 rdf:first _:df_11_39;
+    rdf:rest _:df_11_108.
+_:df_11_108 rdf:first _:df_11_41;
+    rdf:rest _:df_11_109.
+_:df_11_109 rdf:first _:df_11_43;
+    rdf:rest _:df_11_110.
+_:df_11_110 rdf:first _:df_11_45;
+    rdf:rest _:df_11_111.
+_:df_11_111 rdf:first _:df_11_47;
+    rdf:rest _:df_11_112.
+_:df_11_112 rdf:first _:df_11_49;
+    rdf:rest _:df_11_113.
+_:df_11_113 rdf:first _:df_11_51;
+    rdf:rest _:df_11_114.
+_:df_11_114 rdf:first _:df_11_53;
+    rdf:rest _:df_11_115.
+_:df_11_115 rdf:first _:df_11_55;
+    rdf:rest _:df_11_116.
+_:df_11_116 rdf:first _:df_11_57;
+    rdf:rest _:df_11_117.
+_:df_11_117 rdf:first _:df_11_59;
+    rdf:rest _:df_11_118.
+_:df_11_118 rdf:first _:df_11_61;
+    rdf:rest _:df_11_119.
+_:df_11_119 rdf:first _:df_11_63;
+    rdf:rest _:df_11_120.
+_:df_11_120 rdf:first _:df_11_65;
+    rdf:rest _:df_11_121.
+_:df_11_121 rdf:first _:df_11_67;
+    rdf:rest _:df_11_122.
+_:df_11_122 rdf:first _:df_11_69;
+    rdf:rest _:df_11_123.
+_:df_11_123 rdf:first _:df_11_71;
+    rdf:rest _:df_11_124.
+_:df_11_124 rdf:first _:df_11_73;
+    rdf:rest _:df_11_125.
+_:df_11_125 rdf:first _:df_11_75;
+    rdf:rest _:df_11_126.
+_:df_11_126 rdf:first _:df_11_77;
+    rdf:rest _:df_11_127.
+_:df_11_127 rdf:first _:df_11_79;
+    rdf:rest _:df_11_128.
+_:df_11_128 rdf:first _:df_11_81;
+    rdf:rest _:df_11_129.
+_:df_11_129 rdf:first _:df_11_83;
+    rdf:rest _:df_11_130.
+_:df_11_130 rdf:first _:df_11_85;
+    rdf:rest _:df_11_131.
+_:df_11_131 rdf:first _:df_11_87;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/> dcterms:contributor _:df_11_93.

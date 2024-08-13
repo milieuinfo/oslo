@@ -1,0 +1,536 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/> a <http://purl.org/ontology/bibo/Document>;
+    dcterms:language "nl"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+_:df_109_1 a foaf:Person;
+    foaf:lastName "Bauwens"@nl;
+    foaf:firstName "Dorien"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:dorien.bauwens@bz.vlaanderen.be>.
+_:df_109_3 a foaf:Person;
+    foaf:lastName "Beheydt"@nl;
+    foaf:firstName "Dries"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:mbox <mailto:dries.beheydt@kb.vlaanderen.be>.
+_:df_109_5 a foaf:Person;
+    foaf:lastName "Buyle"@nl;
+    foaf:firstName "Raf"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:mbox <mailto:raf.buyle@kb.vlaanderen.be>.
+_:df_109_7 a foaf:Person;
+    foaf:lastName "D'haenens"@nl;
+    foaf:firstName "Thomas"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:thomas.dhaenens@bz.vlaanderen.be>.
+_:df_109_9 a foaf:Person;
+    foaf:lastName "De Paepe"@nl;
+    foaf:firstName "Dieter"@nl;
+    foaf:workplaceHomepage <http://idlab.ugent.be>;
+    foaf:mbox <mailto:dieter.depaepe@ugent.be>.
+_:df_109_11 a foaf:Person;
+    foaf:lastName "De Smet"@nl;
+    foaf:firstName "Katrien"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:mbox <mailto:katrien.desmet@kb.vlaanderen.be>.
+_:df_109_13 a foaf:Person;
+    foaf:lastName "De Vidts"@nl;
+    foaf:firstName "Björn"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:mbox <mailto:bjorn.devidts@kb.vlaanderen.be>.
+_:df_109_15 a foaf:Person;
+    foaf:lastName "Oeyen"@nl;
+    foaf:firstName "Quincy"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:quincy.oeyen@bz.vlaanderen.be>.
+_:df_109_17 a foaf:Person;
+    foaf:lastName "Taelemans"@nl;
+    foaf:firstName "An"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:mbox <mailto:an.taelemans@kb.vlaanderen.be>.
+_:df_109_19 a foaf:Person;
+    foaf:lastName "Thijs"@nl;
+    foaf:firstName "Geert"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:mbox <mailto:geert.thijs@kb.vlaanderen.be>.
+_:df_109_21 a foaf:Person;
+    foaf:lastName "Thoeye"@nl;
+    foaf:firstName "Thimo"@nl;
+    foaf:workplaceHomepage <http://stad.gent>;
+    foaf:mbox <mailto:Thimo.Thoeye@stad.gent>.
+_:df_109_23 a foaf:Person;
+    foaf:lastName "Van Haute"@nl;
+    foaf:firstName "Geert"@nl;
+    foaf:workplaceHomepage <https://www.lne.be/>;
+    foaf:mbox <mailto:geert.vanhaute@lne.vlaanderen.be>.
+_:df_109_25 a foaf:Person;
+    foaf:lastName "Van Hoecke"@nl;
+    foaf:firstName "Willem"@nl;
+    foaf:workplaceHomepage <http://cipalschaubroeck.be>;
+    foaf:mbox <mailto:willem.vanhoecke@cipalschaubroeck.be>.
+_:df_109_27 a foaf:Person;
+    foaf:lastName "Vanderstraeten"@nl;
+    foaf:firstName "Henk"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:henk.vanderstraeten@bz.vlaanderen.be>.
+_:df_109_29 a foaf:Person;
+    foaf:lastName "Vanlishout"@nl;
+    foaf:firstName "Ziggy"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:mbox <mailto:siegfried.vanlishout@kb.vlaanderen.be>.
+_:df_109_31 a foaf:Person;
+    foaf:lastName "De Vocht"@nl;
+    foaf:firstName "Laurens"@nl;
+    foaf:workplaceHomepage <http://idlab.ugent.be>;
+    foaf:mbox <mailto:laurens.devocht@ugent.be>.
+_:df_109_33 a foaf:Person;
+    foaf:lastName "Mannens"@nl;
+    foaf:firstName "Erik"@nl;
+    foaf:workplaceHomepage <http://idlab.ugent.be>;
+    foaf:mbox <mailto:erik.mannens@ugent.be>.
+_:df_109_35 a foaf:Person;
+    foaf:lastName "Bosmans"@nl;
+    foaf:firstName "Karen"@nl;
+    foaf:workplaceHomepage <https://www.lne.be/>;
+    foaf:mbox <mailto:karen.bosmans@lne.vlaanderen.be>.
+_:df_109_37 a foaf:Person;
+    foaf:lastName "Devroey"@nl;
+    foaf:firstName "Wim"@nl;
+    foaf:workplaceHomepage <http://binnenland.vlaanderen.be/>;
+    foaf:mbox <mailto:wim.devroey@kb.vlaanderen.be>.
+_:df_109_39 a foaf:Person;
+    foaf:lastName "Leire"@nl;
+    foaf:firstName "Katrien"@nl;
+    foaf:workplaceHomepage <http://stad.gent>;
+    foaf:mbox <mailto:katrien.leire@digipolis.gent>.
+_:df_109_41 a foaf:Person;
+    foaf:lastName "Lombaert"@nl;
+    foaf:firstName "Hannes"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:hannes.lombaert@bz.vlaanderen.be>.
+_:df_109_43 a foaf:Person;
+    foaf:lastName "Misseeuw"@nl;
+    foaf:firstName "Bart"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:mbox <mailto:bart.misseeuw@kb.vlaanderen.be>.
+_:df_109_45 a foaf:Person;
+    foaf:lastName "Nolf"@nl;
+    foaf:firstName "Geraldine"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/informatie-vlaanderen>;
+    foaf:mbox <mailto:geraldine.nolf@kb.vlaanderen.be>.
+_:df_109_47 a foaf:Person;
+    foaf:lastName "Spiessens"@nl;
+    foaf:firstName "Sarah"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:sarah.spiessens@bz.vlaanderen.be>.
+_:df_109_49 a foaf:Person;
+    foaf:lastName "Stevens"@nl;
+    foaf:firstName "Annita"@nl;
+    foaf:workplaceHomepage <http://vlm.be>;
+    foaf:mbox <mailto:Annita.Stevens@vlm.be>.
+_:df_109_51 a foaf:Person;
+    foaf:lastName "Vandekeybus"@nl;
+    foaf:firstName "Niels"@nl;
+    foaf:workplaceHomepage <http://digipolis.be>;
+    foaf:mbox <mailto:niels.vandekeybus@digipolis.gent>.
+_:df_109_53 a foaf:Person;
+    foaf:lastName "Vermeiren"@nl;
+    foaf:firstName "Geert"@nl;
+    foaf:workplaceHomepage <https://www.lne.be/>;
+    foaf:mbox <mailto:geert.vermeiren@lne.vlaanderen.be>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/#ref> a <http://purl.org/ontology/bibo/Chapter>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/#ref>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/> dcterms:type dcmitype:Text;
+    dcterms:title "Deze specificatie"@nl;
+    <http://creativecommons.org/ns#attributionURL> <http://vlaanderen.be/informatievlaanderen>;
+    <http://creativecommons.org/ns#attributionName> "Informatie Vlaanderen"@nl;
+    <http://www.w3.org/1999/xhtml/vocab#license> <https://overheid.vlaanderen.be/sites/default/files/documenten/ict-egov/licenties/hergebruik/modellicentie_gratis_hergebruik_v1_0.html>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+eu:hasAddress a rdfs:Property;
+    rdfs:label "\n                            \n                            adres\n                          "@nl;
+    rdfs:comment "Adres vd agent."@nl;
+    vann:usageNote "Het adres moet gehaald worden bij de instantie vd subklasse (vb vestigingsadres bij organisatie, verblijfsadres bij persoon)."@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Naam vd agent."@nl;
+    vann:usageNote "De naam moet gehaald worden bij de instantie vd subklasse (vb voorkeurnaam bij organisatie, volledigeNaam bij persoon)."@nl.
+eu:playsRole a rdfs:Property;
+    rdfs:label "\n                            \n                            speelt rol\n                          "@nl;
+    rdfs:comment "Participatie van de agent (aan een publieke dienstverlening)."@nl;
+    vann:usageNote "De manier waarop de agent participeert wordt beschreven door de entiteit Participatie. Laat oa toe om de bestaande associaties PubliekeDienstverlening-wordtUitgevoerdDoor-Agent en PubliekeDienstverlening-heeftVerantwoordelijke-PubliekeOrganisatie meer in detail te beschrijven."@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Beschrijving vh bewijs."@nl;
+    vann:usageNote " "@nl.
+foaf:page a rdfs:Property;
+    rdfs:label "\n                            \n                            documentatie\n                          "@nl;
+    rdfs:comment "Documentatie gerelateerd ah bewiijs."@nl;
+    vann:usageNote "Bvb template van een administratief document of aanvraagformulier of aanwijzingen voor het invullen ervan."@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Officiële naam vh bewijs."@nl;
+    vann:usageNote " "@nl.
+dcterms:language a rdfs:Property;
+    rdfs:label "\n                            \n                            taal\n                          "@nl;
+    rdfs:comment "Taal waarin het aangeboden bewijs moet zijn gesteld."@nl;
+    vann:usageNote " "@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard vh bewijs."@nl;
+    vann:usageNote " "@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Officiële naam vd criteriumVereiste."@nl;
+    vann:usageNote " "@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard vd criteriumvereiste."@nl;
+    vann:usageNote " "@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Beschrijving van het formeel kader."@nl;
+    vann:usageNote " "@nl.
+dcterms:relation a rdfs:Property;
+    rdfs:label "\n                            \n                            is gerelateerd aan\n                          "@nl;
+    rdfs:comment "Ander formeel kader dat met het formeel kader verband houdt."@nl;
+    vann:usageNote " "@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Naam vh formeel kader."@nl;
+    vann:usageNote " "@nl.
+eu:subject a rdfs:Property;
+    rdfs:label "\n                            \n                            onderwerp\n                          "@nl;
+    rdfs:comment "Onderwerp vh formeel kader."@nl;
+    vann:usageNote " "@nl.
+<http://www.w3.org/ns/adms#status> a rdfs:Property;
+    rdfs:label "\n                            \n                            status\n                          "@nl;
+    rdfs:comment "Status vh formeel kader."@nl;
+    vann:usageNote "Bvb of het kader van kracht is, opgeheven, impliciet herroepen edm."@nl.
+eli:language a rdfs:Property;
+    rdfs:label "\n                            \n                            taal\n                          "@nl;
+    rdfs:comment "Taal waarin het formeel kader beschikbaar is."@nl;
+    vann:usageNote " "@nl.
+eu:territorialApplication a rdfs:Property;
+    rdfs:label "\n                            \n                            toepassingsgebied\n                          "@nl;
+    rdfs:comment "Het geografisch bereik vh formeel kader."@nl;
+    vann:usageNote "Maw of bvb Europees, nationaal, lokaal is."@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard vh formeel kader."@nl;
+    vann:usageNote "Bvb decreet, wet, ministrieel besluit etc."@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Beschrijving van de gebeurtenis."@nl;
+    vann:usageNote "Beschrijving zoals ze zichtbaar voor de gebruikers van de dienstencataloog. Voorkeur gaat naar gedetailleerde beschrijvingen."@nl.
+dcterms:relation a rdfs:Property;
+    rdfs:label "\n                            \n                            is gerelateerd met\n                          "@nl;
+    rdfs:comment "Publieke dienstverlening waarmee de Gebeurtenis kan worden gekoppeld."@nl;
+    vann:usageNote " "@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Naam van de gebeurtenis."@nl;
+    vann:usageNote " "@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de gebeurtenis."@nl;
+    vann:usageNote " "@nl.
+schema:hoursAvailable a rdfs:Property;
+    rdfs:label "\n                            \n                            beschikbaarheid\n                          "@nl;
+    rdfs:comment "Periode waarin de publieke dienstverlening beschikbaar is via het kanaal."@nl;
+    vann:usageNote "Bv startdatum zonder einddatum voor dienstverlening die nog actief is of een aanduiding van het seizoen waarin de dienstverlening wordt aangeboden. Een ingevulde einddatum geeft aan wanneer de dienstverlening werd beëindigd. Begin- en einddatum volgens ISO8601 syntax."@nl.
+eu:ownedBy a rdfs:Property;
+    rdfs:label "\n                            \n                            is bezit van\n                          "@nl;
+    rdfs:comment "Eigenaar vh kanaal waarlangs de dienstverlening wordt aangeboden."@nl;
+    vann:usageNote " "@nl.
+schema:openingHours a rdfs:Property;
+    rdfs:label "\n                            \n                            openingsuren\n                          "@nl;
+    rdfs:comment "Uren waarbinnen de publieke dienstverlening beschikbaar is via het kanaal."@nl;
+    vann:usageNote "Syntax volgens schema.org voor openingsuren. Bv als een dienstverlening telefonisch bereikbaar is tussen 8 en 20u maandag tot zaterdag and tussen 8 en 18u op zondag wordt dit gecodeerd als Ma-za 08:00-20:00, zo 08:00-18:00."@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard vh kanaal."@nl;
+    vann:usageNote " "@nl.
+cpsv:hasInput a rdfs:Property;
+    rdfs:label "\n                            \n                            vereist als input\n                          "@nl;
+    rdfs:comment "Bewijsstuk dat moeten voorgelegd worden om de publieke dienstverlening te kunnen gebruiken."@nl;
+    vann:usageNote "Indien de bewijsstukken afhangen het kanaal waarmee met de publieke dienstverlening wordt geïnterageerd."@nl.
+skos:prefLabel a rdfs:Property;
+    rdfs:label "\n                            \n                            voorkeursnaam\n                          "@nl;
+    rdfs:comment "Naam waarmee de organisatie bij voorkeur wordt aangeduid."@nl;
+    vann:usageNote " "@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Beschrijving van de output."@nl;
+    vann:usageNote " "@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Officiële naam van de output."@nl;
+    vann:usageNote " "@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de output."@nl;
+    vann:usageNote " "@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Beschrijving van de participatie."@nl;
+    vann:usageNote " "@nl.
+eu:role a rdfs:Property;
+    rdfs:label "\n                            \n                            rol\n                          "@nl;
+    rdfs:comment "De rol die de participant speelt."@nl;
+    vann:usageNote " "@nl.
+locn:geometry a rdfs:Property;
+    rdfs:label "\n                            \n                            geometrie\n                          "@nl;
+    rdfs:comment "Geometrie van de plaats of het gebied."@nl;
+    vann:usageNote ""@nl.
+rdfs:label a rdfs:Property;
+    rdfs:label "\n                            \n                            plaatsnaam\n                          "@nl;
+    rdfs:comment "Naam van de plaats of van het gebied."@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Beschrijving van de richtlijn."@nl;
+    vann:usageNote " "@nl.
+cpsv:implements a rdfs:Property;
+    rdfs:label "\n                            \n                            implementeert\n                          "@nl;
+    rdfs:comment "Relevante wetgeving of beleid waarbinnen de Procedure is gedefinieerd."@nl;
+    vann:usageNote " "@nl.
+dcterms:language a rdfs:Property;
+    rdfs:label "\n                            \n                            taal\n                          "@nl;
+    rdfs:comment "Taal waarin de richtlijn is gesteld."@nl;
+    vann:usageNote " "@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            titel\n                          "@nl;
+    rdfs:comment "Naam vd richtlijn."@nl;
+    vann:usageNote " "@nl.
+eu:hasFormalFramework a rdfs:Property;
+    rdfs:label "\n                            \n                            aangeboden binnen\n                          "@nl;
+    rdfs:comment "Het formeel kader (bv de wetgeving) waar de publieke dienstverlening betrekking op heeft of waarbinnen ze werkt of waaraan ze haar wettelijke basis ontleent."@nl;
+    vann:usageNote " "@nl.
+skos:altLabel a rdfs:Property;
+    rdfs:label "\n                            \n                            alternatieve naam\n                          "@nl;
+    rdfs:comment "Andere naam waaronder de dienstverlening bekend is.\n"@nl;
+    vann:usageNote "Bv commerciële naam, informele naam"@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Beschrijving vd publieke dienstverlening."@nl;
+    vann:usageNote " "@nl.
+eu:hasContactPoint a rdfs:Property;
+    rdfs:label "\n                            \n                            contactinfo\n                          "@nl;
+    rdfs:comment "Informatie waarmee de publieke dienstverlening kan worden gecontacteerd."@nl;
+    vann:usageNote "Verschillend van de informatie waarmee de publieke organisatie kan worden gecontacteerd."@nl.
+eu:hasCriterion a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft criterium\n                          "@nl;
+    rdfs:comment "Criterium waaraan de gebruiker moet voldoen om recht te hebben op een dienstverlening of om een dienstverlening te mogen gebruiken."@nl;
+    vann:usageNote "Bvb inwoner van de gemeente, meer dan 18 jaar etc."@nl.
+eu:hasParticipation a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft participatie\n                          "@nl;
+    rdfs:comment "Participatie (van een agent) aan de publieke dienstverlening."@nl;
+    vann:usageNote "De manier waarop de agent participeert wordt beschreven door de entiteit Participatie. Laat oa toe om de bestaande associaties PubliekeDienstverlening-wordtUitgevoerdDoor-Agent en PubliekeDienstverlening-heeftVerantwoordelijke-PubliekeOrganisatie meer in detail te beschrijven."@nl.
+eu:hasCompetentAuthority a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft verantwoordelijke\n                          "@nl;
+    rdfs:comment "Publieke organisatie die verantwoordelijk is voor het aanbieden en beheren van de publieke dienstverlening."@nl;
+    vann:usageNote "Of de publieke organisatie zelf de dienstverlening aanbiedt of deze uitbesteedt is irrelevant. De publieke organisatie verantwoordelijk voor het aanbieden en beheren van de dienstverlening wordt ook wel de bevoegde Instantie genoemd en wordt in Europese Richtlijn 2006/123/EC gedefinieerd als volgt: \"elk orgaan of autoriteit dat in een lidstaat en toezichthoudende of regelgevende rol vervult ten aanzien van dienstenactiviteiten, met name bestuurlijke instanties, met inbegrip van rechterlijke instanties die als zodanig optreden, beroepsorden en de beroepsverenigingen en -organisaties of andere beroepsorganisaties die in de uitoefening van hun juridisch autonome bevoegdheden de toegang tot of de uitoefening van dienstenactiviteiten collectief reguleren\"."@nl.
+eu:isGroupedBy a rdfs:Property;
+    rdfs:label "\n                            \n                            is gegroepeerd volgens\n                          "@nl;
+    rdfs:comment "Gebeurtenis waarop de publieke dienstverlening betrekking heeft."@nl;
+    vann:usageNote "Laat toe om in de dienstencataloog de publieke dienstverlening te klasseren volgens het type gebeurtenis waarvoor ze een oplossing biedt bv op het portaal waarop de cataloog geraadpleegd wordt."@nl.
+dcterms:relation a rdfs:Property;
+    rdfs:label "\n                            \n                            is gerelateerd met\n                          "@nl;
+    rdfs:comment "Andere publieke dienstverlening waarmee de publieke dienstverlening gerelateerd is."@nl;
+    vann:usageNote " "@nl.
+eu:hasCost a rdfs:Property;
+    rdfs:label "\n                            \n                            kost\n                          "@nl;
+    rdfs:comment "Kostprijs verbonden aan het gebruik van de publieke dienstverlening."@nl;
+    vann:usageNote " "@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Officiële naam van de publieke dienstverlening."@nl;
+    vann:usageNote " "@nl.
+cpsv:produces a rdfs:Property;
+    rdfs:label "\n                            \n                            produceert\n                          "@nl;
+    rdfs:comment "Het werkelijke resultaat van de uitvoering vd publieke dienstverlening."@nl;
+    vann:usageNote "Bvb een erkenning, financieel voordeel, code, fysiek object"@nl.
+dcterms:spatial a rdfs:Property;
+    rdfs:label "\n                            \n                            ruimtelijke dekking\n                          "@nl;
+    rdfs:comment "Gebied waarin de publieke dienstverlening beschikbaar is."@nl;
+    vann:usageNote "Typisch het werkingsgebied van de verantwoordelijke publieke organisatie."@nl.
+eu:sector a rdfs:Property;
+    rdfs:label "\n                            \n                            sector\n                          "@nl;
+    rdfs:comment "Sector of bedrijvigheid waarop de publieke dienstverlening betrekking heeft of waarvoor deze is bedoeld."@nl;
+    vann:usageNote "Bv milieu, veiligheid, wonen... "@nl.
+<http://www.w3.org/ns/adms#status> a rdfs:Property;
+    rdfs:label "\n                            \n                            status\n                          "@nl;
+    rdfs:comment "Geeft aan of een publieke dienstverlening actief, inactief, in ontwikkeling etc is."@nl;
+    vann:usageNote " "@nl.
+dcterms:language a rdfs:Property;
+    rdfs:label "\n                            \n                            taal\n                          "@nl;
+    rdfs:comment "Taal waarin een publieke dienstverlening wordt aangeboden."@nl;
+    vann:usageNote " "@nl.
+eu:hasChannel a rdfs:Property;
+    rdfs:label "\n                            \n                            te consumeren via\n                          "@nl;
+    rdfs:comment "Kanaal waarlangs een agent interageert met een publieke dienstverlening."@nl;
+    vann:usageNote "Bv kantoor, telefoon, website"@nl.
+dcat:keyword a rdfs:Property;
+    rdfs:label "\n                            \n                            trefwoord\n                          "@nl;
+    rdfs:comment "Sleutelwoord, term, begrip dat de publieke dienst beschrijft."@nl;
+    vann:usageNote " "@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Soort publieke dienstverlening."@nl;
+    vann:usageNote "Bvb bescherming, gezondheid, recreatie, cultuur en religie, economische zaken."@nl.
+dcterms:requires a rdfs:Property;
+    rdfs:label "\n                            \n                            vereist\n                          "@nl;
+    rdfs:comment "Publieke dienstverlening die voorafgaandelijk moet worden uitgevoerd om van de publieke dienstverlening gebruik te kunnen maken."@nl;
+    vann:usageNote "De Dienstverlening gebruikt soms de output van een andere dienstverlening die dan bv het vereiste bewijsstuk levert. Meer uitleg volgt uit de beschrijving van deze bewijsstukken of in de richtlijn die met de dienstverlening geassocieerd is."@nl.
+cpsv:hasInput a rdfs:Property;
+    rdfs:label "\n                            \n                            vereist als input\n                          "@nl;
+    rdfs:comment "Bewijsstuk dat moeten voorgelegd worden om de publieke dienstverlening te kunnen gebruiken."@nl;
+    vann:usageNote "Als de bewijsstukken afhangen het kanaal waarmee met de publieke dienstverlening wordt geïnterageerd gebruiken we de associatie Kanaal-vereistAlsInput-Bewijs."@nl.
+eu:processingTime a rdfs:Property;
+    rdfs:label "\n                            \n                            verwerkingstijd\n                          "@nl;
+    rdfs:comment "Geschatte tijd nodig om de publieke dienstverlening af te leveren."@nl;
+    vann:usageNote "De ISO8601 syntax moet worden gebruikt om de duurtijd te noteren. Bvb 5 jaar is P5Y, 1 maand is P1M."@nl.
+cpsv:follows a rdfs:Property;
+    rdfs:label "\n                            \n                            volgt\n                          "@nl;
+    rdfs:comment "De richtlijn die de werking van de publieke dienstverlening stuurt."@nl;
+    vann:usageNote "Typisch implementeert een richtlijn het beleid van een publieke organisatie."@nl.
+eu:serviceProvider a rdfs:Property;
+    rdfs:label "\n                            \n                            wordt uitgevoerd door\n                          "@nl;
+    rdfs:comment "Agent die de publieke dienstverlening verstrekt."@nl;
+    vann:usageNote "Staat los van de rol die de bevoegde instantie speelt, kan een externe aannemer zijn."@nl.
+dcterms:spatial a rdfs:Property;
+    rdfs:label "\n                            \n                            Werkingsgebied\n                          "@nl;
+    rdfs:comment "Administratief gebied dat de Publieke Organisatie dekt."@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            beschrijving\n                          "@nl;
+    rdfs:comment "Beschrijving van de kost."@nl;
+    vann:usageNote " "@nl.
+eu:ifAccessedThrough a rdfs:Property;
+    rdfs:label "\n                            indien benaderd via\n                          "@nl;
+    rdfs:comment "Associeert de kost met het kanaal waarlangs de publieke dienstverlening wordt geconsumeerd."@nl;
+    vann:usageNote "De kost kan bv verschillen al naargelang de publieke dienstverlening online of ter plaatse wordt aangesproken."@nl.
+eu:isDefinedBy a rdfs:Property;
+    rdfs:label "\n                            is gedefinieerd door\n                          "@nl;
+    rdfs:comment "Publieke organisatie die bevoegd is voor het bepalen van de kost."@nl;
+    vann:usageNote " "@nl.
+eu:currency a rdfs:Property;
+    rdfs:label "\n                            valuta\n                          "@nl;
+    rdfs:comment "Munteenheid waarin de kost is gedefinieerd."@nl;
+    vann:usageNote " "@nl.
+eu:value a rdfs:Property;
+    rdfs:label "\n                            waarde\n                          "@nl;
+    rdfs:comment "Omvang van de kost, uitgedrukt in de opgegeven munteenheid."@nl;
+    vann:usageNote " "@nl.
+schema:dayOfWeek a rdfs:Property;
+    rdfs:label "\n                            dag van de week\n                          "@nl;
+    rdfs:comment "Dag van de week waarvoor de openingsuren geldig zijn."@nl;
+    vann:usageNote "Zie https://schema.org/DayOfWeek voor lijst van mogelijke waarden."@nl.
+schema:validThrough a rdfs:Property;
+    rdfs:label "\n                            geldig tot\n                          "@nl;
+    rdfs:comment "Datum tot wanneer de opgegeven openingsuren gelden."@nl;
+    vann:usageNote " "@nl.
+schema:validFrom a rdfs:Property;
+    rdfs:label "\n                            geldig van\n                          "@nl;
+    rdfs:comment "Datum vanaf wanneer de opgegeven openingsuren gelden."@nl;
+    vann:usageNote " "@nl.
+schema:closes a rdfs:Property;
+    rdfs:label "\n                            gesloten\n                          "@nl;
+    rdfs:comment "Sluitingsuur vd plaats of dienst op de opgegeven dag vd week."@nl;
+    vann:usageNote " "@nl.
+schema:opens a rdfs:Property;
+    rdfs:label "\n                            open\n                          "@nl;
+    rdfs:comment "Openingsuur vd plaats of dienst op de opgegeven dag vd week."@nl;
+    vann:usageNote " "@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+_:df_109_54 rdf:first _:df_109_1;
+    rdf:rest _:df_109_55.
+_:df_109_55 rdf:first _:df_109_3;
+    rdf:rest _:df_109_56.
+_:df_109_56 rdf:first _:df_109_5;
+    rdf:rest _:df_109_57.
+_:df_109_57 rdf:first _:df_109_7;
+    rdf:rest _:df_109_58.
+_:df_109_58 rdf:first _:df_109_9;
+    rdf:rest _:df_109_59.
+_:df_109_59 rdf:first _:df_109_11;
+    rdf:rest _:df_109_60.
+_:df_109_60 rdf:first _:df_109_13;
+    rdf:rest _:df_109_61.
+_:df_109_61 rdf:first _:df_109_15;
+    rdf:rest _:df_109_62.
+_:df_109_62 rdf:first _:df_109_17;
+    rdf:rest _:df_109_63.
+_:df_109_63 rdf:first _:df_109_19;
+    rdf:rest _:df_109_64.
+_:df_109_64 rdf:first _:df_109_21;
+    rdf:rest _:df_109_65.
+_:df_109_65 rdf:first _:df_109_23;
+    rdf:rest _:df_109_66.
+_:df_109_66 rdf:first _:df_109_25;
+    rdf:rest _:df_109_67.
+_:df_109_67 rdf:first _:df_109_27;
+    rdf:rest _:df_109_68.
+_:df_109_68 rdf:first _:df_109_29;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/> foaf:maker _:df_109_54.
+_:df_109_69 rdf:first _:df_109_31;
+    rdf:rest _:df_109_70.
+_:df_109_70 rdf:first _:df_109_33;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/> <http://purl.org/ontology/bibo/editor> _:df_109_69.
+_:df_109_71 rdf:first _:df_109_35;
+    rdf:rest _:df_109_72.
+_:df_109_72 rdf:first _:df_109_37;
+    rdf:rest _:df_109_73.
+_:df_109_73 rdf:first _:df_109_39;
+    rdf:rest _:df_109_74.
+_:df_109_74 rdf:first _:df_109_41;
+    rdf:rest _:df_109_75.
+_:df_109_75 rdf:first _:df_109_43;
+    rdf:rest _:df_109_76.
+_:df_109_76 rdf:first _:df_109_45;
+    rdf:rest _:df_109_77.
+_:df_109_77 rdf:first _:df_109_47;
+    rdf:rest _:df_109_78.
+_:df_109_78 rdf:first _:df_109_49;
+    rdf:rest _:df_109_79.
+_:df_109_79 rdf:first _:df_109_51;
+    rdf:rest _:df_109_80.
+_:df_109_80 rdf:first _:df_109_53;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/> dcterms:contributor _:df_109_71.

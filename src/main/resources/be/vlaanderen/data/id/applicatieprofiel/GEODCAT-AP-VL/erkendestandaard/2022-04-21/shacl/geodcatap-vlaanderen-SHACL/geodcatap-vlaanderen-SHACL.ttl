@@ -1,0 +1,1367 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21> rdfs:member <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#AgentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#LicentieDocumentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#PlaatsShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#HerkomstVerklaringShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#JuridischeBepalingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactInfoShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactinfoShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResourceShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#AgentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#AgentShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#AgentShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>;
+    shacl:targetClass dcterms:Agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#AgentShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Agent.naam";
+    shacl:datatype rdf:langString;
+    shacl:description "De naam van de agent."@nl;
+    shacl:name "naam"@nl;
+    shacl:path foaf:name.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#AgentShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Agent.naam";
+    shacl:description "De naam van de agent."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path foaf:name.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/73a4bdd8cd7b0472b3b38dc9f56b0f32b8239284>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/8172f8df2a73384c65fdb3332d8ee0c9ef574804>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/39607ae8317e4f99846f57f713d51b19528e5764>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/0311d40d6c8081dc49766336ad753baee5d276f2>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/e7e0fa856a7a9fd5e0507143109ff56bbed15bc5>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/ac72a26a136d49612ab47e1ead54cb3ac0f9dcb3>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/c779d25f1f0ba872826b725cf9254a3bec5a82ce>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/dd5cf5b162b3f92600a391f44660bf2b255693ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/2a7abc3b7d6df32e4a340775a9e1522a0ac1c669>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/e7d5497a1597fc6c5856517ab46c01bae413001b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/f806d2d1fd264df77aee55564a0a70eecd47ee2e>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/6a51b2354ea38a815d6131b4e05f8587791de4e0>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/9e7585433d0896bc44cb41cdd8189793bd115cd0>;
+    shacl:targetClass dcat:CatalogRecord.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/0311d40d6c8081dc49766336ad753baee5d276f2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.bronmetadatarecordlandingspagina";
+    shacl:description "Een webpagina in een menselijk leesbare vorm van de bron metadata record."@nl;
+    shacl:maxCount 1;
+    shacl:name "bron metadata record landingspagina"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.wijzigingsdatum";
+    shacl:description "De meest recente datum waarop de record in de catalogus is gewijzigd, bijgewerkt of aangepast."@nl;
+    shacl:maxCount 1;
+    shacl:name "wijzigingsdatum"@nl;
+    shacl:path dcterms:modified.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/2a7abc3b7d6df32e4a340775a9e1522a0ac1c669> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.hoofdonderwerp";
+    shacl:description "De resource (dataset of dataservice) beschreven in het record."@nl;
+    shacl:maxCount 1;
+    shacl:name "hoofdonderwerp"@nl;
+    shacl:path foaf:primaryTopic.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/39607ae8317e4f99846f57f713d51b19528e5764> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.alternatieveidentificator";
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Een alternatieve identificator (dan de unieke identificator) voor een record in de catalogus kan hier beschreven worden."@nl;
+    shacl:name "alternatieve identificator"@nl;
+    shacl:path <http://www.w3.org/ns/adms#identifier>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/6a51b2354ea38a815d6131b4e05f8587791de4e0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.wijzigingsdatum";
+    shacl:description "De meest recente datum waarop de record in de catalogus is gewijzigd, bijgewerkt of aangepast."@nl;
+    shacl:minCount 1;
+    shacl:name "wijzigingsdatum"@nl;
+    shacl:path dcterms:modified.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/73a4bdd8cd7b0472b3b38dc9f56b0f32b8239284> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.aanmaakdatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "De datum van (formele) opname van de bijbehorende dataset of dataservice in de catalogus."@nl;
+    shacl:name "aanmaakdatum"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/8172f8df2a73384c65fdb3332d8ee0c9ef574804> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.aanmaakdatum";
+    shacl:description "De datum van (formele) opname van de bijbehorende dataset of dataservice in de catalogus."@nl;
+    shacl:maxCount 1;
+    shacl:name "aanmaakdatum"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.identificator";
+    shacl:description "De unieke identificator van het record in de catalogus."@nl;
+    shacl:minCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path dcterms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/9e7585433d0896bc44cb41cdd8189793bd115cd0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.wijzigingsdatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "De meest recente datum waarop de record in de catalogus is gewijzigd, bijgewerkt of aangepast."@nl;
+    shacl:name "wijzigingsdatum"@nl;
+    shacl:path dcterms:modified.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/ac72a26a136d49612ab47e1ead54cb3ac0f9dcb3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.bronmetadatarecord";
+    shacl:class rdfs:Resource;
+    shacl:description "De record in een andere catalogus waarvan deze record en de beschrijvingen van het bijhorende hoofdonderwerp van afgeleid zijn."@nl;
+    shacl:name "bron metadatarecord"@nl;
+    shacl:path dcterms:source.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.identificator";
+    shacl:description "De unieke identificator van het record in de catalogus."@nl;
+    shacl:maxCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path dcterms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/c779d25f1f0ba872826b725cf9254a3bec5a82ce> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.bronmetadatarecord";
+    shacl:description "De record in een andere catalogus waarvan deze record en de beschrijvingen van het bijhorende hoofdonderwerp van afgeleid zijn."@nl;
+    shacl:maxCount 1;
+    shacl:name "bron metadatarecord"@nl;
+    shacl:path dcterms:source.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/dd5cf5b162b3f92600a391f44660bf2b255693ac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.conform";
+    shacl:class dcterms:Standard;
+    shacl:description "De (metadata) standaard volgens welke\nregels het hoofdonderwerp waarnaar de\nCatalogus Record verwijst, beschreven\nwordt."@nl;
+    shacl:name "conform"@nl;
+    shacl:path dcterms:conformsTo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/e7d5497a1597fc6c5856517ab46c01bae413001b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.hoofdonderwerp";
+    shacl:class dcat:Resource;
+    shacl:description "De resource (dataset of dataservice) beschreven in het record."@nl;
+    shacl:name "hoofdonderwerp"@nl;
+    shacl:path foaf:primaryTopic.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/e7e0fa856a7a9fd5e0507143109ff56bbed15bc5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.bronmetadatarecordlandingspagina";
+    shacl:class rdfs:Resource;
+    shacl:description "Een webpagina in een menselijk leesbare vorm van de bron metadata record."@nl;
+    shacl:name "bron metadata record landingspagina"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.titel";
+    shacl:datatype rdf:langString;
+    shacl:description "De naam van het record in de catalogus."@nl;
+    shacl:name "titel"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecordShape/f806d2d1fd264df77aee55564a0a70eecd47ee2e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusRecord.hoofdonderwerp";
+    shacl:description "De resource (dataset of dataservice) beschreven in het record."@nl;
+    shacl:minCount 1;
+    shacl:name "hoofdonderwerp"@nl;
+    shacl:path foaf:primaryTopic.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResourceShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResourceShape/0f8fcba8defd790e04421c1042f74286d52c564b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResourceShape/5334cf8edf5cc07e349524728fe4c9b076e4c45e>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResourceShape/aabe67e6a56c5e2fc5695716e8f7b66edd525085>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResourceShape/e2d4034a0a398701f4257641ebcbc85e8683b29d>;
+    shacl:targetClass <http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResourceShape/0f8fcba8defd790e04421c1042f74286d52c564b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResource.relatie";
+    shacl:class dcat:Resource;
+    shacl:description "een verband tussen twee resources."@nl;
+    shacl:name "relatie"@nl;
+    shacl:path dcterms:relation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResourceShape/5334cf8edf5cc07e349524728fe4c9b076e4c45e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResource.uitgever";
+    shacl:description "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de resource in de catalogus."@nl;
+    shacl:maxCount 1;
+    shacl:name "uitgever"@nl;
+    shacl:path dcterms:publisher.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResourceShape/aabe67e6a56c5e2fc5695716e8f7b66edd525085> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResource.uitgever";
+    shacl:class dcterms:Agent;
+    shacl:description "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de resource in de catalogus."@nl;
+    shacl:name "uitgever"@nl;
+    shacl:path dcterms:publisher.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResourceShape/e2d4034a0a398701f4257641ebcbc85e8683b29d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusResource.uitgever";
+    shacl:description "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de resource in de catalogus."@nl;
+    shacl:minCount 1;
+    shacl:name "uitgever"@nl;
+    shacl:path dcterms:publisher.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/39607ae8317e4f99846f57f713d51b19528e5764>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/19ee039173472235e539aea2aa961ff7d3b89f5a>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/458062b0ae03c559426b85df3dd28e1c785acb0b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/e332dbce5947de4314c3ed3fe5862f26d70a15c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/0b8b2df06927907abbf1e09b9c0c9c59bc6696f5>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/b36184e1993242352bd0fb0cc0c9f8bdeea645ef>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/509740cc7b3c86ebee90dc6303c11c40e2b08212>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/a42564b7be6f290f20410a7d087232aece0c058e>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/cafd2e3e66044d8ba2c435a9353e6880952086c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/337cf55721093cc585693a5397601643d59a4c46>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/5334cf8edf5cc07e349524728fe4c9b076e4c45e>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/aabe67e6a56c5e2fc5695716e8f7b66edd525085>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/e2d4034a0a398701f4257641ebcbc85e8683b29d>;
+    shacl:targetClass dcat:Catalog.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/0b8b2df06927907abbf1e09b9c0c9c59bc6696f5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.heeftDataService";
+    shacl:class dcat:DataService;
+    shacl:description "Een dataservice die deel uitmaakt van de catalogus."@nl;
+    shacl:name "heeft DataService"@nl;
+    shacl:path dcat:service.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Een bondige tekstuele omschrijving van de catalogus."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/19ee039173472235e539aea2aa961ff7d3b89f5a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.contactinformatie";
+    shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de catalogus."@nl;
+    shacl:maxCount 1;
+    shacl:name "contactinformatie"@nl;
+    shacl:path dcat:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.titel";
+    shacl:description "De naam van de catalogus."@nl;
+    shacl:minCount 1;
+    shacl:name "titel"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/337cf55721093cc585693a5397601643d59a4c46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.record";
+    shacl:class dcat:CatalogRecord;
+    shacl:description "Een record beschrijft de registratie van één enkele dataset of dataservice die onderdeel is van de catalogus."@nl;
+    shacl:name "record"@nl;
+    shacl:path dcat:record.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/39607ae8317e4f99846f57f713d51b19528e5764> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.alternatieveidentificator";
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Een alternatieve identificator (dan de unieke identificator) voor de catalogus kan hier beschreven worden."@nl;
+    shacl:name "alternatieve identificator"@nl;
+    shacl:path <http://www.w3.org/ns/adms#identifier>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/458062b0ae03c559426b85df3dd28e1c785acb0b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.contactinformatie";
+    shacl:class vcard:Kind;
+    shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de catalogus."@nl;
+    shacl:name "contactinformatie"@nl;
+    shacl:path dcat:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/509740cc7b3c86ebee90dc6303c11c40e2b08212> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.licentie";
+    shacl:class dcterms:LicenseDocument;
+    shacl:description "De licentie van de catalogus."@nl;
+    shacl:name "licentie"@nl;
+    shacl:path dcterms:license.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/5334cf8edf5cc07e349524728fe4c9b076e4c45e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.uitgever";
+    shacl:description "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de catalogus."@nl;
+    shacl:maxCount 1;
+    shacl:name "uitgever"@nl;
+    shacl:path dcterms:publisher.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.beschrijving";
+    shacl:description "Een bondige tekstuele omschrijving van de catalogus."@nl;
+    shacl:minCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.identificator";
+    shacl:description "De unieke identificator voor de catalogus."@nl;
+    shacl:minCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path dcterms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/a42564b7be6f290f20410a7d087232aece0c058e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.licentie";
+    shacl:description "De licentie van de catalogus."@nl;
+    shacl:minCount 1;
+    shacl:name "licentie"@nl;
+    shacl:path dcterms:license.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/aabe67e6a56c5e2fc5695716e8f7b66edd525085> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.uitgever";
+    shacl:class dcterms:Agent;
+    shacl:description "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de catalogus."@nl;
+    shacl:name "uitgever"@nl;
+    shacl:path dcterms:publisher.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/b36184e1993242352bd0fb0cc0c9f8bdeea645ef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.heeftDataset";
+    shacl:class dcat:Dataset;
+    shacl:description "Een dataset die deel uitmaakt van de catalogus."@nl;
+    shacl:name "heeft Dataset"@nl;
+    shacl:path dcat:dataset.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.identificator";
+    shacl:description "De unieke identificator voor de catalogus."@nl;
+    shacl:maxCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path dcterms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/cafd2e3e66044d8ba2c435a9353e6880952086c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.licentie";
+    shacl:description "De licentie van de catalogus."@nl;
+    shacl:maxCount 1;
+    shacl:name "licentie"@nl;
+    shacl:path dcterms:license.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/e2d4034a0a398701f4257641ebcbc85e8683b29d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.uitgever";
+    shacl:description "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de catalogus."@nl;
+    shacl:minCount 1;
+    shacl:name "uitgever"@nl;
+    shacl:path dcterms:publisher.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/e332dbce5947de4314c3ed3fe5862f26d70a15c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.contactinformatie";
+    shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de catalogus."@nl;
+    shacl:minCount 1;
+    shacl:name "contactinformatie"@nl;
+    shacl:path dcat:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#CatalogusShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus.titel";
+    shacl:datatype rdf:langString;
+    shacl:description "De naam van de catalogus."@nl;
+    shacl:name "titel"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactInfoShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass schema:ContactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactinfoShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactinfoShape/0d43849949c290efe2f3d4ad1d010cdb7f0505bf>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactinfoShape/376ba2894840068d71059e7be03bfaf8995aee90>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactinfoShape/2cf221c2b6f9a619b0515c507ddd2bbb40fbb285>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactinfoShape/42ad698554950cda0098f1f04803fac8470af8ad>;
+    shacl:targetClass vcard:Kind.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactinfoShape/0d43849949c290efe2f3d4ad1d010cdb7f0505bf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Contactinfo.contactpagina";
+    shacl:class rdfs:Resource;
+    shacl:description "Een webpagina die ofwel toelaat om contact op te nemen (via b.v. een webformulier) of die informatie bevat hoe men contact kan opnemen."@nl;
+    shacl:name "contactpagina"@nl;
+    shacl:path foaf:page.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactinfoShape/2cf221c2b6f9a619b0515c507ddd2bbb40fbb285> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Contactinfo.e-mail";
+    shacl:class rdfs:Resource;
+    shacl:description "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."@nl;
+    shacl:name "e-mail"@nl;
+    shacl:path vcard:hasEmail.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactinfoShape/376ba2894840068d71059e7be03bfaf8995aee90> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Contactinfo.contactpagina";
+    shacl:description "Een webpagina die ofwel toelaat om contact op te nemen (via b.v. een webformulier) of die informatie bevat hoe men contact kan opnemen."@nl;
+    shacl:maxCount 1;
+    shacl:name "contactpagina"@nl;
+    shacl:path foaf:page.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ContactinfoShape/42ad698554950cda0098f1f04803fac8470af8ad> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Contactinfo.e-mail";
+    shacl:description "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "e-mail"@nl;
+    shacl:path vcard:hasEmail.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/39607ae8317e4f99846f57f713d51b19528e5764>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/5ed2c890f2c7588313cc9f93b35524bdb2d6328d>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/80a839685f13d2584ebe2f9b5d9a93ae2c1b21a0>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/c394e1e5ae80a00d2aa307d647168d0c6733df26>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/19ee039173472235e539aea2aa961ff7d3b89f5a>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/458062b0ae03c559426b85df3dd28e1c785acb0b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/e332dbce5947de4314c3ed3fe5862f26d70a15c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/6b0d5813153da700505d795c17d681878225c6d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/a0b7156be408a447d937582d4d0c3cafea754f8b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/67c89165b0f38567bf099862ffdef88f25e68714>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/9978564bd5823785ddace8934e848c68e6e813e3>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/66883b2795f003760d4bb617bd1f472da1e1524f>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/bd44e3e6c4317f226cd1124fbaf1d72e94e8f15e>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/dbc2548616486a154002cfba6a3bc2cbc554a682>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/883b5dc28b6bef2ce82b138ead1eb3c7f2073b92>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/fe1a78c9169da2469a23fd783cf9a69060bfe198>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/2be8f764879c3f2218306704a430503d286c30e9>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/e9bf439f5272396af4486645c4dd4ae47c27c030>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/b643cb8952d752ef63a2b25c7fcebd89d08fb015>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/c4eb7e771a95c6c3e5c04255458173a2b0b40f43>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/0cdcfe2387440711ebbe94a2fcc93a29377956c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/82e4f4e38a285ebeffb0f14c036b491b71a26200>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/0aea9e8a54457ca50f1b00c07872cb7c7b39e8ba>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/13afabc6c35a0042403bd3a9f50222200152231a>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/8a32a3e6b5ca4b68f8846b184e7faa4f48a0ee1d>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/509740cc7b3c86ebee90dc6303c11c40e2b08212>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/cafd2e3e66044d8ba2c435a9353e6880952086c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/4523d6e75f8993d15c9332b0aae5dbbe64a85b5a>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/76f6cfca9a1964a539a879c911777c741a37cff0>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/f9862087b9d1ec8465f46ee21e166c45776cf8bd>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/0e54e6660eb6bc0ea08ebfce3dbbf188c3e400d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/fe9c62143da275c7458e0e71dedeb277670a016b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/62bb7a143add01ac0956709b58850f4f5e5a0e47>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/26cc53e7822e6779f8846281611c44445178d766>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/d2ee108ae45d67fcdfacaafbffa4b71116f2a84b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/47687fa6f0d88cde5525c2d10bec646e3c8c5012>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/670342a920a4d7c073b8db698b89a4c651e34491>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/67325124afc7d6eac4402056620665f7348ef62a>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/f96c5f798f9e9c00220a293bd11f37e83616d33b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/1712ef1b325d7d2807bc601d6409b70a42eaff10>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/48290800138d735a1909018da1426a5d120eedf0>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/7463895a2bb9e7e4c96cd9a2e7f83ce2cf787098>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/c5f6c428a4ae32239d9662d58fa65ae4f0cf49e6>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/f9524ba86e28981345a2b84aea788460ad4e805e>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/44f6426e2306c5bc0421823eb4a1a034b615f715>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/302090a90a5755780bc8fe09be4bcd29193cfd6d>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/587f313308111b587d1bd2440a56622e64624864>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/9e7585433d0896bc44cb41cdd8189793bd115cd0>;
+    shacl:targetClass dcat:DataService.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/0aea9e8a54457ca50f1b00c07872cb7c7b39e8ba> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.levensfase";
+    shacl:description "De levensfase waarin de dataservice zich bevindt."@nl;
+    shacl:name "levensfase"@nl.
+_:n3-520 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-521 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingstoestand>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-520 shacl:property _:n3-521.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/0aea9e8a54457ca50f1b00c07872cb7c7b39e8ba> shacl:node _:n3-520;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#levensfase>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/0cdcfe2387440711ebbe94a2fcc93a29377956c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.landingspaginavoorstatusinformatie";
+    shacl:class rdfs:Resource;
+    shacl:description "Een verwijzing naar de statuspagina van de dataservice"@nl;
+    shacl:name "landingspagina voor statusinformatie"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/0e54e6660eb6bc0ea08ebfce3dbbf188c3e400d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.publicatiedatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Het tijdsmoment waarop de service werd gepubliceerd door de uitgever."@nl;
+    shacl:name "publicatiedatum"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Een bondige tekstuele omschrijving van de dataservice."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/13afabc6c35a0042403bd3a9f50222200152231a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.levensfase";
+    shacl:class skos:Concept;
+    shacl:description "De levensfase waarin de dataservice zich bevindt."@nl;
+    shacl:name "levensfase"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#levensfase>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/1712ef1b325d7d2807bc601d6409b70a42eaff10> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.thema";
+    shacl:class skos:Concept;
+    shacl:description "De hoofdcategorie waartoe de dataservice behoort."@nl;
+    shacl:name "thema"@nl;
+    shacl:path dcat:theme.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/19ee039173472235e539aea2aa961ff7d3b89f5a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.contactinformatie";
+    shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataservice."@nl;
+    shacl:maxCount 1;
+    shacl:name "contactinformatie"@nl;
+    shacl:path dcat:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.titel";
+    shacl:description "De naam van de dataservice."@nl;
+    shacl:minCount 1;
+    shacl:name "titel"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/26cc53e7822e6779f8846281611c44445178d766> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.servicecategorie";
+    shacl:description "De categorie waartoe de\ndataservice behoort"@nl;
+    shacl:name "service categorie"@nl.
+_:n3-522 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-523 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-522 shacl:property _:n3-523.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/26cc53e7822e6779f8846281611c44445178d766> shacl:node _:n3-522;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.wijzigingsdatum";
+    shacl:description "Het tijdsmoment waarop de dataservice werd gewijzigd"@nl;
+    shacl:maxCount 1;
+    shacl:name "wijzigingsdatum"@nl;
+    shacl:path dcterms:modified.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/2be8f764879c3f2218306704a430503d286c30e9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.landingspaginavoorauthenticatie";
+    shacl:class rdfs:Resource;
+    shacl:description "Een verwijzing naar de landingspagina met de specifieke informatie over de authenticatie voor de dataservice."@nl;
+    shacl:name "landingspagina voor authenticatie"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/302090a90a5755780bc8fe09be4bcd29193cfd6d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.versie";
+    shacl:description "Een unieke aanduiding van een variant van de dataservice door middel van een versienummer of -naam van de dataservice."@nl;
+    shacl:maxCount 1;
+    shacl:name "versie"@nl;
+    shacl:path owl:versionInfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/39607ae8317e4f99846f57f713d51b19528e5764> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.alternatieveidentificator";
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Een alternatieve identificator (dan de unieke identificator) voor een dataservice kan hier beschreven worden."@nl;
+    shacl:name "alternatieve identificator"@nl;
+    shacl:path <http://www.w3.org/ns/adms#identifier>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/44f6426e2306c5bc0421823eb4a1a034b615f715> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.trefwoord";
+    shacl:datatype rdf:langString;
+    shacl:description "Een trefwoord of tag die de resource beschrijft."@nl;
+    shacl:name "trefwoord"@nl;
+    shacl:path dcat:keyword.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/4523d6e75f8993d15c9332b0aae5dbbe64a85b5a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.ontwikkelingstoestand";
+    shacl:class skos:Concept;
+    shacl:description "De ontwikkelingstoestand waarin de dataservice is gedeployed."@nl;
+    shacl:name "ontwikkelingstoestand"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/458062b0ae03c559426b85df3dd28e1c785acb0b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.contactinformatie";
+    shacl:class vcard:Kind;
+    shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataservice."@nl;
+    shacl:name "contactinformatie"@nl;
+    shacl:path dcat:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/47687fa6f0d88cde5525c2d10bec646e3c8c5012> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.servicetype";
+    shacl:description "Het type waartoe de\ndataservice behoort"@nl;
+    shacl:name "service type"@nl.
+_:n3-524 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-525 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-524 shacl:property _:n3-525.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/47687fa6f0d88cde5525c2d10bec646e3c8c5012> shacl:node _:n3-524;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#servicetype>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/48290800138d735a1909018da1426a5d120eedf0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.thema";
+    shacl:description "De hoofdcategorie waartoe de dataservice behoort."@nl;
+    shacl:name "thema"@nl.
+_:n3-526 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-527 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://vocab.belgif.be/auth/datatheme>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-526 shacl:property _:n3-527.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/48290800138d735a1909018da1426a5d120eedf0> shacl:node _:n3-526;
+    shacl:nodeKind shacl:IRI;
+    shacl:path dcat:theme;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/509740cc7b3c86ebee90dc6303c11c40e2b08212> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.licentie";
+    shacl:class dcterms:LicenseDocument;
+    shacl:description "De licentie van de dataservice."@nl;
+    shacl:name "licentie"@nl;
+    shacl:path dcterms:license.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/587f313308111b587d1bd2440a56622e64624864> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.versie";
+    shacl:datatype xsd:string;
+    shacl:description "Een unieke aanduiding van een variant van de dataservice door middel van een versienummer of -naam van de dataservice."@nl;
+    shacl:name "versie"@nl;
+    shacl:path owl:versionInfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/5ed2c890f2c7588313cc9f93b35524bdb2d6328d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.biedtinformatieaanover";
+    shacl:class dcat:Dataset;
+    shacl:description "De data die via deze dataservice worden aangeboden."@nl;
+    shacl:name "biedt informatie aan over"@nl;
+    shacl:path dcat:servesdataset.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/62bb7a143add01ac0956709b58850f4f5e5a0e47> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.rechten";
+    shacl:class dcterms:RightsStatement;
+    shacl:description "Bepalingen van juridische aard die gelden op de dataservice."@nl;
+    shacl:name "rechten"@nl;
+    shacl:path dcterms:rights.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/66883b2795f003760d4bb617bd1f472da1e1524f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.endpointbeschrijving";
+    shacl:description "Een beschrijving van de diensten die beschikbaar zijn via de end-points, met inbegrip van hun operaties, parameters, enz."@nl;
+    shacl:maxCount 1;
+    shacl:name "endpointbeschrijving"@nl;
+    shacl:path dcat:endpointDescription.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/670342a920a4d7c073b8db698b89a4c651e34491> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.servicetype";
+    shacl:class skos:Concept;
+    shacl:description "Het type waartoe de\ndataservice behoort"@nl;
+    shacl:name "service type"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#servicetype>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/67325124afc7d6eac4402056620665f7348ef62a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.statuut";
+    shacl:description "Een aanduiding van op welke basis de catalogusresource beschikbaar is."@nl;
+    shacl:name "statuut"@nl.
+_:n3-528 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-529 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-528 shacl:property _:n3-529.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/67325124afc7d6eac4402056620665f7348ef62a> shacl:node _:n3-528;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#statuut>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/67c89165b0f38567bf099862ffdef88f25e68714> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.endpointURL";
+    shacl:class rdfs:Resource;
+    shacl:description "De rootlocatie of het primaire endpoint van de dienst (een web-resolvable URI)."@nl;
+    shacl:name "endpointURL"@nl;
+    shacl:path dcat:endpointURL.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/6b0d5813153da700505d795c17d681878225c6d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.creatiedatum";
+    shacl:description "Het tijdsmoment waarop de dataservice voor het eerst werd geactiveerd."@nl;
+    shacl:maxCount 1;
+    shacl:name "creatiedatum"@nl;
+    shacl:path dcterms:created.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/7463895a2bb9e7e4c96cd9a2e7f83ce2cf787098> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.toegankelijkheid";
+    shacl:description "De toegankelijkheid voor de dataservice."@nl;
+    shacl:minCount 1;
+    shacl:name "toegankelijkheid"@nl;
+    shacl:path dcterms:accessRights.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/76f6cfca9a1964a539a879c911777c741a37cff0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.ontwikkelingstoestand";
+    shacl:description "De ontwikkelingstoestand waarin de dataservice is gedeployed."@nl;
+    shacl:maxCount 1;
+    shacl:name "ontwikkelingstoestand"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/80a839685f13d2584ebe2f9b5d9a93ae2c1b21a0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.conformaanprotocol";
+    shacl:class dcterms:Standard;
+    shacl:description "Een protocol waaraan de dataservice voldoet."@nl;
+    shacl:name "conform aan protocol"@nl;
+    shacl:path dcterms:conformsTo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/82e4f4e38a285ebeffb0f14c036b491b71a26200> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.landingspaginavoorstatusinformatie";
+    shacl:description "Een verwijzing naar de statuspagina van de dataservice"@nl;
+    shacl:maxCount 1;
+    shacl:name "landingspagina voor statusinformatie"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/883b5dc28b6bef2ce82b138ead1eb3c7f2073b92> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.geografischedekking";
+    shacl:class dcterms:Location;
+    shacl:description "Het geografische gebied waarvoor deze dataservice van toepassing is."@nl;
+    shacl:name "geografische dekking"@nl;
+    shacl:path dcterms:spatial.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/8a32a3e6b5ca4b68f8846b184e7faa4f48a0ee1d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.levensfase";
+    shacl:description "De levensfase waarin de dataservice zich bevindt."@nl;
+    shacl:maxCount 1;
+    shacl:name "levensfase"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#levensfase>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.identificator";
+    shacl:description "De unieke identificator van de dataservice."@nl;
+    shacl:minCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path dcterms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/9978564bd5823785ddace8934e848c68e6e813e3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.endpointURL";
+    shacl:description "De rootlocatie of het primaire endpoint van de dienst (een web-resolvable URI)."@nl;
+    shacl:maxCount 1;
+    shacl:name "endpointURL"@nl;
+    shacl:path dcat:endpointURL.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/9e7585433d0896bc44cb41cdd8189793bd115cd0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.wijzigingsdatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Het tijdsmoment waarop de dataservice werd gewijzigd"@nl;
+    shacl:name "wijzigingsdatum"@nl;
+    shacl:path dcterms:modified.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/a0b7156be408a447d937582d4d0c3cafea754f8b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.creatiedatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Het tijdsmoment waarop de dataservice voor het eerst werd geactiveerd."@nl;
+    shacl:name "creatiedatum"@nl;
+    shacl:path dcterms:created.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.toegankelijkheid";
+    shacl:class skos:Concept;
+    shacl:description "De toegankelijkheid voor de dataservice."@nl;
+    shacl:name "toegankelijkheid"@nl;
+    shacl:path dcterms:accessRights.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/b643cb8952d752ef63a2b25c7fcebd89d08fb015> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.landingspaginavoorgebruiksinformatie";
+    shacl:description "Een verwijzing naar de landingspagina met de specifieke informatie over het gebruik van de dataservice."@nl;
+    shacl:maxCount 1;
+    shacl:name "landingspagina voor gebruiksinformatie"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.identificator";
+    shacl:description "De unieke identificator van de dataservice."@nl;
+    shacl:maxCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path dcterms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/bd44e3e6c4317f226cd1124fbaf1d72e94e8f15e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.endpointbeschrijving";
+    shacl:description "Een beschrijving van de diensten die beschikbaar zijn via de end-points, met inbegrip van hun operaties, parameters, enz."@nl;
+    shacl:minCount 1;
+    shacl:name "endpointbeschrijving"@nl;
+    shacl:path dcat:endpointDescription.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/c394e1e5ae80a00d2aa307d647168d0c6733df26> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.conformaanprotocol";
+    shacl:description "Een protocol waaraan de dataservice voldoet."@nl;
+    shacl:name "conform aan protocol"@nl.
+_:n3-530 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-531 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-530 shacl:property _:n3-531.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/c394e1e5ae80a00d2aa307d647168d0c6733df26> shacl:node _:n3-530;
+    shacl:nodeKind shacl:IRI;
+    shacl:path dcterms:conformsTo;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/c4eb7e771a95c6c3e5c04255458173a2b0b40f43> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.landingspaginavoorgebruiksinformatie";
+    shacl:class rdfs:Resource;
+    shacl:description "Een verwijzing naar de landingspagina met de specifieke informatie over het gebruik van de dataservice."@nl;
+    shacl:name "landingspagina voor gebruiksinformatie"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/c5f6c428a4ae32239d9662d58fa65ae4f0cf49e6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.toegankelijkheid";
+    shacl:description "De toegankelijkheid voor de dataservice."@nl;
+    shacl:name "toegankelijkheid"@nl.
+_:n3-532 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-533 shacl:class skos:ConceptScheme;
+    shacl:hasValue <http://publications.europa.eu/resource/authority/access-right>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-532 shacl:property _:n3-533.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/c5f6c428a4ae32239d9662d58fa65ae4f0cf49e6> shacl:node _:n3-532;
+    shacl:nodeKind shacl:IRI;
+    shacl:path dcterms:accessRights;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/cafd2e3e66044d8ba2c435a9353e6880952086c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.licentie";
+    shacl:description "De licentie van de dataservice."@nl;
+    shacl:maxCount 1;
+    shacl:name "licentie"@nl;
+    shacl:path dcterms:license.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/d2ee108ae45d67fcdfacaafbffa4b71116f2a84b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.servicecategorie";
+    shacl:class skos:Concept;
+    shacl:description "De categorie waartoe de\ndataservice behoort"@nl;
+    shacl:name "service categorie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/dbc2548616486a154002cfba6a3bc2cbc554a682> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.endpointbeschrijving";
+    shacl:class rdfs:Resource;
+    shacl:description "Een beschrijving van de diensten die beschikbaar zijn via de end-points, met inbegrip van hun operaties, parameters, enz."@nl;
+    shacl:name "endpointbeschrijving"@nl;
+    shacl:path dcat:endpointDescription.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/e332dbce5947de4314c3ed3fe5862f26d70a15c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.contactinformatie";
+    shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataservice."@nl;
+    shacl:minCount 1;
+    shacl:name "contactinformatie"@nl;
+    shacl:path dcat:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/e9bf439f5272396af4486645c4dd4ae47c27c030> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.landingspaginavoorauthenticatie";
+    shacl:description "Een verwijzing naar de landingspagina met de specifieke informatie over de authenticatie voor de dataservice."@nl;
+    shacl:maxCount 1;
+    shacl:name "landingspagina voor authenticatie"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.titel";
+    shacl:datatype rdf:langString;
+    shacl:description "De naam van de dataservice."@nl;
+    shacl:name "titel"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/f9524ba86e28981345a2b84aea788460ad4e805e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.toegankelijkheid";
+    shacl:description "De toegankelijkheid voor de dataservice."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegankelijkheid"@nl;
+    shacl:path dcterms:accessRights.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/f96c5f798f9e9c00220a293bd11f37e83616d33b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.statuut";
+    shacl:class skos:Concept;
+    shacl:description "Een aanduiding van op welke basis de catalogusresource beschikbaar is."@nl;
+    shacl:name "statuut"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#statuut>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/f9862087b9d1ec8465f46ee21e166c45776cf8bd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.ontwikkelingstoestand";
+    shacl:description "De ontwikkelingstoestand waarin de dataservice is gedeployed."@nl;
+    shacl:name "ontwikkelingstoestand"@nl.
+_:n3-534 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-535 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingstoestand>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-534 shacl:property _:n3-535.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/f9862087b9d1ec8465f46ee21e166c45776cf8bd> shacl:node _:n3-534;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/fe1a78c9169da2469a23fd783cf9a69060bfe198> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.landingspagina";
+    shacl:class rdfs:Resource;
+    shacl:description "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene aanvullende informatie over de dataservice."@nl;
+    shacl:name "landingspagina"@nl;
+    shacl:path dcat:landingPage.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DataServiceShape/fe9c62143da275c7458e0e71dedeb277670a016b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataservice.publicatiedatum";
+    shacl:description "Het tijdsmoment waarop de service werd gepubliceerd door de uitgever."@nl;
+    shacl:maxCount 1;
+    shacl:name "publicatiedatum"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/697da4482f85ec7ebc84a29b579258e17b1c66d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/cdcd625f63439224ecb98a71dc74f068adc2e2b4>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/cc135a90882799fba6140de923a66c5da8af4944>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/f5ce7729a8fa370eae17e7bceaedac484f9a2a10>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/3106165c3e907112c44b67e8a77de0b45ab6458f>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/8889d7be6ecf95e4a7e4f551a0162074a83aae73>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/39607ae8317e4f99846f57f713d51b19528e5764>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/dd5cf5b162b3f92600a391f44660bf2b255693ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/19ee039173472235e539aea2aa961ff7d3b89f5a>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/458062b0ae03c559426b85df3dd28e1c785acb0b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/e332dbce5947de4314c3ed3fe5862f26d70a15c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/6b0d5813153da700505d795c17d681878225c6d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/a0b7156be408a447d937582d4d0c3cafea754f8b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/cfbe0a11423fe15e990c3cbd5209404c26dbef0f>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/0addb769185db828aa4c44888f0aa906471c3d06>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/4c889c8af0957f93a2a962912a5950724e052fde>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/883b5dc28b6bef2ce82b138ead1eb3c7f2073b92>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/7f7729e4df614394423f92badbe4304148f90b07>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/fe1a78c9169da2469a23fd783cf9a69060bfe198>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/0e54e6660eb6bc0ea08ebfce3dbbf188c3e400d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/fe9c62143da275c7458e0e71dedeb277670a016b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/2dd722cd9646ae42c87a4584d924a0fa5d21a7c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/39e6d120fea45e317a29b89d90880f07b6f33a3f>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/cb16bf1a1c4aecf98198e77365dce5cb47c143fe>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/5eaa2b8d88180db0665e17a1afa8945ca9dd9396>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/e8c47372e98efc9056bb4c8c27df29e60dec3770>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/0f6cb927d0d26f3819cba3fb903a075cd426180d>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/495152e07b8cdc2ea417291a92fea8f5edeb17c9>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/67325124afc7d6eac4402056620665f7348ef62a>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/f96c5f798f9e9c00220a293bd11f37e83616d33b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/1712ef1b325d7d2807bc601d6409b70a42eaff10>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/48290800138d735a1909018da1426a5d120eedf0>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/7463895a2bb9e7e4c96cd9a2e7f83ce2cf787098>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/c5f6c428a4ae32239d9662d58fa65ae4f0cf49e6>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/f9524ba86e28981345a2b84aea788460ad4e805e>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/44f6426e2306c5bc0421823eb4a1a034b615f715>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/302090a90a5755780bc8fe09be4bcd29193cfd6d>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/587f313308111b587d1bd2440a56622e64624864>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/b797fd4af5bc2767e8e3a3799a5aae84ec998d04>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/9e7585433d0896bc44cb41cdd8189793bd115cd0>;
+    shacl:targetClass dcat:Dataset.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/0addb769185db828aa4c44888f0aa906471c3d06> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.eigenaar";
+    shacl:class dcterms:Agent;
+    shacl:description "de agent die de eigendomsrechten heeft"@nl;
+    shacl:name "eigenaar"@nl;
+    shacl:path dcterms:rightsHolder.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/0e54e6660eb6bc0ea08ebfce3dbbf188c3e400d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.publicatiedatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Het tijdsmoment waarop de dataset werd gepubliceerd door de uitgever."@nl;
+    shacl:name "publicatiedatum"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Een bondige tekstuele omschrijving van de dataset."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/0f6cb927d0d26f3819cba3fb903a075cd426180d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.status";
+    shacl:class skos:Concept;
+    shacl:description "De progressie in het samenstellen van de dataset"@nl;
+    shacl:name "status"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/1712ef1b325d7d2807bc601d6409b70a42eaff10> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.thema";
+    shacl:class skos:Concept;
+    shacl:description "De hoofdcategorie waartoe de dataset behoort."@nl;
+    shacl:name "thema"@nl;
+    shacl:path dcat:theme.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/19ee039173472235e539aea2aa961ff7d3b89f5a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.contactinformatie";
+    shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset."@nl;
+    shacl:maxCount 1;
+    shacl:name "contactinformatie"@nl;
+    shacl:path dcat:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.titel";
+    shacl:description "De naam van de dataset."@nl;
+    shacl:minCount 1;
+    shacl:name "titel"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.wijzigingsdatum";
+    shacl:description "Het tijdsmoment waarop de dataset werd geactualiseerd"@nl;
+    shacl:maxCount 1;
+    shacl:name "wijzigingsdatum"@nl;
+    shacl:path dcterms:modified.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.status";
+    shacl:description "De progressie in het samenstellen van de dataset"@nl;
+    shacl:maxCount 1;
+    shacl:name "status"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/2dd722cd9646ae42c87a4584d924a0fa5d21a7c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.ruimtelijkvoorstellingstype";
+    shacl:description "Het primaire ruimtelijke voorstellingstype waarin de data in de dataset wordt beheerd."@nl;
+    shacl:maxCount 1;
+    shacl:name "ruimtelijk voorstellingstype"@nl;
+    shacl:path <http://www.w3.org/ns/adms#representionTechnique>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/302090a90a5755780bc8fe09be4bcd29193cfd6d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.versie";
+    shacl:description "Een unieke aanduiding van een variant van de dataset door middel van een versienummer of -naam van de dataset."@nl;
+    shacl:maxCount 1;
+    shacl:name "versie"@nl;
+    shacl:path owl:versionInfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/3106165c3e907112c44b67e8a77de0b45ab6458f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.ISOcategorie";
+    shacl:class skos:Concept;
+    shacl:description "De rubriek waartoe de\ndataset behoort volgens de\nafspraken in de ISO-\nstandaard voor\ngeografische metadata"@nl;
+    shacl:name "ISO categorie"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/39607ae8317e4f99846f57f713d51b19528e5764> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.alternatieveidentificator";
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Een alternatieve identificator (dan de unieke identificator) voor een dataset kan hier beschreven worden."@nl;
+    shacl:name "alternatieve identificator"@nl;
+    shacl:path <http://www.w3.org/ns/adms#identifier>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/39e6d120fea45e317a29b89d90880f07b6f33a3f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.ruimtelijkvoorstellingstype";
+    shacl:description "Het primaire ruimtelijke voorstellingstype waarin de data in de dataset wordt beheerd."@nl;
+    shacl:name "ruimtelijk voorstellingstype"@nl.
+_:n3-536 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-537 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-536 shacl:property _:n3-537.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/39e6d120fea45e317a29b89d90880f07b6f33a3f> shacl:node _:n3-536;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <http://www.w3.org/ns/adms#representionTechnique>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/44f6426e2306c5bc0421823eb4a1a034b615f715> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.trefwoord";
+    shacl:datatype rdf:langString;
+    shacl:description "Een trefwoord of tag die de resource beschrijft."@nl;
+    shacl:name "trefwoord"@nl;
+    shacl:path dcat:keyword.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/458062b0ae03c559426b85df3dd28e1c785acb0b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.contactinformatie";
+    shacl:class vcard:Kind;
+    shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset."@nl;
+    shacl:name "contactinformatie"@nl;
+    shacl:path dcat:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/48290800138d735a1909018da1426a5d120eedf0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.thema";
+    shacl:description "De hoofdcategorie waartoe de dataset behoort."@nl;
+    shacl:name "thema"@nl.
+_:n3-538 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-539 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://vocab.belgif.be/auth/datatheme>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-538 shacl:property _:n3-539.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/48290800138d735a1909018da1426a5d120eedf0> shacl:node _:n3-538;
+    shacl:nodeKind shacl:IRI;
+    shacl:path dcat:theme;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/495152e07b8cdc2ea417291a92fea8f5edeb17c9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.status";
+    shacl:description "De progressie in het samenstellen van de dataset"@nl;
+    shacl:name "status"@nl.
+_:n3-540 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-541 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ProgressCode>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-540 shacl:property _:n3-541.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/495152e07b8cdc2ea417291a92fea8f5edeb17c9> shacl:node _:n3-540;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#status>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/4c889c8af0957f93a2a962912a5950724e052fde> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.geografischedekking";
+    shacl:description "Het geografische gebied waarover de dataset informatie heeft."@nl;
+    shacl:minCount 1;
+    shacl:name "geografische dekking"@nl;
+    shacl:path dcterms:spatial.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/587f313308111b587d1bd2440a56622e64624864> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.versie";
+    shacl:datatype xsd:string;
+    shacl:description "Een unieke aanduiding van een variant van de dataset door middel van een versienummer of -naam van de dataset."@nl;
+    shacl:name "versie"@nl;
+    shacl:path owl:versionInfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/5eaa2b8d88180db0665e17a1afa8945ca9dd9396> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.ruimtelijkeresolutie";
+    shacl:description "Het detailniveau van de dataset"@nl;
+    shacl:maxCount 1;
+    shacl:name "ruimtelijke resolutie"@nl;
+    shacl:path <http://www.w3.org/ns/dqv#hasQualityMeasurement>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/67325124afc7d6eac4402056620665f7348ef62a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.statuut";
+    shacl:description "Een aanduiding van op welke basis de catalogusresource beschikbaar is."@nl;
+    shacl:name "statuut"@nl.
+_:n3-542 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-543 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-542 shacl:property _:n3-543.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/67325124afc7d6eac4402056620665f7348ef62a> shacl:node _:n3-542;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#statuut>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/697da4482f85ec7ebc84a29b579258e17b1c66d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.GEMETconcept";
+    shacl:class skos:Concept;
+    shacl:description "De rubriek waartoe de\ndataset behoort volgens de\nGEMET thesaurus."@nl;
+    shacl:name "GEMET concept"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#GEMETconcept>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/6b0d5813153da700505d795c17d681878225c6d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.creatiedatum";
+    shacl:description "Het tijdsmoment waarop de dataset ontstaan is."@nl;
+    shacl:maxCount 1;
+    shacl:name "creatiedatum"@nl;
+    shacl:path dcterms:created.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/7463895a2bb9e7e4c96cd9a2e7f83ce2cf787098> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.toegankelijkheid";
+    shacl:description "De toegankelijkheid voor de dataset."@nl;
+    shacl:minCount 1;
+    shacl:name "toegankelijkheid"@nl;
+    shacl:path dcterms:accessRights.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.beschrijving";
+    shacl:description "Een bondige tekstuele omschrijving van de dataset."@nl;
+    shacl:minCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/7f7729e4df614394423f92badbe4304148f90b07> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.herkomst";
+    shacl:class dcterms:ProvenanceStatement;
+    shacl:description "De ontstaansgeschiedenis van een dataset."@nl;
+    shacl:name "herkomst"@nl;
+    shacl:path dcterms:provenance.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/883b5dc28b6bef2ce82b138ead1eb3c7f2073b92> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.geografischedekking";
+    shacl:class dcterms:Location;
+    shacl:description "Het geografische gebied waarover de dataset informatie heeft."@nl;
+    shacl:name "geografische dekking"@nl;
+    shacl:path dcterms:spatial.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/8889d7be6ecf95e4a7e4f551a0162074a83aae73> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.ISOcategorie";
+    shacl:description "De rubriek waartoe de\ndataset behoort volgens de\nafspraken in de ISO-\nstandaard voor\ngeografische metadata"@nl;
+    shacl:name "ISO categorie"@nl.
+_:n3-544 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-545 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://inspire.ec.europa.eu/metadata-codelist/TopicCategory>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-544 shacl:property _:n3-545.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/8889d7be6ecf95e4a7e4f551a0162074a83aae73> shacl:node _:n3-544;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.identificator";
+    shacl:description "De unieke identificator van de dataset."@nl;
+    shacl:minCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path dcterms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/9e7585433d0896bc44cb41cdd8189793bd115cd0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.wijzigingsdatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Het tijdsmoment waarop de dataset werd geactualiseerd"@nl;
+    shacl:name "wijzigingsdatum"@nl;
+    shacl:path dcterms:modified.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/a0b7156be408a447d937582d4d0c3cafea754f8b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.creatiedatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Het tijdsmoment waarop de dataset ontstaan is."@nl;
+    shacl:name "creatiedatum"@nl;
+    shacl:path dcterms:created.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.toegankelijkheid";
+    shacl:class skos:Concept;
+    shacl:description "De toegankelijkheid voor de dataset."@nl;
+    shacl:name "toegankelijkheid"@nl;
+    shacl:path dcterms:accessRights.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/b797fd4af5bc2767e8e3a3799a5aae84ec998d04> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.voorbeeldweergave";
+    shacl:class dcat:Distribution;
+    shacl:description "Een verkleinde weergave van een afbeelding die de dataset illustreert.?"@nl;
+    shacl:name "voorbeeldweergave"@nl;
+    shacl:path <http://www.w3.org/ns/adms#sample>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.identificator";
+    shacl:description "De unieke identificator van de dataset."@nl;
+    shacl:maxCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path dcterms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/c5f6c428a4ae32239d9662d58fa65ae4f0cf49e6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.toegankelijkheid";
+    shacl:description "De toegankelijkheid voor de dataset."@nl;
+    shacl:name "toegankelijkheid"@nl.
+_:n3-546 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-547 shacl:class skos:ConceptScheme;
+    shacl:hasValue <http://publications.europa.eu/resource/authority/access-right>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-546 shacl:property _:n3-547.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/c5f6c428a4ae32239d9662d58fa65ae4f0cf49e6> shacl:node _:n3-546;
+    shacl:nodeKind shacl:IRI;
+    shacl:path dcterms:accessRights;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/cb16bf1a1c4aecf98198e77365dce5cb47c143fe> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.ruimtelijkvoorstellingstype";
+    shacl:class skos:Concept;
+    shacl:description "Het primaire ruimtelijke voorstellingstype waarin de data in de dataset wordt beheerd."@nl;
+    shacl:name "ruimtelijk voorstellingstype"@nl;
+    shacl:path <http://www.w3.org/ns/adms#representionTechnique>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/cc135a90882799fba6140de923a66c5da8af4944> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.INSPIREthema";
+    shacl:class skos:Concept;
+    shacl:description "De rubriek waartoe de\ndataset behoort volgens de\nINSPIRE thema's"@nl;
+    shacl:name "INSPIRE thema"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/cdcd625f63439224ecb98a71dc74f068adc2e2b4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.GEMETconcept";
+    shacl:description "De rubriek waartoe de\ndataset behoort volgens de\nGEMET thesaurus."@nl;
+    shacl:name "GEMET concept"@nl.
+_:n3-548 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-549 shacl:class skos:ConceptScheme;
+    shacl:hasValue <http://www.eionet.europa.eu/gemet>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-548 shacl:property _:n3-549.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/cdcd625f63439224ecb98a71dc74f068adc2e2b4> shacl:node _:n3-548;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#GEMETconcept>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/cfbe0a11423fe15e990c3cbd5209404c26dbef0f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.distributie";
+    shacl:class dcat:Distribution;
+    shacl:description "Een beschikbare distributie van de dataset."@nl;
+    shacl:name "distributie"@nl;
+    shacl:path dcat:distribution.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/dd5cf5b162b3f92600a391f44660bf2b255693ac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.conform";
+    shacl:class dcterms:Standard;
+    shacl:description "Een standaard, schema, applicatieprofiel, vocabularium, CRS, ... waaraan de dataset voldoet."@nl;
+    shacl:name "conform"@nl;
+    shacl:path dcterms:conformsTo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/e332dbce5947de4314c3ed3fe5862f26d70a15c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.contactinformatie";
+    shacl:description "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset."@nl;
+    shacl:minCount 1;
+    shacl:name "contactinformatie"@nl;
+    shacl:path dcat:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/e8c47372e98efc9056bb4c8c27df29e60dec3770> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.ruimtelijkeresolutie";
+    shacl:class <http://www.w3.org/ns/dqv#QualityMeasurement>;
+    shacl:description "Het detailniveau van de dataset"@nl;
+    shacl:name "ruimtelijke resolutie"@nl;
+    shacl:path <http://www.w3.org/ns/dqv#hasQualityMeasurement>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.titel";
+    shacl:datatype rdf:langString;
+    shacl:description "De naam van de dataset."@nl;
+    shacl:name "titel"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/f5ce7729a8fa370eae17e7bceaedac484f9a2a10> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.INSPIREthema";
+    shacl:description "De rubriek waartoe de\ndataset behoort volgens de\nINSPIRE thema's"@nl;
+    shacl:name "INSPIRE thema"@nl.
+_:n3-550 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-551 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://inspire.ec.europa.eu/theme>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-550 shacl:property _:n3-551.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/f5ce7729a8fa370eae17e7bceaedac484f9a2a10> shacl:node _:n3-550;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/f9524ba86e28981345a2b84aea788460ad4e805e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.toegankelijkheid";
+    shacl:description "De toegankelijkheid voor de dataset."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegankelijkheid"@nl;
+    shacl:path dcterms:accessRights.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/f96c5f798f9e9c00220a293bd11f37e83616d33b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.statuut";
+    shacl:class skos:Concept;
+    shacl:description "Een aanduiding van op welke basis de catalogusresource beschikbaar is."@nl;
+    shacl:name "statuut"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#statuut>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/fe1a78c9169da2469a23fd783cf9a69060bfe198> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.landingspagina";
+    shacl:class rdfs:Resource;
+    shacl:description "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene informatie over de dataset, zijn distributies en/of aanvullende informatie."@nl;
+    shacl:name "landingspagina"@nl;
+    shacl:path dcat:landingPage.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DatasetShape/fe9c62143da275c7458e0e71dedeb277670a016b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Dataset.publicatiedatum";
+    shacl:description "Het tijdsmoment waarop de dataset werd gepubliceerd door de uitgever."@nl;
+    shacl:maxCount 1;
+    shacl:name "publicatiedatum"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/39607ae8317e4f99846f57f713d51b19528e5764>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/dd5cf5b162b3f92600a391f44660bf2b255693ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/0e61107f343f202ee672ef465cfcdbbcd746e21d>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/1ff94e5c0d35c7d1a7f2c4bd160a8c8e4eee6f97>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/6700896d1cda0a52b587461e48a50c4d221f043b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/866f7e6bf04104e9aa0f82fa4b8b0ff05ef17dc7>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/c202c852e84ae0c736f1f6a8f8030db817602116>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/509740cc7b3c86ebee90dc6303c11c40e2b08212>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/cafd2e3e66044d8ba2c435a9353e6880952086c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/62bb7a143add01ac0956709b58850f4f5e5a0e47>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/28a9b5a610271b2ad2cd6917763075560213ca20>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/3d0e850677d211050dd9e93ec6496e6af9908da6>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/bf4475984ce7d0eb4bade6e749e672a8efa7dd2d>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/97ed7a72fee66a4fd972d36d70822272beaf40ce>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/e142be9d61d29a86c3e36db738d8a9600b4a6ba7>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/c612c1f62d45c84405f45260ab0737a10f5b0a18>;
+    shacl:targetClass dcat:Distribution.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/0e61107f343f202ee672ef465cfcdbbcd746e21d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.downloadURL";
+    shacl:class rdfs:Resource;
+    shacl:description "De URL waar de data gedownload kan worden."@nl;
+    shacl:name "downloadURL"@nl;
+    shacl:path dcat:downloadURL.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/1ff94e5c0d35c7d1a7f2c4bd160a8c8e4eee6f97> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.downloadURL";
+    shacl:description "De URL waar de data gedownload kan worden."@nl;
+    shacl:maxCount 1;
+    shacl:name "downloadURL"@nl;
+    shacl:path dcat:downloadURL.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/28a9b5a610271b2ad2cd6917763075560213ca20> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.toegangsURL";
+    shacl:description "Een URL waar de data kan gevonden worden."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegangsURL"@nl;
+    shacl:path dcat:accessURL.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/39607ae8317e4f99846f57f713d51b19528e5764> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.alternatieveidentificator";
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Een alternatieve identificator (dan de unieke identificator) voor een distributie kan hier beschreven worden."@nl;
+    shacl:name "alternatieve identificator"@nl;
+    shacl:path <http://www.w3.org/ns/adms#identifier>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/3d0e850677d211050dd9e93ec6496e6af9908da6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.toegangsURL";
+    shacl:class rdfs:Resource;
+    shacl:description "Een URL waar de data kan gevonden worden."@nl;
+    shacl:name "toegangsURL"@nl;
+    shacl:path dcat:accessURL.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/509740cc7b3c86ebee90dc6303c11c40e2b08212> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.licentie";
+    shacl:class dcterms:LicenseDocument;
+    shacl:description "De licentie van de distributie."@nl;
+    shacl:name "licentie"@nl;
+    shacl:path dcterms:license.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/62bb7a143add01ac0956709b58850f4f5e5a0e47> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.rechten";
+    shacl:class dcterms:RightsStatement;
+    shacl:description "Bepalingen van juridische aard die gelden op de distributie."@nl;
+    shacl:name "rechten"@nl;
+    shacl:path dcterms:rights.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/6700896d1cda0a52b587461e48a50c4d221f043b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.formaat";
+    shacl:description "Het bestandsformaat waarin de data wordt gedeeld."@nl;
+    shacl:name "formaat"@nl.
+_:n3-552 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-553 shacl:class skos:ConceptScheme;
+    shacl:hasValue <http://publications.europa.eu/resource/authority/file-type>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-552 shacl:property _:n3-553.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/6700896d1cda0a52b587461e48a50c4d221f043b> shacl:node _:n3-552;
+    shacl:nodeKind shacl:IRI;
+    shacl:path dcterms:format;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/866f7e6bf04104e9aa0f82fa4b8b0ff05ef17dc7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.formaat";
+    shacl:class skos:Concept;
+    shacl:description "Het bestandsformaat waarin de data wordt gedeeld."@nl;
+    shacl:name "formaat"@nl;
+    shacl:path dcterms:format.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.identificator";
+    shacl:description "De unieke identificator van de distributie."@nl;
+    shacl:minCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path dcterms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/97ed7a72fee66a4fd972d36d70822272beaf40ce> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.verdeler";
+    shacl:description "de agent die instaat voor de verdeling"@nl;
+    shacl:maxCount 1;
+    shacl:name "verdeler"@nl;
+    shacl:path <http://data.europa.eu/930/distributor>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.identificator";
+    shacl:description "De unieke identificator van de distributie."@nl;
+    shacl:maxCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path dcterms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/bf4475984ce7d0eb4bade6e749e672a8efa7dd2d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.toegangsURL";
+    shacl:description "Een URL waar de data kan gevonden worden."@nl;
+    shacl:minCount 1;
+    shacl:name "toegangsURL"@nl;
+    shacl:path dcat:accessURL.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/c202c852e84ae0c736f1f6a8f8030db817602116> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.formaat";
+    shacl:description "Het bestandsformaat waarin de data wordt gedeeld."@nl;
+    shacl:maxCount 1;
+    shacl:name "formaat"@nl;
+    shacl:path dcterms:format.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/c612c1f62d45c84405f45260ab0737a10f5b0a18> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.wordtaangebodendoor";
+    shacl:class dcat:DataService;
+    shacl:description "Een dataservice die deze distributie aanbiedt."@nl;
+    shacl:name "wordt aangeboden door"@nl;
+    shacl:path dcat:accessService.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/cafd2e3e66044d8ba2c435a9353e6880952086c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.licentie";
+    shacl:description "De licentie van de distributie."@nl;
+    shacl:maxCount 1;
+    shacl:name "licentie"@nl;
+    shacl:path dcterms:license.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/dd5cf5b162b3f92600a391f44660bf2b255693ac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.conform";
+    shacl:class dcterms:Standard;
+    shacl:description "Een standaard, schema, implementatie-\nmodel, applicatieprofiel, vocabularium\nwaaraan de distributie voldoet."@nl;
+    shacl:name "conform"@nl;
+    shacl:path dcterms:conformsTo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/e142be9d61d29a86c3e36db738d8a9600b4a6ba7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.verdeler";
+    shacl:class dcterms:Agent;
+    shacl:description "de agent die instaat voor de verdeling"@nl;
+    shacl:name "verdeler"@nl;
+    shacl:path <http://data.europa.eu/930/distributor>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#DistributieShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie.titel";
+    shacl:datatype rdf:langString;
+    shacl:description "De naam van de distributie."@nl;
+    shacl:name "titel"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#HerkomstVerklaringShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass dcterms:ProvenanceStatement.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/0e92d523a1837590188fbfddd2ab0d9f901bdcab>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/6789412851c92fe5eb8479182507dd72e28ab811>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/ccb2d543d17baa8b6b0ca2a42156eed6f23e3f6e>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/ed560feb860205e0339910c9b2942564c01b5e11>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/5f023c37e7d18ecf8aecd2bb45eae0a05687cd6f>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/9f8532791e13c302ae6dcc70ef353c796f948c85>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/3b5973d35f612c133f22e9f710f65db63d861b6b>;
+    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/0e92d523a1837590188fbfddd2ab0d9f901bdcab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Identificator.gestructureerdeidentificator";
+    shacl:class <http://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator>;
+    shacl:description "Identificator vh object opgesplitst in zijn onderdelen."@nl;
+    shacl:name "gestructureerde identificator"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Identificator.toegekendop";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    shacl:name "toegekend op"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/3b5973d35f612c133f22e9f710f65db63d861b6b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Identificator.toegekendop";
+    shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend op"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/5f023c37e7d18ecf8aecd2bb45eae0a05687cd6f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Identificator.toegekenddoor(String)";
+    shacl:datatype xsd:string;
+    shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
+    shacl:name "toegekend door (String)"@nl;
+    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/6789412851c92fe5eb8479182507dd72e28ab811> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Identificator.gestructureerdeidentificator";
+    shacl:description "Identificator vh object opgesplitst in zijn onderdelen."@nl;
+    shacl:maxCount 1;
+    shacl:name "gestructureerde identificator"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/9f8532791e13c302ae6dcc70ef353c796f948c85> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Identificator.toegekenddoor(String)";
+    shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend door (String)"@nl;
+    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/ccb2d543d17baa8b6b0ca2a42156eed6f23e3f6e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Identificator.notatie";
+    shacl:description "String gebruikt om het object uniek te identificeren. "@nl;
+    shacl:maxCount 1;
+    shacl:name "notatie"@nl;
+    shacl:path skos:notation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/ed560feb860205e0339910c9b2942564c01b5e11> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Identificator.toegekenddoor";
+    shacl:class foaf:Agent;
+    shacl:description "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    shacl:name "toegekend door"@nl;
+    shacl:path dcterms:creator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#IdentificatorShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Identificator.toegekenddoor";
+    shacl:description "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend door"@nl;
+    shacl:path dcterms:creator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#JuridischeBepalingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass dcterms:RightsStatement.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#LicentieDocumentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass dcterms:LicenseDocument.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#PlaatsShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#PlaatsShape/3562937fd68e5b9b91210d2e17383e28b6a7a53b>;
+    shacl:targetClass dcterms:Location.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#PlaatsShape/3562937fd68e5b9b91210d2e17383e28b6a7a53b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Plaats.plaatsnaam";
+    shacl:datatype rdf:langString;
+    shacl:description "een eenduidige, beknopte beschrijving die de plaats benoemt."@nl;
+    shacl:name "plaatsnaam"@nl;
+    shacl:path rdfs:label.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/230fa664054f86199f30c98c6d4140bfb1437470>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/aa69087cd9f59b7d23c9ca16a88c4298d77dcd0c>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/f5a6aff37ed40db28a354dd68f524952b0433d4a>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/78ce02089c3f0ee33902d0bc3cc0e00e7d26e097>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/80179238c15e4eb0f284c28f3a87c523281be2cd>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/c883e705823614530bb3fd7b4046023772ea8807>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/110bcc4a81256c6b4b080feb1fd85186147a7841>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/68837b0eda962a941b0162e1ae4c5f0e471e0c51>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/acb59b00c5c67fec8d3f0b2543d5259a09b17d18>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/e5ccf692ee38c28199531eb5e0c59554153a57c3>;
+    shacl:targetClass dcat:Relationship.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/110bcc4a81256c6b4b080feb1fd85186147a7841> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatie.rol";
+    shacl:description "De functie hoe de entiteiten zich tot elkaar verhouden. "@nl;
+    shacl:name "rol"@nl.
+_:n3-554 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-555 shacl:class skos:ConceptScheme;
+    shacl:hasValue <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-554 shacl:property _:n3-555.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/110bcc4a81256c6b4b080feb1fd85186147a7841> shacl:node _:n3-554;
+    shacl:nodeKind shacl:IRI;
+    shacl:path dcat:hadRole;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/230fa664054f86199f30c98c6d4140bfb1437470> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatie.CatalogusResource(source)";
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:minCount 1;
+    shacl:name "Catalogus Resource (source)"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/68837b0eda962a941b0162e1ae4c5f0e471e0c51> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatie.rol";
+    shacl:description "De functie hoe de entiteiten zich tot elkaar verhouden. "@nl;
+    shacl:minCount 1;
+    shacl:name "rol"@nl;
+    shacl:path dcat:hadRole.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/78ce02089c3f0ee33902d0bc3cc0e00e7d26e097> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatie.CatalogusResource(target)";
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:minCount 1;
+    shacl:name "Catalogus Resource (target)"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/80179238c15e4eb0f284c28f3a87c523281be2cd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatie.CatalogusResource(target)";
+    shacl:class dcat:Resource;
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:name "Catalogus Resource (target)"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/aa69087cd9f59b7d23c9ca16a88c4298d77dcd0c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatie.CatalogusResource(source)";
+    shacl:class dcat:Resource;
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:name "Catalogus Resource (source)"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/acb59b00c5c67fec8d3f0b2543d5259a09b17d18> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatie.rol";
+    shacl:description "De functie hoe de entiteiten zich tot elkaar verhouden. "@nl;
+    shacl:maxCount 1;
+    shacl:name "rol"@nl;
+    shacl:path dcat:hadRole.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/c883e705823614530bb3fd7b4046023772ea8807> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatie.CatalogusResource(target)";
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:maxCount 1;
+    shacl:name "Catalogus Resource (target)"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/e5ccf692ee38c28199531eb5e0c59554153a57c3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatie.rol";
+    shacl:class skos:Concept;
+    shacl:description "De functie hoe de entiteiten zich tot elkaar verhouden. "@nl;
+    shacl:name "rol"@nl;
+    shacl:path dcat:hadRole.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatieShape/f5a6aff37ed40db28a354dd68f524952b0433d4a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#RelatieQualificatie.CatalogusResource(source)";
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:maxCount 1;
+    shacl:name "Catalogus Resource (source)"@nl;
+    shacl:path <http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/146541e4de97e4b871d95c2764c9411d7236d3cf>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/78958515cb7d967aeadd8b44db8bb60065cdba07>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/996d0e887a89bd0b4ad6ef0c6a7a4c079c8d58b4>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/ca4892872b345b4fe994128b7c31877979275399>;
+    shacl:targetClass <http://www.w3.org/ns/dqv#QualityMeasurement>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Resolutie.waarde";
+    shacl:datatype xsd:decimal;
+    shacl:description "De waarde van resolutie gemeten volgens de bijhorende methode."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path <http://www.w3.org/ns/dqv#value>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/146541e4de97e4b871d95c2764c9411d7236d3cf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Resolutie.resolutiemethode";
+    shacl:description "De schaal of eenheid waaronder de waarde moet worden geïntepreteerd."@nl;
+    shacl:minCount 1;
+    shacl:name "resolutie methode"@nl;
+    shacl:path <http://www.w3.org/ns/dqv#isMeasurementOf>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Resolutie.waarde";
+    shacl:description "De waarde van resolutie gemeten volgens de bijhorende methode."@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <http://www.w3.org/ns/dqv#value>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/78958515cb7d967aeadd8b44db8bb60065cdba07> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Resolutie.resolutiemethode";
+    shacl:description "De schaal of eenheid waaronder de waarde moet worden geïntepreteerd."@nl;
+    shacl:maxCount 1;
+    shacl:name "resolutie methode"@nl;
+    shacl:path <http://www.w3.org/ns/dqv#isMeasurementOf>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/996d0e887a89bd0b4ad6ef0c6a7a4c079c8d58b4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Resolutie.resolutiemethode";
+    shacl:class skos:Concept;
+    shacl:description "De schaal of eenheid waaronder de waarde moet worden geïntepreteerd."@nl;
+    shacl:name "resolutie methode"@nl;
+    shacl:path <http://www.w3.org/ns/dqv#isMeasurementOf>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#ResolutieShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Resolutie.waarde";
+    shacl:description "De waarde van resolutie gemeten volgens de bijhorende methode."@nl;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <http://www.w3.org/ns/dqv#value>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/0e54e6660eb6bc0ea08ebfce3dbbf188c3e400d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/fe9c62143da275c7458e0e71dedeb277670a016b>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/817c38a73348ef5623204d13efbf44e68a4612e8>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/db7c74598f8807ba1cfdb8f62f771fb27d4dbbe7>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/302090a90a5755780bc8fe09be4bcd29193cfd6d>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/587f313308111b587d1bd2440a56622e64624864>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/dec1490408b1bea457bc40436431406882288252>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/f8712dd0e04b5c6b79d939432a639019c7295c6f>;
+    shacl:targetClass dcterms:Standard.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/0e54e6660eb6bc0ea08ebfce3dbbf188c3e400d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.publicatiedatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "De datum waarop de standaard werd\ngepubliceerd"@nl;
+    shacl:name "publicatiedatum"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Een bondige tekstuele omschrijving van de\nstandaard"@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/302090a90a5755780bc8fe09be4bcd29193cfd6d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.versie";
+    shacl:description "De versie van de standaard"@nl;
+    shacl:maxCount 1;
+    shacl:name "versie"@nl;
+    shacl:path owl:versionInfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.type";
+    shacl:class skos:Concept;
+    shacl:description "Een categorisatie van de standaard"@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.beschrijving";
+    shacl:description "Een bondige tekstuele omschrijving van de\nstandaard"@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/587f313308111b587d1bd2440a56622e64624864> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.versie";
+    shacl:datatype xsd:string;
+    shacl:description "De versie van de standaard"@nl;
+    shacl:name "versie"@nl;
+    shacl:path owl:versionInfo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/817c38a73348ef5623204d13efbf44e68a4612e8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.specificatieURL";
+    shacl:class rdfs:Resource;
+    shacl:description "Een URL waarop men de specificatie kan\nvinden"@nl;
+    shacl:name "specificatie URL"@nl;
+    shacl:path rdfs:seeAlso.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/db7c74598f8807ba1cfdb8f62f771fb27d4dbbe7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.specificatieURL";
+    shacl:description "Een URL waarop men de specificatie kan\nvinden"@nl;
+    shacl:maxCount 1;
+    shacl:name "specificatie URL"@nl;
+    shacl:path rdfs:seeAlso.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/dec1490408b1bea457bc40436431406882288252> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.voorkeurslabel";
+    shacl:description "Een afkorting, of notatie waaronder de\nstandaard bekend is."@nl;
+    shacl:maxCount 1;
+    shacl:name "voorkeurslabel"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.titel";
+    shacl:datatype rdf:langString;
+    shacl:description "naam van de standaard"@nl;
+    shacl:name "titel"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/f8712dd0e04b5c6b79d939432a639019c7295c6f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.voorkeurslabel";
+    shacl:datatype xsd:string;
+    shacl:description "Een afkorting, of notatie waaronder de\nstandaard bekend is."@nl;
+    shacl:name "voorkeurslabel"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#StandaardShape/fe9c62143da275c7458e0e71dedeb277670a016b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Standaard.publicatiedatum";
+    shacl:description "De datum waarop de standaard werd\ngepubliceerd"@nl;
+    shacl:maxCount 1;
+    shacl:name "publicatiedatum"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/0e61107f343f202ee672ef465cfcdbbcd746e21d>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/1ff94e5c0d35c7d1a7f2c4bd160a8c8e4eee6f97>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/ad42d11500885f18c10b5ee1a87b5ceca761f903>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/06b127df99a6de2b3aef269b0d4b8746a5b78dcc>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/91e8d1bb173f793bde16cb8a3dc8fde7844b5204>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/f15bdaee3382af94fe22b0dade89fc2e9fefbbdc>, <https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab>;
+    shacl:targetClass dcat:Distribution.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/06b127df99a6de2b3aef269b0d4b8746a5b78dcc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Voorbeeldweergave.mediatype";
+    shacl:description "Het voorstellingsvorm van de afbeelding"@nl;
+    shacl:maxCount 1;
+    shacl:name "mediatype"@nl;
+    shacl:path dcat:mediatype.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/0e61107f343f202ee672ef465cfcdbbcd746e21d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Voorbeeldweergave.downloadURL";
+    shacl:class rdfs:Resource;
+    shacl:description "De URL waar de afbeelding gedownload kan worden."@nl;
+    shacl:name "downloadURL"@nl;
+    shacl:path dcat:downloadURL.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Voorbeeldweergave.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Een bondige tekstuele omschrijving van de afbeelding"@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/1ff94e5c0d35c7d1a7f2c4bd160a8c8e4eee6f97> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Voorbeeldweergave.downloadURL";
+    shacl:description "De URL waar de afbeelding gedownload kan worden."@nl;
+    shacl:maxCount 1;
+    shacl:name "downloadURL"@nl;
+    shacl:path dcat:downloadURL.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/91e8d1bb173f793bde16cb8a3dc8fde7844b5204> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Voorbeeldweergave.mediatype";
+    shacl:description "Het voorstellingsvorm van de afbeelding"@nl;
+    shacl:name "mediatype"@nl.
+_:n3-556 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-557 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://www.iana.org/assignments/media-types/media-types.xhtml>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-556 shacl:property _:n3-557.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/91e8d1bb173f793bde16cb8a3dc8fde7844b5204> shacl:node _:n3-556;
+    shacl:nodeKind shacl:IRI;
+    shacl:path dcat:mediatype;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/ad42d11500885f18c10b5ee1a87b5ceca761f903> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Voorbeeldweergave.downloadURL";
+    shacl:description "De URL waar de afbeelding gedownload kan worden."@nl;
+    shacl:minCount 1;
+    shacl:name "downloadURL"@nl;
+    shacl:path dcat:downloadURL.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/f15bdaee3382af94fe22b0dade89fc2e9fefbbdc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Voorbeeldweergave.mediatype";
+    shacl:class skos:Concept;
+    shacl:description "Het voorstellingsvorm van de afbeelding"@nl;
+    shacl:name "mediatype"@nl;
+    shacl:path dcat:mediatype.
+<https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#VoorbeeldWeergaveShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Voorbeeldweergave.titel";
+    shacl:datatype rdf:langString;
+    shacl:description "naam van de afbeelding"@nl;
+    shacl:name "titel"@nl;
+    shacl:path dcterms:title.

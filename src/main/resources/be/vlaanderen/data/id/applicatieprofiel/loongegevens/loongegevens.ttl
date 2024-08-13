@@ -1,0 +1,293 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/> a <http://purl.org/ontology/bibo/Document>;
+    dcterms:language "nl"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+_:df_195_1 a foaf:Person;
+    foaf:lastName "Bauwens"@nl;
+    foaf:firstName "Dorien"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:dorien.bauwens@vlaanderen.be>.
+_:df_195_3 a foaf:Person;
+    foaf:lastName "De Rore"@nl;
+    foaf:firstName "Eva"@nl;
+    foaf:workplaceHomepage <https://www.pwc.be>;
+    foaf:mbox <mailto:eva.de.rore@pwc.com>.
+_:df_195_5 a foaf:Person;
+    foaf:lastName "Meersmans"@nl;
+    foaf:firstName "Yves"@nl;
+    foaf:workplaceHomepage <https://www.pwc.be>;
+    foaf:mbox <mailto:yves.meersmans@pwc.com>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/#ref> a <http://purl.org/ontology/bibo/Chapter>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/#ref>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/> dcterms:type dcmitype:Text;
+    dcterms:title "Deze specificatie"@nl;
+    <http://creativecommons.org/ns#attributionURL> <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    <http://creativecommons.org/ns#attributionName> "Digitaal Vlaanderen"@nl;
+    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/ns/loongegevens#afTeTrekkenNettoBedragen> a rdfs:Property;
+    rdfs:label "\n                            \n                            afTeTrekkenNettoBedragen\n                          "@nl;
+    rdfs:comment "Verplichte inhoudingen door de werkgever."@nl;
+    vann:usageNote "Dit gaat over de sommen voor loonbeslag, loonoverdracht, persoonlijke bijdrage maaltijdcheques, ..."@nl.
+<https://data.vlaanderen.be/ns/loongegevens#arbeidsrelatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            arbeidsrelatie\n                          "@nl;
+    rdfs:comment "De betrekking tussen werkgevers en werknemers die ontstaat bij loonarbeid na afsluiting van een arbeidsovereenkomst."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#bedrijfsvoorheffing> a rdfs:Property;
+    rdfs:label "\n                            \n                            bedrijfsvoorheffing\n                          "@nl;
+    rdfs:comment "Voorschot op de definitieve inkomstenbelasting."@nl;
+    vann:usageNote "Het bedrag van de bedrijfsvoorheffing wordt bepaald door loonhoogte, burgerlijke staat, gezinssituatie,  De bedrijfsvoorheffing wordt ingehouden op het totaal belastbare loon."@nl.
+<https://data.vlaanderen.be/ns/loongegevens#bedrijfswagen> a rdfs:Property;
+    rdfs:label "\n                            \n                            bedrijfswagen\n                          "@nl;
+    rdfs:comment "Een voertuig dat door de werkgever aan de werknemer ter beschikking wordt gesteld, als onderdeel van het loonpakket."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#belastbareMaaltijdcheques> a rdfs:Property;
+    rdfs:label "\n                            \n                            belastbareMaaltijdcheques\n                          "@nl;
+    rdfs:comment "Een belastbare maaltijdcheque is een maaltijdchecque met een bedrag boven het wettelijk plafond voor belastingvrije maaltijdcheques. Ze worden apart vermeld op de loonbrief."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#brutoloon> a rdfs:Property;
+    rdfs:label "\n                            \n                            brutoloon\n                          "@nl;
+    rdfs:comment "De som van alle loonelementen voor sociale en fiscale inhoudingen."@nl;
+    vann:usageNote "Dit gaat over de sommen voor gepresteerde arbeid, betaalde afwezigheden, toeslagen, premies, ..."@nl.
+<https://data.vlaanderen.be/ns/loongegevens#cheques> a rdfs:Property;
+    rdfs:label "\n                            \n                            cheques\n                          "@nl;
+    rdfs:comment "Een cheque bevat een bepaalde som geld. Bv.Ecocheques"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#collectieveSchuldenregeling> a rdfs:Property;
+    rdfs:label "\n                            \n                            collectieveSchuldenregeling\n                          "@nl;
+    rdfs:comment "Bij collectieve schuldenregeling wordt een afbetalingsplan opgestelt voor het betalen van schulden aan de schuldeisers. Het loon van een persoon wordt gestort en volgens de opgestelde regeling verdeelt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#eindejaarstoelage> a rdfs:Property;
+    rdfs:label "\n                            \n                            eindejaarstoelage\n                          "@nl;
+    rdfs:comment "Een eindejaarstoelage is een financiële bonus die een persoon krijgt van zijn/haar werkgever op het einde van het jaar. Er moeten sociale zekerheidsbijdragen en belastingen op betaald worden."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#inhoudingenVoorDeSocialeZekerheid> a rdfs:Property;
+    rdfs:label "\n                            \n                            inhoudingenVoorDeSocialeZekerheid\n                          "@nl;
+    rdfs:comment "Dit is een bedrag van het arbeidsloon dat wordt ingehouden om de sociale zekerheid te financieren."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#maaltijdcheques> a rdfs:Property;
+    rdfs:label "\n                            \n                            maaltijdcheques\n                          "@nl;
+    rdfs:comment "Een maaltijdcheque is een extralegaal voordeel dat een werknemer van zijn/haar werkgever krijgt. Het is een bijdrage van de werkgever voor de kosten van de werknemer voor maaltijden."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#nettoGestortLoon> a rdfs:Property;
+    rdfs:label "\n                            \n                            nettoGestortLoon\n                          "@nl;
+    rdfs:comment "Het werkelijk gestorte loon op de rekening van de persoon."@nl;
+    vann:usageNote "Het netto gestort loon kan verschillen van het nettoloon. Dit kan voorkomen bij een herberekening van een voorgaande maand, een onkostennota, ..."@nl.
+<https://data.vlaanderen.be/ns/loongegevens#nettoloon> a rdfs:Property;
+    rdfs:label "\n                            \n                            nettoloon\n                          "@nl;
+    rdfs:comment "Het nettoloon is het brutoloon waar de sociale zekerheidsbijdrage en de bedrijfsvoorheffing van afgetrokken zijn."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#periodiciteitVerloning> a rdfs:Property;
+    rdfs:label "\n                            \n                            periodiciteitVerloning\n                          "@nl;
+    rdfs:comment "Heeft betrekking op het verschil tussen een éénmalige verloning en een periodieke verloning."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#premie> a rdfs:Property;
+    rdfs:label "\n                            \n                            premie\n                          "@nl;
+    rdfs:comment "Dit is een deel van het loon dat afhankelijk is van geleverde prestaties."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#supplementaireBelastbareBedragen> a rdfs:Property;
+    rdfs:label "\n                            \n                            supplementaireBelastbareBedragen\n                          "@nl;
+    rdfs:comment "Bijkomende sommen die aan het brutoloon toegevoegd worden. Deze zijn vrijgesteld van inhoudingen voor de sociale zekerheid."@nl;
+    vann:usageNote "Gewaarborgd maandloon ziekte, dubbel vakantiegeld, ... Let op dat belastbare maaltijdcheques hier niet in zijn opgenomen. Deze hebben namelijk een apart attribuut in deze klasse."@nl.
+<https://data.vlaanderen.be/ns/loongegevens#supplementaireNettoBedragen> a rdfs:Property;
+    rdfs:label "\n                            \n                            supplementaireNettoBedragen\n                          "@nl;
+    rdfs:comment "Bijkomende netto sommen die aan het nettoloon toegevoegd worden. Deze zijn vrijgesteld van belastingen en RSZ."@nl;
+    vann:usageNote "Onkostenvergoeding, verplaatsingskosten, ... "@nl.
+<https://data.vlaanderen.be/ns/loongegevens#vakantiegeld> a rdfs:Property;
+    rdfs:label "\n                            \n                            vakantiegeld\n                          "@nl;
+    rdfs:comment "Dit is een jaarlijkse toelage die een werknemer krijgt om de extra kosten van vakantie te dekken."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#verloningsperiode> a rdfs:Property;
+    rdfs:label "\n                            \n                            verloningsperiode\n                          "@nl;
+    rdfs:comment "Een bepaalde tijdsduur met een start- en eindmoment die dient als referentie voor de bepaling van het brutoloon."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#arbeidsloon> a rdfs:Property;
+    rdfs:label "\n                            \n                            arbeidsloon\n                          "@nl;
+    rdfs:comment "Het bedrag dat een persoon ontvangt voor geleverde prestaties in arbeidsverband. Het kan gaan om een financieel bedrag, een bedrag in natura, vergoedingen, etc."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#bankrekeningnummer> a rdfs:Property;
+    rdfs:label "\n                            \n                            bankrekeningnummer\n                          "@nl;
+    rdfs:comment "Een rekeningnummer dat gelinkt is aan de arbeidsrelatie. Op dit rekeningnummer wordt het arbeidsloon van de persoon gestort."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#contractperiode> a rdfs:Property;
+    rdfs:label "\n                            \n                            contractperiode\n                          "@nl;
+    rdfs:comment "Periode waarover in een arbeidscontract een overeenkomst is afgesloten. Een contractperiode heeft een begindatum, en in sommige gevallen een einddatum. Dat is dan de uitdienstdatum."@nl;
+    vann:usageNote "Indien de uitdienstdatum niet vermeld wordt, wordt deze impliciet verondersteld er niet te zijn."@nl.
+<https://data.vlaanderen.be/ns/loongegevens#overeenkomst> a rdfs:Property;
+    rdfs:label "\n                            \n                            overeenkomst\n                          "@nl;
+    rdfs:comment "Voltijds of deeltijds."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#statuut> a rdfs:Property;
+    rdfs:label "\n                            \n                            statuut\n                          "@nl;
+    rdfs:comment "Werknemer, ambtenaar, student, ..."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#tewerkstellingsbreuk> a rdfs:Property;
+    rdfs:label "\n                            \n                            tewerkstellingsbreuk\n                          "@nl;
+    rdfs:comment "Het gemiddeld aantal uren per week waarin de werknemer geacht wordt te werken op basis van zijn contract, gedeeld door het gemiddeld aantal uren per week waarin een modelpersoon geacht wordt te werken."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#werkgever> a rdfs:Property;
+    rdfs:label "\n                            \n                            werkgever\n                          "@nl;
+    rdfs:comment "De organisatie wie de werkgever is in de arbeidsrelatie."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#werknemer> a rdfs:Property;
+    rdfs:label "\n                            \n                            werknemer\n                          "@nl;
+    rdfs:comment "De persoon wie de werknemer is in de arbeidsrelatie."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/persoon#registratie> a rdfs:Property;
+    rdfs:label "\n                            \n                            registratie\n                          "@nl;
+    rdfs:comment "Identificatiecode vd persoon ih register."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/organisatie#rechtsvorm> a rdfs:Property;
+    rdfs:label "\n                            \n                            rechtsvorm\n                          "@nl;
+    rdfs:comment "Juridisch statuut van de geregistreerde organisatie."@nl;
+    vann:usageNote ""@nl.
+rov:registration a rdfs:Property;
+    rdfs:label "\n                            \n                            registratie\n                          "@nl;
+    rdfs:comment "Identificator dat de organisatie verkreeg bij registratie."@nl;
+    vann:usageNote "In de KBO is dit het ondernemingsnummer."@nl.
+<https://data.vlaanderen.be/ns/persoon#gezinshoofd> a rdfs:Property;
+    rdfs:label "\n                            \n                            gezinshoofd\n                          "@nl;
+    rdfs:comment "Persoon die standaard het gezin vertegenwoordigt."@nl;
+    vann:usageNote ""@nl.
+<http://data.vlaanderen.be/ns/persoon#gezinslid> a rdfs:Property;
+    rdfs:label "\n                            \n                            gezinslid\n                          "@nl;
+    rdfs:comment "Gezin waartoe een persoon behoort."@nl;
+    vann:usageNote ""@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            \n                            gezinslid\n                          "@nl;
+    rdfs:comment "Gezin waartoe een persoon behoort."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#begunstigde> a rdfs:Property;
+    rdfs:label "\n                            \n                            begunstigde\n                          "@nl;
+    rdfs:comment "Degene aan wie een uitkering moet plaats hebben."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#arbeidsrelatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            arbeidsrelatie\n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote ""@nl.
+skos:prefLabel a rdfs:Property;
+    rdfs:label "\n                            \n                            voorkeursnaam\n                          "@nl;
+    rdfs:comment "Naam waarmee de organisatie bij voorkeur wordt aangeduid."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#arbeidsrelatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            arbeidsrelatie\n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#Persoon.geboortedatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            geboortedatum\n                          "@nl;
+    rdfs:comment "Datum waarop de Geboorte plaatsvond."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#inkomsten> a rdfs:Property;
+    rdfs:label "\n                            \n                            inkomsten\n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/persoon#isHoofdVan> a rdfs:Property;
+    rdfs:label "\n                            \n                            isHoofdVan\n                          "@nl;
+    rdfs:comment "Gezin waarvan de persoon het gezinshoofd is."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#personenFiscaalTenLaste> a rdfs:Property;
+    rdfs:label "\n                            \n                            personenFiscaalTenLaste\n                          "@nl;
+    rdfs:comment "Personen die niet over een inkomen beschikken, of een netto jaarinkomen hebben dat lager is dan wettelijk vastgelegd voor deze regeling, en onder hetzelfde dak wonen als de persoon die voor hen moet voorzien."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#Persoon.verblijfplaats> a rdfs:Property;
+    rdfs:label "\n                            \n                            verblijfplaats\n                          "@nl;
+    rdfs:comment "Plaats waar een persoon verblijft."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/persoon#volledigeNaam> a rdfs:Property;
+    rdfs:label "\n                            \n                            volledigeNaam\n                          "@nl;
+    rdfs:comment "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/persoon#verblijfsadres> a rdfs:Property;
+    rdfs:label "\n                            \n                            verblijfsadres\n                          "@nl;
+    rdfs:comment "Plaats waar een persoon al dan niet tijdelijk woont of logeert."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer> a rdfs:Property;
+    rdfs:label "\n                            busnummer\n                          "@nl;
+    rdfs:comment "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/adres#gemeentenaam> a rdfs:Property;
+    rdfs:label "\n                            gemeentenaam\n                          "@nl;
+    rdfs:comment "Gemeentenaam vh adres."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer> a rdfs:Property;
+    rdfs:label "\n                            huisnummer\n                          "@nl;
+    rdfs:comment "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/adres#land> a rdfs:Property;
+    rdfs:label "\n                            land\n                          "@nl;
+    rdfs:comment "Land waarin het adres gelegen is."@nl;
+    vann:usageNote ""@nl.
+locn:postCode a rdfs:Property;
+    rdfs:label "\n                            postcode\n                          "@nl;
+    rdfs:comment "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid."@nl;
+    vann:usageNote ""@nl.
+locn:thoroughfare a rdfs:Property;
+    rdfs:label "\n                            straatnaam\n                          "@nl;
+    rdfs:comment "Straatnaam vh adres."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/loongegevens#bankrekeningnummer> a rdfs:Property;
+    rdfs:label "\n                            bankrekeningnummer\n                          "@nl;
+    rdfs:comment "Een uniek nummer dat wordt toegekend aan een rekening bij een bank."@nl;
+    vann:usageNote ""@nl.
+schemas:currency a rdfs:Property;
+    rdfs:label "\n                            valuta\n                          "@nl;
+    rdfs:comment "Munteenheid waarin het geldbedrag is gedefinieerd."@nl;
+    vann:usageNote ""@nl.
+schemas:value a rdfs:Property;
+    rdfs:label "\n                            waarde\n                          "@nl;
+    rdfs:comment "Getal dat de waarde van het geldbedrag uitdrukt."@nl;
+    vann:usageNote ""@nl.
+eu:startTime a rdfs:Property;
+    rdfs:label "\n                            begin\n                          "@nl;
+    rdfs:comment "Aanvaang van dae tijdsduur."@nl;
+    vann:usageNote ""@nl.
+eu:endTime a rdfs:Property;
+    rdfs:label "\n                            einde\n                          "@nl;
+    rdfs:comment "Einde vd tijdsduur."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+_:df_195_6 rdf:first _:df_195_1;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/> foaf:maker _:df_195_6.
+_:df_195_7 rdf:first _:df_195_3;
+    rdf:rest _:df_195_8.
+_:df_195_8 rdf:first _:df_195_5;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/loongegevens/> <http://purl.org/ontology/bibo/editor> _:df_195_7.

@@ -1,0 +1,276 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/> a <http://purl.org/ontology/bibo/Document>;
+    dcterms:language "nl"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+_:df_325_1 a foaf:Person;
+    foaf:lastName "Steenput"@nl;
+    foaf:firstName "Frank"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:codex@vlaanderen.be>.
+_:df_325_3 a foaf:Person;
+    foaf:lastName "Van Keer"@nl;
+    foaf:firstName "Christel"@nl;
+    foaf:workplaceHomepage <https://overheid.vlaanderen.be/>;
+    foaf:mbox <mailto:codex@vlaanderen.be>.
+_:df_325_5 a foaf:Person;
+    foaf:lastName "Meersmans"@nl;
+    foaf:firstName "Yves"@nl;
+    foaf:workplaceHomepage <https://www.pwc.be>;
+    foaf:mbox <mailto:yves.meersmans@pwc.com>.
+_:df_325_7 a foaf:Person;
+    foaf:lastName "Scheerlinck"@nl;
+    foaf:firstName "Jens"@nl;
+    foaf:workplaceHomepage <http://www.pwc.be>;
+    foaf:mbox <mailto:jens.scheerlinck@pwc.com>.
+_:df_325_9 a foaf:Person;
+    foaf:lastName "Vandeloo"@nl;
+    foaf:firstName "Carmen"@nl;
+    foaf:workplaceHomepage <http://www.pwc.be>;
+    foaf:mbox <mailto:carmen.vandeloo@pwc.com>.
+_:df_325_11 a foaf:Person;
+    foaf:lastName "Decloedt"@nl;
+    foaf:firstName "Domien"@nl;
+    foaf:workplaceHomepage <http://binnenland.vlaanderen.be/>;
+    foaf:mbox <mailto:domien.decloedt@bz.vlaanderen.be>.
+_:df_325_13 a foaf:Person;
+    foaf:lastName "Van Haute"@nl;
+    foaf:firstName "Geert"@nl;
+    foaf:workplaceHomepage <https://www.lne.be/>;
+    foaf:mbox <mailto:geert.vanhaute@lne.vlaanderen.be>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/#ref> a <http://purl.org/ontology/bibo/Chapter>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/#ref>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/> dcterms:type dcmitype:Text;
+    dcterms:title "Deze specificatie"@nl;
+    <http://creativecommons.org/ns#attributionURL> <http://vlaanderen.be/informatievlaanderen>;
+    <http://creativecommons.org/ns#attributionName> "Informatie Vlaanderen"@nl;
+    <http://www.w3.org/1999/xhtml/vocab#license> <https://overheid.vlaanderen.be/sites/default/files/documenten/ict-egov/licenties/hergebruik/modellicentie_gratis_hergebruik_v1_0.html>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/ns/wetgeving#bekrachtigdBij> a rdfs:Property;
+    rdfs:label "\n                            \n                            bekrachtigd bij\n                          "@nl;
+    rdfs:comment "Inverse van bekrachtigt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/wetgeving#bekrachtigt> a rdfs:Property;
+    rdfs:label "\n                            \n                            bekrachtigt\n                          "@nl;
+    rdfs:comment "Betekent dat dit document instemt met een ander type document waardoor dat laatste volledige rechtskracht krijgt. De bekrachtiging is in dit geval een opschortende voorwaarde."@nl;
+    vann:usageNote ""@nl.
+eli:date_no_longer_in_force a rdfs:Property;
+    rdfs:label "\n                            \n                            buitenwerkingtreding\n                          "@nl;
+    rdfs:comment "De laatste dag waarop de regelgeving nog van kracht is."@nl;
+    vann:usageNote ""@nl.
+eli:cites a rdfs:Property;
+    rdfs:label "\n                            \n                            citeert\n                          "@nl;
+    rdfs:comment "Een citatie in de wettelijke tekst. Dit omvat zowel woordelijke citaten als citaten in verwijzingen."@nl;
+    vann:usageNote ""@nl.
+eli:date_document a rdfs:Property;
+    rdfs:label "\n                            \n                            datum document\n                          "@nl;
+    rdfs:comment "Adoptiedatum of handtekendatum (in de vorm jjjj-mm-dd)."@nl;
+    vann:usageNote ""@nl.
+eli:amended_by a rdfs:Property;
+    rdfs:label "\n                            \n                            gewijzigd bij\n                          "@nl;
+    rdfs:comment "Duidt aan dat deze rechtsbron een verandering met legale gevolgen heeft ondergaan door een andere rechtsbron. Dit omvat amendementen, vervangingen, herroepingen en andere types verandering."@nl;
+    vann:usageNote ""@nl.
+dcterms:hasPart a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft deel\n                          "@nl;
+    rdfs:comment "Geeft aan dat deze bron uit deelbronnen bestaat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/wetgeving#heftOp> a rdfs:Property;
+    rdfs:label "\n                            \n                            heft op\n                          "@nl;
+    rdfs:comment "Geeft aan dat deze bron een andere buiten werking stelt"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/wetgeving#ingetrokkenBij> a rdfs:Property;
+    rdfs:label "\n                            \n                            ingetrokken bij\n                          "@nl;
+    rdfs:comment "Geeft aan dat deze bron volledig wordt geannuleerd door een andere bron."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/wetgeving#ingevoegdBij> a rdfs:Property;
+    rdfs:label "\n                            \n                            ingevoegd bij\n                          "@nl;
+    rdfs:comment "Geeft een bron aan die deze bron aanvult met juridische impact."@nl;
+    vann:usageNote ""@nl.
+eli:first_date_entry_in_force a rdfs:Property;
+    rdfs:label "\n                            \n                            inwerkingtreding\n                          "@nl;
+    rdfs:comment "De datum waarop de regelgeving van kracht wordt."@nl;
+    vann:usageNote ""@nl.
+eli:is_realized_by a rdfs:Property;
+    rdfs:label "\n                            \n                            is gerealiseerd door\n                          "@nl;
+    rdfs:comment "De verschijningsvorm die deze rechtsbron materialiseert in een concrete tekst."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/wetgeving#opgehevenBij> a rdfs:Property;
+    rdfs:label "\n                            \n                            opgeheven bij\n                          "@nl;
+    rdfs:comment "Geeft aan dat deze juridische bron of juridische uitdrukking volledig wordt ingetrokken door een andere juridische hulpbron."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/wetgeving#trektIn> a rdfs:Property;
+    rdfs:label "\n                            \n                            trekt in\n                          "@nl;
+    rdfs:comment "Geeft aan dat deze juridische bron of juridische uitdrukking volledig kan worden geannuleerd door een andere."@nl;
+    vann:usageNote ""@nl.
+eli:type_document a rdfs:Property;
+    rdfs:label "\n                            \n                            type document\n                          "@nl;
+    rdfs:comment "Het type van het regelgevend document."@nl;
+    vann:usageNote ""@nl.
+eli:responsibility_of a rdfs:Property;
+    rdfs:label "\n                            \n                            verantwoordelijke\n                          "@nl;
+    rdfs:comment "Een aparte intellectuele creatie (d.w.z. de intellectuele inhoud)."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/wetgeving#vervangenBij> a rdfs:Property;
+    rdfs:label "\n                            \n                            vervangen bij\n                          "@nl;
+    rdfs:comment "Geeft een bron aan die volledig vernieuwd is door een andere."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/wetgeving#vervangt> a rdfs:Property;
+    rdfs:label "\n                            \n                            vervangt\n                          "@nl;
+    rdfs:comment "Geeft aan dat deze bron een andere volledig vernieuwt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/wetgeving#voegtIn> a rdfs:Property;
+    rdfs:label "\n                            \n                            voegt in\n                          "@nl;
+    rdfs:comment "Deze bron vult een andere aan met legale impact."@nl;
+    vann:usageNote ""@nl.
+eli:amends a rdfs:Property;
+    rdfs:label "\n                            \n                            wijzigt\n                          "@nl;
+    rdfs:comment "Duidt aan dat deze rechtsbron een verandering met legale gevolgen doorvoert op een andere rechtsbron. Dit omvat amendementen, vervangingen, herroepingen en andere types verandering."@nl;
+    vann:usageNote ""@nl.
+eli:transposes a rdfs:Property;
+    rdfs:label "\n                            \n                            zet om\n                          "@nl;
+    rdfs:comment "Geeft aan dat deze wetgeving (of een deel van de wetgeving) voldoet aan de doelstellingen van een andere wetgeving, door het nemen van passende uitvoeringsmaatregelen."@nl;
+    vann:usageNote ""@nl.
+eli:related_to a rdfs:Property;
+    rdfs:label "\n                            \n                            zie ook\n                          "@nl;
+    rdfs:comment "Duidt op een of ander manier gerelateerd ander document, niet noodzakelijk een legale bron."@nl;
+    vann:usageNote ""@nl.
+eli:is_part_of a rdfs:Property;
+    rdfs:label "\n                            \n                            is deel van\n                          "@nl;
+    rdfs:comment "Relatie die documenten en onderdelen (hoofdstukken, artikels...) aan elkaar linkt."@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Het type van het rechtsbrononderdeel."@nl;
+    vann:usageNote ""@nl.
+eli:date_no_longer_in_force a rdfs:Property;
+    rdfs:label "\n                            \n                            buitenwerkingtreding\n                          "@nl;
+    rdfs:comment "De laatste dag waarop de regelgeving nog van kracht is."@nl;
+    vann:usageNote "De informatie over wanneer de regelgeving globaal inwerking of buitenwerking trad is terug te vinden op niveau van de Rechtsbron."@nl.
+eli:title_short a rdfs:Property;
+    rdfs:label "\n                            \n                            citeeropschrift\n                          "@nl;
+    rdfs:comment "De beknopte titel of officiële korte naam van een decreet, wet, besluit..."@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            commentaar\n                          "@nl;
+    rdfs:comment "Een verslag van de bron."@nl;
+    vann:usageNote ""@nl.
+eli:consolidates a rdfs:Property;
+    rdfs:label "\n                            \n                            consolideert\n                          "@nl;
+    rdfs:comment "Geeft aan dat deze geconsolideerde juridische bron of uitdrukking (meestal het product van een redactioneel proces dat de wetgeving herziet) rekening houdt met een andere."@nl;
+    vann:usageNote ""@nl.
+eli:date_applicability a rdfs:Property;
+    rdfs:label "\n                            \n                            datum toepasbaarheid\n                          "@nl;
+    rdfs:comment "De datum waarop de wetgeving van toepassing wordt."@nl;
+    vann:usageNote ""@nl.
+eli:corrected_by a rdfs:Property;
+    rdfs:label "\n                            \n                            errata\n                          "@nl;
+    rdfs:comment "Geeft een hulpmiddel aan dat tekstuele wijzigingen introduceert (zoals correctie of spelfouten) zonder juridische wijzigingen in deze bron, uitdrukking of indeling."@nl;
+    vann:usageNote ""@nl.
+prov:value a rdfs:Property;
+    rdfs:label "\n                            \n                            inhoud\n                          "@nl;
+    rdfs:comment "De beschrijving van de beoogde rechtsgevolgen, het zogenaamde beschikkend gedeelte."@nl;
+    vann:usageNote ""@nl.
+eli:first_date_entry_in_force a rdfs:Property;
+    rdfs:label "\n                            \n                            inwerkingtreding\n                          "@nl;
+    rdfs:comment "De laatste dag waarop een specifieke versie van de regelgeving of een onderdeel ervan nog van kracht is."@nl;
+    vann:usageNote "De informatie over wanneer de regelgeving globaal inwerking of buitenwerking trad is terug te vinden op niveau van de Rechtsbron."@nl.
+eli:id_local a rdfs:Property;
+    rdfs:label "\n                            \n                            lokaleid\n                          "@nl;
+    rdfs:comment "De unieke ID die wordt gebruikt in een lokaal referentiesysteem om compatibiliteit met eerdere versies te handhaven."@nl;
+    vann:usageNote ""@nl.
+eli:number a rdfs:Property;
+    rdfs:label "\n                            \n                            nummer\n                          "@nl;
+    rdfs:comment "Een identificator of een ander onderscheidend kenmerk voor een verschijningsvorm."@nl;
+    vann:usageNote "Bijvoorbeeld het nummer van een artikel."@nl.
+eli:title a rdfs:Property;
+    rdfs:label "\n                            \n                            opschrift\n                          "@nl;
+    rdfs:comment "De titel of officiële naam van een decreet, wet, besluit... Deze wordt officieel vastgelegd."@nl;
+    vann:usageNote ""@nl.
+eli:date_publication a rdfs:Property;
+    rdfs:label "\n                            \n                            publicatiedatum\n                          "@nl;
+    rdfs:comment "De officiële publicatiedatum van de verschijningsvorm."@nl;
+    vann:usageNote ""@nl.
+eli:realizes a rdfs:Property;
+    rdfs:label "\n                            \n                            realiseert\n                          "@nl;
+    rdfs:comment "Heeft betrekking op de rechtsbron die door de verschijningsvorm gematerialiseerd wordt."@nl;
+    vann:usageNote ""@nl.
+eli:language a rdfs:Property;
+    rdfs:label "\n                            \n                            taal\n                          "@nl;
+    rdfs:comment "De taal van de verschijningsvorm."@nl;
+    vann:usageNote ""@nl.
+eli:is_about a rdfs:Property;
+    rdfs:label "\n                            \n                            thema\n                          "@nl;
+    rdfs:comment "Term uit een thesaurus die verwijst naar een bevoegdheidsdomein."@nl;
+    vann:usageNote ""@nl.
+dcterms:subject a rdfs:Property;
+    rdfs:label "\n                            \n                            trefwoord\n                          "@nl;
+    rdfs:comment "Vrije term als extra zoekingang tot de rechtsbron."@nl;
+    vann:usageNote ""@nl.
+skos:notation a rdfs:Property;
+    rdfs:label "\n                            identificator\n                          "@nl;
+    rdfs:comment "String gebruikt om het object uniek te identificeren. "@nl;
+    vann:usageNote "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."@nl.
+dcterms:creator a rdfs:Property;
+    rdfs:label "\n                            toegekend door\n                          "@nl;
+    rdfs:comment "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    vann:usageNote " "@nl.
+<http://www.w3.org/ns/adms#schemaAgency> a rdfs:Property;
+    rdfs:label "\n                            toegekend door (String)\n                          "@nl;
+    rdfs:comment "Naam vd agent die de identificator heeft toegekend."@nl;
+    vann:usageNote " "@nl.
+dcterms:issued a rdfs:Property;
+    rdfs:label "\n                            toegekend op\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    vann:usageNote " "@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+_:df_325_14 rdf:first _:df_325_1;
+    rdf:rest _:df_325_15.
+_:df_325_15 rdf:first _:df_325_3;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/> foaf:maker _:df_325_14.
+_:df_325_16 rdf:first _:df_325_5;
+    rdf:rest _:df_325_17.
+_:df_325_17 rdf:first _:df_325_7;
+    rdf:rest _:df_325_18.
+_:df_325_18 rdf:first _:df_325_9;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/> <http://purl.org/ontology/bibo/editor> _:df_325_16.
+_:df_325_19 rdf:first _:df_325_11;
+    rdf:rest _:df_325_20.
+_:df_325_20 rdf:first _:df_325_13;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vlaamse-codex/> dcterms:contributor _:df_325_19.

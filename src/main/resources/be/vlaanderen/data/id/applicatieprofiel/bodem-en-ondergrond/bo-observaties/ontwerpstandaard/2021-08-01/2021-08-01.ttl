@@ -1,0 +1,574 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/> a <http://purl.org/ontology/bibo/Document>;
+    dcterms:language "nl"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+_:df_585_1 a foaf:Person;
+    foaf:lastName "AuteurNaam"@nl;
+    foaf:firstName "AuteurVoornaam"@nl;
+    foaf:workplaceHomepage <https://auteurwebsiteurl>;
+    foaf:mbox <mailto:auteurvoornaam.auteurnaam@auteurdomein>.
+_:df_585_3 a foaf:Person;
+    foaf:lastName "EditorNaam"@nl;
+    foaf:firstName "EditorVoornaam"@nl;
+    foaf:workplaceHomepage <https://editorwebsiteurl>;
+    foaf:mbox <mailto:editorvoornaam.editornaam@editordomein>.
+_:df_585_5 a foaf:Person;
+    foaf:lastName "MedewerkerNaam"@nl;
+    foaf:firstName "MedewerkerVoornaam"@nl;
+    foaf:workplaceHomepage <https://medewerkerwebsiteurl>;
+    foaf:mbox <mailto:medewerkervoornaam.medewerkernaam@medewerkerdomein>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/#ref> a <http://purl.org/ontology/bibo/Chapter>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/#ref>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/> dcterms:type dcmitype:Text;
+    dcterms:title "Deze specificatie"@nl;
+    <http://creativecommons.org/ns#attributionURL> <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    <http://creativecommons.org/ns#attributionName> "Digitaal Vlaanderen"@nl;
+    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature> a rdfs:Property;
+    rdfs:label "\n                            \n                            bemonsterdObject\n                          "@nl;
+    rdfs:comment "Verwijzing naar het Object dat men wil bemonsteren."@nl;
+    vann:usageNote "Bv een profiel bemonstert een water- of atmosferische kolom, een peilput bemonstert het water in een watervoerende laag, een weefselstaal bemonstert een deel van een organisme."@nl.
+<http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.lineage> a rdfs:Property;
+    rdfs:label "\n                            \n                            herkomst\n                          "@nl;
+    rdfs:comment "Verwijzing naar de Herkomst van een Bemonsteringsobject."@nl;
+    vann:usageNote "De Herkomst beschrijf de oorsprong en historiek vh Bemonsteringsobject. Bv de manier van monstername of de werkwijze gevolgd bij een veldonderzoek."@nl.
+<https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert."@nl;
+    vann:usageNote "Bv het uniek nummer dat aan een Monster wordt toegekend of het numer van een meetstation."@nl.
+<http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.parameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            parameter\n                          "@nl;
+    rdfs:comment "Willekeurig gegeven gassocieerd met het Bemonsteringsobject."@nl;
+    vann:usageNote "Bv een parameter die een aspect van de Bemonstering beschrijft (bv hoogte bij een luchtopname) of een belangrijke omgevingsparameter (bv het waterpeil bij een boring)."@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van het Bemonsteringsobject."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#geobserveerdObject> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdObject\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote "TODO"@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetpuntparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetpuntparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetwaardeparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetwaardeparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#geobserveerdObject> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdObject\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote "TODO"@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#resultaat> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#waarde> a rdfs:Property;
+    rdfs:label "\n                            \n                            waarde\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetpuntparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetpuntparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetwaardeparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetwaardeparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#geobserveerdObject> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdObject\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote "TODO"@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#resultaat> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#waarde> a rdfs:Property;
+    rdfs:label "\n                            \n                            waarde\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetpuntparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetpuntparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetwaardeparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetwaardeparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#geobserveerdObject> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdObject\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote "TODO"@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#resultaat> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#waarde> a rdfs:Property;
+    rdfs:label "\n                            \n                            waarde\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingresultaat.fractiemetingwaarde> a rdfs:Property;
+    rdfs:label "\n                            \n                            fractiemetingwaarde\n                          "@nl;
+    rdfs:comment "Eén waarde in het resultaat van een Fractiemeting."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^bemonsteringsplaats> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^bemonsteringsplaats\n                          "@nl;
+    rdfs:comment "Plaats waar het Monster werd genomen."@nl;
+    vann:usageNote "Als het Monster een geassocieerdBemonsteringsobject heeft dat ondubbelzinnig gelocaliseerd is dan is dit attribuut overbodig. Uitzondering in dat geval is wanneer de plaats tov het Bemonsteringsobject daarbij van belang is, bv de diepte waarop een grondmonster is genomen bij een boring. Datatype is Geometrie om naast puntlocaties ook een ruimere begrenzing te kunnen opgeven (bv een diepte-interval in het geval van een grondmonster)."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^bemonsteringstijdstip> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^bemonsteringstijdstip\n                          "@nl;
+    rdfs:comment "Moment waarop het Grondmonster is genomen."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^grootte> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^grootte\n                          "@nl;
+    rdfs:comment "De fysieke omvang van het monster."@nl;
+    vann:usageNote "Afhankelijk van het materiaaltype gaat dit over lengte, massa, volume edm."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^huidigeLocatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^huidigeLocatie\n                          "@nl;
+    rdfs:comment "Plaats waar het Monster wordt bewaard."@nl;
+    vann:usageNote "Dit is typisch een indirecte aanduiding  van de locatie bv een verwijzing naar de Organisatie waar het Monster wordt bewaard en evt de positie daarbinnen (schap in een opslagplaats of lade in een museum)."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#materiaalklasse> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^materiaalklasse\n                          "@nl;
+    rdfs:comment "Basisclassificatie vh materiaal waaruit het Grondmonster bestaat."@nl;
+    vann:usageNote "Bv bodem, gesteente"@nl.
+<https://data.vlaanderen.be/ns/grondboringen#monstertype> a rdfs:Property;
+    rdfs:label "\n                            \n                            monstertype\n                          "@nl;
+    rdfs:comment "Materiële vorm die het Grondmonster aanneemt."@nl;
+    vann:usageNote "Bv of het gespoeld, gestoken, gekernd is."@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Input.referentie> a rdfs:Property;
+    rdfs:label "\n                            \n                            referentie\n                          "@nl;
+    rdfs:comment "Verwijzing naar originele Input."@nl;
+    vann:usageNote ""@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de input."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/sosa/isObservedBy> a rdfs:Property;
+    rdfs:label "\n                            \n                            isGeobserveerdMet\n                          "@nl;
+    rdfs:comment "Het kenmerktype van de gebruikte sensor tijdens de observatie."@nl;
+    vann:usageNote ""@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            \n                            isGeobserveerdMet\n                          "@nl;
+    rdfs:comment "Het kenmerktype van de gebruikte sensor tijdens de observatie."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetpuntparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetpuntparameter\n                          "@nl;
+    rdfs:comment "Parameter waarvan de fractie wordt gemeten."@nl;
+    vann:usageNote "De waarde van dit attribuut is een constante nl \"korreldiameter\"."@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetwaardeparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetwaardeparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#geobserveerdObject> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdObject\n                          "@nl;
+    rdfs:comment "Het grondmonster waarvan de Korrelverdeling werd bepaald."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#humusKalkVerwijderd> a rdfs:Property;
+    rdfs:label "\n                            \n                            humusKalkVerwijderd\n                          "@nl;
+    rdfs:comment "Geeft aan of voorafgaand aan de Observatie humus en kalk uit het Grondmonster werden verwijderd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#onderbrekingTot> a rdfs:Property;
+    rdfs:label "\n                            \n                            onderbrekingTot\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote "TODO"@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#onderbrekingVan> a rdfs:Property;
+    rdfs:label "\n                            \n                            onderbrekingVan\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote "TODO"@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^resultaat> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "De vastgestelde korrelverdeling."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/observaties-en-metingen#Object.waardeverschaffer> a rdfs:Property;
+    rdfs:label "\n                            \n                            waardeverschaffer\n                          "@nl;
+    rdfs:comment "Observaties die op het Object gebeuren."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime> a rdfs:Property;
+    rdfs:label "\n                            \n                            fenomeentijd\n                          "@nl;
+    rdfs:comment "Het moment waarop het resultaat van de Observatie van toepassing was."@nl;
+    vann:usageNote "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#ObservationContext.relatedObservation> a rdfs:Property;
+    rdfs:label "\n                            \n                            geassocieerdeObservatie\n                          "@nl;
+    rdfs:comment "Observaties waarvan de resultaten op een of andere manier samenhangen."@nl;
+    vann:usageNote "Het gaat om samenhang die van belang is om het resultaat van individuele Observaties te begrijpen, bv biotische relaties (dier A is roofdier en is aanwezig omdat dier B prooi voorkomt). Dergelijke relaties vereisen expliciet te worden beschreven (in tegenstelling tot relaties zoals het samenvallen van resultaten van Observaties in ruimte of tijd die impliciet mogen blijven). Ook nuttig voor relaties waarbij de output van Observatie A de input vormt voor Observatie B."@nl.
+<http://www.w3.org/ns/sosa/usedProcedure> a rdfs:Property;
+    rdfs:label "\n                            \n                            gebruikteProcedure\n                          "@nl;
+    rdfs:comment "De gebruikte procedure van de observatie."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime> a rdfs:Property;
+    rdfs:label "\n                            \n                            geldigeTijd\n                          "@nl;
+    rdfs:comment "Periode waarvoor het resultaat van de Observatie geldt."@nl;
+    vann:usageNote "Bv nuttig voor weersvoorspellingen."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdKenmerk\n                          "@nl;
+    rdfs:comment "Kenmerk dat men observeert vh geobserveerdObject."@nl;
+    vann:usageNote "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de vegetatie in een gebied te achterhalen meten we de kleurreflectie op het aardoppervlak. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan. Bv de zuurtegraad van een Bron is eigenlijk de zuurtegraad van het Waterlichaam van de Aquifer die door de Bron is aangeboord."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdObject\n                          "@nl;
+    rdfs:comment "Object dat men observeert."@nl;
+    vann:usageNote "Dat kan het Object zelf zijn of een proxy ervan, ttz een Bemonsteringsobject. OPMERKING: In dat laatste geval weet men soms pas na het observeren welke real-world Objecten men juist geobserveerd heeft."@nl.
+<https://data.vlaanderen.be/ns/observaties-en-metingen#Observatie.identificator> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "De persoon of het ding dat dient om de observatie vast te stellen."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/observaties-en-metingen#Observatie.opdracht> a rdfs:Property;
+    rdfs:label "\n                            \n                            opdracht\n                          "@nl;
+    rdfs:comment "Opdracht in het kader waarvan de Observatie plaatsvindt."@nl;
+    vann:usageNote "Bv de Opdracht voor een veldonderzoek of voor het uitvoeren van specifieke Metingen of analyses van een Monster."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            parameter\n                          "@nl;
+    rdfs:comment "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie."@nl;
+    vann:usageNote "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is de diepte in een waterput waarop de waterkwaliteit is gemeten of de omgevingstemperatuur bij het meten van de vochtigheidsgraad."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "De waarde van het geobserveerdeKenmerk als resultaat van de Observatie."@nl;
+    vann:usageNote "Het resultaat kan van om het even welk type zijn aangezien om het even welk Kenmerk van om het even welk type Object kan worden geobserveerd. CONSTRAINT: Het type van het resultaat van de Observatie moet kloppen met het geobserveerdKenmerk en de verkregen waarde moet binnen het bereik vallen van het geobserveerdKenmerk."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultQuality> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaatkwaliteit\n                          "@nl;
+    rdfs:comment "Mate waarin het resultaat van de Observatie voldoet aan de vereisten of verwachtingen."@nl;
+    vann:usageNote "Het gaat hier om gegevens die eigen zijn aan de Observatie en complementair aan de beschrijving van de procedure die bij de Observatie is gevolgd (analysemethode edm, zie klasse Proces) wat op zich ook al iets zegt over de kwaliteit van het resultaat."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultTime> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaattijd\n                          "@nl;
+    rdfs:comment "Tijdstip waarop het resultaat van de Observatie werd bekomen."@nl;
+    vann:usageNote "Is voor sommige Observaties gelijk aan de fenomeentijd maar kan ook verschillen, bv bij het uitvoeren van een analyse op een Monster dat eerder (en doorgaans dan ook eders) werd genomen of bij sensormetingen die pas later worden verwerkt. Ook bruikbaar om herhaalde Observaties bv op eenzelfde Monster uiteen te houden. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze van toepassing zou moeten zijn."@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Het type van observatie."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/observaties-en-metingen#Observatie.uitgevoerdDoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            uitgevoerdDoor\n                          "@nl;
+    rdfs:comment "Agent die de Observatie heeft uitgevoerd."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/sosa/madeBySensor> a rdfs:Property;
+    rdfs:label "\n                            \n                            uitgevoerdMetSensor\n                          "@nl;
+    rdfs:comment "Sensor waarmee de Observatie is uitgevoerd."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/ssn/implementedBy> a rdfs:Property;
+    rdfs:label "\n                            \n                            geïmplementeerdMet\n                          "@nl;
+    rdfs:comment "Sensor waarmee de Observatieprocedure is of moet worden uitgevoerd."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/ssn/hasInput> a rdfs:Property;
+    rdfs:label "\n                            \n                            input\n                          "@nl;
+    rdfs:comment "Verwijzing naar de Input die de procedure vereist."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/ssn/hasOutput> a rdfs:Property;
+    rdfs:label "\n                            \n                            output\n                          "@nl;
+    rdfs:comment "Verwijzing naar de Output die de Procedure genereert."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Observatieprocedure.parameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            parameter\n                          "@nl;
+    rdfs:comment "Willekeurig gegeven gassocieerd met de Observatieprocedure."@nl;
+    vann:usageNote "Bv een parameter die een aspect van de Observatieprocedure beschrijft (bv de vereiste hoogte voor het observeren van windsnelheid) of een noodzakelijke omgevingsparameter (bv temperatuurbereik waarbinnen een labo-analyse moet plaatsvinden)."@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Observatieprocedure.specificatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            specificatie\n                          "@nl;
+    rdfs:comment "Verwijzing naar een document dat de Observatieprocedure beschrijft."@nl;
+    vann:usageNote ""@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de Observatieprocedure."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Output.referentie> a rdfs:Property;
+    rdfs:label "\n                            \n                            referentie\n                          "@nl;
+    rdfs:comment "Verwijzing naar originele Output."@nl;
+    vann:usageNote ""@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de Output."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetpuntparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetpuntparameter\n                          "@nl;
+    rdfs:comment "Kenmerk in functie waarvan het geobserveerdKenmerk varieert."@nl;
+    vann:usageNote "De waarde van dit attribuut is een constante nl \"druk\"."@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetwaardeparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetwaardeparameter\n                          "@nl;
+    rdfs:comment "Kenmerk dat men observeert vh geobserveerdObject."@nl;
+    vann:usageNote "De waarde van dit attribuut is een constante nl \"hoogte\"."@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#diameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            diameter\n                          "@nl;
+    rdfs:comment "Diameter van het Grondmonster."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#geobserveerdObject> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdObject\n                          "@nl;
+    rdfs:comment "Het Grondmonster waarop de Samendrukbaarheidsproef wordt uitgevoerd;"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#initiëleHoogte> a rdfs:Property;
+    rdfs:label "\n                            \n                            initiëleHoogte\n                          "@nl;
+    rdfs:comment "De hoogte van het Grondmonster bij aanvang van de proef."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#massa> a rdfs:Property;
+    rdfs:label "\n                            \n                            massa\n                          "@nl;
+    rdfs:comment "De massa van het Grondmonster."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#resultaat> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "Resultaat van de proef."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#waarde> a rdfs:Property;
+    rdfs:label "\n                            \n                            waarde\n                          "@nl;
+    rdfs:comment "Hoogte van het Grondmonster bij een bepaalde druk."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetpuntparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetpuntparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetwaardeparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetwaardeparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#gassocieerdeSchuifweerstandsproef> a rdfs:Property;
+    rdfs:label "\n                            \n                            geassocieerdeSchuifweerstandsproef\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#geobserveerdObject> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdObject\n                          "@nl;
+    rdfs:comment "Grondmonster waarvoor de schuifweerstand wordt bepaald."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#resultaat> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#waarde> a rdfs:Property;
+    rdfs:label "\n                            \n                            waarde\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetpuntparameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetpuntparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#^meetwaardearameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^meetwaardeparameter\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#geassocieerdeSchuifweerstandsproef> a rdfs:Property;
+    rdfs:label "\n                            \n                            geassocieerdeSchuifweerstandsproef\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#geobserveerdObject> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdObject\n                          "@nl;
+    rdfs:comment "Grondmonster waarvoor de schuifweerstand wordt bepaald."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#resultaat> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#consolidatiespanning> a rdfs:Property;
+    rdfs:label "\n                            \n                            consolidatiespanning\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#typeBreuk> a rdfs:Property;
+    rdfs:label "\n                            \n                            typeBreuk\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#waarde> a rdfs:Property;
+    rdfs:label "\n                            \n                            waarde\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/ssn/implements> a rdfs:Property;
+    rdfs:label "\n                            \n                            implementeert\n                          "@nl;
+    rdfs:comment "Observatieprocedure die door de Sensor wordt toegepast."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/sosa/observes> a rdfs:Property;
+    rdfs:label "\n                            \n                            observeert\n                          "@nl;
+    rdfs:comment "Kenmerk dat door de Sensor wordt geobserveerd."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/sosa/madeObservation> a rdfs:Property;
+    rdfs:label "\n                            \n                            uitgevoerdeObservatie\n                          "@nl;
+    rdfs:comment "Observatie die met de Sensor is uitrgevoerd."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name> a rdfs:Property;
+    rdfs:label "\n                            naam\n                          "@nl;
+    rdfs:comment "Naam vh type van de waarde."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value> a rdfs:Property;
+    rdfs:label "\n                            waarde\n                          "@nl;
+    rdfs:comment "Kwalitatieve of kwantitatieve invulling van de waarde."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#doorlatendheidscoëfficient> a rdfs:Property;
+    rdfs:label "\n                            doorlatendheidscoëfficient\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#n> a rdfs:Property;
+    rdfs:label "\n                            n\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#volgnummer> a rdfs:Property;
+    rdfs:label "\n                            volgnummer\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde.meetpunt> a rdfs:Property;
+    rdfs:label "\n                            meetpunt\n                          "@nl;
+    rdfs:comment "Waarde van het meetpunt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde.meetpuntBovengrens> a rdfs:Property;
+    rdfs:label "\n                            meetpuntBovengrens\n                          "@nl;
+    rdfs:comment "Bovengrens van een klasse van waarden van meetpunten."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde.meetpuntOndergrens> a rdfs:Property;
+    rdfs:label "\n                            meetpuntOndergrens\n                          "@nl;
+    rdfs:comment "Ondergrens van een klasse van waarden van meetpunten."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde.meetpuntwaarde> a rdfs:Property;
+    rdfs:label "\n                            meetwaardeparameter\n                          "@nl;
+    rdfs:comment "Waarde van de fractie."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#doorlatendheidscoëfficient> a rdfs:Property;
+    rdfs:label "\n                            doorlatendheidscoëfficient\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#druk> a rdfs:Property;
+    rdfs:label "\n                            druk\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#volgnummer> a rdfs:Property;
+    rdfs:label "\n                            volgnummer\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+schemas:unitText a rdfs:Property;
+    rdfs:label "\n                            eenheid\n                          "@nl;
+    rdfs:comment "De eenheid waarin de waarde is uitgedrukt."@nl;
+    vann:usageNote "Te gebruiken als geen standaard eenheid gekend is."@nl.
+schemas:unitCode a rdfs:Property;
+    rdfs:label "\n                            standaard eenheid\n                          "@nl;
+    rdfs:comment "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
+    vann:usageNote ""@nl.
+schemas:value a rdfs:Property;
+    rdfs:label "\n                            waarde\n                          "@nl;
+    rdfs:comment "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
+    vann:usageNote ""@nl.
+eu:startTime a rdfs:Property;
+    rdfs:label "\n                            begin\n                          "@nl;
+    rdfs:comment "Aanvang van de tijdsduur."@nl;
+    vann:usageNote ""@nl.
+eu:endTime a rdfs:Property;
+    rdfs:label "\n                            einde\n                          "@nl;
+    rdfs:comment "Einde vd tijdsduur."@nl;
+    vann:usageNote ""@nl.
+eu:startTime a rdfs:Property;
+    rdfs:label "\n                            begin\n                          "@nl;
+    rdfs:comment "Aanvang van de tijdsduur."@nl;
+    vann:usageNote ""@nl.
+eu:endTime a rdfs:Property;
+    rdfs:label "\n                            einde\n                          "@nl;
+    rdfs:comment "Einde vd tijdsduur."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#druk> a rdfs:Property;
+    rdfs:label "\n                            druk\n                          "@nl;
+    rdfs:comment "Op het Grondmonster uitgeoefende druk."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#hoogte> a rdfs:Property;
+    rdfs:label "\n                            hoogte\n                          "@nl;
+    rdfs:comment "Gemeten hoogte van het grondmonster."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#trap> a rdfs:Property;
+    rdfs:label "\n                            trap\n                          "@nl;
+    rdfs:comment "Nummer van de meting."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#zwel> a rdfs:Property;
+    rdfs:label "\n                            zwel\n                          "@nl;
+    rdfs:comment "Geeft aan of de druk gemeten werd na vermindering van de druk."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#breukcriterium> a rdfs:Property;
+    rdfs:label "\n                            breukcriterium\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#effectieveCohesie> a rdfs:Property;
+    rdfs:label "\n                            effectieveCohesie\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#effectieveWrijvingshoek> a rdfs:Property;
+    rdfs:label "\n                            effectieveWrijvingshoek\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#schijnbareCohesie> a rdfs:Property;
+    rdfs:label "\n                            schijnbareCohesie\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#schijnbareWrijvingshoek> a rdfs:Property;
+    rdfs:label "\n                            schijnbareWrijvingshoek\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#breukcriterium> a rdfs:Property;
+    rdfs:label "\n                            breukcriterium\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#sigma1Korrelspanning> a rdfs:Property;
+    rdfs:label "\n                            sigma1Korrelspanning\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#sigma1Totaalspanning> a rdfs:Property;
+    rdfs:label "\n                            sigma1Totaalspanning\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#sigma3Korrelspanning> a rdfs:Property;
+    rdfs:label "\n                            sigma3Korrelspanning\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#sigma3Totaalspanning> a rdfs:Property;
+    rdfs:label "\n                            sigma3Totaalspanning\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#vervorming> a rdfs:Property;
+    rdfs:label "\n                            vervorming\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#doorlatendheidscoëfficient> a rdfs:Property;
+    rdfs:label "\n                            doorlatendheidscoëfficient\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#druk> a rdfs:Property;
+    rdfs:label "\n                            druk\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bo-observaties#volgnummer> a rdfs:Property;
+    rdfs:label "\n                            volgnummer\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+_:df_585_6 rdf:first _:df_585_1;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/> foaf:maker _:df_585_6.
+_:df_585_7 rdf:first _:df_585_3;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/> <http://purl.org/ontology/bibo/editor> _:df_585_7.
+_:df_585_8 rdf:first _:df_585_5;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/bo-observaties/ontwerpstandaard/2021-08-01/> dcterms:contributor _:df_585_8.

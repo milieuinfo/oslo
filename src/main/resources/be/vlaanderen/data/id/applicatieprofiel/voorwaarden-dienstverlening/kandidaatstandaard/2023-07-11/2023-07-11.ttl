@@ -1,0 +1,374 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/> a <http://purl.org/ontology/bibo/Document>;
+    dcterms:language "nl"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/#ref> a <http://purl.org/ontology/bibo/Chapter>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/#ref>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/> dcterms:type dcmitype:Text;
+    dcterms:title "Deze specificatie"@nl;
+    <http://creativecommons.org/ns#attributionURL> <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    <http://creativecommons.org/ns#attributionName> "Digitaal Vlaanderen"@nl;
+    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<http://data.europa.eu/m8g/cccev#constrains> a rdfs:Property;
+    rdfs:label "\n                            \n                            \n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote ""@nl.
+schemas:endDate a rdfs:Property;
+    rdfs:label "\n                            \n                            afleveringsdatum\n                          "@nl;
+    rdfs:comment "De datum waarop het bewijs is afgeleverd."@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Een beschrijving van het bewijs."@nl;
+    vann:usageNote ""@nl.
+dcterms:subject a rdfs:Property;
+    rdfs:label "\n                            \n                            gaat over\n                          "@nl;
+    rdfs:comment "Agent die het onderwerp is in de geleverde Evidence."@nl;
+    vann:usageNote ""@nl.
+<https://www.w3.org/2006/time#ProperInterval> a rdfs:Property;
+    rdfs:label "\n                            \n                            geldigheidsperiode\n                          "@nl;
+    rdfs:comment "De periode waarin het Bewijs geldig is."@nl;
+    vann:usageNote ""@nl.
+dcterms:creator a rdfs:Property;
+    rdfs:label "\n                            \n                            gemaaktDoor\n                          "@nl;
+    rdfs:comment "Agent die het Bewijs produceert."@nl;
+    vann:usageNote "Het produceren van bewijs kan het genereren van een document of het extraheren van gegevens uit een database inhouden."@nl.
+dcterms:identifier a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Een identificator voor het Bewijs."@nl;
+    vann:usageNote ""@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "De officiële naam voor het Bewijs."@nl;
+    vann:usageNote ""@nl.
+eu:supportsRequirement a rdfs:Property;
+    rdfs:label "\n                            \n                            ondersteuntVoorwaarde\n                          "@nl;
+    rdfs:comment "De Voorwaarde die het bewijs ondersteunt."@nl;
+    vann:usageNote ""@nl.
+eu:supportsValue a rdfs:Property;
+    rdfs:label "\n                            \n                            ondersteuntWaarde\n                          "@nl;
+    rdfs:comment "Ondersteunde waarde die het Bewijs bevat."@nl;
+    vann:usageNote ""@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            \n                            ondersteuntWaarde\n                          "@nl;
+    rdfs:comment "Ondersteunde waarde die het Bewijs bevat."@nl;
+    vann:usageNote ""@nl.
+dcterms:language a rdfs:Property;
+    rdfs:label "\n                            \n                            taal\n                          "@nl;
+    rdfs:comment "De taal of talen waarin het Bewijs geleverd wordt."@nl;
+    vann:usageNote ""@nl.
+prov:Location a rdfs:Property;
+    rdfs:label "\n                            \n                            toepassingsgebied\n                          "@nl;
+    rdfs:comment "Het gebied waarbinnen het bewijs van toepassing is."@nl;
+    vann:usageNote ""@nl.
+dcterms:publisher a rdfs:Property;
+    rdfs:label "\n                            \n                            uitgegevenDoor\n                          "@nl;
+    rdfs:comment "Agent die wettelijk verantwoordelijk is voor de Bewijsstukken, bijv. een wettelijke instantie."@nl;
+    vann:usageNote "Deze eigenschap legt gevallen vast zoals wanneer een wettelijke instantie verantwoordelijk is voor de regelgeving over een Bewijs (bijv. een ministerie)."@nl.
+eu:isProvidedBy a rdfs:Property;
+    rdfs:label "\n                            \n                            verstrektDoor\n                          "@nl;
+    rdfs:comment "Agent die het Bewijsmateriaal aanlevert."@nl;
+    vann:usageNote "Agent die Bewizen verzenden zijn meestal de Agenten die het Bewijsmateriaal aanvragen of dienstverleners die optreden namens de aanvragende Agenten, zoals softwareontwikkelaars."@nl.
+<http://data.europa.eu/m8g/cccev#confidentionalityLevelType> a rdfs:Property;
+    rdfs:label "\n                            \n                            VertrouwelijkheidLevelType\n                          "@nl;
+    rdfs:comment "Een classificatie van de informatieveiligheid."@nl;
+    vann:usageNote "Classificaties moeten door een organisatie/land worden vastgesteld als resultaat van een beveiligingsbeoordeling."@nl.
+<http://data.europa.eu/m8g/cccev#voldoetAan> a rdfs:Property;
+    rdfs:label "\n                            \n                            vodoetAan\n                          "@nl;
+    rdfs:comment "Het BewijsType waartoe het Bewijs voldoet."@nl;
+    vann:usageNote ""@nl.
+<http://data.europa.eu/m8g/cccev#evidenceTypeClassification> a rdfs:Property;
+    rdfs:label "\n                            \n                            bewijstypeClassificatie\n                          "@nl;
+    rdfs:comment "Een classificatiecode om de verwachte lay-out en inhoud van een Bewijs te specificeren."@nl;
+    vann:usageNote "Aanbieden van gemeenschappelijke lijst van bewijstypes binnen een specifiek domein."@nl.
+<https://www.w3.org/2006/time#ProperInterval> a rdfs:Property;
+    rdfs:label "\n                            \n                            geldigheidsduur\n                          "@nl;
+    rdfs:comment "Temporele voorwaarde voor de geldigheidsperiode van het Bewijstype."@nl;
+    vann:usageNote ""@nl.
+dcterms:identifier a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Ondubbelzinnige verwijzing naar het Bewijstype."@nl;
+    vann:usageNote ""@nl.
+eu:isSpecifiedIn a rdfs:Property;
+    rdfs:label "\n                            \n                            isGespecifieerdIn\n                          "@nl;
+    rdfs:comment "De BewijsTypeLijst waartoe het BewijsType behoort."@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Een beschrijving van een bewijs type lijst."@nl;
+    vann:usageNote "De toelichting kan informatie bevatten over de aard, attributen, gebruiken of enige andere aanvullende informatie over de Bewijstypelijst."@nl.
+dcterms:identifier a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Ondubbelzinnige verwijzing naar de Bewijs Type Lijst."@nl;
+    vann:usageNote ""@nl.
+skos:prefLabel a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "De naam van de Bewijs Type Lijst."@nl;
+    vann:usageNote ""@nl.
+eu:specifiesEvidenceType a rdfs:Property;
+    rdfs:label "\n                            \n                            specifieert\n                          "@nl;
+    rdfs:comment "Bewijstype opgenomen in deze lijst met bewijstypen."@nl;
+    vann:usageNote ""@nl.
+<http://data.europa.eu/m8g/cccev#bias> a rdfs:Property;
+    rdfs:label "\n                            \n                            bias\n                          "@nl;
+    rdfs:comment "Parameter gebruikt om de evaluatie van het Criterium aan te passen."@nl;
+    vann:usageNote "De bias parameter probeert een systematische fout te corrigeren. Bijvoorbeeld bij aanbestedingen komt een bias voor het binnenland overeen met de \"aanwezigheid van lokale voorkeuren die de internationale specialisatie en middelentoewijzing verstoren\". Gekwantificeerd kan deze systematische fout worden verwijderd."@nl.
+<http://data.europa.eu/m8g/cccev#weight> a rdfs:Property;
+    rdfs:label "\n                            \n                            gewicht\n                          "@nl;
+    rdfs:comment "Relatief belang van het criterium."@nl;
+    vann:usageNote "Het gewicht moet tussen 0 en 1 liggen. Gewoonlijk kunnen alle criteria worden geïntegreerd binnen een gewogen som die gelijk is aan 1."@nl.
+<http://data.europa.eu/m8g/cccev#weightingConsiderationDescription> a rdfs:Property;
+    rdfs:label "\n                            \n                            wegingsBeschrijving\n                          "@nl;
+    rdfs:comment "Uitleg over de weging van een Criterium."@nl;
+    vann:usageNote "Deze beschrijving geeft de visie van de maker van de Criteriumgewichten op hoe deze geïnterpreteerd en gebruikt moeten worden tijdens het evaluatieproces."@nl.
+<http://data.europa.eu/m8g/cccev#weightingType> a rdfs:Property;
+    rdfs:label "\n                            \n                            wegingsType\n                          "@nl;
+    rdfs:comment "Aanduiding hoe het gewicht moet worden geïnterpreteerd in een complexe evaluatie-uitdrukking, bijvoorbeeld als een percentage in een evaluatie-uitdrukking."@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "De beschrijving van het Informatie Concept."@nl;
+    vann:usageNote "De toelichting kan informatie bevatten over de aard, attributen, gebruiken of enige andere aanvullende informatie over het Informatieconcept."@nl.
+dcterms:identifier a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Ondubbelzinnige verwijzing naar het Informatie Concept."@nl;
+    vann:usageNote ""@nl.
+skos:prefLabel a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "De naam van het Informatie Concept"@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "De categorie waartoe het Informatie Concept behoort."@nl;
+    vann:usageNote "Naast de uitdrukking van de verwachte waarde, kan de typeclassificatie worden gebruikt om het soort waarde uit te drukken dat het informatieconcept aan het verwerken is. Dit kunnen primitieve typen zijn zoals een datum of een string, maar ook meer zakelijke domeinterminologie zoals leeftijd of aantal werknemers. Het verdient aanbeveling om het gebruik goed te documenteren."@nl.
+eu:expressionOfExpectedValue a rdfs:Property;
+    rdfs:label "\n                            \n                            uitdrukkingVerwachteWaarde\n                          "@nl;
+    rdfs:comment "Formulering in een formele taal van de verwachte waarde(n) voor het Informatieconcept die is afgestemd op de concepten uit de gedefinieerde Voorwaarden en moet worden gerespecteerd door de aangeleverde Ondersteunde Waarden."@nl;
+    vann:usageNote "TODO"@nl.
+<https://data.vlaanderen.be/ns/generiek#plaats> a rdfs:Property;
+    rdfs:label "\n                            \n                            plaats\n                          "@nl;
+    rdfs:comment "Plaatsnaam waarmee de Jurisdictie kan worden aangeduid."@nl;
+    vann:usageNote "Bv de naam van een land."@nl.
+locn:geometry a rdfs:Property;
+    rdfs:label "\n                            \n                            Geometrie van de plaats of het gebied.\n                          "@nl;
+    rdfs:comment "Geometrie van de plaats of het gebied."@nl;
+    vann:usageNote ""@nl.
+rdfs:label a rdfs:Property;
+    rdfs:label "\n                            \n                            plaatsnaam\n                          "@nl;
+    rdfs:comment "Naam van de plaats of van het gebied."@nl;
+    vann:usageNote ""@nl.
+eu:providesValueFor a rdfs:Property;
+    rdfs:label "\n                            \n                            geeftWaardeAan\n                          "@nl;
+    rdfs:comment "De OndersteunendeWaarde geeft de benodigde waarde aan Informatieconcept"@nl;
+    vann:usageNote ""@nl.
+<http://data.europa.eu/m8g/cccev#query> a rdfs:Property;
+    rdfs:label "\n                            \n                            query\n                          "@nl;
+    rdfs:comment "Zoekopdracht waarmee de waarde voor het Informatieconcept kan worden opgehaald uit de Bewijs-gegevens"@nl;
+    vann:usageNote "De query moet worden uitgevoerd op de bedrijfsgegevens die door het ondersteunende bewijsmateriaal worden verstrekt. Om de query op de verstrekte gegevens te kunnen evalueren, moet het formaat van de verstrekte gegevens worden afgestemd op de query-expressie. Als de verstrekte gegevens bijvoorbeeld XML zijn, kan een query in XPath worden verwacht. Deze afstemming is onderdeel van de uitvoeringsafspraken die uitvoerders moeten maken."@nl.
+<http://data.europa.eu/m8g/cccev#value> a rdfs:Property;
+    rdfs:label "\n                            \n                            waarde\n                          "@nl;
+    rdfs:comment "Waarde voor het Informatieconcept dat het Bewijs ondersteunt"@nl;
+    vann:usageNote ""@nl.
+<http://purl.org/vocab/cpsv#Participatie.agent> a rdfs:Property;
+    rdfs:label "\n                            \n                            Agent\n                          "@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "De beschrijving van de Participatie."@nl;
+    vann:usageNote ""@nl.
+<http://purl.org/vocab/cpsv#Participatie.publiekeDienstverlening> a rdfs:Property;
+    rdfs:label "\n                            \n                            PubliekeDienstverlening\n                          "@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    vann:usageNote ""@nl.
+eu:role a rdfs:Property;
+    rdfs:label "\n                            \n                            rol\n                          "@nl;
+    rdfs:comment "Het geeft de gespeelde rol weer van de Agent ten opzichte van de publieke dienstverlening."@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Beschrijving van de Procedure"@nl;
+    vann:usageNote ""@nl.
+dcterms:identifier a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Unieke identificator van de Procedure"@nl;
+    vann:usageNote ""@nl.
+cpsv:implements a rdfs:Property;
+    rdfs:label "\n                            \n                            implementeert\n                          "@nl;
+    rdfs:comment "Het koppelt een Procedure aan relevante wetgeving of beleidsdocumenten, d.w.z. de juridische bron waaronder de regels worden gedefinieerd."@nl;
+    vann:usageNote ""@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Naam van de Procedure"@nl;
+    vann:usageNote ""@nl.
+dcterms:language a rdfs:Property;
+    rdfs:label "\n                            \n                            taal\n                          "@nl;
+    rdfs:comment "De beschikbare taal van de Procedure"@nl;
+    vann:usageNote "Dit kunnen één of meerdere talen zijn, bijvoorbeeld in landen met meer dan één officiële taal"@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Type van de Procedure"@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Een beschrijving van de Publieke Dienstverlening"@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            dienstverleningstype\n                          "@nl;
+    rdfs:comment "Het type/soort van public service (bv advies, financieel voordeel, ...)"@nl;
+    vann:usageNote "De ttl file van de codelijst vindt u hier: raw.githubusercontent.com/Informatievlaanderen/ipdc-lpdc/main/codelijsten/type.ttl"@nl.
+dcterms:audience a rdfs:Property;
+    rdfs:label "\n                            \n                            doelpubliek\n                          "@nl;
+    rdfs:comment "Het doelpubliek waarvoor de Publieke Dienstverlening bedoeld is."@nl;
+    vann:usageNote ""@nl.
+eu:hasLegalResource a rdfs:Property;
+    rdfs:label "\n                            \n                            heeftRechtsgrond\n                          "@nl;
+    rdfs:comment "Het geeft aan op welke Rechtsgrond (bijv. wetgeving) de overheidsdienst betrekking heeft, werkt of zijn rechtsgrondslag heeft."@nl;
+    vann:usageNote ""@nl.
+eu:holdsRequirement a rdfs:Property;
+    rdfs:label "\n                            \n                            heeftVoorwaarde\n                          "@nl;
+    rdfs:comment "Het koppelt een Publoeke Dienstverlening aan een klasse die de Voorwaarde beschrijft."@nl;
+    vann:usageNote "Het beschrijft de behoefte aan of het gebruik van de dienst, zoals woonachtig zijn op een bepaalde locatie, ouder zijn dan een bepaalde leeftijd etc. De Voorwaarde klasse is gedefinieerd in de Core Criterion en Core Evidence Vocabulary."@nl.
+dcterms:identifier a rdfs:Property;
+    rdfs:label "\n                            \n                            identificatie\n                          "@nl;
+    rdfs:comment "Unieke identificator van de Publieke Dienstverlening"@nl;
+    vann:usageNote ""@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Naam van de Publieke Dienstverlening."@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            overheidsfuncties\n                          "@nl;
+    rdfs:comment "Het doel van een overheidsactiviteit, waar de openbare dienst voor bedoeld is."@nl;
+    vann:usageNote ""@nl.
+dcterms:spatial a rdfs:Property;
+    rdfs:label "\n                            \n                            ruimtelijkeDekking\n                          "@nl;
+    rdfs:comment "Een identificeerbare geografische plaats of benoemde plaats."@nl;
+    vann:usageNote ""@nl.
+eu:sector a rdfs:Property;
+    rdfs:label "\n                            \n                            sector\n                          "@nl;
+    rdfs:comment "De industrie of sector waar een overheidsdienst betrekking op heeft of voor bedoeld is."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/adms#status> a rdfs:Property;
+    rdfs:label "\n                            \n                            status\n                          "@nl;
+    rdfs:comment "Het geeft aan of een overheidsdienst actief, inactief, in ontwikkeling enz. is volgens een gecontroleerde woordenlijst."@nl;
+    vann:usageNote ""@nl.
+dcterms:language a rdfs:Property;
+    rdfs:label "\n                            \n                            taal\n                          "@nl;
+    rdfs:comment "De taal waarin de Publieke Dienstverlening beschikbaar is."@nl;
+    vann:usageNote ""@nl.
+eu:processingTime a rdfs:Property;
+    rdfs:label "\n                            \n                            verwerkingstijd\n                          "@nl;
+    rdfs:comment "De (geschatte) tijd die nodig is om een openbare dienst uit te voeren."@nl;
+    vann:usageNote ""@nl.
+cpsv:follows a rdfs:Property;
+    rdfs:label "\n                            \n                            volgt\n                          "@nl;
+    rdfs:comment "De Procedure die de Publieke Dienstverlening volgt"@nl;
+    vann:usageNote ""@nl.
+dcterms:spatial a rdfs:Property;
+    rdfs:label "\n                            \n                            Werkingsgebied\n                          "@nl;
+    rdfs:comment "Administratief gebied dat de Publieke Organisatie dekt."@nl;
+    vann:usageNote ""@nl.
+dcterms:relation a rdfs:Property;
+    rdfs:label "\n                            \n                            gerelateerdAan\n                          "@nl;
+    rdfs:comment "Een andere instantie van de Rechtsgrond klasse die gerelateerd is aan de specifieke Rechtsgrond die beschreven wordt."@nl;
+    vann:usageNote ""@nl.
+dcterms:description a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Een korte uitleg die het begrip van de Voorwaarde ondersteunt."@nl;
+    vann:usageNote "De toelichting kan informatie bevatten over de aard, kenmerken, gebruiken of enige andere aanvullende informatie over de Voorwaarde."@nl.
+eu:hasEvidenceTypeList a rdfs:Property;
+    rdfs:label "\n                            \n                            heeftBewijstypelijst\n                          "@nl;
+    rdfs:comment "Bewijstypelijst die de soorten bewijs specificeert die nodig zijn om aan de Voorwaarde te voldoen."@nl;
+    vann:usageNote "Een of meer lijsten met BewijsTypes kunnen een Voorwaarde ondersteunen. Aan ten minste één van hen moet worden voldaan door het antwoord op de Voorwaarde."@nl.
+eu:hasConcept a rdfs:Property;
+    rdfs:label "\n                            \n                            heeftConcept\n                          "@nl;
+    rdfs:comment "Informatieconcept waarvoor een waarde wordt verwacht door de Voorwaarde."@nl;
+    vann:usageNote "Informatieconcepten die zijn gedefinieerd voor specifieke vereisten vormen ook de basis voor het specificeren van de ondersteunde waarde die een bewijs moet bieden."@nl.
+<http://data.europa.eu/m8g/cccev#heeftOndersteunendBewijs> a rdfs:Property;
+    rdfs:label "\n                            \n                            heeftOndersteunendBewijs\n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote ""@nl.
+<http://data.europa.eu/m8g/cccev#heeftVoorwaarde> a rdfs:Property;
+    rdfs:label "\n                            \n                            heeftVoorwaarde\n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote ""@nl.
+dcterms:identifier a rdfs:Property;
+    rdfs:label "\n                            \n                            identificatie\n                          "@nl;
+    rdfs:comment "Ondubbelzinnige verwijzing naar de Voorwaarde."@nl;
+    vann:usageNote ""@nl.
+eu:isRequirementOf a rdfs:Property;
+    rdfs:label "\n                            \n                            isVoorwaardeVan\n                          "@nl;
+    rdfs:comment "Verwijzing naar de Voorwaarde waarvan dit een ondergeschikte Voorwaarde is."@nl;
+    vann:usageNote "Verwijzing naar Voorwaarde Minimumleeftijd 18 die als ondergeschikte Voorwaarden heeft Leeftijd moet worden verstrekt."@nl.
+skos:prefLabel a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Naam van de Voorwaarde."@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "De categorie waartoe de voorwaarde hoort."@nl;
+    vann:usageNote ""@nl.
+eu:fulfils a rdfs:Property;
+    rdfs:label "\n                            \n                            vervult\n                          "@nl;
+    rdfs:comment "De Procedure die de Voorwaarde vervult."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/generiek#string> a rdfs:Property;
+    rdfs:label "\n                            String\n                          "@nl;
+    rdfs:comment "De string"@nl;
+    vann:usageNote ""@nl.
+dcterms:language a rdfs:Property;
+    rdfs:label "\n                            Taal\n                          "@nl;
+    rdfs:comment "De taal."@nl;
+    vann:usageNote ""@nl.
+<http://data.europa.eu/m8g/cccev#duratie> a rdfs:Property;
+    rdfs:label "\n                            duratie\n                          "@nl;
+    rdfs:comment "Omvang van de tijdsperiode."@nl;
+    vann:usageNote "Hoeveelheid tijd tussen starttijd en eindtijd."@nl.
+<http://www.w3.org/2006/time#hasEnd> a rdfs:Property;
+    rdfs:label "\n                            eindtijd\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de Periode is geëindigd."@nl;
+    vann:usageNote ""@nl.
+<http://data.europa.eu/m8g/cccev#starttijd> a rdfs:Property;
+    rdfs:label "\n                            startijd\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de Periode is gestart."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/voorwaarden-dienstverlening/kandidaatstandaard/2023-07-11/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.

@@ -1,0 +1,665 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/> a <http://purl.org/ontology/bibo/Document>;
+    dcterms:language "nl"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+_:df_557_1 a foaf:Person;
+    foaf:lastName "Somers"@nl;
+    foaf:firstName "Stefan"@nl;
+    foaf:workplaceHomepage <https://stad.gent/nl>.
+_:df_557_3 a foaf:Person;
+    foaf:lastName "Van Den Brande"@nl;
+    foaf:firstName "Hans"@nl;
+    foaf:workplaceHomepage <https://stad.gent/nl>.
+_:df_557_5 a foaf:Person;
+    foaf:lastName "Verstraeten"@nl;
+    foaf:firstName "Bert"@nl;
+    foaf:workplaceHomepage <https://stad.gent/nl>.
+_:df_557_7 a foaf:Person;
+    foaf:lastName "De Meester"@nl;
+    foaf:firstName "Ben"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:ben.demeester@vlaanderen.be>.
+_:df_557_9 a foaf:Person;
+    foaf:lastName "de Vleeschauwer"@nl;
+    foaf:firstName "Els"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:els.devleeschauwer@vlaanderen.be>.
+_:df_557_11 a foaf:Person;
+    foaf:lastName "Eveline"@nl;
+    foaf:firstName "Vlassenroot"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:eveline.vlassenroot@vlaanderen.be>.
+_:df_557_13 a foaf:Person;
+    foaf:lastName "Kim"@nl;
+    foaf:firstName "Leemans"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:kim.leemans@vlaanderen.be>.
+_:df_557_15 a foaf:Person;
+    foaf:lastName "Martens"@nl;
+    foaf:firstName "Isabaut"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:isabaut.martens@vlaanderen.be>.
+_:df_557_17 a foaf:Person;
+    foaf:lastName "Raf"@nl;
+    foaf:firstName "Buyle"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:raf.buyle@vlaanderen.be>.
+_:df_557_19 a foaf:Person;
+    foaf:lastName "Tulpinck"@nl;
+    foaf:firstName "Mathieu"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:mathieu.tulpinck@vlaanderen.be>.
+_:df_557_21 a foaf:Person;
+    foaf:lastName "Veerle"@nl;
+    foaf:firstName "Beyaert"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:veerle.beyaert@vlaanderen.be>.
+_:df_557_23 a foaf:Person;
+    foaf:lastName "Verbrugge"@nl;
+    foaf:firstName "Aline"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:aline.verbrugge@vlaanderen.be>.
+_:df_557_25 a foaf:Person;
+    foaf:lastName "Vercauteren"@nl;
+    foaf:firstName "Laurens"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:laurens.vercauteren@vlaanderen.be>.
+_:df_557_27 a foaf:Person;
+    foaf:lastName "Ziggy"@nl;
+    foaf:firstName "Vanlishout"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:ziggy.vanlishout@vlaanderen.be>.
+_:df_557_29 a foaf:Person;
+    foaf:lastName "De Vos"@nl;
+    foaf:firstName "Katia"@nl;
+    foaf:workplaceHomepage <https://recht.gent/>.
+_:df_557_31 a foaf:Person;
+    foaf:lastName "De Vreese"@nl;
+    foaf:firstName "Mieke"@nl;
+    foaf:workplaceHomepage <https://www.aalter.be/>.
+_:df_557_33 a foaf:Person;
+    foaf:lastName "Demeulenaere"@nl;
+    foaf:firstName "Elke"@nl;
+    foaf:workplaceHomepage <https://www.destelbergen.be/>.
+_:df_557_35 a foaf:Person;
+    foaf:lastName "Demeurie"@nl;
+    foaf:firstName "Annelies"@nl;
+    foaf:workplaceHomepage <https://www.zulte.be/>.
+_:df_557_37 a foaf:Person;
+    foaf:lastName "Gilot"@nl;
+    foaf:firstName "Ben"@nl;
+    foaf:workplaceHomepage <https://www.vvsg.be/>.
+_:df_557_39 a foaf:Person;
+    foaf:lastName "Heldens"@nl;
+    foaf:firstName "Quinten"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/organisaties/administratieve-diensten-van-de-vlaamse-overheid/beleidsdomein-financien-en-begroting/departement-financien-en-begroting>.
+_:df_557_41 a foaf:Person;
+    foaf:lastName "Ide"@nl;
+    foaf:firstName "Barbara"@nl;
+    foaf:workplaceHomepage <https://www.zulte.be/>.
+_:df_557_43 a foaf:Person;
+    foaf:lastName "Marichal"@nl;
+    foaf:firstName "Michèle"@nl;
+    foaf:workplaceHomepage <https://www.roeselare.be/>.
+_:df_557_45 a foaf:Person;
+    foaf:lastName "Remans"@nl;
+    foaf:firstName "Miet"@nl;
+    foaf:workplaceHomepage <https://www.vvsg.be/>.
+_:df_557_47 a foaf:Person;
+    foaf:lastName "Schelfhout"@nl;
+    foaf:firstName "Kurt"@nl;
+    foaf:workplaceHomepage <https://aalst.be/>.
+_:df_557_49 a foaf:Person;
+    foaf:lastName "Sevens"@nl;
+    foaf:firstName "Janis"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/agentschap-binnenlands-bestuur>;
+    foaf:mbox <mailto:janis.sevens@vlaanderen.be>.
+_:df_557_51 a foaf:Person;
+    foaf:lastName "Staes"@nl;
+    foaf:firstName "Filip"@nl;
+    foaf:workplaceHomepage <https://leuven.be/>.
+_:df_557_53 a foaf:Person;
+    foaf:lastName "Tyteca"@nl;
+    foaf:firstName "Tina"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/agentschap-binnenlands-bestuur>.
+_:df_557_55 a foaf:Person;
+    foaf:lastName "Van Damme"@nl;
+    foaf:firstName "Ben"@nl;
+    foaf:workplaceHomepage <https://risolto.be/en/>.
+_:df_557_57 a foaf:Person;
+    foaf:lastName "Van Gils"@nl;
+    foaf:firstName "Wietske"@nl;
+    foaf:workplaceHomepage <https://www.samvzw.be/>.
+_:df_557_59 a foaf:Person;
+    foaf:lastName "Van Trigt"@nl;
+    foaf:firstName "Robin"@nl;
+    foaf:workplaceHomepage <https://www.samvzw.be/>.
+_:df_557_61 a foaf:Person;
+    foaf:lastName "Verbeeck"@nl;
+    foaf:firstName "Sven"@nl;
+    foaf:workplaceHomepage <https://www.antwerpen.be/>.
+_:df_557_63 a foaf:Person;
+    foaf:lastName "Verbeke"@nl;
+    foaf:firstName "Joannes"@nl;
+    foaf:workplaceHomepage <https://risolto.be/en/>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/#ref> a <http://purl.org/ontology/bibo/Chapter>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/#ref>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/> dcterms:type dcmitype:Text;
+    dcterms:title "Deze specificatie"@nl;
+    <http://creativecommons.org/ns#attributionURL> <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    <http://creativecommons.org/ns#attributionName> "Digitaal Vlaanderen"@nl;
+    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/ns/schuldbeheer#aanmaningsdatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            aanmaningsdatum\n                          "@nl;
+    rdfs:comment "Datum waarop de aanmaning werd verstuurd. "@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#genereertWanbetalingsvergoeding> a rdfs:Property;
+    rdfs:label "\n                            \n                            genereert wanbetalingsvergoeding\n                          "@nl;
+    rdfs:comment "Verwijzing naar een wanbetalingsvergoeding die door de aanmaning wordt gegenereerd. Een wanbetalingsvergoeding wordt gegenereerd door een aanmaning maar heeft zijn grondslag in een algemene voorwaarde of een reglement"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#aanvaardAfbetalingsplan> a rdfs:Property;
+    rdfs:label "\n                            \n                            aanvaard afbetalingsplan\n                          "@nl;
+    rdfs:comment "Verwijzing naar het afbetalingsplan dat wordt aanvaard."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier/#Activiteit.einddatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            einddatum\n                          "@nl;
+    rdfs:comment "De einddatum van de activiteit."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#genereert> a rdfs:Property;
+    rdfs:label "\n                            \n                            genereert\n                          "@nl;
+    rdfs:comment "Een activiteit kan een stuk genereren."@nl;
+    vann:usageNote ""@nl.
+prov:qualifiedAssociation a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft deelnemer\n                          "@nl;
+    rdfs:comment "Persoon of organisatie die binnen een bepaalde rol een verantwoordelijkheid opneemt voor deze activiteit."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#Activiteit.startdatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            startdatum\n                          "@nl;
+    rdfs:comment "De startdatum van de activiteit."@nl;
+    vann:usageNote ""@nl.
+<https://www.w3.org/TR/prov-o/#wasStartedBy> a rdfs:Property;
+    rdfs:label "\n                            \n                            werd gestart door\n                          "@nl;
+    rdfs:comment "Van een start is sprake wanneer een activiteit geacht wordt te zijn gestart. Een start kan verwijzen naar een entiteit, ook wel een trigger genoemd, die de activiteit heeft geïntitieerd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#gevolgdAfbetalingsplanonderdeel> a rdfs:Property;
+    rdfs:label "\n                            \n                            gevolgd afbetalingsplan\n                          "@nl;
+    rdfs:comment "Verwijzing naar het afbetalingsplan dat werd gevolgd bij het uitvoeren van de afbetaling."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#aanvaarding> a rdfs:Property;
+    rdfs:label "\n                            \n                            aanvaarding\n                          "@nl;
+    rdfs:comment "Verwijzing naar de aanvaarding van het afbetalingsplan."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#afbetalingsplanonderdeel> a rdfs:Property;
+    rdfs:label "\n                            \n                            afbetalingsplanonderdeel\n                          "@nl;
+    rdfs:comment "Verwijzing naar een onderdeel van het afbetalingsplan."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#afbetalingsplansaldo> a rdfs:Property;
+    rdfs:label "\n                            \n                            afbetalingsplansaldo\n                          "@nl;
+    rdfs:comment "Verwijzing naar een saldo van een afbetalingsplan, namelijk het nog af te betalen bedrag op een bepaalde datum."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#herschikteSchuldvordering> a rdfs:Property;
+    rdfs:label "\n                            \n                            herschikte schuldvordering\n                          "@nl;
+    rdfs:comment "Verwijzijng naar een schuldvordering waarvan de betaalmodaliteiten door het afbetalingsplan herschikt worden."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#schrapping> a rdfs:Property;
+    rdfs:label "\n                            \n                            schrapping\n                          "@nl;
+    rdfs:comment "Verwijzing naar een schrapping van de schuldvordering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#startBedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            startbedrag\n                          "@nl;
+    rdfs:comment "Het totale verschuldigde bedrag dat wordt herschikt bij de aanvang van het afbetalingsplan."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#voorstel> a rdfs:Property;
+    rdfs:label "\n                            \n                            voorstel\n                          "@nl;
+    rdfs:comment "Verwijzing naar de activiteit die het afbetalingsplan voorstelt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#afTeBetalenBedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            af te betalen bedrag\n                          "@nl;
+    rdfs:comment "Het geldbedrag dat voor de uiterste betaaldatum moet worden betaald."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#isDeelvan> a rdfs:Property;
+    rdfs:label "\n                            \n                            is deel van\n                          "@nl;
+    rdfs:comment "Een afbetalingsplanonderdeel is een deel van een afbetalingsplan."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#uitersteBetaaldatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            uiterste betaaldatum\n                          "@nl;
+    rdfs:comment "De laatst mogelijke datum waarop het af te betalen bedrag moet betaald zijn om aan de betaaldverplichting van het aanvaarde afbetalingsplan te voldoen."@nl;
+    vann:usageNote ""@nl.
+prov:actedOnBehalfOf a rdfs:Property;
+    rdfs:label "\n                            \n                            handelt in opdracht van\n                          "@nl;
+    rdfs:comment "Een agent kan handelen in opdracht van een andere agent."@nl;
+    vann:usageNote ""@nl.
+prov:agent a rdfs:Property;
+    rdfs:label "\n                            \n                            is rolspecialisatie van\n                          "@nl;
+    rdfs:comment "Duidt de agent aan waarvan deze entiteit een rol toewijst."@nl;
+    vann:usageNote ""@nl.
+prov:hadRole a rdfs:Property;
+    rdfs:label "\n                            \n                            rol\n                          "@nl;
+    rdfs:comment "De functie van een agent met betrekking tot een activiteit."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#bedoeldVoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            bedoeld voor\n                          "@nl;
+    rdfs:comment "Verwijzing naar de schuldvordering die de betaler wenst af te lossen met de betaling."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#betaaldBedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            betaald bedrag\n                          "@nl;
+    rdfs:comment "Het geldbedrag dat werd betaald."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#betalingsdatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            betalingsdatum\n                          "@nl;
+    rdfs:comment "Datum waarop het overgedragen geld werd ontvangen door de ontvanger. "@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/adms#identifier> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Een identificator voor het betaling"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#wordtToegerekendDoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            wordt toegerekend door\n                          "@nl;
+    rdfs:comment "Verwijzing naar de activiteit die (een deel van) een  betaald bedrag toewijst aan een schuldvordering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#betwistBedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            betwist bedrag\n                          "@nl;
+    rdfs:comment "Het geldbedrag dat wordt betwist."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#inkomst> a rdfs:Property;
+    rdfs:label "\n                            \n                            inkomst\n                          "@nl;
+    rdfs:comment "Verwijzing naar een inkomst van een persoon."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#juridischStatuut> a rdfs:Property;
+    rdfs:label "\n                            \n                            juridisch statuut\n                          "@nl;
+    rdfs:comment "Verwijzing naar een juridisch statuut van een persoon."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#krediet> a rdfs:Property;
+    rdfs:label "\n                            \n                            krediet\n                          "@nl;
+    rdfs:comment "Verwijzing naar een krediet dat door een persoon werd aangegaan als schuldenaar."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/adms#identifier> a rdfs:Property;
+    rdfs:label "\n                            \n                            registratie\n                          "@nl;
+    rdfs:comment "Identificatiecode vd persoon ih register."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#sociaalStatuut> a rdfs:Property;
+    rdfs:label "\n                            \n                            sociaal statuut\n                          "@nl;
+    rdfs:comment "Verwijzing naar een sociaal statuut van een persoon."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#solvabiliteitsprofiel> a rdfs:Property;
+    rdfs:label "\n                            \n                            solvabiliteitsprofiel\n                          "@nl;
+    rdfs:comment "Verwijzing naar een solvabiliteitsrofiel van een persoon."@nl;
+    vann:usageNote ""@nl.
+rov:registration a rdfs:Property;
+    rdfs:label "\n                            \n                            registratie\n                          "@nl;
+    rdfs:comment "Identificator dat de organisatie verkreeg bij registratie."@nl;
+    vann:usageNote "In de KBO is dit het ondernemingsnummer."@nl.
+<https://data.vlaanderen.be/ns/persoon#gezinshoofd> a rdfs:Property;
+    rdfs:label "\n                            \n                            gezinshoofd\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/persoon#gezinslid> a rdfs:Property;
+    rdfs:label "\n                            \n                            gezinslid\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#bedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            bedrag\n                          "@nl;
+    rdfs:comment "Het bedrag van de inkomst."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#periodiciteitInkomst> a rdfs:Property;
+    rdfs:label "\n                            \n                            periodiciteit inkomst\n                          "@nl;
+    rdfs:comment "Laat toe om het verschil tussen een eenmalige inkomst en een periodieke inkomst te specifiëren. "@nl;
+    vann:usageNote "Bijvoorbeeld eenmalig, maandelijks, jaarlijks."@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "De aard van de inkomst, bijvoorbeeld beroepsinkomen, kadastraal inkomen, leefloon, kinderbijslag."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#rechtsgrond> a rdfs:Property;
+    rdfs:label "\n                            \n                            rechtsgrond\n                          "@nl;
+    rdfs:comment "Verwijzing naar de juridische grondslag van het juridisch statuut. "@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "De aard van het juridisch statuut, bijvoorbeeld rechterlijke bescherming, collectieve schuldenregeling."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#initieelKredietbedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            initieel kredietbedrag\n                          "@nl;
+    rdfs:comment "Het bedrag dat wordt geleend bij het aangaan van een kredietovereenkomst."@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "De aard van het krediet, bijvoorbeeld hypothecair krediet, consumentenkrediet."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#wanbetaling> a rdfs:Property;
+    rdfs:label "\n                            \n                            wanbetaling\n                          "@nl;
+    rdfs:comment "Laat toe te specifiëren of een schuldenaar zijn financiële verplichtingen al dan niet heeft nagekomen. "@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#oninbaarBedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            oninbaar bedrag\n                          "@nl;
+    rdfs:comment "Het bedrag dat als oninbaar beschouwd wordt."@nl;
+    vann:usageNote ""@nl.
+org:subOrganizationOf a rdfs:Property;
+    rdfs:label "\n                            \n                            is suborganisatie van\n                          "@nl;
+    rdfs:comment "Organisatie die deze organisatie omvat."@nl;
+    vann:usageNote "Wordt gebruikt om een hiërarchie van organisaties te documenteren."@nl.
+<https://data.vlaanderen.be/ns/persoon#heeftRelatieMet> a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft relatie met\n                          "@nl;
+    rdfs:comment "Persoon waarmee de persoon gerelateerd is."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/persoon#isHoofdVan> a rdfs:Property;
+    rdfs:label "\n                            \n                            is hoofd van\n                          "@nl;
+    rdfs:comment "Persoon die standaard het gezin vertegenwoordigt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/persoon#isLidVan> a rdfs:Property;
+    rdfs:label "\n                            \n                            is lid van\n                          "@nl;
+    rdfs:comment "Persoon die tot een gezin behoort."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/persoon#volledigeNaam> a rdfs:Property;
+    rdfs:label "\n                            \n                            volledige naam\n                          "@nl;
+    rdfs:comment "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
+    vann:usageNote " "@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#saldobedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            saldobedrag\n                          "@nl;
+    rdfs:comment "Het resterende bedrag zelf."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#saldodatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            saldodatum\n                          "@nl;
+    rdfs:comment "De datum waarop het saldo geldt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#geschraptAfbetalingsplan> a rdfs:Property;
+    rdfs:label "\n                            \n                            geschrapt afbetalingsplan\n                          "@nl;
+    rdfs:comment "Verwijzing naar het afbetalingsplan dat wordt geschrapt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#aanleiding> a rdfs:Property;
+    rdfs:label "\n                            \n                            aanleiding\n                          "@nl;
+    rdfs:comment "Verwijzing naar de aanleiding voor de schuldvordering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#aanmaning> a rdfs:Property;
+    rdfs:label "\n                            \n                            aanmaning\n                          "@nl;
+    rdfs:comment "Verwijzing naar een aanmaning  met betrekking tot de schuldvordering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#afbetalingsplan> a rdfs:Property;
+    rdfs:label "\n                            \n                            afbetalingsplan\n                          "@nl;
+    rdfs:comment "Verwijzing naar een afbetalingsplan dat voor de schuldvordering geldt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#betwisting> a rdfs:Property;
+    rdfs:label "\n                            \n                            betwisting\n                          "@nl;
+    rdfs:comment "Verwijzing naar een betwisting van de schuldvordering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#grondslag> a rdfs:Property;
+    rdfs:label "\n                            \n                            grondslag\n                          "@nl;
+    rdfs:comment "Verwijzing naar de juridische basis voor de schuldvordering"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#hoofdsom> a rdfs:Property;
+    rdfs:label "\n                            \n                            hoofdsom\n                          "@nl;
+    rdfs:comment "Het totale bedrag dat wordt gevorderd door de schuldeiser, exclusief eventuele wanbetalingskosten."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#identificator> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Een identificator voor de schuldvordering"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#isGerelateerdMet> a rdfs:Property;
+    rdfs:label "\n                            \n                            is gerelateerd met\n                          "@nl;
+    rdfs:comment "Verwijzing naar een andere schuldvordering die een verband heeft met de eerste schuldvordering."@nl;
+    vann:usageNote "Men kan beslissen om een nieuwe schuldvordering aan te maken voor een wanbetalingskost, in plaats van de wanbetalingskost rechtstreeks aan de schuldvordering toe te voeging."@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#oninbaarheidsverklaring> a rdfs:Property;
+    rdfs:label "\n                            \n                            oninbaarheidsverklaring\n                          "@nl;
+    rdfs:comment "Verwijzing naar een oninbaarheidsverklaring voor de schuldvordering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#schuldeiser> a rdfs:Property;
+    rdfs:label "\n                            \n                            schuldeiser\n                          "@nl;
+    rdfs:comment "Verwijzing naar de agent (persoon of organisatie) die zijn recht uitoefent om een bedrag te innen van andere partijen. "@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#schuldenaar> a rdfs:Property;
+    rdfs:label "\n                            \n                            schuldenaar\n                          "@nl;
+    rdfs:comment "Verwijzing naar de agent (persoon of organisatie) die de verplichting heeft om een schuld te voldoen aan een andere partij. "@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#schuldvorderingscategorie> a rdfs:Property;
+    rdfs:label "\n                            \n                            schuldvorderingscategorie\n                          "@nl;
+    rdfs:comment "Een schuldvordering behoort tot een categorie."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#schuldvordingssaldo> a rdfs:Property;
+    rdfs:label "\n                            \n                            schuldvorderingssaldo\n                          "@nl;
+    rdfs:comment "Verwijzing naar een saldo dat werd berekend voor de schuldvordering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#toerekeningVanBetaling> a rdfs:Property;
+    rdfs:label "\n                            \n                            toerekening van betaling\n                          "@nl;
+    rdfs:comment "Het toewijzen van een betaald geldbedrag aan een schuldvordering. "@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#uitersteBetaaldatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            uiterste betaaldatum\n                          "@nl;
+    rdfs:comment "De laatst mogelijke datum waarop een betaling moet worden gedaan om te voorkomen dat er eventuele boetes, interesten of andere sancties worden opgelegd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#verjaringsdatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            verjaringsdatum\n                          "@nl;
+    rdfs:comment "De datum waarna de schuldeiser zijn recht om juridische stappen te ondernemen verliest en de vordering niet langer inbaar is. Wordt berekend op basis van de verjaringstermijn, vanaf de startdatum van de vordering of de datum van de stuitende activiteit, bijvoorbeeld een betaling."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#vermindering> a rdfs:Property;
+    rdfs:label "\n                            \n                            vermindering\n                          "@nl;
+    rdfs:comment "Verwijzing naar een vermindering voor de schuldvordering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#wanbetaling> a rdfs:Property;
+    rdfs:label "\n                            \n                            wanbetaling\n                          "@nl;
+    rdfs:comment "Laat toe om aan te duiden of de hoofdsom voor de uiterste betaaldatum werd betaald."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#wanbetalingsvergoeding> a rdfs:Property;
+    rdfs:label "\n                            \n                            wanbetalingsvergoeding\n                          "@nl;
+    rdfs:comment "Een schuldvordering kan verhoogd worden met een wanbetalingsvergoeding."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#fiscaal> a rdfs:Property;
+    rdfs:label "\n                            \n                            fiscaal\n                          "@nl;
+    rdfs:comment "Laat toe om te specifiëren of het om fiscale of niet-fiscale schuldvorderingen gaat."@nl;
+    vann:usageNote ""@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "De naam van de vorderingscategorie, bijvoorbeeld gemeentebelasting, schoolfactuur, GAS-boete."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#verjaringstermijn> a rdfs:Property;
+    rdfs:label "\n                            \n                            verjaringstermijn\n                          "@nl;
+    rdfs:comment "De verjaringstermijn die voor schuldvorderingen van deze categorie geldt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#toegekendDoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            toegekend door\n                          "@nl;
+    rdfs:comment "Verwijzing naar de organisatie die het sociaal statuut heeft toegekend. "@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "De aard van een sociaal statuut, bijvoorbeeld verhoogde tegemoetkoming, vermindering verdienvermogen door handicap."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#startdatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            einddatum\n                          "@nl;
+    rdfs:comment "De einddatum voor de geldigheid van de solvabiliteitsindicator."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#einddatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            startdatum\n                          "@nl;
+    rdfs:comment "De startdatum voor de geldigheid van de solvabiliteitsindicator."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "De aarde van de solvibiliteitsindicator."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#afgeleidVan> a rdfs:Property;
+    rdfs:label "\n                            \n                            afgeleid van\n                          "@nl;
+    rdfs:comment "Verwijzing naar een solvabiliteitsindicator waarvan het solvabilitetisprofiel werd afgeleid."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#bepaaldDoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            bepaald door\n                          "@nl;
+    rdfs:comment "Verwijzing naar de agent die het solvabiliteitsprofiel bepaald heeft. "@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#einddatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            einddatum\n                          "@nl;
+    rdfs:comment "De einddatum van het solvabiliteitsprofiel. Wanneer de finaciële situatie van een persoon wijzigt, kan het nodig zijn om een nieuw solvabiliteitsprofiel voor de persoon aan te maken."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#startdatum> a rdfs:Property;
+    rdfs:label "\n                            \n                            startdatum\n                          "@nl;
+    rdfs:comment "De startdatum van het solvabiliteitsprofiel."@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "De aard van het solvabiliteitsprofiel."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/dossier#auteur> a rdfs:Property;
+    rdfs:label "\n                            \n                            auteur\n                          "@nl;
+    rdfs:comment "De auteur van het stuk."@nl;
+    vann:usageNote ""@nl.
+dcterms:date a rdfs:Property;
+    rdfs:label "\n                            \n                            datum\n                          "@nl;
+    rdfs:comment "De datum van het stuk."@nl;
+    vann:usageNote "Indien mogelijk, wordt idealiter een subproperty (created, dateSubmitted, issued, ...) gebruikt."@nl.
+<http://www.w3.org/ns/adms#identifier> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Een identificator voor het stuk."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#rekentToeAan> a rdfs:Property;
+    rdfs:label "\n                            \n                            rekent toe aan\n                          "@nl;
+    rdfs:comment "Een toerekening van betaling rekent een (deel van het) betaalde bedrag toe aan een schuldvordering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#toegerekendBedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            toegerekend bedrag\n                          "@nl;
+    rdfs:comment "Het geldbedrag dat werd toegerekend aan een schuldvordering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#toegerekendeBetaling> a rdfs:Property;
+    rdfs:label "\n                            \n                            toegerekende betaling\n                          "@nl;
+    rdfs:comment "Verwijzing naar de betaling die werd toegerekend."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#verminderingsbedrag> a rdfs:Property;
+    rdfs:label "\n                            \n                            verminderingsbedrag\n                          "@nl;
+    rdfs:comment "Het bedrag dat in mindering wordt gebracht."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#voorgesteldAfbetalingsplan> a rdfs:Property;
+    rdfs:label "\n                            \n                            stelt voor\n                          "@nl;
+    rdfs:comment "Verwijzing naar het afbetalingsplan dat wordt voorgesteld."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#interest> a rdfs:Property;
+    rdfs:label "\n                            \n                            interest\n                          "@nl;
+    rdfs:comment "De omvang van de wanbetalingsvergoeding  kan bepaald worden als een percentage op bedrag van de schuldvordering dat nog niet betaald werd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/schuldbeheer#kost> a rdfs:Property;
+    rdfs:label "\n                            \n                            kost\n                          "@nl;
+    rdfs:comment "De omvang van de wanbetalingsvergoeding kan worden bepaald door een vast geldbedrag."@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "De aard van de wanbetalingsvergoeding, bijvoorbeeld verwijlinterest, aanmaningskost, verzendingskost"@nl;
+    vann:usageNote ""@nl.
+schemas:currency a rdfs:Property;
+    rdfs:label "\n                            valuta\n                          "@nl;
+    rdfs:comment "De valuta van het geldbedrag"@nl;
+    vann:usageNote "Gebruik ISO 4217 valuta codes, bijvoorbeeld \"EUR\"\r\n"@nl.
+schemas:value a rdfs:Property;
+    rdfs:label "\n                            waarde\n                          "@nl;
+    rdfs:comment "De waarde van het geldbedrag"@nl;
+    vann:usageNote ""@nl.
+skos:notation a rdfs:Property;
+    rdfs:label "\n                            identificator\n                          "@nl;
+    rdfs:comment "String gebruikt om het object uniek te identificeren."@nl;
+    vann:usageNote "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."@nl.
+dcterms:creator a rdfs:Property;
+    rdfs:label "\n                            toegekend door\n                          "@nl;
+    rdfs:comment "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    vann:usageNote " "@nl.
+dcterms:issued a rdfs:Property;
+    rdfs:label "\n                            toegekend op\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    vann:usageNote " "@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+_:df_557_64 rdf:first _:df_557_1;
+    rdf:rest _:df_557_65.
+_:df_557_65 rdf:first _:df_557_3;
+    rdf:rest _:df_557_66.
+_:df_557_66 rdf:first _:df_557_5;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/> foaf:maker _:df_557_64.
+_:df_557_67 rdf:first _:df_557_7;
+    rdf:rest _:df_557_68.
+_:df_557_68 rdf:first _:df_557_9;
+    rdf:rest _:df_557_69.
+_:df_557_69 rdf:first _:df_557_11;
+    rdf:rest _:df_557_70.
+_:df_557_70 rdf:first _:df_557_13;
+    rdf:rest _:df_557_71.
+_:df_557_71 rdf:first _:df_557_15;
+    rdf:rest _:df_557_72.
+_:df_557_72 rdf:first _:df_557_17;
+    rdf:rest _:df_557_73.
+_:df_557_73 rdf:first _:df_557_19;
+    rdf:rest _:df_557_74.
+_:df_557_74 rdf:first _:df_557_21;
+    rdf:rest _:df_557_75.
+_:df_557_75 rdf:first _:df_557_23;
+    rdf:rest _:df_557_76.
+_:df_557_76 rdf:first _:df_557_25;
+    rdf:rest _:df_557_77.
+_:df_557_77 rdf:first _:df_557_27;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/> <http://purl.org/ontology/bibo/editor> _:df_557_67.
+_:df_557_78 rdf:first _:df_557_29;
+    rdf:rest _:df_557_79.
+_:df_557_79 rdf:first _:df_557_31;
+    rdf:rest _:df_557_80.
+_:df_557_80 rdf:first _:df_557_33;
+    rdf:rest _:df_557_81.
+_:df_557_81 rdf:first _:df_557_35;
+    rdf:rest _:df_557_82.
+_:df_557_82 rdf:first _:df_557_37;
+    rdf:rest _:df_557_83.
+_:df_557_83 rdf:first _:df_557_39;
+    rdf:rest _:df_557_84.
+_:df_557_84 rdf:first _:df_557_41;
+    rdf:rest _:df_557_85.
+_:df_557_85 rdf:first _:df_557_43;
+    rdf:rest _:df_557_86.
+_:df_557_86 rdf:first _:df_557_45;
+    rdf:rest _:df_557_87.
+_:df_557_87 rdf:first _:df_557_47;
+    rdf:rest _:df_557_88.
+_:df_557_88 rdf:first _:df_557_49;
+    rdf:rest _:df_557_89.
+_:df_557_89 rdf:first _:df_557_51;
+    rdf:rest _:df_557_90.
+_:df_557_90 rdf:first _:df_557_53;
+    rdf:rest _:df_557_91.
+_:df_557_91 rdf:first _:df_557_55;
+    rdf:rest _:df_557_92.
+_:df_557_92 rdf:first _:df_557_57;
+    rdf:rest _:df_557_93.
+_:df_557_93 rdf:first _:df_557_59;
+    rdf:rest _:df_557_94.
+_:df_557_94 rdf:first _:df_557_61;
+    rdf:rest _:df_557_95.
+_:df_557_95 rdf:first _:df_557_63;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/> dcterms:contributor _:df_557_78.

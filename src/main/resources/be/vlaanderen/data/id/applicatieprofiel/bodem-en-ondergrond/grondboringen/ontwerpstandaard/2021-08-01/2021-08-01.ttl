@@ -1,0 +1,418 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/> a <http://purl.org/ontology/bibo/Document>;
+    dcterms:language "nl"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+_:df_587_1 a foaf:Person;
+    foaf:lastName "AuteurNaam"@nl;
+    foaf:firstName "AuteurVoornaam"@nl;
+    foaf:workplaceHomepage <https://auteurwebsiteurl>;
+    foaf:mbox <mailto:auteurvoornaam.auteurnaam@auteurdomein>.
+_:df_587_3 a foaf:Person;
+    foaf:lastName "EditorNaam"@nl;
+    foaf:firstName "EditorVoornaam"@nl;
+    foaf:workplaceHomepage <https://editorwebsiteurl>;
+    foaf:mbox <mailto:editorvoornaam.editornaam@editordomein>.
+_:df_587_5 a foaf:Person;
+    foaf:lastName "MedewerkerNaam"@nl;
+    foaf:firstName "MedewerkerVoornaam"@nl;
+    foaf:workplaceHomepage <https://medewerkerwebsiteurl>;
+    foaf:mbox <mailto:medewerkervoornaam.medewerkernaam@medewerkerdomein>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/#ref> a <http://purl.org/ontology/bibo/Chapter>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/#ref>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/> dcterms:type dcmitype:Text;
+    dcterms:title "Deze specificatie"@nl;
+    <http://creativecommons.org/ns#attributionURL> <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    <http://creativecommons.org/ns#attributionName> "Digitaal Vlaanderen"@nl;
+    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/ns/grondboringen#bekisting> a rdfs:Property;
+    rdfs:label "\n                            \n                            bekisting\n                          "@nl;
+    rdfs:comment "Verwijzing naar de beschrijving van de bekisting per diepteinterval."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/ssn/implements> a rdfs:Property;
+    rdfs:label "\n                            \n                            implementeert\n                          "@nl;
+    rdfs:comment "Bemonsteringsprocedure die door de Bemonsteraar in praktijk wordt gebracht."@nl;
+    vann:usageNote ""@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de Bemonsteraar."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/sosa/madeSampling> a rdfs:Property;
+    rdfs:label "\n                            \n                            uitgevoerdeBemonstering\n                          "@nl;
+    rdfs:comment "Bemonstering die met de Bemonsteraar is uitgevoerd."@nl;
+    vann:usageNote ""@nl.
+<http://fixme.com> a rdfs:Property;
+    rdfs:label "\n                            \n                            bemonsterdObject\n                          "@nl;
+    rdfs:comment "Het grondobject van de bemonstering."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/sosa/resultTime> a rdfs:Property;
+    rdfs:label "\n                            \n                            bemonsteringstijdstip\n                          "@nl;
+    rdfs:comment "Moment waarop de Bemonstering werd afgerond."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.conditie> a rdfs:Property;
+    rdfs:label "\n                            \n                            conditie\n                          "@nl;
+    rdfs:comment "Omstandigheden waarin de Bemonstering plaatsvond."@nl;
+    vann:usageNote "Bv de weersomstandigheden..."@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.doel> a rdfs:Property;
+    rdfs:label "\n                            \n                            doel\n                          "@nl;
+    rdfs:comment "Reden waarom de Bemonstering wordt uitgevoerd."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/sosa/usedProcedure> a rdfs:Property;
+    rdfs:label "\n                            \n                            gebruikteProcedure\n                          "@nl;
+    rdfs:comment "Bemonsteringsprocedure die werd gevolgd bij de Bemonstering werd toegepast."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.opdracht> a rdfs:Property;
+    rdfs:label "\n                            \n                            opdracht\n                          "@nl;
+    rdfs:comment "Opdracht in het kader waarvan de Bemonstering plaatsvindt."@nl;
+    vann:usageNote "Bv de Opdracht voor een veldonderzoek of voor het uitvoeren van specifieke Metingen of analyses van een Monster."@nl.
+<http://www.w3.org/ns/sosa/hasresult> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "Bemonsteringsobject dat bij de Bemonstering werd verkregen."@nl;
+    vann:usageNote ""@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de Bemonstering."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.uitgevoerdDoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            uitgevoerdDoor\n                          "@nl;
+    rdfs:comment "Agent die de Bemonstering heeft uitgevoerd."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/sosa/madeBySampler> a rdfs:Property;
+    rdfs:label "\n                            \n                            uitgevoerdMet\n                          "@nl;
+    rdfs:comment "Bemonsteraar waarmee de Bemonstering is uitgevoerd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonstering.wettelijkKader> a rdfs:Property;
+    rdfs:label "\n                            \n                            wettelijkKader\n                          "@nl;
+    rdfs:comment "WettelijkKader waarbinnen de Bemonstering plaatsvindt."@nl;
+    vann:usageNote ""@nl.
+<http://fixme.com> a rdfs:Property;
+    rdfs:label "\n                            \n                            bemonsterdObject\n                          "@nl;
+    rdfs:comment "Het grondobject van de bemonstering."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/SamplingFeature#SamplingFeatureComplex.relatedSamplingFeature> a rdfs:Property;
+    rdfs:label "\n                            \n                            geassocieerdBemonsteringsobject\n                          "@nl;
+    rdfs:comment "Ander Bemonsteringsobject waarmee het Bemonsteringsobject geassocieerd is."@nl;
+    vann:usageNote "Bv Bemonsteringspunten langs een Bemonsteringscurve of Monsters genomen op een Bemonsteringspunt of deelmonsters (Monster van een Monster)..."@nl.
+<http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.lineage> a rdfs:Property;
+    rdfs:label "\n                            \n                            herkomst\n                          "@nl;
+    rdfs:comment "Verwijzing naar de Herkomst van een Bemonsteringsobject."@nl;
+    vann:usageNote "De Herkomst beschrijf de oorsprong en historiek vh Bemonsteringsobject. Bv de manier van monstername of de werkwijze gevolgd bij een veldonderzoek."@nl.
+<https://data.vlaanderen.be/ns/observaties-en-metingen#Bemonsteringsobject.identificator> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Verwijzing naar de informatie die het Bemonsteringsobject uniek identificeert."@nl;
+    vann:usageNote "Bv het uniek nummer dat aan een Monster wordt toegekend of het numer van een meetstation."@nl.
+<http://www.w3.org/ns/sosa/isresultOf> a rdfs:Property;
+    rdfs:label "\n                            \n                            isResultaatVan\n                          "@nl;
+    rdfs:comment "Verwijzing naar de Bemonstering waarvan dit Bemonsteringsobject het resultaat is."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.parameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            parameter\n                          "@nl;
+    rdfs:comment "Willekeurig gegeven gassocieerd met het Bemonsteringsobject."@nl;
+    vann:usageNote "Bv een parameter die een aspect van de Bemonstering beschrijft (bv hoogte bij een luchtopname) of een belangrijke omgevingsparameter (bv het waterpeil bij een boring)."@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van het Bemonsteringsobject."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/ssn/implementedBy> a rdfs:Property;
+    rdfs:label "\n                            \n                            geïmplementeerdDoor\n                          "@nl;
+    rdfs:comment "Bemonsteraar waarmee de Bemonsteringsprocedure is of moet worden toegepast."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/ssn/hasInput> a rdfs:Property;
+    rdfs:label "\n                            \n                            input\n                          "@nl;
+    rdfs:comment "Verwijzing naar de Input die de procedure vereist."@nl;
+    vann:usageNote ""@nl.
+<http://www.w3.org/ns/ssn/hasOutput> a rdfs:Property;
+    rdfs:label "\n                            \n                            output\n                          "@nl;
+    rdfs:comment "Verwijzing naar de Output die de Procedure genereert."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonsteringsprocedure.parameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            parameter\n                          "@nl;
+    rdfs:comment "Willekeurig gegeven gassocieerd met de Bemonsteringsprocedure."@nl;
+    vann:usageNote "Bv een parameter die een aspect van de Bemonsteringsprocedure beschrijft (bv de vereiste hoogte bij een luchtopname) of een noodzakelijke omgevingsparameter (bv het waterpeil bij staatname in een boorgat)."@nl.
+<https://data.vlaanderen.be/ns/sensoren-en-bemonstering#Bemonsteringsprocedure.specificatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            specificatie\n                          "@nl;
+    rdfs:comment "Verwijzing naar een document dat de Bemonsteringsprocedure beschrijft."@nl;
+    vann:usageNote ""@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van deBemonsteringsprocedure."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Het type van boor."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^gehostPlatform> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^gehostPlatform\n                          "@nl;
+    rdfs:comment "TODO"@nl;
+    vann:usageNote "TODO"@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^geometrie> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^geometrie\n                          "@nl;
+    rdfs:comment "Curve die de vorm van de Grondboring beschrijft."@nl;
+    vann:usageNote "Loopt van de boorkraag (die zowel boven, op als onder het maaiveld - of ander referentievlak - kan liggen) tot het verste punt van de boring. De Curve kan gespecialiseerd worden tot Lijnstring, bv als de vorm door een set van lijnstukken of (typisch) door één lijnstuk wordt beschreven. Coördinaten worden minimaal in 2D maar bij voorkeur in 3D gegeven."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^positioneleNauwkeurigheid> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^positioneleNauwkeurigheid\n                          "@nl;
+    rdfs:comment "De nauwkeurigheid van de positie van het boorgat."@nl;
+    vann:usageNote "TODO"@nl.
+<https://data.vlaanderen.be/ns/grondboringen#aangenomenGrondwaterstand> a rdfs:Property;
+    rdfs:label "\n                            \n                            aangenomenGrondwaterstand\n                          "@nl;
+    rdfs:comment "De Grondwaterstand in het boorgat, al dan niet gebaseerd op meerdere Observaties."@nl;
+    vann:usageNote "Die Observaties kunnen ook apart beschreven worden via de associatie grondwaterstand van de Boringdetails."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#bekisting> a rdfs:Property;
+    rdfs:label "\n                            \n                            bekisting\n                          "@nl;
+    rdfs:comment "Verwijzing naar de beschrijving van de Bekisting van het boorgat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#boordiameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            boordiameter\n                          "@nl;
+    rdfs:comment "Verwijzing naar de beschrijving van de Boordiameter van het boorgat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#boringLengte> a rdfs:Property;
+    rdfs:label "\n                            \n                            boringLengte\n                          "@nl;
+    rdfs:comment "Lengte van de Grondboring."@nl;
+    vann:usageNote "Zoals verstrekt door de dataleverancier. Kan bv afgeleid zijn uit de geometrie van de Grondboring maar ook uit bv het resultaat van de LithologischeInterpretatie of de lengte is gemeten op het terrein."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^diepte> a rdfs:Property;
+    rdfs:label "\n                            \n                            diepte\n                          "@nl;
+    rdfs:comment "De diepte van het boorgat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#isResultaatVan> a rdfs:Property;
+    rdfs:label "\n                            \n                            isResultaatVan\n                          "@nl;
+    rdfs:comment "Het resultaat van de uitgevoerde grondboring."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^ligging> a rdfs:Property;
+    rdfs:label "\n                            \n                            ligging\n                          "@nl;
+    rdfs:comment "De specifieke locatie van het boorgat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^maaiveld> a rdfs:Property;
+    rdfs:label "\n                            \n                            maaiveld\n                          "@nl;
+    rdfs:comment "Het maaiveld van het boorgat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#diameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            diameter\n                          "@nl;
+    rdfs:comment "Verwijzing naar de beschrijving van de boorgatdiameter per diepteinterval."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#inclinatietype> a rdfs:Property;
+    rdfs:label "\n                            \n                            inclinatietype\n                          "@nl;
+    rdfs:comment "Algemene aanduiding van de richting waaronder werd geboord."@nl;
+    vann:usageNote "Verticaal, schuin, horizontaal..."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#methode> a rdfs:Property;
+    rdfs:label "\n                            \n                            methode\n                          "@nl;
+    rdfs:comment "Verwijzing naar de beschrijving van de methode per diepteinterval."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#startpunt> a rdfs:Property;
+    rdfs:label "\n                            \n                            startpunt\n                          "@nl;
+    rdfs:comment "Aard van het oppervlak waarop de boorkraag is geplaatst."@nl;
+    vann:usageNote "Doorgaans het maaiveld maar andere mogelijkheden zijn bv bouwput, boortafel, dijk, bestaand boorgat"@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "et soort activiteit dat mag worden uitgevoerd."@nl;
+    vann:usageNote "Bv Boring voor Bemaling, voor Geotechniek etc."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#boorder> a rdfs:Property;
+    rdfs:label "\n                            \n                            boorder\n                          "@nl;
+    rdfs:comment "Diegene die de Boring heeft uitgevoerd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#boormeester> a rdfs:Property;
+    rdfs:label "\n                            \n                            boormeester\n                          "@nl;
+    rdfs:comment "Opzichter bij de Boring."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#doel> a rdfs:Property;
+    rdfs:label "\n                            \n                            doel\n                          "@nl;
+    rdfs:comment "Reden waarom de Grondboring werd uitgevoerd."@nl;
+    vann:usageNote "Vb exploitatie, onderzoek, bemaling etc."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#resultaat> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "Het resultaat van de uitgevoerde grondboring."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#wettelijkKader> a rdfs:Property;
+    rdfs:label "\n                            \n                            wettelijkKader\n                          "@nl;
+    rdfs:comment "Het kader dat vastlegt wat behoort tot de wet."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^bemonsteringsplaats> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^bemonsteringsplaats\n                          "@nl;
+    rdfs:comment "Plaats waar het Monster werd genomen."@nl;
+    vann:usageNote "Als het Monster een geassocieerdBemonsteringsobject heeft dat ondubbelzinnig gelocaliseerd is dan is dit attribuut overbodig. Uitzondering in dat geval is wanneer de plaats tov het Bemonsteringsobject daarbij van belang is, bv de diepte waarop een grondmonster is genomen bij een boring. Datatype is Geometrie om naast puntlocaties ook een ruimere begrenzing te kunnen opgeven (bv een diepte-interval in het geval van een grondmonster)."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^bemonsteringstijdstip> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^bemonsteringstijdstip\n                          "@nl;
+    rdfs:comment "Moment waarop het Grondmonster is genomen."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^grootte> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^grootte\n                          "@nl;
+    rdfs:comment "De fysieke omvang van het monster."@nl;
+    vann:usageNote "Afhankelijk van het materiaaltype gaat dit over lengte, massa, volume edm."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^huidigeLocatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^huidigeLocatie\n                          "@nl;
+    rdfs:comment "Plaats waar het Monster wordt bewaard."@nl;
+    vann:usageNote "Dit is typisch een indirecte aanduiding  van de locatie bv een verwijzing naar de Organisatie waar het Monster wordt bewaard en evt de positie daarbinnen (schap in een opslagplaats of lade in een museum)."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#materiaalklasse> a rdfs:Property;
+    rdfs:label "\n                            \n                            ^materiaalklasse\n                          "@nl;
+    rdfs:comment "Basisclassificatie vh materiaal waaruit het Grondmonster bestaat."@nl;
+    vann:usageNote "Bv bodem, gesteente"@nl.
+<https://data.vlaanderen.be/ns/grondboringen#grondboring> a rdfs:Property;
+    rdfs:label "\n                            \n                            grondboring\n                          "@nl;
+    rdfs:comment "Verwijzing naar de Grondboring waarmee het grondmonster is bekomen."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#monstertype> a rdfs:Property;
+    rdfs:label "\n                            \n                            monstertype\n                          "@nl;
+    rdfs:comment "Materiële vorm die het Grondmonster aanneemt."@nl;
+    vann:usageNote "Bv of het gespoeld, gestoken, gekernd is."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Type van grondobject."@nl;
+    vann:usageNote ""@nl.
+<http://fixme.com#beschrijving> a rdfs:Property;
+    rdfs:label "\n                            \n                            beschrijving\n                          "@nl;
+    rdfs:comment "Toelichting bij de LegaleVerschijningsvorm."@nl;
+    vann:usageNote ""@nl.
+<http://fixme.com#categorie> a rdfs:Property;
+    rdfs:label "\n                            \n                            categorie\n                          "@nl;
+    rdfs:comment "Classificatie van de LegaleVerschijningsvorm."@nl;
+    vann:usageNote ""@nl.
+<http://fixme.com#identificator> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Informatie waarme de LegaleVerschijningsvorm uniek kan worden geïdentificeerd."@nl;
+    vann:usageNote ""@nl.
+<https://data.europa.eu/eli/ontology#realizes> a rdfs:Property;
+    rdfs:label "\n                            \n                            realiseert\n                          "@nl;
+    rdfs:comment "De Rechtgrond die door de LegaleVerschijningsvorm wordt gerealiseerd. Laat toe om bv te verwijzen naar de wetrgeving waarop een verleende vergunning gebaseerd is, bv VLAREM voor boorvergunningen."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure.value> a rdfs:Property;
+    rdfs:label "\n                            \n                            maat\n                          "@nl;
+    rdfs:comment "De hoeveelheid."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoorder> a rdfs:Property;
+    rdfs:label "\n                            \n                            wettelijkKaderBoorder\n                          "@nl;
+    rdfs:comment "Toelating van de Boorder om Boringen te verrichten."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#wettelijkKaderBoring> a rdfs:Property;
+    rdfs:label "\n                            \n                            wettelijkKaderBoring\n                          "@nl;
+    rdfs:comment "Direct of indirect bewijs dat de Boring wettelijk in orde is."@nl;
+    vann:usageNote "Bv de Vergunning die is verkregen of de Melding die van de Boring is gemaakt. OPMERKING: Als deze info niet beschikbaar is gebruik dan het type LegaleVerschijningsvorm ipv zijn subklassen en geef de reden op in het attribuut Legaleverschijningsvorm.beschrijving."@nl.
+<https://data.vlaanderen.be/ns/grondboringen#dikte> a rdfs:Property;
+    rdfs:label "\n                            dikte\n                          "@nl;
+    rdfs:comment "Dikte van de Bekisting."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^geometrie> a rdfs:Property;
+    rdfs:label "\n                            geometrie\n                          "@nl;
+    rdfs:comment "Geometrie van de Bekisting."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#materiaal> a rdfs:Property;
+    rdfs:label "\n                            materiaal\n                          "@nl;
+    rdfs:comment "Materiaal waaruit de Bekisting bestaat."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name> a rdfs:Property;
+    rdfs:label "\n                            naam\n                          "@nl;
+    rdfs:comment "Naam vh type van de waarde."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value> a rdfs:Property;
+    rdfs:label "\n                            waarde\n                          "@nl;
+    rdfs:comment "Kwalitatieve of kwantitatieve invulling van de waarde."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#diameter> a rdfs:Property;
+    rdfs:label "\n                            diameter\n                          "@nl;
+    rdfs:comment "Diameter van het Boorgat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#^geometrie> a rdfs:Property;
+    rdfs:label "\n                            geometrie\n                          "@nl;
+    rdfs:comment "Geometrie van het Boorgat."@nl;
+    vann:usageNote ""@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            geometrie\n                          "@nl;
+    rdfs:comment "Geometrie van de Boring."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/grondboringen#methode> a rdfs:Property;
+    rdfs:label "\n                            methode\n                          "@nl;
+    rdfs:comment "Methode van de Boring."@nl;
+    vann:usageNote ""@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            methode\n                          "@nl;
+    rdfs:comment "Methode van de Boring."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/generiek#gml> a rdfs:Property;
+    rdfs:label "\n                            gml\n                          "@nl;
+    rdfs:comment "Directe positie uitgedrukt in gml-formaat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/generiek#methode> a rdfs:Property;
+    rdfs:label "\n                            methode\n                          "@nl;
+    rdfs:comment "De manier waarop het punt werd bepaald."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/generiek#wkt> a rdfs:Property;
+    rdfs:label "\n                            wkt\n                          "@nl;
+    rdfs:comment "Directe positie uitgedrukt in wkt-formaat."@nl;
+    vann:usageNote ""@nl.
+<http://www.opengis.net/ont/geosparql#asGML> a rdfs:Property;
+    rdfs:label "\n                            gml\n                          "@nl;
+    rdfs:comment "Geometrie uitgedrukt in gml-formaat."@nl;
+    vann:usageNote "Gebruik gmlliteral als datatype."@nl.
+<https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting> a rdfs:Property;
+    rdfs:label "\n                            opmeting\n                          "@nl;
+    rdfs:comment "Het bepalen van de precieze omvang van iets door het te meten."@nl;
+    vann:usageNote ""@nl.
+<http://www.opengis.net/ont/geosparql#asWKT> a rdfs:Property;
+    rdfs:label "\n                            wkt\n                          "@nl;
+    rdfs:comment "Geometrie uitgedrukt in wkt-formaat."@nl;
+    vann:usageNote "Gebruik wktliteral als datatype."@nl.
+schemas:unitText a rdfs:Property;
+    rdfs:label "\n                            eenheid\n                          "@nl;
+    rdfs:comment "De eenheid waarin de waarde is uitgedrukt."@nl;
+    vann:usageNote "Te gebruiken als geen standaard eenheid gekend is."@nl.
+schemas:unitCode a rdfs:Property;
+    rdfs:label "\n                            standaard eenheid\n                          "@nl;
+    rdfs:comment "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
+    vann:usageNote ""@nl.
+schemas:value a rdfs:Property;
+    rdfs:label "\n                            waarde\n                          "@nl;
+    rdfs:comment "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte> a rdfs:Property;
+    rdfs:label "\n                            hoogte\n                          "@nl;
+    rdfs:comment "Verticale maat naar boven vanaf het grondoppervlak van het maaiveld."@nl;
+    vann:usageNote ""@nl.
+<http://purl.org/cd/terms/type> a rdfs:Property;
+    rdfs:label "\n                            type\n                          "@nl;
+    rdfs:comment "Het type Maaiveld."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+_:df_587_6 rdf:first _:df_587_1;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/> foaf:maker _:df_587_6.
+_:df_587_7 rdf:first _:df_587_3;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/> <http://purl.org/ontology/bibo/editor> _:df_587_7.
+_:df_587_8 rdf:first _:df_587_5;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2021-08-01/> dcterms:contributor _:df_587_8.

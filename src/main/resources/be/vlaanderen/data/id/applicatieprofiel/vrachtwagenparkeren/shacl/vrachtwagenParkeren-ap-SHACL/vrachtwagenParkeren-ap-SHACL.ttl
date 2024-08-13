@@ -1,0 +1,1322 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren> rdfs:member <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BestuurderShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OpleggerShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VrachtwagenShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerplaatsShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ContactInfoShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VrachtwagentypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensietypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DienstverleningtypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutetypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingstatusShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitKenmerktypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#LadingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerplaatsKenmerktypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VervoermiddelShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AandrijftypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDiensttypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GeometrieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#StandaardEenheidShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutebeschrijvingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteplannerShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#InfrastructuurelementShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetalShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/019810fc49cc8ea303724dd74110dfee2cddb587>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/d552cbc3172acce1aa6beed46e5b6558462885e4>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/4b124f0924fab01fc5967b50aacaf82bcf846710>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/df3ba01409fe5d24a380d375ef9332757fb45310>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/6b83c94554e8cc117c1d07fa1e155ccdee8ae62d>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/9a37477967f54b67db79a7d1bc0b9cb7b67c0c52>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/b48088de85b3e925d9a93b4e93883c8cacbf1b1b>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Aanbieder>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/019810fc49cc8ea303724dd74110dfee2cddb587> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Aanbieder.Organisatie";
+    shacl:class org:Organization;
+    shacl:description "TODO"@nl;
+    shacl:name "Organisatie"@nl;
+    shacl:path org:Organization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/4b124f0924fab01fc5967b50aacaf82bcf846710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Aanbieder.contactinfo";
+    shacl:class schema:ContactPoint;
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren."@nl;
+    shacl:name "contactinfo"@nl;
+    shacl:path schema:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/6b83c94554e8cc117c1d07fa1e155ccdee8ae62d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Aanbieder.voorkeursnaam";
+    shacl:class rdf:langString;
+    shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/9a37477967f54b67db79a7d1bc0b9cb7b67c0c52> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Aanbieder.voorkeursnaam";
+    shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:minCount 1;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Aanbieder.registratie";
+    shacl:description "Identificator die de organisatie verkreeg bij registratie."@nl;
+    shacl:maxCount 1;
+    shacl:name "registratie"@nl;
+    shacl:path rov:registration.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/b48088de85b3e925d9a93b4e93883c8cacbf1b1b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Aanbieder.voorkeursnaam";
+    shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:maxCount 1;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Aanbieder.registratie";
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Identificator die de organisatie verkreeg bij registratie."@nl;
+    shacl:name "registratie"@nl;
+    shacl:path rov:registration.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/d552cbc3172acce1aa6beed46e5b6558462885e4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Aanbieder.Organisatie";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "Organisatie"@nl;
+    shacl:path org:Organization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanbiederShape/df3ba01409fe5d24a380d375ef9332757fb45310> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Aanbieder.registratie";
+    shacl:description "Identificator die de organisatie verkreeg bij registratie."@nl;
+    shacl:minCount 1;
+    shacl:name "registratie"@nl;
+    shacl:path rov:registration.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AandrijftypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/2989e671b203e7d1a866b570c9e05b0ee368488c>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/97d861f3c138f0a5ce5f3c574c699946604f1d84>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/e751f82719634b4cd91b963d47f0b1e94c252066>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/92913b0e257bab4e00964081acc3086021dd2589>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#AanvullendeDienst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienst.naam";
+    shacl:class rdf:langString;
+    shacl:description "Naam van de aanvullende dienst."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/2989e671b203e7d1a866b570c9e05b0ee368488c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienst.aanbieder";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Aanbieder>;
+    shacl:description "TODO"@nl;
+    shacl:name "aanbieder"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#aanbieder>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienst.type";
+    shacl:class skos:Concept;
+    shacl:description "Aard van de aanvullende dienst."@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienst.naam";
+    shacl:description "Naam van de aanvullende dienst."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienst.type";
+    shacl:description "Aard van de aanvullende dienst."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/92913b0e257bab4e00964081acc3086021dd2589> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienst.beschikbaarOpInfrastructuurelement";
+    shacl:class <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Infrastructuurelement>;
+    shacl:description "TODO"@nl;
+    shacl:name "beschikbaarOpInfrastructuurelement"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#AanvullendeDienst.beschikbaarOpInfrastructuurelement>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/97d861f3c138f0a5ce5f3c574c699946604f1d84> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienst.aanbieder";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "aanbieder"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#aanbieder>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienst.toegankelijkheid";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Toegankelijkheid>;
+    shacl:description "Toegankelijkheid van de aanvullende dienst."@nl;
+    shacl:name "toegankelijkheid"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#AanvullendeDienst.toegankelijkheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/e751f82719634b4cd91b963d47f0b1e94c252066> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienst.aanbieder";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "aanbieder"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#aanbieder>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienstShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDienst.naam";
+    shacl:description "Naam van de aanvullende dienst."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#AanvullendeDiensttypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/3524b35749b7deeeeac0abc5ebe81523b5d747cf>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/7064c4211649ec1a402a5e8bfe0d2a83984c64f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/0282924473194bfb8e0b4a42b2e8fc001153211d>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/f4fc1e907a31c120661dd6c4265a7daa340f7e1c>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/e6ada4b25599dde7d63c9b717df99ba62230ba58>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/573f13a6b27eda51cfa0f02a90a07392f6ecb3d2>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Beschikbaarheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/0282924473194bfb8e0b4a42b2e8fc001153211d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Beschikbaarheid.gebruiker";
+    shacl:class skos:Concept;
+    shacl:description "Type gebruiker waarvoor de beschikbaarheid geldt."@nl;
+    shacl:name "gebruiker"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#gebruiker>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Beschikbaarheid.periode";
+    shacl:description "Periode waarin iets beschikbaar is."@nl;
+    shacl:maxCount 1;
+    shacl:name "periode"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#periode>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/3524b35749b7deeeeac0abc5ebe81523b5d747cf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Beschikbaarheid.dienstregeling";
+    shacl:description "Schema met tijdstippen waarop iets wordt aangeboden."@nl;
+    shacl:maxCount 1;
+    shacl:name "dienstregeling"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#dienstregeling>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/573f13a6b27eda51cfa0f02a90a07392f6ecb3d2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Beschikbaarheid.openingsurenString";
+    shacl:description "Uren waarop iets beschikbaar is."@nl;
+    shacl:maxCount 1;
+    shacl:name "openingsurenString"@nl;
+    shacl:path schema:openingHours.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/7064c4211649ec1a402a5e8bfe0d2a83984c64f4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Beschikbaarheid.dienstregeling";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Dienstregeling>;
+    shacl:description "Schema met tijdstippen waarop iets wordt aangeboden."@nl;
+    shacl:name "dienstregeling"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#dienstregeling>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/e6ada4b25599dde7d63c9b717df99ba62230ba58> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Beschikbaarheid.openingsuren";
+    shacl:description "Uren waarop iets beschikbaar is."@nl;
+    shacl:maxCount 1;
+    shacl:name "openingsuren"@nl;
+    shacl:path schemas:hoursAvailable.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BeschikbaarheidShape/f4fc1e907a31c120661dd6c4265a7daa340f7e1c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Beschikbaarheid.gebruiker";
+    shacl:description "Type gebruiker waarvoor de beschikbaarheid geldt."@nl;
+    shacl:maxCount 1;
+    shacl:name "gebruiker"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#gebruiker>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BestuurderShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BestuurderShape/61101675e9dfd9d3b0792caa6beaa9aa0dde5cb9>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BestuurderShape/b87239db5ef153703c944363751efd86eda5bbf2>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BestuurderShape/cc279af383a4d890c22b072907cea80af60f4d04>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/vrachtwagenparkeren#Bestuurder>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BestuurderShape/61101675e9dfd9d3b0792caa6beaa9aa0dde5cb9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Bestuurder.opdrachtgever";
+    shacl:description "De opdrachtgever van de bestuurder"@nl;
+    shacl:minCount 1;
+    shacl:name "opdrachtgever"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#Opdrachtgever>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BestuurderShape/b87239db5ef153703c944363751efd86eda5bbf2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Bestuurder.opdrachtgever";
+    shacl:description "De opdrachtgever van de bestuurder"@nl;
+    shacl:maxCount 1;
+    shacl:name "opdrachtgever"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#Opdrachtgever>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BestuurderShape/cc279af383a4d890c22b072907cea80af60f4d04> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Bestuurder.opdrachtgever";
+    shacl:class org:Organization;
+    shacl:description "De opdrachtgever van de bestuurder"@nl;
+    shacl:name "opdrachtgever"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#Opdrachtgever>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/074d26f195dfc56c0261f3284206dd9819a9ae3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/4cf73cb6c7e2c3a952bbe571b8847614d893fec2>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/7be1b3c256d9c86a612c10f9fecff45f1c241075>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/23a09be0bc1c6ad0e39d961a4bf1bbc87ff03e32>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/7afb0c1a7457d20a8193bfe388935535c28a0af8>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/97b241c35da278c55dd18b9dbf9f9065630f87e4>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/abd52fe7b36cae297804f17d06f6a292a136f951>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/0f6cb927d0d26f3819cba3fb903a075cd426180d>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/495152e07b8cdc2ea417291a92fea8f5edeb17c9>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.boeking>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/074d26f195dfc56c0261f3284206dd9819a9ae3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.datum";
+    shacl:description "Tijdstip waarop de Boeking is gebeurd."@nl;
+    shacl:minCount 1;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/0f6cb927d0d26f3819cba3fb903a075cd426180d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.status";
+    shacl:class skos:Concept;
+    shacl:description "Status van de Boeking."@nl;
+    shacl:name "status"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Boeking.status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/23a09be0bc1c6ad0e39d961a4bf1bbc87ff03e32> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.reis";
+    shacl:description "Reis die geboekt wordt."@nl;
+    shacl:maxCount 1;
+    shacl:name "reis"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#reis>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.status";
+    shacl:description "Status van de Boeking."@nl;
+    shacl:maxCount 1;
+    shacl:name "status"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Boeking.status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.datum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de Boeking is gebeurd."@nl;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/495152e07b8cdc2ea417291a92fea8f5edeb17c9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.status";
+    shacl:description "Status van de Boeking."@nl;
+    shacl:name "status"@nl.
+_:n3-1722 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-1723 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://github.com/TOMP-WG/TOMP-API/blob/master/documents/191021%20-%20Blueprint%20for%20a%20TO-MP%20API%20v1.1.pdf>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-1722 shacl:property _:n3-1723.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/495152e07b8cdc2ea417291a92fea8f5edeb17c9> shacl:node _:n3-1722;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Boeking.status>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/4cf73cb6c7e2c3a952bbe571b8847614d893fec2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.datum";
+    shacl:description "Tijdstip waarop de Boeking is gebeurd."@nl;
+    shacl:maxCount 1;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/7afb0c1a7457d20a8193bfe388935535c28a0af8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.reis";
+    shacl:description "Reis die geboekt wordt."@nl;
+    shacl:minCount 1;
+    shacl:name "reis"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#reis>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/7be1b3c256d9c86a612c10f9fecff45f1c241075> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.prijs";
+    shacl:description "Prijs die voor de geboekte Reis of gereserveerde Resource is betaald."@nl;
+    shacl:maxCount 1;
+    shacl:name "prijs"@nl;
+    shacl:path schemas:price.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/97b241c35da278c55dd18b9dbf9f9065630f87e4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.reis";
+    shacl:class schemas:Trip;
+    shacl:description "Reis die geboekt wordt."@nl;
+    shacl:name "reis"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#reis>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingShape/abd52fe7b36cae297804f17d06f6a292a136f951> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Boeking.resource";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource>;
+    shacl:description "Resource die is gereserveerd."@nl;
+    shacl:name "resource"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Boeking.resource>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#BoekingstatusShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ContactInfoShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass schema:ContactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DienstverleningtypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/72c15e74c4d0cb3548d621c127b1090e77f8481e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/8a7cf46c8506736f2b7d04fe32bd522933417037>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/96e15acd53d3fc1484084551588f5c32f3a857b6>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/d85c4ff9fe0b370c8805d035aa1bdbd00323f156>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/74feba662f4f65577bf45a8dd94f8faec0f03592>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/ca4892872b345b4fe994128b7c31877979275399>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/vrachtwagenparkeren#Dimensie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Dimensie.waarde";
+    shacl:class schemas:Number;
+    shacl:description "De numerieke waarde voor een dimensie"@nl;
+    shacl:name "waarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#waarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Dimensie.type";
+    shacl:description "Het type van de dimensie"@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Dimensie.type";
+    shacl:class skos:Concept;
+    shacl:description "Het type van de dimensie"@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/72c15e74c4d0cb3548d621c127b1090e77f8481e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Dimensie.eenheid";
+    shacl:datatype xsd:string;
+    shacl:description "De eenheid waarin de waarde wordt uitgedrukt"@nl;
+    shacl:name "eenheid"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#eenheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Dimensie.type";
+    shacl:description "Het type van de dimensie"@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Dimensie.waarde";
+    shacl:description "De numerieke waarde voor een dimensie"@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#waarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/8a7cf46c8506736f2b7d04fe32bd522933417037> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Dimensie.eenheid";
+    shacl:description "De eenheid waarin de waarde wordt uitgedrukt"@nl;
+    shacl:maxCount 1;
+    shacl:name "eenheid"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#eenheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/96e15acd53d3fc1484084551588f5c32f3a857b6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Dimensie.standaardEenheid";
+    shacl:description "De standaardeenheid waarin de waarde wordt uitgedrukt"@nl;
+    shacl:maxCount 1;
+    shacl:name "standaardEenheid"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#standaardEenheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Dimensie.waarde";
+    shacl:description "De numerieke waarde voor een dimensie"@nl;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#waarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensieShape/d85c4ff9fe0b370c8805d035aa1bdbd00323f156> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Dimensie.standaardEenheid";
+    shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+    shacl:description "De standaardeenheid waarin de waarde wordt uitgedrukt"@nl;
+    shacl:name "standaardEenheid"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#standaardEenheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#DimensietypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GeometrieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GeometrieShape/1fa2e16d78d8fce7d565e8b0d0b295ccfce4ccf1>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GeometrieShape/a6aec3ca18b65c46f4b74ce4b65b8a33682085bd>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GeometrieShape/412041a7e5eb713d30c26685c48cbbc05c934a2f>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GeometrieShape/706f8eb0d659b9ee49a50aa1a082377329d71b59>;
+    shacl:targetClass locn:Geometry.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GeometrieShape/1fa2e16d78d8fce7d565e8b0d0b295ccfce4ccf1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Geometrie.gml";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "gml"@nl;
+    shacl:path <http://www.opengis.net/ont/geosparql#asGML>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GeometrieShape/412041a7e5eb713d30c26685c48cbbc05c934a2f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Geometrie.wkt";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "wkt"@nl;
+    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GeometrieShape/706f8eb0d659b9ee49a50aa1a082377329d71b59> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Geometrie.wkt";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "wkt"@nl;
+    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GeometrieShape/a6aec3ca18b65c46f4b74ce4b65b8a33682085bd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Geometrie.gml";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "gml"@nl;
+    shacl:path <http://www.opengis.net/ont/geosparql#asGML>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetalShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass schemas:Number.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/5a374cb9619d3ecb46b60404687527dc1c06eae3>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/accd13839c2e0c6e60fc7183b6d3ba3059fa4dbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/f7af514e6c820346c4f1de53fde08fbe7875367a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass rdfs:Literal.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeString.type";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeString.type";
+    shacl:datatype xsd:anyURI;
+    shacl:description "TODO"@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/5a374cb9619d3ecb46b60404687527dc1c06eae3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeString.string";
+    shacl:datatype xsd:string;
+    shacl:description "TODO"@nl;
+    shacl:name "string"@nl;
+    shacl:path xsd:string.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeString.type";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/accd13839c2e0c6e60fc7183b6d3ba3059fa4dbd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeString.string";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "string"@nl;
+    shacl:path xsd:string.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeStringShape/f7af514e6c820346c4f1de53fde08fbe7875367a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#GetypeerdeString.string";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "string"@nl;
+    shacl:path xsd:string.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/ccb2d543d17baa8b6b0ca2a42156eed6f23e3f6e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/fdd447f16a92517498619e765035dd040c2820bc>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/8e172c852556aa8404b7130948edad681259b488>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/ed560feb860205e0339910c9b2942564c01b5e11>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/5f023c37e7d18ecf8aecd2bb45eae0a05687cd6f>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/7e96db8b419c7899e08f06fa9f3e2daf5b3cae34>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/9f8532791e13c302ae6dcc70ef353c796f948c85>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/2502ea74079ad7f2c1c292977fb29403bb242c9e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/3b5973d35f612c133f22e9f710f65db63d861b6b>;
+    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.toegekendop";
+    shacl:datatype xsd:dateTime;
+    shacl:description "TODO"@nl;
+    shacl:name "toegekend op"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/2502ea74079ad7f2c1c292977fb29403bb242c9e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.toegekendop";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "toegekend op"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/3b5973d35f612c133f22e9f710f65db63d861b6b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.toegekendop";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend op"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/5f023c37e7d18ecf8aecd2bb45eae0a05687cd6f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.toegekenddoor(String)";
+    shacl:class dcterms:Agent;
+    shacl:description "TODO"@nl;
+    shacl:name "toegekend door (String)"@nl;
+    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/7e96db8b419c7899e08f06fa9f3e2daf5b3cae34> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.toegekenddoor(String)";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "toegekend door (String)"@nl;
+    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/8e172c852556aa8404b7130948edad681259b488> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.toegekenddoor";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "toegekend door"@nl;
+    shacl:path dcterms:creator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/9f8532791e13c302ae6dcc70ef353c796f948c85> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.toegekenddoor(String)";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend door (String)"@nl;
+    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/ccb2d543d17baa8b6b0ca2a42156eed6f23e3f6e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.notatie";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "notatie"@nl;
+    shacl:path skos:notation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/ed560feb860205e0339910c9b2942564c01b5e11> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.toegekenddoor";
+    shacl:class dcterms:Agent;
+    shacl:description "TODO"@nl;
+    shacl:name "toegekend door"@nl;
+    shacl:path dcterms:creator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.toegekenddoor";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend door"@nl;
+    shacl:path dcterms:creator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#IdentificatorShape/fdd447f16a92517498619e765035dd040c2820bc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Identificator.notatie";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "notatie"@nl;
+    shacl:path skos:notation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#InfrastructuurelementShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#InfrastructuurelementShape/65882aa6e035e313d7e8ae2a231fb774e8ce8068>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#InfrastructuurelementShape/d2fee6a2433357c01b28e665796fb326b1424999>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Infrastructuurelement>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#InfrastructuurelementShape/65882aa6e035e313d7e8ae2a231fb774e8ce8068> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Infrastructuurelement.dienst";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst>, <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#AanvullendeDienst>;
+    shacl:description "TODO"@nl;
+    shacl:name "dienst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten/#Mobiliteitsdienst.beschikbaarOpInfrastructuurelement>, <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#AanvullendeDienst.beschikbaarOpInfrastructuurelement>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#InfrastructuurelementShape/d2fee6a2433357c01b28e665796fb326b1424999> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Infrastructuurelement.materiaal";
+    shacl:description "Materiaal waar het object uit vervaardigd is."@nl;
+    shacl:name "materiaal"@nl.
+_:n3-1724 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-1725 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-1724 shacl:property _:n3-1725.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#InfrastructuurelementShape/d2fee6a2433357c01b28e665796fb326b1424999> shacl:node _:n3-1724;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#materiaal>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/72c15e74c4d0cb3548d621c127b1090e77f8481e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/8a7cf46c8506736f2b7d04fe32bd522933417037>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/db2555457b897a2e792d884a673aab52e0a72c28>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/dcf18241c7695eee6abe5c99b390387f700ef44c>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/ca4892872b345b4fe994128b7c31877979275399>;
+    shacl:targetClass schemas:QuantitativeValue.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaarde.waarde";
+    shacl:class schemas:Number;
+    shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/72c15e74c4d0cb3548d621c127b1090e77f8481e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaarde.eenheid";
+    shacl:datatype xsd:string;
+    shacl:description "De eenheid waarin de waarde is uitgedrukt."@nl;
+    shacl:name "eenheid"@nl;
+    shacl:path schemas:unitText.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaarde.waarde";
+    shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/8a7cf46c8506736f2b7d04fe32bd522933417037> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaarde.eenheid";
+    shacl:description "De eenheid waarin de waarde is uitgedrukt."@nl;
+    shacl:maxCount 1;
+    shacl:name "eenheid"@nl;
+    shacl:path schemas:unitText.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaarde.waarde";
+    shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/db2555457b897a2e792d884a673aab52e0a72c28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaarde.standaardeenheid";
+    shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
+    shacl:maxCount 1;
+    shacl:name "standaard eenheid"@nl;
+    shacl:path schemas:unitCode.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaardeShape/dcf18241c7695eee6abe5c99b390387f700ef44c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#KwantitatieveWaarde.standaardeenheid";
+    shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+    shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
+    shacl:name "standaard eenheid"@nl;
+    shacl:path schemas:unitCode.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#LadingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/2989e671b203e7d1a866b570c9e05b0ee368488c>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/97d861f3c138f0a5ce5f3c574c699946604f1d84>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/e751f82719634b4cd91b963d47f0b1e94c252066>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/7afdb5e532aae0234495df704beed1c303e180e6>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/c24b514a6c8ebd86a7c16a39efa3a3e084f43cf7>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/f84eca1fd071e8c8afba8c3202e4470806530b5a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/d3b4aa3840444b1a7b89d6037ba668a5f70bc517>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/abd52fe7b36cae297804f17d06f6a292a136f951>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/87862ccf26feb4b9fd8853f34279c5b32c10ab2b>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/74feba662f4f65577bf45a8dd94f8faec0f03592>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/12e728aa4917299c79b5629b99894330bc4bbd30>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/12e728aa4917299c79b5629b99894330bc4bbd30> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.vervoermiddel";
+    shacl:class skos:Concept;
+    shacl:description "Vervoermiddel waarmee of waarvoor de Mobiliteitsdienst doorgaans wordt georganiseerd."@nl;
+    shacl:name "vervoermiddel"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.vervoermiddel>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.naam";
+    shacl:class rdf:langString;
+    shacl:description "Naam van de Mobiliteitsdienst."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/2989e671b203e7d1a866b570c9e05b0ee368488c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.aanbieder";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Aanbieder>;
+    shacl:description "De aanbieder van de Mobiliteitsdienst."@nl;
+    shacl:name "aanbieder"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#aanbieder>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.type";
+    shacl:class skos:Concept;
+    shacl:description "Aard van de mobiliteitsdienst."@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.naam";
+    shacl:description "Naam van de Mobiliteitsdienst."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.type";
+    shacl:description "Aard van de mobiliteitsdienst."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/7afdb5e532aae0234495df704beed1c303e180e6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.beschikbaarheid";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Beschikbaarheid>;
+    shacl:description "Beschikbaarheid van de Mobiliteitsdienst."@nl;
+    shacl:name "beschikbaarheid"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.beschikbaarheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/87862ccf26feb4b9fd8853f34279c5b32c10ab2b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.ruimtelijkedekking";
+    shacl:class dcterms:Location;
+    shacl:description "Gebied of Plaats waarbinnen de Mobiliteitsdienst wordt aangeboden."@nl;
+    shacl:name "ruimtelijke dekking"@nl;
+    shacl:path dcterms:spatial.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/97d861f3c138f0a5ce5f3c574c699946604f1d84> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.aanbieder";
+    shacl:description "De aanbieder van de Mobiliteitsdienst."@nl;
+    shacl:minCount 1;
+    shacl:name "aanbieder"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#aanbieder>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.toegankelijkheid";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Toegankelijkheid>;
+    shacl:description "Toegankelijkheid van de Mobiliteitsdienst."@nl;
+    shacl:name "toegankelijkheid"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.toegankelijkheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/abd52fe7b36cae297804f17d06f6a292a136f951> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.resource";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource>;
+    shacl:description "Resource waarover de Mobiliteitsdienst beschikt."@nl;
+    shacl:name "resource"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.resource>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/c24b514a6c8ebd86a7c16a39efa3a3e084f43cf7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.beschikbaaropInfrastructuurelement";
+    shacl:class <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#Infrastructuurelement>;
+    shacl:description "TODO"@nl;
+    shacl:name "beschikbaaropInfrastructuurelement"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#Mobiliteitsdienst.beschikbaarOpInfrastructuurelement>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/d3b4aa3840444b1a7b89d6037ba668a5f70bc517> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.omvat(target)";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst>;
+    shacl:description "Meer specifieke Mobiliteitsdiensten waaruit de Mobiliteitsdienst is samengesteld."@nl;
+    shacl:name "omvat (target)"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#omvat>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/e751f82719634b4cd91b963d47f0b1e94c252066> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.aanbieder";
+    shacl:description "De aanbieder van de Mobiliteitsdienst."@nl;
+    shacl:maxCount 1;
+    shacl:name "aanbieder"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#aanbieder>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.naam";
+    shacl:description "Naam van de Mobiliteitsdienst."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#MobiliteitsdienstShape/f84eca1fd071e8c8afba8c3202e4470806530b5a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Mobiliteitsdienst.omvat(source)";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst>;
+    shacl:description "Meer specifieke Mobiliteitsdiensten waaruit de Mobiliteitsdienst is samengesteld."@nl;
+    shacl:name "omvat (source)"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#omvat>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OpleggerShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OpleggerShape/c9d01480fcc23ed717b03376c42759cc12a7d43e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OpleggerShape/ee4c55bc14eb359522496485353a7c0699c44769>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/vrachtwagenparkeren#Oplegger>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OpleggerShape/c9d01480fcc23ed717b03376c42759cc12a7d43e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Oplegger.opleggertype";
+    shacl:description "Type van de oplegger"@nl;
+    shacl:minCount 1;
+    shacl:name "opleggertype"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OpleggerShape/ee4c55bc14eb359522496485353a7c0699c44769> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Oplegger.opleggertype";
+    shacl:description "Type van de oplegger"@nl;
+    shacl:maxCount 1;
+    shacl:name "opleggertype"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/4ad757dbfb35fc053b5fda4d4065b294e90e6725>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/4c356c89be8d7eaa18e04cc74b5ae87a4fb977fa>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/ccc60f000e8255577f863856ca86c69a40f97951>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/72d196f39d114d410023dfae67396fa111bb5641>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/4b124f0924fab01fc5967b50aacaf82bcf846710>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/dded78cb6f2b8c34d17d2b01917af9c00654bb31>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/d33f3915c7bb95947da748692705c4058d8688b6>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/39f67b345a33d5e7c624f9c3ee364055f881cf0e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/da28472666d298998330cb159b2c1e90b4446250>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/fb8568b313de736f9184db23272b6317700e9e7e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/820c91103a8196ae81f4284fccaefd989a62d587>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/3b0e7a9804a0f9315ec4e697b479ca35c74514f0>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/24aad7819c9afedfd9d997b59dda21346b53978a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/7e4b6884554e8dd17a733c63e7625c87da05b4db>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/0f6cb927d0d26f3819cba3fb903a075cd426180d>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/6b83c94554e8cc117c1d07fa1e155ccdee8ae62d>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/9a37477967f54b67db79a7d1bc0b9cb7b67c0c52>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/b48088de85b3e925d9a93b4e93883c8cacbf1b1b>;
+    shacl:targetClass org:Organization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.beschrijving";
+    shacl:class rdf:langString;
+    shacl:description "Beschrijving van de organisatie."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/0f6cb927d0d26f3819cba3fb903a075cd426180d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.status";
+    shacl:class skos:Concept;
+    shacl:description "Toestand vd organisatie."@nl;
+    shacl:name "status"@nl;
+    shacl:path rov:orgStatus.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/24aad7819c9afedfd9d997b59dda21346b53978a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.issuborganisatievan(source)";
+    shacl:class org:Organization;
+    shacl:description "Organisatie die deze organisatie omvat."@nl;
+    shacl:name "is suborganisatie van (source)"@nl;
+    shacl:path org:subOrganizationOf.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.type";
+    shacl:class skos:Concept;
+    shacl:description "Soort organisatie."@nl;
+    shacl:name "type"@nl;
+    shacl:path rov:orgType.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/39f67b345a33d5e7c624f9c3ee364055f881cf0e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.heeftsuborganisatie(target)";
+    shacl:class org:Organization;
+    shacl:description "Organisatie die dochter of onderdeel is van de organisatie."@nl;
+    shacl:name "heeft suborganisatie (target)"@nl;
+    shacl:path org:hasSubOrganization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/3b0e7a9804a0f9315ec4e697b479ca35c74514f0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.isgeassocieerdmet(target)";
+    shacl:class org:Organization;
+    shacl:description "Niet nader bepaalde relatie met een andere organisatie."@nl;
+    shacl:name "is geassocieerd met (target)"@nl;
+    shacl:path org:linkedTo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.beschrijving";
+    shacl:description "Beschrijving van de organisatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/4ad757dbfb35fc053b5fda4d4065b294e90e6725> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.activiteit";
+    shacl:description "Type activiteit die door de organisatie wordt uitgeoefend."@nl;
+    shacl:maxCount 1;
+    shacl:name "activiteit"@nl;
+    shacl:path rov:orgActivity.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/4b124f0924fab01fc5967b50aacaf82bcf846710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.contactinfo";
+    shacl:class schema:ContactPoint;
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren."@nl;
+    shacl:name "contactinfo"@nl;
+    shacl:path schema:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/4c356c89be8d7eaa18e04cc74b5ae87a4fb977fa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.activiteit";
+    shacl:class skos:Concept;
+    shacl:description "Type activiteit die door de organisatie wordt uitgeoefend."@nl;
+    shacl:name "activiteit"@nl;
+    shacl:path rov:orgActivity.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/6b83c94554e8cc117c1d07fa1e155ccdee8ae62d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.voorkeursnaam";
+    shacl:class rdf:langString;
+    shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/72d196f39d114d410023dfae67396fa111bb5641> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.classificatie";
+    shacl:class skos:Concept;
+    shacl:description "Rangschikking van de organisatie in een classificatiesysteem."@nl;
+    shacl:name "classificatie"@nl;
+    shacl:path org:classification.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/7e4b6884554e8dd17a733c63e7625c87da05b4db> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.issuborganisatievan(target)";
+    shacl:class org:Organization;
+    shacl:description "Organisatie die deze organisatie omvat."@nl;
+    shacl:name "is suborganisatie van (target)"@nl;
+    shacl:path org:subOrganizationOf.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/820c91103a8196ae81f4284fccaefd989a62d587> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.isgeassocieerdmet(source)";
+    shacl:class org:Organization;
+    shacl:description "Niet nader bepaalde relatie met een andere organisatie."@nl;
+    shacl:name "is geassocieerd met (source)"@nl;
+    shacl:path org:linkedTo.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/9a37477967f54b67db79a7d1bc0b9cb7b67c0c52> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.voorkeursnaam";
+    shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:minCount 1;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/b48088de85b3e925d9a93b4e93883c8cacbf1b1b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.voorkeursnaam";
+    shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:maxCount 1;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/ccc60f000e8255577f863856ca86c69a40f97951> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.alternatievenaam";
+    shacl:class rdf:langString;
+    shacl:description "Andere naam waaronder de organisatie bekend is."@nl;
+    shacl:name "alternatieve naam"@nl;
+    shacl:path skos:altLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/d33f3915c7bb95947da748692705c4058d8688b6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.heeftsuborganisatie(source)";
+    shacl:class org:Organization;
+    shacl:description "Organisatie die dochter of onderdeel is van de organisatie."@nl;
+    shacl:name "heeft suborganisatie (source)"@nl;
+    shacl:path org:hasSubOrganization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/da28472666d298998330cb159b2c1e90b4446250> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.homepage";
+    shacl:description "Adres vd homepage van de website vd organisatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "homepage"@nl;
+    shacl:path foaf:homepage.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/dded78cb6f2b8c34d17d2b01917af9c00654bb31> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.doel";
+    shacl:class rdf:langString;
+    shacl:description "Bestaansreden vd organisatie."@nl;
+    shacl:name "doel"@nl;
+    shacl:path org:purpose.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#OrganisatieShape/fb8568b313de736f9184db23272b6317700e9e7e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Organisatie.homepage";
+    shacl:datatype xsd:string;
+    shacl:description "Adres vd homepage van de website vd organisatie."@nl;
+    shacl:name "homepage"@nl;
+    shacl:path foaf:homepage.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitKenmerktypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape/345694aebaaea57f4326940551c39ce14769e8ee>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape/d0e61019e2222caa3d039a907632b4198f841068>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape/e51bd0a1c2ce78ab7baa6e3bdd106a9e4f7e2bb3>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape/e6ada4b25599dde7d63c9b717df99ba62230ba58>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape/e05ff60682ad45b5c56d42046335c6fa37baaf7c>;
+    shacl:targetClass <http://schema.mobivoc.org/#ParkingFacility>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape/345694aebaaea57f4326940551c39ce14769e8ee> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Parkeerfaciliteit.kenmerk";
+    shacl:description "De kenmerken van een parkeerfaciliteit"@nl;
+    shacl:minCount 1;
+    shacl:name "kenmerk"@nl;
+    shacl:path <http://schema.mobivoc.org/#feature>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape/d0e61019e2222caa3d039a907632b4198f841068> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Parkeerfaciliteit.kenmerk";
+    shacl:class skos:Concept;
+    shacl:description "De kenmerken van een parkeerfaciliteit"@nl;
+    shacl:name "kenmerk"@nl;
+    shacl:path <http://schema.mobivoc.org/#feature>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape/e05ff60682ad45b5c56d42046335c6fa37baaf7c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Parkeerfaciliteit.parkeerplaats";
+    shacl:class <http://schema.mobivoc.org/#ParkingSpace>;
+    shacl:description "De parkeerplaats van de parkeerfaciliteit."@nl;
+    shacl:name "parkeerplaats"@nl;
+    shacl:path <http://schema.mobivoc.org/#parkingSpace>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape/e51bd0a1c2ce78ab7baa6e3bdd106a9e4f7e2bb3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Parkeerfaciliteit.kenmerk";
+    shacl:description "De kenmerken van een parkeerfaciliteit"@nl;
+    shacl:maxCount 1;
+    shacl:name "kenmerk"@nl;
+    shacl:path <http://schema.mobivoc.org/#feature>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerfaciliteitShape/e6ada4b25599dde7d63c9b717df99ba62230ba58> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Parkeerfaciliteit.openingsuren";
+    shacl:description "De openingsuren van de parkeerfaciliteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "openingsuren"@nl;
+    shacl:path schema:openingHoursSpecification.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerplaatsKenmerktypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerplaatsShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerplaatsShape/d0e61019e2222caa3d039a907632b4198f841068>;
+    shacl:targetClass <http://schema.mobivoc.org/#ParkingSpace>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ParkeerplaatsShape/d0e61019e2222caa3d039a907632b4198f841068> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Parkeerplaats.kenmerk";
+    shacl:class skos:Concept;
+    shacl:description "De kenmerken van de parkeerplaats"@nl;
+    shacl:name "kenmerk"@nl;
+    shacl:path <http://schema.mobivoc.org/#feature>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape/722a1f18cabb107c684fe4ca857876ade00b0d01>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape/3562937fd68e5b9b91210d2e17383e28b6a7a53b>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape/7c732806af87afa652c872adc5a3327a5255c890>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape/8c3d017fd78ace2f08b91e860df3a9426d504982>;
+    shacl:targetClass dcterms:Location.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Plaats.geometrie";
+    shacl:description "Geometrie van de plaats of het gebied."@nl;
+    shacl:maxCount 1;
+    shacl:name "geometrie"@nl;
+    shacl:path locn:geometry.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape/3562937fd68e5b9b91210d2e17383e28b6a7a53b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Plaats.plaatsnaam";
+    shacl:datatype rdf:langString;
+    shacl:description "Naam van de plaats of van het gebied."@nl;
+    shacl:name "plaatsnaam"@nl;
+    shacl:path rdfs:label.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape/722a1f18cabb107c684fe4ca857876ade00b0d01> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Plaats.geometrie";
+    shacl:class locn:Geometry;
+    shacl:description "Geometrie van de plaats of het gebied."@nl;
+    shacl:name "geometrie"@nl;
+    shacl:path locn:geometry.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape/7c732806af87afa652c872adc5a3327a5255c890> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Plaats.plaatsnaam";
+    shacl:description "Naam van de plaats of van het gebied."@nl;
+    shacl:minCount 1;
+    shacl:name "plaatsnaam"@nl;
+    shacl:path rdfs:label.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#PlaatsShape/8c3d017fd78ace2f08b91e860df3a9426d504982> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Plaats.plaatsnaam";
+    shacl:description "Naam van de plaats of van het gebied."@nl;
+    shacl:maxCount 1;
+    shacl:name "plaatsnaam"@nl;
+    shacl:path rdfs:label.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/93b806c71bc963a27fa447ef479e451e861f475c>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/941d58a199f61348d62792d9b35bd227450442f0>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/0a4b899ea5848b5ccb44d5aef08a046260fdf710>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/02cbc5c3866eb814c015ea7fb0c347ddf0d5d039>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/6365881a31089b1a4357f4c4d390222bda992531>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/f63c670b95ba17f57703a1e35d05f0a60b3bf056>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/6212c1e05eddea11b9050391a33c89544571b821>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/72b35350323b96cfe997ff3aa7bc759a96d21915>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/069f43e23912a76627aaa5b381c68dd8ba5f762d>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/bfdb2c03b187633d57d41618eb0836ad464fc0d6>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/cc066ce0cb2523a39f29bdfa36fb21e3a426ed9e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/e631da90d16362c0168329e96eed40d9d8ed11c5>;
+    shacl:targetClass schemas:Trip.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/02cbc5c3866eb814c015ea7fb0c347ddf0d5d039> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.gekozenroute";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route>;
+    shacl:description "Route die de Reiziger kiest uit de mogelijke Routes."@nl;
+    shacl:name "gekozen route"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#gekozenRoute>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/069f43e23912a76627aaa5b381c68dd8ba5f762d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.uitgevoerderoute";
+    shacl:description "Route die uiteindelijk uitgevoerd is om de Reis te realiseren."@nl;
+    shacl:maxCount 1;
+    shacl:name "uitgevoerde route"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#uitgevoerdeRoute>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/0a4b899ea5848b5ccb44d5aef08a046260fdf710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.boeking";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Boeking>;
+    shacl:description "Boeking van de Reis."@nl;
+    shacl:name "boeking"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reis.boeking>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/6212c1e05eddea11b9050391a33c89544571b821> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.mogelijkeroute";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route>;
+    shacl:description "Routes die gevolgd kunnen worden om de Reis uit te voeren."@nl;
+    shacl:name "mogelijke route"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#mogelijkeRoute>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/6365881a31089b1a4357f4c4d390222bda992531> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.isdeelvan(source)";
+    shacl:class schemas:Trip;
+    shacl:description "Deel van een volledige Reis dat op zichzelf ook beschouwd kan worden als een Reis."@nl;
+    shacl:name "is deel van (source)"@nl;
+    shacl:path schema:partOfTrip.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/72b35350323b96cfe997ff3aa7bc759a96d21915> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.reisweg";
+    shacl:description "Opeenvolging van Locaties die men tijdens de Reis wil aandoen."@nl;
+    shacl:minCount 2;
+    shacl:name "reisweg"@nl;
+    shacl:path schema:itinerary.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/93b806c71bc963a27fa447ef479e451e861f475c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.aankomsttijdstip";
+    shacl:description "Tijdstip waarop de Reis afgelopen is of waarop de Reiziger zou willen dat ze is afgelopen."@nl;
+    shacl:maxCount 1;
+    shacl:name "aankomsttijdstip"@nl;
+    shacl:path schemas:arrivalTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/941d58a199f61348d62792d9b35bd227450442f0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.aankomsttijdstip";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de Reis afgelopen is of waarop de Reiziger zou willen dat ze is afgelopen."@nl;
+    shacl:name "aankomsttijdstip"@nl;
+    shacl:path schemas:arrivalTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/bfdb2c03b187633d57d41618eb0836ad464fc0d6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.uitgevoerderoute";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route>;
+    shacl:description "Route die uiteindelijk uitgevoerd is om de Reis te realiseren."@nl;
+    shacl:name "uitgevoerde route"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#uitgevoerdeRoute>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/cc066ce0cb2523a39f29bdfa36fb21e3a426ed9e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.vertrektijdstip";
+    shacl:description "Tijdstip waarop de Reis aanvangt of waarop de Reiziger zou willen dat ze aanvangt."@nl;
+    shacl:maxCount 1;
+    shacl:name "vertrektijdstip"@nl;
+    shacl:path schemas:departureTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/e631da90d16362c0168329e96eed40d9d8ed11c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.vertrektijdstip";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de Reis aanvangt of waarop de Reiziger zou willen dat ze aanvangt."@nl;
+    shacl:name "vertrektijdstip"@nl;
+    shacl:path schemas:departureTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReisShape/f63c670b95ba17f57703a1e35d05f0a60b3bf056> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reis.isdeelvan(target)";
+    shacl:class schemas:Trip;
+    shacl:description "Deel van een volledige Reis dat op zichzelf ook beschouwd kan worden als een Reis."@nl;
+    shacl:name "is deel van (target)"@nl;
+    shacl:path schema:partOfTrip.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/2b7aad6ee94ec0dfa0580fe70fc7745ecac73161>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/c1b7c3f24fb4f7c8fdd1340128d7ee943e722473>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/f6db925e2379eff910a1a371bb5b81789c18455b>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/3aa1fbd32086cfafaf4589bb30b76f02b649cba6>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/4a175f2f7937587ffea87f41f8d67b227281001c>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/ca0e8d152033c3a04d43fdb55dc75f146fd0d5df>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/ead0140014ebf09954ecaa04a0b0da5f23bf732d>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reservatie.periode";
+    shacl:description "Periode waarvoor iets gereserveerd wordt."@nl;
+    shacl:maxCount 1;
+    shacl:name "periode"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/2b7aad6ee94ec0dfa0580fe70fc7745ecac73161> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reservatie.Boeking";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Boeking>;
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:name "Boeking"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.boeking>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/3aa1fbd32086cfafaf4589bb30b76f02b649cba6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reservatie.Resource";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource>;
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:name "Resource"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.resource>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/4a175f2f7937587ffea87f41f8d67b227281001c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reservatie.Resource";
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:maxCount 1;
+    shacl:name "Resource"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.resource>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/c1b7c3f24fb4f7c8fdd1340128d7ee943e722473> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reservatie.Boeking";
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:maxCount 1;
+    shacl:name "Boeking"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.boeking>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/ca0e8d152033c3a04d43fdb55dc75f146fd0d5df> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reservatie.Resource";
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:minCount 1;
+    shacl:name "Resource"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.resource>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/ead0140014ebf09954ecaa04a0b0da5f23bf732d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reservatie.periode";
+    shacl:description "Periode waarvoor iets gereserveerd wordt."@nl;
+    shacl:minCount 1;
+    shacl:name "periode"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ReservatieShape/f6db925e2379eff910a1a371bb5b81789c18455b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Reservatie.Boeking";
+    shacl:description "Referentie naar verbonden klasse."@nl;
+    shacl:minCount 1;
+    shacl:name "Boeking"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.boeking>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/437464f76e2c48726fe531777ab57072c436a8c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/65882aa6e035e313d7e8ae2a231fb774e8ce8068>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/d7acbcb60b9e20d37a76d3a71d840bdaadd184b5>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/bb43a48c77e7d98609af3d3bb1b1648370465308>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/48791db62b10b241a51d8453222b93172acc5a75>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/0f6cb927d0d26f3819cba3fb903a075cd426180d>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.resource>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/0f6cb927d0d26f3819cba3fb903a075cd426180d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Resource.status";
+    shacl:class skos:Concept;
+    shacl:description "Toestand waarin een Resource zich bevindt."@nl;
+    shacl:name "status"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Resource.type";
+    shacl:description "Aard van de Resource."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Resource.status";
+    shacl:description "Toestand waarin een Resource zich bevindt."@nl;
+    shacl:maxCount 1;
+    shacl:name "status"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Resource.type";
+    shacl:class skos:Concept;
+    shacl:description "Aard van de Resource."@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/437464f76e2c48726fe531777ab57072c436a8c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Resource.dienst";
+    shacl:description "Mobiliteitsdienst van de Resource."@nl;
+    shacl:minCount 1;
+    shacl:name "dienst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.dienst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/48791db62b10b241a51d8453222b93172acc5a75> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Resource.ruimtelijkedekking";
+    shacl:description "Plaats waar de Resource zich bevindt."@nl;
+    shacl:maxCount 1;
+    shacl:name "ruimtelijke dekking"@nl;
+    shacl:path dcterms:spatial.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/65882aa6e035e313d7e8ae2a231fb774e8ce8068> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Resource.dienst";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst>;
+    shacl:description "Mobiliteitsdienst van de Resource."@nl;
+    shacl:name "dienst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.dienst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Resource.type";
+    shacl:description "Aard van de Resource."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/bb43a48c77e7d98609af3d3bb1b1648370465308> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Resource.identificator";
+    shacl:description "Identificator van de Resource."@nl;
+    shacl:maxCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#identificator>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ResourceShape/d7acbcb60b9e20d37a76d3a71d840bdaadd184b5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Resource.gerealiseerdmet";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment>;
+    shacl:description "Resource van de Mobiliteitsdienst die de Reiziger heeft gebruikt bij het afleggen van het Routesegment."@nl;
+    shacl:name "gerealiseerd met"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.gerealiseerdMet>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/a00dcb690454f95fa60d4330732d9b840dbd223e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/93b806c71bc963a27fa447ef479e451e861f475c>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/941d58a199f61348d62792d9b35bd227450442f0>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/210275660563c3b179d9d941bc50cb9dc764566e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/955c3acc886e5c1f76d4f0dffaee08b4942b4916>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/999acc174d3d105f8685815f7b85735546976fb3>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/18e0f9dbcb55d62d5c85707e4835d1b9c899d197>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/23b4f5d4837d66a0100f231eaed1dd7acc53ce5b>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/13c28cbfef3cce37b000ef98387773161776ae85>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/23e9699fa943372d153e39d2ac9e3199a0b38114>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/1cacbe9eb5a3a9e19ba8b14dcef583535a0a27a5>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/cc066ce0cb2523a39f29bdfa36fb21e3a426ed9e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/e631da90d16362c0168329e96eed40d9d8ed11c5>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/13c28cbfef3cce37b000ef98387773161776ae85> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.routebeschrijving";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routebeschrijving>;
+    shacl:description "Beschrijving van de Route."@nl;
+    shacl:name "routebeschrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#routebeschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/18e0f9dbcb55d62d5c85707e4835d1b9c899d197> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.reisduur";
+    shacl:datatype xsd:duration;
+    shacl:description "Tijd waarin de Route wordt afgelegd."@nl;
+    shacl:name "reisduur"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#reisduur>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/1cacbe9eb5a3a9e19ba8b14dcef583535a0a27a5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.vertrekpunt";
+    shacl:description "Locatie waar de Route begint."@nl;
+    shacl:maxCount 1;
+    shacl:name "vertrekpunt"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#vertrekpunt>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/210275660563c3b179d9d941bc50cb9dc764566e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.afstand";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "afstand"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.afstand>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.type";
+    shacl:description "Aard van de Route."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/23b4f5d4837d66a0100f231eaed1dd7acc53ce5b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.reisduur";
+    shacl:description "Tijd waarin de Route wordt afgelegd."@nl;
+    shacl:maxCount 1;
+    shacl:name "reisduur"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#reisduur>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/23e9699fa943372d153e39d2ac9e3199a0b38114> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.routebeschrijving";
+    shacl:description "Beschrijving van de Route."@nl;
+    shacl:maxCount 1;
+    shacl:name "routebeschrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#routebeschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.type";
+    shacl:class skos:Concept;
+    shacl:description "Aard van de Route."@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/93b806c71bc963a27fa447ef479e451e861f475c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.aankomsttijdstip";
+    shacl:description "Tijdstip waarop de Route eindigt."@nl;
+    shacl:maxCount 1;
+    shacl:name "aankomsttijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.aankomsttijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/941d58a199f61348d62792d9b35bd227450442f0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.aankomsttijdstip";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de Route eindigt."@nl;
+    shacl:name "aankomsttijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.aankomsttijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/955c3acc886e5c1f76d4f0dffaee08b4942b4916> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.afstand";
+    shacl:class schemas:QuantitativeValue;
+    shacl:description "TODO"@nl;
+    shacl:name "afstand"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.afstand>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/999acc174d3d105f8685815f7b85735546976fb3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.kostprijs";
+    shacl:description "Prijs van de Route."@nl;
+    shacl:maxCount 1;
+    shacl:name "kostprijs"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#kostprijs>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/a00dcb690454f95fa60d4330732d9b840dbd223e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.aankomstpunt";
+    shacl:description "Locatie waar de Route eindigt."@nl;
+    shacl:maxCount 1;
+    shacl:name "aankomstpunt"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#aankomstpunt>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/cc066ce0cb2523a39f29bdfa36fb21e3a426ed9e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.vertrektijdstip";
+    shacl:description "Tijdstip waarop de Route begint."@nl;
+    shacl:maxCount 1;
+    shacl:name "vertrektijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.vertrektijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteShape/e631da90d16362c0168329e96eed40d9d8ed11c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Route.vertrektijdstip";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de Route begint."@nl;
+    shacl:name "vertrektijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.vertrektijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutebeschrijvingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routebeschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteplannerShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteplannerShape/ecb21414fe38922969e16c9ed4b677b85e3aec10>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteplannerShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteplannerShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteplannerShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routeplanner>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteplannerShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routeplanner.naam";
+    shacl:datatype xsd:string;
+    shacl:description "Naam van de Routeplanner."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteplannerShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routeplanner.naam";
+    shacl:description "Naam van de Routeplanner."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteplannerShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routeplanner.naam";
+    shacl:description "Naam van de Routeplanner."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RouteplannerShape/ecb21414fe38922969e16c9ed4b677b85e3aec10> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routeplanner.berekendmet";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route>;
+    shacl:description "Routeplanner waarmee de Route is berekend."@nl;
+    shacl:name "berekend met"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#berekendMet>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/63701c5bdb33920204589a99c4f4dd32433d02d5>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/c66f76cb49c2225d2007424aaf8a3a8e376abd8a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/93b806c71bc963a27fa447ef479e451e861f475c>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/941d58a199f61348d62792d9b35bd227450442f0>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/fbe0ca8eb030c595948d1c2d2c2e80d943e47420>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/07883a3556657f573b5da9b23ce06d8ae66f85c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/d8584c4c06e15e472afcc65d469bbcd5fd8ec8db>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/924f1eeff92d87f32b47b4c78c26d347a9064f73>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/cc066ce0cb2523a39f29bdfa36fb21e3a426ed9e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/e631da90d16362c0168329e96eed40d9d8ed11c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/12e728aa4917299c79b5629b99894330bc4bbd30>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/7059dc6c585cce4c3d33cf914931c5ce90da2463>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/8fc686748e44940262b65d5d4c37648b82ca857f>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/07883a3556657f573b5da9b23ce06d8ae66f85c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.bestaatuit";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route>;
+    shacl:description "Opeenvolging van Routesegmenten waaruit de Route bestaat."@nl;
+    shacl:name "bestaat uit"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#bestaatUit>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/12e728aa4917299c79b5629b99894330bc4bbd30> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.vervoermiddel";
+    shacl:class skos:Concept;
+    shacl:description "Type vervoermiddel waarmee het Routesegment is afgelegd."@nl;
+    shacl:name "vervoermiddel"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vervoermiddel>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/63701c5bdb33920204589a99c4f4dd32433d02d5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.aandrijving";
+    shacl:class skos:Concept;
+    shacl:description "Aandrijving van het vervoermiddel waarmee het Routesegment is afgelegd."@nl;
+    shacl:name "aandrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.aandrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/7059dc6c585cce4c3d33cf914931c5ce90da2463> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.vervoermiddel";
+    shacl:description "Type vervoermiddel waarmee het Routesegment is afgelegd."@nl;
+    shacl:minCount 1;
+    shacl:name "vervoermiddel"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vervoermiddel>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/8fc686748e44940262b65d5d4c37648b82ca857f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.vervoermiddel";
+    shacl:description "Type vervoermiddel waarmee het Routesegment is afgelegd."@nl;
+    shacl:maxCount 1;
+    shacl:name "vervoermiddel"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vervoermiddel>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/924f1eeff92d87f32b47b4c78c26d347a9064f73> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.vertrektijdstip";
+    shacl:description "Tijdstip waarop het Routesegment begint."@nl;
+    shacl:minCount 1;
+    shacl:name "vertrektijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vertrektijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/93b806c71bc963a27fa447ef479e451e861f475c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.aankomsttijdstip";
+    shacl:description "Tijdstip waarop het Routesegment eindigt."@nl;
+    shacl:maxCount 1;
+    shacl:name "aankomsttijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.aankomsttijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/941d58a199f61348d62792d9b35bd227450442f0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.aankomsttijdstip";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop het Routesegment eindigt."@nl;
+    shacl:name "aankomsttijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.aankomsttijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/c66f76cb49c2225d2007424aaf8a3a8e376abd8a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.aandrijving";
+    shacl:description "Aandrijving van het vervoermiddel waarmee het Routesegment is afgelegd."@nl;
+    shacl:maxCount 1;
+    shacl:name "aandrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.aandrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/cc066ce0cb2523a39f29bdfa36fb21e3a426ed9e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.vertrektijdstip";
+    shacl:description "Tijdstip waarop het Routesegment begint."@nl;
+    shacl:maxCount 1;
+    shacl:name "vertrektijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vertrektijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/d8584c4c06e15e472afcc65d469bbcd5fd8ec8db> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.link";
+    shacl:description "Opeenvolging van Gerichte Links waaruit het Routesegment bestaat."@nl;
+    shacl:minCount 1;
+    shacl:name "link"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#link>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/e631da90d16362c0168329e96eed40d9d8ed11c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.vertrektijdstip";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop het Routesegment begint."@nl;
+    shacl:name "vertrektijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vertrektijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutesegmentShape/fbe0ca8eb030c595948d1c2d2c2e80d943e47420> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Routesegment.aankomsttijdstip";
+    shacl:description "Tijdstip waarop het Routesegment eindigt."@nl;
+    shacl:minCount 1;
+    shacl:name "aankomsttijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.aankomsttijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#RoutetypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#StandaardEenheidShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/5a374cb9619d3ecb46b60404687527dc1c06eae3>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/accd13839c2e0c6e60fc7183b6d3ba3059fa4dbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/f7af514e6c820346c4f1de53fde08fbe7875367a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/59f19f33ed2d762d1b73623c8ef9129d6d178318>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/d3b05c273872f80179f9e1037431e9985fbe6dc3>;
+    shacl:targetClass rdf:langString.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/59f19f33ed2d762d1b73623c8ef9129d6d178318> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Taalstring.taal";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "taal"@nl;
+    shacl:path eli:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/5a374cb9619d3ecb46b60404687527dc1c06eae3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Taalstring.string";
+    shacl:datatype xsd:string;
+    shacl:description "TODO"@nl;
+    shacl:name "string"@nl;
+    shacl:path xsd:string.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/accd13839c2e0c6e60fc7183b6d3ba3059fa4dbd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Taalstring.string";
+    shacl:description "TODO"@nl;
+    shacl:maxCount 1;
+    shacl:name "string"@nl;
+    shacl:path xsd:string.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Taalstring.taal";
+    shacl:class skos:Concept;
+    shacl:description "TODO"@nl;
+    shacl:name "taal"@nl;
+    shacl:path eli:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/d3b05c273872f80179f9e1037431e9985fbe6dc3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Taalstring.taal";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "taal"@nl;
+    shacl:path eli:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#TaalStringShape/f7af514e6c820346c4f1de53fde08fbe7875367a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Taalstring.string";
+    shacl:description "TODO"@nl;
+    shacl:minCount 1;
+    shacl:name "string"@nl;
+    shacl:path xsd:string.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/67ea555474378d8510c3e840a9b9a4b5d91045bf>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/cbe1597f8de663f8484a9caf4e0b4ec6d0c59944>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/da7b20fa5672e1efac8134dc00bf3f008dc299c8>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/1abf4c188749d48c8e743d90763cf1f31b4187c0>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/55af5228aba1ef1511b98ceb65437e864b7396e8>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Toegankelijkheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/1abf4c188749d48c8e743d90763cf1f31b4187c0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Toegankelijkheid.onderdeel";
+    shacl:description "Deel van de dienst of infrastructuur waarop de Toegankelijkheid betrekking heeft.."@nl;
+    shacl:maxCount 1;
+    shacl:name "onderdeel"@nl;
+    shacl:path skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Toegankelijkheid.type";
+    shacl:description "Aard van de Toegankelijkheid."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Toegankelijkheid.type";
+    shacl:class skos:Concept;
+    shacl:description "Aard van de Toegankelijkheid."@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/55af5228aba1ef1511b98ceb65437e864b7396e8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Toegankelijkheid.onderdeel";
+    shacl:class skos:Concept;
+    shacl:description "Deel van de dienst of infrastructuur waarop de Toegankelijkheid betrekking heeft.."@nl;
+    shacl:name "onderdeel"@nl;
+    shacl:path skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/67ea555474378d8510c3e840a9b9a4b5d91045bf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Toegankelijkheid.niveau";
+    shacl:description "Niveau van toegankelijkheid."@nl;
+    shacl:maxCount 1;
+    shacl:name "niveau"@nl;
+    shacl:path skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Toegankelijkheid.type";
+    shacl:description "Aard van de Toegankelijkheid."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/cbe1597f8de663f8484a9caf4e0b4ec6d0c59944> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Toegankelijkheid.niveau";
+    shacl:description "Niveau van toegankelijkheid."@nl;
+    shacl:minCount 1;
+    shacl:name "niveau"@nl;
+    shacl:path skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#ToegankelijkheidShape/da7b20fa5672e1efac8134dc00bf3f008dc299c8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Toegankelijkheid.niveau";
+    shacl:class skos:Concept;
+    shacl:description "Niveau van toegankelijkheid."@nl;
+    shacl:name "niveau"@nl;
+    shacl:path skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VervoermiddelShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/1ccebc5e043975650ddbfbafc3c1180aac0f5265>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/e7ffb674b98f10c128259df7294a574abf90430b>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/f0f75b77dc4f75a47d066c85de9174e986f0a86f>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/1ec5c9f506ea64c8d321e91a831986ebbbb7b01a>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/63e6db8eb213f89ab6e8bc8b53fa416e4b1a5378>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/f2c1a31f782add15539889d211f9b3476999f2ce>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/80a0d7607af13c23865bf8e0fac09ec1614c1183>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/8452958e7e3ff4f372a2572514a9e5828932e062>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/85dd2fcbfc5e7e4a2fce56aca526a14d83cc522d>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/00d0f5c4c7c68fcc9ae545bc81ff829ee292b702>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/1e7c928356e3fb9c83ad4a07a1a2a83d7eed391b>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/2ee8274e9db94579f33d6927a4394a258d252013>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/9e5ba54614677811c16be627c2f154d82d275aa4>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/14d9104ed04564a62d7083a3b8a6141ef577017a>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/vrachtwagenparkeren#Voertuig>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/00d0f5c4c7c68fcc9ae545bc81ff829ee292b702> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.heeftBestuurder";
+    shacl:class <https://data.vlaanderen.be/ns/vrachtwagenparkeren#Bestuurder>;
+    shacl:description "De bestuurder van het voertuig"@nl;
+    shacl:name "heeftBestuurder"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#heeftBestuurder>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/14d9104ed04564a62d7083a3b8a6141ef577017a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.onderneemt";
+    shacl:class schemas:Trip;
+    shacl:description "De reis die de reiziger onderneemt"@nl;
+    shacl:name "onderneemt"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#onderneemt>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/1ccebc5e043975650ddbfbafc3c1180aac0f5265> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.aandrijvingstype";
+    shacl:description "het type aandrijving dat het voertuig in beweging brengt."@nl;
+    shacl:maxCount 1;
+    shacl:name "aandrijvingstype"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/1e7c928356e3fb9c83ad4a07a1a2a83d7eed391b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.lading";
+    shacl:class skos:Concept;
+    shacl:description "De lading van een voertuig"@nl;
+    shacl:name "lading"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#lading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/1ec5c9f506ea64c8d321e91a831986ebbbb7b01a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.aantalAssen";
+    shacl:description "Het aantal assen waar het voertuig op rust."@nl;
+    shacl:minCount 1;
+    shacl:name "aantalAssen"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#aantalAssen>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/2ee8274e9db94579f33d6927a4394a258d252013> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.lading";
+    shacl:description "De lading van een voertuig"@nl;
+    shacl:minCount 1;
+    shacl:name "lading"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#lading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/63e6db8eb213f89ab6e8bc8b53fa416e4b1a5378> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.aantalAssen";
+    shacl:description "Het aantal assen waar het voertuig op rust."@nl;
+    shacl:maxCount 1;
+    shacl:name "aantalAssen"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#aantalAssen>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/80a0d7607af13c23865bf8e0fac09ec1614c1183> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.dimensie";
+    shacl:description "De dimensie(s) van het voertuig"@nl;
+    shacl:minCount 1;
+    shacl:name "dimensie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#dimensie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/8452958e7e3ff4f372a2572514a9e5828932e062> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.dimensie";
+    shacl:class <https://data.vlaanderen.be/ns/vrachtwagenparkeren#Dimensie>;
+    shacl:description "De dimensie(s) van het voertuig"@nl;
+    shacl:name "dimensie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#dimensie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/85dd2fcbfc5e7e4a2fce56aca526a14d83cc522d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.dimensie";
+    shacl:description "De dimensie(s) van het voertuig"@nl;
+    shacl:maxCount 1;
+    shacl:name "dimensie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#dimensie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/9e5ba54614677811c16be627c2f154d82d275aa4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.lading";
+    shacl:description "De lading van een voertuig"@nl;
+    shacl:maxCount 1;
+    shacl:name "lading"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#lading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/e7ffb674b98f10c128259df7294a574abf90430b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.aandrijvingstype";
+    shacl:class skos:Concept;
+    shacl:description "het type aandrijving dat het voertuig in beweging brengt."@nl;
+    shacl:name "aandrijvingstype"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/f0f75b77dc4f75a47d066c85de9174e986f0a86f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.aandrijvingstype";
+    shacl:description "het type aandrijving dat het voertuig in beweging brengt."@nl;
+    shacl:minCount 1;
+    shacl:name "aandrijvingstype"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VoertuigShape/f2c1a31f782add15539889d211f9b3476999f2ce> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Voertuig.aantalAssen";
+    shacl:datatype xsd:integer;
+    shacl:description "Het aantal assen waar het voertuig op rust."@nl;
+    shacl:name "aantalAssen"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/vrachtwagenparkeren#aantalAssen>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VrachtwagenShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VrachtwagenShape/69d0365b54a1f0eed3660cd7c39749f86761e74e>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VrachtwagenShape/6b2fab6745012f934b4f336f9461401a018e7698>, <https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VrachtwagenShape/aeedcb07e7204975656cc9a53f001259fbacd266>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/vrachtwagenparkeren#Vrachtwagen>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VrachtwagenShape/69d0365b54a1f0eed3660cd7c39749f86761e74e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Vrachtwagen.vrachtwagentype";
+    shacl:description "Type van de vrachtwagen"@nl;
+    shacl:minCount 1;
+    shacl:name "vrachtwagentype"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VrachtwagenShape/6b2fab6745012f934b4f336f9461401a018e7698> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Vrachtwagen.vrachtwagentype";
+    shacl:description "Type van de vrachtwagen"@nl;
+    shacl:maxCount 1;
+    shacl:name "vrachtwagentype"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VrachtwagenShape/aeedcb07e7204975656cc9a53f001259fbacd266> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#Vrachtwagen.vrachtwagentype";
+    shacl:class skos:Concept;
+    shacl:description "Type van de vrachtwagen"@nl;
+    shacl:name "vrachtwagentype"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/vrachtwagenparkeren#VrachtwagentypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.

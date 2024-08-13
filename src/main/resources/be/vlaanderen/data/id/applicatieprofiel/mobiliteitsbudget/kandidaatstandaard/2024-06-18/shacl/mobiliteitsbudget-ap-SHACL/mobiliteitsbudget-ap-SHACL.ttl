@@ -1,0 +1,949 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18> rdfs:member <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#WaardetypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MomentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#TemporeleEntiteitShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PeriodeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#AgentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijstypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#TaalStringShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#AnyShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BoekingstatusShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#DienstverleningtypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieClassificatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieActiviteitShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieStatusShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoermiddelShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#LocatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#DienstregelingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#WaardeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#DocumentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#GeldbedragShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonsrelatieShape>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#AgentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#AgentShape/c0f98e2fb1733d1fc94a3aefecd0aed824c25121>;
+    shacl:targetClass dcterms:Agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#AgentShape/c0f98e2fb1733d1fc94a3aefecd0aed824c25121> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Agent.segment";
+    shacl:class schemas:audienceType;
+    shacl:description "De classificatie waartoe een agent behoort volgens bepaalde criteria."@nl;
+    shacl:name "segment"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#segment>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#AnyShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass rdfs:Resource.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/762f5094731b213d88d8a29332598749ea0eaa46>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/incentiveringsplatform#Beloning>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Beloning.waarde";
+    shacl:class schemas:QuantitativeValue;
+    shacl:description "Het gewicht van de beloning."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Beloning.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van de beloning."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Beloning.naam";
+    shacl:datatype rdf:langString;
+    shacl:description "Naam van de beloning."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Beloning.type";
+    shacl:description "De vorm van beloning."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Beloning.beschrijving";
+    shacl:description "Beschrijving van de beloning."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Beloning.naam";
+    shacl:description "Naam van de beloning."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BeloningShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Beloning.waarde";
+    shacl:description "Het gewicht van de beloning."@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#BoekingstatusShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/1e6f3de4a4dfd551a87c9a73ca81091d7a958286>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/62fdf75051f88fb92d30356677b49a5b31b2c3bc>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/69358aff40366f24dfbb78423383b9fbc333a2fe>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/af3928752f4f992fb2ca197a8a7855a1e52127a2>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/c3f465f373c13c3cf8da8e36de7130c8163c6cd0>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/d841f20866c0b5d42f7db10947fa7302a617b0af>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/49a10dff63dff3eb30ed1aca58fd36bb98a0eddc>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/822fbb8865c8f30c16b741cc1ee56c590b682046>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/a7dbe91925cff3f66959120ab0f9e58b10148bcf>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/fad9ec48d1c8b16d32cfd0599c8854830da5e72d>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/fa86ebb6cad4a667bcb8b8953edf46419cd2150a>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/ca4892872b345b4fe994128b7c31877979275399>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/0d8796b2e7686399ff73c39ac5efde2befa7b414>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/a1f4297b3b37f3dfc46ade0f50f9f5dcc92579bc>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/ec3209abd1839a0af28e2cf47ba708ee63b96207>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteitsbudget#Consumptie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.waarde";
+    shacl:class schemas:QuantitativeValue;
+    shacl:description "De concrete,kwantitatieve of kwalitatieve invulling van een grootheid of categorie."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#waarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/0d8796b2e7686399ff73c39ac5efde2befa7b414> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.waardetype";
+    shacl:description "Type waarde waarmee een vervoersbewijs gefinancierd kan worden"@nl;
+    shacl:minCount 1;
+    shacl:name "waardetype"@nl;
+    shacl:path schemas:QuantitativeValue.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/1e6f3de4a4dfd551a87c9a73ca81091d7a958286> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.consumptieTijdstip";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Moment waarop het mobiliteitsbudget wordt geconsumeerd"@nl;
+    shacl:name "consumptieTijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#consumptieTijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/49a10dff63dff3eb30ed1aca58fd36bb98a0eddc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.geconsumeerdDoor";
+    shacl:class dcterms:Agent;
+    shacl:description "De agent die het mobiliteitsbudget consumeert."@nl;
+    shacl:name "geconsumeerdDoor"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#geconsumeerdDoor>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/62fdf75051f88fb92d30356677b49a5b31b2c3bc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.consumptieTijdstip";
+    shacl:description "Moment waarop het mobiliteitsbudget wordt geconsumeerd"@nl;
+    shacl:minCount 1;
+    shacl:name "consumptieTijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#consumptieTijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/69358aff40366f24dfbb78423383b9fbc333a2fe> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.consumptieTijdstip";
+    shacl:description "Moment waarop het mobiliteitsbudget wordt geconsumeerd"@nl;
+    shacl:maxCount 1;
+    shacl:name "consumptieTijdstip"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#consumptieTijdstip>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.waarde";
+    shacl:description "De concrete,kwantitatieve of kwalitatieve invulling van een grootheid of categorie."@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#waarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/822fbb8865c8f30c16b741cc1ee56c590b682046> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.geconsumeerdDoor";
+    shacl:description "De agent die het mobiliteitsbudget consumeert."@nl;
+    shacl:minCount 1;
+    shacl:name "geconsumeerdDoor"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#geconsumeerdDoor>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/a1f4297b3b37f3dfc46ade0f50f9f5dcc92579bc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.waardetype";
+    shacl:description "Type waarde waarmee een vervoersbewijs gefinancierd kan worden"@nl;
+    shacl:maxCount 1;
+    shacl:name "waardetype"@nl;
+    shacl:path schemas:QuantitativeValue.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/a7dbe91925cff3f66959120ab0f9e58b10148bcf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.geconsumeerdDoor";
+    shacl:description "De agent die het mobiliteitsbudget consumeert."@nl;
+    shacl:maxCount 1;
+    shacl:name "geconsumeerdDoor"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#geconsumeerdDoor>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/af3928752f4f992fb2ca197a8a7855a1e52127a2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.consumptieType";
+    shacl:description "De aard van de consumptie van het mobiliteitsbudget"@nl;
+    shacl:maxCount 1;
+    shacl:name "consumptieType"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#consumptieType>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/c3f465f373c13c3cf8da8e36de7130c8163c6cd0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.consumptieType";
+    shacl:description "De aard van de consumptie van het mobiliteitsbudget"@nl;
+    shacl:minCount 1;
+    shacl:name "consumptieType"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#consumptieType>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.waarde";
+    shacl:description "De concrete,kwantitatieve of kwalitatieve invulling van een grootheid of categorie."@nl;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#waarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/d841f20866c0b5d42f7db10947fa7302a617b0af> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.consumptieType";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteitsbudget#ConsumptieType>;
+    shacl:description "De aard van de consumptie van het mobiliteitsbudget"@nl;
+    shacl:name "consumptieType"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#consumptieType>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/ec3209abd1839a0af28e2cf47ba708ee63b96207> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.waardetype";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteitsbudget#Waardetype>;
+    shacl:description "Type waarde waarmee een vervoersbewijs gefinancierd kan worden"@nl;
+    shacl:name "waardetype"@nl;
+    shacl:path schemas:QuantitativeValue.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/fa86ebb6cad4a667bcb8b8953edf46419cd2150a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.vervoersbewijs";
+    shacl:class schemas:Ticket;
+    shacl:description "Het soort vervoersbewijs dat gebruikt wordt"@nl;
+    shacl:name "vervoersbewijs"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#vervoersbewijs>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieShape/fad9ec48d1c8b16d32cfd0599c8854830da5e72d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Consumptie.mobiliteitsbudget";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget>;
+    shacl:description "Het Mobiliteitsbudget dat geconsumeerd wordt. "@nl;
+    shacl:name "mobiliteitsbudget"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#mobiliteitsbudget>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ConsumptieTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteitsbudget#ConsumptieType>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#DienstregelingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Dienstregeling>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#DienstverleningtypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#DocumentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass schemas:DigitalDocument.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#GeldbedragShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass schemas:MonetaryAmount.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/72c15e74c4d0cb3548d621c127b1090e77f8481e>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/8a7cf46c8506736f2b7d04fe32bd522933417037>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/db2555457b897a2e792d884a673aab52e0a72c28>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/dcf18241c7695eee6abe5c99b390387f700ef44c>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/ca4892872b345b4fe994128b7c31877979275399>;
+    shacl:targetClass schemas:QuantitativeValue.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaarde.waarde";
+    shacl:class schemas:Number;
+    shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/72c15e74c4d0cb3548d621c127b1090e77f8481e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaarde.eenheid";
+    shacl:datatype xsd:string;
+    shacl:description "De eenheid waarin de waarde is uitgedrukt."@nl;
+    shacl:name "eenheid"@nl;
+    shacl:path schemas:unitText.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaarde.waarde";
+    shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/8a7cf46c8506736f2b7d04fe32bd522933417037> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaarde.eenheid";
+    shacl:description "De eenheid waarin de waarde is uitgedrukt."@nl;
+    shacl:maxCount 1;
+    shacl:name "eenheid"@nl;
+    shacl:path schemas:unitText.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaarde.waarde";
+    shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/db2555457b897a2e792d884a673aab52e0a72c28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaarde.standaardeenheid";
+    shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
+    shacl:maxCount 1;
+    shacl:name "standaard eenheid"@nl;
+    shacl:path schemas:unitCode.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaardeShape/dcf18241c7695eee6abe5c99b390387f700ef44c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#KwantitatieveWaarde.standaardeenheid";
+    shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+    shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
+    shacl:name "standaard eenheid"@nl;
+    shacl:path schemas:unitCode.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#LocatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass prov:Location.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/95fdc443af9303d4d02a79f9a94b333ab53c9789>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/a276058a0c6bb73b6e329443e4a953387ee256dd>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/a9e9a8c35cbd61c2daa8b7b45df22c016cdd03a2>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/a473fd6caa1d9029945461a586d7662fb87d9eab>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/6c326501ad3735c49292e4a488d098ef2442cc7c>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/86b8c9d6a26a287c854cc1d88f1f5fdd4dde0e6f>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/fab105d05c8d9f8aa8e9c0f570742d92cc78eacf>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/74feba662f4f65577bf45a8dd94f8faec0f03592>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/88ec6a8ce72ec0d1ee2ae7398cfcc8c5c8143990>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/c0d14a7045e2c50959d3362fd15eaa84f45862e4>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/c0f2fe0c1e3e71b6723075c9e3b6b8740ebcd43a>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/4a03ef0c30b9f96a0e1f7234ac97f040f3dfe6a5>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/ca4892872b345b4fe994128b7c31877979275399>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/0d8796b2e7686399ff73c39ac5efde2befa7b414>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/a1f4297b3b37f3dfc46ade0f50f9f5dcc92579bc>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/ec3209abd1839a0af28e2cf47ba708ee63b96207>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.waarde";
+    shacl:class schemas:QuantitativeValue;
+    shacl:description "Bedrag van het budget in euro"@nl;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:MonetaryAmount.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/0d8796b2e7686399ff73c39ac5efde2befa7b414> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.waardetype";
+    shacl:description "Type waarde waarmee een vervoersbewijs gefinancierd kan worden"@nl;
+    shacl:minCount 1;
+    shacl:name "waardetype"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#waardetype>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.naam";
+    shacl:datatype rdf:langString;
+    shacl:description "Naam van het budget"@nl;
+    shacl:name "naam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#naam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.type";
+    shacl:description "Type oorsprong van budget"@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget.type>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.type";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteitsbudget#MobiliteitsbudgetType>;
+    shacl:description "Type oorsprong van budget"@nl;
+    shacl:name "type"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget.type>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/4a03ef0c30b9f96a0e1f7234ac97f040f3dfe6a5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.voorwaarde";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde>;
+    shacl:description "Voorwaarde gekoppeld aan het Mobiliteitsbudget."@nl;
+    shacl:name "voorwaarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#voorwaarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.naam";
+    shacl:description "Naam van het budget"@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#naam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/6c326501ad3735c49292e4a488d098ef2442cc7c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.toegekendOp";
+    shacl:description "Moment waarop het budget verkregen is"@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekendOp"@nl;
+    shacl:path schemas:dateReceived.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.type";
+    shacl:description "Type oorsprong van budget"@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget.type>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.waarde";
+    shacl:description "Bedrag van het budget in euro"@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:MonetaryAmount.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/86b8c9d6a26a287c854cc1d88f1f5fdd4dde0e6f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.toegekendOp";
+    shacl:description "Moment waarop het budget verkregen is"@nl;
+    shacl:minCount 1;
+    shacl:name "toegekendOp"@nl;
+    shacl:path schemas:dateReceived.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/88ec6a8ce72ec0d1ee2ae7398cfcc8c5c8143990> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.vervaldatum";
+    shacl:description "Moment waarop budget niet meer geldig is"@nl;
+    shacl:minCount 1;
+    shacl:name "vervaldatum"@nl;
+    shacl:path schemas:endDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/95fdc443af9303d4d02a79f9a94b333ab53c9789> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.begindatum";
+    shacl:description "Moment waarop het budget beschikbaar is"@nl;
+    shacl:maxCount 1;
+    shacl:name "begindatum"@nl;
+    shacl:path schemas:startDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/a1f4297b3b37f3dfc46ade0f50f9f5dcc92579bc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.waardetype";
+    shacl:description "Type waarde waarmee een vervoersbewijs gefinancierd kan worden"@nl;
+    shacl:maxCount 1;
+    shacl:name "waardetype"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#waardetype>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/a276058a0c6bb73b6e329443e4a953387ee256dd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.begindatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Moment waarop het budget beschikbaar is"@nl;
+    shacl:name "begindatum"@nl;
+    shacl:path schemas:startDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/a473fd6caa1d9029945461a586d7662fb87d9eab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.consumptie";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteitsbudget#Consumptie>;
+    shacl:description "De consumptie van het Mobiliteitsbudget"@nl;
+    shacl:name "consumptie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#consumptie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/a9e9a8c35cbd61c2daa8b7b45df22c016cdd03a2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.begindatum";
+    shacl:description "Moment waarop het budget beschikbaar is"@nl;
+    shacl:minCount 1;
+    shacl:name "begindatum"@nl;
+    shacl:path schemas:startDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/c0d14a7045e2c50959d3362fd15eaa84f45862e4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.vervaldatum";
+    shacl:description "Moment waarop budget niet meer geldig is"@nl;
+    shacl:maxCount 1;
+    shacl:name "vervaldatum"@nl;
+    shacl:path schemas:endDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/c0f2fe0c1e3e71b6723075c9e3b6b8740ebcd43a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.vervaldatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Moment waarop budget niet meer geldig is"@nl;
+    shacl:name "vervaldatum"@nl;
+    shacl:path schemas:endDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.waarde";
+    shacl:description "Bedrag van het budget in euro"@nl;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path schemas:MonetaryAmount.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.naam";
+    shacl:description "Naam van het budget"@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#naam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/ec3209abd1839a0af28e2cf47ba708ee63b96207> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.waardetype";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteitsbudget#Waardetype>;
+    shacl:description "Type waarde waarmee een vervoersbewijs gefinancierd kan worden"@nl;
+    shacl:name "waardetype"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#waardetype>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetShape/fab105d05c8d9f8aa8e9c0f570742d92cc78eacf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsbudget.toegekendOp";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Moment waarop het budget verkregen is"@nl;
+    shacl:name "toegekendOp"@nl;
+    shacl:path schemas:dateReceived.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsbudgetTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteitsbudget#MobiliteitsbudgetType>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/7afdb5e532aae0234495df704beed1c303e180e6>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/c50c780876b22ae67a3ded60e1c528c11c9dfc59>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/87862ccf26feb4b9fd8853f34279c5b32c10ab2b>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/74feba662f4f65577bf45a8dd94f8faec0f03592>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/12e728aa4917299c79b5629b99894330bc4bbd30>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/6675a4fb3a1912b88c4c3a658fb1bdd6543afe79>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/fa86ebb6cad4a667bcb8b8953edf46419cd2150a>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/12e728aa4917299c79b5629b99894330bc4bbd30> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.vervoermiddel";
+    shacl:class skos:Concept;
+    shacl:description "Vervoermiddel waarmee of waarvoor de Mobiliteitsdienst doorgaans wordt georganiseerd."@nl;
+    shacl:name "vervoermiddel"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.vervoermiddel>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.naam";
+    shacl:datatype rdf:langString;
+    shacl:description "Naam van de Mobiliteitsdienst."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.type";
+    shacl:class skos:Concept;
+    shacl:description "Aard van de mobiliteitsdienst."@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.naam";
+    shacl:description "Naam van de Mobiliteitsdienst."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/6675a4fb3a1912b88c4c3a658fb1bdd6543afe79> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.vervoersbewijs";
+    shacl:description "Vervoersbewijs die men kan gebruiken voor een Mobiliteitsdienst."@nl;
+    shacl:minCount 1;
+    shacl:name "vervoersbewijs"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#vervoersbewijs>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.type";
+    shacl:description "Aard van de mobiliteitsdienst."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/7afdb5e532aae0234495df704beed1c303e180e6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.beschikbaarheid";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Beschikbaarheid>;
+    shacl:description "Beschikbaarheid van de Mobiliteitsdienst."@nl;
+    shacl:name "beschikbaarheid"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.beschikbaarheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/87862ccf26feb4b9fd8853f34279c5b32c10ab2b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.ruimtelijkedekking";
+    shacl:class dcterms:Location;
+    shacl:description "Gebied of Plaats waarbinnen de Mobiliteitsdienst wordt aangeboden."@nl;
+    shacl:name "ruimtelijke dekking"@nl;
+    shacl:path dcterms:spatial.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.toegankelijkheid";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Toegankelijkheid>;
+    shacl:description "Toegankelijkheid van de Mobiliteitsdienst."@nl;
+    shacl:name "toegankelijkheid"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.toegankelijkheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/c50c780876b22ae67a3ded60e1c528c11c9dfc59> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.omvat";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst>;
+    shacl:description "Meer specifieke Mobiliteitsdiensten waaruit de Mobiliteitsdienst is samengesteld."@nl;
+    shacl:name "omvat"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#omvat>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.naam";
+    shacl:description "Naam van de Mobiliteitsdienst."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MobiliteitsdienstShape/fa86ebb6cad4a667bcb8b8953edf46419cd2150a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Mobiliteitsdienst.vervoersbewijs";
+    shacl:class schemas:Ticket;
+    shacl:description "Vervoersbewijs die men kan gebruiken voor een Mobiliteitsdienst."@nl;
+    shacl:name "vervoersbewijs"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#vervoersbewijs>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#MomentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Instant>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieActiviteitShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieClassificatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieShape/6b83c94554e8cc117c1d07fa1e155ccdee8ae62d>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieShape/9a37477967f54b67db79a7d1bc0b9cb7b67c0c52>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieShape/b48088de85b3e925d9a93b4e93883c8cacbf1b1b>;
+    shacl:targetClass org:Organization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieShape/6b83c94554e8cc117c1d07fa1e155ccdee8ae62d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Organisatie.voorkeursnaam";
+    shacl:datatype rdf:langString;
+    shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieShape/9a37477967f54b67db79a7d1bc0b9cb7b67c0c52> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Organisatie.voorkeursnaam";
+    shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:minCount 1;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieShape/b48088de85b3e925d9a93b4e93883c8cacbf1b1b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Organisatie.voorkeursnaam";
+    shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:maxCount 1;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieStatusShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#OrganisatieTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PeriodeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/08fb9498a7ed030639d43cf47c1e4c5409b49dd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/57fa098945484c4b497b664cf92dd77681164d9c>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/b67716fc88fb88e1a3e7dbae35461fd06b268311>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/ccc60f000e8255577f863856ca86c69a40f97951>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/4b124f0924fab01fc5967b50aacaf82bcf846710>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/bd32c9364485a2a85965fbee55f90a75d8d8fdef>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/17d98d83d628e2529f4bb291125f1742ee426457>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/5cd883b2e106bb2e51ed8f61eed97a9731de38aa>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/f535d3fbb78ee0798f7398dc1667dd25e832fe69>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/6d8296a4e73c1c1d9218ff12f45dfd45d4557849>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/db8da67ad082417fefd1e4860015e74060924280>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/661cca0a5bd514c9ce9daff17f07ec90baef0972>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/fd9de3e456668ac246c6e059df34887e5214d488>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/04e0b5ea249e38e092ead10a2ed1c6721fade4b7>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/50fcbe641e0beebe581cd8156751da59b81d14a2>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/dccbaf8b9ca123087f5faa1ded7e6e69d388fea7>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/b2bc94b90bd0a1dc30fc0be87cb0246791182b7c>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/cac8dfc81a79ac32329e1394edc42d7f16461eb0>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/cba0084dd610b69c432bb492bc3f970a76260160>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/fdd871a750ca20e71277d83120117d6acd9aa0fd>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/b0322adf9cb5f87dacab4018e57d8e895d4bb8ec>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/f99a0a001c6328fb6d3e116e93de1a4b09946095>;
+    shacl:targetClass person:Person.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/04e0b5ea249e38e092ead10a2ed1c6721fade4b7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.geslacht";
+    shacl:description "Het feit of de persoon een man of een vrouw is."@nl;
+    shacl:minCount 1;
+    shacl:name "geslacht"@nl;
+    shacl:path skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/08fb9498a7ed030639d43cf47c1e4c5409b49dd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.achternaam";
+    shacl:description "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "achternaam"@nl;
+    shacl:path foaf:familyName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/17d98d83d628e2529f4bb291125f1742ee426457> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.geboortedatum";
+    shacl:description "Datum waarop de geboorte plaatsvond."@nl;
+    shacl:maxCount 1;
+    shacl:name "geboortedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/loongegevens#Persoon.geboortedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/4b124f0924fab01fc5967b50aacaf82bcf846710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.contactinfo";
+    shacl:class schema:ContactPoint;
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Persoon te contacteren."@nl;
+    shacl:name "contactinfo"@nl;
+    shacl:path schema:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/50fcbe641e0beebe581cd8156751da59b81d14a2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.geslacht";
+    shacl:description "Het feit of de persoon een man of een vrouw is."@nl;
+    shacl:maxCount 1;
+    shacl:name "geslacht"@nl;
+    shacl:path skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/57fa098945484c4b497b664cf92dd77681164d9c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.achternaam";
+    shacl:description "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."@nl;
+    shacl:minCount 1;
+    shacl:name "achternaam"@nl;
+    shacl:path foaf:familyName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/5cd883b2e106bb2e51ed8f61eed97a9731de38aa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.geboortedatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Datum waarop de geboorte plaatsvond."@nl;
+    shacl:name "geboortedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/loongegevens#Persoon.geboortedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/661cca0a5bd514c9ce9daff17f07ec90baef0972> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.gebruiktevoornaam";
+    shacl:datatype xsd:string;
+    shacl:description "Belangrijkste vd voornamen ve persoon."@nl;
+    shacl:name "gebruikte voornaam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/6d8296a4e73c1c1d9218ff12f45dfd45d4557849> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.geboortenaam";
+    shacl:description "Volledige naam vd persoon bij geboorte."@nl;
+    shacl:maxCount 1;
+    shacl:name "geboortenaam"@nl;
+    shacl:path person:birthName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/b0322adf9cb5f87dacab4018e57d8e895d4bb8ec> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.voornaam";
+    shacl:description "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."@nl;
+    shacl:minCount 1;
+    shacl:name "voornaam"@nl;
+    shacl:path foaf:givenName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/b2bc94b90bd0a1dc30fc0be87cb0246791182b7c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.heeftPersoonsrelatie";
+    shacl:class <https://data.vlaanderen.be/ns/persoon#Persoonsrelatie>;
+    shacl:description "Relatie van een persoon (met een ander persoon)."@nl;
+    shacl:name "heeftPersoonsrelatie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#heeftPersoonsrelatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/b67716fc88fb88e1a3e7dbae35461fd06b268311> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.achternaam";
+    shacl:datatype xsd:string;
+    shacl:description "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."@nl;
+    shacl:name "achternaam"@nl;
+    shacl:path foaf:familyName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/bd32c9364485a2a85965fbee55f90a75d8d8fdef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.contactinfo";
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Persoon te contacteren."@nl;
+    shacl:maxCount 1;
+    shacl:name "contactinfo"@nl;
+    shacl:path schema:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/cac8dfc81a79ac32329e1394edc42d7f16461eb0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.volledigenaam";
+    shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
+    shacl:maxCount 1;
+    shacl:name "volledige naam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/cba0084dd610b69c432bb492bc3f970a76260160> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.volledigenaam";
+    shacl:datatype xsd:string;
+    shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
+    shacl:name "volledige naam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/ccc60f000e8255577f863856ca86c69a40f97951> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.alternatievenaam";
+    shacl:datatype xsd:string;
+    shacl:description "Alternatief voor de volledige naam vd persoon."@nl;
+    shacl:name "alternatieve naam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#alternatieveNaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/db8da67ad082417fefd1e4860015e74060924280> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.geboortenaam";
+    shacl:datatype xsd:string;
+    shacl:description "Volledige naam vd persoon bij geboorte."@nl;
+    shacl:name "geboortenaam"@nl;
+    shacl:path person:birthName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/dccbaf8b9ca123087f5faa1ded7e6e69d388fea7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.geslacht";
+    shacl:class skos:Concept;
+    shacl:description "Het feit of de persoon een man of een vrouw is."@nl;
+    shacl:name "geslacht"@nl;
+    shacl:path skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/f535d3fbb78ee0798f7398dc1667dd25e832fe69> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.geboortedatum";
+    shacl:description "Datum waarop de geboorte plaatsvond."@nl;
+    shacl:minCount 1;
+    shacl:name "geboortedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/loongegevens#Persoon.geboortedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/f99a0a001c6328fb6d3e116e93de1a4b09946095> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.voornaam";
+    shacl:datatype xsd:string;
+    shacl:description "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."@nl;
+    shacl:name "voornaam"@nl;
+    shacl:path foaf:givenName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/fd9de3e456668ac246c6e059df34887e5214d488> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.gebruiktevoornaam";
+    shacl:description "Belangrijkste vd voornamen ve persoon."@nl;
+    shacl:maxCount 1;
+    shacl:name "gebruikte voornaam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonShape/fdd871a750ca20e71277d83120117d6acd9aa0fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Persoon.volledigenaam";
+    shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
+    shacl:minCount 1;
+    shacl:name "volledige naam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonsrelatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonsrelatieShape/5919274110c24b1e88e8b45ed7c6888f42dd3c3a>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonsrelatieShape/626485ac41c3e87f4037f3bff06c120eeaa3d7c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonsrelatieShape/d51e338b03a0b50040ddfdf8720dda7b5673cff7>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonsrelatieShape/5919274110c24b1e88e8b45ed7c6888f42dd3c3a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#undefined.isrelatiemet";
+    shacl:description "Persoon waarmee de persoon gerelateerd is."@nl;
+    shacl:minCount 1;
+    shacl:name "is relatie met"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#isRelatieMet>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonsrelatieShape/626485ac41c3e87f4037f3bff06c120eeaa3d7c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#undefined.isrelatiemet";
+    shacl:class person:Person;
+    shacl:description "Persoon waarmee de persoon gerelateerd is."@nl;
+    shacl:name "is relatie met"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#isRelatieMet>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#PersoonsrelatieShape/d51e338b03a0b50040ddfdf8720dda7b5673cff7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#undefined.isrelatiemet";
+    shacl:description "Persoon waarmee de persoon gerelateerd is."@nl;
+    shacl:maxCount 1;
+    shacl:name "is relatie met"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#isRelatieMet>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/93b806c71bc963a27fa447ef479e451e861f475c>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/941d58a199f61348d62792d9b35bd227450442f0>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/6365881a31089b1a4357f4c4d390222bda992531>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/f63c670b95ba17f57703a1e35d05f0a60b3bf056>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/1a9fc9f845c0e098874a195e1b5b138e22e1727f>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/72b35350323b96cfe997ff3aa7bc759a96d21915>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/cc066ce0cb2523a39f29bdfa36fb21e3a426ed9e>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/e631da90d16362c0168329e96eed40d9d8ed11c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/fa86ebb6cad4a667bcb8b8953edf46419cd2150a>;
+    shacl:targetClass schemas:Trip.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/1a9fc9f845c0e098874a195e1b5b138e22e1727f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reis.reisweg";
+    shacl:class prov:Location;
+    shacl:description "Opeenvolging van Locaties die men tijdens de Reis wil aandoen."@nl;
+    shacl:name "reisweg"@nl;
+    shacl:path schema:itinerary.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/6365881a31089b1a4357f4c4d390222bda992531> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reis.isdeelvan(source)";
+    shacl:class schemas:Trip;
+    shacl:description "Deel van een volledige Reis dat op zichzelf ook beschouwd kan worden als een Reis."@nl;
+    shacl:name "is deel van (source)"@nl;
+    shacl:path schema:partOfTrip.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/72b35350323b96cfe997ff3aa7bc759a96d21915> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reis.reisweg";
+    shacl:description "Opeenvolging van Locaties die men tijdens de Reis wil aandoen."@nl;
+    shacl:minCount 2;
+    shacl:name "reisweg"@nl;
+    shacl:path schema:itinerary.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/93b806c71bc963a27fa447ef479e451e861f475c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reis.aankomsttijdstip";
+    shacl:description "Tijdstip waarop de Reis afgelopen is of waarop de Reiziger zou willen dat ze is afgelopen."@nl;
+    shacl:maxCount 1;
+    shacl:name "aankomsttijdstip"@nl;
+    shacl:path schemas:arrivalTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/941d58a199f61348d62792d9b35bd227450442f0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reis.aankomsttijdstip";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de Reis afgelopen is of waarop de Reiziger zou willen dat ze is afgelopen."@nl;
+    shacl:name "aankomsttijdstip"@nl;
+    shacl:path schemas:arrivalTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/cc066ce0cb2523a39f29bdfa36fb21e3a426ed9e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reis.vertrektijdstip";
+    shacl:description "Tijdstip waarop de Reis aanvangt of waarop de Reiziger zou willen dat ze aanvangt."@nl;
+    shacl:maxCount 1;
+    shacl:name "vertrektijdstip"@nl;
+    shacl:path schemas:departureTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/e631da90d16362c0168329e96eed40d9d8ed11c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reis.vertrektijdstip";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de Reis aanvangt of waarop de Reiziger zou willen dat ze aanvangt."@nl;
+    shacl:name "vertrektijdstip"@nl;
+    shacl:path schemas:departureTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/f63c670b95ba17f57703a1e35d05f0a60b3bf056> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reis.isdeelvan(target)";
+    shacl:class schemas:Trip;
+    shacl:description "Deel van een volledige Reis dat op zichzelf ook beschouwd kan worden als een Reis."@nl;
+    shacl:name "is deel van (target)"@nl;
+    shacl:path schema:partOfTrip.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReisShape/fa86ebb6cad4a667bcb8b8953edf46419cd2150a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reis.vervoersbewijs";
+    shacl:class schemas:Ticket;
+    shacl:description "Vervoersbewijs voor de Reis."@nl;
+    shacl:name "vervoersbewijs"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reis.vervoersbewijs>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/3302d1be9055d7b83763e9cea240546b185fd3fb>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/fefa5754a36465cf298569a27e45e43e45f4aefe>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/14d9104ed04564a62d7083a3b8a6141ef577017a>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/5d104ed328447f082caf0452534282d8ee5bf487>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/62c3fd66ceb1e319b73ee7718c68dacc0ab1efc0>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/8ec0cad0d91664e76763ae5f8880ca46a74b6f57>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/fa86ebb6cad4a667bcb8b8953edf46419cd2150a>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reiziger>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/14d9104ed04564a62d7083a3b8a6141ef577017a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reiziger.onderneemt";
+    shacl:class schemas:Trip;
+    shacl:description "Reis die een Reiziger onderneemt of wil ondernemen."@nl;
+    shacl:name "onderneemt"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#onderneemt>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/3302d1be9055d7b83763e9cea240546b185fd3fb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reiziger.ismedereizigervan(source)";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reiziger>;
+    shacl:description "Reiziger die de Reiziger vergezelt tijdens de Reis."@nl;
+    shacl:name "is medereiziger van (source)"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reiziger.isMedereizigerVan.source>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/5d104ed328447f082caf0452534282d8ee5bf487> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reiziger.pseudoniem";
+    shacl:description "Naam van de Reiziger die afwijkt van zijn werkelijke naam."@nl;
+    shacl:minCount 1;
+    shacl:name "pseudoniem"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#pseudoniem>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/62c3fd66ceb1e319b73ee7718c68dacc0ab1efc0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reiziger.pseudoniem";
+    shacl:description "Naam van de Reiziger die afwijkt van zijn werkelijke naam."@nl;
+    shacl:maxCount 1;
+    shacl:name "pseudoniem"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#pseudoniem>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/8ec0cad0d91664e76763ae5f8880ca46a74b6f57> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reiziger.pseudoniem";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Pseudoniem>;
+    shacl:description "Naam van de Reiziger die afwijkt van zijn werkelijke naam."@nl;
+    shacl:name "pseudoniem"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#pseudoniem>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/fa86ebb6cad4a667bcb8b8953edf46419cd2150a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reiziger.vervoersbewijs";
+    shacl:class schemas:Ticket;
+    shacl:description "Vervoersbewijs van de Reiziger."@nl;
+    shacl:name "vervoersbewijs"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reiziger.vervoersbewijs>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ReizigerShape/fefa5754a36465cf298569a27e45e43e45f4aefe> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Reiziger.ismedereizigervan(target)";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reiziger>;
+    shacl:description "Reiziger die de Reiziger vergezelt tijdens de Reis."@nl;
+    shacl:name "is medereiziger van (target)"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reiziger.isMedereizigerVan.target>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/74feba662f4f65577bf45a8dd94f8faec0f03592>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/ca4892872b345b4fe994128b7c31877979275399>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Segment.waarde";
+    shacl:class rdfs:Resource;
+    shacl:description "De invulling van de waarde van het SegmentType."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment.waarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Segment.type";
+    shacl:description "Het type segment."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment.type>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Segment.type";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteitsbudget#SegmentType>;
+    shacl:description "Het type segment."@nl;
+    shacl:name "type"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment.type>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Segment.type";
+    shacl:description "Het type segment."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment.type>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Segment.waarde";
+    shacl:description "De invulling van de waarde van het SegmentType."@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment.waarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Segment.waarde";
+    shacl:description "De invulling van de waarde van het SegmentType."@nl;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#Segment.waarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#SegmentTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteitsbudget#SegmentType>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#TaalStringShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass rdf:langString.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#TemporeleEntiteitShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/67ea555474378d8510c3e840a9b9a4b5d91045bf>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/cbe1597f8de663f8484a9caf4e0b4ec6d0c59944>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/da7b20fa5672e1efac8134dc00bf3f008dc299c8>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/1abf4c188749d48c8e743d90763cf1f31b4187c0>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/55af5228aba1ef1511b98ceb65437e864b7396e8>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Toegankelijkheid>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/1abf4c188749d48c8e743d90763cf1f31b4187c0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Toegankelijkheid.onderdeel";
+    shacl:description "Deel van de dienst of infrastructuur waarop de Toegankelijkheid betrekking heeft.."@nl;
+    shacl:maxCount 1;
+    shacl:name "onderdeel"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#onderdeel>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Toegankelijkheid.type";
+    shacl:description "Aard van de Toegankelijkheid."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Toegankelijkheid.type";
+    shacl:class skos:Concept;
+    shacl:description "Aard van de Toegankelijkheid."@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/55af5228aba1ef1511b98ceb65437e864b7396e8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Toegankelijkheid.onderdeel";
+    shacl:class skos:Concept;
+    shacl:description "Deel van de dienst of infrastructuur waarop de Toegankelijkheid betrekking heeft.."@nl;
+    shacl:name "onderdeel"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#onderdeel>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/67ea555474378d8510c3e840a9b9a4b5d91045bf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Toegankelijkheid.niveau";
+    shacl:description "Niveau van toegankelijkheid."@nl;
+    shacl:maxCount 1;
+    shacl:name "niveau"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#niveau>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Toegankelijkheid.type";
+    shacl:description "Aard van de Toegankelijkheid."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/cbe1597f8de663f8484a9caf4e0b4ec6d0c59944> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Toegankelijkheid.niveau";
+    shacl:description "Niveau van toegankelijkheid."@nl;
+    shacl:minCount 1;
+    shacl:name "niveau"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#niveau>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#ToegankelijkheidShape/da7b20fa5672e1efac8134dc00bf3f008dc299c8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Toegankelijkheid.niveau";
+    shacl:class skos:Concept;
+    shacl:description "Niveau van toegankelijkheid."@nl;
+    shacl:name "niveau"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#niveau>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoermiddelShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/cf827b426dea22706df61185227553de37e70106>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/fb9d31605670308c2013bc7f60208841611633ce>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/210275660563c3b179d9d941bc50cb9dc764566e>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/955c3acc886e5c1f76d4f0dffaee08b4942b4916>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/a88d06f343359b7b95af028292e348810924e355>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/c9584bd112099eab9ac3f9319f715d4125ab5eda>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/437464f76e2c48726fe531777ab57072c436a8c5>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/65882aa6e035e313d7e8ae2a231fb774e8ce8068>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/73d09b4a2f05066b3d7f4ddebac064c8ecc9c3e9>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/8f8d653e304153b908ef8c4ace8348d1e837fb08>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/236818a46442d5839007629fc7515b884fd201ef>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/ead0140014ebf09954ecaa04a0b0da5f23bf732d>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/7be1b3c256d9c86a612c10f9fecff45f1c241075>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/f6c6cb5987b43e44ecd504e5cef64f9f96fbe7f5>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/97b241c35da278c55dd18b9dbf9f9065630f87e4>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/1a9fc9f845c0e098874a195e1b5b138e22e1727f>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/72b35350323b96cfe997ff3aa7bc759a96d21915>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass schemas:Ticket.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/1a9fc9f845c0e098874a195e1b5b138e22e1727f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.reisweg";
+    shacl:class prov:Location;
+    shacl:description "Opeenvolging van Locaties waarvoor het Vervoersbewijs geldig is."@nl;
+    shacl:name "reisweg"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Vervoersbewijs.reisweg>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/210275660563c3b179d9d941bc50cb9dc764566e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.afstand";
+    shacl:description "Gecumuleerde afstand die men met het Vervoersbewijs mag afleggen."@nl;
+    shacl:maxCount 1;
+    shacl:name "afstand"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Vervoersbewijs.afstand>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.periode";
+    shacl:description "Periode waarvoor het Vervoersbewijs geldt."@nl;
+    shacl:maxCount 1;
+    shacl:name "periode"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/236818a46442d5839007629fc7515b884fd201ef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.periode";
+    shacl:class eu:PeriodOfTime;
+    shacl:description "Periode waarvoor het Vervoersbewijs geldt."@nl;
+    shacl:name "periode"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.type";
+    shacl:description "Aard van het Vervoersbewijs."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.type";
+    shacl:class dcterms:type;
+    shacl:description "Aard van het Vervoersbewijs."@nl;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/437464f76e2c48726fe531777ab57072c436a8c5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.dienst";
+    shacl:description "Mobiliteitsdienst waarvan men met het Vervoersbewijs gebruik mag maken."@nl;
+    shacl:minCount 1;
+    shacl:name "dienst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Vervoersbewijs.dienst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/65882aa6e035e313d7e8ae2a231fb774e8ce8068> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.dienst";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst>;
+    shacl:description "Mobiliteitsdienst waarvan men met het Vervoersbewijs gebruik mag maken."@nl;
+    shacl:name "dienst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Vervoersbewijs.dienst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/72b35350323b96cfe997ff3aa7bc759a96d21915> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.reisweg";
+    shacl:description "Opeenvolging van Locaties waarvoor het Vervoersbewijs geldig is."@nl;
+    shacl:minCount 1;
+    shacl:name "reisweg"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Vervoersbewijs.reisweg>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/73d09b4a2f05066b3d7f4ddebac064c8ecc9c3e9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.duur";
+    shacl:description "Totale tijd waarvan men met het Vervoersbewijs van een Mobiliteitsdienst gebruik mag maken."@nl;
+    shacl:maxCount 1;
+    shacl:name "duur"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#duur>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.type";
+    shacl:description "Aard van het Vervoersbewijs."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/7be1b3c256d9c86a612c10f9fecff45f1c241075> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.prijs";
+    shacl:description "Prijs die voor het Vervoersbewijs is betaald."@nl;
+    shacl:maxCount 1;
+    shacl:name "prijs"@nl;
+    shacl:path schemas:price.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/8f8d653e304153b908ef8c4ace8348d1e837fb08> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.duur";
+    shacl:datatype xsd:duration;
+    shacl:description "Totale tijd waarvan men met het Vervoersbewijs van een Mobiliteitsdienst gebruik mag maken."@nl;
+    shacl:name "duur"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#duur>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/955c3acc886e5c1f76d4f0dffaee08b4942b4916> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.afstand";
+    shacl:class schemas:QuantitativeValue;
+    shacl:description "Gecumuleerde afstand die men met het Vervoersbewijs mag afleggen."@nl;
+    shacl:name "afstand"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Vervoersbewijs.afstand>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/97b241c35da278c55dd18b9dbf9f9065630f87e4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.reis";
+    shacl:class schemas:Trip;
+    shacl:description "Reis waarvoor het Vervoersbewijs gebruikt wordt."@nl;
+    shacl:name "reis"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#reis>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/a88d06f343359b7b95af028292e348810924e355> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.bedrag";
+    shacl:description "Geldbedrag dat aan de Mobiliteitsdienst kan worden besteed."@nl;
+    shacl:maxCount 1;
+    shacl:name "bedrag"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#bedrag>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/c9584bd112099eab9ac3f9319f715d4125ab5eda> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.bedrag";
+    shacl:class schemas:MonetaryAmount;
+    shacl:description "Geldbedrag dat aan de Mobiliteitsdienst kan worden besteed."@nl;
+    shacl:name "bedrag"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#bedrag>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/cf827b426dea22706df61185227553de37e70106> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.aantal";
+    shacl:description "Aantal reizen dat men met het Vervoersbewijs kan afleggen."@nl;
+    shacl:maxCount 1;
+    shacl:name "aantal"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#aantal>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/ead0140014ebf09954ecaa04a0b0da5f23bf732d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.periode";
+    shacl:description "Periode waarvoor het Vervoersbewijs geldt."@nl;
+    shacl:minCount 1;
+    shacl:name "periode"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/f6c6cb5987b43e44ecd504e5cef64f9f96fbe7f5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.prijs";
+    shacl:class schemas:MonetaryAmount;
+    shacl:description "Prijs die voor het Vervoersbewijs is betaald."@nl;
+    shacl:name "prijs"@nl;
+    shacl:path schemas:price.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijsShape/fb9d31605670308c2013bc7f60208841611633ce> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Vervoersbewijs.aantal";
+    shacl:datatype xsd:integer;
+    shacl:description "Aantal reizen dat men met het Vervoersbewijs kan afleggen."@nl;
+    shacl:name "aantal"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#aantal>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VervoersbewijstypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/fb9d31605670308c2013bc7f60208841611633ce>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/1df6ba573dacba3ac7bf51b20bd6ed65cb12d906>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/fad9ec48d1c8b16d32cfd0599c8854830da5e72d>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/98aa2c0c74942fdc930f7aea938afbf2f0b205fe>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/236818a46442d5839007629fc7515b884fd201ef>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/1a9fc9f845c0e098874a195e1b5b138e22e1727f>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/c0f98e2fb1733d1fc94a3aefecd0aed824c25121>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/447c020409824c97edbc81143af62e70b7d45866>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/962526cfa522d1d4c2d882bf33538c0c1c699938>, <https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/a9a136f29614daa96027ca725ba119d518db96c0>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van de voorwaarde"@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#beschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/1a9fc9f845c0e098874a195e1b5b138e22e1727f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.reisweg";
+    shacl:class prov:Location;
+    shacl:description "Opeenvolging van Locaties die men tijdens de Reis wil aandoen."@nl;
+    shacl:name "reisweg"@nl;
+    shacl:path schema:itinerary.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/1df6ba573dacba3ac7bf51b20bd6ed65cb12d906> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.dienstverlenertype";
+    shacl:class skos:Concept;
+    shacl:description "Aard van de dienstverlenertype"@nl;
+    shacl:name "dienstverlenertype"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#dienstverlenertype>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/236818a46442d5839007629fc7515b884fd201ef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.periode";
+    shacl:class <http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object>;
+    shacl:description "Periode waarin het mobiliteitsbudget geldig is"@nl;
+    shacl:name "periode"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/447c020409824c97edbc81143af62e70b7d45866> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.specificatie";
+    shacl:description "Document waar extra specificaties in omschreven staan"@nl;
+    shacl:maxCount 1;
+    shacl:name "specificatie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#specificatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.beschrijving";
+    shacl:description "Beschrijving van de voorwaarde"@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#beschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/962526cfa522d1d4c2d882bf33538c0c1c699938> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.specificatie";
+    shacl:description "Document waar extra specificaties in omschreven staan"@nl;
+    shacl:minCount 1;
+    shacl:name "specificatie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#specificatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/98aa2c0c74942fdc930f7aea938afbf2f0b205fe> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.mobiliteitsdienst";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst>;
+    shacl:description "Dienstverlening die verplaatsingen van Personen tussen Locaties mogelijk maakt."@nl;
+    shacl:name "mobiliteitsdienst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#mobiliteitsdienst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/a9a136f29614daa96027ca725ba119d518db96c0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.specificatie";
+    shacl:class schemas:DigitalDocument;
+    shacl:description "Document waar extra specificaties in omschreven staan"@nl;
+    shacl:name "specificatie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#specificatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/c0f98e2fb1733d1fc94a3aefecd0aed824c25121> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.segment";
+    shacl:class schemas:audienceType;
+    shacl:description "Soorten segment waartoe een agent behoord"@nl;
+    shacl:name "segment"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#Voorwaarde.segment>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/fad9ec48d1c8b16d32cfd0599c8854830da5e72d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.mobiliteitsbudget";
+    shacl:class <https://data.vlaanderen.be/ns/mobiliteitsbudget#Mobiliteitsbudget>;
+    shacl:description "Mobiliteitsbudget waarvoor de Voorwaarde geldt."@nl;
+    shacl:name "mobiliteitsbudget"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#mobiliteitsbudget>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#VoorwaardeShape/fb9d31605670308c2013bc7f60208841611633ce> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#Voorwaarde.aantal";
+    shacl:datatype xsd:integer;
+    shacl:description "Aantal reizen dat men met het Vervoersbewijs kan afleggen."@nl;
+    shacl:name "aantal"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/mobiliteitsbudget#aantal>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#WaardeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Waarde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteitsbudget/kandidaatstandaard/2024-06-18#WaardetypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteitsbudget#Waardetype>.

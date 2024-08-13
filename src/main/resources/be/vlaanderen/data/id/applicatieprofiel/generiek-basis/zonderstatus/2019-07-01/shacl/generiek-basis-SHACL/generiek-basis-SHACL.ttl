@@ -1,0 +1,677 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/shacl/generiek-basis> <https://data.vlaanderen.be/shacl/generiek-basisshapes> <https://data.vlaanderen.be/shacl/generiek-basis#AdministratieveEenheidShape>, <https://data.vlaanderen.be/shacl/generiek-basis#DocumentOnderdeelShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisdatumShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GemeenteShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GeografischePositieShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GestructureerdeIdentificatorShape>, <https://data.vlaanderen.be/shacl/generiek-basis#StandaardEenheidShape>, <https://data.vlaanderen.be/shacl/generiek-basis#VersieShape>, <https://data.vlaanderen.be/shacl/generiek-basis#VersieVolgensGeldigeTijdShape>, <https://data.vlaanderen.be/shacl/generiek-basis#VersieVolgensTransactietijdShape>, <https://data.vlaanderen.be/shacl/generiek-basis#PeriodeShape>, <https://data.vlaanderen.be/shacl/generiek-basis#AgentShape>, <https://data.vlaanderen.be/shacl/generiek-basis#JurisdictieShape>, <https://data.vlaanderen.be/shacl/generiek-basis#PlaatsShape>, <https://data.vlaanderen.be/shacl/generiek-basis#FormeelKaderShape>, <https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape>, <https://data.vlaanderen.be/shacl/generiek-basis#LijnStringShape>, <https://data.vlaanderen.be/shacl/generiek-basis#PuntShape>, <https://data.vlaanderen.be/shacl/generiek-basis#PolygoonShape>, <https://data.vlaanderen.be/shacl/generiek-basis#TaalStringShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GeografischeNaamShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GetypeerdeStringShape>, <https://data.vlaanderen.be/shacl/generiek-basis#BewerkingstypeShape>, <https://data.vlaanderen.be/shacl/generiek-basis#NAL_currencyShape>, <https://data.vlaanderen.be/shacl/generiek-basis#PlaatscodeShape>, <https://data.vlaanderen.be/shacl/generiek-basis#EurovocShape>, <https://data.vlaanderen.be/shacl/generiek-basis#NUTSShape>, <https://data.vlaanderen.be/shacl/generiek-basis#NAL_typeShape>, <https://data.vlaanderen.be/shacl/generiek-basis#TaalcodeShape>, <https://data.vlaanderen.be/shacl/generiek-basis#ELI_statusShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GeometrieSpecificatieWaardeShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GeometrieMethodeWaardeShape>, <https://data.vlaanderen.be/shacl/generiek-basis#IdentificatorShape>, <https://data.vlaanderen.be/shacl/generiek-basis#AdresvoorstellingShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GeometrieShape>, <https://data.vlaanderen.be/shacl/generiek-basis#OrganisatieShape>, <https://data.vlaanderen.be/shacl/generiek-basis#PersoonShape>, <https://data.vlaanderen.be/shacl/generiek-basis#ActiviteitShape>, <https://data.vlaanderen.be/shacl/generiek-basis#HerkomstactiviteitShape>, <https://data.vlaanderen.be/shacl/generiek-basis#HerkomstagentShape>, <https://data.vlaanderen.be/shacl/generiek-basis#HerkomstentiteitShape>, <https://data.vlaanderen.be/shacl/generiek-basis#ObjectShape>, <https://data.vlaanderen.be/shacl/generiek-basis#CreatieShape>, <https://data.vlaanderen.be/shacl/generiek-basis#OpheffingShape>, <https://data.vlaanderen.be/shacl/generiek-basis#LocatieShape>, <https://data.vlaanderen.be/shacl/generiek-basis#DocumentShape>, <https://data.vlaanderen.be/shacl/generiek-basis#HoedanigheidShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisShape>, <https://data.vlaanderen.be/shacl/generiek-basis#GetalShape>, <https://data.vlaanderen.be/shacl/generiek-basis#KwantitatieveWaardeShape>, <https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape>.
+<https://data.vlaanderen.be/shacl/generiek-basis#ActiviteitShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-439 shacl:datatype xsd:dateTime;
+    shacl:description "Het tijdstip waarop de activiteit gepland is om te beginnen.";
+    shacl:maxCount 1;
+    shacl:name "geplandeStart";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#geplandeStart>.
+<https://data.vlaanderen.be/shacl/generiek-basis#ActiviteitShape> shacl:property _:n3-439;
+    shacl:targetClass prov:Activity.
+<https://data.vlaanderen.be/shacl/generiek-basis#AdministratieveEenheidShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#AdministratieveEenheid>.
+<https://data.vlaanderen.be/shacl/generiek-basis#AdresvoorstellingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass locn:Address.
+<https://data.vlaanderen.be/shacl/generiek-basis#AgentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass dcterms:Agent.
+<https://data.vlaanderen.be/shacl/generiek-basis#BewerkingstypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-440 shacl:datatype rdf:langString;
+    shacl:description "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen.";
+    shacl:maxCount 1;
+    shacl:name "aanschrijfvorm";
+    shacl:path vcard:honorific-prefix.
+<https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape> shacl:property _:n3-440.
+_:n3-441 shacl:class locn:Address;
+    shacl:description "Adres dat men kan aanschrijven of bezoeken.";
+    shacl:maxCount 1;
+    shacl:name "adres";
+    shacl:path locn:address.
+<https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape> shacl:property _:n3-441.
+_:n3-442 shacl:class schemas:OpeningHoursSpecification;
+    shacl:description "Periode waarin contact kan worden opgenomen.";
+    shacl:maxCount 1;
+    shacl:name "beschikbaarheid";
+    shacl:path schema:hoursAvailable.
+<https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape> shacl:property _:n3-442.
+_:n3-443 shacl:datatype xsd:string;
+    shacl:description "Naam van bvb de persoon die men kan contacteren.";
+    shacl:maxCount 1;
+    shacl:name "contactnaam";
+    shacl:path foaf:name.
+<https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape> shacl:property _:n3-443.
+_:n3-444 shacl:datatype xsd:string;
+    shacl:description "Email-adres waarnaar men kan mailen.";
+    shacl:maxCount 1;
+    shacl:name "email";
+    shacl:path schema:email.
+<https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape> shacl:property _:n3-444.
+_:n3-445 shacl:datatype xsd:string;
+    shacl:description "Faxnummer waarnaar men kan faxen.";
+    shacl:maxCount 1;
+    shacl:name "fax";
+    shacl:path schema:faxNumber.
+<https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape> shacl:property _:n3-445.
+_:n3-446 shacl:datatype rdfs:Literal;
+    shacl:description "Uren waarbinnen contact kan worden opgenomen.";
+    shacl:maxCount 1;
+    shacl:name "openingsuren";
+    shacl:path schema:openingHours.
+<https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape> shacl:property _:n3-446.
+_:n3-447 shacl:datatype xsd:string;
+    shacl:description "Telefoonnummer waarop men kan bellen.";
+    shacl:maxCount 1;
+    shacl:name "telefoon";
+    shacl:path schema:telephone.
+<https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape> shacl:property _:n3-447.
+_:n3-448 shacl:datatype xsd:anyURI;
+    shacl:description "Website waarnaar men kan surfen.";
+    shacl:maxCount 1;
+    shacl:name "website";
+    shacl:path foaf:page.
+<https://data.vlaanderen.be/shacl/generiek-basis#ContactInfoShape> shacl:property _:n3-448;
+    shacl:targetClass schema:ContactPoint.
+<https://data.vlaanderen.be/shacl/generiek-basis#CreatieShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-449 shacl:class prov:Activity;
+    shacl:description "Activiteit die tot de creatie vd entiteit heeft geleid.";
+    shacl:maxCount 1;
+    shacl:name "activiteit";
+    shacl:path prov:activity.
+<https://data.vlaanderen.be/shacl/generiek-basis#CreatieShape> shacl:property _:n3-449.
+_:n3-450 shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de creatie vd entiteit plaatsvond.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "tijdstip";
+    shacl:path prov:atTime.
+<https://data.vlaanderen.be/shacl/generiek-basis#CreatieShape> shacl:property _:n3-450;
+    shacl:targetClass prov:Generation.
+<https://data.vlaanderen.be/shacl/generiek-basis#DocumentOnderdeelShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-451 shacl:class <https://data.vlaanderen.be/ns/generiek#DocumentOnderdeel>;
+    shacl:description "Een verwante bron waarin de beschreven bron fysiek of logisch is opgenomen.";
+    shacl:name "isDeelVan";
+    shacl:path dcterms:isPartOf.
+<https://data.vlaanderen.be/shacl/generiek-basis#DocumentOnderdeelShape> shacl:property _:n3-451.
+_:n3-452 shacl:class foaf:Document;
+    shacl:description "Een verwante bron waarin de beschreven bron fysiek of logisch is opgenomen.";
+    shacl:name "isOnderdeelVan";
+    shacl:path dcterms:isPartOf.
+<https://data.vlaanderen.be/shacl/generiek-basis#DocumentOnderdeelShape> shacl:property _:n3-452.
+_:n3-453 shacl:datatype xsd:integer;
+    shacl:description "Nummer vh documentonderdeel.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "nummer";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#nummer>.
+<https://data.vlaanderen.be/shacl/generiek-basis#DocumentOnderdeelShape> shacl:property _:n3-453.
+_:n3-454 shacl:class skos:Concept;
+    shacl:description "Aard van het documentonderdeel.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "type";
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/shacl/generiek-basis#DocumentOnderdeelShape> shacl:property _:n3-454;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#DocumentOnderdeel>.
+<https://data.vlaanderen.be/shacl/generiek-basis#DocumentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass foaf:Document.
+<https://data.vlaanderen.be/shacl/generiek-basis#ELI_statusShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/shacl/generiek-basis#EurovocShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/shacl/generiek-basis#FormeelKaderShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-455 shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van het formeel kader.";
+    shacl:maxCount 1;
+    shacl:name "beschrijving";
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/shacl/generiek-basis#FormeelKaderShape> shacl:property _:n3-455.
+_:n3-456 shacl:class cpsv:FormalFramework;
+    shacl:description "Ander formeel kader dat met het formeel kader verband houdt.";
+    shacl:name "isGerelateerdAan";
+    shacl:path dcterms:relation.
+<https://data.vlaanderen.be/shacl/generiek-basis#FormeelKaderShape> shacl:property _:n3-456.
+_:n3-457 shacl:datatype rdf:langString;
+    shacl:description "Naam vh formeel kader.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "naam";
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/shacl/generiek-basis#FormeelKaderShape> shacl:property _:n3-457.
+_:n3-458 shacl:class skos:Concept;
+    shacl:description "Onderwerp vh formeel kader.";
+    shacl:name "onderwerp";
+    shacl:path eu:subject.
+<https://data.vlaanderen.be/shacl/generiek-basis#FormeelKaderShape> shacl:property _:n3-458.
+_:n3-459 shacl:class skos:Concept;
+    shacl:description "Status vh formeel kader.";
+    shacl:maxCount 1;
+    shacl:name "status";
+    shacl:path <http://www.w3.org/ns/adms#status>.
+<https://data.vlaanderen.be/shacl/generiek-basis#FormeelKaderShape> shacl:property _:n3-459.
+_:n3-460 shacl:class skos:Concept;
+    shacl:description "Taal waarin het formeel kader beschikbaar is.";
+    shacl:name "taal";
+    shacl:path eli:language.
+<https://data.vlaanderen.be/shacl/generiek-basis#FormeelKaderShape> shacl:property _:n3-460.
+_:n3-461 shacl:class skos:Concept;
+    shacl:description "Het geografisch bereik vh formeel kader.";
+    shacl:name "toepassingsgebied";
+    shacl:path eu:territorialApplication.
+<https://data.vlaanderen.be/shacl/generiek-basis#FormeelKaderShape> shacl:property _:n3-461.
+_:n3-462 shacl:class skos:Concept;
+    shacl:description "Aard vh formeel kader.";
+    shacl:name "type";
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/shacl/generiek-basis#FormeelKaderShape> shacl:property _:n3-462;
+    shacl:targetClass cpsv:FormalFramework.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-463 shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van de gebeurtenis.";
+    shacl:maxCount 1;
+    shacl:name "beschrijving";
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisShape> shacl:property _:n3-463.
+_:n3-464 shacl:datatype xsd:duration;
+    shacl:description "De duur van de gebeurtenis.";
+    shacl:maxCount 1;
+    shacl:name "duur";
+    shacl:path schemas:duration.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisShape> shacl:property _:n3-464.
+_:n3-465 shacl:datatype xsd:date;
+    shacl:description "Datum waarop de gebeurtenis eindigt.";
+    shacl:maxCount 1;
+    shacl:name "einddatum";
+    shacl:path schemas:endDate.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisShape> shacl:property _:n3-465.
+_:n3-466 shacl:datatype xsd:time;
+    shacl:description "Tijd waarop de gebeurtenis eindigt.";
+    shacl:maxCount 1;
+    shacl:name "eindtijd";
+    shacl:path schemas:endTime.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisShape> shacl:property _:n3-466.
+_:n3-467 shacl:datatype rdf:langString;
+    shacl:description "Naam van de gebeurtenis.";
+    shacl:maxCount 1;
+    shacl:name "naam";
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisShape> shacl:property _:n3-467.
+_:n3-468 shacl:datatype xsd:date;
+    shacl:description "Datum waariop de gebeurtenis start.";
+    shacl:maxCount 1;
+    shacl:name "startdatum";
+    shacl:path schemas:startDate.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisShape> shacl:property _:n3-468.
+_:n3-469 shacl:datatype xsd:time;
+    shacl:description "Tijd waarop de gebeurtenis start.";
+    shacl:maxCount 1;
+    shacl:name "starttijd";
+    shacl:path schemas:startTime.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisShape> shacl:property _:n3-469.
+_:n3-470 shacl:class schemas:Schedule;
+    shacl:description "Schema volgens hetwelk een gebeurtenis zich herhaalt.";
+    shacl:name "tijdschema";
+    shacl:path schemas:eventSchedule.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisShape> shacl:property _:n3-470;
+    shacl:targetClass schemas:Event.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisdatumShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-471 shacl:datatype xsd:dateTime;
+    shacl:description "Datum en tijd waarop de gebeurtenis startte.";
+    shacl:maxCount 1;
+    shacl:name "begin";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#begin>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisdatumShape> shacl:property _:n3-471.
+_:n3-472 shacl:datatype xsd:dateTime;
+    shacl:description "Datum en tijd waarop de gebeurtenis eindigde.";
+    shacl:maxCount 1;
+    shacl:name "einde";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#einde>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisdatumShape> shacl:property _:n3-472.
+_:n3-473 shacl:datatype xsd:dateTime;
+    shacl:description "Datum en tijd van een moment tussen begin en einde.";
+    shacl:maxCount 1;
+    shacl:name "tussentijdstip";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#tussentijdstip>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GebeurtenisdatumShape> shacl:property _:n3-473;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GemeenteShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#Gemeente>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeografischeNaamShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass rdf:langString.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeografischePositieShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-474 shacl:datatype xsd:boolean;
+    shacl:description "Geeft aan of de positie een default positie is.";
+    shacl:maxCount 1;
+    shacl:name "default";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#default>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeografischePositieShape> shacl:property _:n3-474.
+_:n3-475 shacl:class <http://www.opengis.net/ont/sf#Point>;
+    shacl:description "De cartografische coöordinaten vh punt.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geometrie";
+    shacl:path locn:geometry.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeografischePositieShape> shacl:property _:n3-475.
+_:n3-476 shacl:class skos:Concept;
+    shacl:description "De manier waarop het punt werd bepaald.";
+    shacl:maxCount 1;
+    shacl:name "methode";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#methode>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeografischePositieShape> shacl:property _:n3-476.
+_:n3-477 shacl:class skos:Concept;
+    shacl:description "Het type object op basis waarvan het punt werd bepaald.";
+    shacl:maxCount 1;
+    shacl:name "specificatie";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#specificatie>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeografischePositieShape> shacl:property _:n3-477;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#GeografischePositie>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeometrieMethodeWaardeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeometrieShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-478 shacl:datatype rdfs:Literal;
+    shacl:description "Geometrie uitgedrukt in gml-formaat.";
+    shacl:maxCount 1;
+    shacl:name "gml";
+    shacl:path <http://www.opengis.net/ont/geosparql#asGML>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeometrieShape> shacl:property _:n3-478.
+_:n3-479 shacl:datatype rdfs:Literal;
+    shacl:description "Geometrie uitgedrukt in wkt-formaat.";
+    shacl:maxCount 1;
+    shacl:name "wkt";
+    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeometrieShape> shacl:property _:n3-479;
+    shacl:targetClass locn:Geometry.
+<https://data.vlaanderen.be/shacl/generiek-basis#GeometrieSpecificatieWaardeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/shacl/generiek-basis#GestructureerdeIdentificatorShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-480 shacl:datatype xsd:string;
+    shacl:description "String gebruikt om het object uniek te identificeren binnen de naamruimte.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "lokaleIdentificator";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#lokaleIdentificator>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GestructureerdeIdentificatorShape> shacl:property _:n3-480.
+_:n3-481 shacl:datatype xsd:string;
+    shacl:description "String die toegvoegd wordt aan de lokaleidentificator om deze globaal uniek te maken.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "naamruimte";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#naamruimte>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GestructureerdeIdentificatorShape> shacl:property _:n3-481.
+_:n3-482 shacl:datatype xsd:string;
+    shacl:description "Identificator van de specifieke versie van een object.";
+    shacl:maxCount 1;
+    shacl:name "versieIdentificator";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#versieIdentificator>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GestructureerdeIdentificatorShape> shacl:property _:n3-482;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator>.
+<https://data.vlaanderen.be/shacl/generiek-basis#GetalShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass schemas:Number.
+<https://data.vlaanderen.be/shacl/generiek-basis#GetypeerdeStringShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass rdfs:Literal.
+<https://data.vlaanderen.be/shacl/generiek-basis#HerkomstactiviteitShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-483 shacl:class prov:Entity;
+    shacl:description "Gebruik ve entiteit door een activiteit.";
+    shacl:maxCount 1;
+    shacl:name "applicatie";
+    shacl:path prov:used.
+<https://data.vlaanderen.be/shacl/generiek-basis#HerkomstactiviteitShape> shacl:property _:n3-483.
+_:n3-484 shacl:class skos:Concept;
+    shacl:description "Aard vd bewerking die ihkv de activiteit op de entiteit is uitgevoerd.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "bewerking";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#bewerking>.
+<https://data.vlaanderen.be/shacl/generiek-basis#HerkomstactiviteitShape> shacl:property _:n3-484.
+_:n3-485 shacl:class prov:Agent;
+    shacl:description "Geeft aan welke agent verantwoordelijk was voor de activiteit en meer bepaald verantwoordelijk was voor het uitvoeren vd activiteit.";
+    shacl:maxCount 1;
+    shacl:name "operator";
+    shacl:path prov:wasAssociatedWith.
+<https://data.vlaanderen.be/shacl/generiek-basis#HerkomstactiviteitShape> shacl:property _:n3-485;
+    shacl:targetClass prov:Activity.
+<https://data.vlaanderen.be/shacl/generiek-basis#HerkomstagentShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-486 shacl:class org:Organization;
+    shacl:description "Organisatie die de agent vertegenwoordigt bij het uitvoeren ve specifieke activiteit en waarvan hij/zij de vereiste autoriteit/verantwoordelijkheid heeft gekregen om dit te doen.";
+    shacl:name "handeldeInOpdrachtVan";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#handeldeInOpdrachtVan>.
+<https://data.vlaanderen.be/shacl/generiek-basis#HerkomstagentShape> shacl:property _:n3-486.
+_:n3-487 shacl:datatype xsd:string;
+    shacl:description "Naam vd agent.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "naam";
+    shacl:path rdfs:label.
+<https://data.vlaanderen.be/shacl/generiek-basis#HerkomstagentShape> shacl:property _:n3-487;
+    shacl:targetClass prov:Agent.
+<https://data.vlaanderen.be/shacl/generiek-basis#HerkomstentiteitShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-488 shacl:datatype xsd:string;
+    shacl:description "Label waarmee de entiteit wordt aangeduid.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "label";
+    shacl:path rdfs:label.
+<https://data.vlaanderen.be/shacl/generiek-basis#HerkomstentiteitShape> shacl:property _:n3-488;
+    shacl:targetClass prov:Entity.
+<https://data.vlaanderen.be/shacl/generiek-basis#HoedanigheidShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/organisatie#Hoedanigheid>.
+<https://data.vlaanderen.be/shacl/generiek-basis#IdentificatorShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-489 shacl:class <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator>;
+    shacl:description "Identificator vh object opgesplitst in zijn onderdelen.";
+    shacl:maxCount 1;
+    shacl:name "gestructureerdeIdentificator";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator>.
+<https://data.vlaanderen.be/shacl/generiek-basis#IdentificatorShape> shacl:property _:n3-489.
+_:n3-490 shacl:datatype rdfs:Literal;
+    shacl:description "String gebruikt om het object uniek te identificeren. ";
+    shacl:maxCount 1;
+    shacl:name "identificator";
+    shacl:path skos:notation.
+<https://data.vlaanderen.be/shacl/generiek-basis#IdentificatorShape> shacl:property _:n3-490.
+_:n3-491 shacl:class dcterms:Agent;
+    shacl:description "Link naar de agent die de identificator heeft uitgegeven.";
+    shacl:maxCount 1;
+    shacl:name "toegekendDoor";
+    shacl:path dcterms:creator.
+<https://data.vlaanderen.be/shacl/generiek-basis#IdentificatorShape> shacl:property _:n3-491.
+_:n3-492 shacl:datatype xsd:string;
+    shacl:description "Naam vd agent die de identificator heeft toegekend.";
+    shacl:maxCount 1;
+    shacl:name "toegekendDoorString";
+    shacl:path <http://www.w3.org/ns/adms#schemaAgency>.
+<https://data.vlaanderen.be/shacl/generiek-basis#IdentificatorShape> shacl:property _:n3-492.
+_:n3-493 shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de identificator werd uitgegeven.";
+    shacl:maxCount 1;
+    shacl:name "toegekendOp";
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/shacl/generiek-basis#IdentificatorShape> shacl:property _:n3-493;
+    shacl:targetClass <http://www.w3.org/ns/adms#Identifier>.
+<https://data.vlaanderen.be/shacl/generiek-basis#JurisdictieShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-494 shacl:class dcterms:Location;
+    shacl:description "Ruimtelijk gebied of benoemde plaats waarmee de Jurisdictie samenvalt.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "plaats";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#plaats>.
+<https://data.vlaanderen.be/shacl/generiek-basis#JurisdictieShape> shacl:property _:n3-494;
+    shacl:targetClass dcterms:Jurisdiction.
+<https://data.vlaanderen.be/shacl/generiek-basis#KwantitatieveWaardeShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-495 shacl:datatype xsd:string;
+    shacl:description "De eenheid waarin de waarde is uitgedrukt.";
+    shacl:maxCount 1;
+    shacl:name "eenheid";
+    shacl:path schemas:unitText.
+<https://data.vlaanderen.be/shacl/generiek-basis#KwantitatieveWaardeShape> shacl:property _:n3-495.
+_:n3-496 shacl:class <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>;
+    shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.";
+    shacl:maxCount 1;
+    shacl:name "standaardEenheid";
+    shacl:path schemas:unitCode.
+<https://data.vlaanderen.be/shacl/generiek-basis#KwantitatieveWaardeShape> shacl:property _:n3-496.
+_:n3-497 shacl:class schemas:Number;
+    shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "waarde";
+    shacl:path schemas:value.
+<https://data.vlaanderen.be/shacl/generiek-basis#KwantitatieveWaardeShape> shacl:property _:n3-497;
+    shacl:targetClass schemas:QuantitativeValue.
+<https://data.vlaanderen.be/shacl/generiek-basis#LijnStringShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <http://www.opengis.net/ont/sf#LineString>.
+<https://data.vlaanderen.be/shacl/generiek-basis#LocatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass prov:Location.
+<https://data.vlaanderen.be/shacl/generiek-basis#NAL_currencyShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/shacl/generiek-basis#NAL_typeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/shacl/generiek-basis#NUTSShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/shacl/generiek-basis#ObjectShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-498 shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Identificator van het object.";
+    shacl:minCount 1;
+    shacl:name "identificator";
+    shacl:path <http://www.w3.org/ns/adms#identifier>.
+<https://data.vlaanderen.be/shacl/generiek-basis#ObjectShape> shacl:property _:n3-498;
+    shacl:targetClass prov:Entity.
+<https://data.vlaanderen.be/shacl/generiek-basis#OpheffingShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-499 shacl:class prov:Activity;
+    shacl:description "Activiteit die tot de opheffing vd entiteit heeft geleid.";
+    shacl:maxCount 1;
+    shacl:name "activiteit";
+    shacl:path prov:activity.
+<https://data.vlaanderen.be/shacl/generiek-basis#OpheffingShape> shacl:property _:n3-499.
+_:n3-500 shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de opheffing vd entiteit plaatsvond.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "tijdstip";
+    shacl:path prov:atTime.
+<https://data.vlaanderen.be/shacl/generiek-basis#OpheffingShape> shacl:property _:n3-500;
+    shacl:targetClass prov:Invalidation.
+<https://data.vlaanderen.be/shacl/generiek-basis#OrganisatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass org:Organization.
+<https://data.vlaanderen.be/shacl/generiek-basis#PeriodeShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-501 shacl:datatype xsd:dateTime;
+    shacl:description "Aanvang van de tijdsduur.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "begin";
+    shacl:path eu:startTime.
+<https://data.vlaanderen.be/shacl/generiek-basis#PeriodeShape> shacl:property _:n3-501.
+_:n3-502 shacl:datatype xsd:dateTime;
+    shacl:description "Einde vd tijdsduur.";
+    shacl:maxCount 1;
+    shacl:name "einde";
+    shacl:path eu:endTime.
+<https://data.vlaanderen.be/shacl/generiek-basis#PeriodeShape> shacl:property _:n3-502;
+    shacl:targetClass eu:PeriodOfTime.
+<https://data.vlaanderen.be/shacl/generiek-basis#PersoonShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass person:Person.
+<https://data.vlaanderen.be/shacl/generiek-basis#PlaatsShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-503 shacl:class locn:Geometry;
+    shacl:description "Geometrie van de plaats of het gebied.";
+    shacl:maxCount 1;
+    shacl:name "geometrie";
+    shacl:path locn:geometry.
+<https://data.vlaanderen.be/shacl/generiek-basis#PlaatsShape> shacl:property _:n3-503.
+_:n3-504 shacl:datatype rdf:langString;
+    shacl:description "Naam van de plaats of van het gebied.";
+    shacl:minCount 1;
+    shacl:name "plaatsnaam";
+    shacl:path rdfs:label.
+<https://data.vlaanderen.be/shacl/generiek-basis#PlaatsShape> shacl:property _:n3-504;
+    shacl:targetClass dcterms:Location.
+<https://data.vlaanderen.be/shacl/generiek-basis#PlaatscodeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/shacl/generiek-basis#PolygoonShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <http://www.opengis.net/ont/sf#Polygon>.
+<https://data.vlaanderen.be/shacl/generiek-basis#PuntShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <http://www.opengis.net/ont/sf#Point>.
+<https://data.vlaanderen.be/shacl/generiek-basis#StandaardEenheidShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#StandaardEenheid>.
+<https://data.vlaanderen.be/shacl/generiek-basis#TaalStringShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass rdf:langString.
+<https://data.vlaanderen.be/shacl/generiek-basis#TaalcodeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-505 shacl:datatype xsd:integer;
+    shacl:description "Aantal keer dat het plaatsvindt.";
+    shacl:maxCount 1;
+    shacl:name "aantal";
+    shacl:path schemas:repeatCount.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-505.
+_:n3-506 shacl:datatype xsd:duration;
+    shacl:description "Duur van hetgeen plaatsvindt.";
+    shacl:maxCount 1;
+    shacl:name "duur";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#duur>.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-506.
+_:n3-507 shacl:datatype xsd:date;
+    shacl:description "Datum tot wanneer het plaatsvindt.";
+    shacl:maxCount 1;
+    shacl:name "einddatum";
+    shacl:path schemas:endDate.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-507.
+_:n3-508 shacl:datatype xsd:time;
+    shacl:description "Tijdstip waarop het eindigt.";
+    shacl:maxCount 1;
+    shacl:name "eindtijd";
+    shacl:path schemas:endTime.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-508.
+_:n3-509 shacl:datatype xsd:string;
+    shacl:description "Frequentie waarmee het plaatsvindt.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "frequentie";
+    shacl:path schemas:repeatFrequency.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-509.
+_:n3-510 shacl:datatype xsd:anyURI;
+    shacl:description "Dagen van de week waarop het plaatsvindt.";
+    shacl:name "perDag";
+    shacl:path schemas:byDay.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-510.
+_:n3-511 shacl:datatype xsd:integer;
+    shacl:description "Dagen van de maand waarop het plaatsvindt.";
+    shacl:name "perDagVanDeMaand";
+    shacl:path schemas:byMonthDay.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-511.
+_:n3-512 shacl:datatype xsd:integer;
+    shacl:description "Maanden van het jaar waarop het plaatsvindt.";
+    shacl:name "perMaand";
+    shacl:path schemas:byMonth.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-512.
+_:n3-513 shacl:datatype xsd:integer;
+    shacl:description "N-de keer dat iets plaatsvindt uit de verzameling van mogelijke tijdstippen. ";
+    shacl:maxCount 1;
+    shacl:name "perSetpositie";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#perSetpositie>.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-513.
+_:n3-514 shacl:datatype xsd:date;
+    shacl:description "Datum vanaf wanneer het plaatsvindt.";
+    shacl:maxCount 1;
+    shacl:name "startdatum";
+    shacl:path schemas:startDate.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-514.
+_:n3-515 shacl:datatype xsd:time;
+    shacl:description "Tijdstip waarop het start.";
+    shacl:maxCount 1;
+    shacl:name "starttijd";
+    shacl:path schemas:startTime.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-515.
+_:n3-516 shacl:datatype xsd:date;
+    shacl:description "Datums waarop het uitzonderlijk niet plaatsvindt.";
+    shacl:name "uitzonderingsdatum";
+    shacl:path schemas:exceptDate.
+<https://data.vlaanderen.be/shacl/generiek-basis#TijdschemaShape> shacl:property _:n3-516;
+    shacl:targetClass schemas:Schedule.
+<https://data.vlaanderen.be/shacl/generiek-basis#VersieShape> a shacl:NodeShape;
+    shacl:closed false.
+_:n3-517 shacl:class prov:Generation;
+    shacl:description "Beschrijving vh ontstaan vd versie.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "creatie";
+    shacl:path prov:qualifiedGeneration.
+<https://data.vlaanderen.be/shacl/generiek-basis#VersieShape> shacl:property _:n3-517.
+_:n3-518 shacl:class prov:Entity;
+    shacl:description "Duidt de bronentiteit aan waarvan deze entiteit een tijdsgebonden specialisatie is. De specialisatie stelt de bron voor gedurende een bepaalde periode.";
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "isTijdspecialisatieVan";
+    shacl:path <https://data.vlaanderen.be/ns/generiek#isTijdspecialisatieVan>.
+<https://data.vlaanderen.be/shacl/generiek-basis#VersieShape> shacl:property _:n3-518.
+_:n3-519 shacl:class prov:Invalidation;
+    shacl:description "Beschrijving vh verdwijnen vd versie.";
+    shacl:maxCount 1;
+    shacl:name "opheffing";
+    shacl:path prov:qualifiedInvalidation.
+<https://data.vlaanderen.be/shacl/generiek-basis#VersieShape> shacl:property _:n3-519;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#Versie>.
+<https://data.vlaanderen.be/shacl/generiek-basis#VersieVolgensGeldigeTijdShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#VersieVolgensGeldigeTijd>.
+<https://data.vlaanderen.be/shacl/generiek-basis#VersieVolgensTransactietijdShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#VersieVolgensTransactietijd>.

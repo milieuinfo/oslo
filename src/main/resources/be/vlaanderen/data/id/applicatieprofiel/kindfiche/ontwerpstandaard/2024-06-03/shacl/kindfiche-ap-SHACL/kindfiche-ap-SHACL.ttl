@@ -1,0 +1,1422 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03> rdfs:member <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstconsumptieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ErnstTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurtypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeslachtShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#KenmerkTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatierolShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ReactieTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ToedieningTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentRelatieTypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TaalCodeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#VestigingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#InschrijvingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdeOrganisatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoonShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerkShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerkShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/489790f61648b00fae84c09219a10a3d6dd97229>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/58d897ecf05cb106f30250b08c89be84159539ec>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/7e4a0f3f7488c60d2dc32a89e57b115ad299b7c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/7cd5348b78b5b59c80bb34f36bfe9762b9884db9>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/b6fcb5a9e1849d42fb7d4bfbe4e6d6b14e6e2967>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/da7921cbe9a9fa7be889dfd5179266e5bbf75114>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/kindfiche#Aandoening>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.naam";
+    shacl:datatype xsd:string;
+    shacl:description "Naam van de vastgestelde aandoening."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.type";
+    shacl:description "Categorie waartoe een aandoening behoord."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.type";
+    shacl:class skos:Concept;
+    shacl:description "Categorie waartoe een aandoening behoord."@nl;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/489790f61648b00fae84c09219a10a3d6dd97229> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.actief";
+    shacl:description "Mate waarin de Aandoening al dan niet aanwezig is."@nl;
+    shacl:minCount 1;
+    shacl:name "actief"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#actief>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/58d897ecf05cb106f30250b08c89be84159539ec> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.actief";
+    shacl:datatype xsd:boolean;
+    shacl:description "Mate waarin de Aandoening al dan niet aanwezig is."@nl;
+    shacl:name "actief"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#actief>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.naam";
+    shacl:description "Naam van de vastgestelde aandoening."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.type";
+    shacl:description "Categorie waartoe een aandoening behoord."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/7cd5348b78b5b59c80bb34f36bfe9762b9884db9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.diagnosedatum";
+    shacl:description "Datum waarop de aandoening is vastgesteld."@nl;
+    shacl:maxCount 1;
+    shacl:name "diagnosedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#diagnosedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/7e4a0f3f7488c60d2dc32a89e57b115ad299b7c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.actief";
+    shacl:description "Mate waarin de Aandoening al dan niet aanwezig is."@nl;
+    shacl:maxCount 1;
+    shacl:name "actief"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#actief>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/b6fcb5a9e1849d42fb7d4bfbe4e6d6b14e6e2967> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.diagnosedatum";
+    shacl:description "Datum waarop de aandoening is vastgesteld."@nl;
+    shacl:minCount 1;
+    shacl:name "diagnosedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#diagnosedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/da7921cbe9a9fa7be889dfd5179266e5bbf75114> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.diagnosedatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Datum waarop de aandoening is vastgesteld."@nl;
+    shacl:name "diagnosedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#diagnosedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Aandoening.naam";
+    shacl:description "Naam van de vastgestelde aandoening."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AandoeningTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentRelatieTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentShape/8efbb64adfdd4ab14a02f02bdceddcac75b07cfc>;
+    shacl:targetClass dcterms:Agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentShape/8efbb64adfdd4ab14a02f02bdceddcac75b07cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Agent.heeftrelatiemet";
+    shacl:class <https://data.vlaanderen.be/ns/generiek#Agentrelatie>;
+    shacl:description "Relatie tussen twee agenten."@nl;
+    shacl:name "heeft relatie met"@nl;
+    shacl:path prov:qualifiedAssociation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/14e28c4fd3b2b9b402e2cba1b11677b2475fb971>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/5d41e5114e4b537d95f4f2bd7f8c114dc0e388bc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/7d077db94d0f6a63b42bbd8f35c0193e9c194c79>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/2ee3a3d493dbe68313a163b23488b0a458af381a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/347e3f4226069420a6200ab3f6ccb573131eb2f8>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/c8ccf8176dab58302a1abcdb401b3cd94b4ce251>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/generiek#Agentrelatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/14e28c4fd3b2b9b402e2cba1b11677b2475fb971> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Agentrelatie.agent";
+    shacl:minCount 1;
+    shacl:name "agent"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#agent>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/2ee3a3d493dbe68313a163b23488b0a458af381a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Agentrelatie.relatietype";
+    shacl:description "Soort relatie."@nl;
+    shacl:minCount 1;
+    shacl:name "relatietype"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/347e3f4226069420a6200ab3f6ccb573131eb2f8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Agentrelatie.relatietype";
+    shacl:description "Soort relatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "relatietype"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/5d41e5114e4b537d95f4f2bd7f8c114dc0e388bc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Agentrelatie.agent";
+    shacl:class dcterms:Agent;
+    shacl:name "agent"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#agent>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/7d077db94d0f6a63b42bbd8f35c0193e9c194c79> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Agentrelatie.agent";
+    shacl:maxCount 1;
+    shacl:name "agent"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#agent>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AgentrelatieShape/c8ccf8176dab58302a1abcdb401b3cd94b4ce251> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Agentrelatie.relatietype";
+    shacl:class skos:Concept;
+    shacl:description "Soort relatie."@nl;
+    shacl:name "relatietype"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/264afdd746e1725ae5b92472927bb44b3968bb61>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/44e738f64712077a9c233210f81b80a6e7f20af1>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/8a290cd0ea6de94cde293472f68e8114bf6e6751>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/3fc5b42ef30e5300d10f62eab4dbb0730a3e6262>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/6ba7585ab4864c171dc63269507d9caf78e87d75>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/9459ab62de06cc1d7490856857cfadad14eaca26>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/kindfiche#Allergeen>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.beschrijving";
+    shacl:datatype xsd:string;
+    shacl:description "De beschrijving van het specifieke allergeen bij de Persoon."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#beschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.type";
+    shacl:description "Categorie waartoe een allergeen behoort."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/264afdd746e1725ae5b92472927bb44b3968bb61> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.ernst";
+    shacl:description "De hevigheid waarmee een persoon reageert op een allergeen."@nl;
+    shacl:minCount 1;
+    shacl:name "ernst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#ernst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.type";
+    shacl:class skos:Concept;
+    shacl:description "Categorie waartoe een allergeen behoort."@nl;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/3fc5b42ef30e5300d10f62eab4dbb0730a3e6262> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.reactie";
+    shacl:description "Reactie dat het lichaam heeft op de allergeen."@nl;
+    shacl:minCount 1;
+    shacl:name "reactie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#reactie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/44e738f64712077a9c233210f81b80a6e7f20af1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.ernst";
+    shacl:description "De hevigheid waarmee een persoon reageert op een allergeen."@nl;
+    shacl:maxCount 1;
+    shacl:name "ernst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#ernst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.beschrijving";
+    shacl:description "De beschrijving van het specifieke allergeen bij de Persoon."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#beschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/6ba7585ab4864c171dc63269507d9caf78e87d75> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.reactie";
+    shacl:class skos:Concept;
+    shacl:description "Reactie dat het lichaam heeft op de allergeen."@nl;
+    shacl:name "reactie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#reactie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.type";
+    shacl:description "Categorie waartoe een allergeen behoort."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.beschrijving";
+    shacl:description "De beschrijving van het specifieke allergeen bij de Persoon."@nl;
+    shacl:minCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#beschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/8a290cd0ea6de94cde293472f68e8114bf6e6751> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.ernst";
+    shacl:class skos:Concept;
+    shacl:description "De hevigheid waarmee een persoon reageert op een allergeen."@nl;
+    shacl:name "ernst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#ernst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenShape/9459ab62de06cc1d7490856857cfadad14eaca26> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergeen.reactie";
+    shacl:description "Reactie dat het lichaam heeft op de allergeen."@nl;
+    shacl:maxCount 1;
+    shacl:name "reactie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#reactie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergeenTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/0706a83562b05e006a446ba50699e1adef94cc6c>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/2e7217da5b3b44b7d2473369c1849dd50372c330>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/ede28f19f3b01ef872590cb94cc5c0064a986fb6>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/7cd5348b78b5b59c80bb34f36bfe9762b9884db9>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/b6fcb5a9e1849d42fb7d4bfbe4e6d6b14e6e2967>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/da7921cbe9a9fa7be889dfd5179266e5bbf75114>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/264afdd746e1725ae5b92472927bb44b3968bb61>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/44e738f64712077a9c233210f81b80a6e7f20af1>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/8a290cd0ea6de94cde293472f68e8114bf6e6751>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/61675f1d9dc6396f85bb3819405562da372bee19>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/f031b8c3f4073bf55aaed275034c5a0f2d4b9e63>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/faba1ed84f5a1251b6e89fcb7b21a08bb198a788>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/3fc5b42ef30e5300d10f62eab4dbb0730a3e6262>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/6ba7585ab4864c171dc63269507d9caf78e87d75>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/9459ab62de06cc1d7490856857cfadad14eaca26>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#AllergyIntolerance>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/0706a83562b05e006a446ba50699e1adef94cc6c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.behandeling";
+    shacl:description "Soort verzorging nodig om de desbetreffende allergie te verhelpen of helpen verminderen."@nl;
+    shacl:minCount 1;
+    shacl:name "behandeling"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#behandeling>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.naam";
+    shacl:datatype xsd:string;
+    shacl:description "Naam van de vastgestelde allergie."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.type";
+    shacl:description "Categorie waartoe een allergie behoord."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/264afdd746e1725ae5b92472927bb44b3968bb61> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.ernst";
+    shacl:description "De hevigheid waarmee een persoon reageert op een allergie."@nl;
+    shacl:minCount 1;
+    shacl:name "ernst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#ernst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/2e7217da5b3b44b7d2473369c1849dd50372c330> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.behandeling";
+    shacl:description "Soort verzorging nodig om de desbetreffende allergie te verhelpen of helpen verminderen."@nl;
+    shacl:maxCount 1;
+    shacl:name "behandeling"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#behandeling>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.type";
+    shacl:class skos:Concept;
+    shacl:description "Categorie waartoe een allergie behoord."@nl;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/3fc5b42ef30e5300d10f62eab4dbb0730a3e6262> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.reactie";
+    shacl:description "Reactie dat het lichaam heeft op de allergie."@nl;
+    shacl:minCount 1;
+    shacl:name "reactie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#reactie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/44e738f64712077a9c233210f81b80a6e7f20af1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.ernst";
+    shacl:description "De hevigheid waarmee een persoon reageert op een allergie."@nl;
+    shacl:maxCount 1;
+    shacl:name "ernst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#ernst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.naam";
+    shacl:description "Naam van de vastgestelde allergie."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/61675f1d9dc6396f85bb3819405562da372bee19> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.oorzaak";
+    shacl:datatype xsd:string;
+    shacl:description "Reden waarbij de allergie plaatsvindt."@nl;
+    shacl:name "oorzaak"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#oorzaak>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/6ba7585ab4864c171dc63269507d9caf78e87d75> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.reactie";
+    shacl:class skos:Concept;
+    shacl:description "Reactie dat het lichaam heeft op de allergie."@nl;
+    shacl:name "reactie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#reactie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.type";
+    shacl:description "Categorie waartoe een allergie behoord."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/7cd5348b78b5b59c80bb34f36bfe9762b9884db9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.diagnosedatum";
+    shacl:description "Datum waarop de allergie is vastgesteld."@nl;
+    shacl:maxCount 1;
+    shacl:name "diagnosedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#diagnosedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/8a290cd0ea6de94cde293472f68e8114bf6e6751> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.ernst";
+    shacl:datatype xsd:string;
+    shacl:description "De hevigheid waarmee een persoon reageert op een allergie."@nl;
+    shacl:name "ernst"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#ernst>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/9459ab62de06cc1d7490856857cfadad14eaca26> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.reactie";
+    shacl:description "Reactie dat het lichaam heeft op de allergie."@nl;
+    shacl:maxCount 1;
+    shacl:name "reactie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#reactie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/b6fcb5a9e1849d42fb7d4bfbe4e6d6b14e6e2967> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.diagnosedatum";
+    shacl:description "Datum waarop de allergie is vastgesteld."@nl;
+    shacl:minCount 1;
+    shacl:name "diagnosedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#diagnosedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/da7921cbe9a9fa7be889dfd5179266e5bbf75114> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.diagnosedatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Datum waarop de allergie is vastgesteld."@nl;
+    shacl:name "diagnosedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#diagnosedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.naam";
+    shacl:description "Naam van de vastgestelde allergie."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/ede28f19f3b01ef872590cb94cc5c0064a986fb6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.behandeling";
+    shacl:datatype xsd:string;
+    shacl:description "Soort verzorging nodig om de desbetreffende allergie te verhelpen of helpen verminderen."@nl;
+    shacl:name "behandeling"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#behandeling>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/f031b8c3f4073bf55aaed275034c5a0f2d4b9e63> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.oorzaak";
+    shacl:description "Reden waarbij de allergie plaatsvindt."@nl;
+    shacl:minCount 1;
+    shacl:name "oorzaak"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#oorzaak>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieShape/faba1ed84f5a1251b6e89fcb7b21a08bb198a788> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Allergie.oorzaak";
+    shacl:description "Reden waarbij de allergie plaatsvindt."@nl;
+    shacl:maxCount 1;
+    shacl:name "oorzaak"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#oorzaak>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#AllergieTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/0dcc2080d857c28975fe9b5d22ef005b68ee9be6>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/1f04f1303bae75d4454e1dd929a0e0a8129609ed>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/5bf33dfa36f439b056fac238e21fa09e0963ca04>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/30ae4e2a2070ae95767ee0f9a54b6868ddf44d5e>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/4df8dd30af67cbbd1768baf67c3fd4821f399497>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/e640ca6002d94a68b2a8ac427c284e495b31be83>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/0dcc2080d857c28975fe9b5d22ef005b68ee9be6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Be%C3%ABindiging.beeindigingsdatum";
+    shacl:datatype xsd:date;
+    shacl:description "De datum van beendiging van de deelname aan de dienst."@nl;
+    shacl:name "beeindigingsdatum"@nl;
+    shacl:path prov:atTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/1f04f1303bae75d4454e1dd929a0e0a8129609ed> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Be%C3%ABindiging.beeindigingsdatum";
+    shacl:description "De datum van beendiging van de deelname aan de dienst."@nl;
+    shacl:maxCount 1;
+    shacl:name "beeindigingsdatum"@nl;
+    shacl:path prov:atTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/30ae4e2a2070ae95767ee0f9a54b6868ddf44d5e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Be%C3%ABindiging.redenvanbe%C3%ABindiging";
+    shacl:description "Beschrijving van de reden waarom de Beëindiging plaatsvindt voor de Dienstverlening gekoppeld aan het Persoon."@nl;
+    shacl:minCount 1;
+    shacl:name "reden van beëindiging"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/4df8dd30af67cbbd1768baf67c3fd4821f399497> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Be%C3%ABindiging.redenvanbe%C3%ABindiging";
+    shacl:description "Beschrijving van de reden waarom de Beëindiging plaatsvindt voor de Dienstverlening gekoppeld aan het Persoon."@nl;
+    shacl:maxCount 1;
+    shacl:name "reden van beëindiging"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/5bf33dfa36f439b056fac238e21fa09e0963ca04> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Be%C3%ABindiging.beeindigingsdatum";
+    shacl:description "De datum van beendiging van de deelname aan de dienst."@nl;
+    shacl:minCount 1;
+    shacl:name "beeindigingsdatum"@nl;
+    shacl:path prov:atTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeeindigingShape/e640ca6002d94a68b2a8ac427c284e495b31be83> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Be%C3%ABindiging.redenvanbe%C3%ABindiging";
+    shacl:class skos:Concept;
+    shacl:description "Beschrijving van de reden waarom de Beëindiging plaatsvindt voor de Dienstverlening gekoppeld aan het Persoon."@nl;
+    shacl:name "reden van beëindiging"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/kindfiche#Beperking>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Beperking.naam";
+    shacl:datatype xsd:string;
+    shacl:description "Naam van de beperking."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Beperking.type";
+    shacl:description "Categorie waartoe de beperking behoord."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Beperking.type";
+    shacl:class skos:Concept;
+    shacl:description "Categorie waartoe de beperking behoord."@nl;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Beperking.naam";
+    shacl:description "Naam van de beperking."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Beperking.type";
+    shacl:description "Categorie waartoe de beperking behoord."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Beperking.naam";
+    shacl:description "Naam van de beperking."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#BeperkingTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/1beecf084b59c7b686e40cf4c6b48c091a646d4d>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/e7a0ed955d2934a53c7112ed7389c018fdb42422>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/5485f560cc4537a56ec0fdb5ad3b59522d112e1e>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/7afdb5e532aae0234495df704beed1c303e180e6>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/8cf3e751730442052d1b2174336d21bb838e4aab>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/df2e16526cd0f7cc796d3bb27ac1861737a35d91>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/e6ada4b25599dde7d63c9b717df99ba62230ba58>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/76482cffcd1cddae95f97230cd66d61c8dfb0b15>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/8eedb94afa2ac48c738f0eee74bf9d7474501fc5>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/9ac9603e91a4902c78c494481f57fa4967e5a3a5>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/a281a0d3a98ba358e3d3f716e1055bcc34f26b48>;
+    shacl:targetClass eu:ContactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/1beecf084b59c7b686e40cf4c6b48c091a646d4d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.adres";
+    shacl:description "Adres dat men kan aanschrijven of bezoeken."@nl;
+    shacl:maxCount 1;
+    shacl:name "adres"@nl;
+    shacl:path locn:address.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/5485f560cc4537a56ec0fdb5ad3b59522d112e1e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.beschikbaarheid";
+    shacl:description "Periode waarin contact kan worden opgenomen."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschikbaarheid"@nl;
+    shacl:path schema:hoursAvailable.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/76482cffcd1cddae95f97230cd66d61c8dfb0b15> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.telefoon";
+    shacl:datatype xsd:string;
+    shacl:description "Telefoonnummer waarop men kan bellen."@nl;
+    shacl:name "telefoon"@nl;
+    shacl:path schema:telephone.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/7afdb5e532aae0234495df704beed1c303e180e6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.beschikbaarheid";
+    shacl:class schemas:Schedule;
+    shacl:description "Periode waarin contact kan worden opgenomen."@nl;
+    shacl:name "beschikbaarheid"@nl;
+    shacl:path schema:hoursAvailable.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/8cf3e751730442052d1b2174336d21bb838e4aab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.email";
+    shacl:datatype xsd:string;
+    shacl:description "Email-adres waarnaar men kan mailen."@nl;
+    shacl:name "email"@nl;
+    shacl:path schema:email.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/8eedb94afa2ac48c738f0eee74bf9d7474501fc5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.telefoon";
+    shacl:description "Telefoonnummer waarop men kan bellen."@nl;
+    shacl:maxCount 1;
+    shacl:name "telefoon"@nl;
+    shacl:path schema:telephone.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/9ac9603e91a4902c78c494481f57fa4967e5a3a5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.website";
+    shacl:datatype xsd:anyURI;
+    shacl:description "Website waarnaar men kan surfen."@nl;
+    shacl:name "website"@nl;
+    shacl:path foaf:page.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/a281a0d3a98ba358e3d3f716e1055bcc34f26b48> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.website";
+    shacl:description "Website waarnaar men kan surfen."@nl;
+    shacl:maxCount 1;
+    shacl:name "website"@nl;
+    shacl:path foaf:page.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/df2e16526cd0f7cc796d3bb27ac1861737a35d91> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.email";
+    shacl:description "Email-adres waarnaar men kan mailen."@nl;
+    shacl:maxCount 1;
+    shacl:name "email"@nl;
+    shacl:path schema:email.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/e6ada4b25599dde7d63c9b717df99ba62230ba58> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.openingsuren";
+    shacl:description "Uren waarbinnen contact kan worden opgenomen."@nl;
+    shacl:maxCount 1;
+    shacl:name "openingsuren"@nl;
+    shacl:path schema:openingHours.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfoShape/e7a0ed955d2934a53c7112ed7389c018fdb42422> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ContactInfo.adres";
+    shacl:class locn:Address;
+    shacl:description "Adres dat men kan aanschrijven of bezoeken."@nl;
+    shacl:name "adres"@nl;
+    shacl:path locn:address.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/kindfiche#Dieetvoorkeur>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dieetvoorkeur.beschrijving";
+    shacl:datatype xsd:string;
+    shacl:description "De beschrijving van de specifieke dieetvoorkeur van de Persoon."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#beschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dieetvoorkeur.type";
+    shacl:description "Categorie waartoe een dieetvoorkeur behoort"@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dieetvoorkeur.type";
+    shacl:class skos:Concept;
+    shacl:description "Categorie waartoe een dieetvoorkeur behoort"@nl;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dieetvoorkeur.beschrijving";
+    shacl:description "De beschrijving van de specifieke dieetvoorkeur van de Persoon."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#beschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dieetvoorkeur.type";
+    shacl:description "Categorie waartoe een dieetvoorkeur behoort"@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dieetvoorkeur.beschrijving";
+    shacl:description "De beschrijving van de specifieke dieetvoorkeur van de Persoon."@nl;
+    shacl:minCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#beschrijving>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DieetvoorkeurtypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/f1709f9428e70543fa624071eefe3766ee5695ee>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/407ad83e3ef9ebe4ccda85158fa65d57f7383e1d>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/7bef42c774a76e91230868157163b1a1534df524>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/236818a46442d5839007629fc7515b884fd201ef>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/ead0140014ebf09954ecaa04a0b0da5f23bf732d>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/0f6cb927d0d26f3819cba3fb903a075cd426180d>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/412d9110bf27445974af31e4e19570da547b2f42>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/bfa8f05ee420729d9c4db73d611cebfb9cdb7be9>;
+    shacl:targetClass cpsv:PublicService.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Beschrijving vd dienstverlening."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/0f6cb927d0d26f3819cba3fb903a075cd426180d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.status";
+    shacl:class skos:Concept;
+    shacl:description "Geeft aan of een dienstverlening actief, inactief, in ontwikkeling etc is."@nl;
+    shacl:name "status"@nl;
+    shacl:path <http://www.w3.org/ns/adms#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.naam";
+    shacl:datatype rdf:langString;
+    shacl:description "Officiële naam van de dienstverlening."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.periode";
+    shacl:description "Periode waarin de dienst wordt aangeboden."@nl;
+    shacl:maxCount 1;
+    shacl:name "periode"@nl;
+    shacl:path dcterms:available.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/236818a46442d5839007629fc7515b884fd201ef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.periode";
+    shacl:class eu:PeriodOfTime;
+    shacl:description "Periode waarin de dienst wordt aangeboden."@nl;
+    shacl:name "periode"@nl;
+    shacl:path dcterms:available.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.status";
+    shacl:description "Geeft aan of een dienstverlening actief, inactief, in ontwikkeling etc is."@nl;
+    shacl:maxCount 1;
+    shacl:name "status"@nl;
+    shacl:path <http://www.w3.org/ns/adms#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/407ad83e3ef9ebe4ccda85158fa65d57f7383e1d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.organisatie";
+    shacl:description "Organisatie verantwoordelijk voor het Dienstaanbod."@nl;
+    shacl:maxCount 1;
+    shacl:name "organisatie"@nl;
+    shacl:path prov:agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/412d9110bf27445974af31e4e19570da547b2f42> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.vestiging";
+    shacl:class org:Site;
+    shacl:description "De Vestiging waarop het Dienstaanbod wordt aangeboden."@nl;
+    shacl:name "vestiging"@nl;
+    shacl:path prov:atLocation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.beschrijving";
+    shacl:description "Beschrijving vd dienstverlening."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.naam";
+    shacl:description "Officiële naam van de dienstverlening."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.beschrijving";
+    shacl:description "Beschrijving vd dienstverlening."@nl;
+    shacl:minCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/7bef42c774a76e91230868157163b1a1534df524> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.organisatie";
+    shacl:class org:Organization;
+    shacl:description "Organisatie verantwoordelijk voor het Dienstaanbod."@nl;
+    shacl:name "organisatie"@nl;
+    shacl:path prov:agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.taal";
+    shacl:class skos:Concept;
+    shacl:description "Taal waarin de dienstverlening wordt aangeboden."@nl;
+    shacl:name "taal"@nl;
+    shacl:path dcterms:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/bfa8f05ee420729d9c4db73d611cebfb9cdb7be9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.vestiging";
+    shacl:description "De Vestiging waarop het Dienstaanbod wordt aangeboden."@nl;
+    shacl:maxCount 1;
+    shacl:name "vestiging"@nl;
+    shacl:path prov:atLocation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.naam";
+    shacl:description "Officiële naam van de dienstverlening."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/ead0140014ebf09954ecaa04a0b0da5f23bf732d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.periode";
+    shacl:description "Periode waarin de dienst wordt aangeboden."@nl;
+    shacl:minCount 1;
+    shacl:name "periode"@nl;
+    shacl:path dcterms:available.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstaanbodShape/f1709f9428e70543fa624071eefe3766ee5695ee> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstaanbod.diensttype";
+    shacl:class skos:Concept;
+    shacl:description "Soort dienstverlening."@nl;
+    shacl:name "diensttype"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstconsumptieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstconsumptieShape/096b14df0e2f918518e8f4203a50942b19367dec>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstconsumptieShape/2de78c0ea49cee516532b0053c7bd70e4ba0e5f8>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstconsumptieShape/d66da66b5bb9316c3c63f8e0e4ea8f46ffe636ac>;
+    shacl:targetClass cpsv:PublicService.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstconsumptieShape/096b14df0e2f918518e8f4203a50942b19367dec> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstconsumptie.dienstaanbod";
+    shacl:class cpsv:PublicService;
+    shacl:description "Linkt een bepaalde consumptie van een dienstverlening (een transactie) met het product uit de dienstencatalogus.\t"@nl;
+    shacl:name "dienstaanbod"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/transactie#isInstantieVan>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstconsumptieShape/2de78c0ea49cee516532b0053c7bd70e4ba0e5f8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstconsumptie.dienstaanbod";
+    shacl:description "Linkt een bepaalde consumptie van een dienstverlening (een transactie) met het product uit de dienstencatalogus.\t"@nl;
+    shacl:maxCount 1;
+    shacl:name "dienstaanbod"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/transactie#isInstantieVan>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#DienstconsumptieShape/d66da66b5bb9316c3c63f8e0e4ea8f46ffe636ac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Dienstconsumptie.participatie";
+    shacl:class eu:Participation;
+    shacl:description "Verwijst naar de afnemers van de dienst, inclusief hun respectieve rollen."@nl;
+    shacl:name "participatie"@nl;
+    shacl:path prov:qualifiedAssociation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ErnstTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoonShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoonShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoonShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoonShape/df3ba01409fe5d24a380d375ef9332757fb45310>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoonShape/ae8efc86fa070a2536c3f525f1a10d5cbb8347c1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoon.registratie";
+    shacl:description "Identificatiecode vd persoon ih register."@nl;
+    shacl:maxCount 1;
+    shacl:name "registratie"@nl;
+    shacl:path <http://www.w3.org/ns/adms#identifier>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoonShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoon.registratie";
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Identificatiecode vd persoon ih register."@nl;
+    shacl:name "registratie"@nl;
+    shacl:path <http://www.w3.org/ns/adms#identifier>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoonShape/df3ba01409fe5d24a380d375ef9332757fb45310> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdPersoon.registratie";
+    shacl:description "Identificatiecode vd persoon ih register."@nl;
+    shacl:minCount 1;
+    shacl:name "registratie"@nl;
+    shacl:path <http://www.w3.org/ns/adms#identifier>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdeOrganisatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdeOrganisatieShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc>;
+    shacl:targetClass rov:RegisteredOrganization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdeOrganisatieShape/b6adbeb526c46b6ce4d488d6a0d0553c922f6cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeregistreerdeOrganisatie.registratie";
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Identificator dat de organisatie verkreeg bij registratie."@nl;
+    shacl:name "registratie"@nl;
+    shacl:path rov:registration.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GeslachtShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/db6b21e7ad3887546c4b8f9d57051796f9c84988>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/2578b724b157c15663359be33ae611e59aea75c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/34d8ed6456ed62519ac905186b0ec2736b3e2b73>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/cdecf9d1178d457f5ac068d390167a02fffcdc58>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/98ccf27f27c8384a4fc337a5366db1db2f9b4f26>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/f838bb70b5c0c6bd9ba81d911d58765441ff9051>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/4f59a036b0ec8da62b24ec258ffa23b20278b962>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/c1d33bc12ce07c17fd195a997c096f44f1c61c95>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/2578b724b157c15663359be33ae611e59aea75c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Gezondheidstoestand.allergeen";
+    shacl:class <https://data.vlaanderen.be/ns/kindfiche#Allergeen>;
+    shacl:description "Een allergeen is een stof die een allergische reactie kan uitlokken bij mensen die daar gevoelig voor zijn."@nl;
+    shacl:name "allergeen"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#allergeen>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/34d8ed6456ed62519ac905186b0ec2736b3e2b73> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Gezondheidstoestand.allergie";
+    shacl:class <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#AllergyIntolerance>;
+    shacl:description "Abnormale reacties van het lichaam op de inname van een bepaalde stof"@nl;
+    shacl:name "allergie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#allergie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/4f59a036b0ec8da62b24ec258ffa23b20278b962> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Gezondheidstoestand.persoon";
+    shacl:class person:Person;
+    shacl:description "De persoon waarover de gezondheidstoestand gaat."@nl;
+    shacl:name "persoon"@nl;
+    shacl:path rdf:subject.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/98ccf27f27c8384a4fc337a5366db1db2f9b4f26> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Gezondheidstoestand.beperking";
+    shacl:class <https://data.vlaanderen.be/ns/kindfiche#Beperking>;
+    shacl:description "Moeilijkheden die iemand heeft met het uitvoeren van activiteiten als gevolg van een afwijking in of verlies van functies of anatomische eigenschappen (ten gevolge van ziekte, ongeval, )"@nl;
+    shacl:name "beperking"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#beperking>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/c1d33bc12ce07c17fd195a997c096f44f1c61c95> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Gezondheidstoestand.persoon";
+    shacl:description "De persoon waarover de gezondheidstoestand gaat."@nl;
+    shacl:maxCount 1;
+    shacl:name "persoon"@nl;
+    shacl:path rdf:subject.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/cdecf9d1178d457f5ac068d390167a02fffcdc58> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Gezondheidstoestand.attest";
+    shacl:class foaf:Document;
+    shacl:description "Getuigschrift dat een feit van medische aard vaststelt en bevestigt op grond van eigen ondervraging en onderzoek"@nl;
+    shacl:name "attest"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeObservatie.gedocumenteerdDoor>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/db6b21e7ad3887546c4b8f9d57051796f9c84988> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Gezondheidstoestand.aandoening";
+    shacl:class <https://data.vlaanderen.be/ns/kindfiche#Aandoening>;
+    shacl:description "Een afwijking, ziekte, stoornis of andere fysieke of mentale toestand die het normale functioneren van het lichaam beïnvloedt."@nl;
+    shacl:name "aandoening"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand.aandoening>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#GezondheidstoestandShape/f838bb70b5c0c6bd9ba81d911d58765441ff9051> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Gezondheidstoestand.gebruiktemedicatie";
+    shacl:class <https://hl7.org/fhir/medication-definitions.html#Medication>;
+    shacl:description "De Medicatie die wordt toegediend aan een Persoon."@nl;
+    shacl:name "gebruikte medicatie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#gebruikteMedicatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#InschrijvingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#InschrijvingShape/24b0444171ba39bdc3b127cf5df067b0da9e0d13>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#InschrijvingShape/43d52e2c919c5dc8031c3796af4c19d0ad2b17bd>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#InschrijvingShape/5392f532f90175b5de97f3514c5461b4ba74416c>;
+    shacl:targetClass prov:Start.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#InschrijvingShape/24b0444171ba39bdc3b127cf5df067b0da9e0d13> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Inschrijving.inschrijvingsdatum";
+    shacl:description "De datum van inschrijving aan de dienst."@nl;
+    shacl:minCount 1;
+    shacl:name "inschrijvingsdatum"@nl;
+    shacl:path prov:atTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#InschrijvingShape/43d52e2c919c5dc8031c3796af4c19d0ad2b17bd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Inschrijving.inschrijvingsdatum";
+    shacl:description "De datum van inschrijving aan de dienst."@nl;
+    shacl:maxCount 1;
+    shacl:name "inschrijvingsdatum"@nl;
+    shacl:path prov:atTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#InschrijvingShape/5392f532f90175b5de97f3514c5461b4ba74416c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Inschrijving.inschrijvingsdatum";
+    shacl:datatype xsd:date;
+    shacl:description "De datum van inschrijving aan de dienst."@nl;
+    shacl:name "inschrijvingsdatum"@nl;
+    shacl:path prov:atTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerkShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerkShape/7fdf6bdec9441fed832a5e7dab4b16af13d323f3>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerkShape/9234063bc3f88ef0f115e60fe043b4a382b74008>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerkShape/ba43c3d188022f476c8ec09c23252e50af5c54b6>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/wetgeving#JuridischWerk>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerkShape/7fdf6bdec9441fed832a5e7dab4b16af13d323f3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerk.ingangsdatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Moment dat een juridisch werk van kracht gaat."@nl;
+    shacl:name "ingangsdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/wetgeving#ingangsdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerkShape/9234063bc3f88ef0f115e60fe043b4a382b74008> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerk.ingangsdatum";
+    shacl:description "Moment dat een juridisch werk van kracht gaat."@nl;
+    shacl:minCount 1;
+    shacl:name "ingangsdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/wetgeving#ingangsdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerkShape/ba43c3d188022f476c8ec09c23252e50af5c54b6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#JuridischWerk.ingangsdatum";
+    shacl:description "Moment dat een juridisch werk van kracht gaat."@nl;
+    shacl:maxCount 1;
+    shacl:name "ingangsdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/wetgeving#ingangsdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#KenmerkTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/10d14b832cd078752d0be0c70155ebc8c7e7186e>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/ce03aae0523dd45fd2d5b881624114dabc4cd572>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/ee190733043fe9d90cf6f13c2b1e7af34f43e553>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/2451d5eadacede49a56ce346f41112df5b12823c>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/31b2ba84b59e95a4ab2aceb4026abce9ef75ec64>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/3af8ba7339c5a11fa82547c50978f8cb8fd3b896>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/3031d21f941146ec2cbde105f3963205bad379ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/6a142d51e1996cc547859eb790c61b8be7bf71d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/7da8172d0a595049f5316161a5496c858bc96022>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/72d8e53b4c1763e3a015f9673d4143aff92643cc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/786cc0308f770e710c4e2b1844555533091028ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/fd79be3f209d2ad7c806dec4641965b480e07d9c>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/0811a258db793502bde697e0451ae86b56c5155a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/43b1afdc196b1532dfe3ca29e7d591cee4236ff2>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/b28b486348d4b486ff718a781220634b2a860135>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/7795703c617f5b31f5a421e8470360141867662f>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/f844de6533252e5b38c84162d753e37a42b7c108>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/63bfc6d2d2600a2c27aff3b0efd84692e810a25b>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/af7af7ce2254efbefc4bc3893715f0c6e64ddc4f>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/f363c9c31b8c38435be54671359b07c7967436f7>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/74feba662f4f65577bf45a8dd94f8faec0f03592>;
+    shacl:targetClass <https://hl7.org/fhir/medication-definitions.html#Medication>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/0811a258db793502bde697e0451ae86b56c5155a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.reden";
+    shacl:datatype xsd:string;
+    shacl:description "Reden waarom iemand bepaalde medicatie moet innemen."@nl;
+    shacl:name "reden"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#reden>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/10d14b832cd078752d0be0c70155ebc8c7e7186e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.bijwerking";
+    shacl:description "Extra, onbedoeld effect dat plaatsvindt na het innemen van bepaalde medicatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "bijwerking"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#bijwerking>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.naam";
+    shacl:datatype xsd:string;
+    shacl:description "Naam van de medicatie."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.type";
+    shacl:description "Categorie waartoe de medicatie behoord."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/2451d5eadacede49a56ce346f41112df5b12823c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.dosering";
+    shacl:datatype xsd:integer;
+    shacl:description "De hoeveelheid medicatie dat ingenomen moet worden."@nl;
+    shacl:name "dosering"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#dosering>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/3031d21f941146ec2cbde105f3963205bad379ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.einddatum";
+    shacl:description "Datum waarop het innemen van medicatie is gestopt."@nl;
+    shacl:minCount 1;
+    shacl:name "einddatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#einddatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/31b2ba84b59e95a4ab2aceb4026abce9ef75ec64> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.dosering";
+    shacl:description "De hoeveelheid medicatie dat ingenomen moet worden."@nl;
+    shacl:minCount 1;
+    shacl:name "dosering"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#dosering>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.type";
+    shacl:class skos:Concept;
+    shacl:description "Categorie waartoe de medicatie behoord."@nl;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/3af8ba7339c5a11fa82547c50978f8cb8fd3b896> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.dosering";
+    shacl:description "De hoeveelheid medicatie dat ingenomen moet worden."@nl;
+    shacl:maxCount 1;
+    shacl:name "dosering"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#dosering>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/43b1afdc196b1532dfe3ca29e7d591cee4236ff2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.reden";
+    shacl:description "Reden waarom iemand bepaalde medicatie moet innemen."@nl;
+    shacl:minCount 1;
+    shacl:name "reden"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#reden>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.naam";
+    shacl:description "Naam van de medicatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/63bfc6d2d2600a2c27aff3b0efd84692e810a25b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.toediening";
+    shacl:description "De wijze waarop de medicatie aan een persoon toegediend wordt."@nl;
+    shacl:minCount 1;
+    shacl:name "toediening"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#toediening>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/6a142d51e1996cc547859eb790c61b8be7bf71d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.einddatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Datum waarop het innemen van medicatie is gestopt."@nl;
+    shacl:name "einddatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#einddatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/72d8e53b4c1763e3a015f9673d4143aff92643cc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.frequentie";
+    shacl:description "De frequentie waarmee medicatie ingenomen moet worden."@nl;
+    shacl:maxCount 1;
+    shacl:name "frequentie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#frequentie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/74feba662f4f65577bf45a8dd94f8faec0f03592> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.type";
+    shacl:description "Categorie waartoe de medicatie behoord."@nl;
+    shacl:minCount 1;
+    shacl:name "type"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/7795703c617f5b31f5a421e8470360141867662f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.startdatum";
+    shacl:description "Datum waarop het innemen van medicatie is gestart."@nl;
+    shacl:minCount 1;
+    shacl:name "startdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#startdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/786cc0308f770e710c4e2b1844555533091028ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.frequentie";
+    shacl:description "De frequentie waarmee medicatie ingenomen moet worden."@nl;
+    shacl:minCount 1;
+    shacl:name "frequentie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#frequentie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/7da8172d0a595049f5316161a5496c858bc96022> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.einddatum";
+    shacl:description "Datum waarop het innemen van medicatie is gestopt."@nl;
+    shacl:maxCount 1;
+    shacl:name "einddatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#einddatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.startdatum";
+    shacl:description "Datum waarop het innemen van medicatie is gestart."@nl;
+    shacl:maxCount 1;
+    shacl:name "startdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#startdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/af7af7ce2254efbefc4bc3893715f0c6e64ddc4f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.toediening";
+    shacl:description "De wijze waarop de medicatie aan een persoon toegediend wordt."@nl;
+    shacl:maxCount 1;
+    shacl:name "toediening"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#toediening>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/b28b486348d4b486ff718a781220634b2a860135> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.reden";
+    shacl:description "Reden waarom iemand bepaalde medicatie moet innemen."@nl;
+    shacl:maxCount 1;
+    shacl:name "reden"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#reden>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/ce03aae0523dd45fd2d5b881624114dabc4cd572> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.bijwerking";
+    shacl:datatype xsd:string;
+    shacl:description "Extra, onbedoeld effect dat plaatsvindt na het innemen van bepaalde medicatie."@nl;
+    shacl:name "bijwerking"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#bijwerking>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.naam";
+    shacl:description "Naam van de medicatie."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/ee190733043fe9d90cf6f13c2b1e7af34f43e553> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.bijwerking";
+    shacl:description "Extra, onbedoeld effect dat plaatsvindt na het innemen van bepaalde medicatie."@nl;
+    shacl:minCount 1;
+    shacl:name "bijwerking"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#bijwerking>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/f363c9c31b8c38435be54671359b07c7967436f7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.toediening";
+    shacl:class skos:Concept;
+    shacl:description "De wijze waarop de medicatie aan een persoon toegediend wordt."@nl;
+    shacl:name "toediening"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#toediening>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/f844de6533252e5b38c84162d753e37a42b7c108> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.startdatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Datum waarop het innemen van medicatie is gestart."@nl;
+    shacl:name "startdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#startdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieShape/fd79be3f209d2ad7c806dec4641965b480e07d9c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Medicatie.frequentie";
+    shacl:datatype xsd:string;
+    shacl:description "De frequentie waarmee medicatie ingenomen moet worden."@nl;
+    shacl:name "frequentie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#frequentie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#MedicatieTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/4b124f0924fab01fc5967b50aacaf82bcf846710>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/16599ed65368152ea7ba846e7df7fb1b63c81211>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/0f6cb927d0d26f3819cba3fb903a075cd426180d>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/6019734a008a3e06064ed18d82a7dbec400aea21>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/e709dbeee7c07a068c8da734fa7910fa524b204a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/6b83c94554e8cc117c1d07fa1e155ccdee8ae62d>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/9a37477967f54b67db79a7d1bc0b9cb7b67c0c52>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/b48088de85b3e925d9a93b4e93883c8cacbf1b1b>;
+    shacl:targetClass org:Organization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Organisatie.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van de Organisatie."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/0f6cb927d0d26f3819cba3fb903a075cd426180d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Organisatie.status";
+    shacl:class skos:Concept;
+    shacl:description "Toestand vd Organisatie."@nl;
+    shacl:name "status"@nl;
+    shacl:path rov:orgStatus.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/16599ed65368152ea7ba846e7df7fb1b63c81211> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Organisatie.organisatietype";
+    shacl:class skos:Concept;
+    shacl:description "Soort organisatie."@nl;
+    shacl:name "organisatietype"@nl;
+    shacl:path rov:orgType.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Organisatie.beschrijving";
+    shacl:description "Beschrijving van de Organisatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/4b124f0924fab01fc5967b50aacaf82bcf846710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Organisatie.contactinfo";
+    shacl:class eu:ContactPoint;
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren."@nl;
+    shacl:name "contactinfo"@nl;
+    shacl:path eu:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/6019734a008a3e06064ed18d82a7dbec400aea21> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Organisatie.suborganisatievan";
+    shacl:class org:Organization;
+    shacl:description "Organisatie die deze Organisatie omvat."@nl;
+    shacl:name "suborganisatie van"@nl;
+    shacl:path org:subOrganizationOf.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/6b83c94554e8cc117c1d07fa1e155ccdee8ae62d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Organisatie.voorkeursnaam";
+    shacl:datatype rdf:langString;
+    shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/9a37477967f54b67db79a7d1bc0b9cb7b67c0c52> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Organisatie.voorkeursnaam";
+    shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:minCount 1;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/b48088de85b3e925d9a93b4e93883c8cacbf1b1b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Organisatie.voorkeursnaam";
+    shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid."@nl;
+    shacl:maxCount 1;
+    shacl:name "voorkeursnaam"@nl;
+    shacl:path skos:prefLabel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#OrganisatieShape/e709dbeee7c07a068c8da734fa7910fa524b204a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Organisatie.suborganisatievan";
+    shacl:description "Organisatie die deze Organisatie omvat."@nl;
+    shacl:maxCount 1;
+    shacl:name "suborganisatie van"@nl;
+    shacl:path org:subOrganizationOf.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/5d41e5114e4b537d95f4f2bd7f8c114dc0e388bc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/7d077db94d0f6a63b42bbd8f35c0193e9c194c79>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/64265db07b8f6c75b6e3a6f7105d9d737ad105b4>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/fb443659d088643f8014756f1f0d47c6aef8c057>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/3fe5320676f2c07c2d649cf4683d398ba26bc667>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/581fa40470acc0078689a9c60f64dac3dea7491d>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/fa319dfbe6a7f31e365d0477b329fd39819a55ec>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/68837b0eda962a941b0162e1ae4c5f0e471e0c51>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/e5ccf692ee38c28199531eb5e0c59554153a57c3>;
+    shacl:targetClass eu:Participation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/3fe5320676f2c07c2d649cf4683d398ba26bc667> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Participatie.inschrijving";
+    shacl:description "De datapunten omtrent de Inschrijving op de dienstverlening."@nl;
+    shacl:minCount 1;
+    shacl:name "inschrijving"@nl;
+    shacl:path prov:qualifiedStart.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/581fa40470acc0078689a9c60f64dac3dea7491d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Participatie.inschrijving";
+    shacl:class prov:Start;
+    shacl:description "De datapunten omtrent de Inschrijving op de dienstverlening."@nl;
+    shacl:name "inschrijving"@nl;
+    shacl:path prov:qualifiedStart.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/5d41e5114e4b537d95f4f2bd7f8c114dc0e388bc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Participatie.agent";
+    shacl:class dcterms:Agent;
+    shacl:description "Agent waarvoor de details van de Participatie worden vastgelegd."@nl;
+    shacl:name "agent"@nl;
+    shacl:path prov:agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/64265db07b8f6c75b6e3a6f7105d9d737ad105b4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Participatie.be%C3%ABindiging";
+    shacl:description "De datapunten omtrent de Beëindiging van de deelname aan de dienst."@nl;
+    shacl:maxCount 1;
+    shacl:name "beëindiging"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dienst#beeindiging>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/68837b0eda962a941b0162e1ae4c5f0e471e0c51> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Participatie.rol";
+    shacl:description "De rol van de afnemer van de dienst."@nl;
+    shacl:minCount 1;
+    shacl:name "rol"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/7d077db94d0f6a63b42bbd8f35c0193e9c194c79> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Participatie.agent";
+    shacl:description "Agent waarvoor de details van de Participatie worden vastgelegd."@nl;
+    shacl:maxCount 1;
+    shacl:name "agent"@nl;
+    shacl:path prov:agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/e5ccf692ee38c28199531eb5e0c59554153a57c3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Participatie.rol";
+    shacl:class skos:Concept;
+    shacl:description "De rol van de afnemer van de dienst."@nl;
+    shacl:name "rol"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/fa319dfbe6a7f31e365d0477b329fd39819a55ec> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Participatie.inschrijving";
+    shacl:description "De datapunten omtrent de Inschrijving op de dienstverlening."@nl;
+    shacl:maxCount 1;
+    shacl:name "inschrijving"@nl;
+    shacl:path prov:qualifiedStart.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatieShape/fb443659d088643f8014756f1f0d47c6aef8c057> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Participatie.be%C3%ABindiging";
+    shacl:description "De datapunten omtrent de Beëindiging van de deelname aan de dienst."@nl;
+    shacl:name "beëindiging"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dienst#beeindiging>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ParticipatierolShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape/004ac80561762856a407814131b0d26da5d40c48>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape/0314585b5499d6caa89e48fec0ef18394c773357>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape/94b964ba7748a9bb7be30bc938891d43bdd37a2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape/5b308a496d299ca5e844de2d3520c815a468d00b>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape/bce6139e94a794701cff8ee719d4289148b79381>;
+    shacl:targetClass eu:PeriodOfTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape/004ac80561762856a407814131b0d26da5d40c48> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Periode.begin";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Aanvang van de tijdsduur."@nl;
+    shacl:name "begin"@nl;
+    shacl:path eu:startTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape/0314585b5499d6caa89e48fec0ef18394c773357> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Periode.begin";
+    shacl:description "Aanvang van de tijdsduur."@nl;
+    shacl:maxCount 1;
+    shacl:name "begin"@nl;
+    shacl:path eu:startTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape/5b308a496d299ca5e844de2d3520c815a468d00b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Periode.einde";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Einde vd tijdsduur."@nl;
+    shacl:name "einde"@nl;
+    shacl:path eu:endTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape/94b964ba7748a9bb7be30bc938891d43bdd37a2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Periode.begin";
+    shacl:description "Aanvang van de tijdsduur."@nl;
+    shacl:minCount 1;
+    shacl:name "begin"@nl;
+    shacl:path eu:startTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PeriodeShape/bce6139e94a794701cff8ee719d4289148b79381> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Periode.einde";
+    shacl:description "Einde vd tijdsduur."@nl;
+    shacl:maxCount 1;
+    shacl:name "einde"@nl;
+    shacl:path eu:endTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/08fb9498a7ed030639d43cf47c1e4c5409b49dd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/57fa098945484c4b497b664cf92dd77681164d9c>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/b67716fc88fb88e1a3e7dbae35461fd06b268311>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/4b124f0924fab01fc5967b50aacaf82bcf846710>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/bd32c9364485a2a85965fbee55f90a75d8d8fdef>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/17d98d83d628e2529f4bb291125f1742ee426457>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/5cd883b2e106bb2e51ed8f61eed97a9731de38aa>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/661cca0a5bd514c9ce9daff17f07ec90baef0972>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/fd9de3e456668ac246c6e059df34887e5214d488>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/159a88289f38e68ed168948eb94b482c31a6a25b>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/166cf5ac1754d8f8c8268afc653639bc5b055b31>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/04e0b5ea249e38e092ead10a2ed1c6721fade4b7>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/50fcbe641e0beebe581cd8156751da59b81d14a2>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/dccbaf8b9ca123087f5faa1ded7e6e69d388fea7>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/8efbb64adfdd4ab14a02f02bdceddcac75b07cfc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/337243746b240b0857c4367c3cf43a0085a6c3ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/4188ce4426e0877878353faeb4b730f9e8985af1>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/cac8dfc81a79ac32329e1394edc42d7f16461eb0>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/cba0084dd610b69c432bb492bc3f970a76260160>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/fdd871a750ca20e71277d83120117d6acd9aa0fd>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/0bb17c3e893e6c0b606edfafed1cb5402b12bb93>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/19b91e81b288c23f3b335699d1728d423adf45a1>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/76035d6c11c841ade77aa0b6abcc622c5dba895c>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/a383bccdecf13c11c860fe8a5d2be00cd6980160>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/b0322adf9cb5f87dacab4018e57d8e895d4bb8ec>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/f99a0a001c6328fb6d3e116e93de1a4b09946095>;
+    shacl:targetClass person:Person.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/04e0b5ea249e38e092ead10a2ed1c6721fade4b7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.geslacht";
+    shacl:description "De administratieve geslachtsaanduiding van de Persoon."@nl;
+    shacl:minCount 1;
+    shacl:name "geslacht"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/08fb9498a7ed030639d43cf47c1e4c5409b49dd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.achternaam";
+    shacl:description "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "achternaam"@nl;
+    shacl:path foaf:familyName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/0bb17c3e893e6c0b606edfafed1cb5402b12bb93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.voorkeurstaal";
+    shacl:description "De voorkeurstaal van de Persoon in zijn contacten met de dienstverlener."@nl;
+    shacl:maxCount 1;
+    shacl:name "voorkeurstaal"@nl;
+    shacl:path dcterms:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/159a88289f38e68ed168948eb94b482c31a6a25b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.gekendetaal";
+    shacl:class skos:Concept;
+    shacl:description "Verwijst naar de gekende talen van de Persoon."@nl;
+    shacl:name "gekende taal"@nl;
+    shacl:path schemas:knowsLanguage.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/166cf5ac1754d8f8c8268afc653639bc5b055b31> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.gekendetaal";
+    shacl:description "Verwijst naar de gekende talen van de Persoon."@nl;
+    shacl:name "gekende taal"@nl.
+_:n3-2715 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-2716 shacl:class skos:ConceptScheme;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-2715 shacl:property _:n3-2716.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/166cf5ac1754d8f8c8268afc653639bc5b055b31> shacl:node _:n3-2715;
+    shacl:nodeKind shacl:IRI;
+    shacl:path schemas:knowsLanguage;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/17d98d83d628e2529f4bb291125f1742ee426457> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.geboortedatum";
+    shacl:description "Datum van geboorte van de Persoon."@nl;
+    shacl:maxCount 1;
+    shacl:name "geboortedatum"@nl;
+    shacl:path eu:birthDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/19b91e81b288c23f3b335699d1728d423adf45a1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.voorkeurstaal";
+    shacl:description "De voorkeurstaal van de Persoon in zijn contacten met de dienstverlener."@nl;
+    shacl:name "voorkeurstaal"@nl.
+_:n3-2717 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-2718 shacl:class skos:ConceptScheme;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-2717 shacl:property _:n3-2718.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/19b91e81b288c23f3b335699d1728d423adf45a1> shacl:node _:n3-2717;
+    shacl:nodeKind shacl:IRI;
+    shacl:path dcterms:language;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/337243746b240b0857c4367c3cf43a0085a6c3ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.verwachtegeboortedatum";
+    shacl:datatype xsd:date;
+    shacl:description "Verwachte datum van geboorte vd Persoon."@nl;
+    shacl:name "verwachte geboortedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#verwachteGeboortedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/4188ce4426e0877878353faeb4b730f9e8985af1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.verwachtegeboortedatum";
+    shacl:description "Verwachte datum van geboorte vd Persoon."@nl;
+    shacl:maxCount 1;
+    shacl:name "verwachte geboortedatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#verwachteGeboortedatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/4b124f0924fab01fc5967b50aacaf82bcf846710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.contactinfo";
+    shacl:class eu:ContactPoint;
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Persoon te contacteren."@nl;
+    shacl:name "contactinfo"@nl;
+    shacl:path eu:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/50fcbe641e0beebe581cd8156751da59b81d14a2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.geslacht";
+    shacl:description "De administratieve geslachtsaanduiding van de Persoon."@nl;
+    shacl:maxCount 1;
+    shacl:name "geslacht"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/57fa098945484c4b497b664cf92dd77681164d9c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.achternaam";
+    shacl:description "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."@nl;
+    shacl:minCount 1;
+    shacl:name "achternaam"@nl;
+    shacl:path foaf:familyName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/5cd883b2e106bb2e51ed8f61eed97a9731de38aa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.geboortedatum";
+    shacl:datatype xsd:date;
+    shacl:description "Datum van geboorte van de Persoon."@nl;
+    shacl:name "geboortedatum"@nl;
+    shacl:path eu:birthDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/661cca0a5bd514c9ce9daff17f07ec90baef0972> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.gebruiktevoornaam";
+    shacl:datatype xsd:string;
+    shacl:description "Belangrijkste vd voornamen ve persoon."@nl;
+    shacl:name "gebruikte voornaam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/76035d6c11c841ade77aa0b6abcc622c5dba895c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.voorkeurstaal";
+    shacl:class skos:Concept;
+    shacl:description "De voorkeurstaal van de Persoon in zijn contacten met de dienstverlener."@nl;
+    shacl:name "voorkeurstaal"@nl;
+    shacl:path dcterms:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/8efbb64adfdd4ab14a02f02bdceddcac75b07cfc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.heeftrelatiemet";
+    shacl:class <https://data.vlaanderen.be/ns/persoon#Persoonsrelatie>;
+    shacl:description "Persoon waarmee de persoon gerelateerd is."@nl;
+    shacl:name "heeft relatie met"@nl;
+    shacl:path prov:qualifiedAssociation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/a383bccdecf13c11c860fe8a5d2be00cd6980160> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.voorkeurstaal";
+    shacl:description "De voorkeurstaal van de Persoon in zijn contacten met de dienstverlener."@nl;
+    shacl:minCount 1;
+    shacl:name "voorkeurstaal"@nl;
+    shacl:path dcterms:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/b0322adf9cb5f87dacab4018e57d8e895d4bb8ec> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.voornaam";
+    shacl:description "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."@nl;
+    shacl:minCount 1;
+    shacl:name "voornaam"@nl;
+    shacl:path foaf:givenName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/b67716fc88fb88e1a3e7dbae35461fd06b268311> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.achternaam";
+    shacl:datatype xsd:string;
+    shacl:description "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."@nl;
+    shacl:name "achternaam"@nl;
+    shacl:path foaf:familyName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/bd32c9364485a2a85965fbee55f90a75d8d8fdef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.contactinfo";
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Persoon te contacteren."@nl;
+    shacl:maxCount 1;
+    shacl:name "contactinfo"@nl;
+    shacl:path eu:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/cac8dfc81a79ac32329e1394edc42d7f16461eb0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.volledigenaam";
+    shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
+    shacl:maxCount 1;
+    shacl:name "volledige naam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/cba0084dd610b69c432bb492bc3f970a76260160> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.volledigenaam";
+    shacl:datatype xsd:string;
+    shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
+    shacl:name "volledige naam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/dccbaf8b9ca123087f5faa1ded7e6e69d388fea7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.geslacht";
+    shacl:class skos:Concept;
+    shacl:description "De administratieve geslachtsaanduiding van de Persoon."@nl;
+    shacl:name "geslacht"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#geslacht>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/f99a0a001c6328fb6d3e116e93de1a4b09946095> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.voornaam";
+    shacl:datatype xsd:string;
+    shacl:description "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."@nl;
+    shacl:name "voornaam"@nl;
+    shacl:path foaf:givenName.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/fd9de3e456668ac246c6e059df34887e5214d488> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.gebruiktevoornaam";
+    shacl:description "Belangrijkste vd voornamen ve persoon."@nl;
+    shacl:maxCount 1;
+    shacl:name "gebruikte voornaam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonShape/fdd871a750ca20e71277d83120117d6acd9aa0fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoon.volledigenaam";
+    shacl:description "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."@nl;
+    shacl:minCount 1;
+    shacl:name "volledige naam"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#volledigeNaam>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/02c7edd0feb5b80b55b34edf20e5c97922004053>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/27c17600e87fad23901a5230cee83a1e04d484d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/4f59a036b0ec8da62b24ec258ffa23b20278b962>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/c1d33bc12ce07c17fd195a997c096f44f1c61c95>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/2ee3a3d493dbe68313a163b23488b0a458af381a>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/347e3f4226069420a6200ab3f6ccb573131eb2f8>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/c8ccf8176dab58302a1abcdb401b3cd94b4ce251>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/persoon#Persoonsrelatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/02c7edd0feb5b80b55b34edf20e5c97922004053> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoonsrelatie.juridischwerk";
+    shacl:class <https://data.vlaanderen.be/ns/wetgeving#JuridischWerk>;
+    shacl:description "Juridisch Werken die een Persoonsrelatie als voorwerp hebben."@nl;
+    shacl:name "juridisch werk"@nl;
+    shacl:path eu:hasSupportingEvidence.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/27c17600e87fad23901a5230cee83a1e04d484d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoonsrelatie.persoon";
+    shacl:minCount 1;
+    shacl:name "persoon"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#persoon>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/2ee3a3d493dbe68313a163b23488b0a458af381a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoonsrelatie.relatietype";
+    shacl:description "Type van de persoonsrelatie tussen twee of meer personen."@nl;
+    shacl:minCount 1;
+    shacl:name "relatietype"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/347e3f4226069420a6200ab3f6ccb573131eb2f8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoonsrelatie.relatietype";
+    shacl:description "Type van de persoonsrelatie tussen twee of meer personen."@nl;
+    shacl:maxCount 1;
+    shacl:name "relatietype"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/4f59a036b0ec8da62b24ec258ffa23b20278b962> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoonsrelatie.persoon";
+    shacl:class person:Person;
+    shacl:name "persoon"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#persoon>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/c1d33bc12ce07c17fd195a997c096f44f1c61c95> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoonsrelatie.persoon";
+    shacl:maxCount 1;
+    shacl:name "persoon"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/persoon#persoon>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieShape/c8ccf8176dab58302a1abcdb401b3cd94b4ce251> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Persoonsrelatie.relatietype";
+    shacl:class skos:Concept;
+    shacl:description "Type van de persoonsrelatie tussen twee of meer personen."@nl;
+    shacl:name "relatietype"@nl;
+    shacl:path dc11:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#PersoonsrelatieTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ReactieTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerkShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerkShape/4f59a036b0ec8da62b24ec258ffa23b20278b962>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerkShape/c1d33bc12ce07c17fd195a997c096f44f1c61c95>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerkShape/382c03174cf4ee4761700a355cfa8a67108f2d77>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerkShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/statistiek#Statistiek>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerkShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerk.waarde";
+    shacl:class rdfs:Resource;
+    shacl:description "De wijze waarop het socioeconomisch kenmerk tot uiting komt."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path rdf:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerkShape/382c03174cf4ee4761700a355cfa8a67108f2d77> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerk.statistiektype";
+    shacl:class skos:Concept;
+    shacl:description "Een specifieke eigenschap dat een persoon verworven heeft."@nl;
+    shacl:name "statistiektype"@nl;
+    shacl:path dcterms:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerkShape/4f59a036b0ec8da62b24ec258ffa23b20278b962> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerk.persoon";
+    shacl:class person:Person;
+    shacl:description "De persoon waarvoor het kenmerk van toepassing is."@nl;
+    shacl:name "persoon"@nl;
+    shacl:path rdf:subject.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerkShape/c1d33bc12ce07c17fd195a997c096f44f1c61c95> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SocioEconomischKenmerk.persoon";
+    shacl:description "De persoon waarvoor het kenmerk van toepassing is."@nl;
+    shacl:maxCount 1;
+    shacl:name "persoon"@nl;
+    shacl:path rdf:subject.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/4a0c0f05872d4377c2b683cf5446b850e42519cc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/0f5e6a24ffc0d65e6f143f32c1c679e9269de4c8>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/feb049d252152232729ab631bd2f5fd898cf5d54>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/4f59a036b0ec8da62b24ec258ffa23b20278b962>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/c1d33bc12ce07c17fd195a997c096f44f1c61c95>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/f24334acdb664c5ff7ecfbeeefefc93493649d0f>;
+    shacl:targetClass <https://data.vlaanderen.be/ns/kindfiche#SpecifiekeBehoefte>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/0f5e6a24ffc0d65e6f143f32c1c679e9269de4c8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefte.dieetvoorkeur";
+    shacl:class <https://data.vlaanderen.be/ns/kindfiche#Dieetvoorkeur>;
+    shacl:description "Voedingspatroon dat om specifieke reden afwijkt van gewone voeding."@nl;
+    shacl:name "dieetvoorkeur"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#dieetvoorkeur>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/4a0c0f05872d4377c2b683cf5446b850e42519cc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefte.dagelijkseroutine";
+    shacl:datatype xsd:string;
+    shacl:description "Patroon van gebruikelijke handelingen die op een dagelijkse basis plaatsvinden."@nl;
+    shacl:name "dagelijkse routine"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#dagelijkseRoutine>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/4f59a036b0ec8da62b24ec258ffa23b20278b962> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefte.persoon";
+    shacl:class person:Person;
+    shacl:description "De Persoon waarvoor de SpecifiekeBehoefte geldt."@nl;
+    shacl:name "persoon"@nl;
+    shacl:path rdf:subject.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/c1d33bc12ce07c17fd195a997c096f44f1c61c95> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefte.persoon";
+    shacl:description "De Persoon waarvoor de SpecifiekeBehoefte geldt."@nl;
+    shacl:maxCount 1;
+    shacl:name "persoon"@nl;
+    shacl:path rdf:subject.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/f24334acdb664c5ff7ecfbeeefefc93493649d0f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefte.zorgnood";
+    shacl:datatype xsd:string;
+    shacl:description "De individuele vereisten voor zorg, ondersteuning en hulpverlening die nodig zijn om het welzijn en de gezondheid van een persoon te bevorderen."@nl;
+    shacl:name "zorgnood"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#zorgnood>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefteShape/feb049d252152232729ab631bd2f5fd898cf5d54> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#SpecifiekeBehoefte.omgaanmetbehoefte";
+    shacl:datatype xsd:string;
+    shacl:description "De manier waarop met een specifieke behoefte omgegaan wordt."@nl;
+    shacl:name "omgaan met behoefte"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/kindfiche#omgaanMetBehoefte>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TaalCodeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/cf827b426dea22706df61185227553de37e70106>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/fb9d31605670308c2013bc7f60208841611633ce>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/73d09b4a2f05066b3d7f4ddebac064c8ecc9c3e9>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/8f8d653e304153b908ef8c4ace8348d1e837fb08>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/6a142d51e1996cc547859eb790c61b8be7bf71d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/7da8172d0a595049f5316161a5496c858bc96022>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/2fe5eb0d21c49326b6150e5469085db718df31fd>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/d1f7e4fcfb69fd617172de4a3637bff635f570c2>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/72d8e53b4c1763e3a015f9673d4143aff92643cc>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/786cc0308f770e710c4e2b1844555533091028ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/fd79be3f209d2ad7c806dec4641965b480e07d9c>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/dcd4d9a602046e0dc882e0f96ea52854cfedc4f3>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/595514a331c7722b189e32229fdeb10be5a78740>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/be387b9babf7db022ebb5e0f851cd2be52d9de90>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/039ac0ca7b99d3790b54b03a5354b0bd010ef098>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/5d3fb500c3182467064ecd2ac2a3780b26f8d8af>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/f844de6533252e5b38c84162d753e37a42b7c108>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/afec63dab78a941c1f4d9a120593b0b0459f2500>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/f13fd70818b720df39bb71d4a35a030fc4a4e0a4>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/97380160cedd2c30feb52f5890767e85010fd4d8>;
+    shacl:targetClass schemas:Schedule.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/039ac0ca7b99d3790b54b03a5354b0bd010ef098> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.persetpositie";
+    shacl:datatype xsd:integer;
+    shacl:description "N-de keer dat iets plaatsvindt uit de verzameling van mogelijke tijdstippen."@nl;
+    shacl:name "per setpositie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#perSetpositie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/2fe5eb0d21c49326b6150e5469085db718df31fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.eindtijd";
+    shacl:datatype xsd:time;
+    shacl:description "Tijdstip waarop het eindigt."@nl;
+    shacl:name "eindtijd"@nl;
+    shacl:path schemas:endTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/595514a331c7722b189e32229fdeb10be5a78740> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.perdagvandemaand";
+    shacl:datatype xsd:integer;
+    shacl:description "Dagen van de maand waarop het plaatsvindt."@nl;
+    shacl:name "per dag van de maand"@nl;
+    shacl:path schemas:byMonthDay.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/5d3fb500c3182467064ecd2ac2a3780b26f8d8af> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.persetpositie";
+    shacl:description "N-de keer dat iets plaatsvindt uit de verzameling van mogelijke tijdstippen."@nl;
+    shacl:maxCount 1;
+    shacl:name "per setpositie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#perSetpositie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/6a142d51e1996cc547859eb790c61b8be7bf71d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.einddatum";
+    shacl:datatype xsd:date;
+    shacl:description "Datum tot wanneer het plaatsvindt."@nl;
+    shacl:name "einddatum"@nl;
+    shacl:path schemas:endDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/72d8e53b4c1763e3a015f9673d4143aff92643cc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.frequentie";
+    shacl:description "Frequentie waarmee het plaatsvindt."@nl;
+    shacl:maxCount 1;
+    shacl:name "frequentie"@nl;
+    shacl:path schemas:repeatFrequency.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/73d09b4a2f05066b3d7f4ddebac064c8ecc9c3e9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.duur";
+    shacl:description "Duur van hetgeen plaatsvindt."@nl;
+    shacl:maxCount 1;
+    shacl:name "duur"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#duur>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/786cc0308f770e710c4e2b1844555533091028ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.frequentie";
+    shacl:description "Frequentie waarmee het plaatsvindt."@nl;
+    shacl:minCount 1;
+    shacl:name "frequentie"@nl;
+    shacl:path schemas:repeatFrequency.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/7da8172d0a595049f5316161a5496c858bc96022> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.einddatum";
+    shacl:description "Datum tot wanneer het plaatsvindt."@nl;
+    shacl:maxCount 1;
+    shacl:name "einddatum"@nl;
+    shacl:path schemas:endDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/8f8d653e304153b908ef8c4ace8348d1e837fb08> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.duur";
+    shacl:datatype xsd:duration;
+    shacl:description "Duur van hetgeen plaatsvindt."@nl;
+    shacl:name "duur"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#duur>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/97380160cedd2c30feb52f5890767e85010fd4d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.uitzonderingsdatum";
+    shacl:datatype xsd:date;
+    shacl:description "Datums waarop het uitzonderlijk niet plaatsvindt."@nl;
+    shacl:name "uitzonderingsdatum"@nl;
+    shacl:path schemas:exceptDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.startdatum";
+    shacl:description "Datum vanaf wanneer het plaatsvindt."@nl;
+    shacl:maxCount 1;
+    shacl:name "startdatum"@nl;
+    shacl:path schemas:startDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/afec63dab78a941c1f4d9a120593b0b0459f2500> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.starttijd";
+    shacl:datatype xsd:time;
+    shacl:description "Tijdstip waarop het start."@nl;
+    shacl:name "starttijd"@nl;
+    shacl:path schemas:startTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/be387b9babf7db022ebb5e0f851cd2be52d9de90> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.permaand";
+    shacl:datatype xsd:integer;
+    shacl:description "Maanden van het jaar waarop het plaatsvindt."@nl;
+    shacl:name "per maand"@nl;
+    shacl:path schemas:byMonth.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/cf827b426dea22706df61185227553de37e70106> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.aantal";
+    shacl:description "Aantal keer dat het plaatsvindt."@nl;
+    shacl:maxCount 1;
+    shacl:name "aantal"@nl;
+    shacl:path schemas:repeatCount.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/d1f7e4fcfb69fd617172de4a3637bff635f570c2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.eindtijd";
+    shacl:description "Tijdstip waarop het eindigt."@nl;
+    shacl:maxCount 1;
+    shacl:name "eindtijd"@nl;
+    shacl:path schemas:endTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/dcd4d9a602046e0dc882e0f96ea52854cfedc4f3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.perdag";
+    shacl:datatype xsd:anyURI;
+    shacl:description "Dagen van de week waarop het plaatsvindt."@nl;
+    shacl:name "per dag"@nl;
+    shacl:path schemas:byDay.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/f13fd70818b720df39bb71d4a35a030fc4a4e0a4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.starttijd";
+    shacl:description "Tijdstip waarop het start."@nl;
+    shacl:maxCount 1;
+    shacl:name "starttijd"@nl;
+    shacl:path schemas:startTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/f844de6533252e5b38c84162d753e37a42b7c108> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.startdatum";
+    shacl:datatype xsd:date;
+    shacl:description "Datum vanaf wanneer het plaatsvindt."@nl;
+    shacl:name "startdatum"@nl;
+    shacl:path schemas:startDate.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/fb9d31605670308c2013bc7f60208841611633ce> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.aantal";
+    shacl:datatype xsd:integer;
+    shacl:description "Aantal keer dat het plaatsvindt."@nl;
+    shacl:name "aantal"@nl;
+    shacl:path schemas:repeatCount.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#TijdschemaShape/fd79be3f209d2ad7c806dec4641965b480e07d9c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Tijdschema.frequentie";
+    shacl:datatype xsd:string;
+    shacl:description "Frequentie waarmee het plaatsvindt."@nl;
+    shacl:name "frequentie"@nl;
+    shacl:path schemas:repeatFrequency.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#ToedieningTypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/02c7edd0feb5b80b55b34edf20e5c97922004053>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/114180eca8afd793d246113f0420814068975feb>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/84d1f013c1c4619141a5064f97095682c67428ee>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/bfc3d1030c1c90fdda578eadd494cc4670c52d6f>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/d66da66b5bb9316c3c63f8e0e4ea8f46ffe636ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/5a2f75bdb36d9213991feafb9ba32e402ac7e440>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/bbfab479ddddb240ba27ce14d834fc05dad6cf3a>;
+    shacl:targetClass prov:Association.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/02c7edd0feb5b80b55b34edf20e5c97922004053> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Uitgangregeling.juridischwerk";
+    shacl:class <https://data.vlaanderen.be/ns/wetgeving#JuridischWerk>;
+    shacl:description "Juridisch Werk dat de Uitgangregeling staaft."@nl;
+    shacl:name "juridisch werk"@nl;
+    shacl:path eu:hasSupportingEvidence.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/114180eca8afd793d246113f0420814068975feb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Uitgangregeling.ophaler";
+    shacl:description "De Agent die verantwoordelijk is voor een bepaalde ophaling."@nl;
+    shacl:maxCount 1;
+    shacl:name "ophaler"@nl;
+    shacl:path prov:agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/5a2f75bdb36d9213991feafb9ba32e402ac7e440> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Uitgangregeling.plan";
+    shacl:description "Kalender waarmee Uitgangregeling in de tijd vastgelegd kan worden."@nl;
+    shacl:maxCount 1;
+    shacl:name "plan"@nl;
+    shacl:path prov:atTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/84d1f013c1c4619141a5064f97095682c67428ee> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Uitgangregeling.ophaler";
+    shacl:class dcterms:Agent;
+    shacl:description "De Agent die verantwoordelijk is voor een bepaalde ophaling."@nl;
+    shacl:name "ophaler"@nl;
+    shacl:path prov:agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/bbfab479ddddb240ba27ce14d834fc05dad6cf3a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Uitgangregeling.plan";
+    shacl:class schemas:Schedule;
+    shacl:description "Kalender waarmee Uitgangregeling in de tijd vastgelegd kan worden."@nl;
+    shacl:name "plan"@nl;
+    shacl:path prov:atTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/bfc3d1030c1c90fdda578eadd494cc4670c52d6f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Uitgangregeling.participatie";
+    shacl:description "De Participatie waarop de Uitgangregeling van toepassing is."@nl;
+    shacl:maxCount 1;
+    shacl:name "participatie"@nl;
+    shacl:path prov:qualifiedAssociation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#UitgangregelingShape/d66da66b5bb9316c3c63f8e0e4ea8f46ffe636ac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Uitgangregeling.participatie";
+    shacl:class eu:Participation;
+    shacl:description "De Participatie waarop de Uitgangregeling van toepassing is."@nl;
+    shacl:name "participatie"@nl;
+    shacl:path prov:qualifiedAssociation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#VestigingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#VestigingShape/4b124f0924fab01fc5967b50aacaf82bcf846710>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#VestigingShape/bd32c9364485a2a85965fbee55f90a75d8d8fdef>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#VestigingShape/407ad83e3ef9ebe4ccda85158fa65d57f7383e1d>, <https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#VestigingShape/7bef42c774a76e91230868157163b1a1534df524>;
+    shacl:targetClass org:Site.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#VestigingShape/407ad83e3ef9ebe4ccda85158fa65d57f7383e1d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Vestiging.organisatie";
+    shacl:description "Organisatie verantwoordelijk voor de Vestiging."@nl;
+    shacl:maxCount 1;
+    shacl:name "organisatie"@nl;
+    shacl:path org:siteOf.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#VestigingShape/4b124f0924fab01fc5967b50aacaf82bcf846710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Vestiging.contactinfo";
+    shacl:class eu:ContactPoint;
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Vestiging te contacteren."@nl;
+    shacl:name "contactinfo"@nl;
+    shacl:path eu:contactPoint.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#VestigingShape/7bef42c774a76e91230868157163b1a1534df524> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Vestiging.organisatie";
+    shacl:class org:Organization;
+    shacl:description "Organisatie verantwoordelijk voor de Vestiging."@nl;
+    shacl:name "organisatie"@nl;
+    shacl:path org:siteOf.
+<https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#VestigingShape/bd32c9364485a2a85965fbee55f90a75d8d8fdef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/kindfiche/ontwerpstandaard/2024-06-03#Vestiging.contactinfo";
+    shacl:description "Informatie zoals email, telefoon... die toelaat de Vestiging te contacteren."@nl;
+    shacl:maxCount 1;
+    shacl:name "contactinfo"@nl;
+    shacl:path eu:contactPoint.

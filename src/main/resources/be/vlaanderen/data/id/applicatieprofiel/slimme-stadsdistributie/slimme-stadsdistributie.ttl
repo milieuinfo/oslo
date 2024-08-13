@@ -1,0 +1,848 @@
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schemas: <https://schema.org/>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/> a <http://purl.org/ontology/bibo/Document>;
+    dcterms:language "nl"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/#status> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#status>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/#respecHeader> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+_:df_481_1 a foaf:Person;
+    foaf:lastName "Dassonneville"@nl;
+    foaf:firstName "Yaron "@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:yaron.dassonneville@vlaanderen.be>.
+_:df_481_3 a foaf:Person;
+    foaf:lastName "Roeyen"@nl;
+    foaf:firstName "Pieter"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:pieter.roeyen@pwc.com>.
+_:df_481_5 a foaf:Person;
+    foaf:lastName "Vylders"@nl;
+    foaf:firstName "Lorenzo"@nl;
+    foaf:workplaceHomepage <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    foaf:mbox <mailto:lorenzo.vylders@vlaanderen.be>.
+_:df_481_7 a foaf:Person;
+    foaf:lastName "Beckers"@nl;
+    foaf:firstName "Joris"@nl.
+_:df_481_9 a foaf:Person;
+    foaf:lastName "Bos"@nl;
+    foaf:firstName "Kim"@nl.
+_:df_481_11 a foaf:Person;
+    foaf:lastName "Bulambo"@nl;
+    foaf:firstName "Axel"@nl.
+_:df_481_13 a foaf:Person;
+    foaf:lastName "Buyl"@nl;
+    foaf:firstName "Jarno"@nl.
+_:df_481_15 a foaf:Person;
+    foaf:lastName "Camerlinck"@nl;
+    foaf:firstName "Eline"@nl.
+_:df_481_17 a foaf:Person;
+    foaf:lastName "Casier"@nl;
+    foaf:firstName "Ken"@nl.
+_:df_481_19 a foaf:Person;
+    foaf:lastName "Cassan"@nl;
+    foaf:firstName "Catherine"@nl.
+_:df_481_21 a foaf:Person;
+    foaf:lastName "Celen"@nl;
+    foaf:firstName "Nico"@nl.
+_:df_481_23 a foaf:Person;
+    foaf:lastName "Cleeren"@nl;
+    foaf:firstName "Bea"@nl.
+_:df_481_25 a foaf:Person;
+    foaf:lastName "de la Meilleure"@nl;
+    foaf:firstName "Fabian"@nl.
+_:df_481_27 a foaf:Person;
+    foaf:lastName "De Maegt"@nl;
+    foaf:firstName "Isabelle"@nl.
+_:df_481_29 a foaf:Person;
+    foaf:lastName "De Roo"@nl;
+    foaf:firstName "Berdien"@nl.
+_:df_481_31 a foaf:Person;
+    foaf:lastName "Deliever"@nl;
+    foaf:firstName "Dana"@nl.
+_:df_481_33 a foaf:Person;
+    foaf:lastName "Dumoulin"@nl;
+    foaf:firstName "Bart"@nl.
+_:df_481_35 a foaf:Person;
+    foaf:lastName "Fabbro"@nl;
+    foaf:firstName "Yannick"@nl.
+_:df_481_37 a foaf:Person;
+    foaf:lastName "Gellynck"@nl;
+    foaf:firstName "Evert"@nl.
+_:df_481_39 a foaf:Person;
+    foaf:lastName "Glickman"@nl;
+    foaf:firstName "Alain"@nl.
+_:df_481_41 a foaf:Person;
+    foaf:lastName "Goossens"@nl;
+    foaf:firstName "Filip"@nl.
+_:df_481_43 a foaf:Person;
+    foaf:lastName "Guily"@nl;
+    foaf:firstName "Tim"@nl.
+_:df_481_45 a foaf:Person;
+    foaf:lastName "Lambert"@nl;
+    foaf:firstName "Marij"@nl.
+_:df_481_47 a foaf:Person;
+    foaf:lastName "Laureyns"@nl;
+    foaf:firstName "Jacob"@nl.
+_:df_481_49 a foaf:Person;
+    foaf:lastName "Lowette"@nl;
+    foaf:firstName "Roos"@nl.
+_:df_481_51 a foaf:Person;
+    foaf:lastName "Peeters"@nl;
+    foaf:firstName "Johan"@nl.
+_:df_481_53 a foaf:Person;
+    foaf:lastName "Reyners"@nl;
+    foaf:firstName "Philippe"@nl.
+_:df_481_55 a foaf:Person;
+    foaf:lastName "Schelfhout"@nl;
+    foaf:firstName "Claire"@nl.
+_:df_481_57 a foaf:Person;
+    foaf:lastName "Sevenhans"@nl;
+    foaf:firstName "Daniel"@nl.
+_:df_481_59 a foaf:Person;
+    foaf:lastName "Severijns"@nl;
+    foaf:firstName "Jan"@nl.
+_:df_481_61 a foaf:Person;
+    foaf:lastName "Smeets"@nl;
+    foaf:firstName "Veronique"@nl.
+_:df_481_63 a foaf:Person;
+    foaf:lastName "Smits"@nl;
+    foaf:firstName "Mary-Ann"@nl.
+_:df_481_65 a foaf:Person;
+    foaf:lastName "Sohl"@nl;
+    foaf:firstName "Renaat"@nl.
+_:df_481_67 a foaf:Person;
+    foaf:lastName "Stevens"@nl;
+    foaf:firstName "Pieter"@nl.
+_:df_481_69 a foaf:Person;
+    foaf:lastName "Stubbe"@nl;
+    foaf:firstName "Domien"@nl.
+_:df_481_71 a foaf:Person;
+    foaf:lastName "Tavernier"@nl;
+    foaf:firstName "Laura"@nl.
+_:df_481_73 a foaf:Person;
+    foaf:lastName "Van Bever"@nl;
+    foaf:firstName "Dries"@nl.
+_:df_481_75 a foaf:Person;
+    foaf:lastName "Van Cauwenberg"@nl;
+    foaf:firstName "Klaas"@nl.
+_:df_481_77 a foaf:Person;
+    foaf:lastName "Van Damme"@nl;
+    foaf:firstName "Loesje"@nl.
+_:df_481_79 a foaf:Person;
+    foaf:lastName "Van de Velde"@nl;
+    foaf:firstName "Guido"@nl.
+_:df_481_81 a foaf:Person;
+    foaf:lastName "Vandevelde"@nl;
+    foaf:firstName "Koen"@nl.
+_:df_481_83 a foaf:Person;
+    foaf:lastName "Vanholst"@nl;
+    foaf:firstName "Carlo"@nl.
+_:df_481_85 a foaf:Person;
+    foaf:lastName "Verlinden"@nl;
+    foaf:firstName "Gerrit"@nl.
+_:df_481_87 a foaf:Person;
+    foaf:lastName "Verscheijden"@nl;
+    foaf:firstName "Vicky"@nl.
+_:df_481_89 a foaf:Person;
+    foaf:lastName "Vervoort"@nl;
+    foaf:firstName "Tim"@nl.
+_:df_481_91 a foaf:Person;
+    foaf:lastName "Vierendeels"@nl;
+    foaf:firstName "Lei"@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/#metainfo> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#metainfo>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/#main> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#main>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/#ref> a <http://purl.org/ontology/bibo/Chapter>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/> <http://purl.org/ontology/bibo/Chapter> <https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/#ref>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/> dcterms:type dcmitype:Text;
+    dcterms:title "Deze specificatie"@nl;
+    <http://creativecommons.org/ns#attributionURL> <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    <http://creativecommons.org/ns#attributionName> "Digitaal Vlaanderen"@nl;
+    <http://www.w3.org/1999/xhtml/vocab#license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/#conformance> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>.
+schema:contactPoint a rdfs:Property;
+    rdfs:label "\n                            \n                            contactinfo\n                          "@nl;
+    rdfs:comment "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren."@nl;
+    vann:usageNote ""@nl.
+rov:registration a rdfs:Property;
+    rdfs:label "\n                            \n                            registratie\n                          "@nl;
+    rdfs:comment "Identificator die de organisatie verkreeg bij registratie."@nl;
+    vann:usageNote "In de KBO is dit het ondernemingsnummer."@nl.
+skos:prefLabel a rdfs:Property;
+    rdfs:label "\n                            \n                            voorkeursnaam\n                          "@nl;
+    rdfs:comment "Naam waarmee de Organisatie bij voorkeur wordt aangeduid."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Belading.afmeting> a rdfs:Property;
+    rdfs:label "\n                            \n                            afmeting\n                          "@nl;
+    rdfs:comment "De fysieke dimensies van de totale lading die in een voertuig is geplaatst."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Belading.resource> a rdfs:Property;
+    rdfs:label "\n                            \n                            Resource\n                          "@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Belading.routesegment> a rdfs:Property;
+    rdfs:label "\n                            \n                            Routesegment\n                          "@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    vann:usageNote ""@nl.
+rov:registration a rdfs:Property;
+    rdfs:label "\n                            \n                            organisatieregistratie\n                          "@nl;
+    rdfs:comment "Identificator dat de organisatie verkreeg bij registratie."@nl;
+    vann:usageNote "In de KBO is dit het ondernemingsnummer."@nl.
+<https://data.vlaanderen.be/ns/organisatie#rechtspersoonlijkheid> a rdfs:Property;
+    rdfs:label "\n                            \n                            rechtspersoonlijkheid\n                          "@nl;
+    rdfs:comment "Geeft aan of de rechtspersoonlijkheid van de Geregistreerde Organisatie deze is van een natuurlijk persoon of van een rechtspersoon."@nl;
+    vann:usageNote "Een rechtspersoon is een juridische constructie die een Organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc). Vb privaatrechterlijke rechtspersonen: vennootschappen, vzw's etc.; vb publiekrechterlijke rechtspersonen: steden, gemeenten etc. Een feitelijke vereniging is in principe geen rechtspersoon."@nl.
+<https://data.vlaanderen.be/ns/organisatie#rechtstoestand> a rdfs:Property;
+    rdfs:label "\n                            \n                            rechtstoestand\n                          "@nl;
+    rdfs:comment "Status van de Geregistreerde Organisatie."@nl;
+    vann:usageNote "Stemt overeen met rechtstoestand, bvb Normale toestand, Gerechtelijk akkoord, Opening faillissement etc."@nl.
+<https://data.vlaanderen.be/ns/organisatie#rechtsvorm> a rdfs:Property;
+    rdfs:label "\n                            \n                            rechtsvorm\n                          "@nl;
+    rdfs:comment "Juridisch statuut van de Geregistreerde Organisatie."@nl;
+    vann:usageNote "Bvb NV, VZW, Stad/Gemeente, OCMW etc."@nl.
+rov:legalName a rdfs:Property;
+    rdfs:label "\n                            \n                            wettelijke naam\n                          "@nl;
+    rdfs:comment "Wettelijk geregistreerde naam vd organisatie."@nl;
+    vann:usageNote "Evt in verschillende talen."@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Infrastrcutuurelement.bedieningswijze> a rdfs:Property;
+    rdfs:label "\n                            \n                            bedieningswijze\n                          "@nl;
+    rdfs:comment "De bedieningswijze beschrijft de methode of het mechanisme waarmee een infrastructuurelement wordt bestuurd, gecontroleerd of bediend."@nl;
+    vann:usageNote "Hier gaat het bijvoorbeeld over een badgesysteem dat je dient te gebruiken om toegang te bekomen."@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Infrastrcutuurelement.locatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            locatie\n                          "@nl;
+    rdfs:comment "De locatie beschrijft de geografische positie of plaats waar een infrastructuurelement zich bevindt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Infrastrcutuurelement.type> a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Het type beschrijft de specifieke categorie of variant waartoe een infrastructuurelement behoort, gebaseerd op zijn functionele kenmerken, ontwerp of gebruiksdoel."@nl;
+    vann:usageNote "Bv. Een parkeerplaats"@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#aanbieder> a rdfs:Property;
+    rdfs:label "\n                            \n                            aanbieder\n                          "@nl;
+    rdfs:comment "De aanbieder van de Mobiliteitsdienst."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.aandrijving> a rdfs:Property;
+    rdfs:label "\n                            \n                            aandrijving\n                          "@nl;
+    rdfs:comment "Aandrijving van het vervoermiddel waarmee of waarvoor de Mobiliteitsdienst doorgaans wordt georganiseerd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.beschikbaarheid> a rdfs:Property;
+    rdfs:label "\n                            \n                            beschikbaarheid\n                          "@nl;
+    rdfs:comment "Beschikbaarheid van de Mobiliteitsdienst."@nl;
+    vann:usageNote "Bv dienstregeling of openingsuren."@nl.
+dcterms:title a rdfs:Property;
+    rdfs:label "\n                            \n                            naam\n                          "@nl;
+    rdfs:comment "Naam van de Mobiliteitsdienst."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#omvat> a rdfs:Property;
+    rdfs:label "\n                            \n                            omvat (source)\n                          "@nl;
+    rdfs:comment "Meer specifieke Mobiliteitsdiensten waaruit de Mobiliteitsdienst is samengesteld."@nl;
+    vann:usageNote "Bv openbaar vervoer in Brussel aangeboden door de MIVB bestaat uit een aantal metrolijnen bv lijn 5 Erasmus-Herman-Debroux.Of een MAAS-aanbieder integreert meerdere diensten, bv openbaar vervoer en deelvervoer."@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            \n                            omvat (target)\n                          "@nl;
+    rdfs:comment "Meer specifieke Mobiliteitsdiensten waaruit de Mobiliteitsdienst is samengesteld."@nl;
+    vann:usageNote "Bv openbaar vervoer in Brussel aangeboden door de MIVB bestaat uit een aantal metrolijnen bv lijn 5 Erasmus-Herman-Debroux.Of een MAAS-aanbieder integreert meerdere diensten, bv openbaar vervoer en deelvervoer."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.resource> a rdfs:Property;
+    rdfs:label "\n                            \n                            resource\n                          "@nl;
+    rdfs:comment "Resource waarover de Mobiliteitsdienst beschikt."@nl;
+    vann:usageNote "We beperken ons hier tot Resources die een Reiziger kan reserveren voor het uitvoeren van zijn Reis, bv wel de zitplaats op een trein maar niet de trein waarmee de Mobiliteitsdienst wordt gerealiseerd."@nl.
+dcterms:spatial a rdfs:Property;
+    rdfs:label "\n                            \n                            ruimtelijke dekking\n                          "@nl;
+    rdfs:comment "Gebied of Plaats waarbinnen de Mobiliteitsdienst wordt aangeboden."@nl;
+    vann:usageNote "Bv Brussels Gewest, Antwerpen..."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.toegankelijkheid> a rdfs:Property;
+    rdfs:label "\n                            \n                            toegankelijkheid\n                          "@nl;
+    rdfs:comment "Toegankelijkheid van de Mobiliteitsdienst."@nl;
+    vann:usageNote "Bv of de Mobiliteitsdienst toegankelijk is voor personen met een beperking."@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de mobiliteitsdienst."@nl;
+    vann:usageNote "Bv openbaar vervoer, parking etc. Combinaties zijn mogelijk, bv collectief vervoer & openbaar vervoer (bv NMBS), individueel vervoer & privé vervoer (taxi's)..."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.vervoermiddel> a rdfs:Property;
+    rdfs:label "\n                            \n                            vervoermiddel\n                          "@nl;
+    rdfs:comment "Vervoermiddel waarmee of waarvoor de Mobiliteitsdienst doorgaans wordt georganiseerd."@nl;
+    vann:usageNote "Bv metro, tram, bus voor de MIVB. Bv auto, fiets voor parking Coovi."@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#status> a rdfs:Property;
+    rdfs:label "\n                            \n                            \n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.afgeleverdAan> a rdfs:Property;
+    rdfs:label "\n                            \n                            afgeleverd aan\n                          "@nl;
+    rdfs:comment "De Agent waar de vergunning aan werd afgeleverd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.afgeleverdDoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            afgeleverd door\n                          "@nl;
+    rdfs:comment "De Agent die de vergunning afgeleverd heeft."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.beweging> a rdfs:Property;
+    rdfs:label "\n                            \n                            beweging\n                          "@nl;
+    rdfs:comment "De dynamische activiteit die plaatsvindt tijdens het transportproces van goederen binnen een stedelijk distributienetwerk."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.identificator> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Een unieke code die specifiek wordt toegewezen aan een mobiliteitsvergunning om deze te identificeren."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.mobiliteitsdienst> a rdfs:Property;
+    rdfs:label "\n                            \n                            mobiliteitsdienst\n                          "@nl;
+    rdfs:comment "Het specifieke type dienst of activiteit waarvoor de vergunning is verleend"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.onderhevigAan> a rdfs:Property;
+    rdfs:label "\n                            \n                            onderhevig aan\n                          "@nl;
+    rdfs:comment "De specifieke verkeersregelingen en -voorschriften waaraan de houder van een mobiliteitsvergunning zich moet blijven houden, ondanks de verleende vergunning."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.periode> a rdfs:Property;
+    rdfs:label "\n                            \n                            periode\n                          "@nl;
+    rdfs:comment "Moment of periode waar de vergunning van toepassing is."@nl;
+    vann:usageNote "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip maar kan hier ook een moment zijn."@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.typeVracht> a rdfs:Property;
+    rdfs:label "\n                            \n                            type vracht\n                          "@nl;
+    rdfs:comment "De specifieke categorie of aard van de goederen die onder de vergunning mogen worden vervoerd"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.voertuig> a rdfs:Property;
+    rdfs:label "\n                            \n                            voertuig\n                          "@nl;
+    rdfs:comment "Het transportmiddel dat onder de vergunning is goedgekeurd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.vrijgesteldVan> a rdfs:Property;
+    rdfs:label "\n                            \n                            vrijgesteldVan\n                          "@nl;
+    rdfs:comment "De specifieke uitzonderingen of ontheffingen die aan een vergunning zijn verleend, waardoor bepaalde regels of beperkingen niet van toepassing zijn"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Mobiliteitsvergunning.werkingsgebied> a rdfs:Property;
+    rdfs:label "\n                            \n                            werkingsgebied\n                          "@nl;
+    rdfs:comment "Het specifieke geografische gebied of de zones waarin de vergunning geldig is."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/observaties-en-metingen#Object.waardeverschaffer> a rdfs:Property;
+    rdfs:label "\n                            \n                            waardeverschaffer\n                          "@nl;
+    rdfs:comment "Observaties die op het Object gebeuren."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime> a rdfs:Property;
+    rdfs:label "\n                            \n                            fenomeentijd\n                          "@nl;
+    rdfs:comment "Het moment waarop het resultaat van de Observatie van toepassing was."@nl;
+    vann:usageNote "Typisch het moment waarop geobserveerd of bemonsterd werd. Als de Observatie temporeel is en het moment waarop iets plaatsvindt wordt geregistreerd dan is dit meteen ook de fenomeentijd."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#ObservationContext.relatedObservation> a rdfs:Property;
+    rdfs:label "\n                            \n                            geassocieerdeObservatie\n                          "@nl;
+    rdfs:comment "Observaties waarvan de resultaten op een of andere manier samenhangen."@nl;
+    vann:usageNote "Het gaat om samenhang die van belang is om het resultaat van individuele Observaties te begrijpen, bv biotische relaties (dier A is roofdier en is aanwezig omdat dier B prooi voorkomt). Dergelijke relaties vereisen expliciet te worden beschreven (in tegenstelling tot relaties zoals het samenvallen van resultaten van Observaties in ruimte of tijd die impliciet mogen blijven). Ook nuttig voor relaties waarbij de output van Observatie A de input vormt voor Observatie B."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.validTime> a rdfs:Property;
+    rdfs:label "\n                            \n                            geldigeTijd\n                          "@nl;
+    rdfs:comment "Periode waarvoor het resultaat van de Observatie geldt."@nl;
+    vann:usageNote "Bv nuttig voor weersvoorspellingen."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdKenmerk\n                          "@nl;
+    rdfs:comment "Kenmerk dat men observeert vh geobserveerdObject."@nl;
+    vann:usageNote "Soms is de procedure waarmee de waarden vh kenmerk worden bekomen indirect, ttz men meet om praktische reden een ander kenmerk dat een proxy is voor het kenmerk dat men werkelijk wil observeren.  Bv om de vegetatie in een gebied te achterhalen meten we de kleurreflectie op het aardoppervlak. CONSTRAINT: Het geobserveerdKenmerk moet werkelijk een kenmerk zijn van het geobserveerdObject of van een (onder)deel ervan. Bv de zuurtegraad van een Bron is eigenlijk de zuurtegraad van het Waterlichaam van de Aquifer die door de Bron is aangeboord."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest> a rdfs:Property;
+    rdfs:label "\n                            \n                            geobserveerdObject\n                          "@nl;
+    rdfs:comment "Object dat men observeert."@nl;
+    vann:usageNote "Dat kan het Object zelf zijn of een proxy ervan, ttz een Bemonsteringsobject. OPMERKING: In dat laatste geval weet men soms pas na het observeren welke real-world Objecten men juist geobserveerd heeft."@nl.
+<http://www.w3.org/ns/adms#identifier> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "De persoon of het ding dat dient om de observatie vast te stellen."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/observaties-en-metingen#Observatie.opdracht> a rdfs:Property;
+    rdfs:label "\n                            \n                            opdracht\n                          "@nl;
+    rdfs:comment "Opdracht in het kader waarvan de Observatie plaatsvindt."@nl;
+    vann:usageNote "Bv de Opdracht voor een veldonderzoek of voor het uitvoeren van specifieke Metingen of analyses van een Monster."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter> a rdfs:Property;
+    rdfs:label "\n                            \n                            parameter\n                          "@nl;
+    rdfs:comment "Willekeurig gegeven gassocieerd met het gebeuren van de Observatie."@nl;
+    vann:usageNote "Het gaat hier niet om kenmerken van het geobserveerdObject (die worden al beschreven door het geobserveerdKenmerk) of om parameters geassocieerd met het observatieproces (zoals een instelling van een instrument). Het gaat hier bv om omgevingsparameters die het resultaat kunnen beïnvloeden en van belang zijn om het resultaat correct te interpreteren.  Een voorbeeld is de diepte in een waterput waarop de waterkwaliteit is gemeten of de omgevingstemperatuur bij het meten van de vochtigheidsgraad."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaat\n                          "@nl;
+    rdfs:comment "De waarde van het geobserveerdeKenmerk als resultaat van de Observatie."@nl;
+    vann:usageNote "Het resultaat kan van om het even welk type zijn aangezien om het even welk Kenmerk van om het even welk type Object kan worden geobserveerd. CONSTRAINT: Het type van het resultaat van de Observatie moet kloppen met het geobserveerdKenmerk en de verkregen waarde moet binnen het bereik vallen van het geobserveerdKenmerk."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultQuality> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaatkwaliteit\n                          "@nl;
+    rdfs:comment "Mate waarin het resultaat van de Observatie voldoet aan de vereisten of verwachtingen."@nl;
+    vann:usageNote "Het gaat hier om gegevens die eigen zijn aan de Observatie en complementair aan de beschrijving van de procedure die bij de Observatie is gevolgd (analysemethode edm, zie klasse Proces) wat op zich ook al iets zegt over de kwaliteit van het resultaat."@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultTime> a rdfs:Property;
+    rdfs:label "\n                            \n                            resultaattijd\n                          "@nl;
+    rdfs:comment "Tijdstip waarop het resultaat van de Observatie werd bekomen."@nl;
+    vann:usageNote "Is voor sommige Observaties gelijk aan de fenomeentijd maar kan ook verschillen, bv bij het uitvoeren van een analyse op een Monster dat eerder (en doorgaans dan ook eders) werd genomen of bij sensormetingen die pas later worden verwerkt. Ook bruikbaar om herhaalde Observaties bv op eenzelfde Monster uiteen te houden. Is het resultaat een voorspelling dan is de fenomeentijd het moment waarop deze van toepassing zou moeten zijn."@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Het type van observatie."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/observaties-en-metingen#Observatie.uitgevoerdDoor> a rdfs:Property;
+    rdfs:label "\n                            \n                            uitgevoerdDoor\n                          "@nl;
+    rdfs:comment "Agent die de Observatie heeft uitgevoerd."@nl;
+    vann:usageNote ""@nl.
+org:linkedTo a rdfs:Property;
+    rdfs:label "\n                            \n                            gelinkt met (source)\n                          "@nl;
+    rdfs:comment "Niet nader bepaalde relatie met een andere Organisatie."@nl;
+    vann:usageNote "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden."@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            \n                            gelinkt met (target)\n                          "@nl;
+    rdfs:comment "Niet nader bepaalde relatie met een andere Organisatie."@nl;
+    vann:usageNote "Bv om subsidiëring of bevooradingsketens te documenteren. Dient in dat geval verder gespecialiseerd te worden."@nl.
+org:hasSubOrganization a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft suborganisatie (source)\n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote ""@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft suborganisatie (target)\n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote ""@nl.
+org:subOrganizationOf a rdfs:Property;
+    rdfs:label "\n                            \n                            suborganisatie van (source)\n                          "@nl;
+    rdfs:comment "Verwijst naar de Organisatie die deze Organisatie omvat."@nl;
+    vann:usageNote "Wordt gebruikt om een hiërarchie van organisaties te documenteren."@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            \n                            suborganisatie van (target)\n                          "@nl;
+    rdfs:comment "Verwijst naar de Organisatie die deze Organisatie omvat."@nl;
+    vann:usageNote "Wordt gebruikt om een hiërarchie van organisaties te documenteren."@nl.
+<https://data.vlaanderen.be/ns/persoon#heeftPersoonsrelatie> a rdfs:Property;
+    rdfs:label "\n                            \n                            heeft persoonsrelatie\n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote ""@nl.
+locn:geometry a rdfs:Property;
+    rdfs:label "\n                            \n                            geometrie\n                          "@nl;
+    rdfs:comment "Geometrie van de plaats of het gebied."@nl;
+    vann:usageNote ""@nl.
+rdfs:label a rdfs:Property;
+    rdfs:label "\n                            \n                            plaatsnaam\n                          "@nl;
+    rdfs:comment "Naam van de plaats of van het gebied."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Punt.geometrie> a rdfs:Property;
+    rdfs:label "\n                            \n                            geometrie\n                          "@nl;
+    rdfs:comment "De ruimtelijke aanduiding van het punt."@nl;
+    vann:usageNote ""@nl.
+schemas:arrivalTime a rdfs:Property;
+    rdfs:label "\n                            \n                            aankomsttijdstip\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de Reis afgelopen is of waarop de Reiziger zou willen dat ze is afgelopen."@nl;
+    vann:usageNote "Doorgaans wordt enkel een vertrek- of een aankomsttijdstip opgegeven."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#gekozenRoute> a rdfs:Property;
+    rdfs:label "\n                            \n                            gekozen route\n                          "@nl;
+    rdfs:comment "Route die de Reiziger kiest uit de mogelijke Routes."@nl;
+    vann:usageNote "Eventueel meer dan 1 gekozen Route als de reiziger onderweg van Route verandert."@nl.
+schema:partOfTrip a rdfs:Property;
+    rdfs:label "\n                            \n                            is deel van (source)\n                          "@nl;
+    rdfs:comment "Deel van een volledige Reis dat op zichzelf ook beschouwd kan worden als een Reis."@nl;
+    vann:usageNote ""@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            \n                            is deel van (target)\n                          "@nl;
+    rdfs:comment "Deel van een volledige Reis dat op zichzelf ook beschouwd kan worden als een Reis."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#mogelijkeRoute> a rdfs:Property;
+    rdfs:label "\n                            \n                            mogelijke route\n                          "@nl;
+    rdfs:comment "Routes die gevolgd kunnen worden om de Reis uit te voeren."@nl;
+    vann:usageNote ""@nl.
+schema:itinerary a rdfs:Property;
+    rdfs:label "\n                            \n                            reisweg\n                          "@nl;
+    rdfs:comment "Opeenvolging van Locaties die men tijdens de Reis wil aandoen."@nl;
+    vann:usageNote "Inclusief de Locatie waar de Reis aanvangt en eindigt."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#uitgevoerdeRoute> a rdfs:Property;
+    rdfs:label "\n                            \n                            uitgevoerde route\n                          "@nl;
+    rdfs:comment "Route die uiteindelijk uitgevoerd is om de Reis te realiseren."@nl;
+    vann:usageNote "Werkelijke aankomst- en vertrektijdstip, reisduur etc."@nl.
+schemas:departureTime a rdfs:Property;
+    rdfs:label "\n                            \n                            vertrektijdstip\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de Reis aanvangt of waarop de Reiziger zou willen dat ze aanvangt."@nl;
+    vann:usageNote "Doorgaans wordt enkel een vertrek- of een aankomsttijdstip opgegeven."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.aandrijving> a rdfs:Property;
+    rdfs:label "\n                            \n                            aandrijving\n                          "@nl;
+    rdfs:comment "Aandrijving van het vervoermiddel."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.dienst> a rdfs:Property;
+    rdfs:label "\n                            \n                            dienst\n                          "@nl;
+    rdfs:comment "Mobiliteitsdienst van de Resource."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Resource.gewichtsklasse> a rdfs:Property;
+    rdfs:label "\n                            \n                            gewichtsklasse\n                          "@nl;
+    rdfs:comment "Classificatie van een voertuig op basis van gewicht."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#identificator> a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "Identificator van de Resource."@nl;
+    vann:usageNote "Bv nummerplaat van de huurauto, nummer vd zitplaats..."@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Resource.maximaaltoegelatenmassa> a rdfs:Property;
+    rdfs:label "\n                            \n                            maximaal toegelaten massa\n                          "@nl;
+    rdfs:comment "Het hoogste gewicht dat een voertuig inclusief lading wettelijk mag hebben."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Resource.milieuklasse> a rdfs:Property;
+    rdfs:label "\n                            \n                            milieuklasse\n                          "@nl;
+    rdfs:comment "Classificatie van een voertuig op basis van milieunorm."@nl;
+    vann:usageNote ""@nl.
+dcterms:spatial a rdfs:Property;
+    rdfs:label "\n                            \n                            ruimtelijke dekking\n                          "@nl;
+    rdfs:comment "Plaats waar de Resource zich bevindt."@nl;
+    vann:usageNote "Dit kan bv de realtime Locatie zijn van het voertuig bv bij free floating deelvervoer."@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Resource.startgewicht> a rdfs:Property;
+    rdfs:label "\n                            \n                            start gewicht\n                          "@nl;
+    rdfs:comment "Het gewicht van een Resource zonder lading, passagiers of brandstof."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.status> a rdfs:Property;
+    rdfs:label "\n                            \n                            status\n                          "@nl;
+    rdfs:comment "Toestand waarin een Resource zich bevindt."@nl;
+    vann:usageNote "Bv gereserveerd, inactief, beschikbaar. Bepaalt of een Resource gebruikt kan worden."@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de Resource."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.vervoermiddel> a rdfs:Property;
+    rdfs:label "\n                            \n                            vervoermiddel\n                          "@nl;
+    rdfs:comment "Het type vervoermiddel van de Resource."@nl;
+    vann:usageNote "Vooral relevant als de resource een voertuig is."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#aankomstpunt> a rdfs:Property;
+    rdfs:label "\n                            \n                            aankomstpunt\n                          "@nl;
+    rdfs:comment "Locatie waar de Route eindigt."@nl;
+    vann:usageNote "Coordinaten van dit punt kunnen afgeleid worden uit de set van Routesegmenten. Vooral nuttig om de ligging dmv een toponiem, adreslabel of verwijzing naar een plaats aan te duiden."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.aankomsttijdstip> a rdfs:Property;
+    rdfs:label "\n                            \n                            aankomsttijdstip\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de Route eindigt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.afstand> a rdfs:Property;
+    rdfs:label "\n                            \n                            afstand\n                          "@nl;
+    rdfs:comment ""@nl;
+    vann:usageNote "Af te leiden uit de kenmerken vd Route, typisch uit de geometrie van de Routesegmenten."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#kostprijs> a rdfs:Property;
+    rdfs:label "\n                            \n                            kostprijs\n                          "@nl;
+    rdfs:comment "Prijs van de Route."@nl;
+    vann:usageNote "Bv de som van de kostprijs van de aangekochte Vervoersbewijzen."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#reisduur> a rdfs:Property;
+    rdfs:label "\n                            \n                            reisduur\n                          "@nl;
+    rdfs:comment "Tijd waarin de Route wordt afgelegd."@nl;
+    vann:usageNote "Af te leiden uit andere kenmerken van de Route, bv uit het vertrek- en aankomsttijdstip."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#routebeschrijving> a rdfs:Property;
+    rdfs:label "\n                            \n                            routebeschrijving\n                          "@nl;
+    rdfs:comment "Beschrijving van de Route."@nl;
+    vann:usageNote "Af te leiden uit andere kenmerken van de Route, bv de routesegmenten waaruit de Route bestaat en de kenmerken daarvan."@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de Route."@nl;
+    vann:usageNote "Bv kortste, snelste..."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#vertrekpunt> a rdfs:Property;
+    rdfs:label "\n                            \n                            vertrekpunt\n                          "@nl;
+    rdfs:comment "Locatie waar de Route begint."@nl;
+    vann:usageNote "Coordinaten van dit punt kunnen afgeleid worden uit de set van Routesegmenten. Vooral nuttig om de ligging dmv een toponiem, adreslabel of verwijzing naar een plaats aan te duiden."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.vertrektijdstip> a rdfs:Property;
+    rdfs:label "\n                            \n                            vertrektijdstip\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de Route begint."@nl;
+    vann:usageNote ""@nl.
+locn:geometry a rdfs:Property;
+    rdfs:label "\n                            \n                            geometrie\n                          "@nl;
+    rdfs:comment "Locatie van de Routeknoop."@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            \n                            type\n                          "@nl;
+    rdfs:comment "Aard van de Routeknoop."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.aandrijving> a rdfs:Property;
+    rdfs:label "\n                            \n                            aandrijving\n                          "@nl;
+    rdfs:comment "Aandrijving van het vervoermiddel waarmee het Routesegment is afgelegd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#aankomstknoop> a rdfs:Property;
+    rdfs:label "\n                            \n                            aankomstknoop\n                          "@nl;
+    rdfs:comment "Knoop waar het Routesegment eindigt."@nl;
+    vann:usageNote "Nuttig als op het vertrek- of aankomstpunt een Mobiliteitsdienst of Resource is gebruikt (bv parkeerplaats) of om aan te geven met welk Transportobject het punt samenvalt"@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.aankomsttijdstip> a rdfs:Property;
+    rdfs:label "\n                            \n                            aankomsttijdstip\n                          "@nl;
+    rdfs:comment "Tijdstip waarop het Routesegment eindigt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#bestaatUit> a rdfs:Property;
+    rdfs:label "\n                            \n                            bestaat uit\n                          "@nl;
+    rdfs:comment "Opeenvolging van Routesegmenten waaruit de Route bestaat."@nl;
+    vann:usageNote ""@nl;
+    a rdfs:Property;
+    rdfs:label "\n                            \n                            bestaat uit\n                          "@nl;
+    rdfs:comment "Opeenvolging van Routesegmenten waaruit de Route bestaat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#link> a rdfs:Property;
+    rdfs:label "\n                            \n                            link\n                          "@nl;
+    rdfs:comment "Opeenvolging van Gerichte Links waaruit het Routesegment bestaat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#vertrekknoop> a rdfs:Property;
+    rdfs:label "\n                            \n                            vertrekknoop\n                          "@nl;
+    rdfs:comment "Knoop waar het Routesegment begint."@nl;
+    vann:usageNote "Nuttig als op het vertrek- of aankomstpunt een Mobiliteitsdienst of Resource is gebruikt (bv parkeerplaats) of om aan te geven met welk Transportobject het punt samenvalt"@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vertrektijdstip> a rdfs:Property;
+    rdfs:label "\n                            \n                            vertrektijdstip\n                          "@nl;
+    rdfs:comment "Tijdstip waarop het Routesegment begint."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vervoermiddel> a rdfs:Property;
+    rdfs:label "\n                            \n                            vervoermiddel\n                          "@nl;
+    rdfs:comment "Type vervoermiddel waarmee het Routesegment is afgelegd."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.afmetingen> a rdfs:Property;
+    rdfs:label "\n                            \n                            afmetingen\n                          "@nl;
+    rdfs:comment "De afmetingen van de vracht."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.afzender> a rdfs:Property;
+    rdfs:label "\n                            \n                            afzender\n                          "@nl;
+    rdfs:comment "De agent die de vracht heeft verzonden."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.beweging> a rdfs:Property;
+    rdfs:label "\n                            \n                            beweging\n                          "@nl;
+    rdfs:comment "Het type van beweging van de vracht gedurende de mobiliteitsdienst"@nl;
+    vann:usageNote "bv. pick-up"@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.gewicht> a rdfs:Property;
+    rdfs:label "\n                            \n                            gewicht\n                          "@nl;
+    rdfs:comment "Het gewicht van de vracht."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.status> a rdfs:Property;
+    rdfs:label "\n                            \n                            status\n                          "@nl;
+    rdfs:comment "Status van de vracht binnen een belading."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.verpakking> a rdfs:Property;
+    rdfs:label "\n                            \n                            verpakking\n                          "@nl;
+    rdfs:comment "De verpakking waar de vracht in opgeborgen zit."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Vracht.vrachttype> a rdfs:Property;
+    rdfs:label "\n                            \n                            vrachttype\n                          "@nl;
+    rdfs:comment "Het type goed waar de vracht uit bestaat."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Zone.geometrie> a rdfs:Property;
+    rdfs:label "\n                            \n                            geometrie\n                          "@nl;
+    rdfs:comment "De ruimtelijke afbakening van een zone."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#type> a rdfs:Property;
+    rdfs:label "\n                            type\n                          "@nl;
+    rdfs:comment "Het type dimensie waarop de afmeting van toepassing is"@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#waarde> a rdfs:Property;
+    rdfs:label "\n                            waarde\n                          "@nl;
+    rdfs:comment "De waarde van de afmeting"@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#NamedValue.name> a rdfs:Property;
+    rdfs:label "\n                            naam\n                          "@nl;
+    rdfs:comment "Naam vh type van de waarde."@nl;
+    vann:usageNote ""@nl.
+<http://def.isotc211.org/iso19156/2011/Observation#NamedValue.value> a rdfs:Property;
+    rdfs:label "\n                            waarde\n                          "@nl;
+    rdfs:comment "Kwalitatieve of kwantitatieve invulling van de waarde."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#dienstregeling> a rdfs:Property;
+    rdfs:label "\n                            dienstregeling\n                          "@nl;
+    rdfs:comment "Schema met tijdstippen waarop iets wordt aangeboden."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#gebruiker> a rdfs:Property;
+    rdfs:label "\n                            gebruiker\n                          "@nl;
+    rdfs:comment "Type gebruiker waarvoor de beschikbaarheid geldt."@nl;
+    vann:usageNote ""@nl.
+schemas:hoursAvailable a rdfs:Property;
+    rdfs:label "\n                            openingsuren\n                          "@nl;
+    rdfs:comment "Uren waarop iets beschikbaar is."@nl;
+    vann:usageNote ""@nl.
+schema:openingHours a rdfs:Property;
+    rdfs:label "\n                            openingsurenString\n                          "@nl;
+    rdfs:comment "Uren waarop iets beschikbaar is."@nl;
+    vann:usageNote "Syntax volgens schema.org voor openingsuren. Bv als contact kan worden opgenomen tussen 8 en 20u maandag tot zaterdag en tussen 8 en 18u op zondag wordt dit gecodeerd als Ma-za 08:00-20:00, zo 08:00-18:00."@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#periode> a rdfs:Property;
+    rdfs:label "\n                            periode\n                          "@nl;
+    rdfs:comment "Periode waarin iets beschikbaar is."@nl;
+    vann:usageNote "Bv startdatum zonder einddatum voor dienstverlening die nog actief is of een aanduiding van het seizoen waarin de dienstverlening wordt aangeboden. Een ingevulde einddatum geeft aan wanneer de dienstverlening werd beëindigd. Begin- en einddatum volgens ISO8601 syntax."@nl.
+vcard:honorific-prefix a rdfs:Property;
+    rdfs:label "\n                            aanschrijfvorm\n                          "@nl;
+    rdfs:comment "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen."@nl;
+    vann:usageNote "Bvb De heer/Mevrouw, Excellentie, Dokter..."@nl.
+locn:address a rdfs:Property;
+    rdfs:label "\n                            adres\n                          "@nl;
+    rdfs:comment "Adres dat men kan aanschrijven of bezoeken."@nl;
+    vann:usageNote " "@nl.
+schema:hoursAvailable a rdfs:Property;
+    rdfs:label "\n                            beschikbaarheid\n                          "@nl;
+    rdfs:comment "Periode waarin contact kan worden opgenomen."@nl;
+    vann:usageNote "Bv aanduiding van het seizoen waarin contact kan worden opgenomen. Begin- en einddatum volgens ISO8601 syntax."@nl.
+foaf:name a rdfs:Property;
+    rdfs:label "\n                            contactnaam\n                          "@nl;
+    rdfs:comment "Naam van bvb de persoon die men kan contacteren."@nl;
+    vann:usageNote " "@nl.
+schema:email a rdfs:Property;
+    rdfs:label "\n                            email\n                          "@nl;
+    rdfs:comment "Email-adres waarnaar men kan mailen."@nl;
+    vann:usageNote " "@nl.
+schema:faxNumber a rdfs:Property;
+    rdfs:label "\n                            fax\n                          "@nl;
+    rdfs:comment "Faxnummer waarnaar men kan faxen."@nl;
+    vann:usageNote " "@nl.
+schema:openingHours a rdfs:Property;
+    rdfs:label "\n                            openingsuren\n                          "@nl;
+    rdfs:comment "Uren waarbinnen contact kan worden opgenomen."@nl;
+    vann:usageNote "Syntax volgens schema.org voor openingsuren. Bv als contact kan worden opgenomen tussen 8 en 20u maandag tot zaterdag en tussen 8 en 18u op zondag wordt dit gecodeerd als Ma-za 08:00-20:00, zo 08:00-18:00."@nl.
+schema:telephone a rdfs:Property;
+    rdfs:label "\n                            telefoon\n                          "@nl;
+    rdfs:comment "Telefoonnummer waarop men kan bellen."@nl;
+    vann:usageNote " "@nl.
+foaf:page a rdfs:Property;
+    rdfs:label "\n                            website\n                          "@nl;
+    rdfs:comment "Website waarnaar men kan surfen."@nl;
+    vann:usageNote " "@nl.
+<http://www.opengis.net/ont/geosparql#asGML> a rdfs:Property;
+    rdfs:label "\n                            gml\n                          "@nl;
+    rdfs:comment "Geometrie uitgedrukt in gml-formaat."@nl;
+    vann:usageNote "Gebruik http://www.opengis.net/ont/geosparql#gmlLiteral als datatype."@nl.
+<http://www.opengis.net/ont/geosparql#asWKT> a rdfs:Property;
+    rdfs:label "\n                            wkt\n                          "@nl;
+    rdfs:comment "Geometrie uitgedrukt in wkt-formaat."@nl;
+    vann:usageNote "Gebruik http://www.opengis.net/ont/geosparql#wktLiteral als datatype."@nl.
+<https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator> a rdfs:Property;
+    rdfs:label "\n                            gestructureerde identificator\n                          "@nl;
+    rdfs:comment "Identificator vh object opgesplitst in zijn onderdelen."@nl;
+    vann:usageNote ""@nl.
+skos:notation a rdfs:Property;
+    rdfs:label "\n                            identificator\n                          "@nl;
+    rdfs:comment "String gebruikt om het object uniek te identificeren."@nl;
+    vann:usageNote "Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator."@nl.
+dcterms:creator a rdfs:Property;
+    rdfs:label "\n                            toegekend door\n                          "@nl;
+    rdfs:comment "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    vann:usageNote " "@nl.
+<http://www.w3.org/ns/adms#schemaAgency> a rdfs:Property;
+    rdfs:label "\n                            toegekend door (String)\n                          "@nl;
+    rdfs:comment "Naam vd agent die de identificator heeft toegekend."@nl;
+    vann:usageNote " "@nl.
+dcterms:issued a rdfs:Property;
+    rdfs:label "\n                            toegekend op\n                          "@nl;
+    rdfs:comment "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    vann:usageNote " "@nl.
+schemas:unitText a rdfs:Property;
+    rdfs:label "\n                            eenheid\n                          "@nl;
+    rdfs:comment "De eenheid waarin de waarde is uitgedrukt."@nl;
+    vann:usageNote "Te gebruiken als geen standaard eenheid gekend is."@nl.
+schemas:unitCode a rdfs:Property;
+    rdfs:label "\n                            standaard eenheid\n                          "@nl;
+    rdfs:comment "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt."@nl;
+    vann:usageNote ""@nl.
+schemas:value a rdfs:Property;
+    rdfs:label "\n                            waarde\n                          "@nl;
+    rdfs:comment "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/slimme-stadsdistributie#Punt.geometrie> a rdfs:Property;
+    rdfs:label "\n                            geometrie\n                          "@nl;
+    rdfs:comment "De ruimtelijke aanduiding van het punt."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#niveau> a rdfs:Property;
+    rdfs:label "\n                            niveau\n                          "@nl;
+    rdfs:comment "Niveau van toegankelijkheid."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#onderdeel> a rdfs:Property;
+    rdfs:label "\n                            onderdeel\n                          "@nl;
+    rdfs:comment "Deel van de dienst of infrastructuur waarop de Toegankelijkheid betrekking heeft.."@nl;
+    vann:usageNote ""@nl.
+dcterms:type a rdfs:Property;
+    rdfs:label "\n                            type\n                          "@nl;
+    rdfs:comment "Aard van de Toegankelijkheid."@nl;
+    vann:usageNote ""@nl.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/#h2_sotd> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading>, <http://www.w3.org/1999/xhtml/vocab#heading>.
+_:df_481_92 rdf:first _:df_481_1;
+    rdf:rest _:df_481_93.
+_:df_481_93 rdf:first _:df_481_3;
+    rdf:rest _:df_481_94.
+_:df_481_94 rdf:first _:df_481_5;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/> <http://purl.org/ontology/bibo/editor> _:df_481_92.
+_:df_481_95 rdf:first _:df_481_7;
+    rdf:rest _:df_481_96.
+_:df_481_96 rdf:first _:df_481_9;
+    rdf:rest _:df_481_97.
+_:df_481_97 rdf:first _:df_481_11;
+    rdf:rest _:df_481_98.
+_:df_481_98 rdf:first _:df_481_13;
+    rdf:rest _:df_481_99.
+_:df_481_99 rdf:first _:df_481_15;
+    rdf:rest _:df_481_100.
+_:df_481_100 rdf:first _:df_481_17;
+    rdf:rest _:df_481_101.
+_:df_481_101 rdf:first _:df_481_19;
+    rdf:rest _:df_481_102.
+_:df_481_102 rdf:first _:df_481_21;
+    rdf:rest _:df_481_103.
+_:df_481_103 rdf:first _:df_481_23;
+    rdf:rest _:df_481_104.
+_:df_481_104 rdf:first _:df_481_25;
+    rdf:rest _:df_481_105.
+_:df_481_105 rdf:first _:df_481_27;
+    rdf:rest _:df_481_106.
+_:df_481_106 rdf:first _:df_481_29;
+    rdf:rest _:df_481_107.
+_:df_481_107 rdf:first _:df_481_31;
+    rdf:rest _:df_481_108.
+_:df_481_108 rdf:first _:df_481_33;
+    rdf:rest _:df_481_109.
+_:df_481_109 rdf:first _:df_481_35;
+    rdf:rest _:df_481_110.
+_:df_481_110 rdf:first _:df_481_37;
+    rdf:rest _:df_481_111.
+_:df_481_111 rdf:first _:df_481_39;
+    rdf:rest _:df_481_112.
+_:df_481_112 rdf:first _:df_481_41;
+    rdf:rest _:df_481_113.
+_:df_481_113 rdf:first _:df_481_43;
+    rdf:rest _:df_481_114.
+_:df_481_114 rdf:first _:df_481_45;
+    rdf:rest _:df_481_115.
+_:df_481_115 rdf:first _:df_481_47;
+    rdf:rest _:df_481_116.
+_:df_481_116 rdf:first _:df_481_49;
+    rdf:rest _:df_481_117.
+_:df_481_117 rdf:first _:df_481_51;
+    rdf:rest _:df_481_118.
+_:df_481_118 rdf:first _:df_481_53;
+    rdf:rest _:df_481_119.
+_:df_481_119 rdf:first _:df_481_55;
+    rdf:rest _:df_481_120.
+_:df_481_120 rdf:first _:df_481_57;
+    rdf:rest _:df_481_121.
+_:df_481_121 rdf:first _:df_481_59;
+    rdf:rest _:df_481_122.
+_:df_481_122 rdf:first _:df_481_61;
+    rdf:rest _:df_481_123.
+_:df_481_123 rdf:first _:df_481_63;
+    rdf:rest _:df_481_124.
+_:df_481_124 rdf:first _:df_481_65;
+    rdf:rest _:df_481_125.
+_:df_481_125 rdf:first _:df_481_67;
+    rdf:rest _:df_481_126.
+_:df_481_126 rdf:first _:df_481_69;
+    rdf:rest _:df_481_127.
+_:df_481_127 rdf:first _:df_481_71;
+    rdf:rest _:df_481_128.
+_:df_481_128 rdf:first _:df_481_73;
+    rdf:rest _:df_481_129.
+_:df_481_129 rdf:first _:df_481_75;
+    rdf:rest _:df_481_130.
+_:df_481_130 rdf:first _:df_481_77;
+    rdf:rest _:df_481_131.
+_:df_481_131 rdf:first _:df_481_79;
+    rdf:rest _:df_481_132.
+_:df_481_132 rdf:first _:df_481_81;
+    rdf:rest _:df_481_133.
+_:df_481_133 rdf:first _:df_481_83;
+    rdf:rest _:df_481_134.
+_:df_481_134 rdf:first _:df_481_85;
+    rdf:rest _:df_481_135.
+_:df_481_135 rdf:first _:df_481_87;
+    rdf:rest _:df_481_136.
+_:df_481_136 rdf:first _:df_481_89;
+    rdf:rest _:df_481_137.
+_:df_481_137 rdf:first _:df_481_91;
+    rdf:rest rdf:nil.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimme-stadsdistributie/> dcterms:contributor _:df_481_95.
