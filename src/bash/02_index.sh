@@ -1,4 +1,4 @@
 #!/bin/bash
 
-riot --formatted=turtle ../main/resources/be/vlaanderen/data/id/vocabulary/*/* > ../main/resources/be/vlaanderen/data/id/vocabulary/all.ttl
-sparql --data=../main/resources/be/vlaanderen/data/id/vocabulary/all.ttl --query ../sparql/02_index.rq --results=CSV > ../main/resources/be/vlaanderen/data/id/vocabulary/index.csv
+riot --formatted=turtle $(find ../main/resources/*/. | grep ttl$) > ../main/resources/all.ttl
+sparql --data=../main/resources/all.ttl --query ../sparql/02_index.rq --results=CSV > ../main/resources/index.csv
