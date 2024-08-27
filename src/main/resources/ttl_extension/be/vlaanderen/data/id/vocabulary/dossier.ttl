@@ -105,7 +105,8 @@ prov:Entity a rdfs:Class;
   rdfs:label "Stukonderdeel"@nl;
   rdfs:comment "Een apart onderdeel van een groter stuk."@nl;
   rdfs:isDefinedBy <https://data.vlaanderen.be/ns/dossier>;
-  rdfs:subClassOf prov:Entity .
+  rdfs:subClassOf prov:Entity,
+    <https://data.vlaanderen.be/ns/dossier#Stuk> .
 
 <https://data.vlaanderen.be/ns/dossier#activiteit> a owl:ObjectProperty;
   rdfs:label "activiteit"@nl;
@@ -240,6 +241,9 @@ prov:wasAssociatedWith a rdf:Property;
   rdfs:isDefinedBy <https://data.vlaanderen.be/ns/dossier>;
   rdfs:range dbo:UnitOfWork .
 
+<https://dbpedia.org/ontology/procedure> a rdf:Property;
+  rdfs:label "procedure"@nl .
+
 <https://data.vlaanderen.be/ns/dossier#Dossier> a owl:Class;
   rdfs:label "Dossier"@nl;
   rdfs:comment "Samenhangend geheel van stukken die betrekking hebben op een bepaalde zaak. "@nl;
@@ -267,35 +271,51 @@ dc:date a rdf:Property;
   dc:contributor [
     a foaf:Person;
     schema:affiliation [
-      foaf:homepage <https://www.oost-vlaanderen.be/>;
-      foaf:name "Provincie Oost-Vlaanderen"
+      foaf:homepage <https://overheid.vlaanderen.be/>;
+      foaf:name "Informatie Vlaanderen"
     ];
-    foaf:firstName "Remco";
-    foaf:lastName "Bruijnje"
+    foaf:firstName "Henk";
+    foaf:lastName "Vanderstraeten"
   ], [
     a foaf:Person;
     schema:affiliation [
-      foaf:homepage <https://www.skryv.com>;
+      foaf:homepage <https://overheid.vlaanderen.be/>;
+      foaf:name "Informatie Vlaanderen"
+    ];
+    foaf:firstName "Bert";
+    foaf:lastName "Van Kets"
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://overheid.vlaanderen.be/facilitairbedrijf>;
+      foaf:name "Het Facilitair Bedrijf"
+    ];
+    foaf:firstName "Jana";
+    foaf:lastName "Van Bouwel"
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.skryv.com/>;
       foaf:name "Skryv"
     ];
-    foaf:firstName "Anouk";
-    foaf:lastName "De Meester"
+    foaf:firstName "Toon";
+    foaf:lastName "Timbermont"
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://www.stad.gent>;
+      foaf:name "Stad Gent"
+    ];
+    foaf:firstName "Steven";
+    foaf:lastName "Staelens"
   ], [
     a foaf:Person;
     schema:affiliation [
       foaf:homepage <https://overheid.vlaanderen.be/>;
-      foaf:name "Departement Kanselarij en Bestuur"
+      foaf:name "Onroerend Erfgoed"
     ];
-    foaf:firstName "Alvin";
-    foaf:lastName "Demeyer"
-  ], [
-    a foaf:Person;
-    schema:affiliation [
-      foaf:homepage <https://overheid.vlaanderen.be/>;
-      foaf:name "Departement CJM"
-    ];
-    foaf:firstName "Roel";
-    foaf:lastName "Devriendt"
+    foaf:firstName "Inge";
+    foaf:lastName "Roosens"
   ], [
     a foaf:Person;
     schema:affiliation [
@@ -308,54 +328,38 @@ dc:date a rdf:Property;
     a foaf:Person;
     schema:affiliation [
       foaf:homepage <https://overheid.vlaanderen.be/>;
-      foaf:name "Onroerend Erfgoed"
+      foaf:name "Departement CJM"
     ];
-    foaf:firstName "Inge";
-    foaf:lastName "Roosens"
+    foaf:firstName "Roel";
+    foaf:lastName "Devriendt"
   ], [
     a foaf:Person;
     schema:affiliation [
-      foaf:homepage <https://www.stad.gent>;
-      foaf:name "Stad Gent"
+      foaf:homepage <https://overheid.vlaanderen.be/>;
+      foaf:name "Departement Kanselarij en Bestuur"
     ];
-    foaf:firstName "Steven";
-    foaf:lastName "Staelens"
+    foaf:firstName "Alvin";
+    foaf:lastName "Demeyer"
   ], [
     a foaf:Person;
     schema:affiliation [
-      foaf:homepage <https://www.skryv.com/>;
+      foaf:homepage <https://www.skryv.com>;
       foaf:name "Skryv"
     ];
-    foaf:firstName "Toon";
-    foaf:lastName "Timbermont"
+    foaf:firstName "Anouk";
+    foaf:lastName "De Meester"
   ], [
     a foaf:Person;
     schema:affiliation [
-      foaf:homepage <https://overheid.vlaanderen.be/facilitairbedrijf>;
-      foaf:name "Het Facilitair Bedrijf"
+      foaf:homepage <https://www.oost-vlaanderen.be/>;
+      foaf:name "Provincie Oost-Vlaanderen"
     ];
-    foaf:firstName "Jana";
-    foaf:lastName "Van Bouwel"
-  ], [
-    a foaf:Person;
-    schema:affiliation [
-      foaf:homepage <https://overheid.vlaanderen.be/>;
-      foaf:name "Informatie Vlaanderen"
-    ];
-    foaf:firstName "Bert";
-    foaf:lastName "Van Kets"
-  ], [
-    a foaf:Person;
-    schema:affiliation [
-      foaf:homepage <https://overheid.vlaanderen.be/>;
-      foaf:name "Informatie Vlaanderen"
-    ];
-    foaf:firstName "Henk";
-    foaf:lastName "Vanderstraeten"
+    foaf:firstName "Remco";
+    foaf:lastName "Bruijnje"
   ];
   dc:issued "2019-09-01";
-  dc:license <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>,
-    "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0";
+  dc:license "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>;
   dc:mediator [
     foaf:homepage <https://data.vlaanderen.be>;
     foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
@@ -371,29 +375,30 @@ dc:date a rdf:Property;
     prov:Association,
     prov:Collection,
     prov:Entity,
-    dc:date,
-    dc:isPartOf,
-    dc:language,
-    dc:relation,
-    dc:title,
-    <http://www.w3.org/ns/adms#identifier>,
-    dcat:byteSize,
-    dcat:mediaType,
-    prov:actedOnBehalfOf,
-    prov:agent,
-    prov:hadRole,
-    prov:qualifiedAssociation,
+    <https://dbpedia.org/ontology/procedure>,
+    prov:wasAssociatedWith,
     prov:value,
-    prov:wasAssociatedWith;
+    prov:qualifiedAssociation,
+    prov:hadRole,
+    prov:agent,
+    prov:actedOnBehalfOf,
+    dcat:mediaType,
+    dcat:byteSize,
+    <http://www.w3.org/ns/adms#identifier>,
+    dc:title,
+    dc:relation,
+    dc:language,
+    dc:isPartOf,
+    dc:date;
   <http://www.w3.org/2001/02pd/rec54#editor> [
     a foaf:Person;
     schema:affiliation [
       foaf:homepage <http://www.pwc.be>;
       foaf:name "PwC"
     ];
-    foaf:firstName "Michiel";
-    foaf:lastName "De Keyzer";
-    foaf:mbox <mailto:michiel.de.keyzer@pwc.com>
+    foaf:firstName "Dimitri";
+    foaf:lastName "Schepers";
+    foaf:mbox <mailto:dimitri.schepers@pwc.com>
   ], [
     a foaf:Person;
     schema:affiliation [
@@ -409,20 +414,11 @@ dc:date a rdf:Property;
       foaf:homepage <http://www.pwc.be>;
       foaf:name "PwC"
     ];
-    foaf:firstName "Dimitri";
-    foaf:lastName "Schepers";
-    foaf:mbox <mailto:dimitri.schepers@pwc.com>
+    foaf:firstName "Michiel";
+    foaf:lastName "De Keyzer";
+    foaf:mbox <mailto:michiel.de.keyzer@pwc.com>
   ];
   foaf:maker [
-    a foaf:Person;
-    schema:affiliation [
-      foaf:homepage <https://overheid.vlaanderen.be/facilitairbedrijf>;
-      foaf:name "Het Facilitair Bedrijf"
-    ];
-    foaf:firstName "Quincy";
-    foaf:lastName "Oeyen";
-    foaf:mbox <mailto:quincy.oeyen@vlaanderen.be>
-  ], [
     a foaf:Person;
     schema:affiliation [
       foaf:homepage <https://omgeving.vlaanderen.be/>;
@@ -431,4 +427,13 @@ dc:date a rdf:Property;
     foaf:firstName "Geert";
     foaf:lastName "Van Haute";
     foaf:mbox <mailto:geert.vanhaute@vlaanderen.be>
+  ], [
+    a foaf:Person;
+    schema:affiliation [
+      foaf:homepage <https://overheid.vlaanderen.be/facilitairbedrijf>;
+      foaf:name "Het Facilitair Bedrijf"
+    ];
+    foaf:firstName "Quincy";
+    foaf:lastName "Oeyen";
+    foaf:mbox <mailto:quincy.oeyen@vlaanderen.be>
   ] .
