@@ -119,7 +119,7 @@ skos:Concept a rdfs:Class;
   rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
   rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
 
-<https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingsermijn> a owl:ObjectProperty;
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingstermijn> a owl:ObjectProperty;
   rdfs:label "aanwendingstermijn"@nl;
   rdfs:comment "Termijn binnen dewelke het Rechtsmiddel aangewend mag worden."@nl;
   rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid>;
@@ -201,8 +201,8 @@ skos:Concept a rdfs:Class;
 
 <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> a owl:ObjectProperty;
   rdfs:label "procedurestap"@nl;
-  rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>,
-    <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure>;
+  rdfs:domain <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure>,
+    <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>;
   rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
   rdfs:range <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> .
 
@@ -304,6 +304,13 @@ dc:type a rdf:Property;
   rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
   rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>,
     <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Bekendmaking> a owl:Class;
+  rdfs:label "Bekendmaking"@nl;
+  <http://purl.org/vocab/vann/usageNote> "In het kader van omgevingsvergunningsaanvragen is een aanplakking een vorm van Publicatie. Zo ook de bekendmaking op de website van een gemeente. Gebruik Notificatie voor een gerichte bekendmaking aan een betrokkene."@nl;
+  rdfs:comment "Bekendmaking aan het brede publiek."@nl;
+  rdfs:isDefinedBy <https://data.vlaanderen.be/ns/omgevingsvergunning>;
+  rdfs:subClassOf <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> .
 
 <https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak> a owl:Class;
   rdfs:label "Rechterlijke Uitspraak"@nl;
