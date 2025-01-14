@@ -285,28 +285,28 @@ infrastructuurelementen-ap:DebietmeterShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:Debietmeter.
 infrastructuurelementen-ap:DekselShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2313 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/DekselVorm>;
+_:n3-2264 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/DekselVorm>;
     shacl:class skos:Concept;
     shacl:description "De vorm van het deksel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "dekselVorm";
     shacl:path infrastructuur:dekselVorm.
-infrastructuurelementen-ap:DekselShape shacl:property _:n3-2313.
-_:n3-2314 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
+infrastructuurelementen-ap:DekselShape shacl:property _:n3-2264.
+_:n3-2265 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
     shacl:class skos:Concept;
     shacl:description "Aanduiding van de soort nutsvoorziening.";
     shacl:maxCount 1;
     shacl:name "nutsvoorzieningscode";
     shacl:path infrastructuur:nutsvoorzieningscode.
-infrastructuurelementen-ap:DekselShape shacl:property _:n3-2314.
-_:n3-2315 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Rioleringscode>;
+infrastructuurelementen-ap:DekselShape shacl:property _:n3-2265.
+_:n3-2266 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Rioleringscode>;
     shacl:class skos:Concept;
     shacl:description "De rioleringscode is een arbitraire notitie van waarneembare eigenschappen van het deksel m.b.t. de beheerder en de functie van de ondergrondse ioleringsleiding.";
     shacl:maxCount 1;
     shacl:name "rioleringscode";
     shacl:path infrastructuur:rioleringscode.
-infrastructuurelementen-ap:DekselShape shacl:property _:n3-2315;
+infrastructuurelementen-ap:DekselShape shacl:property _:n3-2266;
     shacl:targetClass infrastructuur:Deksel.
 infrastructuurelementen-ap:DekselVormShape a shacl:NodeShape;
     shacl:closed false;
@@ -328,34 +328,34 @@ infrastructuurelementen-ap:ElementShape a shacl:NodeShape;
     shacl:targetClass openbaardomein:Element.
 infrastructuurelementen-ap:FietsstallingShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2316 shacl:datatype xsd:boolean;
+_:n3-2267 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet kan afgesloten worden om toegang voor onbevoegden te verhinderen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "afsluitbaar";
     shacl:path infrastructuur:afsluitbaar.
-infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2316.
-_:n3-2317 shacl:datatype xsd:integer;
+infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2267.
+_:n3-2268 shacl:datatype xsd:integer;
     shacl:description "Geeft aan hoeveel fietsen gestald kunnen worden aan of in de fietsenstalling.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "capaciteit";
     shacl:path infrastructuur:capaciteit.
-infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2317.
-_:n3-2318 shacl:datatype xsd:boolean;
+infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2268.
+_:n3-2269 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet gebruikt wordt voor deelfietsen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "fietsdelen";
     shacl:path infrastructuur:fietsdelen.
-infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2318.
-_:n3-2319 shacl:datatype xsd:boolean;
+infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2269.
+_:n3-2270 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet overdekt is.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "overdekt";
     shacl:path infrastructuur:overdekt.
-infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2319;
+infrastructuurelementen-ap:FietsstallingShape shacl:property _:n3-2270;
     shacl:targetClass infrastructuur:Fietsstalling.
 infrastructuurelementen-ap:FietstelpaalShape a shacl:NodeShape;
     shacl:closed false;
@@ -368,44 +368,44 @@ infrastructuurelementen-ap:FonteinShape a shacl:NodeShape;
     shacl:targetClass <http://dbpedia.org/resource/Fountain>.
 infrastructuurelementen-ap:FysiekObjectShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2320 shacl:datatype xsd:dateTime;
+_:n3-2271 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
     shacl:path openbaardomein:begindatum.
-infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2320.
-_:n3-2321 shacl:datatype xsd:dateTime;
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2271.
+_:n3-2272 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path openbaardomein:einddatum.
-infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2321.
-_:n3-2322 shacl:class geosparql:Geometry;
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2272.
+_:n3-2273 shacl:class geosparql:Geometry;
     shacl:description "De geometrie overeenkomstig met een bepaald object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2322.
-_:n3-2323 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2273.
+_:n3-2274 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
     shacl:class skos:Concept;
     shacl:description "De precisie waarmee het object opgemeten werd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nauwkeurigheid";
     shacl:path openbaardomein:nauwkeurigheid.
-infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2323.
-_:n3-2324 shacl:datatype xsd:integer;
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2274.
+_:n3-2275 shacl:datatype xsd:integer;
     shacl:description "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten.";
     shacl:maxCount 1;
     shacl:name "niveau";
     shacl:path openbaardomein:niveau.
-infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2324.
-_:n3-2325 shacl:class rdfs:Resource;
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2275.
+_:n3-2276 shacl:class rdfs:Resource;
     shacl:description "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject.";
     shacl:name "relatie";
     shacl:path dcterms:relation.
-infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2325;
+infrastructuurelementen-ap:FysiekObjectShape shacl:property _:n3-2276;
     shacl:targetClass openbaardomein:FysiekObject.
 infrastructuurelementen-ap:GSM-paalShape a shacl:NodeShape;
     shacl:closed false;
@@ -436,12 +436,12 @@ infrastructuurelementen-ap:InfozuilShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:Infozuil.
 infrastructuurelementen-ap:InfrastructuurelementShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2326 cube:codeList <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
+_:n3-2277 cube:codeList <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
     shacl:class skos:Concept;
     shacl:description "Materiaal waar het object uit vervaardigd is.";
     shacl:name "materiaal";
     shacl:path infrastructuur:materiaal.
-infrastructuurelementen-ap:InfrastructuurelementShape shacl:property _:n3-2326;
+infrastructuurelementen-ap:InfrastructuurelementShape shacl:property _:n3-2277;
     shacl:targetClass infrastructuur:Infrastructuurelement.
 infrastructuurelementen-ap:KeldergatShape a shacl:NodeShape;
     shacl:closed false;
@@ -469,13 +469,13 @@ infrastructuurelementen-ap:LongitudinaleWeginrichtingShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:LongitudinaleWeginrichting.
 infrastructuurelementen-ap:MastShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2327 shacl:datatype xsd:integer;
+_:n3-2278 shacl:datatype xsd:integer;
     shacl:description "Het aantal bevestigingspunten waarmee de mast verankerd is aan het aardoppervlak.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "aantalAnkerpunten";
     shacl:path infrastructuur:aantalAnkerpunten.
-infrastructuurelementen-ap:MastShape shacl:property _:n3-2327;
+infrastructuurelementen-ap:MastShape shacl:property _:n3-2278;
     shacl:targetClass infrastructuur:Mast.
 infrastructuurelementen-ap:MaterialenShape a shacl:NodeShape;
     shacl:closed false;
@@ -500,14 +500,14 @@ infrastructuurelementen-ap:NormandischeAfsluitingShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:NormandischeAfsluiting.
 infrastructuurelementen-ap:NutskastShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2328 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
+_:n3-2279 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
     shacl:class skos:Concept;
     shacl:description "Aanduiding van de soort nutsvoorziening.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nutsvoorzieningscode";
     shacl:path infrastructuur:nutsvoorzieningscode.
-infrastructuurelementen-ap:NutskastShape shacl:property _:n3-2328;
+infrastructuurelementen-ap:NutskastShape shacl:property _:n3-2279;
     shacl:targetClass infrastructuur:Nutskast.
 infrastructuurelementen-ap:NutspaalShape a shacl:NodeShape;
     shacl:closed false;
@@ -520,13 +520,13 @@ infrastructuurelementen-ap:OmklapbareWegmonolietShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:OmklapbareWegmonoliet.
 infrastructuurelementen-ap:OpenbaarToiletShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2329 shacl:datatype xsd:boolean;
+_:n3-2280 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan dat het element ondergronds opgeborgen kan worden.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "verzinkbaar";
     shacl:path infrastructuur:verzinkbaar.
-infrastructuurelementen-ap:OpenbaarToiletShape shacl:property _:n3-2329;
+infrastructuurelementen-ap:OpenbaarToiletShape shacl:property _:n3-2280;
     shacl:targetClass infrastructuur:OpenbaarToilet.
 infrastructuurelementen-ap:OpenbareBrievenbusShape a shacl:NodeShape;
     shacl:closed false;
@@ -542,27 +542,27 @@ infrastructuurelementen-ap:OpenbareVuilnisbakShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:OpenbareVuilnisbak.
 infrastructuurelementen-ap:OplaadpuntShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2330 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Vervoersmiddelen>;
+_:n3-2281 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Vervoersmiddelen>;
     shacl:class skos:Concept;
     shacl:description "Duidt het vervoersmiddel aan waarvoor het oplaadpunt geschikt is: auto, fiets,...";
     shacl:minCount 1;
     shacl:name "geschiktVoor";
     shacl:path infrastructuur:geschiktVoor.
-infrastructuurelementen-ap:OplaadpuntShape shacl:property _:n3-2330.
-_:n3-2331 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Oplaadwijzes>;
+infrastructuurelementen-ap:OplaadpuntShape shacl:property _:n3-2281.
+_:n3-2282 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Oplaadwijzes>;
     shacl:class skos:Concept;
     shacl:description "De oplaadwijze volgens de IEC norm 62196.";
     shacl:minCount 1;
     shacl:name "oplaadwijze";
     shacl:path infrastructuur:oplaadwijze.
-infrastructuurelementen-ap:OplaadpuntShape shacl:property _:n3-2331.
-_:n3-2332 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/OplaadpuntStekkertypes>;
+infrastructuurelementen-ap:OplaadpuntShape shacl:property _:n3-2282.
+_:n3-2283 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/OplaadpuntStekkertypes>;
     shacl:class skos:Concept;
     shacl:description "Het stekkertype volgens de IEC norm 62196.";
     shacl:minCount 1;
     shacl:name "stekkertype";
     shacl:path infrastructuur:stekkertype.
-infrastructuurelementen-ap:OplaadpuntShape shacl:property _:n3-2332;
+infrastructuurelementen-ap:OplaadpuntShape shacl:property _:n3-2283;
     shacl:targetClass infrastructuur:Oplaadpunt.
 infrastructuurelementen-ap:OplaadpuntStekkertypesShape a shacl:NodeShape;
     shacl:closed false;
@@ -596,12 +596,12 @@ infrastructuurelementen-ap:PutdekselShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:Putdeksel.
 infrastructuurelementen-ap:RecyclagecontainerShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2333 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Sorteerfracties>;
+_:n3-2284 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Sorteerfracties>;
     shacl:class skos:Concept;
     shacl:description "Duidt het materiaal aan om te sorteren.";
     shacl:name "sorteerfractie";
     shacl:path infrastructuur:sorteerfractie.
-infrastructuurelementen-ap:RecyclagecontainerShape shacl:property _:n3-2333;
+infrastructuurelementen-ap:RecyclagecontainerShape shacl:property _:n3-2284;
     shacl:targetClass infrastructuur:Recyclagecontainer.
 infrastructuurelementen-ap:ReddingsbandShape a shacl:NodeShape;
     shacl:closed false;
@@ -632,12 +632,12 @@ infrastructuurelementen-ap:SensoropstellingShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:Sensoropstelling.
 infrastructuurelementen-ap:SignalisatieEnLeidingenportiekShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2334 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
+_:n3-2285 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
     shacl:class skos:Concept;
     shacl:description "Aanduiding van de soort nutsvoorziening.";
     shacl:name "nutsvoorzieningscode";
     shacl:path infrastructuur:nutsvoorzieningscode.
-infrastructuurelementen-ap:SignalisatieEnLeidingenportiekShape shacl:property _:n3-2334;
+infrastructuurelementen-ap:SignalisatieEnLeidingenportiekShape shacl:property _:n3-2285;
     shacl:targetClass infrastructuur:SignalisatieEnLeidingenportiek.
 infrastructuurelementen-ap:SignalisatieScheepvaartElektrischShape a shacl:NodeShape;
     shacl:closed false;
@@ -650,13 +650,13 @@ infrastructuurelementen-ap:SignalisatieScheepvaartShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:SignalisatieScheepvaart.
 infrastructuurelementen-ap:SignalisatieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2335 shacl:datatype xsd:boolean;
+_:n3-2286 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het element al dan niet inwendig verlicht is.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "inwendigVerlicht";
     shacl:path infrastructuur:inwendigVerlicht.
-infrastructuurelementen-ap:SignalisatieShape shacl:property _:n3-2335;
+infrastructuurelementen-ap:SignalisatieShape shacl:property _:n3-2286;
     shacl:targetClass infrastructuur:Signalisatie.
 infrastructuurelementen-ap:SiloShape a shacl:NodeShape;
     shacl:closed false;
@@ -672,13 +672,13 @@ infrastructuurelementen-ap:SpandraadKettingShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:SpandraadKetting.
 infrastructuurelementen-ap:SpeelEnSportvoorzieningShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2336 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/SpeelEnSportvoorzieningType>;
+_:n3-2287 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/SpeelEnSportvoorzieningType>;
     shacl:class skos:Concept;
     shacl:description "Het type speeltoestel.";
     shacl:maxCount 1;
     shacl:name "speeltoesteltype";
     shacl:path infrastructuur:speeltoesteltype.
-infrastructuurelementen-ap:SpeelEnSportvoorzieningShape shacl:property _:n3-2336;
+infrastructuurelementen-ap:SpeelEnSportvoorzieningShape shacl:property _:n3-2287;
     shacl:targetClass infrastructuur:SpeelEnSportvoorziening.
 infrastructuurelementen-ap:SpeelEnSportvoorzieningTypeShape a shacl:NodeShape;
     shacl:closed false;
@@ -703,26 +703,26 @@ infrastructuurelementen-ap:StraatkapShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:Straatkap.
 infrastructuurelementen-ap:StraatkolkShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2337 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Straatkolktypes>;
+_:n3-2288 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Straatkolktypes>;
     shacl:class skos:Concept;
     shacl:description "Het type straatkolk.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "straatkolktype";
     shacl:path infrastructuur:straatkolktype.
-infrastructuurelementen-ap:StraatkolkShape shacl:property _:n3-2337;
+infrastructuurelementen-ap:StraatkolkShape shacl:property _:n3-2288;
     shacl:targetClass infrastructuur:Straatkolk.
 infrastructuurelementen-ap:StraatkolktypesShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 infrastructuurelementen-ap:StraatmeubilairShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2338 shacl:datatype xsd:boolean;
+_:n3-2289 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het element al dan niet verplaatsbaar is en dus niet permanent verankerd werd met het aardoppervlak.";
     shacl:maxCount 1;
     shacl:name "verplaatsbaar";
     shacl:path infrastructuur:verplaatsbaar.
-infrastructuurelementen-ap:StraatmeubilairShape shacl:property _:n3-2338;
+infrastructuurelementen-ap:StraatmeubilairShape shacl:property _:n3-2289;
     shacl:targetClass infrastructuur:Straatmeubilair.
 infrastructuurelementen-ap:StraatspiegelShape a shacl:NodeShape;
     shacl:closed false;
@@ -786,13 +786,13 @@ infrastructuurelementen-ap:VlakvormigeWegmarkeringShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:VlakvormigeWegmarkering.
 infrastructuurelementen-ap:WaterpuntShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2339 shacl:datatype xsd:boolean;
+_:n3-2290 shacl:datatype xsd:boolean;
     shacl:description "Geschikt voor menselijke consumptie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "drinkbaar";
     shacl:path infrastructuur:drinkbaar.
-infrastructuurelementen-ap:WaterpuntShape shacl:property _:n3-2339;
+infrastructuurelementen-ap:WaterpuntShape shacl:property _:n3-2290;
     shacl:targetClass infrastructuur:Waterpunt.
 infrastructuurelementen-ap:WeginrichtingselementShape a shacl:NodeShape;
     shacl:closed false;

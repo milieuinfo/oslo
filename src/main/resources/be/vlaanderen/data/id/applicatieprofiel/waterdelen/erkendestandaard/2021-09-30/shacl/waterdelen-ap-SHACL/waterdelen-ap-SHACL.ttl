@@ -246,53 +246,53 @@ waterdelen-ap:BeekShape a shacl:NodeShape;
     shacl:targetClass waterdeel:Beek.
 waterdelen-ap:DeelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2398 shacl:class schemas:QuantitativeValue;
+_:n3-2349 shacl:class schemas:QuantitativeValue;
     shacl:description "De afmeting van het object.";
     shacl:maxCount 1;
     shacl:name "oppervlakte";
     shacl:path openbaardomein:oppervlakte.
-waterdelen-ap:DeelShape shacl:property _:n3-2398;
+waterdelen-ap:DeelShape shacl:property _:n3-2349;
     shacl:targetClass openbaardomein:Deel.
 waterdelen-ap:FysiekObjectShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2399 shacl:datatype xsd:dateTime;
+_:n3-2350 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
     shacl:path openbaardomein:begindatum.
-waterdelen-ap:FysiekObjectShape shacl:property _:n3-2399.
-_:n3-2400 shacl:datatype xsd:dateTime;
+waterdelen-ap:FysiekObjectShape shacl:property _:n3-2350.
+_:n3-2351 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path openbaardomein:einddatum.
-waterdelen-ap:FysiekObjectShape shacl:property _:n3-2400.
-_:n3-2401 shacl:class geosparql:Geometry;
+waterdelen-ap:FysiekObjectShape shacl:property _:n3-2351.
+_:n3-2352 shacl:class geosparql:Geometry;
     shacl:description "De geometrie overeenkomstig met een bepaald object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-waterdelen-ap:FysiekObjectShape shacl:property _:n3-2401.
-_:n3-2402 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
+waterdelen-ap:FysiekObjectShape shacl:property _:n3-2352.
+_:n3-2353 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
     shacl:class skos:Concept;
     shacl:description "De precisie waarmee het object opgemeten werd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nauwkeurigheid";
     shacl:path openbaardomein:nauwkeurigheid.
-waterdelen-ap:FysiekObjectShape shacl:property _:n3-2402.
-_:n3-2403 shacl:datatype xsd:integer;
+waterdelen-ap:FysiekObjectShape shacl:property _:n3-2353.
+_:n3-2354 shacl:datatype xsd:integer;
     shacl:description "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten.";
     shacl:maxCount 1;
     shacl:name "niveau";
     shacl:path openbaardomein:niveau.
-waterdelen-ap:FysiekObjectShape shacl:property _:n3-2403.
-_:n3-2404 shacl:class rdfs:Resource;
+waterdelen-ap:FysiekObjectShape shacl:property _:n3-2354.
+_:n3-2355 shacl:class rdfs:Resource;
     shacl:description "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject.";
     shacl:name "relatie";
     shacl:path dcterms:relation.
-waterdelen-ap:FysiekObjectShape shacl:property _:n3-2404;
+waterdelen-ap:FysiekObjectShape shacl:property _:n3-2355;
     shacl:targetClass openbaardomein:FysiekObject.
 waterdelen-ap:GrachtShape a shacl:NodeShape;
     shacl:closed false;
@@ -308,25 +308,25 @@ waterdelen-ap:KunstmatigeWaterloopShape a shacl:NodeShape;
     shacl:targetClass waterdeel:KunstmatigeWaterloop.
 waterdelen-ap:KwantitatieveWaardeShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2405 shacl:datatype xsd:string;
+_:n3-2356 shacl:datatype xsd:string;
     shacl:description "De eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "eenheid";
     shacl:path schemas:unitText.
-waterdelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2405.
-_:n3-2406 shacl:class generiek:StandaardEenheid;
+waterdelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2356.
+_:n3-2357 shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "standaardEenheid";
     shacl:path schemas:unitCode.
-waterdelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2406.
-_:n3-2407 shacl:class schemas:Number;
+waterdelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2357.
+_:n3-2358 shacl:class schemas:Number;
     shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-waterdelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2407;
+waterdelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2358;
     shacl:targetClass schemas:QuantitativeValue.
 waterdelen-ap:MeerShape a shacl:NodeShape;
     shacl:closed false;
@@ -360,45 +360,45 @@ waterdelen-ap:WaterVoorkomenShape a shacl:NodeShape;
     shacl:targetClass watervoorkomen:WaterVoorkomen.
 waterdelen-ap:WaterdeelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2408 shacl:class watervoorkomen:WaterVoorkomen;
+_:n3-2359 shacl:class watervoorkomen:WaterVoorkomen;
     shacl:description "Verwijst naar het voorkomen van het Waterdeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkomen";
     shacl:path waterdeel:voorkomen.
-waterdelen-ap:WaterdeelShape shacl:property _:n3-2408;
+waterdelen-ap:WaterdeelShape shacl:property _:n3-2359;
     shacl:targetClass waterdeel:Waterdeel.
 waterdelen-ap:WaterloopShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2409 shacl:class schemas:QuantitativeValue;
+_:n3-2360 shacl:class schemas:QuantitativeValue;
     shacl:description "De breedte van het object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "breedte";
     shacl:path schema:width.
-waterdelen-ap:WaterloopShape shacl:property _:n3-2409.
-_:n3-2410 shacl:class schemas:QuantitativeValue;
+waterdelen-ap:WaterloopShape shacl:property _:n3-2360.
+_:n3-2361 shacl:class schemas:QuantitativeValue;
     shacl:description "De lineare grootte van het object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "lengte";
     shacl:path <http://open.vocab.org/terms/length>.
-waterdelen-ap:WaterloopShape shacl:property _:n3-2410.
-_:n3-2411 shacl:datatype xsd:string;
+waterdelen-ap:WaterloopShape shacl:property _:n3-2361.
+_:n3-2362 shacl:datatype xsd:string;
     shacl:description "Naam die de (VHA-) waterloop draagt bij zijn monding, zgn. (VHA-) roepnaam van de waterloop. Kan ook de waarden nvt (niet van toepassing) of ng (niet gekend) aannemen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-waterdelen-ap:WaterloopShape shacl:property _:n3-2411;
+waterdelen-ap:WaterloopShape shacl:property _:n3-2362;
     shacl:targetClass waterdeel:Waterloop.
 waterdelen-ap:WatervlakShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2412 shacl:datatype xsd:string;
+_:n3-2363 shacl:datatype xsd:string;
     shacl:description "De naam van het watervlak.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-waterdelen-ap:WatervlakShape shacl:property _:n3-2412;
+waterdelen-ap:WatervlakShape shacl:property _:n3-2363;
     shacl:targetClass waterdeel:Watervlak.

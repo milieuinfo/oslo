@@ -246,117 +246,117 @@ openbaar-domein-ap:AantalObstakelsShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 openbaar-domein-ap:BegroeidVoorkomenShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1981 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/DrassigheidWaarde>;
+_:n3-1932 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/DrassigheidWaarde>;
     shacl:class skos:Concept;
     shacl:description "Mate waarin de bodem verzadigd is met water.";
     shacl:maxCount 1;
     shacl:name "drassigheid";
     shacl:path begroeidvoorkomen:drassigheid.
-openbaar-domein-ap:BegroeidVoorkomenShape shacl:property _:n3-1981.
-_:n3-1982 cube:codeList <https://www.gbif.org/species/6>;
+openbaar-domein-ap:BegroeidVoorkomenShape shacl:property _:n3-1932.
+_:n3-1933 cube:codeList <https://www.gbif.org/species/6>;
     shacl:class skos:Concept;
     shacl:description "Een unieke identificator voor de soort van het vegetatie-element. ";
     shacl:name "soortcode";
     shacl:path begroeidvoorkomen:soortcode.
-openbaar-domein-ap:BegroeidVoorkomenShape shacl:property _:n3-1982.
-_:n3-1983 shacl:datatype rdf:langString;
+openbaar-domein-ap:BegroeidVoorkomenShape shacl:property _:n3-1933.
+_:n3-1934 shacl:datatype rdf:langString;
     shacl:description "Soortnaam in het Nederlands.";
     shacl:name "soortnaamNederlands";
     shacl:path begroeidvoorkomen:soortnaamNederlands.
-openbaar-domein-ap:BegroeidVoorkomenShape shacl:property _:n3-1983.
-_:n3-1984 shacl:class skos:Concept;
+openbaar-domein-ap:BegroeidVoorkomenShape shacl:property _:n3-1934.
+_:n3-1935 shacl:class skos:Concept;
     shacl:description "De wetenschappelijke soortnaam.";
     shacl:name "soortnaamWetenschappelijk";
     shacl:path <http://rs.tdwg.org/dwc/terms/scientificName>.
-openbaar-domein-ap:BegroeidVoorkomenShape shacl:property _:n3-1984;
+openbaar-domein-ap:BegroeidVoorkomenShape shacl:property _:n3-1935;
     shacl:targetClass begroeidvoorkomen:BegroeidVoorkomen.
 openbaar-domein-ap:CollectieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1985 shacl:class openbaardomein:FysiekObject;
+_:n3-1936 shacl:class openbaardomein:FysiekObject;
     shacl:description "Relatie naar de objecten die deel uitmaken van de collectie.";
     shacl:name "bevat";
     shacl:path openbaardomein:bevat.
-openbaar-domein-ap:CollectieShape shacl:property _:n3-1985.
-_:n3-1986 shacl:datatype xsd:string;
+openbaar-domein-ap:CollectieShape shacl:property _:n3-1936.
+_:n3-1937 shacl:datatype xsd:string;
     shacl:description "Een titel voor de collectie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "titel";
     shacl:path dcterms:title.
-openbaar-domein-ap:CollectieShape shacl:property _:n3-1986;
+openbaar-domein-ap:CollectieShape shacl:property _:n3-1937;
     shacl:targetClass openbaardomein:Collectie.
 openbaar-domein-ap:ContactinfoShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1987 shacl:datatype rdf:langString;
+_:n3-1938 shacl:datatype rdf:langString;
     shacl:description "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen.";
     shacl:maxCount 1;
     shacl:name "aanschrijfvorm";
     shacl:path vcard:honorific-prefix.
-openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1987.
-_:n3-1988 shacl:class locn:Address;
+openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1938.
+_:n3-1939 shacl:class locn:Address;
     shacl:description "Adres dat men kan aanschrijven of bezoeken.";
     shacl:maxCount 1;
     shacl:name "adres";
     shacl:path locn:address.
-openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1988.
-_:n3-1989 shacl:class schemas:OpeningHoursSpecification;
+openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1939.
+_:n3-1940 shacl:class schemas:OpeningHoursSpecification;
     shacl:description "Periode waarin contact kan worden opgenomen.";
     shacl:maxCount 1;
     shacl:name "beschikbaarheid";
     shacl:path schema:hoursAvailable.
-openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1989.
-_:n3-1990 shacl:datatype xsd:string;
+openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1940.
+_:n3-1941 shacl:datatype xsd:string;
     shacl:description "Naam van bvb de persoon die men kan contacteren.";
     shacl:maxCount 1;
     shacl:name "contactnaam";
     shacl:path foaf:name.
-openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1990.
-_:n3-1991 shacl:datatype xsd:string;
+openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1941.
+_:n3-1942 shacl:datatype xsd:string;
     shacl:description "Email-adres waarnaar men kan mailen.";
     shacl:maxCount 1;
     shacl:name "email";
     shacl:path schema:email.
-openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1991.
-_:n3-1992 shacl:datatype xsd:string;
+openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1942.
+_:n3-1943 shacl:datatype xsd:string;
     shacl:description "Faxnummer waarnaar men kan faxen.";
     shacl:maxCount 1;
     shacl:name "fax";
     shacl:path schema:faxNumber.
-openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1992.
-_:n3-1993 shacl:datatype rdfs:Literal;
+openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1943.
+_:n3-1944 shacl:datatype rdfs:Literal;
     shacl:description "Uren waarbinnen contact kan worden opgenomen.";
     shacl:maxCount 1;
     shacl:name "openingsuren";
     shacl:path schema:openingHours.
-openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1993.
-_:n3-1994 shacl:datatype xsd:string;
+openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1944.
+_:n3-1945 shacl:datatype xsd:string;
     shacl:description "Telefoonnummer waarop men kan bellen.";
     shacl:maxCount 1;
     shacl:name "telefoon";
     shacl:path schema:telephone.
-openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1994.
-_:n3-1995 shacl:datatype xsd:anyURI;
+openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1945.
+_:n3-1946 shacl:datatype xsd:anyURI;
     shacl:description "Website waarnaar men kan surfen.";
     shacl:maxCount 1;
     shacl:name "website";
     shacl:path foaf:page.
-openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1995;
+openbaar-domein-ap:ContactinfoShape shacl:property _:n3-1946;
     shacl:targetClass schema:ContactPoint.
 openbaar-domein-ap:DeelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1996 shacl:class schemas:QuantitativeValue;
+_:n3-1947 shacl:class schemas:QuantitativeValue;
     shacl:description "De afmeting van het object.";
     shacl:maxCount 1;
     shacl:name "oppervlakte";
     shacl:path openbaardomein:oppervlakte.
-openbaar-domein-ap:DeelShape shacl:property _:n3-1996.
-_:n3-1997 shacl:class openbaardomein:FysiekVoorkomen;
+openbaar-domein-ap:DeelShape shacl:property _:n3-1947.
+_:n3-1948 shacl:class openbaardomein:FysiekVoorkomen;
     shacl:description "Verwijst naar het fysiek voorkomen van het beheerdeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkomen";
     shacl:path openbaardomein:voorkomen.
-openbaar-domein-ap:DeelShape shacl:property _:n3-1997;
+openbaar-domein-ap:DeelShape shacl:property _:n3-1948;
     shacl:targetClass openbaardomein:Deel.
 openbaar-domein-ap:DrassigheidWaardeShape a shacl:NodeShape;
     shacl:closed false;
@@ -366,56 +366,56 @@ openbaar-domein-ap:ElementShape a shacl:NodeShape;
     shacl:targetClass openbaardomein:Element.
 openbaar-domein-ap:FysiekObjectShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1998 shacl:datatype xsd:dateTime;
+_:n3-1949 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
     shacl:path openbaardomein:begindatum.
-openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-1998.
-_:n3-1999 shacl:class org:Organization;
+openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-1949.
+_:n3-1950 shacl:class org:Organization;
     shacl:description "Instantie die instaat voor het beheer van het object.";
     shacl:maxCount 1;
     shacl:name "beheerder";
     shacl:path fixme.com:beheerder.
-openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-1999.
-_:n3-2000 shacl:class org:Organization;
+openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-1950.
+_:n3-1951 shacl:class org:Organization;
     shacl:description "De entiteit (bv. de gemeente) die eigenaar is van het object.";
     shacl:maxCount 1;
     shacl:name "eigenaar";
     shacl:path fixme.com:eigenaar.
-openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-2000.
-_:n3-2001 shacl:datatype xsd:dateTime;
+openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-1951.
+_:n3-1952 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path openbaardomein:einddatum.
-openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-2001.
-_:n3-2002 shacl:class geosparql:Geometry;
+openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-1952.
+_:n3-1953 shacl:class geosparql:Geometry;
     shacl:description "De geometrie overeenkomstig met een bepaald object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-2002.
-_:n3-2003 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
+openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-1953.
+_:n3-1954 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
     shacl:class skos:Concept;
     shacl:description "De precisie waarmee het object opgemeten werd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nauwkeurigheid";
     shacl:path openbaardomein:nauwkeurigheid.
-openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-2003.
-_:n3-2004 shacl:datatype xsd:integer;
+openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-1954.
+_:n3-1955 shacl:datatype xsd:integer;
     shacl:description "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten.";
     shacl:maxCount 1;
     shacl:name "niveau";
     shacl:path openbaardomein:niveau.
-openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-2004.
-_:n3-2005 shacl:class rdfs:Resource;
+openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-1955.
+_:n3-1956 shacl:class rdfs:Resource;
     shacl:description "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject.";
     shacl:name "relatie";
     shacl:path dcterms:relation.
-openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-2005;
+openbaar-domein-ap:FysiekObjectShape shacl:property _:n3-1956;
     shacl:targetClass openbaardomein:FysiekObject.
 openbaar-domein-ap:FysiekVoorkomenShape a shacl:NodeShape;
     shacl:closed false;
@@ -425,96 +425,96 @@ openbaar-domein-ap:GBIFcodeShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 openbaar-domein-ap:GebiedShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2006 shacl:datatype xsd:dateTime;
+_:n3-1957 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheergebied in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
     shacl:path gebied:begindatum.
-openbaar-domein-ap:GebiedShape shacl:property _:n3-2006.
-_:n3-2007 shacl:class org:Organization;
+openbaar-domein-ap:GebiedShape shacl:property _:n3-1957.
+_:n3-1958 shacl:class org:Organization;
     shacl:description "Instantie die instaat voor het beheer van het gebied.";
     shacl:maxCount 1;
     shacl:name "beheerder";
     shacl:path fixme.com:beheerder.
-openbaar-domein-ap:GebiedShape shacl:property _:n3-2007.
-_:n3-2008 shacl:class org:Organization;
+openbaar-domein-ap:GebiedShape shacl:property _:n3-1958.
+_:n3-1959 shacl:class org:Organization;
     shacl:description "De entiteit (bv. de gemeente) die eigenaar is van het gebied.";
     shacl:maxCount 1;
     shacl:name "eigenaar";
     shacl:path fixme.com:eigenaar.
-openbaar-domein-ap:GebiedShape shacl:property _:n3-2008.
-_:n3-2009 shacl:datatype xsd:dateTime;
+openbaar-domein-ap:GebiedShape shacl:property _:n3-1959.
+_:n3-1960 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheergebied uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path gebied:einddatum.
-openbaar-domein-ap:GebiedShape shacl:property _:n3-2009.
-_:n3-2010 shacl:class sf:Polygon;
+openbaar-domein-ap:GebiedShape shacl:property _:n3-1960.
+_:n3-1961 shacl:class sf:Polygon;
     shacl:description "De geometrie overeenkomstig met een bepaald gebied.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-openbaar-domein-ap:GebiedShape shacl:property _:n3-2010.
-_:n3-2011 shacl:datatype rdf:langString;
+openbaar-domein-ap:GebiedShape shacl:property _:n3-1961.
+_:n3-1962 shacl:datatype rdf:langString;
     shacl:description "Een naam voor het gebied.";
     shacl:name "naam";
     shacl:path dcterms:title.
-openbaar-domein-ap:GebiedShape shacl:property _:n3-2011;
+openbaar-domein-ap:GebiedShape shacl:property _:n3-1962;
     shacl:targetClass gebied:Gebied.
 openbaar-domein-ap:GeografischeNaamShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass rdf:langString.
 openbaar-domein-ap:GeometrieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2012 shacl:datatype rdfs:Literal;
+_:n3-1963 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in gml-formaat.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "gml";
     shacl:path geosparql:asGML.
-openbaar-domein-ap:GeometrieShape shacl:property _:n3-2012.
-_:n3-2013 shacl:datatype rdfs:Literal;
+openbaar-domein-ap:GeometrieShape shacl:property _:n3-1963.
+_:n3-1964 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in wkt-formaat.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "wkt";
     shacl:path geosparql:asWKT.
-openbaar-domein-ap:GeometrieShape shacl:property _:n3-2013;
+openbaar-domein-ap:GeometrieShape shacl:property _:n3-1964;
     shacl:targetClass geosparql:Geometry.
 openbaar-domein-ap:GetalShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass schemas:Number.
 openbaar-domein-ap:InfrastructuurelementShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2014 cube:codeList <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
+_:n3-1965 cube:codeList <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
     shacl:class skos:Concept;
     shacl:description "Materiaal waar het object uit vervaardigd is.";
     shacl:name "materiaal";
     shacl:path infrastructuur:materiaal.
-openbaar-domein-ap:InfrastructuurelementShape shacl:property _:n3-2014;
+openbaar-domein-ap:InfrastructuurelementShape shacl:property _:n3-1965;
     shacl:targetClass infrastructuur:Infrastructuurelement.
 openbaar-domein-ap:KwantitatieveWaardeShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2015 shacl:datatype xsd:string;
+_:n3-1966 shacl:datatype xsd:string;
     shacl:description "De eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "eenheid";
     shacl:path schemas:unitText.
-openbaar-domein-ap:KwantitatieveWaardeShape shacl:property _:n3-2015.
-_:n3-2016 shacl:class generiek:StandaardEenheid;
+openbaar-domein-ap:KwantitatieveWaardeShape shacl:property _:n3-1966.
+_:n3-1967 shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "standaardEenheid";
     shacl:path schemas:unitCode.
-openbaar-domein-ap:KwantitatieveWaardeShape shacl:property _:n3-2016.
-_:n3-2017 shacl:class schemas:Number;
+openbaar-domein-ap:KwantitatieveWaardeShape shacl:property _:n3-1967.
+_:n3-1968 shacl:class schemas:Number;
     shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-openbaar-domein-ap:KwantitatieveWaardeShape shacl:property _:n3-2017;
+openbaar-domein-ap:KwantitatieveWaardeShape shacl:property _:n3-1968;
     shacl:targetClass schemas:QuantitativeValue.
 openbaar-domein-ap:LijnstringShape a shacl:NodeShape;
     shacl:closed false;
@@ -527,25 +527,25 @@ openbaar-domein-ap:OnbegroeidVoorkomenShape a shacl:NodeShape;
     shacl:targetClass onbegroeidvoorkomen:OnbegroeidVoorkomen.
 openbaar-domein-ap:OrganisatieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2018 shacl:datatype xsd:string;
+_:n3-1969 shacl:datatype xsd:string;
     shacl:description "Andere naam waaronder de organisatie bekend is.";
     shacl:maxCount 1;
     shacl:name "alternatieveNaam";
     shacl:path skos:altLabel.
-openbaar-domein-ap:OrganisatieShape shacl:property _:n3-2018.
-_:n3-2019 shacl:class schema:ContactPoint;
+openbaar-domein-ap:OrganisatieShape shacl:property _:n3-1969.
+_:n3-1970 shacl:class schema:ContactPoint;
     shacl:description "Informatie zoals email, telefoon ... die toelaat de Organisatie te contacteren.";
     shacl:maxCount 1;
     shacl:name "contactinfo";
     shacl:path schema:contactPoint.
-openbaar-domein-ap:OrganisatieShape shacl:property _:n3-2019.
-_:n3-2020 shacl:datatype xsd:string;
+openbaar-domein-ap:OrganisatieShape shacl:property _:n3-1970.
+_:n3-1971 shacl:datatype xsd:string;
     shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkeursnaam";
     shacl:path skos:prefLabel.
-openbaar-domein-ap:OrganisatieShape shacl:property _:n3-2020;
+openbaar-domein-ap:OrganisatieShape shacl:property _:n3-1971;
     shacl:targetClass org:Organization.
 openbaar-domein-ap:PolygoonShape a shacl:NodeShape;
     shacl:closed false;
@@ -555,20 +555,20 @@ openbaar-domein-ap:PuntShape a shacl:NodeShape;
     shacl:targetClass sf:Point.
 openbaar-domein-ap:RelatieObjectShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2021 shacl:datatype xsd:string;
+_:n3-1972 shacl:datatype xsd:string;
     shacl:description "De naam van de bron.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "bronnaam";
     shacl:path openbaardomein:bronnaam.
-openbaar-domein-ap:RelatieObjectShape shacl:property _:n3-2021.
-_:n3-2022 shacl:datatype xsd:string;
+openbaar-domein-ap:RelatieObjectShape shacl:property _:n3-1972.
+_:n3-1973 shacl:datatype xsd:string;
     shacl:description "Een globaal unieke identificator voor het object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "uuid";
     shacl:path openbaardomein:uuid.
-openbaar-domein-ap:RelatieObjectShape shacl:property _:n3-2022;
+openbaar-domein-ap:RelatieObjectShape shacl:property _:n3-1973;
     shacl:targetClass rdfs:Resource.
 openbaar-domein-ap:StandaardEenheidShape a shacl:NodeShape;
     shacl:closed false;
@@ -578,84 +578,84 @@ openbaar-domein-ap:TaludWaardeShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 openbaar-domein-ap:TerreinVoorkomenShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2023 shacl:class skos:Concept;
+_:n3-1974 shacl:class skos:Concept;
     shacl:description "Eigenschap die aangeeft of er binnen het beheerdeel al dan niet objecten voorkomen die de vrije werking van machines of andere werktuigen kan verhinderen.";
     shacl:maxCount 1;
     shacl:name "obstakels";
     shacl:path terreindeel:obstakels.
-openbaar-domein-ap:TerreinVoorkomenShape shacl:property _:n3-2023.
-_:n3-2024 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/TaludWaarde>;
+openbaar-domein-ap:TerreinVoorkomenShape shacl:property _:n3-1974.
+_:n3-1975 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/TaludWaarde>;
     shacl:class skos:Concept;
     shacl:description "Een talud is het kunstmatig gedeelte van een vlak van de wegbaan, dijken, spoorbanen, vestingswerken, ... dat een helling (min. 20%, max 80% voor kunstmatig verharde taluds) vertoont en bedoeld voor het opvangen van een hoogteverschil.";
     shacl:maxCount 1;
     shacl:name "talud";
     shacl:path terreindeel:talud.
-openbaar-domein-ap:TerreinVoorkomenShape shacl:property _:n3-2024;
+openbaar-domein-ap:TerreinVoorkomenShape shacl:property _:n3-1975;
     shacl:targetClass terreindeel:TerreinVoorkomen.
 openbaar-domein-ap:TerreindeelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2025 shacl:class schemas:QuantitativeValue;
+_:n3-1976 shacl:class schemas:QuantitativeValue;
     shacl:description "De breedte van het object. In geval van een ongelijkmatige breedte wordt de gemiddelde breedte opgenomen.";
     shacl:maxCount 1;
     shacl:name "breedte";
     shacl:path schema:width.
-openbaar-domein-ap:TerreindeelShape shacl:property _:n3-2025.
-_:n3-2026 shacl:class openbaardomein:Element;
+openbaar-domein-ap:TerreindeelShape shacl:property _:n3-1976.
+_:n3-1977 shacl:class openbaardomein:Element;
     shacl:description "Het specifieke Element dat een obstakel vormt.";
     shacl:name "heeftObstakel";
     shacl:path terreindeel:heeftObstakel.
-openbaar-domein-ap:TerreindeelShape shacl:property _:n3-2026.
-_:n3-2027 shacl:class schemas:QuantitativeValue;
+openbaar-domein-ap:TerreindeelShape shacl:property _:n3-1977.
+_:n3-1978 shacl:class schemas:QuantitativeValue;
     shacl:description "De lineare grootte van het object.";
     shacl:maxCount 1;
     shacl:name "lengte";
     shacl:path <http://open.vocab.org/terms/length>.
-openbaar-domein-ap:TerreindeelShape shacl:property _:n3-2027.
-_:n3-2028 shacl:class terreindeel:TerreinVoorkomen;
+openbaar-domein-ap:TerreindeelShape shacl:property _:n3-1978.
+_:n3-1979 shacl:class terreindeel:TerreinVoorkomen;
     shacl:description "Het voorkomen van het terreindeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkomen";
     shacl:path terreindeel:voorkomen.
-openbaar-domein-ap:TerreindeelShape shacl:property _:n3-2028;
+openbaar-domein-ap:TerreindeelShape shacl:property _:n3-1979;
     shacl:targetClass terreindeel:Terreindeel.
 openbaar-domein-ap:VegetatieElementShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2029 shacl:class schemas:QuantitativeValue;
+_:n3-1980 shacl:class schemas:QuantitativeValue;
     shacl:description "De hoogte van het object zelf.";
     shacl:maxCount 1;
     shacl:name "hoogte";
     shacl:path schema:height.
-openbaar-domein-ap:VegetatieElementShape shacl:property _:n3-2029.
-_:n3-2030 cube:codeList <https://www.gbif.org/species/6>;
+openbaar-domein-ap:VegetatieElementShape shacl:property _:n3-1980.
+_:n3-1981 cube:codeList <https://www.gbif.org/species/6>;
     shacl:class skos:Concept;
     shacl:description "Een unieke identificator voor de soort van het vegetatie-element. ";
     shacl:minCount 1;
     shacl:name "soortcode";
     shacl:path vegetatie:soortcode.
-openbaar-domein-ap:VegetatieElementShape shacl:property _:n3-2030.
-_:n3-2031 shacl:datatype rdf:langString;
+openbaar-domein-ap:VegetatieElementShape shacl:property _:n3-1981.
+_:n3-1982 shacl:datatype rdf:langString;
     shacl:description "Soortnaam in het Nederlands.";
     shacl:name "soortnaamNederlands";
     shacl:path vegetatie:soortnaamNederlands.
-openbaar-domein-ap:VegetatieElementShape shacl:property _:n3-2031.
-_:n3-2032 shacl:class skos:Concept;
+openbaar-domein-ap:VegetatieElementShape shacl:property _:n3-1982.
+_:n3-1983 shacl:class skos:Concept;
     shacl:description "De wetenschappelijke soortnaam van het vegetatie-element.";
     shacl:minCount 1;
     shacl:name "soortnaamWetenschappelijk";
     shacl:path <http://rs.tdwg.org/dwc/terms/scientificName>.
-openbaar-domein-ap:VegetatieElementShape shacl:property _:n3-2032;
+openbaar-domein-ap:VegetatieElementShape shacl:property _:n3-1983;
     shacl:targetClass vegetatie:VegetatieElement.
 openbaar-domein-ap:WaterVoorkomenShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass watervoorkomen:WaterVoorkomen.
 openbaar-domein-ap:WaterdeelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2033 shacl:class watervoorkomen:WaterVoorkomen;
+_:n3-1984 shacl:class watervoorkomen:WaterVoorkomen;
     shacl:description "Verwijst naar het voorkomen van het Waterdeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkomen";
     shacl:path waterdeel:voorkomen.
-openbaar-domein-ap:WaterdeelShape shacl:property _:n3-2033;
+openbaar-domein-ap:WaterdeelShape shacl:property _:n3-1984;
     shacl:targetClass waterdeel:Waterdeel.

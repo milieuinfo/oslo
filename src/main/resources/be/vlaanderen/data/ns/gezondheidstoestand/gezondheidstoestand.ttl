@@ -1,0 +1,981 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
+@prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+skos:Concept a rdfs:Class;
+    rdfs:label "DosisFormaat"@nl.
+observation-definitions.html:Observation a rdfs:Class;
+    rdfs:label "Medische Observatie"@nl.
+medication-definitions.html:Medication a rdfs:Class;
+    rdfs:label "Medicatie"@nl.
+practitioner-definitions.html:Practitioner a rdfs:Class;
+    rdfs:label "Zorgverlener"@nl.
+diagnosticreport-definitions:DiagnosticReport a rdfs:Class;
+    rdfs:label "Medisch Verslag"@nl.
+nutritionintake-definitions.html:NutritionIntake a rdfs:Class;
+    rdfs:label "Voedingsinname"@nl.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Apgarscore.score> a owl:ObjectProperty;
+    rdfs:label "score"@nl;
+    rdfs:comment "Een score van 0 tot 10 waarbij 5 aspecten van de pasgeborene worden beoordeeld (hartslag, ademhaling, spiertonus, reflexen en huidskleur)."@nl;
+    rdfs:domain gezondheidstoestand:Apgarscore;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range schemas:QuantitativeValue.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Arts.steltOp> a owl:ObjectProperty;
+    rdfs:label "stelt op"@nl;
+    rdfs:comment "De Arts stelt een Medisch Verslag op."@nl;
+    rdfs:domain gezondheidstoestand:Arts;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range diagnosticreport-definitions:DiagnosticReport.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#AssistentieBevalling.heeftAssistentie> a owl:ObjectProperty;
+    rdfs:label "heeft assistentie"@nl;
+    rdfs:comment "Tijdens de Bevalling is er ondersteuning van externe zorgverleners."@nl;
+    rdfs:domain gezondheidstoestand:AssistentieBevalling;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Bevallingstoestand.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#AssistentieBevalling.heeftBevallingstoestand> a owl:ObjectProperty;
+    rdfs:label "heeft bevallingstoestand"@nl;
+    rdfs:comment "De Bevallingstoestand die bij de specifieke AssistentieBevalling hoort."@nl;
+    rdfs:domain gezondheidstoestand:Bevallingstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:AssistentieBevalling.
+gezondheidstoestand:Batch a owl:Class;
+    rdfs:label "Batch"@nl;
+    rdfs:comment "Specifieke informatie over verpakte producten. Het omvat gegevens zoals het batchnummer, de productiedatum, de vervaldatum en andere relevante details die betrekking hebben op een specifieke partij producten die tegelijkertijd geproduceerd en verpakt zijn."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling.heeftAssistentie> a owl:ObjectProperty;
+    rdfs:label "heeft assistentie"@nl;
+    rdfs:comment "De Assistentie die bij de Bevalling van een Persoon hoort."@nl;
+    rdfs:domain gezondheidstoestand:Bevalling;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:AssistentieBevalling.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling.heeftBevalling> a owl:ObjectProperty;
+    rdfs:label "heeft bevalling"@nl;
+    rdfs:comment "Verwijst naar de bevallingsgegevens van de Persoon."@nl;
+    rdfs:domain person:Person;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Bevalling.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling.heeftBevallingstoestand> a owl:ObjectProperty;
+    rdfs:label "heeft bevallingstoestand"@nl;
+    rdfs:comment "De Bevallingstoestand die bij de Bevalling hoort van een Persoon."@nl;
+    rdfs:domain gezondheidstoestand:Bevalling;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Bevallingstoestand.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevalling.volgtOp> a owl:ObjectProperty;
+    rdfs:label "volgt op"@nl;
+    rdfs:comment "De Bevalling volgt op een Zwangerschap."@nl;
+    rdfs:domain gezondheidstoestand:Zwangerschap;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Bevalling.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.foetaleBewaking> a owl:ObjectProperty;
+    rdfs:label "foetale bewaking"@nl;
+    rdfs:comment "Het proces van het monitoren van de gezondheid en het welzijn van een foetus tijdens de Zwangerschap, Bevalling en direct na de Geboorte."@nl;
+    rdfs:domain gezondheidstoestand:Bevallingstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.gewichtPersoonBevalling> a owl:ObjectProperty;
+    rdfs:label "gewicht persoon bevalling"@nl;
+    rdfs:comment "Het gewicht van de Persoon na de Bevalling."@nl;
+    rdfs:domain gezondheidstoestand:Bevallingstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range schemas:QuantitativeValue.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.gewichtPersoonVoorBevalling> a owl:ObjectProperty;
+    rdfs:label "gewicht persoon voor bevalling"@nl;
+    rdfs:comment "Het gewicht van de Persoon voor de Bevalling."@nl;
+    rdfs:domain gezondheidstoestand:Bevallingstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range schemas:QuantitativeValue.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.indicatieAssistentie> a owl:ObjectProperty;
+    rdfs:label "indicatie assistentie"@nl;
+    rdfs:comment "De medische reden of een situatie waarin een assistentie wordt aanbevolen of noodzakelijk geacht voor de Geboorte van een baby."@nl;
+    rdfs:domain gezondheidstoestand:Bevallingstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.intrapartale> a owl:ObjectProperty;
+    rdfs:label "intrapartale"@nl;
+    rdfs:comment "De periode tijdens de Bevalling, vanaf het begin van de actieve arbeid tot aan de Geboorte van de baby en de nageboorte."@nl;
+    rdfs:domain gezondheidstoestand:Bevallingstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range eu:PeriodOfTime.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.liggingKindBevalling> a owl:ObjectProperty;
+    rdfs:label "ligging kind bevalling"@nl;
+    vann:usageNote "Er zijn verschillende liggingen mogelijk zoals hoofdligging, stuitligging, dwarskgging en achterhoofdsligging."@nl;
+    rdfs:comment "Positie van de baby in de baarmoeder in relatie tot het geboortekanaal."@nl;
+    rdfs:domain gezondheidstoestand:Bevallingstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.nutritie> a owl:ObjectProperty;
+    rdfs:label "nutritie"@nl;
+    rdfs:comment "Geconsumeerd voedsel- of vloeistofproduct of -item."@nl;
+    rdfs:domain gezondheidstoestand:Bevallingstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Borstvoeding.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Bevallingstoestand.wijze> a owl:ObjectProperty;
+    rdfs:label "wijze"@nl;
+    rdfs:comment "De manier waarop de Bevalling plaatsvindt."@nl;
+    rdfs:domain gezondheidstoestand:Bevallingstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Conceptie.onststaatDoor> a owl:ObjectProperty;
+    rdfs:label "ontstaat door"@nl;
+    rdfs:comment "Een Foetus ontstaat door Conceptie."@nl;
+    rdfs:domain gezondheidstoestand:Foetus;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Conceptie.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Conceptie.techniek> a owl:ObjectProperty;
+    rdfs:label "techniek"@nl;
+    rdfs:comment "Methode en/of medische interventie om de Zwangerschap te bevorderen."@nl;
+    rdfs:domain gezondheidstoestand:Conceptie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Foetus.deelVan> a owl:ObjectProperty;
+    rdfs:label "deel van"@nl;
+    rdfs:comment "Een Foetus is deel van de Zwangerschap."@nl;
+    rdfs:domain gezondheidstoestand:Foetus;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Zwangerschap.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Foetus.gewicht> a owl:ObjectProperty;
+    rdfs:label "gewicht"@nl;
+    rdfs:comment "Het totale lichaamsgewicht van de Foetus."@nl;
+    rdfs:domain gezondheidstoestand:Foetus;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range schemas:QuantitativeValue.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Foetus.leeftijd> a owl:ObjectProperty;
+    rdfs:label "leeftijd"@nl;
+    vann:usageNote "Dit wordt ook wel de zwangerschapsduur genoemd. Bijvoorbeeld, als een Persoon 8 weken zwanger is, betekent dit dat de Foetus 8 weken geleden is bevrucht."@nl;
+    rdfs:comment "Periode sinds de Conceptie."@nl;
+    rdfs:domain gezondheidstoestand:Foetus;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range schemas:QuantitativeValue.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Foetus.wordt> a owl:ObjectProperty;
+    rdfs:label "wordt"@nl;
+    rdfs:comment "Een Foetus wordt een Persoon."@nl;
+    rdfs:domain gezondheidstoestand:Foetus;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range person:Person.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Geboortetoestand.apgarscore> a owl:ObjectProperty;
+    rdfs:label "apgarscore"@nl;
+    rdfs:comment "Snelle beoordeling die onmiddellijk na de geboorte wordt uitgevoerd om de fysieke conditie van een pasgeborene te evalueren.?"@nl;
+    rdfs:domain gezondheidstoestand:Geboortetoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Apgarscore.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Geboortetoestand.neonatale> a owl:ObjectProperty;
+    rdfs:label "neonatale"@nl;
+    rdfs:comment "De Locatie van waar de neonatale zorgen werden verleend aan de Persoon bij Geboorte indien toepasbaar."@nl;
+    rdfs:domain gezondheidstoestand:Geboortetoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range prov:Location.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Geboortetoestand.nutritie> a owl:ObjectProperty;
+    rdfs:label "nutritie"@nl;
+    rdfs:comment "De Voedingsinname die wordt toegediend na de Geboorte."@nl;
+    rdfs:domain gezondheidstoestand:Geboortetoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range nutritionintake-definitions.html:NutritionIntake.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Geboortetoestand.rang> a rdf:Property;
+    rdfs:label "rang"@nl;
+    rdfs:comment "De rang van de Geboorte van de Persoon."@nl;
+    rdfs:domain gezondheidstoestand:Geboortetoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand.aandoening> a owl:ObjectProperty;
+    rdfs:label "aandoening"@nl;
+    rdfs:comment "Een afwijking, ziekte, stoornis of andere fysieke of mentale toestand die het normale functioneren van het lichaam beïnvloedt."@nl;
+    rdfs:domain gezondheidstoestand:Gezondheidstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand.gebruikteMedicatie> a owl:ObjectProperty;
+    rdfs:label "gebruikte medicatie"@nl;
+    rdfs:comment "De Medicatie die wordt toegediend aan een Persoon."@nl;
+    rdfs:domain gezondheidstoestand:Gezondheidstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range medication-definitions.html:Medication.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand.heeftGebeurtenis> a owl:ObjectProperty;
+    rdfs:label "heeft gebeurtenis"@nl;
+    rdfs:comment "Persoonsgebeurtenis gekoppeld aan de Gezondheidstoestand van een Persoon."@nl;
+    rdfs:domain gezondheidstoestand:Gezondheidstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range <http://purl.org/vocab/bio/0.1/Event>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand.vastgesteld> a owl:ObjectProperty;
+    rdfs:label "vastgesteld"@nl;
+    rdfs:comment "TODO"@nl;
+    rdfs:domain observation-definitions.html:Observation;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Gezondheidstoestand.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondheidstoestand.zorg> a owl:ObjectProperty;
+    rdfs:label "zorg"@nl;
+    rdfs:comment "Tijdens een periode kunnen verschillende types zorg verleend worden zowel aan een Persoon."@nl;
+    rdfs:domain gezondheidstoestand:Gezondheidstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range cpsv:Rule.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Gezondsheidstoestand.gewicht> a owl:ObjectProperty;
+    rdfs:label "gewicht"@nl;
+    rdfs:comment "De maat van de zwaarte of massa van een Persoon, object of substantie."@nl;
+    rdfs:domain gezondheidstoestand:Gezondheidstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range schemas:QuantitativeValue.
+gezondheidstoestand:Ingredient a owl:Class;
+    rdfs:label "Ingrediënt"@nl;
+    rdfs:comment "Specifieke stof, component of element dat wordt gebruikt bij de bereiding of samenstelling van een product."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#MedischVerslag.opgesteldDoor> a owl:ObjectProperty;
+    rdfs:label "opgesteld door"@nl;
+    rdfs:comment "Het Medisch Verslag wordt opgesteld door een Arts."@nl;
+    rdfs:domain diagnosticreport-definitions:DiagnosticReport;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Arts.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeObservatie.gedocumenteerdDoor> a owl:ObjectProperty;
+    rdfs:label "gedocumenteerd door"@nl;
+    rdfs:comment "Een Medisch Verslag documenteert één of meerdere Mediche Observaties."@nl;
+    rdfs:domain observation-definitions.html:Observation;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range diagnosticreport-definitions:DiagnosticReport.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeObservatie.vastgesteldDoor> a owl:ObjectProperty;
+    rdfs:label "vastgesteld door"@nl;
+    rdfs:comment "De Medische Observatie stelt een Gezondheidstoestand vast."@nl;
+    rdfs:domain gezondheidstoestand:Gezondheidstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range observation-definitions.html:Observation.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeToestand.aandoening> a owl:ObjectProperty;
+    rdfs:label "voedt"@nl;
+    rdfs:comment "De Medische Toestand van een Persoon voedt een Medisch Verslag van een Persoon."@nl;
+    rdfs:domain diagnosticreport-definitions:DiagnosticReport;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Gezondheidstoestand.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeToestand.lengte> a owl:ObjectProperty;
+    rdfs:label "lengte"@nl;
+    rdfs:comment "De lengte van een Persoon."@nl;
+    rdfs:domain gezondheidstoestand:Gezondheidstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range schemas:QuantitativeValue.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeToestand.risico> a owl:ObjectProperty;
+    rdfs:label "risico"@nl;
+    rdfs:comment "Risico die de Medische Toestand van een Persoon kan beïnvloeden."@nl;
+    rdfs:domain gezondheidstoestand:Gezondheidstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#MedischeToestand.wordtGevoedDoor> a owl:ObjectProperty;
+    rdfs:label "wordt gevoed door"@nl;
+    rdfs:comment "Een Medisch Toestand wordt gevoed door de Medische Verslagen van een Persoon."@nl;
+    rdfs:domain gezondheidstoestand:Gezondheidstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range diagnosticreport-definitions:DiagnosticReport.
+gezondheidstoestand:NatuurlijkeEntiteit a owl:Class;
+    rdfs:label "Natuurlijke Entiteit"@nl;
+    rdfs:comment "Biologisch wezen dat voortkomt uit een ander biologisch wezen."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>.
+gezondheidstoestand:Observatiewaarde a owl:Class;
+    rdfs:label "Observatiewaarde"@nl;
+    rdfs:comment "De informatie die wordt bepaald als gevolg van het maken van de observatie, indien de informatie een eenvoudige waarde heeft."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Persoon.heeftZwangerschap> a owl:ObjectProperty;
+    rdfs:label "heeft zwangerschap"@nl;
+    rdfs:comment "Een Persoon heeft een Zwangerschap"@nl;
+    rdfs:domain person:Person;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Zwangerschap.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap.heeftFoetus> a owl:ObjectProperty;
+    rdfs:label "heeft foetus"@nl;
+    rdfs:comment "Een Zwangerschap heeft een of meerdere Foetussen."@nl;
+    rdfs:domain gezondheidstoestand:Zwangerschap;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Foetus.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap.toestand> a owl:ObjectProperty;
+    rdfs:label "toestand"@nl;
+    rdfs:comment "De toestand die bij de Zwangerschap hoort."@nl;
+    rdfs:domain gezondheidstoestand:Zwangerschap;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Zwangerschapstoestand.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschap.wordtGevolgdDoor> a owl:ObjectProperty;
+    rdfs:label "wordt gevolgd door"@nl;
+    rdfs:comment "De Zwangerschap wordt gevolgd door een Bevalling."@nl;
+    rdfs:domain gezondheidstoestand:Bevalling;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Zwangerschap.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschapstoestand.duur> a owl:ObjectProperty;
+    rdfs:label "duur"@nl;
+    rdfs:comment "De periode van de Zwangerschap."@nl;
+    rdfs:domain gezondheidstoestand:Zwangerschapstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range eu:PeriodOfTime.
+<https://data.vlaanderen.be/ns/gezondheidstoestand#Zwangerschapstoestand.liggingKind> a owl:ObjectProperty;
+    rdfs:label "ligging kind"@nl;
+    rdfs:comment "De positie waarin de Foetus zich bevindt in de baarmoeder (van de Persoon)."@nl;
+    rdfs:domain gezondheidstoestand:Zwangerschapstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range skos:Concept.
+gezondheidstoestand:doetOntstaan a owl:ObjectProperty;
+    rdfs:label "doet ontstaan"@nl;
+    rdfs:comment "Een Conceptie doet een of meerdere Foetussen ontstaan."@nl;
+    rdfs:domain gezondheidstoestand:Conceptie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range gezondheidstoestand:Foetus.
+gezondheidstoestand:periode a owl:ObjectProperty;
+    rdfs:label "periode"@nl;
+    rdfs:comment "De tijdsduur van de meting voor de Apgarscore."@nl;
+    rdfs:domain gezondheidstoestand:Apgarscore;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range eu:PeriodOfTime.
+gezondheidstoestand:statusZwangerschap a owl:ObjectProperty;
+    rdfs:label "status zwangerschap"@nl;
+    rdfs:comment "Gesimplificeerde informatie rond de status van de Zwangerschapstoestand."@nl;
+    rdfs:domain gezondheidstoestand:Geboortetoestand, gezondheidstoestand:Zwangerschapstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range skos:Concept.
+gezondheidstoestand:wordtGeobserveerdDoor a owl:ObjectProperty;
+    rdfs:label "wordt geobserveerd door"@nl;
+    rdfs:comment "Wie was verantwoordelijk voor het vaststellen van de waargenomen waarde als \"waar\"?"@nl;
+    rdfs:domain gezondheidstoestand:Arts;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:range observation-definitions.html:Observation.
+dcterms:type a rdf:Property;
+    rdfs:label "type"@nl.
+gezondheidstoestand:Borstvoeding a owl:Class;
+    rdfs:label "Borstvoeding"@nl;
+    rdfs:comment "Proces waarbij de baby gevoed wordt met melk na de Bevalling."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:subClassOf nutritionintake-definitions.html:NutritionIntake.
+<https://hl7.org/fhir/diagnosticreport-definitions.html#DiagnosticReport.status> a rdf:Property;
+    rdfs:label "status"@nl.
+<https://hl7.org/fhir/medication-definitions.html#Medication.batch> a rdf:Property;
+    rdfs:label "batch"@nl.
+<https://hl7.org/fhir/medication-definitions.html#Medication.doseForm> a rdf:Property;
+    rdfs:label "dosis formaat"@nl.
+<https://hl7.org/fhir/medication-definitions.html#Medication.identifier> a rdf:Property;
+    rdfs:label "identificator"@nl.
+<https://hl7.org/fhir/medication-definitions.html#Medication.ingredient> a rdf:Property;
+    rdfs:label "ingrediënt"@nl.
+<https://hl7.org/fhir/medication-definitions.html#Medication.totalVolume> a rdf:Property;
+    rdfs:label "totale volume"@nl.
+<https://hl7.org/fhir/observation-definitions.html#Observation.category> a rdf:Property;
+    rdfs:label "categorie"@nl.
+<https://hl7.org/fhir/observation-definitions.html#Observation.effective> a rdf:Property;
+    rdfs:label "effectief tijdstip"@nl.
+<https://hl7.org/fhir/observation-definitions.html#Observation.identifier> a rdf:Property;
+    rdfs:label "identifier"@nl.
+<https://hl7.org/fhir/observation-definitions.html#Observation.issued> a rdf:Property;
+    rdfs:label "documenteert"@nl.
+<https://hl7.org/fhir/observation-definitions.html#Observation.performer> a rdf:Property;
+    rdfs:label "uitvoerder"@nl.
+<https://hl7.org/fhir/observation-definitions.html#Observation.status> a rdf:Property;
+    rdfs:label "status"@nl.
+<https://hl7.org/fhir/observation-definitions.html#Observation.subject> a rdf:Property;
+    rdfs:label "uitgevoerd op"@nl.
+<https://hl7.org/fhir/observation-definitions.html#Observation.value_x_> a rdf:Property;
+    rdfs:label "waarde"@nl.
+<https://hl7.org/fhir/practitioner-definitions.html#Practitioner.identifier> a rdf:Property;
+    rdfs:label "registratie"@nl.
+<https://www.hl7.org/fhir/nutritionintake-definitions.html#NutritionIntake.consumedItem> a rdf:Property;
+    rdfs:label "geconumeerd item"@nl.
+<https://www.hl7.org/fhir/nutritionintake-definitions.html#NutritionIntake.occurrence_x_> a rdf:Property;
+    rdfs:label "consumptie interval"@nl.
+<https://www.hl7.org/fhir/nutritionintake-definitions.html#NutritionIntake.performer> a rdf:Property;
+    rdfs:label "uitvoerder"@nl.
+gezondheidstoestand:Apgarscore a owl:Class;
+    rdfs:label "Apgarscore"@nl;
+    rdfs:comment "Snelle beoordeling die onmiddellijk na de geboorte wordt uitgevoerd om de fysieke conditie van een pasgeborene te evalueren."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:subClassOf observation-definitions:Observation.
+gezondheidstoestand:Arts a owl:Class;
+    rdfs:label "Arts"@nl;
+    rdfs:comment "Een Persoon met de officiële bevoegdheid om de geneeskunde uit te oefenen."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:subClassOf fixme.com:Agent, practitioner-definitions.html:Practitioner.
+gezondheidstoestand:AssistentieBevalling a owl:Class;
+    rdfs:label "Assistentie Bevalling"@nl;
+    rdfs:comment "De medische externe ondersteuning tijdens de Bevalling."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>.
+gezondheidstoestand:Conceptie a owl:Class;
+    rdfs:label "Conceptie"@nl;
+    rdfs:comment "De bevruchting van de eicel door een zaadcel, het begin van de Zwangerschap."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>.
+gezondheidstoestand:Zwangerschapstoestand a owl:Class;
+    rdfs:label "Zwangerschapstoestand"@nl;
+    rdfs:comment "De medische toestand bij een Zwangerschap van de Persoon"@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:subClassOf gezondheidstoestand:Gezondheidstoestand.
+gezondheidstoestand:Bevalling a owl:Class;
+    rdfs:label "Bevalling"@nl;
+    rdfs:comment "Het proces waarbij een baby de baarmoeder van de Persoon verlaat en de buitenwereld binnengaat. De Bevalling leidt tot de Geboorte."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:subClassOf fixme.com:Persoonsgebeurtenis.
+gezondheidstoestand:Geboortetoestand a owl:Class;
+    rdfs:label "Geboortetoestand"@nl;
+    rdfs:comment "De situatie of conditie rondom de Geboorte van een Persoon. Dit kan verschillende aspecten omvatten, zoals de omstandigheden van de geboorte, de gezondheidstoestand, de locatie, en andere relevante factoren."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:subClassOf gezondheidstoestand:Gezondheidstoestand.
+gezondheidstoestand:Zwangerschap a owl:Class;
+    rdfs:label "Zwangerschap"@nl;
+    rdfs:comment "De staat waarin een Persoon een of meerdere embryos of foetussen draagt in de baarmoeder, wat leidt tot de ontwikkeling van een nieuw natuurlijk Persoon."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:subClassOf fixme.com:Persoonsgebeurtenis.
+gezondheidstoestand:Foetus a owl:Class;
+    rdfs:label "Foetus"@nl;
+    rdfs:comment "De ongeboren Persoon vanaf de achtste week van de Zwangerschap tot aan de Geboorte."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:subClassOf fixme.com:NatuurlijkeEntiteit.
+gezondheidstoestand:Bevallingstoestand a owl:Class;
+    rdfs:label "Bevallingstoestand"@nl;
+    rdfs:comment "De Medische Toestand van een Persoon van een Bevalling."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>;
+    rdfs:subClassOf gezondheidstoestand:Gezondheidstoestand.
+gezondheidstoestand:Gezondheidstoestand a owl:Class;
+    rdfs:label "Gezondheidstoestand"@nl;
+    rdfs:comment "De gezondheidstoestand in objectieve zin is de gezondheid zoals beoordeeld door zorgverleners."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/gezondheidstoestand>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> a owl:Ontology;
+    rdfs:label "gezondheidstoestand"@en, "gezondheidstoestand"@nl.
+_:n3-2610 a foaf:Person.
+_:n3-2611 foaf:homepage <https://www.uzleuven.be/nl>;
+    foaf:name "UZ Leuven".
+_:n3-2610 schema:affiliation _:n3-2611;
+    foaf:firstName "Dieter";
+    foaf:lastName "Andelhofs".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2610.
+_:n3-2612 a foaf:Person.
+_:n3-2613 foaf:homepage <https://www.kbc.be/particulieren/nl.html>;
+    foaf:name "KBC".
+_:n3-2612 schema:affiliation _:n3-2613;
+    foaf:firstName "Leen";
+    foaf:lastName "Borgers".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2612.
+_:n3-2614 a foaf:Person.
+_:n3-2615 foaf:homepage <https://www.azdelta.be/nl>;
+    foaf:name "AZ Delta".
+_:n3-2614 schema:affiliation _:n3-2615;
+    foaf:firstName "Natasha";
+    foaf:lastName "Cornelis".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2614.
+_:n3-2616 a foaf:Person.
+_:n3-2617 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/764a0c6bbc866153ae70cf75d745b9477fa010567246cfe6683b7bb8aec541b4>;
+    foaf:name "Stad Oostende".
+_:n3-2616 schema:affiliation _:n3-2617;
+    foaf:firstName "Annelies";
+    foaf:lastName "Crombez".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2616.
+_:n3-2618 a foaf:Person.
+_:n3-2619 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/c648ea5d12626ee3364a02debb223908a71e68f53d69a7a7136585b58a083e77>;
+    foaf:name "Stad Leuven".
+_:n3-2618 schema:affiliation _:n3-2619;
+    foaf:firstName "Christoph";
+    foaf:lastName "Cuypers".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2618.
+_:n3-2620 a foaf:Person.
+_:n3-2621 foaf:homepage <https://www.kunlabora.be/nl>;
+    foaf:name "Kunlabora nv".
+_:n3-2620 schema:affiliation _:n3-2621;
+    foaf:firstName "Tom";
+    foaf:lastName "De Keyser".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2620.
+_:n3-2622 a foaf:Person.
+_:n3-2623 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/670db1d66c0de3b931962e1044033ccfa9d6e3023aa9828a5f252c3bc69bd32c>;
+    foaf:name "Stad Antwerpen".
+_:n3-2622 schema:affiliation _:n3-2623;
+    foaf:firstName "Jana";
+    foaf:lastName "De Smedt".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2622.
+_:n3-2624 a foaf:Person.
+_:n3-2625 foaf:homepage <https://remmicom.be/>;
+    foaf:name "Remmicom".
+_:n3-2624 schema:affiliation _:n3-2625;
+    foaf:firstName "David";
+    foaf:lastName "Devroey".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2624.
+_:n3-2626 a foaf:Person.
+_:n3-2627 foaf:homepage <https://funebra.be/nl/>;
+    foaf:name "Funebra".
+_:n3-2626 schema:affiliation _:n3-2627;
+    foaf:firstName "Johan";
+    foaf:lastName "Dexters".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2626.
+_:n3-2628 a foaf:Person.
+_:n3-2629 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO051320>;
+    foaf:name "Athumi".
+_:n3-2628 schema:affiliation _:n3-2629;
+    foaf:firstName "Renée";
+    foaf:lastName "Eelbode";
+    foaf:mbox <mailto:renee.eelbode@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2628.
+_:n3-2630 a foaf:Person.
+_:n3-2631 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/974816591f269bb7d74aa1720922651529f3d3b2a787f5c60b73e5a0384950a4>;
+    foaf:name "Stad Aalst".
+_:n3-2630 schema:affiliation _:n3-2631;
+    foaf:firstName "Evy";
+    foaf:lastName "Fraeyman".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2630.
+_:n3-2632 a foaf:Person.
+_:n3-2633 foaf:homepage <https://www.kunlabora.be/nl>;
+    foaf:name "Kunlabora nv".
+_:n3-2632 schema:affiliation _:n3-2633;
+    foaf:firstName "Seppe";
+    foaf:lastName "Gielen".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2632.
+_:n3-2634 a foaf:Person.
+_:n3-2635 foaf:homepage <https://uitvaartunievlaanderen.be/>;
+    foaf:name "Uitvaartunie".
+_:n3-2634 schema:affiliation _:n3-2635;
+    foaf:firstName "Aaron";
+    foaf:lastName "Gorsen".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2634.
+_:n3-2636 a foaf:Person.
+_:n3-2637 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/c648ea5d12626ee3364a02debb223908a71e68f53d69a7a7136585b58a083e77>;
+    foaf:name "Stad Leuven".
+_:n3-2636 schema:affiliation _:n3-2637;
+    foaf:firstName "Yati";
+    foaf:lastName "Huyge".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2636.
+_:n3-2638 a foaf:Person.
+_:n3-2639 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/974816591f269bb7d74aa1720922651529f3d3b2a787f5c60b73e5a0384950a4>;
+    foaf:name "Stad Aalst".
+_:n3-2638 schema:affiliation _:n3-2639;
+    foaf:firstName "Fleur";
+    foaf:lastName "Janssens".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2638.
+_:n3-2640 a foaf:Person.
+_:n3-2641 foaf:homepage <https://www.cevi.be/>;
+    foaf:name "CEVI".
+_:n3-2640 schema:affiliation _:n3-2641;
+    foaf:firstName "Senem";
+    foaf:lastName "Mavzer".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2640.
+_:n3-2642 a foaf:Person.
+_:n3-2643 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/764a0c6bbc866153ae70cf75d745b9477fa010567246cfe6683b7bb8aec541b4>;
+    foaf:name "Stad Oostende".
+_:n3-2642 schema:affiliation _:n3-2643;
+    foaf:firstName "Tania";
+    foaf:lastName "Neiyinck".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2642.
+_:n3-2644 a foaf:Person.
+_:n3-2645 foaf:homepage <https://redpencil.io/>;
+    foaf:name "RedPencil".
+_:n3-2644 schema:affiliation _:n3-2645;
+    foaf:firstName "Erika";
+    foaf:lastName "Pauwels".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2644.
+_:n3-2646 a foaf:Person.
+_:n3-2647 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/353234a365664e581db5c2f7cc07add2534b47b8e1ab87c821fc6e6365e6bef5>;
+    foaf:name "Stad Gent".
+_:n3-2646 schema:affiliation _:n3-2647;
+    foaf:firstName "Christophe";
+    foaf:lastName "Puttevils".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2646.
+_:n3-2648 a foaf:Person.
+_:n3-2649 foaf:homepage <https://www.sereni.be/>;
+    foaf:name "Sereni".
+_:n3-2648 schema:affiliation _:n3-2649;
+    foaf:firstName "Bruno";
+    foaf:lastName "Quirijnen".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2648.
+_:n3-2650 a foaf:Person.
+_:n3-2651 foaf:homepage <https://wegwijs.vlaanderen.be/#/organisations/f81d8b81-985d-4d30-8144-ac66e10d5db0/info>;
+    foaf:name "Departement Zorg".
+_:n3-2650 schema:affiliation _:n3-2651;
+    foaf:firstName "Mathieu";
+    foaf:lastName "Roelants".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2650.
+_:n3-2652 a foaf:Person.
+_:n3-2653 foaf:homepage <https://wegwijs.vlaanderen.be/#/organisations/f81d8b81-985d-4d30-8144-ac66e10d5db0/info>;
+    foaf:name "Departement Zorg".
+_:n3-2652 schema:affiliation _:n3-2653;
+    foaf:firstName "Merel";
+    foaf:lastName "Roelants".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2652.
+_:n3-2654 a foaf:Person.
+_:n3-2655 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/71f6925a4b895c2a91dce039c87d227809edcda82963714814141b1e41631b08>;
+    foaf:name "Stad Sint-Niklaas".
+_:n3-2654 schema:affiliation _:n3-2655;
+    foaf:firstName "Carla";
+    foaf:lastName "Rogiers".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2654.
+_:n3-2656 a foaf:Person.
+_:n3-2657 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/764a0c6bbc866153ae70cf75d745b9477fa010567246cfe6683b7bb8aec541b4>;
+    foaf:name "Stad Oostende".
+_:n3-2656 schema:affiliation _:n3-2657;
+    foaf:firstName "Lies";
+    foaf:lastName "Tytgat".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2656.
+_:n3-2658 a foaf:Person.
+_:n3-2659 foaf:homepage <https://www.cevi.be/>;
+    foaf:name "CEVI".
+_:n3-2658 schema:affiliation _:n3-2659;
+    foaf:firstName "Eline";
+    foaf:lastName "Van Den Berghe".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2658.
+_:n3-2660 a foaf:Person.
+_:n3-2661 foaf:homepage <https://www.uzleuven.be/nl>;
+    foaf:name "UZ Leuven".
+_:n3-2660 schema:affiliation _:n3-2661;
+    foaf:firstName "Wouter";
+    foaf:lastName "Van Den Bogaert".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2660.
+_:n3-2662 a foaf:Person.
+_:n3-2663 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/e84ba36959d82fc95bb17b25d2e70c135d8805737ba27bab572af670a2768338>;
+    foaf:name "Stad Halle".
+_:n3-2662 schema:affiliation _:n3-2663;
+    foaf:firstName "Cindy";
+    foaf:lastName "Van Nerom".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2662.
+_:n3-2664 a foaf:Person.
+_:n3-2665 foaf:homepage <https://www.wingene.be/>;
+    foaf:name "Gemeente Wingene".
+_:n3-2664 schema:affiliation _:n3-2665;
+    foaf:firstName "Annelies";
+    foaf:lastName "Van Tomme".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2664.
+_:n3-2666 a foaf:Person.
+_:n3-2667 foaf:homepage <https://wegwijs.vlaanderen.be/#/organisations/f81d8b81-985d-4d30-8144-ac66e10d5db0/info>;
+    foaf:name "Departement Zorg".
+_:n3-2666 schema:affiliation _:n3-2667;
+    foaf:firstName "Maarten";
+    foaf:lastName "Van der Biest".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2666.
+_:n3-2668 a foaf:Person.
+_:n3-2669 foaf:homepage <https://wegwijs.vlaanderen.be/#/organisations/f81d8b81-985d-4d30-8144-ac66e10d5db0/info>;
+    foaf:name "Departement Zorg".
+_:n3-2668 schema:affiliation _:n3-2669;
+    foaf:firstName "Matthias";
+    foaf:lastName "Van der Elst".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2668.
+_:n3-2670 a foaf:Person.
+_:n3-2671 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/974816591f269bb7d74aa1720922651529f3d3b2a787f5c60b73e5a0384950a4>;
+    foaf:name "Stad Aalst".
+_:n3-2670 schema:affiliation _:n3-2671;
+    foaf:firstName "Tessa";
+    foaf:lastName "Verbeiren".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2670.
+_:n3-2672 a foaf:Person.
+_:n3-2673 foaf:homepage <https://www.bredene.be/>;
+    foaf:name "Gemeente Bredene".
+_:n3-2672 schema:affiliation _:n3-2673;
+    foaf:firstName "Yasmina";
+    foaf:lastName "Youmni".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:contributor _:n3-2672;
+    dcterms:issued "TODO";
+    dcterms:license "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0", <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:n3-2674 foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> dcterms:mediator _:n3-2674;
+    rdfs:seeAlso skos:Concept, observation-definitions.html:Observation, medication-definitions.html:Medication, practitioner-definitions.html:Practitioner, diagnosticreport-definitions:DiagnosticReport, nutritionintake-definitions.html:NutritionIntake, dcterms:type, <https://hl7.org/fhir/diagnosticreport-definitions.html#DiagnosticReport.status>, <https://hl7.org/fhir/medication-definitions.html#Medication.batch>, <https://hl7.org/fhir/medication-definitions.html#Medication.doseForm>, <https://hl7.org/fhir/medication-definitions.html#Medication.identifier>, <https://hl7.org/fhir/medication-definitions.html#Medication.ingredient>, <https://hl7.org/fhir/medication-definitions.html#Medication.totalVolume>, <https://hl7.org/fhir/observation-definitions.html#Observation.category>, <https://hl7.org/fhir/observation-definitions.html#Observation.effective>, <https://hl7.org/fhir/observation-definitions.html#Observation.identifier>, <https://hl7.org/fhir/observation-definitions.html#Observation.issued>, <https://hl7.org/fhir/observation-definitions.html#Observation.performer>, <https://hl7.org/fhir/observation-definitions.html#Observation.status>, <https://hl7.org/fhir/observation-definitions.html#Observation.subject>, <https://hl7.org/fhir/observation-definitions.html#Observation.value_x_>, <https://hl7.org/fhir/practitioner-definitions.html#Practitioner.identifier>, <https://www.hl7.org/fhir/nutritionintake-definitions.html#NutritionIntake.consumedItem>, <https://www.hl7.org/fhir/nutritionintake-definitions.html#NutritionIntake.occurrence_x_>, <https://www.hl7.org/fhir/nutritionintake-definitions.html#NutritionIntake.performer>.
+_:n3-2675 a foaf:Person.
+_:n3-2676 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2675 schema:affiliation _:n3-2676;
+    foaf:firstName "Veerle";
+    foaf:lastName "Beyaert";
+    foaf:mbox <mailto:veerle.beyaert@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> rec54:editor _:n3-2675.
+_:n3-2677 a foaf:Person.
+_:n3-2678 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2677 schema:affiliation _:n3-2678;
+    foaf:firstName "Raf";
+    foaf:lastName "Buyle";
+    foaf:mbox <mailto:raf.buyle@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> rec54:editor _:n3-2677.
+_:n3-2679 a foaf:Person.
+_:n3-2680 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2679 schema:affiliation _:n3-2680;
+    foaf:firstName "Jitse";
+    foaf:lastName "De Cock";
+    foaf:mbox <mailto:jitse.decock@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> rec54:editor _:n3-2679.
+_:n3-2681 a foaf:Person.
+_:n3-2682 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2681 schema:affiliation _:n3-2682;
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs";
+    foaf:mbox <mailto:geert.thijs@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> rec54:editor _:n3-2681.
+_:n3-2683 a foaf:Person.
+_:n3-2684 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2683 schema:affiliation _:n3-2684;
+    foaf:firstName "Liesbeth";
+    foaf:lastName "Van der Haegen";
+    foaf:mbox <mailto:liesbeth.vanderhaegen@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> rec54:editor _:n3-2683.
+_:n3-2685 a foaf:Person.
+_:n3-2686 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2685 schema:affiliation _:n3-2686;
+    foaf:firstName "Ziggy";
+    foaf:lastName "Vanlishout";
+    foaf:mbox <mailto:ziggy.vanlishout@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> rec54:editor _:n3-2685.
+_:n3-2687 a foaf:Person.
+_:n3-2688 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2687 schema:affiliation _:n3-2688;
+    foaf:firstName "Aline";
+    foaf:lastName "Verbrugge";
+    foaf:mbox <mailto:aline.verbrugge@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> rec54:editor _:n3-2687.
+_:n3-2689 a foaf:Person.
+_:n3-2690 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2689 schema:affiliation _:n3-2690;
+    foaf:firstName "Laurens";
+    foaf:lastName "Vercauteren";
+    foaf:mbox <mailto:laurens.vercauteren@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> rec54:editor _:n3-2689.
+_:n3-2691 a foaf:Person.
+_:n3-2692 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2691 schema:affiliation _:n3-2692;
+    foaf:firstName "Eveline";
+    foaf:lastName "Vlassenroot";
+    foaf:mbox <mailto:eveline.vlassenroot@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> rec54:editor _:n3-2691.
+_:n3-2693 a foaf:Person.
+_:n3-2694 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO051320>;
+    foaf:name "athumi".
+_:n3-2693 schema:affiliation _:n3-2694;
+    foaf:firstName "Sarah";
+    foaf:lastName "Blomme";
+    foaf:mbox <mailto:sarah.blomme@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/gezondheidstoestand> foaf:maker _:n3-2693.
+_:n3-2695 a foaf:Person.
+_:n3-2696 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/c648ea5d12626ee3364a02debb223908a71e68f53d69a7a7136585b58a083e77>;
+    foaf:name "Stad Leuven".
+_:n3-2695 schema:affiliation _:n3-2696;
+    foaf:firstName "Steve";
+    foaf:lastName "Heylen".
+<https://data.vlaanderen.be/ns/gezondheidstoestand> foaf:maker _:n3-2695.

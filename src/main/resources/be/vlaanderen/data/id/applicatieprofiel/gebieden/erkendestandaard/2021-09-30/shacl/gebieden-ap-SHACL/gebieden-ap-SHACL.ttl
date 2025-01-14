@@ -243,50 +243,50 @@
 <https://data.vlaanderen.be/shacl/gebieden-ap> <https://data.vlaanderen.be/shacl/gebieden-apshapes> gebieden-ap:BegraafplaatsShape, gebieden-ap:BufferzoneShape, gebieden-ap:GebiedShape, gebieden-ap:GroenzoneShape, gebieden-ap:NatuurShape, gebieden-ap:ParkShape, gebieden-ap:ParkingShape, gebieden-ap:PleinShape, gebieden-ap:RecreatiegebiedShape, gebieden-ap:RecyclageparkShape, gebieden-ap:SpoorwegShape, gebieden-ap:TuinzoneShape, gebieden-ap:VolkstuinShape, gebieden-ap:WaterverkeerzoneShape, gebieden-ap:WegzoneShape, gebieden-ap:GeografischeNaamShape.
 gebieden-ap:BegraafplaatsShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2034 shacl:datatype xsd:boolean;
+_:n3-1985 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of er al dan niet nog aan actieve lijkbezorging gedaan wordt op de begraafplaats.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "actieveLijkbezorging";
     shacl:path gebied:actieveLijkbezorging.
-gebieden-ap:BegraafplaatsShape shacl:property _:n3-2034.
-_:n3-2035 shacl:datatype xsd:boolean;
+gebieden-ap:BegraafplaatsShape shacl:property _:n3-1985.
+_:n3-1986 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de begraafplaats al dan niet geschikt is voor lichte recreatie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "lichteRecreatie";
     shacl:path gebied:lichteRecreatie.
-gebieden-ap:BegraafplaatsShape shacl:property _:n3-2035;
+gebieden-ap:BegraafplaatsShape shacl:property _:n3-1986;
     shacl:targetClass gebied:Begraafplaats.
 gebieden-ap:BufferzoneShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass gebied:Bufferzone.
 gebieden-ap:GebiedShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2036 shacl:datatype xsd:dateTime;
+_:n3-1987 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheergebied in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
     shacl:path gebied:begindatum.
-gebieden-ap:GebiedShape shacl:property _:n3-2036.
-_:n3-2037 shacl:datatype xsd:dateTime;
+gebieden-ap:GebiedShape shacl:property _:n3-1987.
+_:n3-1988 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheergebied uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path gebied:einddatum.
-gebieden-ap:GebiedShape shacl:property _:n3-2037.
-_:n3-2038 shacl:class sf:Polygon;
+gebieden-ap:GebiedShape shacl:property _:n3-1988.
+_:n3-1989 shacl:class sf:Polygon;
     shacl:description "De geometrie overeenkomstig met een bepaald gebied.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-gebieden-ap:GebiedShape shacl:property _:n3-2038.
-_:n3-2039 shacl:datatype rdf:langString;
+gebieden-ap:GebiedShape shacl:property _:n3-1989.
+_:n3-1990 shacl:datatype rdf:langString;
     shacl:description "Een naam voor het gebied.";
     shacl:name "naam";
     shacl:path dcterms:title.
-gebieden-ap:GebiedShape shacl:property _:n3-2039;
+gebieden-ap:GebiedShape shacl:property _:n3-1990;
     shacl:targetClass gebied:Gebied.
 gebieden-ap:GeografischeNaamShape a shacl:NodeShape;
     shacl:closed false;

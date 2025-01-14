@@ -252,336 +252,336 @@ begraafplaatsenbeheer-ap:BegraafplaatsRijShape a shacl:NodeShape;
     shacl:targetClass begraafplaats:BegraafplaatsRij.
 begraafplaatsenbeheer-ap:BegraafplaatsShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2236 shacl:datatype xsd:boolean;
+_:n3-2187 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of er al dan niet nog aan actieve lijkbezorging gedaan wordt op de begraafplaats.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "actieveLijkbezorging";
     shacl:path gebied:actieveLijkbezorging.
-begraafplaatsenbeheer-ap:BegraafplaatsShape shacl:property _:n3-2236.
-_:n3-2237 shacl:datatype xsd:boolean;
+begraafplaatsenbeheer-ap:BegraafplaatsShape shacl:property _:n3-2187.
+_:n3-2188 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de begraafplaats al dan niet geschikt is voor lichte recreatie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "lichteRecreatie";
     shacl:path gebied:lichteRecreatie.
-begraafplaatsenbeheer-ap:BegraafplaatsShape shacl:property _:n3-2237;
+begraafplaatsenbeheer-ap:BegraafplaatsShape shacl:property _:n3-2188;
     shacl:targetClass gebied:Begraafplaats.
 begraafplaatsenbeheer-ap:BestendigeAfsluitingShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass infrastructuur:BestendigeAfsluiting.
 begraafplaatsenbeheer-ap:CollectieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2238 shacl:class openbaardomein:FysiekObject;
+_:n3-2189 shacl:class openbaardomein:FysiekObject;
     shacl:description "Relatie naar de objecten die deel uitmaken van de collectie.";
     shacl:name "bevat";
     shacl:path openbaardomein:bevat.
-begraafplaatsenbeheer-ap:CollectieShape shacl:property _:n3-2238.
-_:n3-2239 shacl:datatype xsd:string;
+begraafplaatsenbeheer-ap:CollectieShape shacl:property _:n3-2189.
+_:n3-2190 shacl:datatype xsd:string;
     shacl:description "Een titel voor de collectie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "titel";
     shacl:path dcterms:title.
-begraafplaatsenbeheer-ap:CollectieShape shacl:property _:n3-2239;
+begraafplaatsenbeheer-ap:CollectieShape shacl:property _:n3-2190;
     shacl:targetClass openbaardomein:Collectie.
 begraafplaatsenbeheer-ap:ColumbariumShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass begraafplaats:Columbarium.
 begraafplaatsenbeheer-ap:ContactinfoShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2240 shacl:datatype rdf:langString;
+_:n3-2191 shacl:datatype rdf:langString;
     shacl:description "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen.";
     shacl:maxCount 1;
     shacl:name "aanschrijfvorm";
     shacl:path vcard:honorific-prefix.
-begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2240.
-_:n3-2241 shacl:class locn:Address;
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2191.
+_:n3-2192 shacl:class locn:Address;
     shacl:description "Adres dat men kan aanschrijven of bezoeken.";
     shacl:maxCount 1;
     shacl:name "adres";
     shacl:path locn:address.
-begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2241.
-_:n3-2242 shacl:class schemas:OpeningHoursSpecification;
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2192.
+_:n3-2193 shacl:class schemas:OpeningHoursSpecification;
     shacl:description "Periode waarin contact kan worden opgenomen.";
     shacl:maxCount 1;
     shacl:name "beschikbaarheid";
     shacl:path schema:hoursAvailable.
-begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2242.
-_:n3-2243 shacl:datatype xsd:string;
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2193.
+_:n3-2194 shacl:datatype xsd:string;
     shacl:description "Naam van bvb de persoon die men kan contacteren.";
     shacl:maxCount 1;
     shacl:name "contactnaam";
     shacl:path foaf:name.
-begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2243.
-_:n3-2244 shacl:datatype xsd:string;
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2194.
+_:n3-2195 shacl:datatype xsd:string;
     shacl:description "Email-adres waarnaar men kan mailen.";
     shacl:maxCount 1;
     shacl:name "email";
     shacl:path schema:email.
-begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2244.
-_:n3-2245 shacl:datatype xsd:string;
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2195.
+_:n3-2196 shacl:datatype xsd:string;
     shacl:description "Faxnummer waarnaar men kan faxen.";
     shacl:maxCount 1;
     shacl:name "fax";
     shacl:path schema:faxNumber.
-begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2245.
-_:n3-2246 shacl:datatype rdfs:Literal;
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2196.
+_:n3-2197 shacl:datatype rdfs:Literal;
     shacl:description "Uren waarbinnen contact kan worden opgenomen.";
     shacl:maxCount 1;
     shacl:name "openingsuren";
     shacl:path schema:openingHours.
-begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2246.
-_:n3-2247 shacl:datatype xsd:string;
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2197.
+_:n3-2198 shacl:datatype xsd:string;
     shacl:description "Telefoonnummer waarop men kan bellen.";
     shacl:maxCount 1;
     shacl:name "telefoon";
     shacl:path schema:telephone.
-begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2247.
-_:n3-2248 shacl:datatype xsd:anyURI;
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2198.
+_:n3-2199 shacl:datatype xsd:anyURI;
     shacl:description "Website waarnaar men kan surfen.";
     shacl:maxCount 1;
     shacl:name "website";
     shacl:path foaf:page.
-begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2248;
+begraafplaatsenbeheer-ap:ContactinfoShape shacl:property _:n3-2199;
     shacl:targetClass schema:ContactPoint.
 begraafplaatsenbeheer-ap:DeelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2249 shacl:class schemas:QuantitativeValue;
+_:n3-2200 shacl:class schemas:QuantitativeValue;
     shacl:description "De afmeting van het object.";
     shacl:maxCount 1;
     shacl:name "oppervlakte";
     shacl:path openbaardomein:oppervlakte.
-begraafplaatsenbeheer-ap:DeelShape shacl:property _:n3-2249.
-_:n3-2250 shacl:class openbaardomein:FysiekVoorkomen;
+begraafplaatsenbeheer-ap:DeelShape shacl:property _:n3-2200.
+_:n3-2201 shacl:class openbaardomein:FysiekVoorkomen;
     shacl:description "Verwijst naar het fysiek voorkomen van het beheerdeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkomen";
     shacl:path openbaardomein:voorkomen.
-begraafplaatsenbeheer-ap:DeelShape shacl:property _:n3-2250;
+begraafplaatsenbeheer-ap:DeelShape shacl:property _:n3-2201;
     shacl:targetClass openbaardomein:Deel.
 begraafplaatsenbeheer-ap:DekselShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2251 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/DekselVorm>;
+_:n3-2202 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/DekselVorm>;
     shacl:class skos:Concept;
     shacl:description "De vorm van het deksel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "dekselVorm";
     shacl:path infrastructuur:dekselVorm.
-begraafplaatsenbeheer-ap:DekselShape shacl:property _:n3-2251.
-_:n3-2252 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
+begraafplaatsenbeheer-ap:DekselShape shacl:property _:n3-2202.
+_:n3-2203 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nutsvoorzieningscodes>;
     shacl:class skos:Concept;
     shacl:description "Aanduiding van de soort nutsvoorziening.";
     shacl:maxCount 1;
     shacl:name "nutsvoorzieningscode";
     shacl:path infrastructuur:nutsvoorzieningscode.
-begraafplaatsenbeheer-ap:DekselShape shacl:property _:n3-2252.
-_:n3-2253 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Rioleringscode>;
+begraafplaatsenbeheer-ap:DekselShape shacl:property _:n3-2203.
+_:n3-2204 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Rioleringscode>;
     shacl:class skos:Concept;
     shacl:description "De rioleringscode is een arbitraire notitie van waarneembare eigenschappen van het deksel m.b.t. de beheerder en de functie van de ondergrondse ioleringsleiding.";
     shacl:maxCount 1;
     shacl:name "rioleringscode";
     shacl:path infrastructuur:rioleringscode.
-begraafplaatsenbeheer-ap:DekselShape shacl:property _:n3-2253;
+begraafplaatsenbeheer-ap:DekselShape shacl:property _:n3-2204;
     shacl:targetClass infrastructuur:Deksel.
 begraafplaatsenbeheer-ap:DraadafsluitingShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass infrastructuur:Draadafsluiting.
 begraafplaatsenbeheer-ap:ElementShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2254 shacl:class terreindeel:Terreindeel;
+_:n3-2205 shacl:class terreindeel:Terreindeel;
     shacl:description "Het specifieke Element dat een obstakel vormt.";
     shacl:maxCount 1;
     shacl:name "heeftObstakel";
     shacl:path <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#Element.heeftObstakel>.
-begraafplaatsenbeheer-ap:ElementShape shacl:property _:n3-2254;
+begraafplaatsenbeheer-ap:ElementShape shacl:property _:n3-2205;
     shacl:targetClass openbaardomein:Element.
 begraafplaatsenbeheer-ap:FietsstallingShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2255 shacl:datatype xsd:boolean;
+_:n3-2206 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet kan afgesloten worden om toegang voor onbevoegden te verhinderen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "afsluitbaar";
     shacl:path infrastructuur:afsluitbaar.
-begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2255.
-_:n3-2256 shacl:datatype xsd:integer;
+begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2206.
+_:n3-2207 shacl:datatype xsd:integer;
     shacl:description "Geeft aan hoeveel fietsen gestald kunnen worden aan of in de fietsenstalling.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "capaciteit";
     shacl:path infrastructuur:capaciteit.
-begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2256.
-_:n3-2257 shacl:datatype xsd:boolean;
+begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2207.
+_:n3-2208 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet gebruikt wordt voor deelfietsen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "fietsdelen";
     shacl:path infrastructuur:fietsdelen.
-begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2257.
-_:n3-2258 shacl:datatype xsd:boolean;
+begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2208.
+_:n3-2209 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of de fietsstalling al dan niet overdekt is.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "overdekt";
     shacl:path infrastructuur:overdekt.
-begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2258;
+begraafplaatsenbeheer-ap:FietsstallingShape shacl:property _:n3-2209;
     shacl:targetClass infrastructuur:Fietsstalling.
 begraafplaatsenbeheer-ap:FysiekObjectShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2259 shacl:datatype xsd:dateTime;
+_:n3-2210 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
     shacl:path openbaardomein:begindatum.
-begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2259.
-_:n3-2260 shacl:class org:Organization;
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2210.
+_:n3-2211 shacl:class org:Organization;
     shacl:description "Instantie die instaat voor het beheer van het object.";
     shacl:maxCount 1;
     shacl:name "beheerder";
     shacl:path fixme.com:beheerder.
-begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2260.
-_:n3-2261 shacl:class org:Organization;
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2211.
+_:n3-2212 shacl:class org:Organization;
     shacl:description "De entiteit (bv. de gemeente) die eigenaar is van het object.";
     shacl:maxCount 1;
     shacl:name "eigenaar";
     shacl:path fixme.com:eigenaar.
-begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2261.
-_:n3-2262 shacl:datatype xsd:dateTime;
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2212.
+_:n3-2213 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path openbaardomein:einddatum.
-begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2262.
-_:n3-2263 shacl:class geosparql:Geometry;
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2213.
+_:n3-2214 shacl:class geosparql:Geometry;
     shacl:description "De geometrie overeenkomstig met een bepaald object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2263.
-_:n3-2264 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2214.
+_:n3-2215 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
     shacl:class skos:Concept;
     shacl:description "De precisie waarmee het object opgemeten werd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nauwkeurigheid";
     shacl:path openbaardomein:nauwkeurigheid.
-begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2264.
-_:n3-2265 shacl:datatype xsd:integer;
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2215.
+_:n3-2216 shacl:datatype xsd:integer;
     shacl:description "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten.";
     shacl:maxCount 1;
     shacl:name "niveau";
     shacl:path openbaardomein:niveau.
-begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2265.
-_:n3-2266 shacl:class rdfs:Resource;
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2216.
+_:n3-2217 shacl:class rdfs:Resource;
     shacl:description "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject.";
     shacl:name "relatie";
     shacl:path dcterms:relation.
-begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2266;
+begraafplaatsenbeheer-ap:FysiekObjectShape shacl:property _:n3-2217;
     shacl:targetClass openbaardomein:FysiekObject.
 begraafplaatsenbeheer-ap:FysiekVoorkomenShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass openbaardomein:FysiekVoorkomen.
 begraafplaatsenbeheer-ap:GebiedShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2267 shacl:datatype xsd:dateTime;
+_:n3-2218 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheergebied in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
     shacl:path gebied:begindatum.
-begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2267.
-_:n3-2268 shacl:class org:Organization;
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2218.
+_:n3-2219 shacl:class org:Organization;
     shacl:description "Instantie die instaat voor het beheer van het gebied.";
     shacl:maxCount 1;
     shacl:name "beheerder";
     shacl:path fixme.com:beheerder.
-begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2268.
-_:n3-2269 shacl:class org:Organization;
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2219.
+_:n3-2220 shacl:class org:Organization;
     shacl:description "De entiteit (bv. de gemeente) die eigenaar is van het gebied.";
     shacl:maxCount 1;
     shacl:name "eigenaar";
     shacl:path fixme.com:eigenaar.
-begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2269.
-_:n3-2270 shacl:datatype xsd:dateTime;
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2220.
+_:n3-2221 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheergebied uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path gebied:einddatum.
-begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2270.
-_:n3-2271 shacl:class sf:Polygon;
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2221.
+_:n3-2222 shacl:class sf:Polygon;
     shacl:description "De geometrie overeenkomstig met een bepaald gebied.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2271.
-_:n3-2272 shacl:datatype rdf:langString;
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2222.
+_:n3-2223 shacl:datatype rdf:langString;
     shacl:description "Een naam voor het gebied.";
     shacl:name "naam";
     shacl:path dcterms:title.
-begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2272;
+begraafplaatsenbeheer-ap:GebiedShape shacl:property _:n3-2223;
     shacl:targetClass gebied:Gebied.
 begraafplaatsenbeheer-ap:GeografischeNaamShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass rdf:langString.
 begraafplaatsenbeheer-ap:GeometrieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2273 shacl:datatype rdfs:Literal;
+_:n3-2224 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in gml-formaat.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "gml";
     shacl:path geosparql:asGML.
-begraafplaatsenbeheer-ap:GeometrieShape shacl:property _:n3-2273.
-_:n3-2274 shacl:datatype rdfs:Literal;
+begraafplaatsenbeheer-ap:GeometrieShape shacl:property _:n3-2224.
+_:n3-2225 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in wkt-formaat.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "wkt";
     shacl:path geosparql:asWKT.
-begraafplaatsenbeheer-ap:GeometrieShape shacl:property _:n3-2274;
+begraafplaatsenbeheer-ap:GeometrieShape shacl:property _:n3-2225;
     shacl:targetClass geosparql:Geometry.
 begraafplaatsenbeheer-ap:GrafShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2275 shacl:datatype xsd:integer;
+_:n3-2226 shacl:datatype xsd:integer;
     shacl:description "Geeft het aantal bezette plaatsen van een graf weer.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "bezetting";
     shacl:path begraafplaats:bezetting.
-begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2275.
-_:n3-2276 shacl:datatype xsd:integer;
+begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2226.
+_:n3-2227 shacl:datatype xsd:integer;
     shacl:description "Geeft het aantal beschikbare plaatsen van een graf weer.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "capaciteit";
     shacl:path begraafplaats:capaciteit.
-begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2276.
-_:n3-2277 shacl:datatype xsd:boolean;
+begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2227.
+_:n3-2228 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het graf voorzien is van een ondergrondse of bovengrondse ruimte.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "grafkelderAanwezig";
     shacl:path begraafplaats:grafkelderAanwezig.
-begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2277.
-_:n3-2278 shacl:datatype xsd:boolean;
+begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2228.
+_:n3-2229 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of er al dan niet een grafteken, bijvoorbeeld een zerk, aanwezig is.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "grafteken";
     shacl:path begraafplaats:grafteken.
-begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2278.
-_:n3-2279 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Graftypes>;
+begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2229.
+_:n3-2230 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Graftypes>;
     shacl:class skos:Concept;
     shacl:description "Het type graf.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "graftype";
     shacl:path begraafplaats:graftype.
-begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2279;
+begraafplaatsenbeheer-ap:GrafShape shacl:property _:n3-2230;
     shacl:targetClass begraafplaats:Graf.
 begraafplaatsenbeheer-ap:GraftypesShape a shacl:NodeShape;
     shacl:closed false;
@@ -597,34 +597,34 @@ begraafplaatsenbeheer-ap:InfozuilShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:Infozuil.
 begraafplaatsenbeheer-ap:InfrastructuurelementShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2280 cube:codeList <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
+_:n3-2231 cube:codeList <https://thesaurus.onroerenderfgoed.be/conceptschemes/MATERIALEN>;
     shacl:class skos:Concept;
     shacl:description "Materiaal waar het object uit vervaardigd is.";
     shacl:name "materiaal";
     shacl:path infrastructuur:materiaal.
-begraafplaatsenbeheer-ap:InfrastructuurelementShape shacl:property _:n3-2280;
+begraafplaatsenbeheer-ap:InfrastructuurelementShape shacl:property _:n3-2231;
     shacl:targetClass infrastructuur:Infrastructuurelement.
 begraafplaatsenbeheer-ap:KwantitatieveWaardeShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2281 shacl:datatype xsd:string;
+_:n3-2232 shacl:datatype xsd:string;
     shacl:description "De eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "eenheid";
     shacl:path schemas:unitText.
-begraafplaatsenbeheer-ap:KwantitatieveWaardeShape shacl:property _:n3-2281.
-_:n3-2282 shacl:class generiek:StandaardEenheid;
+begraafplaatsenbeheer-ap:KwantitatieveWaardeShape shacl:property _:n3-2232.
+_:n3-2233 shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "standaardEenheid";
     shacl:path schemas:unitCode.
-begraafplaatsenbeheer-ap:KwantitatieveWaardeShape shacl:property _:n3-2282.
-_:n3-2283 shacl:class schemas:Number;
+begraafplaatsenbeheer-ap:KwantitatieveWaardeShape shacl:property _:n3-2233.
+_:n3-2234 shacl:class schemas:Number;
     shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-begraafplaatsenbeheer-ap:KwantitatieveWaardeShape shacl:property _:n3-2283;
+begraafplaatsenbeheer-ap:KwantitatieveWaardeShape shacl:property _:n3-2234;
     shacl:targetClass schemas:QuantitativeValue.
 begraafplaatsenbeheer-ap:LichtpuntShape a shacl:NodeShape;
     shacl:closed false;
@@ -643,13 +643,13 @@ begraafplaatsenbeheer-ap:NormandischeAfsluitingShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:NormandischeAfsluiting.
 begraafplaatsenbeheer-ap:OpenbaarToiletShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2284 shacl:datatype xsd:boolean;
+_:n3-2235 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan dat het element ondergronds opgeborgen kan worden.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "verzinkbaar";
     shacl:path infrastructuur:verzinkbaar.
-begraafplaatsenbeheer-ap:OpenbaarToiletShape shacl:property _:n3-2284;
+begraafplaatsenbeheer-ap:OpenbaarToiletShape shacl:property _:n3-2235;
     shacl:targetClass infrastructuur:OpenbaarToilet.
 begraafplaatsenbeheer-ap:OpenbareStraatverlichtingAanGevelOfMuurShape a shacl:NodeShape;
     shacl:closed false;
@@ -662,25 +662,25 @@ begraafplaatsenbeheer-ap:OpenbareVuilnisbakShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:OpenbareVuilnisbak.
 begraafplaatsenbeheer-ap:OrganisatieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2285 shacl:datatype xsd:string;
+_:n3-2236 shacl:datatype xsd:string;
     shacl:description "Andere naam waaronder de organisatie bekend is.";
     shacl:maxCount 1;
     shacl:name "alternatieveNaam";
     shacl:path skos:altLabel.
-begraafplaatsenbeheer-ap:OrganisatieShape shacl:property _:n3-2285.
-_:n3-2286 shacl:class schema:ContactPoint;
+begraafplaatsenbeheer-ap:OrganisatieShape shacl:property _:n3-2236.
+_:n3-2237 shacl:class schema:ContactPoint;
     shacl:description "Informatie zoals email, telefoon ... die toelaat de Organisatie te contacteren.";
     shacl:maxCount 1;
     shacl:name "contactinfo";
     shacl:path schema:contactPoint.
-begraafplaatsenbeheer-ap:OrganisatieShape shacl:property _:n3-2286.
-_:n3-2287 shacl:datatype xsd:string;
+begraafplaatsenbeheer-ap:OrganisatieShape shacl:property _:n3-2237.
+_:n3-2238 shacl:datatype xsd:string;
     shacl:description "Naam waarmee de organisatie bij voorkeur wordt aangeduid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkeursnaam";
     shacl:path skos:prefLabel.
-begraafplaatsenbeheer-ap:OrganisatieShape shacl:property _:n3-2287;
+begraafplaatsenbeheer-ap:OrganisatieShape shacl:property _:n3-2238;
     shacl:targetClass org:Organization.
 begraafplaatsenbeheer-ap:PaneelafsluitingShape a shacl:NodeShape;
     shacl:closed false;
@@ -693,20 +693,20 @@ begraafplaatsenbeheer-ap:PuntShape a shacl:NodeShape;
     shacl:targetClass sf:Point.
 begraafplaatsenbeheer-ap:RelatieObjectShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2288 shacl:datatype xsd:string;
+_:n3-2239 shacl:datatype xsd:string;
     shacl:description "De naam van de bron.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "bronnaam";
     shacl:path openbaardomein:bronnaam.
-begraafplaatsenbeheer-ap:RelatieObjectShape shacl:property _:n3-2288.
-_:n3-2289 shacl:datatype xsd:string;
+begraafplaatsenbeheer-ap:RelatieObjectShape shacl:property _:n3-2239.
+_:n3-2240 shacl:datatype xsd:string;
     shacl:description "Een globaal unieke identificator voor het object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "uuid";
     shacl:path openbaardomein:uuid.
-begraafplaatsenbeheer-ap:RelatieObjectShape shacl:property _:n3-2289;
+begraafplaatsenbeheer-ap:RelatieObjectShape shacl:property _:n3-2240;
     shacl:targetClass rdfs:Resource.
 begraafplaatsenbeheer-ap:RoosterShape a shacl:NodeShape;
     shacl:closed false;
@@ -722,72 +722,72 @@ begraafplaatsenbeheer-ap:SpandraadKettingShape a shacl:NodeShape;
     shacl:targetClass infrastructuur:SpandraadKetting.
 begraafplaatsenbeheer-ap:StraatkolkShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2290 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Straatkolktypes>;
+_:n3-2241 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Straatkolktypes>;
     shacl:class skos:Concept;
     shacl:description "Het type straatkolk.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "straatkolktype";
     shacl:path infrastructuur:straatkolktype.
-begraafplaatsenbeheer-ap:StraatkolkShape shacl:property _:n3-2290;
+begraafplaatsenbeheer-ap:StraatkolkShape shacl:property _:n3-2241;
     shacl:targetClass infrastructuur:Straatkolk.
 begraafplaatsenbeheer-ap:StraatkolktypesShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 begraafplaatsenbeheer-ap:StraatmeubilairShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2291 shacl:datatype xsd:boolean;
+_:n3-2242 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het element al dan niet verplaatsbaar is en dus niet permanent verankerd werd met het aardoppervlak.";
     shacl:maxCount 1;
     shacl:name "verplaatsbaar";
     shacl:path infrastructuur:verplaatsbaar.
-begraafplaatsenbeheer-ap:StraatmeubilairShape shacl:property _:n3-2291;
+begraafplaatsenbeheer-ap:StraatmeubilairShape shacl:property _:n3-2242;
     shacl:targetClass infrastructuur:Straatmeubilair.
 begraafplaatsenbeheer-ap:StrooiweideShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass begraafplaats:Strooiweide.
 begraafplaatsenbeheer-ap:TerreinVoorkomenShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2292 shacl:class skos:Concept;
+_:n3-2243 shacl:class skos:Concept;
     shacl:description "Eigenschap die aangeeft of er binnen het beheerdeel al dan niet objecten voorkomen die de vrije werking van machines of andere werktuigen kan verhinderen.";
     shacl:maxCount 1;
     shacl:name "obstakels";
     shacl:path terreindeel:obstakels.
-begraafplaatsenbeheer-ap:TerreinVoorkomenShape shacl:property _:n3-2292.
-_:n3-2293 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/TaludWaarde>;
+begraafplaatsenbeheer-ap:TerreinVoorkomenShape shacl:property _:n3-2243.
+_:n3-2244 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/TaludWaarde>;
     shacl:class skos:Concept;
     shacl:description "Een talud is het kunstmatig gedeelte van een vlak van de wegbaan, dijken, spoorbanen, vestingswerken, ... dat een helling (min. 20%, max 80% voor kunstmatig verharde taluds) vertoont en bedoeld voor het opvangen van een hoogteverschil.";
     shacl:maxCount 1;
     shacl:name "talud";
     shacl:path terreindeel:talud.
-begraafplaatsenbeheer-ap:TerreinVoorkomenShape shacl:property _:n3-2293;
+begraafplaatsenbeheer-ap:TerreinVoorkomenShape shacl:property _:n3-2244;
     shacl:targetClass terreindeel:TerreinVoorkomen.
 begraafplaatsenbeheer-ap:TerreindeelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2294 shacl:class schemas:QuantitativeValue;
+_:n3-2245 shacl:class schemas:QuantitativeValue;
     shacl:description "De breedte van het object. In geval van een ongelijkmatige breedte wordt de gemiddelde breedte opgenomen.";
     shacl:maxCount 1;
     shacl:name "breedte";
     shacl:path schema:width.
-begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2294.
-_:n3-2295 shacl:class openbaardomein:Element;
+begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2245.
+_:n3-2246 shacl:class openbaardomein:Element;
     shacl:description "Het specifieke Element dat een obstakel vormt.";
     shacl:name "heeftObstakel";
     shacl:path <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#Terreindeel.heeftObstakel>.
-begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2295.
-_:n3-2296 shacl:class schemas:QuantitativeValue;
+begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2246.
+_:n3-2247 shacl:class schemas:QuantitativeValue;
     shacl:description "De lineare grootte van het object.";
     shacl:maxCount 1;
     shacl:name "lengte";
     shacl:path <http://open.vocab.org/terms/length>.
-begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2296.
-_:n3-2297 shacl:class terreindeel:TerreinVoorkomen;
+begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2247.
+_:n3-2248 shacl:class terreindeel:TerreinVoorkomen;
     shacl:description "Het voorkomen van het terreindeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkomen";
     shacl:path terreindeel:voorkomen.
-begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2297;
+begraafplaatsenbeheer-ap:TerreindeelShape shacl:property _:n3-2248;
     shacl:targetClass terreindeel:Terreindeel.
 begraafplaatsenbeheer-ap:ToegangspoortShape a shacl:NodeShape;
     shacl:closed false;

@@ -317,7 +317,7 @@ dossier:Stukonderdeel a owl:Class;
     rdfs:label "Stukonderdeel"@nl;
     rdfs:comment "Een apart onderdeel van een groter stuk."@nl;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/dossier>;
-    rdfs:subClassOf prov:Entity.
+    rdfs:subClassOf prov:Entity, dossier:Stuk.
 dossier:activiteit a owl:ObjectProperty;
     rdfs:label "activiteit"@nl;
     rdfs:comment "URI van de activiteit."@nl;
@@ -425,6 +425,8 @@ dossier:isNeerslagVan a owl:ObjectProperty;
     rdfs:domain prov:Collection;
     rdfs:isDefinedBy <https://data.vlaanderen.be/ns/dossier>;
     rdfs:range dbo:UnitOfWork.
+<https://dbpedia.org/ontology/procedure> a rdf:Property;
+    rdfs:label "procedure"@nl.
 dossier:Dossier a owl:Class;
     rdfs:label "Dossier"@nl;
     rdfs:comment "Samenhangend geheel van stukken die betrekking hebben op een bepaalde zaak. "@nl;
@@ -444,127 +446,127 @@ dossier:Stuk a owl:Class;
     rdfs:subClassOf prov:Entity.
 <https://data.vlaanderen.be/ns/dossier> a owl:Ontology;
     rdfs:label "dossier"@en, "dossier"@nl.
-_:n3-918 a foaf:Person.
-_:n3-919 foaf:homepage <https://www.oost-vlaanderen.be/>;
-    foaf:name "Provincie Oost-Vlaanderen".
-_:n3-918 schema:affiliation _:n3-919;
-    foaf:firstName "Remco";
-    foaf:lastName "Bruijnje".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-918.
-_:n3-920 a foaf:Person.
-_:n3-921 foaf:homepage <https://www.skryv.com>;
-    foaf:name "Skryv".
-_:n3-920 schema:affiliation _:n3-921;
-    foaf:firstName "Anouk";
-    foaf:lastName "De Meester".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-920.
-_:n3-922 a foaf:Person.
-_:n3-923 foaf:homepage <https://overheid.vlaanderen.be/>;
-    foaf:name "Departement Kanselarij en Bestuur".
-_:n3-922 schema:affiliation _:n3-923;
-    foaf:firstName "Alvin";
-    foaf:lastName "Demeyer".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-922.
-_:n3-924 a foaf:Person.
-_:n3-925 foaf:homepage <https://overheid.vlaanderen.be/>;
-    foaf:name "Departement CJM".
-_:n3-924 schema:affiliation _:n3-925;
-    foaf:firstName "Roel";
-    foaf:lastName "Devriendt".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-924.
-_:n3-926 a foaf:Person.
-_:n3-927 foaf:homepage <https://www.cipalschaubroeck.be>;
-    foaf:name "Cipal Schaubroeck".
-_:n3-926 schema:affiliation _:n3-927;
-    foaf:firstName "Wim";
-    foaf:lastName "Lambrecht".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-926.
-_:n3-928 a foaf:Person.
-_:n3-929 foaf:homepage <https://overheid.vlaanderen.be/>;
-    foaf:name "Onroerend Erfgoed".
-_:n3-928 schema:affiliation _:n3-929;
-    foaf:firstName "Inge";
-    foaf:lastName "Roosens".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-928.
-_:n3-930 a foaf:Person.
-_:n3-931 foaf:homepage <https://www.stad.gent>;
-    foaf:name "Stad Gent".
-_:n3-930 schema:affiliation _:n3-931;
-    foaf:firstName "Steven";
-    foaf:lastName "Staelens".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-930.
-_:n3-932 a foaf:Person.
-_:n3-933 foaf:homepage <https://www.skryv.com/>;
-    foaf:name "Skryv".
-_:n3-932 schema:affiliation _:n3-933;
-    foaf:firstName "Toon";
-    foaf:lastName "Timbermont".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-932.
-_:n3-934 a foaf:Person.
-_:n3-935 foaf:homepage <https://overheid.vlaanderen.be/facilitairbedrijf>;
-    foaf:name "Het Facilitair Bedrijf".
-_:n3-934 schema:affiliation _:n3-935;
-    foaf:firstName "Jana";
-    foaf:lastName "Van Bouwel".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-934.
-_:n3-936 a foaf:Person.
-_:n3-937 foaf:homepage <https://overheid.vlaanderen.be/>;
+_:n3-1230 a foaf:Person.
+_:n3-1231 foaf:homepage <https://overheid.vlaanderen.be/>;
     foaf:name "Informatie Vlaanderen".
-_:n3-936 schema:affiliation _:n3-937;
-    foaf:firstName "Bert";
-    foaf:lastName "Van Kets".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-936.
-_:n3-938 a foaf:Person.
-_:n3-939 foaf:homepage <https://overheid.vlaanderen.be/>;
-    foaf:name "Informatie Vlaanderen".
-_:n3-938 schema:affiliation _:n3-939;
+_:n3-1230 schema:affiliation _:n3-1231;
     foaf:firstName "Henk";
     foaf:lastName "Vanderstraeten".
-<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-938;
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1230.
+_:n3-1232 a foaf:Person.
+_:n3-1233 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Informatie Vlaanderen".
+_:n3-1232 schema:affiliation _:n3-1233;
+    foaf:firstName "Bert";
+    foaf:lastName "Van Kets".
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1232.
+_:n3-1234 a foaf:Person.
+_:n3-1235 foaf:homepage <https://overheid.vlaanderen.be/facilitairbedrijf>;
+    foaf:name "Het Facilitair Bedrijf".
+_:n3-1234 schema:affiliation _:n3-1235;
+    foaf:firstName "Jana";
+    foaf:lastName "Van Bouwel".
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1234.
+_:n3-1236 a foaf:Person.
+_:n3-1237 foaf:homepage <https://www.skryv.com/>;
+    foaf:name "Skryv".
+_:n3-1236 schema:affiliation _:n3-1237;
+    foaf:firstName "Toon";
+    foaf:lastName "Timbermont".
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1236.
+_:n3-1238 a foaf:Person.
+_:n3-1239 foaf:homepage <https://www.stad.gent>;
+    foaf:name "Stad Gent".
+_:n3-1238 schema:affiliation _:n3-1239;
+    foaf:firstName "Steven";
+    foaf:lastName "Staelens".
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1238.
+_:n3-1240 a foaf:Person.
+_:n3-1241 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Onroerend Erfgoed".
+_:n3-1240 schema:affiliation _:n3-1241;
+    foaf:firstName "Inge";
+    foaf:lastName "Roosens".
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1240.
+_:n3-1242 a foaf:Person.
+_:n3-1243 foaf:homepage <https://www.cipalschaubroeck.be>;
+    foaf:name "Cipal Schaubroeck".
+_:n3-1242 schema:affiliation _:n3-1243;
+    foaf:firstName "Wim";
+    foaf:lastName "Lambrecht".
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1242.
+_:n3-1244 a foaf:Person.
+_:n3-1245 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Departement CJM".
+_:n3-1244 schema:affiliation _:n3-1245;
+    foaf:firstName "Roel";
+    foaf:lastName "Devriendt".
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1244.
+_:n3-1246 a foaf:Person.
+_:n3-1247 foaf:homepage <https://overheid.vlaanderen.be/>;
+    foaf:name "Departement Kanselarij en Bestuur".
+_:n3-1246 schema:affiliation _:n3-1247;
+    foaf:firstName "Alvin";
+    foaf:lastName "Demeyer".
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1246.
+_:n3-1248 a foaf:Person.
+_:n3-1249 foaf:homepage <https://www.skryv.com>;
+    foaf:name "Skryv".
+_:n3-1248 schema:affiliation _:n3-1249;
+    foaf:firstName "Anouk";
+    foaf:lastName "De Meester".
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1248.
+_:n3-1250 a foaf:Person.
+_:n3-1251 foaf:homepage <https://www.oost-vlaanderen.be/>;
+    foaf:name "Provincie Oost-Vlaanderen".
+_:n3-1250 schema:affiliation _:n3-1251;
+    foaf:firstName "Remco";
+    foaf:lastName "Bruijnje".
+<https://data.vlaanderen.be/ns/dossier> dcterms:contributor _:n3-1250;
     dcterms:issued "2019-09-01";
-    dcterms:license <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>, "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0".
-_:n3-940 foaf:homepage <https://data.vlaanderen.be>;
+    dcterms:license "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0", <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:n3-1252 foaf:homepage <https://data.vlaanderen.be>;
     foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
     foaf:name "Data Vlaanderen".
-<https://data.vlaanderen.be/ns/dossier> dcterms:mediator _:n3-940;
-    rdfs:seeAlso dbo:Case, dbo:Project, dbo:UnitOfWork, rdfs:Resource, dcat:Distribution, prov:Activity, prov:Agent, prov:Association, prov:Collection, prov:Entity, dcterms:date, dcterms:isPartOf, dcterms:language, dcterms:relation, dcterms:title, adms:identifier, dcat:byteSize, dcat:mediaType, prov:actedOnBehalfOf, prov:agent, prov:hadRole, prov:qualifiedAssociation, prov:value, prov:wasAssociatedWith.
-_:n3-941 a foaf:Person.
-_:n3-942 foaf:homepage <http://www.pwc.be>;
+<https://data.vlaanderen.be/ns/dossier> dcterms:mediator _:n3-1252;
+    rdfs:seeAlso dbo:Case, dbo:Project, dbo:UnitOfWork, rdfs:Resource, dcat:Distribution, prov:Activity, prov:Agent, prov:Association, prov:Collection, prov:Entity, <https://dbpedia.org/ontology/procedure>, prov:wasAssociatedWith, prov:value, prov:qualifiedAssociation, prov:hadRole, prov:agent, prov:actedOnBehalfOf, dcat:mediaType, dcat:byteSize, adms:identifier, dcterms:title, dcterms:relation, dcterms:language, dcterms:isPartOf, dcterms:date.
+_:n3-1253 a foaf:Person.
+_:n3-1254 foaf:homepage <http://www.pwc.be>;
     foaf:name "PwC".
-_:n3-941 schema:affiliation _:n3-942;
-    foaf:firstName "Michiel";
-    foaf:lastName "De Keyzer";
-    foaf:mbox <mailto:michiel.de.keyzer@pwc.com>.
-<https://data.vlaanderen.be/ns/dossier> rec54:editor _:n3-941.
-_:n3-943 a foaf:Person.
-_:n3-944 foaf:homepage <http://www.pwc.be>;
-    foaf:name "PwC".
-_:n3-943 schema:affiliation _:n3-944;
-    foaf:firstName "Arne";
-    foaf:lastName "De Proft";
-    foaf:mbox <mailto:arne.de.proft@pwc.com>.
-<https://data.vlaanderen.be/ns/dossier> rec54:editor _:n3-943.
-_:n3-945 a foaf:Person.
-_:n3-946 foaf:homepage <http://www.pwc.be>;
-    foaf:name "PwC".
-_:n3-945 schema:affiliation _:n3-946;
+_:n3-1253 schema:affiliation _:n3-1254;
     foaf:firstName "Dimitri";
     foaf:lastName "Schepers";
     foaf:mbox <mailto:dimitri.schepers@pwc.com>.
-<https://data.vlaanderen.be/ns/dossier> rec54:editor _:n3-945.
-_:n3-947 a foaf:Person.
-_:n3-948 foaf:homepage <https://overheid.vlaanderen.be/facilitairbedrijf>;
-    foaf:name "Het Facilitair Bedrijf".
-_:n3-947 schema:affiliation _:n3-948;
-    foaf:firstName "Quincy";
-    foaf:lastName "Oeyen";
-    foaf:mbox <mailto:quincy.oeyen@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/dossier> foaf:maker _:n3-947.
-_:n3-949 a foaf:Person.
-_:n3-950 foaf:homepage <https://omgeving.vlaanderen.be/>;
+<https://data.vlaanderen.be/ns/dossier> rec54:editor _:n3-1253.
+_:n3-1255 a foaf:Person.
+_:n3-1256 foaf:homepage <http://www.pwc.be>;
+    foaf:name "PwC".
+_:n3-1255 schema:affiliation _:n3-1256;
+    foaf:firstName "Arne";
+    foaf:lastName "De Proft";
+    foaf:mbox <mailto:arne.de.proft@pwc.com>.
+<https://data.vlaanderen.be/ns/dossier> rec54:editor _:n3-1255.
+_:n3-1257 a foaf:Person.
+_:n3-1258 foaf:homepage <http://www.pwc.be>;
+    foaf:name "PwC".
+_:n3-1257 schema:affiliation _:n3-1258;
+    foaf:firstName "Michiel";
+    foaf:lastName "De Keyzer";
+    foaf:mbox <mailto:michiel.de.keyzer@pwc.com>.
+<https://data.vlaanderen.be/ns/dossier> rec54:editor _:n3-1257.
+_:n3-1259 a foaf:Person.
+_:n3-1260 foaf:homepage <https://omgeving.vlaanderen.be/>;
     foaf:name "Departement Omgeving".
-_:n3-949 schema:affiliation _:n3-950;
+_:n3-1259 schema:affiliation _:n3-1260;
     foaf:firstName "Geert";
     foaf:lastName "Van Haute";
     foaf:mbox <mailto:geert.vanhaute@vlaanderen.be>.
-<https://data.vlaanderen.be/ns/dossier> foaf:maker _:n3-949.
+<https://data.vlaanderen.be/ns/dossier> foaf:maker _:n3-1259.
+_:n3-1261 a foaf:Person.
+_:n3-1262 foaf:homepage <https://overheid.vlaanderen.be/facilitairbedrijf>;
+    foaf:name "Het Facilitair Bedrijf".
+_:n3-1261 schema:affiliation _:n3-1262;
+    foaf:firstName "Quincy";
+    foaf:lastName "Oeyen";
+    foaf:mbox <mailto:quincy.oeyen@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/dossier> foaf:maker _:n3-1261.

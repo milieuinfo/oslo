@@ -1,0 +1,534 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
+@prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15> rdfs:member <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#RecordShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#RecordtypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CRSShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OmvangShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#AttribuutwaardeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaarShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaarShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetBereikShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetCurvebereikShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetPuntbereikShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DomeinobjectShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GemeenschappelijkPuntregelShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#AgentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingmethodeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#AgentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass dcterms:Agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#AttribuutwaardeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#AttribuutwaardeShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#AttribuutwaardeShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#AttribuutwaardeShape/ca4892872b345b4fe994128b7c31877979275399>;
+    shacl:targetClass CoverageCore:CV_AttributeValues.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#AttribuutwaardeShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Attribuutwaarde.waarde";
+    shacl:class RecordsAndClassMetadata:Record;
+    shacl:description "De waarden."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_AttributeValues.values>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#AttribuutwaardeShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Attribuutwaarde.waarde";
+    shacl:description "De waarden."@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_AttributeValues.values>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#AttribuutwaardeShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Attribuutwaarde.waarde";
+    shacl:description "De waarden."@nl;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_AttributeValues.values>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/d94444155def2cad0011a503bc12b8f2f583f974>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/52000cf40fc62767642dc4f6dc2b59d0cacb027f>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/9312913ea970052f2767b99278c71e6d2fa39638>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/d113886cec006de19ddabea8abfde3acc4dfff04>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/6d8297cadfdc8320f3471249a57bf768503aaae3>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/aa7bfcd20e45e61b83a0110c5da6e8a4d12c9b30>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/1e3a0c6b3366834c6080ee3364230423095f1861>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/306c5ba1e79e682fa7af7ed76e2a01d4197f2535>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/3795c04f80367e93d61f67dfe7a3ae0e69e32a6b>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/8f4fa68c81733c0d091800b26aca41f71c1c7787>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/e775b5f50c48781b717351aa600c5ef5ff403f8d>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/0be8037646e11ed966e794a1aa01fdb9d302fee4>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/6b274ca48f0c281c340d5a3faf0f103bf6dcdb38>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/914c8c91aedf61526e1609eb59b16c39c68dbd3d>;
+    shacl:targetClass CoverageCore:CV_Coverage.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/0be8037646e11ed966e794a1aa01fdb9d302fee4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.typeBereik";
+    shacl:class RecordsAndClassMetadata:RecordType;
+    shacl:description "Datatype van het Record dat een waarde voorstelt."@nl;
+    shacl:name "typeBereik"@nl;
+    shacl:path CoverageCore:rangeType.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/1e3a0c6b3366834c6080ee3364230423095f1861> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.domeinOmvang";
+    shacl:description "Uierste grenzen in tijd en/of ruimte van het Bereik."@nl;
+    shacl:minCount 1;
+    shacl:name "domeinOmvang"@nl;
+    shacl:path CoverageCore:domainExtent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/306c5ba1e79e682fa7af7ed76e2a01d4197f2535> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.domeinOmvang";
+    shacl:class <http://def.isotc211.org/iso19115/2003/ExtentInformation#EX_Extent>;
+    shacl:description "Uierste grenzen in tijd en/of ruimte van het Bereik."@nl;
+    shacl:name "domeinOmvang"@nl;
+    shacl:path CoverageCore:domainExtent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/3795c04f80367e93d61f67dfe7a3ae0e69e32a6b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.gemeenschappelijkPuntRegel";
+    shacl:class <http://def.isotc211.org/iso19123/2005/SegmentedCurve#CV_CommonPointRule>;
+    shacl:description "Geeft aan welke waarde moet worden teruggegeven voor een gegeven positie wanneer die binnen meerdere Geometrieën valt."@nl;
+    shacl:name "gemeenschappelijkPuntRegel"@nl;
+    shacl:path CoverageCore:commonPointRule.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/52000cf40fc62767642dc4f6dc2b59d0cacb027f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.crs";
+    shacl:class <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#SC_CRS>;
+    shacl:description "Coördinaatsysteem waarin de posities in het Bereik zijn gedefinieerd."@nl;
+    shacl:name "crs"@nl;
+    shacl:path CoverageCore:CRS.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/6b274ca48f0c281c340d5a3faf0f103bf6dcdb38> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.typeBereik";
+    shacl:description "Datatype van het Record dat een waarde voorstelt."@nl;
+    shacl:maxCount 1;
+    shacl:name "typeBereik"@nl;
+    shacl:path CoverageCore:rangeType.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/6d8297cadfdc8320f3471249a57bf768503aaae3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.domeinElement";
+    shacl:description "Verwijzing naar een DomeinObject van het Bereik."@nl;
+    shacl:minCount 1;
+    shacl:name "domeinElement"@nl;
+    shacl:path CoverageCore:domainElement.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/8f4fa68c81733c0d091800b26aca41f71c1c7787> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.gemeenschappelijkPuntRegel";
+    shacl:description "Geeft aan welke waarde moet worden teruggegeven voor een gegeven positie wanneer die binnen meerdere Geometrieën valt."@nl;
+    shacl:maxCount 1;
+    shacl:name "gemeenschappelijkPuntRegel"@nl;
+    shacl:path CoverageCore:commonPointRule.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/914c8c91aedf61526e1609eb59b16c39c68dbd3d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.typeBereik";
+    shacl:description "Datatype van het Record dat een waarde voorstelt."@nl;
+    shacl:minCount 1;
+    shacl:name "typeBereik"@nl;
+    shacl:path CoverageCore:rangeType.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/9312913ea970052f2767b99278c71e6d2fa39638> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.crs";
+    shacl:description "Coördinaatsysteem waarin de posities in het Bereik zijn gedefinieerd."@nl;
+    shacl:minCount 1;
+    shacl:name "crs"@nl;
+    shacl:path CoverageCore:CRS.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/aa7bfcd20e45e61b83a0110c5da6e8a4d12c9b30> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.domeinElement";
+    shacl:class <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature>;
+    shacl:description "Verwijzing naar een DomeinObject van het Bereik."@nl;
+    shacl:name "domeinElement"@nl;
+    shacl:path CoverageCore:domainElement.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/d113886cec006de19ddabea8abfde3acc4dfff04> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.crs";
+    shacl:description "Coördinaatsysteem waarin de posities in het Bereik zijn gedefinieerd."@nl;
+    shacl:maxCount 1;
+    shacl:name "crs"@nl;
+    shacl:path CoverageCore:CRS.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/d94444155def2cad0011a503bc12b8f2f583f974> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.bereikElement";
+    shacl:class CoverageCore:CV_AttributeValues;
+    shacl:description "Verwijzing naar een Attribuutwaarde van het Bereik."@nl;
+    shacl:name "bereikElement"@nl;
+    shacl:path CoverageCore:rangeElement.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#BereikShape/e775b5f50c48781b717351aa600c5ef5ff403f8d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Bereik.gemeenschappelijkPuntRegel";
+    shacl:description "Geeft aan welke waarde moet worden teruggegeven voor een gegeven positie wanneer die binnen meerdere Geometrieën valt."@nl;
+    shacl:minCount 1;
+    shacl:name "gemeenschappelijkPuntRegel"@nl;
+    shacl:path CoverageCore:commonPointRule.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CRSShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <http://def.isotc211.org/iso19111/2007/CoordinateReferenceSystems#SC_CRS>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass sf:Curve.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaarShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaarShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaarShape/722a1f18cabb107c684fe4ca857876ade00b0d01>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaarShape/d7e4e623022693159b355b9e717ac7ec1a50695c>;
+    shacl:targetClass CoverageCore:CV_CurveValuePair.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaarShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaar.geometrie";
+    shacl:description "Geometrie van het element."@nl;
+    shacl:maxCount 1;
+    shacl:name "geometrie"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaarShape/722a1f18cabb107c684fe4ca857876ade00b0d01> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaar.geometrie";
+    shacl:class sf:Curve;
+    shacl:description "Geometrie van het element."@nl;
+    shacl:name "geometrie"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaarShape/d7e4e623022693159b355b9e717ac7ec1a50695c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#CurveWaardepaar.geometrie";
+    shacl:description "Geometrie van het element."@nl;
+    shacl:minCount 1;
+    shacl:name "geometrie"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetBereikShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetBereikShape/44479df511afb8aedc167c98e2023e66c0a57094>;
+    shacl:targetClass DiscreteCoverages:CV_DiscreteCoverage.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetBereikShape/44479df511afb8aedc167c98e2023e66c0a57094> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetBereik.element";
+    shacl:class CoverageCore:CV_GeometryValuePair;
+    shacl:description "Onderdeel van het Bereik."@nl;
+    shacl:name "element"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCoverage.element>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetCurvebereikShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetCurvebereikShape/44479df511afb8aedc167c98e2023e66c0a57094>;
+    shacl:targetClass DiscreteCoverages:CV_DiscreteCurveCoverage.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetCurvebereikShape/44479df511afb8aedc167c98e2023e66c0a57094> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetCurvebereik.element";
+    shacl:class CoverageCore:CV_CurveValuePair;
+    shacl:description "Onderdeel van het Bereik."@nl;
+    shacl:name "element"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscreteCurveCoverage.element>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetPuntbereikShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetPuntbereikShape/44479df511afb8aedc167c98e2023e66c0a57094>;
+    shacl:targetClass DiscreteCoverages:CV_DiscretePointCoverage.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetPuntbereikShape/44479df511afb8aedc167c98e2023e66c0a57094> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DiscreetPuntbereik.element";
+    shacl:class CoverageCore:CV_PointValuePair;
+    shacl:description "Onderdeel van het Bereik."@nl;
+    shacl:name "element"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_DiscretePointCoverage.element>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DomeinobjectShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DomeinobjectShape/802f5cbc7a47bc2682a3b764c7ef735e4bf374fd>;
+    shacl:targetClass DiscreteCoverages:CV_Domainobject.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#DomeinobjectShape/802f5cbc7a47bc2682a3b764c7ef735e4bf374fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Domeinobject.ruimtelijkeSamenstelling";
+    shacl:class locn:Geometry;
+    shacl:description "De geometrieën waaruit het Domeinobject is samengesteld."@nl;
+    shacl:name "ruimtelijkeSamenstelling"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#CV_Domainobject.spatialElement>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GemeenschappelijkPuntregelShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <http://def.isotc211.org/iso19123/2005/SegmentedCurve#CV_CommonPointRule>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieShape/1fa2e16d78d8fce7d565e8b0d0b295ccfce4ccf1>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieShape/924fa0891e29beb42edc03865640a804126d1a9f>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieShape/c61a6fcf48222cfd263d87bb92f5ef2035d7b7dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieShape/412041a7e5eb713d30c26685c48cbbc05c934a2f>;
+    shacl:targetClass locn:Geometry.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieShape/1fa2e16d78d8fce7d565e8b0d0b295ccfce4ccf1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Geometrie.gml";
+    shacl:description "Geometrie uitgedrukt in gml-formaat."@nl;
+    shacl:maxCount 1;
+    shacl:name "gml"@nl;
+    shacl:path geosparql:asGML.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieShape/412041a7e5eb713d30c26685c48cbbc05c934a2f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Geometrie.wkt";
+    shacl:description "Geometrie uitgedrukt in wkt-formaat."@nl;
+    shacl:maxCount 1;
+    shacl:name "wkt"@nl;
+    shacl:path geosparql:asWKT.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieShape/924fa0891e29beb42edc03865640a804126d1a9f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Geometrie.opmeting";
+    shacl:description "De manier waarop de geometrie werd bepaald."@nl;
+    shacl:maxCount 1;
+    shacl:name "opmeting"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieShape/c61a6fcf48222cfd263d87bb92f5ef2035d7b7dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Geometrie.opmeting";
+    shacl:class generiek:Opmeting;
+    shacl:description "De manier waarop de geometrie werd bepaald."@nl;
+    shacl:name "opmeting"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#Geometrie.opmeting>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/722a1f18cabb107c684fe4ca857876ade00b0d01>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/d7e4e623022693159b355b9e717ac7ec1a50695c>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/ca4892872b345b4fe994128b7c31877979275399>;
+    shacl:targetClass CoverageCore:CV_GeometryValuePair.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaar.geometrie";
+    shacl:description "Geometrie van het element."@nl;
+    shacl:maxCount 1;
+    shacl:name "geometrie"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.geometry>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaar.waarde";
+    shacl:class RecordsAndClassMetadata:Record;
+    shacl:description "Waarde van het element."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/722a1f18cabb107c684fe4ca857876ade00b0d01> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaar.geometrie";
+    shacl:class <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_DomainFeature>;
+    shacl:description "Geometrie van het element."@nl;
+    shacl:name "geometrie"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.geometry>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaar.waarde";
+    shacl:description "Waarde van het element."@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaar.waarde";
+    shacl:description "Waarde van het element."@nl;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaarShape/d7e4e623022693159b355b9e717ac7ec1a50695c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#GeometrieWaardepaar.geometrie";
+    shacl:description "Geometrie van het element."@nl;
+    shacl:minCount 1;
+    shacl:name "geometrie"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.geometry>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OmvangShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass <http://def.isotc211.org/iso19115/2003/ExtentInformation#EX_Extent>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/6890e1def304cb2b3a13ab957c88611b3da3a34e>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/c192eb0d5e5c85399936518a4f4503c049d71714>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/c5ab93f3649a701e1fefd1ffdb8529899ed6675c>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/11d5c55a52d6fab8bf98ab18615920a40a48b7eb>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/f08b541038196b61b6b3337af76d5e56143400a5>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/a825ef9ed99d3af5d19a15985b5127033b6c35ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/cca2c488938324b89e759dd60201a611e0f43485>;
+    shacl:targetClass generiek:Opmeting.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/11d5c55a52d6fab8bf98ab18615920a40a48b7eb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Opmeting.opnamedatum";
+    shacl:description "Datum waarop de Opmeting plaatsvond."@nl;
+    shacl:maxCount 1;
+    shacl:name "opnamedatum"@nl;
+    shacl:path generiek:opnamedatum.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/6890e1def304cb2b3a13ab957c88611b3da3a34e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Opmeting.methode";
+    shacl:description "Aard van de gebruikte methode."@nl;
+    shacl:maxCount 1;
+    shacl:name "methode"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#Opmeting.methode>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/a825ef9ed99d3af5d19a15985b5127033b6c35ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Opmeting.uitgevoerdDoor";
+    shacl:class dcterms:Agent;
+    shacl:description "Agent die de Opmeting heeft uitgevoerd."@nl;
+    shacl:name "uitgevoerdDoor"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#Opmeting.uitgevoerdDoor>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/c192eb0d5e5c85399936518a4f4503c049d71714> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Opmeting.methode";
+    shacl:description "Aard van de gebruikte methode."@nl;
+    shacl:minCount 1;
+    shacl:name "methode"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#Opmeting.methode>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/c5ab93f3649a701e1fefd1ffdb8529899ed6675c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Opmeting.methode";
+    shacl:class skos:Concept;
+    shacl:description "Aard van de gebruikte methode."@nl;
+    shacl:name "methode"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#Opmeting.methode>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/cca2c488938324b89e759dd60201a611e0f43485> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Opmeting.uitgevoerdDoor";
+    shacl:description "Agent die de Opmeting heeft uitgevoerd."@nl;
+    shacl:maxCount 1;
+    shacl:name "uitgevoerdDoor"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/generiek#Opmeting.uitgevoerdDoor>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingShape/f08b541038196b61b6b3337af76d5e56143400a5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#Opmeting.opnamedatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Datum waarop de Opmeting plaatsvond."@nl;
+    shacl:name "opnamedatum"@nl;
+    shacl:path generiek:opnamedatum.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#OpmetingmethodeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass sf:Point.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaarShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaarShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaarShape/722a1f18cabb107c684fe4ca857876ade00b0d01>, <https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaarShape/d7e4e623022693159b355b9e717ac7ec1a50695c>;
+    shacl:targetClass CoverageCore:CV_PointValuePair.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaarShape/06750a3b20c69a1d055cfd0af2c2b5d6bf989bd2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaar.geometrie";
+    shacl:description "Geometrie van het PuntWaardepaar."@nl;
+    shacl:maxCount 1;
+    shacl:name "geometrie"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_PointValuePair.geometry>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaarShape/722a1f18cabb107c684fe4ca857876ade00b0d01> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaar.geometrie";
+    shacl:class sf:Point;
+    shacl:description "Geometrie van het PuntWaardepaar."@nl;
+    shacl:name "geometrie"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_PointValuePair.geometry>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaarShape/d7e4e623022693159b355b9e717ac7ec1a50695c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#PuntWaardepaar.geometrie";
+    shacl:description "Geometrie van het PuntWaardepaar."@nl;
+    shacl:minCount 1;
+    shacl:name "geometrie"@nl;
+    shacl:path <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_PointValuePair.geometry>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#RecordShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass RecordsAndClassMetadata:Record.
+<https://data.vlaanderen.be/doc/applicatieprofiel/ruimtelijke-bereiken/ontwerpstandaard/2024-04-15#RecordtypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass RecordsAndClassMetadata:RecordType.

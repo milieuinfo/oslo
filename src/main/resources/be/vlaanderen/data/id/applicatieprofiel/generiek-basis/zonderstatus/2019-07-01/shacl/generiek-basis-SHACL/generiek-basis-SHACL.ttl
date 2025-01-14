@@ -243,12 +243,12 @@
 <https://data.vlaanderen.be/shacl/generiek-basis> <https://data.vlaanderen.be/shacl/generiek-basisshapes> generiek-basis:AdministratieveEenheidShape, generiek-basis:DocumentOnderdeelShape, generiek-basis:GebeurtenisdatumShape, generiek-basis:GemeenteShape, generiek-basis:GeografischePositieShape, generiek-basis:GestructureerdeIdentificatorShape, generiek-basis:StandaardEenheidShape, generiek-basis:VersieShape, generiek-basis:VersieVolgensGeldigeTijdShape, generiek-basis:VersieVolgensTransactietijdShape, generiek-basis:PeriodeShape, generiek-basis:AgentShape, generiek-basis:JurisdictieShape, generiek-basis:PlaatsShape, generiek-basis:FormeelKaderShape, generiek-basis:ContactInfoShape, generiek-basis:LijnStringShape, generiek-basis:PuntShape, generiek-basis:PolygoonShape, generiek-basis:TaalStringShape, generiek-basis:GeografischeNaamShape, generiek-basis:GetypeerdeStringShape, generiek-basis:BewerkingstypeShape, generiek-basis:NAL_currencyShape, generiek-basis:PlaatscodeShape, generiek-basis:EurovocShape, generiek-basis:NUTSShape, generiek-basis:NAL_typeShape, generiek-basis:TaalcodeShape, generiek-basis:ELI_statusShape, generiek-basis:GeometrieSpecificatieWaardeShape, generiek-basis:GeometrieMethodeWaardeShape, generiek-basis:IdentificatorShape, generiek-basis:AdresvoorstellingShape, generiek-basis:GeometrieShape, generiek-basis:OrganisatieShape, generiek-basis:PersoonShape, generiek-basis:ActiviteitShape, generiek-basis:HerkomstactiviteitShape, generiek-basis:HerkomstagentShape, generiek-basis:HerkomstentiteitShape, generiek-basis:ObjectShape, generiek-basis:CreatieShape, generiek-basis:OpheffingShape, generiek-basis:LocatieShape, generiek-basis:DocumentShape, generiek-basis:HoedanigheidShape, generiek-basis:GebeurtenisShape, generiek-basis:GetalShape, generiek-basis:KwantitatieveWaardeShape, generiek-basis:TijdschemaShape.
 generiek-basis:ActiviteitShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-439 shacl:datatype xsd:dateTime;
+_:n3-384 shacl:datatype xsd:dateTime;
     shacl:description "Het tijdstip waarop de activiteit gepland is om te beginnen.";
     shacl:maxCount 1;
     shacl:name "geplandeStart";
     shacl:path generiek:geplandeStart.
-generiek-basis:ActiviteitShape shacl:property _:n3-439;
+generiek-basis:ActiviteitShape shacl:property _:n3-384;
     shacl:targetClass prov:Activity.
 generiek-basis:AdministratieveEenheidShape a shacl:NodeShape;
     shacl:closed false;
@@ -264,103 +264,103 @@ generiek-basis:BewerkingstypeShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 generiek-basis:ContactInfoShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-440 shacl:datatype rdf:langString;
+_:n3-385 shacl:datatype rdf:langString;
     shacl:description "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen.";
     shacl:maxCount 1;
     shacl:name "aanschrijfvorm";
     shacl:path vcard:honorific-prefix.
-generiek-basis:ContactInfoShape shacl:property _:n3-440.
-_:n3-441 shacl:class locn:Address;
+generiek-basis:ContactInfoShape shacl:property _:n3-385.
+_:n3-386 shacl:class locn:Address;
     shacl:description "Adres dat men kan aanschrijven of bezoeken.";
     shacl:maxCount 1;
     shacl:name "adres";
     shacl:path locn:address.
-generiek-basis:ContactInfoShape shacl:property _:n3-441.
-_:n3-442 shacl:class schemas:OpeningHoursSpecification;
+generiek-basis:ContactInfoShape shacl:property _:n3-386.
+_:n3-387 shacl:class schemas:OpeningHoursSpecification;
     shacl:description "Periode waarin contact kan worden opgenomen.";
     shacl:maxCount 1;
     shacl:name "beschikbaarheid";
     shacl:path schema:hoursAvailable.
-generiek-basis:ContactInfoShape shacl:property _:n3-442.
-_:n3-443 shacl:datatype xsd:string;
+generiek-basis:ContactInfoShape shacl:property _:n3-387.
+_:n3-388 shacl:datatype xsd:string;
     shacl:description "Naam van bvb de persoon die men kan contacteren.";
     shacl:maxCount 1;
     shacl:name "contactnaam";
     shacl:path foaf:name.
-generiek-basis:ContactInfoShape shacl:property _:n3-443.
-_:n3-444 shacl:datatype xsd:string;
+generiek-basis:ContactInfoShape shacl:property _:n3-388.
+_:n3-389 shacl:datatype xsd:string;
     shacl:description "Email-adres waarnaar men kan mailen.";
     shacl:maxCount 1;
     shacl:name "email";
     shacl:path schema:email.
-generiek-basis:ContactInfoShape shacl:property _:n3-444.
-_:n3-445 shacl:datatype xsd:string;
+generiek-basis:ContactInfoShape shacl:property _:n3-389.
+_:n3-390 shacl:datatype xsd:string;
     shacl:description "Faxnummer waarnaar men kan faxen.";
     shacl:maxCount 1;
     shacl:name "fax";
     shacl:path schema:faxNumber.
-generiek-basis:ContactInfoShape shacl:property _:n3-445.
-_:n3-446 shacl:datatype rdfs:Literal;
+generiek-basis:ContactInfoShape shacl:property _:n3-390.
+_:n3-391 shacl:datatype rdfs:Literal;
     shacl:description "Uren waarbinnen contact kan worden opgenomen.";
     shacl:maxCount 1;
     shacl:name "openingsuren";
     shacl:path schema:openingHours.
-generiek-basis:ContactInfoShape shacl:property _:n3-446.
-_:n3-447 shacl:datatype xsd:string;
+generiek-basis:ContactInfoShape shacl:property _:n3-391.
+_:n3-392 shacl:datatype xsd:string;
     shacl:description "Telefoonnummer waarop men kan bellen.";
     shacl:maxCount 1;
     shacl:name "telefoon";
     shacl:path schema:telephone.
-generiek-basis:ContactInfoShape shacl:property _:n3-447.
-_:n3-448 shacl:datatype xsd:anyURI;
+generiek-basis:ContactInfoShape shacl:property _:n3-392.
+_:n3-393 shacl:datatype xsd:anyURI;
     shacl:description "Website waarnaar men kan surfen.";
     shacl:maxCount 1;
     shacl:name "website";
     shacl:path foaf:page.
-generiek-basis:ContactInfoShape shacl:property _:n3-448;
+generiek-basis:ContactInfoShape shacl:property _:n3-393;
     shacl:targetClass schema:ContactPoint.
 generiek-basis:CreatieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-449 shacl:class prov:Activity;
+_:n3-394 shacl:class prov:Activity;
     shacl:description "Activiteit die tot de creatie vd entiteit heeft geleid.";
     shacl:maxCount 1;
     shacl:name "activiteit";
     shacl:path prov:activity.
-generiek-basis:CreatieShape shacl:property _:n3-449.
-_:n3-450 shacl:datatype xsd:dateTime;
+generiek-basis:CreatieShape shacl:property _:n3-394.
+_:n3-395 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de creatie vd entiteit plaatsvond.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "tijdstip";
     shacl:path prov:atTime.
-generiek-basis:CreatieShape shacl:property _:n3-450;
+generiek-basis:CreatieShape shacl:property _:n3-395;
     shacl:targetClass prov:Generation.
 generiek-basis:DocumentOnderdeelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-451 shacl:class generiek:DocumentOnderdeel;
+_:n3-396 shacl:class generiek:DocumentOnderdeel;
     shacl:description "Een verwante bron waarin de beschreven bron fysiek of logisch is opgenomen.";
     shacl:name "isDeelVan";
     shacl:path dcterms:isPartOf.
-generiek-basis:DocumentOnderdeelShape shacl:property _:n3-451.
-_:n3-452 shacl:class foaf:Document;
+generiek-basis:DocumentOnderdeelShape shacl:property _:n3-396.
+_:n3-397 shacl:class foaf:Document;
     shacl:description "Een verwante bron waarin de beschreven bron fysiek of logisch is opgenomen.";
     shacl:name "isOnderdeelVan";
     shacl:path dcterms:isPartOf.
-generiek-basis:DocumentOnderdeelShape shacl:property _:n3-452.
-_:n3-453 shacl:datatype xsd:integer;
+generiek-basis:DocumentOnderdeelShape shacl:property _:n3-397.
+_:n3-398 shacl:datatype xsd:integer;
     shacl:description "Nummer vh documentonderdeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nummer";
     shacl:path generiek:nummer.
-generiek-basis:DocumentOnderdeelShape shacl:property _:n3-453.
-_:n3-454 shacl:class skos:Concept;
+generiek-basis:DocumentOnderdeelShape shacl:property _:n3-398.
+_:n3-399 shacl:class skos:Concept;
     shacl:description "Aard van het documentonderdeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-generiek-basis:DocumentOnderdeelShape shacl:property _:n3-454;
+generiek-basis:DocumentOnderdeelShape shacl:property _:n3-399;
     shacl:targetClass generiek:DocumentOnderdeel.
 generiek-basis:DocumentShape a shacl:NodeShape;
     shacl:closed false;
@@ -373,121 +373,121 @@ generiek-basis:EurovocShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 generiek-basis:FormeelKaderShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-455 shacl:datatype rdf:langString;
+_:n3-400 shacl:datatype rdf:langString;
     shacl:description "Beschrijving van het formeel kader.";
     shacl:maxCount 1;
     shacl:name "beschrijving";
     shacl:path dcterms:description.
-generiek-basis:FormeelKaderShape shacl:property _:n3-455.
-_:n3-456 shacl:class cpsv:FormalFramework;
+generiek-basis:FormeelKaderShape shacl:property _:n3-400.
+_:n3-401 shacl:class cpsv:FormalFramework;
     shacl:description "Ander formeel kader dat met het formeel kader verband houdt.";
     shacl:name "isGerelateerdAan";
     shacl:path dcterms:relation.
-generiek-basis:FormeelKaderShape shacl:property _:n3-456.
-_:n3-457 shacl:datatype rdf:langString;
+generiek-basis:FormeelKaderShape shacl:property _:n3-401.
+_:n3-402 shacl:datatype rdf:langString;
     shacl:description "Naam vh formeel kader.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-generiek-basis:FormeelKaderShape shacl:property _:n3-457.
-_:n3-458 shacl:class skos:Concept;
+generiek-basis:FormeelKaderShape shacl:property _:n3-402.
+_:n3-403 shacl:class skos:Concept;
     shacl:description "Onderwerp vh formeel kader.";
     shacl:name "onderwerp";
     shacl:path eu:subject.
-generiek-basis:FormeelKaderShape shacl:property _:n3-458.
-_:n3-459 shacl:class skos:Concept;
+generiek-basis:FormeelKaderShape shacl:property _:n3-403.
+_:n3-404 shacl:class skos:Concept;
     shacl:description "Status vh formeel kader.";
     shacl:maxCount 1;
     shacl:name "status";
     shacl:path adms:status.
-generiek-basis:FormeelKaderShape shacl:property _:n3-459.
-_:n3-460 shacl:class skos:Concept;
+generiek-basis:FormeelKaderShape shacl:property _:n3-404.
+_:n3-405 shacl:class skos:Concept;
     shacl:description "Taal waarin het formeel kader beschikbaar is.";
     shacl:name "taal";
     shacl:path eli:language.
-generiek-basis:FormeelKaderShape shacl:property _:n3-460.
-_:n3-461 shacl:class skos:Concept;
+generiek-basis:FormeelKaderShape shacl:property _:n3-405.
+_:n3-406 shacl:class skos:Concept;
     shacl:description "Het geografisch bereik vh formeel kader.";
     shacl:name "toepassingsgebied";
     shacl:path eu:territorialApplication.
-generiek-basis:FormeelKaderShape shacl:property _:n3-461.
-_:n3-462 shacl:class skos:Concept;
+generiek-basis:FormeelKaderShape shacl:property _:n3-406.
+_:n3-407 shacl:class skos:Concept;
     shacl:description "Aard vh formeel kader.";
     shacl:name "type";
     shacl:path dcterms:type.
-generiek-basis:FormeelKaderShape shacl:property _:n3-462;
+generiek-basis:FormeelKaderShape shacl:property _:n3-407;
     shacl:targetClass cpsv:FormalFramework.
 generiek-basis:GebeurtenisShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-463 shacl:datatype rdf:langString;
+_:n3-408 shacl:datatype rdf:langString;
     shacl:description "Beschrijving van de gebeurtenis.";
     shacl:maxCount 1;
     shacl:name "beschrijving";
     shacl:path dcterms:description.
-generiek-basis:GebeurtenisShape shacl:property _:n3-463.
-_:n3-464 shacl:datatype xsd:duration;
+generiek-basis:GebeurtenisShape shacl:property _:n3-408.
+_:n3-409 shacl:datatype xsd:duration;
     shacl:description "De duur van de gebeurtenis.";
     shacl:maxCount 1;
     shacl:name "duur";
     shacl:path schemas:duration.
-generiek-basis:GebeurtenisShape shacl:property _:n3-464.
-_:n3-465 shacl:datatype xsd:date;
+generiek-basis:GebeurtenisShape shacl:property _:n3-409.
+_:n3-410 shacl:datatype xsd:date;
     shacl:description "Datum waarop de gebeurtenis eindigt.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path schemas:endDate.
-generiek-basis:GebeurtenisShape shacl:property _:n3-465.
-_:n3-466 shacl:datatype xsd:time;
+generiek-basis:GebeurtenisShape shacl:property _:n3-410.
+_:n3-411 shacl:datatype xsd:time;
     shacl:description "Tijd waarop de gebeurtenis eindigt.";
     shacl:maxCount 1;
     shacl:name "eindtijd";
     shacl:path schemas:endTime.
-generiek-basis:GebeurtenisShape shacl:property _:n3-466.
-_:n3-467 shacl:datatype rdf:langString;
+generiek-basis:GebeurtenisShape shacl:property _:n3-411.
+_:n3-412 shacl:datatype rdf:langString;
     shacl:description "Naam van de gebeurtenis.";
     shacl:maxCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-generiek-basis:GebeurtenisShape shacl:property _:n3-467.
-_:n3-468 shacl:datatype xsd:date;
+generiek-basis:GebeurtenisShape shacl:property _:n3-412.
+_:n3-413 shacl:datatype xsd:date;
     shacl:description "Datum waariop de gebeurtenis start.";
     shacl:maxCount 1;
     shacl:name "startdatum";
     shacl:path schemas:startDate.
-generiek-basis:GebeurtenisShape shacl:property _:n3-468.
-_:n3-469 shacl:datatype xsd:time;
+generiek-basis:GebeurtenisShape shacl:property _:n3-413.
+_:n3-414 shacl:datatype xsd:time;
     shacl:description "Tijd waarop de gebeurtenis start.";
     shacl:maxCount 1;
     shacl:name "starttijd";
     shacl:path schemas:startTime.
-generiek-basis:GebeurtenisShape shacl:property _:n3-469.
-_:n3-470 shacl:class schemas:Schedule;
+generiek-basis:GebeurtenisShape shacl:property _:n3-414.
+_:n3-415 shacl:class schemas:Schedule;
     shacl:description "Schema volgens hetwelk een gebeurtenis zich herhaalt.";
     shacl:name "tijdschema";
     shacl:path schemas:eventSchedule.
-generiek-basis:GebeurtenisShape shacl:property _:n3-470;
+generiek-basis:GebeurtenisShape shacl:property _:n3-415;
     shacl:targetClass schemas:Event.
 generiek-basis:GebeurtenisdatumShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-471 shacl:datatype xsd:dateTime;
+_:n3-416 shacl:datatype xsd:dateTime;
     shacl:description "Datum en tijd waarop de gebeurtenis startte.";
     shacl:maxCount 1;
     shacl:name "begin";
     shacl:path generiek:begin.
-generiek-basis:GebeurtenisdatumShape shacl:property _:n3-471.
-_:n3-472 shacl:datatype xsd:dateTime;
+generiek-basis:GebeurtenisdatumShape shacl:property _:n3-416.
+_:n3-417 shacl:datatype xsd:dateTime;
     shacl:description "Datum en tijd waarop de gebeurtenis eindigde.";
     shacl:maxCount 1;
     shacl:name "einde";
     shacl:path generiek:einde.
-generiek-basis:GebeurtenisdatumShape shacl:property _:n3-472.
-_:n3-473 shacl:datatype xsd:dateTime;
+generiek-basis:GebeurtenisdatumShape shacl:property _:n3-417.
+_:n3-418 shacl:datatype xsd:dateTime;
     shacl:description "Datum en tijd van een moment tussen begin en einde.";
     shacl:maxCount 1;
     shacl:name "tussentijdstip";
     shacl:path generiek:tussentijdstip.
-generiek-basis:GebeurtenisdatumShape shacl:property _:n3-473;
+generiek-basis:GebeurtenisdatumShape shacl:property _:n3-418;
     shacl:targetClass generiek:Gebeurtenisdatum.
 generiek-basis:GemeenteShape a shacl:NodeShape;
     shacl:closed false;
@@ -497,75 +497,75 @@ generiek-basis:GeografischeNaamShape a shacl:NodeShape;
     shacl:targetClass rdf:langString.
 generiek-basis:GeografischePositieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-474 shacl:datatype xsd:boolean;
+_:n3-419 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de positie een default positie is.";
     shacl:maxCount 1;
     shacl:name "default";
     shacl:path generiek:default.
-generiek-basis:GeografischePositieShape shacl:property _:n3-474.
-_:n3-475 shacl:class sf:Point;
+generiek-basis:GeografischePositieShape shacl:property _:n3-419.
+_:n3-420 shacl:class sf:Point;
     shacl:description "De cartografische coöordinaten vh punt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-generiek-basis:GeografischePositieShape shacl:property _:n3-475.
-_:n3-476 shacl:class skos:Concept;
+generiek-basis:GeografischePositieShape shacl:property _:n3-420.
+_:n3-421 shacl:class skos:Concept;
     shacl:description "De manier waarop het punt werd bepaald.";
     shacl:maxCount 1;
     shacl:name "methode";
     shacl:path generiek:methode.
-generiek-basis:GeografischePositieShape shacl:property _:n3-476.
-_:n3-477 shacl:class skos:Concept;
+generiek-basis:GeografischePositieShape shacl:property _:n3-421.
+_:n3-422 shacl:class skos:Concept;
     shacl:description "Het type object op basis waarvan het punt werd bepaald.";
     shacl:maxCount 1;
     shacl:name "specificatie";
     shacl:path generiek:specificatie.
-generiek-basis:GeografischePositieShape shacl:property _:n3-477;
+generiek-basis:GeografischePositieShape shacl:property _:n3-422;
     shacl:targetClass generiek:GeografischePositie.
 generiek-basis:GeometrieMethodeWaardeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 generiek-basis:GeometrieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-478 shacl:datatype rdfs:Literal;
+_:n3-423 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in gml-formaat.";
     shacl:maxCount 1;
     shacl:name "gml";
     shacl:path geosparql:asGML.
-generiek-basis:GeometrieShape shacl:property _:n3-478.
-_:n3-479 shacl:datatype rdfs:Literal;
+generiek-basis:GeometrieShape shacl:property _:n3-423.
+_:n3-424 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in wkt-formaat.";
     shacl:maxCount 1;
     shacl:name "wkt";
     shacl:path geosparql:asWKT.
-generiek-basis:GeometrieShape shacl:property _:n3-479;
+generiek-basis:GeometrieShape shacl:property _:n3-424;
     shacl:targetClass locn:Geometry.
 generiek-basis:GeometrieSpecificatieWaardeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 generiek-basis:GestructureerdeIdentificatorShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-480 shacl:datatype xsd:string;
+_:n3-425 shacl:datatype xsd:string;
     shacl:description "String gebruikt om het object uniek te identificeren binnen de naamruimte.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "lokaleIdentificator";
     shacl:path generiek:lokaleIdentificator.
-generiek-basis:GestructureerdeIdentificatorShape shacl:property _:n3-480.
-_:n3-481 shacl:datatype xsd:string;
+generiek-basis:GestructureerdeIdentificatorShape shacl:property _:n3-425.
+_:n3-426 shacl:datatype xsd:string;
     shacl:description "String die toegvoegd wordt aan de lokaleidentificator om deze globaal uniek te maken.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naamruimte";
     shacl:path generiek:naamruimte.
-generiek-basis:GestructureerdeIdentificatorShape shacl:property _:n3-481.
-_:n3-482 shacl:datatype xsd:string;
+generiek-basis:GestructureerdeIdentificatorShape shacl:property _:n3-426.
+_:n3-427 shacl:datatype xsd:string;
     shacl:description "Identificator van de specifieke versie van een object.";
     shacl:maxCount 1;
     shacl:name "versieIdentificator";
     shacl:path generiek:versieIdentificator.
-generiek-basis:GestructureerdeIdentificatorShape shacl:property _:n3-482;
+generiek-basis:GestructureerdeIdentificatorShape shacl:property _:n3-427;
     shacl:targetClass generiek:GestructureerdeIdentificator.
 generiek-basis:GetalShape a shacl:NodeShape;
     shacl:closed false;
@@ -575,118 +575,118 @@ generiek-basis:GetypeerdeStringShape a shacl:NodeShape;
     shacl:targetClass rdfs:Literal.
 generiek-basis:HerkomstactiviteitShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-483 shacl:class prov:Entity;
+_:n3-428 shacl:class prov:Entity;
     shacl:description "Gebruik ve entiteit door een activiteit.";
     shacl:maxCount 1;
     shacl:name "applicatie";
     shacl:path prov:used.
-generiek-basis:HerkomstactiviteitShape shacl:property _:n3-483.
-_:n3-484 shacl:class skos:Concept;
+generiek-basis:HerkomstactiviteitShape shacl:property _:n3-428.
+_:n3-429 shacl:class skos:Concept;
     shacl:description "Aard vd bewerking die ihkv de activiteit op de entiteit is uitgevoerd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "bewerking";
     shacl:path generiek:bewerking.
-generiek-basis:HerkomstactiviteitShape shacl:property _:n3-484.
-_:n3-485 shacl:class prov:Agent;
+generiek-basis:HerkomstactiviteitShape shacl:property _:n3-429.
+_:n3-430 shacl:class prov:Agent;
     shacl:description "Geeft aan welke agent verantwoordelijk was voor de activiteit en meer bepaald verantwoordelijk was voor het uitvoeren vd activiteit.";
     shacl:maxCount 1;
     shacl:name "operator";
     shacl:path prov:wasAssociatedWith.
-generiek-basis:HerkomstactiviteitShape shacl:property _:n3-485;
+generiek-basis:HerkomstactiviteitShape shacl:property _:n3-430;
     shacl:targetClass prov:Activity.
 generiek-basis:HerkomstagentShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-486 shacl:class org:Organization;
+_:n3-431 shacl:class org:Organization;
     shacl:description "Organisatie die de agent vertegenwoordigt bij het uitvoeren ve specifieke activiteit en waarvan hij/zij de vereiste autoriteit/verantwoordelijkheid heeft gekregen om dit te doen.";
     shacl:name "handeldeInOpdrachtVan";
     shacl:path generiek:handeldeInOpdrachtVan.
-generiek-basis:HerkomstagentShape shacl:property _:n3-486.
-_:n3-487 shacl:datatype xsd:string;
+generiek-basis:HerkomstagentShape shacl:property _:n3-431.
+_:n3-432 shacl:datatype xsd:string;
     shacl:description "Naam vd agent.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path rdfs:label.
-generiek-basis:HerkomstagentShape shacl:property _:n3-487;
+generiek-basis:HerkomstagentShape shacl:property _:n3-432;
     shacl:targetClass prov:Agent.
 generiek-basis:HerkomstentiteitShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-488 shacl:datatype xsd:string;
+_:n3-433 shacl:datatype xsd:string;
     shacl:description "Label waarmee de entiteit wordt aangeduid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "label";
     shacl:path rdfs:label.
-generiek-basis:HerkomstentiteitShape shacl:property _:n3-488;
+generiek-basis:HerkomstentiteitShape shacl:property _:n3-433;
     shacl:targetClass prov:Entity.
 generiek-basis:HoedanigheidShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass organisatie:Hoedanigheid.
 generiek-basis:IdentificatorShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-489 shacl:class generiek:GestructureerdeIdentificator;
+_:n3-434 shacl:class generiek:GestructureerdeIdentificator;
     shacl:description "Identificator vh object opgesplitst in zijn onderdelen.";
     shacl:maxCount 1;
     shacl:name "gestructureerdeIdentificator";
     shacl:path generiek:gestructureerdeIdentificator.
-generiek-basis:IdentificatorShape shacl:property _:n3-489.
-_:n3-490 shacl:datatype rdfs:Literal;
+generiek-basis:IdentificatorShape shacl:property _:n3-434.
+_:n3-435 shacl:datatype rdfs:Literal;
     shacl:description "String gebruikt om het object uniek te identificeren. ";
     shacl:maxCount 1;
     shacl:name "identificator";
     shacl:path skos:notation.
-generiek-basis:IdentificatorShape shacl:property _:n3-490.
-_:n3-491 shacl:class dcterms:Agent;
+generiek-basis:IdentificatorShape shacl:property _:n3-435.
+_:n3-436 shacl:class dcterms:Agent;
     shacl:description "Link naar de agent die de identificator heeft uitgegeven.";
     shacl:maxCount 1;
     shacl:name "toegekendDoor";
     shacl:path dcterms:creator.
-generiek-basis:IdentificatorShape shacl:property _:n3-491.
-_:n3-492 shacl:datatype xsd:string;
+generiek-basis:IdentificatorShape shacl:property _:n3-436.
+_:n3-437 shacl:datatype xsd:string;
     shacl:description "Naam vd agent die de identificator heeft toegekend.";
     shacl:maxCount 1;
     shacl:name "toegekendDoorString";
     shacl:path adms:schemaAgency.
-generiek-basis:IdentificatorShape shacl:property _:n3-492.
-_:n3-493 shacl:datatype xsd:dateTime;
+generiek-basis:IdentificatorShape shacl:property _:n3-437.
+_:n3-438 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de identificator werd uitgegeven.";
     shacl:maxCount 1;
     shacl:name "toegekendOp";
     shacl:path dcterms:issued.
-generiek-basis:IdentificatorShape shacl:property _:n3-493;
+generiek-basis:IdentificatorShape shacl:property _:n3-438;
     shacl:targetClass adms:Identifier.
 generiek-basis:JurisdictieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-494 shacl:class dcterms:Location;
+_:n3-439 shacl:class dcterms:Location;
     shacl:description "Ruimtelijk gebied of benoemde plaats waarmee de Jurisdictie samenvalt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "plaats";
     shacl:path generiek:plaats.
-generiek-basis:JurisdictieShape shacl:property _:n3-494;
+generiek-basis:JurisdictieShape shacl:property _:n3-439;
     shacl:targetClass dcterms:Jurisdiction.
 generiek-basis:KwantitatieveWaardeShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-495 shacl:datatype xsd:string;
+_:n3-440 shacl:datatype xsd:string;
     shacl:description "De eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "eenheid";
     shacl:path schemas:unitText.
-generiek-basis:KwantitatieveWaardeShape shacl:property _:n3-495.
-_:n3-496 shacl:class generiek:StandaardEenheid;
+generiek-basis:KwantitatieveWaardeShape shacl:property _:n3-440.
+_:n3-441 shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "standaardEenheid";
     shacl:path schemas:unitCode.
-generiek-basis:KwantitatieveWaardeShape shacl:property _:n3-496.
-_:n3-497 shacl:class schemas:Number;
+generiek-basis:KwantitatieveWaardeShape shacl:property _:n3-441.
+_:n3-442 shacl:class schemas:Number;
     shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-generiek-basis:KwantitatieveWaardeShape shacl:property _:n3-497;
+generiek-basis:KwantitatieveWaardeShape shacl:property _:n3-442;
     shacl:targetClass schemas:QuantitativeValue.
 generiek-basis:LijnStringShape a shacl:NodeShape;
     shacl:closed false;
@@ -705,65 +705,65 @@ generiek-basis:NUTSShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 generiek-basis:ObjectShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-498 shacl:class adms:Identifier;
+_:n3-443 shacl:class adms:Identifier;
     shacl:description "Identificator van het object.";
     shacl:minCount 1;
     shacl:name "identificator";
     shacl:path adms:identifier.
-generiek-basis:ObjectShape shacl:property _:n3-498;
+generiek-basis:ObjectShape shacl:property _:n3-443;
     shacl:targetClass prov:Entity.
 generiek-basis:OpheffingShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-499 shacl:class prov:Activity;
+_:n3-444 shacl:class prov:Activity;
     shacl:description "Activiteit die tot de opheffing vd entiteit heeft geleid.";
     shacl:maxCount 1;
     shacl:name "activiteit";
     shacl:path prov:activity.
-generiek-basis:OpheffingShape shacl:property _:n3-499.
-_:n3-500 shacl:datatype xsd:dateTime;
+generiek-basis:OpheffingShape shacl:property _:n3-444.
+_:n3-445 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de opheffing vd entiteit plaatsvond.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "tijdstip";
     shacl:path prov:atTime.
-generiek-basis:OpheffingShape shacl:property _:n3-500;
+generiek-basis:OpheffingShape shacl:property _:n3-445;
     shacl:targetClass prov:Invalidation.
 generiek-basis:OrganisatieShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass org:Organization.
 generiek-basis:PeriodeShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-501 shacl:datatype xsd:dateTime;
+_:n3-446 shacl:datatype xsd:dateTime;
     shacl:description "Aanvang van de tijdsduur.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "begin";
     shacl:path eu:startTime.
-generiek-basis:PeriodeShape shacl:property _:n3-501.
-_:n3-502 shacl:datatype xsd:dateTime;
+generiek-basis:PeriodeShape shacl:property _:n3-446.
+_:n3-447 shacl:datatype xsd:dateTime;
     shacl:description "Einde vd tijdsduur.";
     shacl:maxCount 1;
     shacl:name "einde";
     shacl:path eu:endTime.
-generiek-basis:PeriodeShape shacl:property _:n3-502;
+generiek-basis:PeriodeShape shacl:property _:n3-447;
     shacl:targetClass eu:PeriodOfTime.
 generiek-basis:PersoonShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass person:Person.
 generiek-basis:PlaatsShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-503 shacl:class locn:Geometry;
+_:n3-448 shacl:class locn:Geometry;
     shacl:description "Geometrie van de plaats of het gebied.";
     shacl:maxCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-generiek-basis:PlaatsShape shacl:property _:n3-503.
-_:n3-504 shacl:datatype rdf:langString;
+generiek-basis:PlaatsShape shacl:property _:n3-448.
+_:n3-449 shacl:datatype rdf:langString;
     shacl:description "Naam van de plaats of van het gebied.";
     shacl:minCount 1;
     shacl:name "plaatsnaam";
     shacl:path rdfs:label.
-generiek-basis:PlaatsShape shacl:property _:n3-504;
+generiek-basis:PlaatsShape shacl:property _:n3-449;
     shacl:targetClass dcterms:Location.
 generiek-basis:PlaatscodeShape a shacl:NodeShape;
     shacl:closed false;
@@ -785,98 +785,98 @@ generiek-basis:TaalcodeShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 generiek-basis:TijdschemaShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-505 shacl:datatype xsd:integer;
+_:n3-450 shacl:datatype xsd:integer;
     shacl:description "Aantal keer dat het plaatsvindt.";
     shacl:maxCount 1;
     shacl:name "aantal";
     shacl:path schemas:repeatCount.
-generiek-basis:TijdschemaShape shacl:property _:n3-505.
-_:n3-506 shacl:datatype xsd:duration;
+generiek-basis:TijdschemaShape shacl:property _:n3-450.
+_:n3-451 shacl:datatype xsd:duration;
     shacl:description "Duur van hetgeen plaatsvindt.";
     shacl:maxCount 1;
     shacl:name "duur";
     shacl:path generiek:duur.
-generiek-basis:TijdschemaShape shacl:property _:n3-506.
-_:n3-507 shacl:datatype xsd:date;
+generiek-basis:TijdschemaShape shacl:property _:n3-451.
+_:n3-452 shacl:datatype xsd:date;
     shacl:description "Datum tot wanneer het plaatsvindt.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path schemas:endDate.
-generiek-basis:TijdschemaShape shacl:property _:n3-507.
-_:n3-508 shacl:datatype xsd:time;
+generiek-basis:TijdschemaShape shacl:property _:n3-452.
+_:n3-453 shacl:datatype xsd:time;
     shacl:description "Tijdstip waarop het eindigt.";
     shacl:maxCount 1;
     shacl:name "eindtijd";
     shacl:path schemas:endTime.
-generiek-basis:TijdschemaShape shacl:property _:n3-508.
-_:n3-509 shacl:datatype xsd:string;
+generiek-basis:TijdschemaShape shacl:property _:n3-453.
+_:n3-454 shacl:datatype xsd:string;
     shacl:description "Frequentie waarmee het plaatsvindt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "frequentie";
     shacl:path schemas:repeatFrequency.
-generiek-basis:TijdschemaShape shacl:property _:n3-509.
-_:n3-510 shacl:datatype xsd:anyURI;
+generiek-basis:TijdschemaShape shacl:property _:n3-454.
+_:n3-455 shacl:datatype xsd:anyURI;
     shacl:description "Dagen van de week waarop het plaatsvindt.";
     shacl:name "perDag";
     shacl:path schemas:byDay.
-generiek-basis:TijdschemaShape shacl:property _:n3-510.
-_:n3-511 shacl:datatype xsd:integer;
+generiek-basis:TijdschemaShape shacl:property _:n3-455.
+_:n3-456 shacl:datatype xsd:integer;
     shacl:description "Dagen van de maand waarop het plaatsvindt.";
     shacl:name "perDagVanDeMaand";
     shacl:path schemas:byMonthDay.
-generiek-basis:TijdschemaShape shacl:property _:n3-511.
-_:n3-512 shacl:datatype xsd:integer;
+generiek-basis:TijdschemaShape shacl:property _:n3-456.
+_:n3-457 shacl:datatype xsd:integer;
     shacl:description "Maanden van het jaar waarop het plaatsvindt.";
     shacl:name "perMaand";
     shacl:path schemas:byMonth.
-generiek-basis:TijdschemaShape shacl:property _:n3-512.
-_:n3-513 shacl:datatype xsd:integer;
+generiek-basis:TijdschemaShape shacl:property _:n3-457.
+_:n3-458 shacl:datatype xsd:integer;
     shacl:description "N-de keer dat iets plaatsvindt uit de verzameling van mogelijke tijdstippen. ";
     shacl:maxCount 1;
     shacl:name "perSetpositie";
     shacl:path generiek:perSetpositie.
-generiek-basis:TijdschemaShape shacl:property _:n3-513.
-_:n3-514 shacl:datatype xsd:date;
+generiek-basis:TijdschemaShape shacl:property _:n3-458.
+_:n3-459 shacl:datatype xsd:date;
     shacl:description "Datum vanaf wanneer het plaatsvindt.";
     shacl:maxCount 1;
     shacl:name "startdatum";
     shacl:path schemas:startDate.
-generiek-basis:TijdschemaShape shacl:property _:n3-514.
-_:n3-515 shacl:datatype xsd:time;
+generiek-basis:TijdschemaShape shacl:property _:n3-459.
+_:n3-460 shacl:datatype xsd:time;
     shacl:description "Tijdstip waarop het start.";
     shacl:maxCount 1;
     shacl:name "starttijd";
     shacl:path schemas:startTime.
-generiek-basis:TijdschemaShape shacl:property _:n3-515.
-_:n3-516 shacl:datatype xsd:date;
+generiek-basis:TijdschemaShape shacl:property _:n3-460.
+_:n3-461 shacl:datatype xsd:date;
     shacl:description "Datums waarop het uitzonderlijk niet plaatsvindt.";
     shacl:name "uitzonderingsdatum";
     shacl:path schemas:exceptDate.
-generiek-basis:TijdschemaShape shacl:property _:n3-516;
+generiek-basis:TijdschemaShape shacl:property _:n3-461;
     shacl:targetClass schemas:Schedule.
 generiek-basis:VersieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-517 shacl:class prov:Generation;
+_:n3-462 shacl:class prov:Generation;
     shacl:description "Beschrijving vh ontstaan vd versie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "creatie";
     shacl:path prov:qualifiedGeneration.
-generiek-basis:VersieShape shacl:property _:n3-517.
-_:n3-518 shacl:class prov:Entity;
+generiek-basis:VersieShape shacl:property _:n3-462.
+_:n3-463 shacl:class prov:Entity;
     shacl:description "Duidt de bronentiteit aan waarvan deze entiteit een tijdsgebonden specialisatie is. De specialisatie stelt de bron voor gedurende een bepaalde periode.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "isTijdspecialisatieVan";
     shacl:path generiek:isTijdspecialisatieVan.
-generiek-basis:VersieShape shacl:property _:n3-518.
-_:n3-519 shacl:class prov:Invalidation;
+generiek-basis:VersieShape shacl:property _:n3-463.
+_:n3-464 shacl:class prov:Invalidation;
     shacl:description "Beschrijving vh verdwijnen vd versie.";
     shacl:maxCount 1;
     shacl:name "opheffing";
     shacl:path prov:qualifiedInvalidation.
-generiek-basis:VersieShape shacl:property _:n3-519;
+generiek-basis:VersieShape shacl:property _:n3-464;
     shacl:targetClass generiek:Versie.
 generiek-basis:VersieVolgensGeldigeTijdShape a shacl:NodeShape;
     shacl:closed false;

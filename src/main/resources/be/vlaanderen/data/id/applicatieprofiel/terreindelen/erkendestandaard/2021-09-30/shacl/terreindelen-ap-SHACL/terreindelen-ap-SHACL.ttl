@@ -249,13 +249,13 @@ terreindelen-ap:BijzondereOverrijdbareBeddingShape a shacl:NodeShape;
     shacl:targetClass terreindeel:BijzondereOverrijdbareBedding.
 terreindelen-ap:BoomplantplaatsShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2344 shacl:class schemas:QuantitativeValue;
+_:n3-2295 shacl:class schemas:QuantitativeValue;
     shacl:description "Het bodemvolume met voldoende mineralen, water en zuurstof die bereikbaar zijn voor een boom om erin te wortelen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "doorwortelbaarVolume";
     shacl:path terreindeel:doorwortelbaarVolume.
-terreindelen-ap:BoomplantplaatsShape shacl:property _:n3-2344;
+terreindelen-ap:BoomplantplaatsShape shacl:property _:n3-2295;
     shacl:targetClass terreindeel:Boomplantplaats.
 terreindelen-ap:BoordsteenShape a shacl:NodeShape;
     shacl:closed false;
@@ -265,12 +265,12 @@ terreindelen-ap:BushaltehavenShape a shacl:NodeShape;
     shacl:targetClass terreindeel:Bushaltehaven.
 terreindelen-ap:DeelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2345 shacl:class schemas:QuantitativeValue;
+_:n3-2296 shacl:class schemas:QuantitativeValue;
     shacl:description "De afmeting van het object.";
     shacl:maxCount 1;
     shacl:name "oppervlakte";
     shacl:path openbaardomein:oppervlakte.
-terreindelen-ap:DeelShape shacl:property _:n3-2345;
+terreindelen-ap:DeelShape shacl:property _:n3-2296;
     shacl:targetClass openbaardomein:Deel.
 terreindelen-ap:DierenloopweideShape a shacl:NodeShape;
     shacl:closed false;
@@ -280,54 +280,54 @@ terreindelen-ap:EigenBeddingShape a shacl:NodeShape;
     shacl:targetClass terreindeel:EigenBedding.
 terreindelen-ap:FietspadShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2346 shacl:datatype xsd:boolean;
+_:n3-2297 shacl:datatype xsd:boolean;
     shacl:description "Geeft aan of de verharding fysiek gescheiden is van de rijbaan door een veiligheidsstrook die niet door rijdend verkeer mag en kan worden gebruikt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "vrijliggend";
     shacl:path terreindeel:vrijliggend.
-terreindelen-ap:FietspadShape shacl:property _:n3-2346;
+terreindelen-ap:FietspadShape shacl:property _:n3-2297;
     shacl:targetClass terreindeel:Fietspad.
 terreindelen-ap:FysiekObjectShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2347 shacl:datatype xsd:dateTime;
+_:n3-2298 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het gebied of object in gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "begindatum";
     shacl:path openbaardomein:begindatum.
-terreindelen-ap:FysiekObjectShape shacl:property _:n3-2347.
-_:n3-2348 shacl:datatype xsd:dateTime;
+terreindelen-ap:FysiekObjectShape shacl:property _:n3-2298.
+_:n3-2299 shacl:datatype xsd:dateTime;
     shacl:description "Datum waarop de huidige versie van het beheerobject uit gebruik wordt genomen.";
     shacl:maxCount 1;
     shacl:name "einddatum";
     shacl:path openbaardomein:einddatum.
-terreindelen-ap:FysiekObjectShape shacl:property _:n3-2348.
-_:n3-2349 shacl:class geosparql:Geometry;
+terreindelen-ap:FysiekObjectShape shacl:property _:n3-2299.
+_:n3-2300 shacl:class geosparql:Geometry;
     shacl:description "De geometrie overeenkomstig met een bepaald object.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-terreindelen-ap:FysiekObjectShape shacl:property _:n3-2349.
-_:n3-2350 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
+terreindelen-ap:FysiekObjectShape shacl:property _:n3-2300.
+_:n3-2301 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/Nauwkeurigsheidsklassen>;
     shacl:class skos:Concept;
     shacl:description "De precisie waarmee het object opgemeten werd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "nauwkeurigheid";
     shacl:path openbaardomein:nauwkeurigheid.
-terreindelen-ap:FysiekObjectShape shacl:property _:n3-2350.
-_:n3-2351 shacl:datatype xsd:integer;
+terreindelen-ap:FysiekObjectShape shacl:property _:n3-2301.
+_:n3-2302 shacl:datatype xsd:integer;
     shacl:description "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten.";
     shacl:maxCount 1;
     shacl:name "niveau";
     shacl:path openbaardomein:niveau.
-terreindelen-ap:FysiekObjectShape shacl:property _:n3-2351.
-_:n3-2352 shacl:class rdfs:Resource;
+terreindelen-ap:FysiekObjectShape shacl:property _:n3-2302.
+_:n3-2303 shacl:class rdfs:Resource;
     shacl:description "Verwijst naar een object in een andere databank dat meer informatie kan verschaffen over het beheerobject.";
     shacl:name "relatie";
     shacl:path dcterms:relation.
-terreindelen-ap:FysiekObjectShape shacl:property _:n3-2352;
+terreindelen-ap:FysiekObjectShape shacl:property _:n3-2303;
     shacl:targetClass openbaardomein:FysiekObject.
 terreindelen-ap:GroendakShape a shacl:NodeShape;
     shacl:closed false;
@@ -352,25 +352,25 @@ terreindelen-ap:KantsteenShape a shacl:NodeShape;
     shacl:targetClass terreindeel:Kantsteen.
 terreindelen-ap:KwantitatieveWaardeShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2353 shacl:datatype xsd:string;
+_:n3-2304 shacl:datatype xsd:string;
     shacl:description "De eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "eenheid";
     shacl:path schemas:unitText.
-terreindelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2353.
-_:n3-2354 shacl:class generiek:StandaardEenheid;
+terreindelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2304.
+_:n3-2305 shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "standaardEenheid";
     shacl:path schemas:unitCode.
-terreindelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2354.
-_:n3-2355 shacl:class schemas:Number;
+terreindelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2305.
+_:n3-2306 shacl:class schemas:Number;
     shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-terreindelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2355;
+terreindelen-ap:KwantitatieveWaardeShape shacl:property _:n3-2306;
     shacl:targetClass schemas:QuantitativeValue.
 terreindelen-ap:LaagstamboomgaardShape a shacl:NodeShape;
     shacl:closed false;
@@ -392,20 +392,20 @@ terreindelen-ap:OpritShape a shacl:NodeShape;
     shacl:targetClass terreindeel:Oprit.
 terreindelen-ap:ParkeervlakShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2356 shacl:datatype xsd:boolean;
+_:n3-2307 shacl:datatype xsd:boolean;
     shacl:description "Duidt aan of het parkeervlak al dan niet gebruikt wordt voor autodelen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "autodelen";
     shacl:path terreindeel:autodelen.
-terreindelen-ap:ParkeervlakShape shacl:property _:n3-2356.
-_:n3-2357 shacl:datatype xsd:integer;
+terreindelen-ap:ParkeervlakShape shacl:property _:n3-2307.
+_:n3-2308 shacl:datatype xsd:integer;
     shacl:description "Geeft aan hoeveel auto's geparkeerd kunnen worden op het parkeervlak.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "capaciteit";
     shacl:path terreindeel:capaciteit.
-terreindelen-ap:ParkeervlakShape shacl:property _:n3-2357;
+terreindelen-ap:ParkeervlakShape shacl:property _:n3-2308;
     shacl:targetClass terreindeel:Parkeervlak.
 terreindelen-ap:RecreatieveRuimteShape a shacl:NodeShape;
     shacl:closed false;
@@ -430,41 +430,41 @@ terreindelen-ap:StraatgootShape a shacl:NodeShape;
     shacl:targetClass terreindeel:Straatgoot.
 terreindelen-ap:TerreinVoorkomenShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2358 shacl:class skos:Concept;
+_:n3-2309 shacl:class skos:Concept;
     shacl:description "Eigenschap die aangeeft of er binnen het beheerdeel al dan niet objecten voorkomen die de vrije werking van machines of andere werktuigen kan verhinderen.";
     shacl:maxCount 1;
     shacl:name "obstakels";
     shacl:path terreindeel:obstakels.
-terreindelen-ap:TerreinVoorkomenShape shacl:property _:n3-2358.
-_:n3-2359 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/TaludWaarde>;
+terreindelen-ap:TerreinVoorkomenShape shacl:property _:n3-2309.
+_:n3-2310 cube:codeList <https://data.vlaanderen.be/id/conceptscheme/TaludWaarde>;
     shacl:class skos:Concept;
     shacl:description "Een talud is het kunstmatig gedeelte van een vlak van de wegbaan, dijken, spoorbanen, vestingswerken, ... dat een helling (min. 20%, max 80% voor kunstmatig verharde taluds) vertoont en bedoeld voor het opvangen van een hoogteverschil.";
     shacl:maxCount 1;
     shacl:name "talud";
     shacl:path terreindeel:talud.
-terreindelen-ap:TerreinVoorkomenShape shacl:property _:n3-2359;
+terreindelen-ap:TerreinVoorkomenShape shacl:property _:n3-2310;
     shacl:targetClass terreindeel:TerreinVoorkomen.
 terreindelen-ap:TerreindeelShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-2360 shacl:class schemas:QuantitativeValue;
+_:n3-2311 shacl:class schemas:QuantitativeValue;
     shacl:description "De breedte van het object. In geval van een ongelijkmatige breedte wordt de gemiddelde breedte opgenomen.";
     shacl:maxCount 1;
     shacl:name "breedte";
     shacl:path schema:width.
-terreindelen-ap:TerreindeelShape shacl:property _:n3-2360.
-_:n3-2361 shacl:class schemas:QuantitativeValue;
+terreindelen-ap:TerreindeelShape shacl:property _:n3-2311.
+_:n3-2312 shacl:class schemas:QuantitativeValue;
     shacl:description "De lineare grootte van het object.";
     shacl:maxCount 1;
     shacl:name "lengte";
     shacl:path <http://open.vocab.org/terms/length>.
-terreindelen-ap:TerreindeelShape shacl:property _:n3-2361.
-_:n3-2362 shacl:class terreindeel:TerreinVoorkomen;
+terreindelen-ap:TerreindeelShape shacl:property _:n3-2312.
+_:n3-2313 shacl:class terreindeel:TerreinVoorkomen;
     shacl:description "Het voorkomen van het terreindeel.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "voorkomen";
     shacl:path terreindeel:voorkomen.
-terreindelen-ap:TerreindeelShape shacl:property _:n3-2362;
+terreindelen-ap:TerreindeelShape shacl:property _:n3-2313;
     shacl:targetClass terreindeel:Terreindeel.
 terreindelen-ap:TijdelijkGroenShape a shacl:NodeShape;
     shacl:closed false;

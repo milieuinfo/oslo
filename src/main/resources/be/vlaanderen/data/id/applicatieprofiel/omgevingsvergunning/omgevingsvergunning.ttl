@@ -590,13 +590,13 @@ dcterms:isPartOf a rdfs:Property;
     vann:usageNote ""@nl.
 omgevingsvergunning:locatie a rdfs:Property;
     rdfs:label "\n                            \n                            locatie\n                          "@nl;
-    rdfs:comment "Aanduiding van de plaats waar een Activiteit plaatsvindt, zal vinden, of zou hebben gevonden."@nl;
+    rdfs:comment "Aanduiding van de plaats waar een Activiteit plaatsvindt, plaats zal vinden, of plaatsvond."@nl;
     vann:usageNote ""@nl.
 <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.tijdsbestek> a rdfs:Property;
     rdfs:label "\n                            \n                            tijdsbestek\n                          "@nl;
     rdfs:comment "Aanduiding van het tijdsbestek van de Activiteit."@nl;
     vann:usageNote ""@nl.
-omgevingsvergunning:aanwendingsermijn a rdfs:Property;
+omgevingsvergunning:aanwendingstermijn a rdfs:Property;
     rdfs:label "\n                            \n                            aanwendingstermijn\n                          "@nl;
     rdfs:comment "Termijn binnen dewelke het Rechtsmiddel aangewend mag worden."@nl;
     vann:usageNote ""@nl.
@@ -612,7 +612,7 @@ time:hasBeginning a rdfs:Property;
     rdfs:label "\n                            \n                            begintijdstip\n                          "@nl;
     rdfs:comment ""@nl;
     vann:usageNote ""@nl.
-time:End a rdfs:Property;
+time:hasEnd a rdfs:Property;
     rdfs:label "\n                            \n                            eindtijdstip\n                          "@nl;
     rdfs:comment ""@nl;
     vann:usageNote ""@nl.
@@ -620,13 +620,13 @@ adms:identifier a rdfs:Property;
     rdfs:label "\n                            \n                            identificator\n                          "@nl;
     rdfs:comment "Gestructureerde identificator van het Document."@nl;
     vann:usageNote ""@nl.
-generiek:vindplaats a rdfs:Property;
+omgevingsvergunning:vindplaats a rdfs:Property;
     rdfs:label "\n                            \n                            vindplaats\n                          "@nl;
     rdfs:comment "De fysieke of digitale locatie waar het Document zich bevindt."@nl;
     vann:usageNote ""@nl.
-generiek:waarmerk a rdfs:Property;
+omgevingsvergunning:waarmerk a rdfs:Property;
     rdfs:label "\n                            \n                            waarmerk\n                          "@nl;
-    rdfs:comment "Waarheidskenmerk, zoals een (elektronische) ondertekening of zegel uitgaande van een bevoegd Rechtssubject."@nl;
+    rdfs:comment "Waarheidskenmerk van het Document."@nl;
     vann:usageNote ""@nl.
 adms:identifier a rdfs:Property;
     rdfs:label "\n                            \n                            identificator\n                          "@nl;
@@ -640,6 +640,18 @@ dcterms:title a rdfs:Property;
     rdfs:label "\n                            \n                            naam\n                          "@nl;
     rdfs:comment "De naam van het dossier."@nl;
     vann:usageNote ""@nl.
+locn:address a rdfs:Property;
+    rdfs:label "\n                            \n                            adres\n                          "@nl;
+    rdfs:comment "Associeert de Feature met het bijbehorende adres."@nl;
+    vann:usageNote ""@nl.
+geosparql:hasGeometry a rdfs:Property;
+    rdfs:label "\n                            \n                            geometrie\n                          "@nl;
+    rdfs:comment "Een ruimtelijke voorstelling voor een welbepaalde Feature."@nl;
+    vann:usageNote ""@nl.
+adms:identifier a rdfs:Property;
+    rdfs:label "\n                            \n                            identificator\n                          "@nl;
+    rdfs:comment "De identificator van de Feature."@nl;
+    vann:usageNote "Gebruik bijvoorbeeld een CaPaKey als het gaat om een perceel."@nl.
 omgevingsvergunning:ingesteldRechtsmiddel a rdfs:Property;
     rdfs:label "\n                            \n                            ingesteld rechtsmiddel\n                          "@nl;
     rdfs:comment "Verwijzing naar het ingesteld rechtsmiddel."@nl;
@@ -652,7 +664,7 @@ adms:identifier a rdfs:Property;
     rdfs:label "\n                            \n                            identificator\n                          "@nl;
     rdfs:comment "Gestructureerde identificator van het Juridisch Werk."@nl;
     vann:usageNote "Recherlijke uitspraken kunnen bijvoorbeeld van de ECLI identificatieschema gebruik maken. Wetgevende werken zijn in scope van ELI. Andere voorbeeld, de gestructureerde identificator van een omgevingsbesluit in het beheersysteem van een gemeente."@nl.
-omgevingsvergunning:rechtsobject a rdfs:Property;
+omgevingsvergunning:voorwerp a rdfs:Property;
     rdfs:label "\n                            \n                            rechtsobject\n                          "@nl;
     rdfs:comment "Het voorwerp van de Normatieve Bepaling."@nl;
     vann:usageNote ""@nl.
@@ -735,38 +747,6 @@ omgevingsvergunning:inhoud a rdfs:Property;
 <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.verantwoordelijke> a rdfs:Property;
     rdfs:label "\n                            \n                            verantwoordelijke\n                          "@nl;
     rdfs:comment "Rechtssubject dat juridisch verantwoordelijk is voor de Rechtshandeling."@nl;
-    vann:usageNote ""@nl.
-perceel:adres a rdfs:Property;
-    rdfs:label "\n                            \n                            adres\n                          "@nl;
-    rdfs:comment "Adres van de Ruimtelijke Eenheid."@nl;
-    vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.geometrie> a rdfs:Property;
-    rdfs:label "\n                            \n                            geometrie\n                          "@nl;
-    rdfs:comment "Geometrie van de ruimtelijke eenheid en metadata over hoe deze werd bepaald."@nl;
-    vann:usageNote ""@nl.
-adms:identifier a rdfs:Property;
-    rdfs:label "\n                            \n                            identificator\n                          "@nl;
-    rdfs:comment "De identificator van de Ruimtelijke Eenheid."@nl;
-    vann:usageNote ""@nl.
-perceel:landgebruik a rdfs:Property;
-    rdfs:label "\n                            \n                            landgebruik\n                          "@nl;
-    rdfs:comment "Geeft het gebruik aan van de ruimtelijke eenheid."@nl;
-    vann:usageNote ""@nl.
-perceel:niveau a rdfs:Property;
-    rdfs:label "\n                            \n                            niveau\n                          "@nl;
-    rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
-    vann:usageNote "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl.
-<https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.oppervlakte> a rdfs:Property;
-    rdfs:label "\n                            \n                            oppervlakte\n                          "@nl;
-    rdfs:comment "Oppervlakte van de ruimtelijke eenheid en metadata over de manier waarop deze bepaald werd."@nl;
-    vann:usageNote ""@nl.
-<https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.type> a rdfs:Property;
-    rdfs:label "\n                            \n                            type\n                          "@nl;
-    rdfs:comment "De aard van een ruimtelijke eenheid."@nl;
-    vann:usageNote "Via deze eigenschap kan men aangeven over welk soort ruimtelijke eenheid men het heeft. Mogelijke voorbeelden zijn onder meer Gebruiksperceel, akteperceel, vervuilingsperceel, openbaar domein, kadastraal planperceel\r\n"@nl.
-generiek:tekstbeschrijving a rdfs:Property;
-    rdfs:label "\n                            \n                            tekstbeschrijving\n                          "@nl;
-    rdfs:comment ""@nl;
     vann:usageNote ""@nl.
 time:unitType a rdfs:Property;
     rdfs:label "\n                            \n                            tijdseenheid\n                          "@nl;

@@ -1,0 +1,924 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
+@prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+crm:E52_Time-Span a rdfs:Class;
+    rdfs:label "Tijdspanne"@nl.
+skos:Concept a rdfs:Class;
+    rdfs:label "StoffelijkeRestType"@nl, "RisicoType"@nl, "BezwaarType"@nl, "Observatiestatus"@nl, "LijkbezorgingType"@nl, "RitueelType"@nl, "ObservatieCategorie"@nl, "ICD"@nl, "AardOverlijden"@nl, "ProcedureZorgType"@nl, "MedischVerslagOverlijdenType"@nl, "Conceptietechniek"@nl, "DoodgeboorteType"@nl, "LiggingKindType"@nl, "Bevallingswijze"@nl, "AssistentieBevallingType"@nl, "OverlijdenAfhandelingenOutput"@nl, "OverlijdenAfhandelingDienst"@nl, "FoetaleBewakingType"@nl, "IndicatieKeizersnedeType"@nl, "ArtsType"@nl, "VoedingsinnameItem"@nl, "StatusMedischVerslag"@nl, "StatusZwangerschap"@nl, "MaatregelMedischVerslag"@nl, "LocatieOverlijdenType"@nl.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Bewijs.datum> a owl:DatatypeProperty;
+    rdfs:label "datum"@nl;
+    rdfs:comment "Het moment in tijd wanneer het Bewijs werd geproduceerd."@nl;
+    rdfs:domain eu:Evidence;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range xsd:dateTime.
+overlijdensaangifte:Crematie a owl:Class;
+    rdfs:label "Crematie"@nl;
+    rdfs:comment "Proces waarbij het lichaam van een overleden Persoon wordt verbrand tot as."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:subClassOf overlijdensaangifte:StoffelijkeRestverwerking.
+overlijdensaangifte:Doodgeboorte a owl:Class;
+    rdfs:label "Doodgeboorte"@nl;
+    rdfs:comment "Het Overlijden van een baby in de baarmoeder of tijdens de Bevalling."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:subClassOf persoon:Overlijden.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak.duur> a owl:ObjectProperty;
+    rdfs:label "duur"@nl;
+    rdfs:comment "De afbakening in tijd van de Doodsoorzaak."@nl;
+    rdfs:domain overlijdensaangifte:Doodsoorzaak;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range eu:PeriodOfTime.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak.gelinktAan> a owl:ObjectProperty;
+    rdfs:label "gelinkt aan"@nl;
+    rdfs:comment "De geassocieerde oorzaak gelinkt aan een Doodsoorzaak."@nl;
+    rdfs:domain overlijdensaangifte:Doodsoorzaak;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:GeassocieerdeOorzaak.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak.hoofdoorzaak> a owl:DatatypeProperty;
+    rdfs:label "hoofdoorzaak"@nl;
+    rdfs:comment "Beschrijving van de oorzaak die het Overlijden van een Persoon teweegbracht."@nl;
+    rdfs:domain overlijdensaangifte:Doodsoorzaak, overlijdensaangifte:GeassocieerdeOorzaak;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range rdf:langString.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Doodsoorzaak.volgtOp> a owl:ObjectProperty;
+    rdfs:label "volgt op"@nl;
+    rdfs:comment "De Doodsoorzaak die volgt op een andere Doodsoorzaak."@nl;
+    rdfs:domain overlijdensaangifte:Doodsoorzaak;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Doodsoorzaak.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#FoetaalOverlijden.gedocumenteerdDoor> a owl:ObjectProperty;
+    rdfs:label "gedocumenteerd door"@nl;
+    rdfs:comment "De documentatie van het Foetaal Overlijden."@nl;
+    rdfs:domain overlijdensaangifte:FoetaalOverlijden;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:OverlijdensfhandelingOutput.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#FoetaalOverlijden.hoofdoorzaak> a owl:ObjectProperty;
+    rdfs:label "doodsoorzaak"@nl;
+    rdfs:comment "Doodsoorzaak die heeft bijgedragen aan het Overlijden van een Foetus."@nl;
+    rdfs:domain overlijdensaangifte:FoetaalOverlijden;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Doodsoorzaak.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#FoetaalOverlijden.vaststelling> a owl:ObjectProperty;
+    rdfs:label "vaststelling"@nl;
+    rdfs:comment "De Medische Vaststelling van het Foetaal Overlijden door een Arts."@nl;
+    rdfs:domain overlijdensaangifte:FoetaalOverlijden;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range observation-definitions.html:Observation.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#FoetaalOverlijden.verwerking> a owl:ObjectProperty;
+    rdfs:label "verwerking"@nl;
+    rdfs:comment "De Stoffelijke Restverwerking van de overleden Foetus."@nl;
+    rdfs:domain overlijdensaangifte:FoetaalOverlijden;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#GeassocieerdeOorzaak.duur> a owl:ObjectProperty;
+    rdfs:label "duur"@nl;
+    rdfs:comment "De afbakening in tijd van de geassocieerde oorzaak."@nl;
+    rdfs:domain overlijdensaangifte:GeassocieerdeOorzaak;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range eu:PeriodOfTime.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#GeassocieerdeOorzaak.gelinktAan> a owl:ObjectProperty;
+    rdfs:label "gelinkt aan"@nl;
+    rdfs:comment "De Geassocieerde oorzaak gelinkt aan een oorzaak."@nl;
+    rdfs:domain overlijdensaangifte:GeassocieerdeOorzaak;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Doodsoorzaak.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#MedischVerslag.bezwaar> a owl:ObjectProperty;
+    rdfs:label "bezwaar"@nl;
+    rdfs:comment "Juridische of wettelijke situatie waarin het lijk van de persoon niet mag worden begraven, gecremeerd of onderworpen aan andere vormen van stoffelijke restverwerking."@nl;
+    rdfs:domain overlijdensaangifte:MedischVerslagOverlijden;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#MedischVerslag.risico> a owl:ObjectProperty;
+    rdfs:label "risico"@nl;
+    rdfs:comment "Risico's gebonden aan de verdere verwerking van het lichaam van de overleden Persoon, aangehaald door de Arts."@nl;
+    rdfs:domain overlijdensaangifte:MedischVerslagOverlijden;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Ongeval.locatie> a owl:ObjectProperty;
+    rdfs:label "locatie"@nl;
+    rdfs:comment "De locatie van het Ongeval."@nl;
+    rdfs:domain overlijdensaangifte:Ongeval;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range prov:Location.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Ongeval.omstandigheden> a owl:DatatypeProperty;
+    rdfs:label "omstandigheden"@nl;
+    rdfs:comment "De beschrijving van specifieke zaken rond het Ongeval."@nl;
+    rdfs:domain overlijdensaangifte:Ongeval;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range rdf:langString.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Ongeval.veroorzaakt> a owl:ObjectProperty;
+    rdfs:label "veroorzaakt"@nl;
+    rdfs:comment "Het ongeval veroorzaakt de Overlijdenstoestand."@nl;
+    rdfs:domain overlijdensaangifte:Overlijdenstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Ongeval.
+overlijdensaangifte:OverlijdensafhandelingDienst a owl:Class;
+    rdfs:label "Overlijdensafhandeling Dienst"@nl;
+    rdfs:comment "Het proces van het afhandelen van administratieve taken, procedures en formaliteiten rond het Overlijden van een Persoon."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:subClassOf cpsv:PublicService.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#OverlijdensafhandelingOutput.type> a owl:ObjectProperty;
+    rdfs:label "type"@nl;
+    rdfs:comment "De aard van de OverlijdensafhandelingOutput."@nl;
+    rdfs:domain overlijdensaangifte:OverlijdensfhandelingOutput;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Overlijdenstoestand.aard> a owl:ObjectProperty;
+    rdfs:label "aard"@nl;
+    rdfs:comment "Specifieke omstandigheden die hebben geleid tot het overlijden van een Persoon."@nl;
+    rdfs:domain overlijdensaangifte:Overlijdenstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Overlijdenstoestand.beschrijving> a owl:DatatypeProperty;
+    rdfs:label "beschrijving"@nl;
+    rdfs:comment "Gedetailleerde beschrijving van andere relevante inrormatie met betrekking tot het Overlijden van een Persoon."@nl;
+    rdfs:domain overlijdensaangifte:Overlijdenstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range rdf:langString.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Overlijdenstoestand.doodsoorzaak> a owl:ObjectProperty;
+    rdfs:label "doodsoorzaak"@nl;
+    rdfs:comment "Specifieke ziekte, aandoening, verwonding of gebeurtenis die direct heeft geleid tot het Overlijden van een Persoon."@nl;
+    rdfs:domain overlijdensaangifte:Overlijdenstoestand;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Doodsoorzaak.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Overlijdenstoestand.veroorzaaktDoor> a owl:ObjectProperty;
+    rdfs:label "veroorzaakt door"@nl;
+    rdfs:comment "De Overlijdenstoestand kan veroorzaakt worden door een Ongeval."@nl;
+    rdfs:domain overlijdensaangifte:Ongeval;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Overlijdenstoestand.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Persoonsrelatie.datum> a owl:DatatypeProperty;
+    rdfs:label "datum"@nl;
+    rdfs:comment "Datum van de start van de Persoonsrelatie."@nl;
+    rdfs:domain persoon:Persoonsrelatie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range xsd:dateTime.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Persoonsrelatie.omschrijving> a owl:DatatypeProperty;
+    rdfs:label "omschrijving"@nl;
+    rdfs:comment "Beschrijving van de Persoonsrelatie."@nl;
+    rdfs:domain persoon:Persoonsrelatie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range rdf:langString.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Persoonsrelatie.rangnummer> a owl:DatatypeProperty;
+    rdfs:label "rangnummer"@nl;
+    rdfs:comment "Rangnummer van de Persoonsrelatie."@nl;
+    rdfs:domain persoon:Persoonsrelatie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range xsd:string.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#SociodemografischKenmerk.beroep> a owl:DatatypeProperty;
+    rdfs:label "beroep"@nl;
+    rdfs:comment "Specifieke bezigheid, taak of activiteit waarvoor een persoon is opgeleid, vaardigheden heeft ontwikkeld en die hij of zij regelmatig uitoefent om inkomen te verdienen."@nl;
+    rdfs:domain cultuurparticipatie:SociodemografischKenmerk;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range rdf:langString.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRest.locatie> a owl:ObjectProperty;
+    rdfs:label "locatie"@nl;
+    rdfs:comment "De locatie waar de Stoffelijke Rest wordt bewaard."@nl;
+    rdfs:domain overlijdensaangifte:StoffelijkeRest;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range prov:Location.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRest.produceert> a owl:ObjectProperty;
+    rdfs:label "produceert"@nl;
+    rdfs:comment "Stoffelijke Restverwerking produceert een Stoffelijke Rest."@nl;
+    rdfs:domain overlijdensaangifte:StoffelijkeRestverwerking;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:StoffelijkeRest.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRest.type> a owl:ObjectProperty;
+    rdfs:label "type"@nl;
+    rdfs:comment "Beschrijving van het lichaam van de overleden Persoon."@nl;
+    rdfs:domain overlijdensaangifte:StoffelijkeRest;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRest.wordtGeproduceerdDoor> a owl:ObjectProperty;
+    rdfs:label "wordt geproduceerd door"@nl;
+    rdfs:comment "Stoffelijke Rest wordt geproduceerd door de Stoffelijke Restverwerking."@nl;
+    rdfs:domain overlijdensaangifte:StoffelijkeRest;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:StoffelijkeRestverwerking.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#StoffelijkeRestVerwerking.leidtTot> a owl:ObjectProperty;
+    rdfs:label "leidt tot"@nl;
+    rdfs:comment "Verwijst naar het gevolg van de StoffelijkeRestVerwerking."@nl;
+    rdfs:domain overlijdensaangifte:Uitvaart;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:StoffelijkeRestverwerking.
+overlijdensaangifte:Teraardestelling a owl:Class;
+    rdfs:label "Teraardestelling"@nl;
+    rdfs:comment "Het proces waarbij het lichaam van een overleden Persoon in de grond wordt begraven."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:subClassOf overlijdensaangifte:StoffelijkeRestverwerking.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaart.wordtGeorganiseerdDoor> a owl:ObjectProperty;
+    rdfs:label "wordt georganiseerd door"@nl;
+    rdfs:comment "De Uitvaart wordt georganiseerd door de Uitvaartondernemer."@nl;
+    rdfs:domain overlijdensaangifte:Uitvaart;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Uitvaartondernemer.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartcontract.contractnummer> a owl:ObjectProperty;
+    rdfs:label "contractnummer"@nl;
+    rdfs:comment "Numerieke waarde waarmee het contract uniek wordt herkend."@nl;
+    rdfs:domain overlijdensaangifte:Uitvaartcontract;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range adms:Identifier.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartcontract.datum> a owl:DatatypeProperty;
+    rdfs:label "datum"@nl;
+    rdfs:comment "De datum waarop het Uitvaartcontract ondertekend wordt."@nl;
+    rdfs:domain overlijdensaangifte:Uitvaartcontract;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range xsd:dateTime.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartcontract.firma> a owl:ObjectProperty;
+    rdfs:label "firma"@nl;
+    rdfs:comment "De gegevens van de Uitvaardondernemer."@nl;
+    rdfs:domain overlijdensaangifte:Uitvaartcontract;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range rov:RegisteredOrganization.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Uitvaartondernemer.organiseert> a owl:ObjectProperty;
+    rdfs:label "organiseert"@nl;
+    rdfs:comment "Een Uitvaartondernemer organiseert een Uitvaart."@nl;
+    rdfs:domain overlijdensaangifte:Uitvaartondernemer;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Uitvaart.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.bepaalt> a owl:ObjectProperty;
+    rdfs:label "bepaalt"@nl;
+    rdfs:comment "De Wilsbeschikking bepaalt potentieel de invulling van de Uitvaart."@nl;
+    rdfs:domain overlijdensaangifte:Wilsbeschikking;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Uitvaart.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.bijbegraving> a owl:ObjectProperty;
+    rdfs:label "bijbegraving"@nl;
+    rdfs:comment "Het begraven van een Persoon naast een reeds overleden Persoon."@nl;
+    rdfs:domain overlijdensaangifte:Wilsbeschikking;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range person:Person.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.gemeente> a owl:ObjectProperty;
+    rdfs:label "gemeente"@nl;
+    rdfs:comment "De gemeente waar de Wilsbeschikking werd opgesteld."@nl;
+    rdfs:domain overlijdensaangifte:Wilsbeschikking;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range dcterms:Location.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.lijkbezorging> a owl:ObjectProperty;
+    rdfs:label "lijkbezorging"@nl;
+    rdfs:comment "Handelingen en procedures die worden uitgevoerd na het Overlijden van een Persoon."@nl;
+    rdfs:domain overlijdensaangifte:Wilsbeschikking;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.ondertekening> a owl:ObjectProperty;
+    rdfs:label "ondertekening"@nl;
+    rdfs:comment "Het document die de ondertekening van de Wilsbeschikking bekrachtigt."@nl;
+    rdfs:domain overlijdensaangifte:Wilsbeschikking;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range foaf:Document.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.opgesteldBij> a owl:ObjectProperty;
+    rdfs:label "opgesteld bij"@nl;
+    rdfs:comment "Verwijst naar de gemeente waarin de Wilsbeschikking is opgesteld."@nl;
+    rdfs:domain overlijdensaangifte:Wilsbeschikking;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range eu:PublicOrganisation.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.orgaandonatie> a owl:ObjectProperty;
+    rdfs:label "orgaandonatie"@nl;
+    rdfs:comment "De bepalingen rond Orgaandonatie binnen de Wilsbeschikking."@nl;
+    rdfs:domain overlijdensaangifte:Wilsbeschikking;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Orgaandonatie.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.ritueel> a owl:ObjectProperty;
+    rdfs:label "ritueel"@nl;
+    rdfs:comment "Culturele, religieuze of persoonlijke rituelen die de overleden Persoon wenst op te nemen in de Uitvaart."@nl;
+    rdfs:domain overlijdensaangifte:Wilsbeschikking;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.uitvaartcontract> a owl:ObjectProperty;
+    rdfs:label "uitvaartcontract"@nl;
+    rdfs:comment "Overeenkomst waarin een Persoon de wensen voor de Uitvaart in vastlegt."@nl;
+    rdfs:domain overlijdensaangifte:Wilsbeschikking;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Uitvaartcontract.
+<https://data.vlaanderen.be/ns/overlijdensaangifte#Wilsbeschikking.wordtBepaaldDoor> a owl:ObjectProperty;
+    rdfs:label "wordt bepaald door"@nl;
+    rdfs:comment "De Uitvaart wordt bepaald door de Wilsbeschikking."@nl;
+    rdfs:domain overlijdensaangifte:Uitvaart;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range overlijdensaangifte:Wilsbeschikking.
+dcterms:type a rdf:Property;
+    rdfs:label "type"@nl.
+overlijdensaangifte:Orgaandonatie a owl:Class;
+    rdfs:label "Orgaandonatie"@nl;
+    rdfs:comment "Orgaandonatie is het proces waarbij een Persoon toestemming geeft om een orgaan op legale wijze te verwijderen en te transplanteren naar een andere Persoon."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>.
+overlijdensaangifte:OverlijdensfhandelingOutput a owl:Class;
+    rdfs:label "Overlijdensafhandeling Output"@nl;
+    rdfs:comment "De Output van het afhandelen van administratieve taken, procedures en formaliteiten rond het Overlijden van een Persoon."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:subClassOf eu:Output, eu:Evidence.
+overlijdensaangifte:Uitvaartondernemer a owl:Class;
+    rdfs:label "Uitvaartondernemer"@nl;
+    rdfs:comment "Een professioneel Persoon of organisatie die gespecialiseerd is in het regelen en begeleiden van uitvaarten."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:subClassOf fixme.com:Agent.
+overlijdensaangifte:MedischVerslagOverlijden a owl:Class, owl:ObjectProperty;
+    rdfs:label "Medisch Verslag Overlijden"@nl, "maatregel"@nl;
+    rdfs:comment "Specifiek Medisch Verslag opgesteld door een Arts om de details en omstandigheden van het Overlijden van een Persoon vast te leggen."@nl, "De maatregel die moet genomen worden als gevolg van het risico."@nl;
+    rdfs:domain overlijdensaangifte:MedischVerslagOverlijden;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:range skos:Concept;
+    rdfs:subClassOf diagnosticreport-definitions:DiagnosticReport.
+overlijdensaangifte:FoetaalOverlijden a owl:Class;
+    rdfs:label "FoetaalOverlijden"@nl;
+    rdfs:comment "Het Overlijden van een Foetus in de baarmoeder vóór de Geboorte."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:subClassOf fixme.com:Gebeurtenis.
+overlijdensaangifte:GeassocieerdeOorzaak a owl:Class;
+    rdfs:label "Geassocieerde Oorzaak"@nl;
+    rdfs:comment "De geassocieerde oorzaak van een overlijden dat onrechtstreeks mee tot het Overlijden heeft geleid."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>.
+overlijdensaangifte:Ongeval a owl:Class;
+    rdfs:label "Ongeval"@nl;
+    rdfs:comment "Een plotseling optredende, ongewilde en onvoorziene gebeurtenis, waarbij de inwerking van een externe oorzaak leidt tot fysiek letsel en waarbij geen sprake is van opzettelijk geweld of voedselvergiftiging."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>.
+overlijdensaangifte:StoffelijkeRest a owl:Class;
+    rdfs:label "Stoffelijke Rest"@nl;
+    rdfs:comment "De stoffelijke overschot of het lichaam van de overleden Persoon na de StoffelijkeRestVerwerking."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>.
+overlijdensaangifte:Uitvaartcontract a owl:Class;
+    rdfs:label "Uitvaartcontract"@nl;
+    rdfs:comment "Juridisch bindende overeenkomst tussen een Persoon en een uitvaartonderneming of verzekeringsmaatschappij met betrekking op de vooraf geplande regelingen en financiële aspecten van een Uitvaart."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>.
+overlijdensaangifte:Overlijdenstoestand a owl:Class;
+    rdfs:label "Overlijdenstoestand"@nl;
+    rdfs:comment "De medische toestand bij het Overlijden van de Persoon"@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:subClassOf gezondheidstoestand:Gezondheidstoestand.
+overlijdensaangifte:StoffelijkeRestverwerking a owl:Class;
+    rdfs:label "Stoffelijke Restverwerking"@nl;
+    rdfs:comment "De naverwerking van de stoffelijke resten van de overleden Persoon."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>.
+overlijdensaangifte:Uitvaart a owl:Class;
+    rdfs:label "Uitvaart"@nl;
+    rdfs:comment "Een ceremonie of plechtigheid die wordt gehouden ter herdenking van een overleden Persoon."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:subClassOf fixme.com:Gebeurtenis.
+overlijdensaangifte:Doodsoorzaak a owl:Class;
+    rdfs:label "Doodsoorzaak"@nl;
+    rdfs:comment "De oorzaak van een overlijden van een Persoon."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>.
+overlijdensaangifte:Wilsbeschikking a owl:Class;
+    rdfs:label "Wilsbeschikking"@nl;
+    rdfs:comment "Een verzameling van bepalingen rond het Overlijden van een Persoon."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/overlijdensaangifte>;
+    rdfs:subClassOf fixme.com:Output, fixme.com:Bewijs.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> a owl:Ontology;
+    rdfs:label "overlijdensaangifte"@en, "overlijdensaangifte"@nl.
+_:n3-2523 a foaf:Person.
+_:n3-2524 foaf:homepage <https://www.uzleuven.be/nl>;
+    foaf:name "UZ Leuven".
+_:n3-2523 schema:affiliation _:n3-2524;
+    foaf:firstName "Dieter";
+    foaf:lastName "Andelhofs".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2523.
+_:n3-2525 a foaf:Person.
+_:n3-2526 foaf:homepage <https://www.kbc.be/particulieren/nl.html>;
+    foaf:name "KBC".
+_:n3-2525 schema:affiliation _:n3-2526;
+    foaf:firstName "Leen";
+    foaf:lastName "Borgers".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2525.
+_:n3-2527 a foaf:Person.
+_:n3-2528 foaf:homepage <https://www.azdelta.be/nl>;
+    foaf:name "AZ Delta".
+_:n3-2527 schema:affiliation _:n3-2528;
+    foaf:firstName "Natasha";
+    foaf:lastName "Cornelis".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2527.
+_:n3-2529 a foaf:Person.
+_:n3-2530 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/764a0c6bbc866153ae70cf75d745b9477fa010567246cfe6683b7bb8aec541b4>;
+    foaf:name "Stad Oostende".
+_:n3-2529 schema:affiliation _:n3-2530;
+    foaf:firstName "Annelies";
+    foaf:lastName "Crombez".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2529.
+_:n3-2531 a foaf:Person.
+_:n3-2532 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/c648ea5d12626ee3364a02debb223908a71e68f53d69a7a7136585b58a083e77>;
+    foaf:name "Stad Leuven".
+_:n3-2531 schema:affiliation _:n3-2532;
+    foaf:firstName "Christoph";
+    foaf:lastName "Cuypers".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2531.
+_:n3-2533 a foaf:Person.
+_:n3-2534 foaf:homepage <https://www.kunlabora.be/nl>;
+    foaf:name "Kunlabora nv".
+_:n3-2533 schema:affiliation _:n3-2534;
+    foaf:firstName "Tom";
+    foaf:lastName "De Keyser".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2533.
+_:n3-2535 a foaf:Person.
+_:n3-2536 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/670db1d66c0de3b931962e1044033ccfa9d6e3023aa9828a5f252c3bc69bd32c>;
+    foaf:name "Stad Antwerpen".
+_:n3-2535 schema:affiliation _:n3-2536;
+    foaf:firstName "Jana";
+    foaf:lastName "De Smedt".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2535.
+_:n3-2537 a foaf:Person.
+_:n3-2538 foaf:homepage <https://remmicom.be/>;
+    foaf:name "Remmicom".
+_:n3-2537 schema:affiliation _:n3-2538;
+    foaf:firstName "David";
+    foaf:lastName "Devroey".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2537.
+_:n3-2539 a foaf:Person.
+_:n3-2540 foaf:homepage <https://funebra.be/nl/>;
+    foaf:name "Funebra".
+_:n3-2539 schema:affiliation _:n3-2540;
+    foaf:firstName "Johan";
+    foaf:lastName "Dexters".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2539.
+_:n3-2541 a foaf:Person.
+_:n3-2542 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO051320>;
+    foaf:name "Athumi".
+_:n3-2541 schema:affiliation _:n3-2542;
+    foaf:firstName "Renée";
+    foaf:lastName "Eelbode";
+    foaf:mbox <mailto:renee.eelbode@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2541.
+_:n3-2543 a foaf:Person.
+_:n3-2544 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/974816591f269bb7d74aa1720922651529f3d3b2a787f5c60b73e5a0384950a4>;
+    foaf:name "Stad Aalst".
+_:n3-2543 schema:affiliation _:n3-2544;
+    foaf:firstName "Evy";
+    foaf:lastName "Fraeyman".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2543.
+_:n3-2545 a foaf:Person.
+_:n3-2546 foaf:homepage <https://www.kunlabora.be/nl>;
+    foaf:name "Kunlabora nv".
+_:n3-2545 schema:affiliation _:n3-2546;
+    foaf:firstName "Seppe";
+    foaf:lastName "Gielen".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2545.
+_:n3-2547 a foaf:Person.
+_:n3-2548 foaf:homepage <https://uitvaartunievlaanderen.be/>;
+    foaf:name "Uitvaartunie".
+_:n3-2547 schema:affiliation _:n3-2548;
+    foaf:firstName "Aaron";
+    foaf:lastName "Gorsen".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2547.
+_:n3-2549 a foaf:Person.
+_:n3-2550 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/c648ea5d12626ee3364a02debb223908a71e68f53d69a7a7136585b58a083e77>;
+    foaf:name "Stad Leuven".
+_:n3-2549 schema:affiliation _:n3-2550;
+    foaf:firstName "Yati";
+    foaf:lastName "Huyge".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2549.
+_:n3-2551 a foaf:Person.
+_:n3-2552 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/974816591f269bb7d74aa1720922651529f3d3b2a787f5c60b73e5a0384950a4>;
+    foaf:name "Stad Aalst".
+_:n3-2551 schema:affiliation _:n3-2552;
+    foaf:firstName "Fleur";
+    foaf:lastName "Janssens".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2551.
+_:n3-2553 a foaf:Person.
+_:n3-2554 foaf:homepage <https://www.cevi.be/>;
+    foaf:name "CEVI".
+_:n3-2553 schema:affiliation _:n3-2554;
+    foaf:firstName "Senem";
+    foaf:lastName "Mavzer".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2553.
+_:n3-2555 a foaf:Person.
+_:n3-2556 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/764a0c6bbc866153ae70cf75d745b9477fa010567246cfe6683b7bb8aec541b4>;
+    foaf:name "Stad Oostende".
+_:n3-2555 schema:affiliation _:n3-2556;
+    foaf:firstName "Tania";
+    foaf:lastName "Neiyinck".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2555.
+_:n3-2557 a foaf:Person.
+_:n3-2558 foaf:homepage <https://redpencil.io/>;
+    foaf:name "RedPencil".
+_:n3-2557 schema:affiliation _:n3-2558;
+    foaf:firstName "Erika";
+    foaf:lastName "Pauwels".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2557.
+_:n3-2559 a foaf:Person.
+_:n3-2560 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/353234a365664e581db5c2f7cc07add2534b47b8e1ab87c821fc6e6365e6bef5>;
+    foaf:name "Stad Gent".
+_:n3-2559 schema:affiliation _:n3-2560;
+    foaf:firstName "Christophe";
+    foaf:lastName "Puttevils".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2559.
+_:n3-2561 a foaf:Person.
+_:n3-2562 foaf:homepage <https://www.sereni.be/>;
+    foaf:name "Sereni".
+_:n3-2561 schema:affiliation _:n3-2562;
+    foaf:firstName "Bruno";
+    foaf:lastName "Quirijnen".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2561.
+_:n3-2563 a foaf:Person.
+_:n3-2564 foaf:homepage <https://wegwijs.vlaanderen.be/#/organisations/f81d8b81-985d-4d30-8144-ac66e10d5db0/info>;
+    foaf:name "Departement Zorg".
+_:n3-2563 schema:affiliation _:n3-2564;
+    foaf:firstName "Mathieu";
+    foaf:lastName "Roelants".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2563.
+_:n3-2565 a foaf:Person.
+_:n3-2566 foaf:homepage <https://wegwijs.vlaanderen.be/#/organisations/f81d8b81-985d-4d30-8144-ac66e10d5db0/info>;
+    foaf:name "Departement Zorg".
+_:n3-2565 schema:affiliation _:n3-2566;
+    foaf:firstName "Merel";
+    foaf:lastName "Roelants".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2565.
+_:n3-2567 a foaf:Person.
+_:n3-2568 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/71f6925a4b895c2a91dce039c87d227809edcda82963714814141b1e41631b08>;
+    foaf:name "Stad Sint-Niklaas".
+_:n3-2567 schema:affiliation _:n3-2568;
+    foaf:firstName "Carla";
+    foaf:lastName "Rogiers".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2567.
+_:n3-2569 a foaf:Person.
+_:n3-2570 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/764a0c6bbc866153ae70cf75d745b9477fa010567246cfe6683b7bb8aec541b4>;
+    foaf:name "Stad Oostende".
+_:n3-2569 schema:affiliation _:n3-2570;
+    foaf:firstName "Lies";
+    foaf:lastName "Tytgat".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2569.
+_:n3-2571 a foaf:Person.
+_:n3-2572 foaf:homepage <https://www.cevi.be/>;
+    foaf:name "CEVI".
+_:n3-2571 schema:affiliation _:n3-2572;
+    foaf:firstName "Eline";
+    foaf:lastName "Van Den Berghe".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2571.
+_:n3-2573 a foaf:Person.
+_:n3-2574 foaf:homepage <https://www.uzleuven.be/nl>;
+    foaf:name "UZ Leuven".
+_:n3-2573 schema:affiliation _:n3-2574;
+    foaf:firstName "Wouter";
+    foaf:lastName "Van Den Bogaert".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2573.
+_:n3-2575 a foaf:Person.
+_:n3-2576 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/e84ba36959d82fc95bb17b25d2e70c135d8805737ba27bab572af670a2768338>;
+    foaf:name "Stad Halle".
+_:n3-2575 schema:affiliation _:n3-2576;
+    foaf:firstName "Cindy";
+    foaf:lastName "Van Nerom".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2575.
+_:n3-2577 a foaf:Person.
+_:n3-2578 foaf:homepage <https://www.wingene.be/>;
+    foaf:name "Gemeente Wingene".
+_:n3-2577 schema:affiliation _:n3-2578;
+    foaf:firstName "Annelies";
+    foaf:lastName "Van Tomme".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2577.
+_:n3-2579 a foaf:Person.
+_:n3-2580 foaf:homepage <https://wegwijs.vlaanderen.be/#/organisations/f81d8b81-985d-4d30-8144-ac66e10d5db0/info>;
+    foaf:name "Departement Zorg".
+_:n3-2579 schema:affiliation _:n3-2580;
+    foaf:firstName "Maarten";
+    foaf:lastName "Van der Biest".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2579.
+_:n3-2581 a foaf:Person.
+_:n3-2582 foaf:homepage <https://wegwijs.vlaanderen.be/#/organisations/f81d8b81-985d-4d30-8144-ac66e10d5db0/info>;
+    foaf:name "Departement Zorg".
+_:n3-2581 schema:affiliation _:n3-2582;
+    foaf:firstName "Matthias";
+    foaf:lastName "Van der Elst".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2581.
+_:n3-2583 a foaf:Person.
+_:n3-2584 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/974816591f269bb7d74aa1720922651529f3d3b2a787f5c60b73e5a0384950a4>;
+    foaf:name "Stad Aalst".
+_:n3-2583 schema:affiliation _:n3-2584;
+    foaf:firstName "Tessa";
+    foaf:lastName "Verbeiren".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2583.
+_:n3-2585 a foaf:Person.
+_:n3-2586 foaf:homepage <https://www.bredene.be/>;
+    foaf:name "Gemeente Bredene".
+_:n3-2585 schema:affiliation _:n3-2586;
+    foaf:firstName "Yasmina";
+    foaf:lastName "Youmni".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:contributor _:n3-2585;
+    dcterms:issued "TODO";
+    dcterms:license "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0", <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>.
+_:n3-2587 foaf:homepage <https://data.vlaanderen.be>;
+    foaf:mbox <mailto:oslo@kb.vlaanderen.be>;
+    foaf:name "Data Vlaanderen".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> dcterms:mediator _:n3-2587;
+    rdfs:seeAlso crm:E52_Time-Span, skos:Concept, dcterms:type.
+_:n3-2588 a foaf:Person.
+_:n3-2589 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2588 schema:affiliation _:n3-2589;
+    foaf:firstName "Veerle";
+    foaf:lastName "Beyaert";
+    foaf:mbox <mailto:veerle.beyaert@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> rec54:editor _:n3-2588.
+_:n3-2590 a foaf:Person.
+_:n3-2591 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2590 schema:affiliation _:n3-2591;
+    foaf:firstName "Raf";
+    foaf:lastName "Buyle";
+    foaf:mbox <mailto:raf.buyle@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> rec54:editor _:n3-2590.
+_:n3-2592 a foaf:Person.
+_:n3-2593 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2592 schema:affiliation _:n3-2593;
+    foaf:firstName "Jitse";
+    foaf:lastName "De Cock";
+    foaf:mbox <mailto:jitse.decock@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> rec54:editor _:n3-2592.
+_:n3-2594 a foaf:Person.
+_:n3-2595 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2594 schema:affiliation _:n3-2595;
+    foaf:firstName "Geert";
+    foaf:lastName "Thijs";
+    foaf:mbox <mailto:geert.thijs@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> rec54:editor _:n3-2594.
+_:n3-2596 a foaf:Person.
+_:n3-2597 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2596 schema:affiliation _:n3-2597;
+    foaf:firstName "Liesbeth";
+    foaf:lastName "Van der Haegen";
+    foaf:mbox <mailto:liesbeth.vanderhaegen@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> rec54:editor _:n3-2596.
+_:n3-2598 a foaf:Person.
+_:n3-2599 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2598 schema:affiliation _:n3-2599;
+    foaf:firstName "Ziggy";
+    foaf:lastName "Vanlishout";
+    foaf:mbox <mailto:ziggy.vanlishout@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> rec54:editor _:n3-2598.
+_:n3-2600 a foaf:Person.
+_:n3-2601 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2600 schema:affiliation _:n3-2601;
+    foaf:firstName "Aline";
+    foaf:lastName "Verbrugge";
+    foaf:mbox <mailto:aline.verbrugge@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> rec54:editor _:n3-2600.
+_:n3-2602 a foaf:Person.
+_:n3-2603 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2602 schema:affiliation _:n3-2603;
+    foaf:firstName "Laurens";
+    foaf:lastName "Vercauteren";
+    foaf:mbox <mailto:laurens.vercauteren@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> rec54:editor _:n3-2602.
+_:n3-2604 a foaf:Person.
+_:n3-2605 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO002949>;
+    foaf:name "Digitaal Vlaanderen".
+_:n3-2604 schema:affiliation _:n3-2605;
+    foaf:firstName "Eveline";
+    foaf:lastName "Vlassenroot";
+    foaf:mbox <mailto:eveline.vlassenroot@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> rec54:editor _:n3-2604.
+_:n3-2606 a foaf:Person.
+_:n3-2607 foaf:homepage <https://data.vlaanderen.be/id/organisatie/OVO051320>;
+    foaf:name "athumi".
+_:n3-2606 schema:affiliation _:n3-2607;
+    foaf:firstName "Sarah";
+    foaf:lastName "Blomme";
+    foaf:mbox <mailto:sarah.blomme@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/overlijdensaangifte> foaf:maker _:n3-2606.
+_:n3-2608 a foaf:Person.
+_:n3-2609 foaf:homepage <http://data.lblod.info/id/bestuurseenheden/c648ea5d12626ee3364a02debb223908a71e68f53d69a7a7136585b58a083e77>;
+    foaf:name "Stad Leuven".
+_:n3-2608 schema:affiliation _:n3-2609;
+    foaf:firstName "Steve";
+    foaf:lastName "Heylen".
+<https://data.vlaanderen.be/ns/overlijdensaangifte> foaf:maker _:n3-2608.

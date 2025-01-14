@@ -347,11 +347,11 @@ dcterms:title a rdfs:Property;
     vann:usageNote ""@nl.
 dossier:vindtPlaatsTijdens a rdfs:Property;
     rdfs:label "\n                            \n                            vindt plaats tijdens\n                          "@nl;
-    rdfs:comment "Een activiteit vindt plaats tijdens een procedurestap."@nl;
+    rdfs:comment "Een activiteit vindt plaats tijdens een eenheid van werk."@nl;
     vann:usageNote ""@nl;
     a rdfs:Property;
     rdfs:label "\n                            \n                            vindt plaats tijdens\n                          "@nl;
-    rdfs:comment "Een activiteit vindt plaats tijdens een eenheid van werk."@nl;
+    rdfs:comment "http://dbpedia.org/ontology/UnitOfWork"@nl;
     vann:usageNote ""@nl.
 prov:wasAssociatedWith a rdfs:Property;
     rdfs:label "\n                            \n                            was geassocieerd met\n                          "@nl;
@@ -499,15 +499,7 @@ prov:value a rdfs:Property;
     vann:usageNote ""@nl.
 dcterms:isPartOf a rdfs:Property;
     rdfs:label "\n                            \n                            is deel van\n                          "@nl;
-    rdfs:comment "Een stukonderdeel kan deel zijn van een ander stukonderdeel."@nl;
-    vann:usageNote ""@nl;
-    a rdfs:Property;
-    rdfs:label "\n                            \n                            is deel van\n                          "@nl;
     rdfs:comment "Een stukonderdeel maakt deel uit van een stuk."@nl;
-    vann:usageNote ""@nl.
-dossier:isVoorgesteldDoor a rdfs:Property;
-    rdfs:label "\n                            \n                            is voorgesteld door\n                          "@nl;
-    rdfs:comment "Een stuk of een onderdeel daarvan worden voorgesteld door een representatie."@nl;
     vann:usageNote ""@nl.
 dcterms:title a rdfs:Property;
     rdfs:label "\n                            \n                            naam\n                          "@nl;
@@ -531,7 +523,7 @@ adms:identifier a rdfs:Property;
     vann:usageNote ""@nl.
 dcterms:isPartOf a rdfs:Property;
     rdfs:label "\n                            \n                            is deel van\n                          "@nl;
-    rdfs:comment "Een zaak kan onderdeel uitmaken van een project."@nl;
+    rdfs:comment "Een gerelateerde entiteit waar de beschreven entiteit een fysiek of logisch onderdeel van is."@nl;
     vann:usageNote ""@nl.
 dcterms:title a rdfs:Property;
     rdfs:label "\n                            \n                            naam\n                          "@nl;
@@ -540,6 +532,10 @@ dcterms:title a rdfs:Property;
 dossier:openingsdatum a rdfs:Property;
     rdfs:label "\n                            \n                            openingsdatum\n                          "@nl;
     rdfs:comment "De openingsdatum van de zaak."@nl;
+    vann:usageNote ""@nl.
+<https://dbpedia.org/ontology/procedure> a rdfs:Property;
+    rdfs:label "\n                            \n                            procedure\n                          "@nl;
+    rdfs:comment "De naam die verwijst naar de formele definitie van een verzameling stappen die in de juiste volgorde leiden tot de afronding van de zaak."@nl;
     vann:usageNote ""@nl.
 dossier:sluitingsdatum a rdfs:Property;
     rdfs:label "\n                            \n                            sluitingsdatum\n                          "@nl;

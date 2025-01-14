@@ -1,0 +1,813 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
+@prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25> rdfs:member <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitContextShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#SerieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProjectShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#EenheidVanWerkShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ResourceShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#CollectieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#EntiteitShape>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitContextShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitContextShape/4ad757dbfb35fc053b5fda4d4065b294e90e6725>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitContextShape/4c356c89be8d7eaa18e04cc74b5ae87a4fb977fa>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitContextShape/d4966ad7836aa3fc43792bb85b1ea5f2b8b06e65>;
+    shacl:targetClass dossier:ActiviteitContext.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitContextShape/4ad757dbfb35fc053b5fda4d4065b294e90e6725> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteitcontext.activiteit";
+    shacl:description "URI van de activiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "activiteit"@nl;
+    shacl:path dossier:activiteit.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitContextShape/4c356c89be8d7eaa18e04cc74b5ae87a4fb977fa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteitcontext.activiteit";
+    shacl:class prov:Activity;
+    shacl:description "URI van de activiteit."@nl;
+    shacl:name "activiteit"@nl;
+    shacl:path dossier:activiteit.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitContextShape/d4966ad7836aa3fc43792bb85b1ea5f2b8b06e65> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteitcontext.activiteit";
+    shacl:description "URI van de activiteit."@nl;
+    shacl:minCount 1;
+    shacl:name "activiteit"@nl;
+    shacl:path dossier:activiteit.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/3031d21f941146ec2cbde105f3963205bad379ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/6a142d51e1996cc547859eb790c61b8be7bf71d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/7da8172d0a595049f5316161a5496c858bc96022>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/5634d382280af9091964123baccf646894b6f112>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/f899bc3cddd0a39a0f4e89cbbfe31ad78d84c85c>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/7795703c617f5b31f5a421e8470360141867662f>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/f844de6533252e5b38c84162d753e37a42b7c108>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/2791467b18d9f6e3f2c8d72c787d28433960a794>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/66dd6b0017cfe8af73b053be6fbe70c9b549f687>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/bf40d8f98f160bcde7cc3b65e511d1d71f8d2955>;
+    shacl:targetClass prov:Activity.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.naam";
+    shacl:datatype xsd:string;
+    shacl:description "De naam van de activiteit."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/2791467b18d9f6e3f2c8d72c787d28433960a794> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.vindtplaatstijdens";
+    shacl:class dbo:UnitOfWork, dossier:Procedurestap;
+    shacl:description "Een activiteit vindt plaats tijdens een eenheid van werk."@nl, "http://dbpedia.org/ontology/UnitOfWork"@nl;
+    shacl:name "vindt plaats tijdens"@nl;
+    shacl:path dossier:vindtPlaatsTijdens.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/3031d21f941146ec2cbde105f3963205bad379ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.einddatum";
+    shacl:description "De einddatum van de activiteit."@nl;
+    shacl:minCount 1;
+    shacl:name "einddatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Activiteit.einddatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/5634d382280af9091964123baccf646894b6f112> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.genereert";
+    shacl:class dossier:Stuk;
+    shacl:description "Een activiteit kan een stuk genereren."@nl;
+    shacl:name "genereert"@nl;
+    shacl:path dossier:genereert.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.naam";
+    shacl:description "De naam van de activiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/66dd6b0017cfe8af73b053be6fbe70c9b549f687> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.vindtplaatstijdens";
+    shacl:description "http://dbpedia.org/ontology/UnitOfWork"@nl;
+    shacl:maxCount 1;
+    shacl:name "vindt plaats tijdens"@nl;
+    shacl:path dossier:vindtPlaatsTijdens.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/6a142d51e1996cc547859eb790c61b8be7bf71d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.einddatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "De einddatum van de activiteit."@nl;
+    shacl:name "einddatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Activiteit.einddatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/7795703c617f5b31f5a421e8470360141867662f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.startdatum";
+    shacl:description "De startdatum van de activiteit."@nl;
+    shacl:minCount 1;
+    shacl:name "startdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Activiteit.startdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/7da8172d0a595049f5316161a5496c858bc96022> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.einddatum";
+    shacl:description "De einddatum van de activiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "einddatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Activiteit.einddatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.startdatum";
+    shacl:description "De startdatum van de activiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "startdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Activiteit.startdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/bf40d8f98f160bcde7cc3b65e511d1d71f8d2955> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.wasgeassocieerdmet";
+    shacl:class prov:Agent;
+    shacl:description "Een toewijzing van verantwoordelijkheid aan een agent voor een activiteit, wat aangeeft dat de agent een rol in de activiteit had."@nl;
+    shacl:name "was geassocieerd met"@nl;
+    shacl:path prov:wasAssociatedWith.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.naam";
+    shacl:description "De naam van de activiteit."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/f844de6533252e5b38c84162d753e37a42b7c108> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.startdatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "De startdatum van de activiteit."@nl;
+    shacl:name "startdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Activiteit.startdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ActiviteitShape/f899bc3cddd0a39a0f4e89cbbfe31ad78d84c85c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Activiteit.heeftdeelnemer";
+    shacl:class prov:Association;
+    shacl:description "Persoon of organisatie die binnen een bepaalde rol een verantwoordelijkheid opneemt voor deze activiteit."@nl;
+    shacl:name "heeft deelnemer"@nl;
+    shacl:path prov:qualifiedAssociation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/0d0f364c4d623ce55a74be0cc8c97363ad5efdd6>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/3113a407e2072bcb4ae165fbb78af5601bb1c499>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/c97176c23d04d61b2ebad6750d82da28dc15e4a7>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/68837b0eda962a941b0162e1ae4c5f0e471e0c51>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/acb59b00c5c67fec8d3f0b2543d5259a09b17d18>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/e5ccf692ee38c28199531eb5e0c59554153a57c3>;
+    shacl:targetClass prov:Association.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/0d0f364c4d623ce55a74be0cc8c97363ad5efdd6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Agent(inrol).isrolspecialisatievan";
+    shacl:class prov:Agent;
+    shacl:description "Duidt de agent aan waarvan deze entiteit een rol toewijst."@nl;
+    shacl:name "is rolspecialisatie van"@nl;
+    shacl:path prov:agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/3113a407e2072bcb4ae165fbb78af5601bb1c499> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Agent(inrol).isrolspecialisatievan";
+    shacl:description "Duidt de agent aan waarvan deze entiteit een rol toewijst."@nl;
+    shacl:minCount 1;
+    shacl:name "is rolspecialisatie van"@nl;
+    shacl:path prov:agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/68837b0eda962a941b0162e1ae4c5f0e471e0c51> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Agent(inrol).rol";
+    shacl:description "De functie van een agent met betrekking tot een activiteit."@nl;
+    shacl:minCount 1;
+    shacl:name "rol"@nl;
+    shacl:path prov:hadRole.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/acb59b00c5c67fec8d3f0b2543d5259a09b17d18> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Agent(inrol).rol";
+    shacl:description "De functie van een agent met betrekking tot een activiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "rol"@nl;
+    shacl:path prov:hadRole.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/c97176c23d04d61b2ebad6750d82da28dc15e4a7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Agent(inrol).isrolspecialisatievan";
+    shacl:description "Duidt de agent aan waarvan deze entiteit een rol toewijst."@nl;
+    shacl:maxCount 1;
+    shacl:name "is rolspecialisatie van"@nl;
+    shacl:path prov:agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentInRolShape/e5ccf692ee38c28199531eb5e0c59554153a57c3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Agent(inrol).rol";
+    shacl:class prov:Role;
+    shacl:description "De functie van een agent met betrekking tot een activiteit."@nl;
+    shacl:name "rol"@nl;
+    shacl:path prov:hadRole.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentShape/92b1edb63e57d51f829d0f36e6373f19c3664213>;
+    shacl:targetClass prov:Agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#AgentShape/92b1edb63e57d51f829d0f36e6373f19c3664213> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Agent.handeltinopdrachtvan";
+    shacl:class prov:Agent;
+    shacl:description "Een agent kan handelen in opdracht van een andere agent."@nl;
+    shacl:name "handelt in opdracht van"@nl;
+    shacl:path prov:actedOnBehalfOf.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#CollectieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#CollectieShape/07883a3556657f573b5da9b23ce06d8ae66f85c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#CollectieShape/68c9bcb223368ce52e3d888554190994d6fe54af>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#CollectieShape/87f02c85e616bd644fa8801e06b2aed5b749056e>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#CollectieShape/c23cb557763d6742051b04a0e7930aa8ff269a84>;
+    shacl:targetClass prov:Collection.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#CollectieShape/07883a3556657f573b5da9b23ce06d8ae66f85c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Collectie.bestaatuit";
+    shacl:class prov:Entity;
+    shacl:description "Een collectie bestaat uit entiteiten."@nl;
+    shacl:name "bestaat uit"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Collectie.bestaatUit>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#CollectieShape/68c9bcb223368ce52e3d888554190994d6fe54af> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Collectie.isneerslagvan";
+    shacl:class dbo:UnitOfWork;
+    shacl:description "Een collectie is een neerslag van een eenheid van werk."@nl;
+    shacl:name "is neerslag van"@nl;
+    shacl:path dossier:isNeerslagVan.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#CollectieShape/87f02c85e616bd644fa8801e06b2aed5b749056e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Collectie.isneerslagvan";
+    shacl:description "Een collectie is een neerslag van een eenheid van werk."@nl;
+    shacl:maxCount 1;
+    shacl:name "is neerslag van"@nl;
+    shacl:path dossier:isNeerslagVan.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#CollectieShape/c23cb557763d6742051b04a0e7930aa8ff269a84> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Collectie.isneerslagvan";
+    shacl:description "Een collectie is een neerslag van een eenheid van werk."@nl;
+    shacl:minCount 1;
+    shacl:name "is neerslag van"@nl;
+    shacl:path dossier:isNeerslagVan.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/07883a3556657f573b5da9b23ce06d8ae66f85c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/dee91a0c104b9eca8df95ed28a4c56445b1c13c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/f9184e9b3d65880dd277daa3ae2ba9b2fe6ed7cd>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/68c9bcb223368ce52e3d888554190994d6fe54af>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/87f02c85e616bd644fa8801e06b2aed5b749056e>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/c23cb557763d6742051b04a0e7930aa8ff269a84>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>;
+    shacl:targetClass dossier:Dossier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Dossier.identificator";
+    shacl:class adms:Identifier;
+    shacl:description "Een identificator voor het dossier."@nl;
+    shacl:name "identificator"@nl;
+    shacl:path adms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/07883a3556657f573b5da9b23ce06d8ae66f85c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Dossier.bestaatuit";
+    shacl:class dossier:Stuk;
+    shacl:description "Een dossier bestaat uit dossierstukken."@nl;
+    shacl:name "bestaat uit"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Dossier.bestaatUit>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Dossier.naam";
+    shacl:datatype xsd:string;
+    shacl:description "De naam van het dossier."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Dossier.naam";
+    shacl:description "De naam van het dossier."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/68c9bcb223368ce52e3d888554190994d6fe54af> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Dossier.isneerslagvan";
+    shacl:class dbo:Case;
+    shacl:description "Een dossier is een neerslag van een zaak."@nl;
+    shacl:name "is neerslag van"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Dossier.isNeerslagVan>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/87f02c85e616bd644fa8801e06b2aed5b749056e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Dossier.isneerslagvan";
+    shacl:description "Een dossier is een neerslag van een zaak."@nl;
+    shacl:maxCount 1;
+    shacl:name "is neerslag van"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Dossier.isNeerslagVan>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/c23cb557763d6742051b04a0e7930aa8ff269a84> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Dossier.isneerslagvan";
+    shacl:description "Een dossier is een neerslag van een zaak."@nl;
+    shacl:minCount 1;
+    shacl:name "is neerslag van"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Dossier.isNeerslagVan>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/dee91a0c104b9eca8df95ed28a4c56445b1c13c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Dossier.informatieclassificatie";
+    shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden voor het Dossier."@nl;
+    shacl:maxCount 1;
+    shacl:name "informatieclassificatie"@nl;
+    shacl:path dossier:informatieclassificatie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Dossier.naam";
+    shacl:description "De naam van het dossier."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#DossierShape/f9184e9b3d65880dd277daa3ae2ba9b2fe6ed7cd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Dossier.informatieclassificatie";
+    shacl:class skos:Concept;
+    shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden voor het Dossier."@nl;
+    shacl:name "informatieclassificatie"@nl;
+    shacl:path dossier:informatieclassificatie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#EenheidVanWerkShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass dbo:UnitOfWork.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#EntiteitShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass prov:Entity.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/3031d21f941146ec2cbde105f3963205bad379ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/6a142d51e1996cc547859eb790c61b8be7bf71d1>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/7da8172d0a595049f5316161a5496c858bc96022>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/7795703c617f5b31f5a421e8470360141867662f>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/f844de6533252e5b38c84162d753e37a42b7c108>;
+    shacl:targetClass dossier:Procedurestap.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Procedurestap.naam";
+    shacl:datatype xsd:string;
+    shacl:description "De naam van de procedurestap."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/3031d21f941146ec2cbde105f3963205bad379ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Procedurestap.einddatum";
+    shacl:description "De einddatum van de procedurestap."@nl;
+    shacl:minCount 1;
+    shacl:name "einddatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Procedurestap.einddatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Procedurestap.naam";
+    shacl:description "De naam van de procedurestap."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/6a142d51e1996cc547859eb790c61b8be7bf71d1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Procedurestap.einddatum";
+    shacl:datatype xsd:date;
+    shacl:description "De einddatum van de procedurestap."@nl;
+    shacl:name "einddatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Procedurestap.einddatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/7795703c617f5b31f5a421e8470360141867662f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Procedurestap.startdatum";
+    shacl:description "De startdatum van de procedurestap."@nl;
+    shacl:minCount 1;
+    shacl:name "startdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Procedurestap.startdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/7da8172d0a595049f5316161a5496c858bc96022> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Procedurestap.einddatum";
+    shacl:description "De einddatum van de procedurestap."@nl;
+    shacl:maxCount 1;
+    shacl:name "einddatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Procedurestap.einddatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/9925985d4a0c198c6afd39e5e3150ec82a02aa3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Procedurestap.startdatum";
+    shacl:description "De startdatum van de procedurestap."@nl;
+    shacl:maxCount 1;
+    shacl:name "startdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Procedurestap.startdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Procedurestap.naam";
+    shacl:description "De naam van de procedurestap."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProcedurestapShape/f844de6533252e5b38c84162d753e37a42b7c108> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Procedurestap.startdatum";
+    shacl:datatype xsd:date;
+    shacl:description "De startdatum van de procedurestap."@nl;
+    shacl:name "startdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/dossier#Procedurestap.startdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ProjectShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass dbo:Project.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/7bad31222715ab76d2cd9ba2310b3e7717bae72b>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/d5a62ed9b71fe4b5c00f8dac32946af633d319b4>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/2c8dc5f01601306acc58e20400258179e1fef82e>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/74e43abb330648d70da74b4bed97c43c7fae4540>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/074d26f195dfc56c0261f3284206dd9819a9ae3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>;
+    shacl:targetClass dcat:Distribution.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Representatie.identificator";
+    shacl:class adms:Identifier;
+    shacl:description "Een identificator voor de representatie."@nl;
+    shacl:name "identificator"@nl;
+    shacl:path adms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/074d26f195dfc56c0261f3284206dd9819a9ae3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Representatie.datum";
+    shacl:description "De datum van de representatie."@nl;
+    shacl:minCount 1;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Representatie.naam";
+    shacl:datatype xsd:string;
+    shacl:description "Een naam voor de representatie."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/2c8dc5f01601306acc58e20400258179e1fef82e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Representatie.bestandsgrootte";
+    shacl:datatype xsd:decimal;
+    shacl:description "De bestandsgrootte (in bytes)."@nl;
+    shacl:name "bestandsgrootte"@nl;
+    shacl:path dcat:byteSize.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Representatie.datum";
+    shacl:datatype xsd:date;
+    shacl:description "De datum van de representatie."@nl;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Representatie.naam";
+    shacl:description "Een naam voor de representatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/74e43abb330648d70da74b4bed97c43c7fae4540> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Representatie.bestandsgrootte";
+    shacl:description "De bestandsgrootte (in bytes)."@nl;
+    shacl:maxCount 1;
+    shacl:name "bestandsgrootte"@nl;
+    shacl:path dcat:byteSize.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/7bad31222715ab76d2cd9ba2310b3e7717bae72b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Representatie.bestandsformaat";
+    shacl:description "Het mediatype van de representatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "bestandsformaat"@nl;
+    shacl:path dcat:mediaType.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/d5a62ed9b71fe4b5c00f8dac32946af633d319b4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Representatie.bestandsformaat";
+    shacl:class dcterms:MediaType;
+    shacl:description "Het mediatype van de representatie."@nl;
+    shacl:name "bestandsformaat"@nl;
+    shacl:path dcat:mediaType.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#RepresentatieShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Representatie.naam";
+    shacl:description "Een naam voor de representatie."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ResourceShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ResourceShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ResourceShape/972d73e7a13100b66c0c2f44466edac47aa1ab28>;
+    shacl:targetClass rdfs:Resource.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ResourceShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Resource.identificator";
+    shacl:class adms:Identifier;
+    shacl:description "Een identificator voor de resource."@nl;
+    shacl:name "identificator"@nl;
+    shacl:path adms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ResourceShape/972d73e7a13100b66c0c2f44466edac47aa1ab28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Resource.identificator";
+    shacl:description "Een identificator voor de resource."@nl;
+    shacl:minCount 1;
+    shacl:name "identificator"@nl;
+    shacl:path adms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#SerieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass dossier:Serie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/e19139b4a69025b25344e815e30de70065ce5e3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/74d100471808bf344f215513fd07d3bccf2c4b0d>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/074d26f195dfc56c0261f3284206dd9819a9ae3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/d5c94132d1041e99c73b8745b01620fb6603e3dd>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/dee91a0c104b9eca8df95ed28a4c56445b1c13c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/f9184e9b3d65880dd277daa3ae2ba9b2fe6ed7cd>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/e78273d31d571acb6b18af1770b639d90436690c>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/90265e42f9c9104a56d3587e88857691066fc13c>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/e0083cbf1df99a8db76fcebdd71201431cc3460e>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396>;
+    shacl:targetClass dossier:Stuk.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.identificator";
+    shacl:class adms:Identifier;
+    shacl:description "Een identificator voor het stuk."@nl;
+    shacl:name "identificator"@nl;
+    shacl:path adms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/074d26f195dfc56c0261f3284206dd9819a9ae3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.datum";
+    shacl:description "De datum van het stuk."@nl;
+    shacl:minCount 1;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.naam";
+    shacl:datatype xsd:string;
+    shacl:description "De naam van het stuk."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.datum";
+    shacl:datatype xsd:date;
+    shacl:description "De datum van het stuk."@nl;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.naam";
+    shacl:description "De naam van het stuk."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/74d100471808bf344f215513fd07d3bccf2c4b0d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.beschrijft";
+    shacl:class rdfs:Resource;
+    shacl:description "Een stuk beschrijft een resource."@nl;
+    shacl:name "beschrijft"@nl;
+    shacl:path dossier:beschrijft.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/90265e42f9c9104a56d3587e88857691066fc13c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.isvoorgestelddoor";
+    shacl:class dcat:Distribution;
+    shacl:description "Een stuk of een onderdeel daarvan worden voorgesteld door een representatie."@nl;
+    shacl:name "is voorgesteld door"@nl;
+    shacl:path dossier:isVoorgesteldDoor.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.taal";
+    shacl:class skos:Concept;
+    shacl:description "De taal van het stuk."@nl;
+    shacl:name "taal"@nl;
+    shacl:path dcterms:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/d5c94132d1041e99c73b8745b01620fb6603e3dd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.heeftrelatietot";
+    shacl:class dossier:Stuk;
+    shacl:description "Een stuk kan een relatie hebben tot een ander stuk."@nl;
+    shacl:name "heeft relatie tot"@nl;
+    shacl:path dcterms:relation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/dee91a0c104b9eca8df95ed28a4c56445b1c13c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.informatieclassificatie";
+    shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden voor het Stuk."@nl;
+    shacl:maxCount 1;
+    shacl:name "informatieclassificatie"@nl;
+    shacl:path dossier:informatieclassificatie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/e0083cbf1df99a8db76fcebdd71201431cc3460e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.isvoorgestelddoor";
+    shacl:description "Een stuk of een onderdeel daarvan worden voorgesteld door een representatie."@nl;
+    shacl:minCount 1;
+    shacl:name "is voorgesteld door"@nl;
+    shacl:path dossier:isVoorgesteldDoor.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/e19139b4a69025b25344e815e30de70065ce5e3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.auteur";
+    shacl:class prov:Agent;
+    shacl:description "De auteur van het stuk."@nl;
+    shacl:name "auteur"@nl;
+    shacl:path dossier:auteur.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/e78273d31d571acb6b18af1770b639d90436690c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.inhoud";
+    shacl:description "Een waarde die een directe representatie is van de entiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "inhoud"@nl;
+    shacl:path prov:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.naam";
+    shacl:description "De naam van het stuk."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukShape/f9184e9b3d65880dd277daa3ae2ba9b2fe6ed7cd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stuk.informatieclassificatie";
+    shacl:class skos:Concept;
+    shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden voor het Stuk."@nl;
+    shacl:name "informatieclassificatie"@nl;
+    shacl:path dossier:informatieclassificatie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/e19139b4a69025b25344e815e30de70065ce5e3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/074d26f195dfc56c0261f3284206dd9819a9ae3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/dee91a0c104b9eca8df95ed28a4c56445b1c13c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/f9184e9b3d65880dd277daa3ae2ba9b2fe6ed7cd>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/e78273d31d571acb6b18af1770b639d90436690c>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/20fc127c7d294b91eee511f7dacb75683e00ee75>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396>;
+    shacl:targetClass dossier:Stukonderdeel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.identificator";
+    shacl:class adms:Identifier;
+    shacl:description "Een identificator voor het stukonderdeel."@nl;
+    shacl:name "identificator"@nl;
+    shacl:path adms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/074d26f195dfc56c0261f3284206dd9819a9ae3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.datum";
+    shacl:description "De datum van het stukonderdeel."@nl;
+    shacl:minCount 1;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.naam";
+    shacl:datatype xsd:string;
+    shacl:description "De naam van het stukonderdeel."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/20fc127c7d294b91eee511f7dacb75683e00ee75> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.isdeelvan";
+    shacl:class dossier:Stuk;
+    shacl:description "Een stukonderdeel maakt deel uit van een stuk."@nl;
+    shacl:name "is deel van"@nl;
+    shacl:path dcterms:isPartOf.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.datum";
+    shacl:datatype xsd:date;
+    shacl:description "De datum van het stukonderdeel."@nl;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.naam";
+    shacl:description "De naam van het stukonderdeel."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.taal";
+    shacl:class skos:Concept;
+    shacl:description "De taal van het stukonderdeel."@nl;
+    shacl:name "taal"@nl;
+    shacl:path dcterms:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/dee91a0c104b9eca8df95ed28a4c56445b1c13c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.informatieclassificatie";
+    shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden voor het Stukonderdeel."@nl;
+    shacl:maxCount 1;
+    shacl:name "informatieclassificatie"@nl;
+    shacl:path dossier:informatieclassificatie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/e19139b4a69025b25344e815e30de70065ce5e3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.auteur";
+    shacl:class prov:Agent;
+    shacl:description "De auteur van het stukonderdeel."@nl;
+    shacl:name "auteur"@nl;
+    shacl:path dossier:auteur.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/e78273d31d571acb6b18af1770b639d90436690c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.inhoud";
+    shacl:description "Een waarde die een directe representatie is van de entiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "inhoud"@nl;
+    shacl:path prov:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.naam";
+    shacl:description "De naam van het stukonderdeel."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#StukonderdeelShape/f9184e9b3d65880dd277daa3ae2ba9b2fe6ed7cd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Stukonderdeel.informatieclassificatie";
+    shacl:class skos:Concept;
+    shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden voor het Stukonderdeel."@nl;
+    shacl:name "informatieclassificatie"@nl;
+    shacl:path dossier:informatieclassificatie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/6cc17bf474df7a0f5a91c5a19b4265b394ec7e96>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/e87d5142587cec4033ceb621df7f65ff25366a45>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/20fc127c7d294b91eee511f7dacb75683e00ee75>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/8fcf16799babb4f240a154bdede81a0f8aa01b4a>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/98bef51010515ccc0f16c214d3c5e8f4f28d56c1>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/d759041160072a8a371e57f8c762bf1d5066e827>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/a6b82045e2b0570810c9150bcfe56b9e6c29e4e7>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/ad01df15aa33c21fde7895bc35025bfb31f968ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/d1634e5f725006f2c1375affe48b2731cfa94dc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/1a8c7178e147ad9089a408b33979c1940e718004>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/474bd6ff4ff1c038a5e050ebbd0f66e578da46f0>, <https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/f691648ff31ee33f46c104e6806cf216fafcbfdc>;
+    shacl:targetClass dbo:Case.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.identificator";
+    shacl:class adms:Identifier;
+    shacl:description "Een identificator voor de zaak."@nl;
+    shacl:name "identificator"@nl;
+    shacl:path adms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.naam";
+    shacl:datatype xsd:string;
+    shacl:description "De naam van de zaak."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/1a8c7178e147ad9089a408b33979c1940e718004> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.sluitingsdatum";
+    shacl:description "De sluitingsdatum van de zaak."@nl;
+    shacl:maxCount 1;
+    shacl:name "sluitingsdatum"@nl;
+    shacl:path dossier:sluitingsdatum.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/20fc127c7d294b91eee511f7dacb75683e00ee75> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.isdeelvan";
+    shacl:class dbo:Project;
+    shacl:description "Een gerelateerde entiteit waar de beschreven entiteit een fysiek of logisch onderdeel van is."@nl;
+    shacl:name "is deel van"@nl;
+    shacl:path dcterms:isPartOf.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/474bd6ff4ff1c038a5e050ebbd0f66e578da46f0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.sluitingsdatum";
+    shacl:description "De sluitingsdatum van de zaak."@nl;
+    shacl:minCount 1;
+    shacl:name "sluitingsdatum"@nl;
+    shacl:path dossier:sluitingsdatum.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.naam";
+    shacl:description "De naam van de zaak."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/6cc17bf474df7a0f5a91c5a19b4265b394ec7e96> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.behandelt";
+    shacl:class rdfs:Resource;
+    shacl:description "Een zaak behandelt een resource."@nl;
+    shacl:name "behandelt"@nl;
+    shacl:path dossier:behandelt.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/8fcf16799babb4f240a154bdede81a0f8aa01b4a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.openingsdatum";
+    shacl:description "De openingsdatum van de zaak."@nl;
+    shacl:maxCount 1;
+    shacl:name "openingsdatum"@nl;
+    shacl:path dossier:openingsdatum.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/98bef51010515ccc0f16c214d3c5e8f4f28d56c1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.openingsdatum";
+    shacl:datatype xsd:date;
+    shacl:description "De openingsdatum van de zaak."@nl;
+    shacl:name "openingsdatum"@nl;
+    shacl:path dossier:openingsdatum.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/a6b82045e2b0570810c9150bcfe56b9e6c29e4e7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.procedure";
+    shacl:description "De naam die verwijst naar de formele definitie van een verzameling stappen die in de juiste volgorde leiden tot de afronding van de zaak."@nl;
+    shacl:maxCount 1;
+    shacl:name "procedure"@nl;
+    shacl:path <https://dbpedia.org/ontology/procedure>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/ad01df15aa33c21fde7895bc35025bfb31f968ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.procedure";
+    shacl:description "De naam die verwijst naar de formele definitie van een verzameling stappen die in de juiste volgorde leiden tot de afronding van de zaak."@nl;
+    shacl:minCount 1;
+    shacl:name "procedure"@nl;
+    shacl:path <https://dbpedia.org/ontology/procedure>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/d1634e5f725006f2c1375affe48b2731cfa94dc2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.procedure";
+    shacl:datatype xsd:string;
+    shacl:description "De naam die verwijst naar de formele definitie van een verzameling stappen die in de juiste volgorde leiden tot de afronding van de zaak."@nl;
+    shacl:name "procedure"@nl;
+    shacl:path <https://dbpedia.org/ontology/procedure>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/d759041160072a8a371e57f8c762bf1d5066e827> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.openingsdatum";
+    shacl:description "De openingsdatum van de zaak."@nl;
+    shacl:minCount 1;
+    shacl:name "openingsdatum"@nl;
+    shacl:path dossier:openingsdatum.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/e87d5142587cec4033ceb621df7f65ff25366a45> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.doorloopt";
+    shacl:class dossier:Procedurestap;
+    shacl:description "Een zaak doorloopt procedurestappen."@nl;
+    shacl:name "doorloopt"@nl;
+    shacl:path dossier:doorloopt.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.naam";
+    shacl:description "De naam van de zaak."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#ZaakShape/f691648ff31ee33f46c104e6806cf216fafcbfdc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/dossier/erkendestandaard/2023-09-25#Zaak.sluitingsdatum";
+    shacl:datatype xsd:date;
+    shacl:description "De sluitingsdatum van de zaak."@nl;
+    shacl:name "sluitingsdatum"@nl;
+    shacl:path dossier:sluitingsdatum.

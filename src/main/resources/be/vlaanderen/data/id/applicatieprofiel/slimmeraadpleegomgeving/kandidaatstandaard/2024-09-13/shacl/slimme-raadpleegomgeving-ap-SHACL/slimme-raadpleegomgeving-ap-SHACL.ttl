@@ -1,0 +1,1305 @@
+@prefix releases: <https://semiceu.github.io/CCCEV/releases/2.00#>.
+@prefix GeneralFeatureInstance2: <http://def.isotc211.org/iso19156/2011GeneralFeatureInstance#>.
+@prefix abstracten: <https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#>.
+@prefix activitystreams: <https://www.w3.org/ns/activitystreams#>.
+@prefix address: <https://vocab.belgif.be/ns/address#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix adres: <https://data.vlaanderen.be/ns/adres#>.
+@prefix air-and-water: <https://purl.eu/ns/air-and-water/core#>.
+@prefix allergyintolerance-definitions.html: <https://hl7.org/fhir/R5/allergyintolerance-definitions.html#>.
+@prefix bedrijventerrein: <https://data.vlaanderen.be/ns/bedrijventerrein#>.
+@prefix begraafplaatsen-ap: <https://data.vlaanderen.be/shacl/begraafplaatsen-ap#>.
+@prefix begraafplaatsenbeheer-ap: <https://data.vlaanderen.be/shacl/begraafplaatsenbeheer-ap#>.
+@prefix begraafplaats: <https://data.vlaanderen.be/ns/openbaardomein/begraafplaats#>.
+@prefix begroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/begroeid-voorkomen-ap#>.
+@prefix begroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/begroeidvoorkomen#>.
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#>.
+@prefix besluitvorming-ap: <https://data.vlaanderen.be/shacl/besluitvorming-ap#>.
+@prefix besluitvorming: <https://data.vlaanderen.be/ns/besluitvorming#>.
+@prefix bestuurlijk-sanctieregister: <https://data.vlaanderen.be/ns/bestuurlijk-sanctieregister#>.
+@prefix bodem-en-onderegrond: <https://data.vlaanderen.be/ns/bodem-en-onderegrond#>.
+@prefix bodem-en-ondergrond: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem: <https://data.vlaanderen.be/ns/bodem#>.
+@prefix bo-interpretaties: <https://data.vlaanderen.be/ns/bo-interpretaties#>.
+@prefix bo-observaties: <https://data.vlaanderen.be/ns/bo-observaties#>.
+@prefix CategoryObservation: <http://def.isotc211.org/iso19156/2011/CategoryObservation#>.
+@prefix cccev: <http://data.europa.eu/m8g/cccev#>.
+@prefix cidoc_crm_v7.1.2.html: <https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#>.
+@prefix CitationAndResponsiblePartyInformation2: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#>.
+@prefix CitationAndResponsiblePartyInformation: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#>.
+@prefix CommonClasses: <http://def.isotc211.org/iso19115/-1/2014/CommonClasses#>.
+@prefix ComplexObservation: <http://def.isotc211.org/iso19156/2011/ComplexObservation#>.
+@prefix consent: <https://purl.eu/ns/consent#>.
+@prefix CountObservation: <http://def.isotc211.org/iso19156/2011/CountObservation#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix CoverageObservation: <http://def.isotc211.org/iso19156/2011/CoverageObservation#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix creativecommons: <http://creativecommons.org/ns#>.
+@prefix credentials: <https://www.w3.org/2018/credentials#>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix cube: <http://purl.org/linked-data/cube#>.
+@prefix cultureel-erfgoed: <https://data.vlaanderen.be/ns/cultureel-erfgoed#>.
+@prefix cultuurparticipatie: <https://data.vlaanderen.be/ns/cultuurparticipatie#>.
+@prefix DataQuality_2: <http://def.isotc211.org/iso19157/2013/DataQuality_2#>.
+@prefix DataQualityEvaluation: <http://def.isotc211.org/iso19157/2013/DataQualityEvaluation#>.
+@prefix DataQualityInformation: <http://def.isotc211.org/iso19115/2006/DataQualityInformation#>.
+@prefix DataQualityResult: <http://def.isotc211.org/iso19157/2013/DataQualityResult#>.
+@prefix datexbrowserv34.tamtamresearch.com: <https://datexbrowserv34.tamtamresearch.com#>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dc11: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix diagnosticreport-definitions.html: <https://hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix diagnosticreport-definitions: <https://www.hl7.org/fhir/diagnosticreport-definitions.html#>.
+@prefix dienst: <https://data.vlaanderen.be/ns/dienst#>.
+@prefix digitaleWatermeter: <https://data.vlaanderen.be/ns/digitaleWatermeter#>.
+@prefix DiscreteCoverages: <http://def.isotc211.org/iso19123/2005/DiscreteCoverages#>.
+@prefix doelgericht-digitaal-transformeren: <https://data.vlaanderen.be/ns/doelgericht-digitaal-transformeren#>.
+@prefix DomainSpecificSamplingFeatures: <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#>.
+@prefix dossier-ap: <https://data.vlaanderen.be/shacl/dossier-ap#>.
+@prefix dossier: <https://data.vlaanderen.be/ns/dossier#>.
+@prefix dqv: <http://www.w3.org/ns/dqv#>.
+@prefix eli-draft-legislation-ontology: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>.
+@prefix eli: <http://data.europa.eu/eli/ontology#>.
+@prefix eu: <http://data.europa.eu/m8g/>.
+@prefix event.owl: <http://purl.org/NET/c4dm/event.owl#>.
+@prefix FeitelijkeVerenigingen: <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#>.
+@prefix fiets: <https://data.vlaanderen.be/ns/fiets#>.
+@prefix financiele-data: <https://data.vlaanderen.be/ns/financiele-data#>.
+@prefix financiele-info: <https://data.vlaanderen.be/ns/financiele-info#>.
+@prefix financiele-rapportering: <https://data.vlaanderen.be/ns/financiele-rapportering#>.
+@prefix fixme.com: <http://fixme.com#>.
+@prefix flint: <http://ontology.tno.nl/normengineering/flint#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#>.
+@prefix GConsent: <https://w3id.org/GConsent#>.
+@prefix gebieden-ap: <https://data.vlaanderen.be/shacl/gebieden-ap#>.
+@prefix gebied: <https://data.vlaanderen.be/ns/openbaardomein/gebied#>.
+@prefix gebouw: <https://data.vlaanderen.be/ns/gebouw#>.
+@prefix GeneralFeatureInstance: <https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#>.
+@prefix GeneralFeatureModel: <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#>.
+@prefix generic: <https://vocab.belgif.be/ns/generic#>.
+@prefix generiek-basis: <https://data.vlaanderen.be/shacl/generiek-basis#>.
+@prefix generiek: <https://data.vlaanderen.be/ns/generiek#>.
+@prefix GeometryObservation: <http://def.isotc211.org/iso19156/2011/GeometryObservation#>.
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
+@prefix gezondheidstoestand: <https://data.vlaanderen.be/ns/gezondheidstoestand#>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gmxCodelists.xml: <https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#>.
+@prefix grondboringen: <https://data.vlaanderen.be/ns/grondboringen#>.
+@prefix grondwatermeetnet: <https://data.vlaanderen.be/ns/grondwatermeetnet#>.
+@prefix hydra: <https://www.w3.org/ns/hydra/core#>.
+@prefix implementatieelement: <https://wegenenverkeer.data.vlaanderen.be/ns/implementatieelement#>.
+@prefix incentiveringsplatform: <https://data.vlaanderen.be/ns/incentiveringsplatform#>.
+@prefix infrastructuurelementen-ap: <https://data.vlaanderen.be/shacl/infrastructuurelementen-ap#>.
+@prefix infrastructuur: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#>.
+@prefix installatie: <https://wegenenverkeer.data.vlaanderen.be/ns/installatie#>.
+@prefix ipdc-lpdc: <https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc#>.
+@prefix jc_infrastructuur: <https://data.vlaanderen.be/ns/cultuur-en-jeugd/infrastructuur#>.
+@prefix kindfiche: <https://data.vlaanderen.be/ns/kindfiche#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix leercredential: <https://data.vlaanderen.be/ns/leercredential#>.
+@prefix levenscyclus: <https://wegenenverkeer.data.vlaanderen.be/ns/levenscyclus#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix logies: <https://data.vlaanderen.be/ns/logies#>.
+@prefix lokale-economie: <https://data.vlaanderen.be/ns/lokale-economie#>.
+@prefix loongegevens: <https://data.vlaanderen.be/ns/loongegevens#>.
+@prefix m8g: <http://data.europa.eu/m8g#>.
+@prefix mandaat: <http://data.vlaanderen.be/ns/mandaat#>.
+@prefix Measurement: <http://def.isotc211.org/iso19156/2011/Measurement#>.
+@prefix MeasureTypes: <http://def.isotc211.org/iso19103/2015/MeasureTypes#>.
+@prefix medication-definitions.html: <https://hl7.org/fhir/medication-definitions.html#>.
+@prefix melding: <https://data.vlaanderen.be/ns/melding#>.
+@prefix metadata-dcat: <https://data.vlaanderen.be/ns/metadata-dcat#>.
+@prefix MetadataEntitySetInformation: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#>.
+@prefix meters: <https://data.vlaanderen.be/ns/nutsvoorzieningen/meters#>.
+@prefix mobiliteit: <https://data.vlaanderen.be/ns/mobiliteit#>.
+@prefix mobiliteitsbudget: <https://data.vlaanderen.be/ns/mobiliteitsbudget#>.
+@prefix mobiliteit-trips-en-aanbod-ap: <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap#>.
+@prefix Names: <http://def.isotc211.org/iso19103/2005/Names#>.
+@prefix netwerk: <https://data.vlaanderen.be/ns/netwerk#>.
+@prefix network: <https://vocab.belgif.be/ns/network#>.
+@prefix notificatie: <https://data.vlaanderen.be/ns/notificatie#>.
+@prefix ns1: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix nutritionintake-definitions.html: <https://www.hl7.org/fhir/nutritionintake-definitions.html#>.
+@prefix nutsvoorzieningen: <https://data.vlaanderen.be/ns/nutsvoorzieningen#>.
+@prefix oa: <http://www.w3.org/ns/oa#>.
+@prefix observaties-en-metingen: <https://data.vlaanderen.be/ns/observaties-en-metingen#>.
+@prefix observation-definitions.html: <https://build.fhir.org/observation-definitions.html#>.
+@prefix observation-definitions: <https://hl7.org/fhir/observation-definitions.html#>.
+@prefix Observation: <https://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix observations: <https://purl.eu/ns/observations#>.
+@prefix omgevingsvergunning: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix onbegroeid-voorkomen-ap: <https://data.vlaanderen.be/shacl/onbegroeid-voorkomen-ap#>.
+@prefix onbegroeidvoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/onbegroeidvoorkomen#>.
+@prefix onderdeel: <https://wegenenverkeer.data.vlaanderen.be/ns/onderdeel#>.
+@prefix openbaar-domein-ap: <https://data.vlaanderen.be/shacl/openbaar-domein-ap#>.
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein#>.
+@prefix openml: <http://openml.org/openml#>.
+@prefix organisatie: <https://data.vlaanderen.be/ns/organisatie#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix OSLO-airAndWater-Core-ap: <https://data.vlaanderen.be/shacl/OSLO-airAndWater-Core-ap#>.
+@prefix overlijdensaangifte: <https://data.vlaanderen.be/ns/overlijdensaangifte#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix passenger-transport-hubs: <https://purl.eu/ns/mobility/passenger-transport-hubs#>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#>.
+@prefix PointCoverageObservation: <http://def.isotc211.org/iso19156/2011/PointCoverageObservation#>.
+@prefix practitioner-definitions.html: <https://hl7.org/fhir/practitioner-definitions.html#>.
+@prefix procedure-definitions.html: <https://hl7.org/fhir/procedure-definitions.html#>.
+@prefix proefenmeting: <https://wegenenverkeer.data.vlaanderen.be/ns/proefenmeting#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix prov-o: <https://www.w3.org/TR/prov-o#>.
+@prefix publicatie: <https://data.vlaanderen.be/ns/campagne/publicatie#>.
+@prefix publicservice: <http://vocab.belgif.be/ns/publicservice#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rec54: <http://www.w3.org/2001/02pd/rec54#>.
+@prefix RecordsAndClassMetadata: <http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#>.
+@prefix regorg: <http://www.w3.org/ns/regorg#>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix RuimtelijkPlannen: <https://data.vlaanderen.be/ns/RuimtelijkPlannen#>.
+@prefix S4WATR: <https://w3id.org/def/S4WATR#>.
+@prefix SamplingCurve: <http://def.isotc211.org/iso19156/2011/SamplingCurve#>.
+@prefix SamplingFeature: <http://def.isotc211.org/iso19156/2011/SamplingFeature#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix SamplingSolid: <http://def.isotc211.org/iso19156/2011/SamplingSolid#>.
+@prefix SamplingSurface: <http://def.isotc211.org/iso19156/2011/SamplingSurface#>.
+@prefix sat: <http://data.europa.eu/stateaidtransparency/sat#>.
+@prefix schema: <http://schema.org/>.
+@prefix schema.mobivoc.org: <http://schema.mobivoc.org#>.
+@prefix schemas: <https://schema.org/>.
+@prefix schuldbeheer: <https://data.vlaanderen.be/ns/schuldbeheer#>.
+@prefix sd: <https://w3id.org/okn/o/sd#>.
+@prefix security: <https://w3id.org/security#>.
+@prefix sensoren-en-bemonstering: <https://data.vlaanderen.be/ns/sensoren-en-bemonstering#>.
+@prefix sf: <http://www.opengis.net/ont/sf#>.
+@prefix shacl: <http://www.w3.org/ns/shacl#>.
+@prefix simple_features_geometries.rdf: <http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix slimmeraadpleegomgeving: <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#>.
+@prefix slimme-stadsdistributie: <https://data.vlaanderen.be/ns/slimme-stadsdistributie#>.
+@prefix slimRuimtelijkPlannen: <https://data.vlaanderen.be/ns/slimRuimtelijkPlannen#>.
+@prefix solid_leercredential: <https://solid.data.vlaanderen.be/ns/leercredential#>.
+@prefix sonderingen: <https://data.vlaanderen.be/ns/sonderingen#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/om#>.
+@prefix SpatialSamplingFeature: <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#>.
+@prefix spec: <http://xmlns.com/foaf/spec#>.
+@prefix Specimen: <http://def.isotc211.org/iso19156/2011/Specimen#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix statistiek: <https://data.vlaanderen.be/ns/statistiek#>.
+@prefix stopplaatsen-ap: <https://data.vlaanderen.be/shacl/stopplaatsen-ap#>.
+@prefix subsidie: <https://data.vlaanderen.be/ns/subsidie#>.
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix TemporalCoverage: <http://def.isotc211.org/iso19156/2011/TemporalCoverage#>.
+@prefix TemporalObjects: <http://def.isotc211.org/iso19108/2006/TemporalObjects#>.
+@prefix TemporalObservation: <http://def.isotc211.org/iso19156/2011/TemporalObservation#>.
+@prefix terms: <http://vocab.gtfs.org/terms#>.
+@prefix terreindeel: <https://data.vlaanderen.be/ns/openbaardomein/terreindeel#>.
+@prefix terreindelen-ap: <https://data.vlaanderen.be/shacl/terreindelen-ap#>.
+@prefix tijdstabellen-ap: <https://data.vlaanderen.be/shacl/tijdstabellen-ap#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix TimeSeriesObservation: <http://def.isotc211.org/iso19156/2011/TimeSeriesObservation#>.
+@prefix timetables-and-planning: <https://purl.eu/ns/mobility/timetables-and-planning#>.
+@prefix toestemming: <https://data.vlaanderen.be/ns/toestemming#>.
+@prefix transactie: <https://data.vlaanderen.be/ns/transactie#>.
+@prefix transporthubs: <https://purl.eu/ns/mobility/transporthubs#>.
+@prefix transportnetwerk: <https://data.vlaanderen.be/ns/transportnetwerk#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix trips-en-aanbod: <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#>.
+@prefix TruthObservation: <http://def.isotc211.org/iso19156/2011/TruthObservation#>.
+@prefix UnitsOfMeasure: <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#>.
+@prefix utility-services: <https://vocab.belgif.be/ns/utility-services#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix vastgoed: <https://data.vlaanderen.be/ns/vastgoed#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vegetatie-elementen-ap: <https://data.vlaanderen.be/shacl/vegetatie-elementen-ap#>.
+@prefix vegetatie: <https://data.vlaanderen.be/ns/openbaardomein/vegetatie#>.
+@prefix verkeersmetingen: <https://data.vlaanderen.be/ns/verkeersmetingen#>.
+@prefix vervoersknooppunten: <https://data.vlaanderen.be/ns/mobiliteit/vervoersknooppunten#>.
+@prefix vlaanderen_ldes: <https://data.vlaanderen.be/ns/ldes#>.
+@prefix vocab: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix vocab-ssn-ext: <https://www.w3.org/TR/vocab-ssn-ext#>.
+@prefix vocab-ssn: <https://www.w3.org/TR/vocab-ssn#>.
+@prefix voertuigplanning-ap: <https://data.vlaanderen.be/shacl/voertuigplanning-ap#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix vrachtwagenparkeren: <https://data.vlaanderen.be/ns/vrachtwagenparkeren#>.
+@prefix waterdeel: <https://data.vlaanderen.be/ns/openbaardomein/waterdeel#>.
+@prefix waterdelen-ap: <https://data.vlaanderen.be/shacl/waterdelen-ap#>.
+@prefix water: <https://purl.eu/ns/air-and-water/water#>.
+@prefix waterkwaliteit: <https://data.vlaanderen.be/ns/waterkwaliteit#>.
+@prefix watervoorkomen-ap: <https://data.vlaanderen.be/shacl/watervoorkomen-ap#>.
+@prefix watervoorkomen: <https://data.vlaanderen.be/ns/openbaardomein/watervoorkomen#>.
+@prefix weg: <https://data.vlaanderen.be/ns/weg#>.
+@prefix wegwijs.vlaanderen.be: <https://wegwijs.vlaanderen.be#>.
+@prefix wetgeving: <https://data.vlaanderen.be/ns/wetgeving#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13> rdfs:member <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesVraagShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtAntwoordShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ShaclPathSelectorShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaalProcesShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#RechtsgrondShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ArtikelShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BesluitShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#MotivatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BesluitThemaShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ActiviteitstypeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#CodeShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#RolShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#FragmentSelectorShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#SelectorShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceOnderdeelShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstPositieSelectorShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AgentShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ObjectShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LocatieShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BeslissingsactiviteitShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdministratieveEenheidShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NotificatieberichtShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NormatieveBepalingShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#RechtShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ConceptueelPubliekeDienstverleningShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InstantiePubliekeDienstverleningShape>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape/5634d382280af9091964123baccf646894b6f112>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape/322371a77364a50f049d46180f6192532eea26dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape/5c05b2329b8b6b86a3e412dab53926322de0af61>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape/bf40d8f98f160bcde7cc3b65e511d1d71f8d2955>;
+    shacl:targetClass prov:Activity.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties).type";
+    shacl:class skos:Concept;
+    shacl:description "Specialisatie van het type activiteit zoals bepaald in W3C Activity Streams."@nl;
+    shacl:name "type"@nl;
+    shacl:path rdf:type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape/5634d382280af9091964123baccf646894b6f112> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties).genereert";
+    shacl:class oa:Annotation;
+    shacl:description "De annotatie die werd aangemaakt als gevolg van de activiteit."@nl;
+    shacl:name "genereert"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Activiteit.genereertAnnotatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape/5c05b2329b8b6b86a3e412dab53926322de0af61> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties).type";
+    shacl:description "Specialisatie van het type activiteit zoals bepaald in W3C Activity Streams."@nl;
+    shacl:name "type"@nl.
+_:n3-2798 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-2799 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://www.w3.org/TR/activitystreams-vocabulary/#activity-types>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-2798 shacl:property _:n3-2799.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape/5c05b2329b8b6b86a3e412dab53926322de0af61> shacl:node _:n3-2798;
+    shacl:nodeKind shacl:IRI;
+    shacl:path rdf:type;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties)Shape/bf40d8f98f160bcde7cc3b65e511d1d71f8d2955> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Annotaties).wasgeassocieerdmet";
+    shacl:class prov:Agent;
+    shacl:description "Agent die betrokken was bij de activiteit."@nl;
+    shacl:name "was geassocieerd met"@nl;
+    shacl:path prov:wasAssociatedWith.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/4c356c89be8d7eaa18e04cc74b5ae87a4fb977fa>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/6ff8fb95193fdc26868de855cb436d9f3fb07150>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/97a90eadb3cdd253fd8e1aa83ee67faa2a689a20>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/634c9034242d42f92452dc2ddbbe2a5f49265cbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/d982ae870b8c7f97b68d4c407ae00ecea0b31821>;
+    shacl:targetClass omgevingsvergunning:Activiteit.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning).beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "De beschrijving van de Activiteit."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path omgevingsvergunning:beschrijving.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning).beschrijving";
+    shacl:description "De beschrijving van de Activiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path omgevingsvergunning:beschrijving.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/4c356c89be8d7eaa18e04cc74b5ae87a4fb977fa> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning).activiteit";
+    shacl:class omgevingsvergunning:Activiteit;
+    shacl:description "Verwijzing naar verwante Activiteiten."@nl;
+    shacl:name "activiteit"@nl;
+    shacl:path omgevingsvergunning:activiteit.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/634c9034242d42f92452dc2ddbbe2a5f49265cbd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning).locatie";
+    shacl:class slimmeraadpleegomgeving:RuimtelijkeEenheid;
+    shacl:description "Aanduiding van de plaats waar een Activiteit plaatsvindt, zal vinden, of zou hebben gevonden."@nl;
+    shacl:name "locatie"@nl;
+    shacl:path omgevingsvergunning:locatie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/6ff8fb95193fdc26868de855cb436d9f3fb07150> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning).betrokkene";
+    shacl:class omgevingsvergunning:Rechtssubject;
+    shacl:name "betrokkene"@nl;
+    shacl:path omgevingsvergunning:betrokkene.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/97a90eadb3cdd253fd8e1aa83ee67faa2a689a20> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning).juridischekwalificatie";
+    shacl:class omgevingsvergunning:JuridischeKwalificatie;
+    shacl:description "De Juridische Kwalificatie van de Activiteit."@nl;
+    shacl:name "juridische kwalificatie"@nl;
+    shacl:path omgevingsvergunning:juridischeKwalificatie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning)Shape/d982ae870b8c7f97b68d4c407ae00ecea0b31821> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Activiteit(Omgevingsvergunning).tijdsbestek";
+    shacl:class time:Interval;
+    shacl:description "Aanduiding van het tijdsbestek van de Activiteit."@nl;
+    shacl:name "tijdsbestek"@nl;
+    shacl:path omgevingsvergunning:tijdsbestek.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ActiviteitstypeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdministratieveEenheidShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass generiek:AdministratieveEenheid.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape/326b48c242230b177693587b4f4a662db6585c9f>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape/5efceed3cf604caa8803cfcabeeb7441000e6691>;
+    shacl:targetClass slimmeraadpleegomgeving:Advies.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Advies.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van het antwoord."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape/326b48c242230b177693587b4f4a662db6585c9f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Advies.motiveerde";
+    shacl:class besluitvorming:Beslissingsactiviteit;
+    shacl:description "Een Beslissingsactiviteit die logisch volgde op dit AdviesAntwoord."@nl;
+    shacl:name "motiveerde"@nl;
+    shacl:path eli-draft-legislation-ontology:motivated.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Advies.beschrijving";
+    shacl:description "Beschrijving van het antwoord."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape/5efceed3cf604caa8803cfcabeeb7441000e6691> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Advies.wasgemotiveerddoor";
+    shacl:class slimmeraadpleegomgeving:AdviesVraag;
+    shacl:description "Een Adviesvraag die ¨logischerwijs¨ voorafging aan deze AdviesAntwoord"@nl;
+    shacl:name "was gemotiveerd door"@nl;
+    shacl:path eli-draft-legislation-ontology:was_motivated_by.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Advies.beschrijving";
+    shacl:description "Beschrijving van het antwoord."@nl;
+    shacl:minCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesVraagShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesVraagShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesVraagShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesVraagShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesVraagShape/326b48c242230b177693587b4f4a662db6585c9f>;
+    shacl:targetClass slimmeraadpleegomgeving:AdviesVraag.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesVraagShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Adviesvraag.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van de adviesvraag."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesVraagShape/326b48c242230b177693587b4f4a662db6585c9f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Adviesvraag.motiveerde";
+    shacl:class slimmeraadpleegomgeving:Advies;
+    shacl:description "Een AdviesAntwoord die logisch volgde op deze AdviesVraag."@nl;
+    shacl:name "motiveerde"@nl;
+    shacl:path eli-draft-legislation-ontology:motivated.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesVraagShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Adviesvraag.beschrijving";
+    shacl:description "Beschrijving van de adviesvraag."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AdviesVraagShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Adviesvraag.beschrijving";
+    shacl:description "Beschrijving van de adviesvraag."@nl;
+    shacl:minCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AgentShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass prov:Agent.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/0498a7759996084de1277c2c6e96bcc7e0114e9b>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/af1dce9dc1b63a8d83959e30cc672cd05c4349fb>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/83410c04b85e369b2599aa7a9bb1667761d93611>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/e3c6ae3ee5ca547e185e71d96e7df4c7a377372f>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/7a15fca248aadc1a36c5acb58e21327b2ecbb375>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/0fd86d62760baa792beb9b91a9461688be6e9684>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/f82fc47da9eae6dcc0cb7e628a3a7856fbe2e197>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/d014eebe7676e9eac7ae3821fdbf79d82d120040>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/f0d52f981f665f3fdbcbf9854b41199988704038>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/834ba88f74089e87edca479e9f252e60e6a4977a>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/a8e752c7d14b85222f6fb45c3b7d919aea643359>;
+    shacl:targetClass oa:Annotation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/0498a7759996084de1277c2c6e96bcc7e0114e9b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.gaatover";
+    shacl:class rdfs:Resource;
+    shacl:description "De resource waarover de annotatie meer informatie geeft."@nl;
+    shacl:name "gaat over"@nl;
+    shacl:path oa:hasTarget.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/0fd86d62760baa792beb9b91a9461688be6e9684> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.heefttekstueleinhoud";
+    shacl:description "Tekst dat de annotatie gebruikt als inhoud voor een resource."@nl;
+    shacl:maxCount 1;
+    shacl:name "heeft tekstuele inhoud"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Annotatie.heeftTekstueleInhoud>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/7a15fca248aadc1a36c5acb58e21327b2ecbb375> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.heeftobject";
+    shacl:class prov:Entity;
+    shacl:description "Object dat de annotatie gebruikt als inhoud voor een resource."@nl;
+    shacl:name "heeft object"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Annotatie.heeftObject>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/83410c04b85e369b2599aa7a9bb1667761d93611> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.heeftinhoud";
+    shacl:class rdfs:Resource;
+    shacl:description "Resource dat een Annotatie gebruikt om inhoudelijke kennis toe te voegen aan een andere Resource."@nl;
+    shacl:name "heeft inhoud"@nl;
+    shacl:path oa:hasBody.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/834ba88f74089e87edca479e9f252e60e6a4977a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.isgemotiveerddoor";
+    shacl:class skos:Concept;
+    shacl:description "Beschrijft de reden voor het aanmaken van de Annotatie."@nl;
+    shacl:name "is gemotiveerd door"@nl;
+    shacl:path oa:motivatedBy.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/a8e752c7d14b85222f6fb45c3b7d919aea643359> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.isgemotiveerddoor";
+    shacl:description "Beschrijft de reden voor het aanmaken van de Annotatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "is gemotiveerd door"@nl;
+    shacl:path oa:motivatedBy.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/af1dce9dc1b63a8d83959e30cc672cd05c4349fb> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.gaatover";
+    shacl:description "De resource waarover de annotatie meer informatie geeft."@nl;
+    shacl:minCount 1;
+    shacl:name "gaat over"@nl;
+    shacl:path oa:hasTarget.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/d014eebe7676e9eac7ae3821fdbf79d82d120040> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.heeftthema";
+    shacl:class skos:Concept;
+    shacl:description "Thema-code dat de annotatie gebruikt als inhoud voor een resource."@nl;
+    shacl:name "heeft thema"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Annotatie.heeftThema>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/e3c6ae3ee5ca547e185e71d96e7df4c7a377372f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.heeftlocatie";
+    shacl:class prov:Location;
+    shacl:description "Locatie dat de annotatie gebruikt als inhoud voor een resource."@nl;
+    shacl:name "heeft locatie"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Annotatie.heeftLocatie>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/f0d52f981f665f3fdbcbf9854b41199988704038> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.heeftthema";
+    shacl:description "Thema-code dat de annotatie gebruikt als inhoud voor een resource."@nl;
+    shacl:name "heeft thema"@nl.
+_:n3-2800 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-2801 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://data.vlaanderen.be/id/conceptscheme/BesluitThema>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-2800 shacl:property _:n3-2801.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/f0d52f981f665f3fdbcbf9854b41199988704038> shacl:node _:n3-2800;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Annotatie.heeftThema>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#AnnotatieShape/f82fc47da9eae6dcc0cb7e628a3a7856fbe2e197> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Annotatie.heefttekstueleinhoud";
+    shacl:class oa:TextualBody;
+    shacl:description "Tekst dat de annotatie gebruikt als inhoud voor een resource."@nl;
+    shacl:name "heeft tekstuele inhoud"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Annotatie.heeftTekstueleInhoud>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ArtikelShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass besluit:Artikel.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/915e56079a29e082e330536211824263df4536ae>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/07883a3556657f573b5da9b23ce06d8ae66f85c6>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/3eb1262f99258636d85b42dbd0e6075a658c8108>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/ddc18a34995204dad037d9a788d7ea404c711fff>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/f8f7cf3e0fcdc9f36b9e6a6f9f436c4b3b6d8a76>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/18bb6d0bf15a0e77ab614af1baf06964c87bc700>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/20bc54f0cf279d59c9f5a2fe210f4e23fe69aa28>;
+    shacl:targetClass besluit:BehandelingVanAgendapunt.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/07883a3556657f573b5da9b23ce06d8ae66f85c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingvanAgendapunt.bestaatuit";
+    shacl:class slimmeraadpleegomgeving:InitiatiefrechtVraag, slimmeraadpleegomgeving:InitiatiefrechtAntwoord, besluitvorming:Beslissingsactiviteit;
+    shacl:description "Geeft een Initiatiefrechtvraag aan die binnen deze Behandeling Van Agendapunt plaatsvindt."@nl, "Geeft een Initiatiefrechtantwoord aan die binnen deze Behandeling Van Agendapunt plaatsvindt."@nl, "Geeft een Beslissingsactiviteit aan die binnen deze Behandeling Van Agendapunt plaatsvindt."@nl;
+    shacl:name "bestaat uit"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#BehandelingVanAgendapunt.bestaatUitInitiatiefrechtvraag>, <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#BehandelingVanAgendapunt.bestaatUitInitiatiefrechtantwoord>, <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#BehandelingVanAgendapunt.bestaatUitBeslissingsactiviteit>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/18bb6d0bf15a0e77ab614af1baf06964c87bc700> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingvanAgendapunt.openbaar";
+    shacl:datatype xsd:boolean;
+    shacl:description "Geeft aan of de bespreking effectief openbaar verlopen is."@nl;
+    shacl:name "openbaar"@nl;
+    shacl:path besluit:openbaar.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/20bc54f0cf279d59c9f5a2fe210f4e23fe69aa28> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingvanAgendapunt.openbaar";
+    shacl:description "Geeft aan of de bespreking effectief openbaar verlopen is."@nl;
+    shacl:maxCount 1;
+    shacl:name "openbaar"@nl;
+    shacl:path besluit:openbaar.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/3eb1262f99258636d85b42dbd0e6075a658c8108> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingvanAgendapunt.creeert";
+    shacl:class omgevingsvergunning:NormatieveBepaling;
+    shacl:description "Normatieve bepaling dat werd gecreeerd door de beslissing tijdens de behandeling van agendapunt."@nl;
+    shacl:name "creeert"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#BehandelingVanAgendapunt.creeertNormatieveBepaling>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/915e56079a29e082e330536211824263df4536ae> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingvanAgendapunt.beeindigt";
+    shacl:class omgevingsvergunning:NormatieveBepaling;
+    shacl:description "Normatieve bepaling dat werd beeindigd door de beslissing dat werd genomen tijdens de behandeling van agendapunt."@nl;
+    shacl:name "beeindigt"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#BehandelingVanAgendapunt.beeindigtNormatieveBepaling>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/ddc18a34995204dad037d9a788d7ea404c711fff> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingvanAgendapunt.gebruikte";
+    shacl:class dossier:Stuk;
+    shacl:description "Stuk dat werd gebruikt voor de behandeling van de agendapunt."@nl;
+    shacl:name "gebruikte"@nl;
+    shacl:path slimmeraadpleegomgeving:gebruikte.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingVanAgendapuntShape/f8f7cf3e0fcdc9f36b9e6a6f9f436c4b3b6d8a76> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BehandelingvanAgendapunt.geeftaanleidingtot";
+    shacl:class <https://data.europa.eu/eli/ontology#LegalExpression>;
+    shacl:description "Een besluit dat is opgemaakt naar aanleiding van de behandeling van het agendapunt."@nl;
+    shacl:name "geeft aanleiding tot"@nl;
+    shacl:path prov:generated.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BeslissingsactiviteitShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BeslissingsactiviteitShape/09ed995683a26095de4577d13e597160f260ecb2>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BeslissingsactiviteitShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BeslissingsactiviteitShape/fc134bbb026523e6afde205e88de56ae056be099>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BeslissingsactiviteitShape/5efceed3cf604caa8803cfcabeeb7441000e6691>;
+    shacl:targetClass besluitvorming:Beslissingsactiviteit.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BeslissingsactiviteitShape/09ed995683a26095de4577d13e597160f260ecb2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Beslissingsactiviteit.resultaat";
+    shacl:class skos:Concept;
+    shacl:description "Eindoordeel van de beoordeling."@nl;
+    shacl:name "resultaat"@nl;
+    shacl:path besluitvorming:resultaat.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BeslissingsactiviteitShape/1bab1bb4af028fef0775daa8246b62cbb09cdcd1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Beslissingsactiviteit.resultaat";
+    shacl:description "Eindoordeel van de beoordeling."@nl;
+    shacl:minCount 1;
+    shacl:name "resultaat"@nl;
+    shacl:path besluitvorming:resultaat.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BeslissingsactiviteitShape/5efceed3cf604caa8803cfcabeeb7441000e6691> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Beslissingsactiviteit.wasgemotiveerddoor";
+    shacl:class slimmeraadpleegomgeving:Advies;
+    shacl:description "Een AdviesAntwoord die ¨logischerwijs¨ voorafging aan deze Beslissingsactiviteit."@nl;
+    shacl:name "was gemotiveerd door"@nl;
+    shacl:path eli-draft-legislation-ontology:motivated.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BeslissingsactiviteitShape/fc134bbb026523e6afde205e88de56ae056be099> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Beslissingsactiviteit.resultaat";
+    shacl:description "Eindoordeel van de beoordeling."@nl;
+    shacl:maxCount 1;
+    shacl:name "resultaat"@nl;
+    shacl:path besluitvorming:resultaat.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BesluitShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass besluit:Besluit.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#BesluitThemaShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#CodeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#CodeShape/f5ff88ddffc5bb6e100a9381e6f7f61882729f48>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#CodeShape/7fc2f46c220bdcaed7978f63ba3e70d48807a8be>;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#CodeShape/7fc2f46c220bdcaed7978f63ba3e70d48807a8be> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Code.heeftbrederematch";
+    shacl:class skos:Concept;
+    shacl:description "skos:broadMatch wordt gebruikt om een hiërarchische koppeling tussen twee conceptuele bronnen in verschillende begrippenschema's aan te geven."@nl;
+    shacl:name "heeft bredere match"@nl;
+    shacl:path skos:broadMatch.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#CodeShape/f5ff88ddffc5bb6e100a9381e6f7f61882729f48> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Code.heeftbreder";
+    shacl:class skos:Concept;
+    shacl:description "Relateert een concept aan een concept met een algemenere betekenis."@nl;
+    shacl:name "heeft breder"@nl;
+    shacl:path skos:broader.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ConceptueelPubliekeDienstverleningShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass ipdc-lpdc:ConceptualPublicService.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#FragmentSelectorShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass oa:FragmentSelector.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/0e92d523a1837590188fbfddd2ab0d9f901bdcab>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/14aadd4c6278a816bff8c05ff3f2eb441bb4a0d5>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/6789412851c92fe5eb8479182507dd72e28ab811>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/ccb2d543d17baa8b6b0ca2a42156eed6f23e3f6e>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/fdd447f16a92517498619e765035dd040c2820bc>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/8e172c852556aa8404b7130948edad681259b488>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/ed560feb860205e0339910c9b2942564c01b5e11>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/58fa289dbf904f8d2396b4b549df99fd0846103c>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/94b82130b6c7dd0171649824cdc85c899ca56336>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/a1cf13a4aaf177a7ead4d597768162d1b249d1ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/2502ea74079ad7f2c1c292977fb29403bb242c9e>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/3b5973d35f612c133f22e9f710f65db63d861b6b>;
+    shacl:targetClass adms:Identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/0e92d523a1837590188fbfddd2ab0d9f901bdcab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.gestructureerdeidentificator";
+    shacl:class generiek:GestructureerdeIdentificator;
+    shacl:description "Identificator vh object opgesplitst in zijn onderdelen."@nl;
+    shacl:name "gestructureerde identificator"@nl;
+    shacl:path generiek:gestructureerdeIdentificator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/0f275ebdc16f2be1bf67063a80faf4ccea40332b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.toegekendop";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    shacl:name "toegekend op"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/14aadd4c6278a816bff8c05ff3f2eb441bb4a0d5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.gestructureerdeidentificator";
+    shacl:description "Identificator vh object opgesplitst in zijn onderdelen."@nl;
+    shacl:minCount 1;
+    shacl:name "gestructureerde identificator"@nl;
+    shacl:path generiek:gestructureerdeIdentificator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/2502ea74079ad7f2c1c292977fb29403bb242c9e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.toegekendop";
+    shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    shacl:minCount 1;
+    shacl:name "toegekend op"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/3b5973d35f612c133f22e9f710f65db63d861b6b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.toegekendop";
+    shacl:description "Tijdstip waarop de identificator werd uitgegeven."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend op"@nl;
+    shacl:path dcterms:issued.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/58fa289dbf904f8d2396b4b549df99fd0846103c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.toegekenddoor(string)";
+    shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
+    shacl:minCount 1;
+    shacl:name "toegekend door (string)"@nl;
+    shacl:path adms:schemaAgency.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/6789412851c92fe5eb8479182507dd72e28ab811> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.gestructureerdeidentificator";
+    shacl:description "Identificator vh object opgesplitst in zijn onderdelen."@nl;
+    shacl:maxCount 1;
+    shacl:name "gestructureerde identificator"@nl;
+    shacl:path generiek:gestructureerdeIdentificator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/8e172c852556aa8404b7130948edad681259b488> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.toegekenddoor";
+    shacl:description "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    shacl:minCount 1;
+    shacl:name "toegekend door"@nl;
+    shacl:path dcterms:creator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/94b82130b6c7dd0171649824cdc85c899ca56336> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.toegekenddoor(string)";
+    shacl:class prov:Agent;
+    shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
+    shacl:name "toegekend door (string)"@nl;
+    shacl:path adms:schemaAgency.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/a1cf13a4aaf177a7ead4d597768162d1b249d1ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.toegekenddoor(string)";
+    shacl:description "Naam vd agent die de identificator heeft toegekend."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend door (string)"@nl;
+    shacl:path adms:schemaAgency.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/ccb2d543d17baa8b6b0ca2a42156eed6f23e3f6e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.notatie";
+    shacl:description "String gebruikt om het object uniek te identificeren."@nl;
+    shacl:maxCount 1;
+    shacl:name "notatie"@nl;
+    shacl:path skos:notation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/ed560feb860205e0339910c9b2942564c01b5e11> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.toegekenddoor";
+    shacl:class prov:Agent;
+    shacl:description "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    shacl:name "toegekend door"@nl;
+    shacl:path dcterms:creator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/f0a3fc099a35481d2891e1eac3a099feb6f942d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.toegekenddoor";
+    shacl:description "Link naar de agent die de identificator heeft uitgegeven."@nl;
+    shacl:maxCount 1;
+    shacl:name "toegekend door"@nl;
+    shacl:path dcterms:creator.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#IdentificatorShape/fdd447f16a92517498619e765035dd040c2820bc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Identificator.notatie";
+    shacl:description "String gebruikt om het object uniek te identificeren."@nl;
+    shacl:minCount 1;
+    shacl:name "notatie"@nl;
+    shacl:path skos:notation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtAntwoordShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtAntwoordShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtAntwoordShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtAntwoordShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtAntwoordShape/5efceed3cf604caa8803cfcabeeb7441000e6691>;
+    shacl:targetClass slimmeraadpleegomgeving:InitiatiefrechtAntwoord.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtAntwoordShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtantwoord.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van de initiatiefrechtantwoord."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtAntwoordShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtantwoord.beschrijving";
+    shacl:description "Beschrijving van de initiatiefrechtantwoord."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtAntwoordShape/5efceed3cf604caa8803cfcabeeb7441000e6691> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtantwoord.wasgemotiveerddoor";
+    shacl:class slimmeraadpleegomgeving:InitiatiefrechtVraag;
+    shacl:description "Een InitiatiefrechtVraag die ¨logischerwijs¨ voorafging aan dit InitiatiefrechtAntwoord."@nl;
+    shacl:name "was gemotiveerd door"@nl;
+    shacl:path eli-draft-legislation-ontology:was_motivated_by.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtAntwoordShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtantwoord.beschrijving";
+    shacl:description "Beschrijving van de initiatiefrechtantwoord."@nl;
+    shacl:minCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/38fffd80ab57cfce5cb189aa4790b065a66459f1>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/ee56e2bb7e0af4b7f268632b8f960a714d1a5f1f>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/e6bb73441763a5e45e4b99fa826d9587e7132d60>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/2684afaac1b70cddf22fab0b8e094b038a04df86>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/674397262772738dd4eb8cd1ddc03b405b6bdd18>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/ad3e078d65ea115fd2ed7060419fea7ef618e4b6>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/326b48c242230b177693587b4f4a662db6585c9f>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/114845e6f446b632386baeaf9d2277e89272067f>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/e4894e43b148ddf2bf424b1543367364b13a7ada>;
+    shacl:targetClass slimmeraadpleegomgeving:InitiatiefrechtVraag.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van de initiatiefrechtvraag."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/114845e6f446b632386baeaf9d2277e89272067f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.motivering";
+    shacl:description "Beschrijving van de juridische en feitelijke motivering achter de initiatiefrechtvraag.\t"@nl;
+    shacl:maxCount 1;
+    shacl:name "motivering"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Initiatiefrechtvraag.motivering>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/2684afaac1b70cddf22fab0b8e094b038a04df86> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.indieningsdatum";
+    shacl:description "Datum waarop de initiatiefrechtvraag ingediend werd."@nl;
+    shacl:minCount 1;
+    shacl:name "indieningsdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Initiatiefrechtvraag.indieningsdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/326b48c242230b177693587b4f4a662db6585c9f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.motiveerde";
+    shacl:class slimmeraadpleegomgeving:InitiatiefrechtAntwoord;
+    shacl:description "Een InitiatiefrechtAntwoord die logisch volgde op deze InitiatiefrechtVraag."@nl;
+    shacl:name "motiveerde"@nl;
+    shacl:path eli-draft-legislation-ontology:motivated.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/38fffd80ab57cfce5cb189aa4790b065a66459f1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.datumantwoordverwacht";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Datum waartegen het antwoord op de initiatiefrechtvraag verwacht wordt."@nl;
+    shacl:name "datum antwoord verwacht"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Initiatiefrechtvraag.datumAntwoordVerwacht>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.beschrijving";
+    shacl:description "Beschrijving van de initiatiefrechtvraag."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/674397262772738dd4eb8cd1ddc03b405b6bdd18> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.indieningsdatum";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Datum waarop de initiatiefrechtvraag ingediend werd."@nl;
+    shacl:name "indieningsdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Initiatiefrechtvraag.indieningsdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.beschrijving";
+    shacl:description "Beschrijving van de initiatiefrechtvraag."@nl;
+    shacl:minCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/ad3e078d65ea115fd2ed7060419fea7ef618e4b6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.indieningsdatum";
+    shacl:description "Datum waarop de initiatiefrechtvraag ingediend werd."@nl;
+    shacl:maxCount 1;
+    shacl:name "indieningsdatum"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Initiatiefrechtvraag.indieningsdatum>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/e4894e43b148ddf2bf424b1543367364b13a7ada> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.motivering";
+    shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van de juridische en feitelijke motivering achter de initiatiefrechtvraag.\t"@nl;
+    shacl:name "motivering"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Initiatiefrechtvraag.motivering>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/e6bb73441763a5e45e4b99fa826d9587e7132d60> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.heeftontwerpbesluit";
+    shacl:class dossier:Stuk;
+    shacl:description "Ontwerpbesluit dat voorgesteld wordt bij de initiatiefrechtvraag."@nl;
+    shacl:name "heeft ontwerp besluit"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Initiatiefrechtvraag.heeftOntwerpbesluit>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InitiatiefrechtVraagShape/ee56e2bb7e0af4b7f268632b8f960a714d1a5f1f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Initiatiefrechtvraag.datumantwoordverwacht";
+    shacl:description "Datum waartegen het antwoord op de initiatiefrechtvraag verwacht wordt."@nl;
+    shacl:maxCount 1;
+    shacl:name "datum antwoord verwacht"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Initiatiefrechtvraag.datumAntwoordVerwacht>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InstantiePubliekeDienstverleningShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InstantiePubliekeDienstverleningShape/2a6a6edd74d45ce838c9aadda07eb217384da3d7>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InstantiePubliekeDienstverleningShape/3ad88819ae0184e43dcd65ff321b3a9b386fbd0f>;
+    shacl:targetClass ipdc-lpdc:InstancePublicService.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InstantiePubliekeDienstverleningShape/2a6a6edd74d45ce838c9aadda07eb217384da3d7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Instantiepubliekedienstverlening.heeftbron";
+    shacl:description "Verwijzing naar het conceptuele product in de Interbestuurlijke Diensten- en Productencataloog (IPDC)."@nl;
+    shacl:maxCount 1;
+    shacl:name "heeft bron"@nl;
+    shacl:path dcterms:source.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#InstantiePubliekeDienstverleningShape/3ad88819ae0184e43dcd65ff321b3a9b386fbd0f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Instantiepubliekedienstverlening.heeftbron";
+    shacl:class ipdc-lpdc:ConceptualPublicService;
+    shacl:description "Verwijzing naar het conceptuele product in de Interbestuurlijke Diensten- en Productencataloog (IPDC)."@nl;
+    shacl:name "heeft bron"@nl;
+    shacl:path dcterms:source.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaalProcesShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaalProcesShape/07883a3556657f573b5da9b23ce06d8ae66f85c6>;
+    shacl:targetClass eli-draft-legislation-ontology:LegislativeProcess.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaalProcesShape/07883a3556657f573b5da9b23ce06d8ae66f85c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaalproces.bestaatuit";
+    shacl:class eli-draft-legislation-ontology:LegislativeActivity;
+    shacl:description "Geeft een fijnmazigere activiteit aan die binnen dit Legaal Proces plaatsvindt."@nl;
+    shacl:name "bestaat uit"@nl;
+    shacl:path eli-draft-legislation-ontology:consists_of.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/268ebc6552ac0d52c5ea662f5dc5474542c98d14>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/6c8c5daaea04e3950031a8418ef445a631f75f76>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/85b861f016100c151586e16d85fdc279b58a38bf>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/b434f389dccffaab57f1aba56abd0d54ab64fdd9>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/9eba9a03d06fbd15b91efd4094245a2a0968a3dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/236f0210baaf149903750c43bbe7012c21debb2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/322371a77364a50f049d46180f6192532eea26dc>;
+    shacl:targetClass eli-draft-legislation-ontology:LegislativeActivity.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.beschrijving";
+    shacl:datatype rdf:langString;
+    shacl:description "Korte beschrijving van de legale activiteit."@nl;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.type";
+    shacl:description "De soort of categorie van de activiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "type"@nl;
+    shacl:path eli-draft-legislation-ontology:had_activity_type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/268ebc6552ac0d52c5ea662f5dc5474542c98d14> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.heeftorganisatiealsparticipant";
+    shacl:class org:Organization;
+    shacl:description "Een organisatie die deelneemt aan een activiteit, maar er niet noodzakelijk verantwoordelijk voor is."@nl;
+    shacl:name "heeft organisatie als participant"@nl;
+    shacl:path eli-draft-legislation-ontology:had_participant_organization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.type";
+    shacl:class skos:Concept;
+    shacl:description "De soort of categorie van de activiteit."@nl;
+    shacl:name "type"@nl;
+    shacl:path eli-draft-legislation-ontology:had_activity_type.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.beschrijving";
+    shacl:description "Korte beschrijving van de legale activiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "beschrijving"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.titel";
+    shacl:description "De naam van de legale activiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "titel"@nl;
+    shacl:path eli-draft-legislation-ontology:activity_label.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/6c8c5daaea04e3950031a8418ef445a631f75f76> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.heeftparticipatie";
+    shacl:class eli-draft-legislation-ontology:Participation;
+    shacl:description "De agent die deel nam aan de activiteit"@nl;
+    shacl:name "heeft participatie"@nl;
+    shacl:path eli-draft-legislation-ontology:had_participation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/85b861f016100c151586e16d85fdc279b58a38bf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.heeftpersoonalsparticipant";
+    shacl:class person:Person;
+    shacl:description "Een persoon die deelneemt aan een activiteit. Een preciezere eigenschap bestaat om de verantwoordelijke persoon van een activiteit aan te duiden."@nl;
+    shacl:name "heeft persoon als participant"@nl;
+    shacl:path eli-draft-legislation-ontology:had_participant_person.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/9eba9a03d06fbd15b91efd4094245a2a0968a3dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.heeftverantwoordelijkepersoon";
+    shacl:class person:Person;
+    shacl:description "De persoon verantwoordelijk voor de activiteit."@nl;
+    shacl:name "heeft verantwoordelijke persoon"@nl;
+    shacl:path eli-draft-legislation-ontology:had_responsible_person.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/b434f389dccffaab57f1aba56abd0d54ab64fdd9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.heeftverantwoordelijkeorganisatie";
+    shacl:class org:Organization;
+    shacl:description "De organisatie verantwoordelijk voor de activiteit."@nl;
+    shacl:name "heeft verantwoordelijke organisatie"@nl;
+    shacl:path eli-draft-legislation-ontology:had_responsible_organization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleActiviteitShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Legaleactiviteit.titel";
+    shacl:datatype xsd:string;
+    shacl:description "De naam van de legale activiteit."@nl;
+    shacl:name "titel"@nl;
+    shacl:path eli-draft-legislation-ontology:activity_label.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/d52c9091f3c678b27e2cf18348460158d32c59dd>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/f38078e2db61c67b04141f4189cf08ff10cb4036>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/d1d5367082cbe1f21e2b2d88a5be7fcb81d23733>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/58890f6dc938b7a8d11999eace8e3c34f412cbed>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/2e855535b5c4fb9786f95a472a223f8ea2bb7892>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/3f3f8414be9a86df35a622c0c996665486dabe23>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/b5cec5c28bfd2ba9ef2239020fc2f4b2cfcb5a88>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/8c633d6ef552359ebbb06db6a470ea6d7ab1e7a1>;
+    shacl:targetClass <https://data.europa.eu/eli/ontology#LegalExpression>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/2e855535b5c4fb9786f95a472a223f8ea2bb7892> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvorm.jurisdictie";
+    shacl:class generiek:AdministratieveEenheid;
+    shacl:description "Het rechtsgebied waar de legale verschijingsvorm vandaan komt. "@nl;
+    shacl:name "jurisdictie"@nl;
+    shacl:path eli:jurisdiction.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/3f3f8414be9a86df35a622c0c996665486dabe23> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvorm.jurisdictie";
+    shacl:description "Het rechtsgebied waar de legale verschijingsvorm vandaan komt. "@nl;
+    shacl:maxCount 1;
+    shacl:name "jurisdictie"@nl;
+    shacl:path eli:jurisdiction.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/58890f6dc938b7a8d11999eace8e3c34f412cbed> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvorm.isgeconsolideerddoor";
+    shacl:class <https://data.europa.eu/eli/ontology#LegalExpression>;
+    shacl:description "Geeft aan dat met deze legale verschijingsvorm rekening wordt gehouden in een geconsolideerde tekst (die meestal het resultaat is van een redactioneel proces waarbij de wetgeving wordt herzien)."@nl;
+    shacl:name "is geconsolideerd door"@nl;
+    shacl:path eli:consolidated_by.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/8c633d6ef552359ebbb06db6a470ea6d7ab1e7a1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvorm.vervangt";
+    shacl:class <https://data.europa.eu/eli/ontology#LegalExpression>;
+    shacl:description "Geeft aan dat een legale verschijningsvorm een andere vervangt."@nl;
+    shacl:name "vervangt"@nl;
+    shacl:path eli:repeals.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/b5cec5c28bfd2ba9ef2239020fc2f4b2cfcb5a88> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvorm.realiseert";
+    shacl:class omgevingsvergunning:NormatieveBepaling;
+    shacl:description "Normatieve bepaling die door de legale verschijningsvorm wordt gerealiseerd.\t"@nl;
+    shacl:name "realiseert"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#LegaleVerschijningsvorm.realiseertNormatieveBepaling>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/d1d5367082cbe1f21e2b2d88a5be7fcb81d23733> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvorm.consolideert";
+    shacl:class <https://data.europa.eu/eli/ontology#LegalExpression>;
+    shacl:description "Geeft aan dat deze geconsolideerde juridische bron of uitdrukking (die meestal het product is van een redactioneel proces dat de wetgeving herziet) rekening houdt met een andere. "@nl;
+    shacl:name "consolideert"@nl;
+    shacl:path eli:consolidates.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/d52c9091f3c678b27e2cf18348460158d32c59dd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvorm.besluittype";
+    shacl:description "Type van het besluit."@nl;
+    shacl:name "besluittype"@nl.
+_:n3-2802 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-2803 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://data.vlaanderen.be/id/conceptscheme/BesluitType>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-2802 shacl:property _:n3-2803.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/d52c9091f3c678b27e2cf18348460158d32c59dd> shacl:node _:n3-2802;
+    shacl:nodeKind shacl:IRI;
+    shacl:path eli:type_document;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvormShape/f38078e2db61c67b04141f4189cf08ff10cb4036> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LegaleVerschijningsvorm.besluittype";
+    shacl:datatype xsd:anyURI;
+    shacl:description "Type van het besluit."@nl;
+    shacl:name "besluittype"@nl;
+    shacl:path eli:type_document.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#LocatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass prov:Location.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#MotivatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NormatieveBepalingShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NormatieveBepalingShape/59a2cacf48a348bf6f395b923c551558e2010f24>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NormatieveBepalingShape/d982ae870b8c7f97b68d4c407ae00ecea0b31821>;
+    shacl:targetClass omgevingsvergunning:NormatieveBepaling.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NormatieveBepalingShape/59a2cacf48a348bf6f395b923c551558e2010f24> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NormatieveBepaling.rechtsobject";
+    shacl:class omgevingsvergunning:Activiteit;
+    shacl:description "Het voorwerp van de Normatieve Bepaling."@nl;
+    shacl:name "rechtsobject"@nl;
+    shacl:path omgevingsvergunning:rechtsobject.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NormatieveBepalingShape/d982ae870b8c7f97b68d4c407ae00ecea0b31821> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NormatieveBepaling.tijdsbestek";
+    shacl:class time:Interval;
+    shacl:description "Aanduiding van het tijdsbestek van de Normatieve Bepaling."@nl;
+    shacl:name "tijdsbestek"@nl;
+    shacl:path omgevingsvergunning:tijdsbestek.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NotificatieberichtShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NotificatieberichtShape/5f54c788429b24cc8716ee5e0bf63522a49f95e6>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NotificatieberichtShape/99a5581200a6990692abd7446ef78762a79ee8da>;
+    shacl:targetClass notificatie:Notificatiebericht.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NotificatieberichtShape/5f54c788429b24cc8716ee5e0bf63522a49f95e6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Notificatiebericht.url";
+    shacl:description "Een url voor het Notificatiebericht."@nl;
+    shacl:maxCount 1;
+    shacl:name "url"@nl;
+    shacl:path schemas:url.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#NotificatieberichtShape/99a5581200a6990692abd7446ef78762a79ee8da> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Notificatiebericht.url";
+    shacl:datatype xsd:anyURI;
+    shacl:description "Een url voor het Notificatiebericht."@nl;
+    shacl:name "url"@nl;
+    shacl:path schemas:url.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ObjectShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass prov:Entity.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/268ebc6552ac0d52c5ea662f5dc5474542c98d14>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/85b861f016100c151586e16d85fdc279b58a38bf>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/b434f389dccffaab57f1aba56abd0d54ab64fdd9>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/9eba9a03d06fbd15b91efd4094245a2a0968a3dc>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/acb59b00c5c67fec8d3f0b2543d5259a09b17d18>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/e5ccf692ee38c28199531eb5e0c59554153a57c3>;
+    shacl:targetClass eli-draft-legislation-ontology:Participation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/268ebc6552ac0d52c5ea662f5dc5474542c98d14> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Participatie.heeftorganisatiealsparticipant";
+    shacl:class org:Organization;
+    shacl:description "Een organisatie die deelneemt aan een activiteit, maar er niet noodzakelijk verantwoordelijk voor is."@nl;
+    shacl:name "heeft organisatie als participant"@nl;
+    shacl:path eli-draft-legislation-ontology:had_participant_organization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/85b861f016100c151586e16d85fdc279b58a38bf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Participatie.heeftpersoonalsparticipant";
+    shacl:class person:Person;
+    shacl:description "Een persoon die deelneemt aan een activiteit. Een preciezere eigenschap bestaat om de verantwoordelijke persoon van een activiteit aan te duiden."@nl;
+    shacl:name "heeft persoon als participant"@nl;
+    shacl:path eli-draft-legislation-ontology:had_participant_person.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/9eba9a03d06fbd15b91efd4094245a2a0968a3dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Participatie.heeftverantwoordelijkepersoon";
+    shacl:class person:Person;
+    shacl:description "De persoon verantwoordelijk voor de activiteit."@nl;
+    shacl:name "heeft verantwoordelijke persoon"@nl;
+    shacl:path eli-draft-legislation-ontology:had_responsible_person.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/acb59b00c5c67fec8d3f0b2543d5259a09b17d18> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Participatie.rol";
+    shacl:description "De rol van de Agent in een Participatie"@nl;
+    shacl:maxCount 1;
+    shacl:name "rol"@nl;
+    shacl:path eli-draft-legislation-ontology:participation_role.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/b434f389dccffaab57f1aba56abd0d54ab64fdd9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Participatie.heeftverantwoordelijkeorganisatie";
+    shacl:class org:Organization;
+    shacl:description "De organisatie verantwoordelijk voor de activiteit."@nl;
+    shacl:name "heeft verantwoordelijke organisatie"@nl;
+    shacl:path eli-draft-legislation-ontology:had_responsible_organization.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ParticipatieShape/e5ccf692ee38c28199531eb5e0c59554153a57c3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Participatie.rol";
+    shacl:class skos:Concept;
+    shacl:description "De rol van de Agent in een Participatie"@nl;
+    shacl:name "rol"@nl;
+    shacl:path eli-draft-legislation-ontology:participation_role.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape/004ac80561762856a407814131b0d26da5d40c48>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape/0314585b5499d6caa89e48fec0ef18394c773357>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape/94b964ba7748a9bb7be30bc938891d43bdd37a2a>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape/5b308a496d299ca5e844de2d3520c815a468d00b>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape/bce6139e94a794701cff8ee719d4289148b79381>;
+    shacl:targetClass eu:PeriodOfTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape/004ac80561762856a407814131b0d26da5d40c48> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Periode.begin";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Aanvang van de tijdsduur."@nl;
+    shacl:name "begin"@nl;
+    shacl:path eu:startTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape/0314585b5499d6caa89e48fec0ef18394c773357> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Periode.begin";
+    shacl:description "Aanvang van de tijdsduur."@nl;
+    shacl:maxCount 1;
+    shacl:name "begin"@nl;
+    shacl:path eu:startTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape/5b308a496d299ca5e844de2d3520c815a468d00b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Periode.einde";
+    shacl:datatype xsd:dateTime;
+    shacl:description "Einde vd tijdsduur."@nl;
+    shacl:name "einde"@nl;
+    shacl:path eu:endTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape/94b964ba7748a9bb7be30bc938891d43bdd37a2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Periode.begin";
+    shacl:description "Aanvang van de tijdsduur."@nl;
+    shacl:minCount 1;
+    shacl:name "begin"@nl;
+    shacl:path eu:startTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#PeriodeShape/bce6139e94a794701cff8ee719d4289148b79381> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Periode.einde";
+    shacl:description "Einde vd tijdsduur."@nl;
+    shacl:maxCount 1;
+    shacl:name "einde"@nl;
+    shacl:path eu:endTime.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#RechtShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#RechtShape/916564d2817b8f660dc722de55d7c6c1bcc8552b>;
+    shacl:targetClass omgevingsvergunning:Recht.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#RechtShape/916564d2817b8f660dc722de55d7c6c1bcc8552b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Recht.begunstigde";
+    shacl:class prov:Agent;
+    shacl:description "Agent die het recht mag uitoefenen."@nl;
+    shacl:name "begunstigde"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Recht.begunstigde>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#RechtsgrondShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass eli:LegalResource.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceOnderdeelShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceOnderdeelShape/a01ad10ab72b3632d4aaf18fda40df05f8a5aa7a>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceOnderdeelShape/3fbb8387609cc4cf84fafa71c23ad22c0ef8c787>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceOnderdeelShape/65192921c4abe365bbc48d8635f9a7ae96778bdd>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceOnderdeelShape/c3f45c7a9196cfb23468cf545e8d114965a97b31>;
+    shacl:targetClass oa:SpecificResource.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceOnderdeelShape/3fbb8387609cc4cf84fafa71c23ad22c0ef8c787> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Resourceonderdeel.isOnderdeelVan";
+    shacl:description "De bron waaruit ResourceOnderdeel is verfijnd of specifieker is."@nl;
+    shacl:minCount 1;
+    shacl:name "isOnderdeelVan"@nl;
+    shacl:path oa:hasSource.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceOnderdeelShape/65192921c4abe365bbc48d8635f9a7ae96778bdd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Resourceonderdeel.isOnderdeelVan";
+    shacl:class rdfs:Resource;
+    shacl:description "De bron waaruit ResourceOnderdeel is verfijnd of specifieker is."@nl;
+    shacl:name "isOnderdeelVan"@nl;
+    shacl:path oa:hasSource.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceOnderdeelShape/a01ad10ab72b3632d4aaf18fda40df05f8a5aa7a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Resourceonderdeel.heeftselector";
+    shacl:class oa:Selector;
+    shacl:description "Een Selector die het segment of de regio van belang binnen de bron resource beschrijft."@nl;
+    shacl:name "heeft selector"@nl;
+    shacl:path oa:hasSelector.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceOnderdeelShape/c3f45c7a9196cfb23468cf545e8d114965a97b31> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Resourceonderdeel.isOnderdeelVan";
+    shacl:description "De bron waaruit ResourceOnderdeel is verfijnd of specifieker is."@nl;
+    shacl:maxCount 1;
+    shacl:name "isOnderdeelVan"@nl;
+    shacl:path oa:hasSource.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ResourceShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass rdfs:Resource.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#RolShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:targetClass skos:Concept.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#SelectorShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#SelectorShape/6591397ee3afe1ed8a27a313eb88cd605cc8d4cf>;
+    shacl:targetClass oa:Selector.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#SelectorShape/6591397ee3afe1ed8a27a313eb88cd605cc8d4cf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Selector.verfijnddoor";
+    shacl:class oa:Selector;
+    shacl:description "Een Selector die moet worden toegepast op de resultaten van de vorige selector"@nl;
+    shacl:name "verfijnd door"@nl;
+    shacl:path oa:refinedBy.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ShaclPathSelectorShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ShaclPathSelectorShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ShaclPathSelectorShape/762f5094731b213d88d8a29332598749ea0eaa46>;
+    shacl:targetClass slimmeraadpleegomgeving:ShaclPathSelector.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ShaclPathSelectorShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Shaclpathselector.waarde";
+    shacl:datatype xsd:anyURI;
+    shacl:description "SHACL property path dat door de selector op een resource wordt toegepast om een waarde te bekomen."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path rdf:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#ShaclPathSelectorShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Shaclpathselector.waarde";
+    shacl:description "SHACL property path dat door de selector op een resource wordt toegepast om een waarde te bekomen."@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path rdf:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/e19139b4a69025b25344e815e30de70065ce5e3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/074d26f195dfc56c0261f3284206dd9819a9ae3b>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/317ec492d032547ca27537d4b2745699922d12ac>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/04ad8595bf10e9600c10b7d2598a3632bd359bd9>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/2b023742f4f918e4b9b48412f6aefc32b5c7adf6>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/2401708eb4073a278be2b27bac1efb36fd072fb6>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/883b5dc28b6bef2ce82b138ead1eb3c7f2073b92>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/bda0bad9abcbb234a93d8bcf523cfd149f86ad06>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/d5c94132d1041e99c73b8745b01620fb6603e3dd>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/dee91a0c104b9eca8df95ed28a4c56445b1c13c4>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/f9184e9b3d65880dd277daa3ae2ba9b2fe6ed7cd>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/e78273d31d571acb6b18af1770b639d90436690c>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/1712ef1b325d7d2807bc601d6409b70a42eaff10>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/48290800138d735a1909018da1426a5d120eedf0>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/44f6426e2306c5bc0421823eb4a1a034b615f715>;
+    shacl:targetClass dossier:Stuk.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/04ad8595bf10e9600c10b7d2598a3632bd359bd9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.gaatoveradviesvraag";
+    shacl:class slimmeraadpleegomgeving:AdviesVraag;
+    shacl:description "Adviesvraag waarover het stuk gaat."@nl;
+    shacl:name "gaat over adviesvraag"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Stuk.gaatOverAdviesvraag>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.identificator";
+    shacl:class adms:Identifier;
+    shacl:description "Een identificator voor het stuk."@nl;
+    shacl:name "identificator"@nl;
+    shacl:path adms:identifier.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/074d26f195dfc56c0261f3284206dd9819a9ae3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.datum";
+    shacl:description "De datum van het stuk."@nl;
+    shacl:minCount 1;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.naam";
+    shacl:datatype xsd:string;
+    shacl:description "De naam van het stuk."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/1712ef1b325d7d2807bc601d6409b70a42eaff10> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.thema";
+    shacl:class slimmeraadpleegomgeving:Thema;
+    shacl:description "Thema waarover dit Stuk gaat."@nl;
+    shacl:name "thema"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Stuk.thema>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/2401708eb4073a278be2b27bac1efb36fd072fb6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.gaatoverinitiatiefrechtvraag";
+    shacl:class slimmeraadpleegomgeving:InitiatiefrechtVraag;
+    shacl:description "Initiatiefrechtvraag waarover het stuk gaat."@nl;
+    shacl:name "gaat over initiatiefrechtvraag"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Stuk.gaatOverInitiatiefrechtvraag>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/2b023742f4f918e4b9b48412f6aefc32b5c7adf6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.gaatoverinitiatiefrechtantwoord";
+    shacl:class slimmeraadpleegomgeving:InitiatiefrechtAntwoord;
+    shacl:description "Initiatiefrechtantwoord waarover het stuk gaat."@nl;
+    shacl:name "gaat over initiatiefrechtantwoord"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Stuk.gaatOverInitiatiefrechtantwoord>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/2f9ada19c9a3b93b3f7c9d2e21d6fbe3645f0fc2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.datum";
+    shacl:datatype xsd:date;
+    shacl:description "De datum van het stuk."@nl;
+    shacl:name "datum"@nl;
+    shacl:path dcterms:date.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/317ec492d032547ca27537d4b2745699922d12ac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.gaatoveradviesantwoord";
+    shacl:class slimmeraadpleegomgeving:Advies;
+    shacl:description "Adviesantwoord waarover het stuk gaat."@nl;
+    shacl:name "gaat over adviesantwoord"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Stuk.gaatOverAdviesantwoord>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/44f6426e2306c5bc0421823eb4a1a034b615f715> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.trefwoord";
+    shacl:datatype rdf:langString;
+    shacl:description "Trefwoorden of tags die worden gebruikt om een Stuk te beschrijven."@nl;
+    shacl:name "trefwoord"@nl;
+    shacl:path schemas:keywords.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/48290800138d735a1909018da1426a5d120eedf0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.thema";
+    shacl:description "Thema waarover dit Stuk gaat."@nl;
+    shacl:name "thema"@nl.
+_:n3-2804 a shacl:NodeShape;
+    rdfs:comment "codelist restriction".
+_:n3-2805 shacl:class skos:ConceptScheme;
+    shacl:hasValue <https://data.vlaanderen.be/id/conceptscheme/BesluitThema>;
+    shacl:minCount 1;
+    shacl:nodeKind shacl:IRI;
+    shacl:path skos:inScheme.
+_:n3-2804 shacl:property _:n3-2805.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/48290800138d735a1909018da1426a5d120eedf0> shacl:node _:n3-2804;
+    shacl:nodeKind shacl:IRI;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Stuk.thema>;
+    shacl:severity shacl:Warning.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.naam";
+    shacl:description "De naam van het stuk."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/883b5dc28b6bef2ce82b138ead1eb3c7f2073b92> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.geografischedekking";
+    shacl:class prov:Location;
+    shacl:description "Plaats of gebied waarover dit Stuk gaat."@nl;
+    shacl:name "geografische dekking"@nl;
+    shacl:path prov:atLocation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.taal";
+    shacl:class skos:Concept;
+    shacl:description "De taal van het stuk."@nl;
+    shacl:name "taal"@nl;
+    shacl:path dcterms:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/bda0bad9abcbb234a93d8bcf523cfd149f86ad06> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.heeftmeerinfo";
+    shacl:class schemas:WebSite;
+    shacl:description "Website waar meer info over het Stuk kan gevonden worden."@nl;
+    shacl:name "heeft meer info"@nl;
+    shacl:path rdfs:seeAlso.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/d5c94132d1041e99c73b8745b01620fb6603e3dd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.heeftrelatietot";
+    shacl:class dossier:Stuk;
+    shacl:description "Een stuk kan een relatie hebben tot een ander stuk."@nl;
+    shacl:name "heeft relatie tot"@nl;
+    shacl:path dcterms:relation.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/dee91a0c104b9eca8df95ed28a4c56445b1c13c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.informatieclassificatie";
+    shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden voor het Stuk."@nl;
+    shacl:maxCount 1;
+    shacl:name "informatieclassificatie"@nl;
+    shacl:path dossier:informatieclassificatie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/e19139b4a69025b25344e815e30de70065ce5e3b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.auteur";
+    shacl:class prov:Agent;
+    shacl:description "De auteur van het stuk."@nl;
+    shacl:name "auteur"@nl;
+    shacl:path dossier:auteur.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/e78273d31d571acb6b18af1770b639d90436690c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.inhoud";
+    shacl:description "Een waarde die een directe representatie is van de entiteit."@nl;
+    shacl:maxCount 1;
+    shacl:name "inhoud"@nl;
+    shacl:path prov:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#StukShape/f9184e9b3d65880dd277daa3ae2ba9b2fe6ed7cd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Stuk.informatieclassificatie";
+    shacl:class skos:Concept;
+    shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden voor het Stuk."@nl;
+    shacl:name "informatieclassificatie"@nl;
+    shacl:path dossier:informatieclassificatie.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstPositieSelectorShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstPositieSelectorShape/5b308a496d299ca5e844de2d3520c815a468d00b>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstPositieSelectorShape/bce6139e94a794701cff8ee719d4289148b79381>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstPositieSelectorShape/deb219c6ec0987fbed639872246559f5f1989618>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstPositieSelectorShape/e2aa695935c78bbdc60e0b03ef4e306b162ddea8>;
+    shacl:targetClass oa:TextPositionSelector.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstPositieSelectorShape/5b308a496d299ca5e844de2d3520c815a468d00b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstpositieselector.einde";
+    shacl:datatype xsd:integer;
+    shacl:description "De eigenschap einde wordt gebruikt om de op 0 gebaseerde index van de eindpositie van een inhoudsbereik over te brengen."@nl;
+    shacl:name "einde"@nl;
+    shacl:path oa:end.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstPositieSelectorShape/bce6139e94a794701cff8ee719d4289148b79381> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstpositieselector.einde";
+    shacl:description "De eigenschap einde wordt gebruikt om de op 0 gebaseerde index van de eindpositie van een inhoudsbereik over te brengen."@nl;
+    shacl:maxCount 1;
+    shacl:name "einde"@nl;
+    shacl:path oa:end.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstPositieSelectorShape/deb219c6ec0987fbed639872246559f5f1989618> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstpositieselector.start";
+    shacl:description "De startpositie in een op 0 gebaseerde index waarop een inhoudsbereik wordt geselecteerd uit de gegevens in de bron."@nl;
+    shacl:maxCount 1;
+    shacl:name "start"@nl;
+    shacl:path oa:start.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstPositieSelectorShape/e2aa695935c78bbdc60e0b03ef4e306b162ddea8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstpositieselector.start";
+    shacl:datatype xsd:integer;
+    shacl:description "De startpositie in een op 0 gebaseerde index waarop een inhoudsbereik wordt geselecteerd uit de gegevens in de bron."@nl;
+    shacl:name "start"@nl;
+    shacl:path oa:start.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/6ce60091f30201f9a89b8b88fe321b327ada9c0d>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/7f1efcff5802ee9d4e138fff05635dd161597522>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/81a8874d425fcb277fdd5c9f5b0b601917af6ca4>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/36bd8dfd51f758c2bc44e66781f69fc0d6e31e7b>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/b532f3c95e1e82323180d32736a5e2e1fec92752>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/fdcbb7566335ebcbfbcf4b1aaa687ca3e108470f>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/6bcfff0b9e6fc38d919666c349412a5b75d2581b>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/829401f33705ad4bbd527fe7061dd58ecf4e095a>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/a894e8a690403facf49d898d644e4934976f6f17>;
+    shacl:targetClass oa:TextQuoteSelector.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/36bd8dfd51f758c2bc44e66781f69fc0d6e31e7b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstquoteselector.prefix";
+    shacl:description "Een stukje inhoud dat onmiddellijk voorafgaat aan de inhoud die wordt geselecteerd door de Selector."@nl;
+    shacl:maxCount 1;
+    shacl:name "prefix"@nl;
+    shacl:path oa:prefix.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/6bcfff0b9e6fc38d919666c349412a5b75d2581b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstquoteselector.suffix";
+    shacl:datatype xsd:string;
+    shacl:description "Het stukje tekst dat direct volgt op de tekst die wordt geselecteerd."@nl;
+    shacl:name "suffix"@nl;
+    shacl:path oa:suffix.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/6ce60091f30201f9a89b8b88fe321b327ada9c0d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstquoteselector.exact";
+    shacl:description "kopie van de tekst die wordt geselecteerd, na normalisatie."@nl;
+    shacl:minCount 1;
+    shacl:name "exact"@nl;
+    shacl:path oa:exact.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/7f1efcff5802ee9d4e138fff05635dd161597522> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstquoteselector.exact";
+    shacl:description "kopie van de tekst die wordt geselecteerd, na normalisatie."@nl;
+    shacl:maxCount 1;
+    shacl:name "exact"@nl;
+    shacl:path oa:exact.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/81a8874d425fcb277fdd5c9f5b0b601917af6ca4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstquoteselector.exact";
+    shacl:datatype xsd:string;
+    shacl:description "kopie van de tekst die wordt geselecteerd, na normalisatie."@nl;
+    shacl:name "exact"@nl;
+    shacl:path oa:exact.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/829401f33705ad4bbd527fe7061dd58ecf4e095a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstquoteselector.suffix";
+    shacl:description "Het stukje tekst dat direct volgt op de tekst die wordt geselecteerd."@nl;
+    shacl:minCount 1;
+    shacl:name "suffix"@nl;
+    shacl:path oa:suffix.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/a894e8a690403facf49d898d644e4934976f6f17> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstquoteselector.suffix";
+    shacl:description "Het stukje tekst dat direct volgt op de tekst die wordt geselecteerd."@nl;
+    shacl:maxCount 1;
+    shacl:name "suffix"@nl;
+    shacl:path oa:suffix.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/b532f3c95e1e82323180d32736a5e2e1fec92752> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstquoteselector.prefix";
+    shacl:datatype xsd:string;
+    shacl:description "Een stukje inhoud dat onmiddellijk voorafgaat aan de inhoud die wordt geselecteerd door de Selector."@nl;
+    shacl:name "prefix"@nl;
+    shacl:path oa:prefix.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstQuoteSelectorShape/fdcbb7566335ebcbfbcf4b1aaa687ca3e108470f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstquoteselector.prefix";
+    shacl:description "Een stukje inhoud dat onmiddellijk voorafgaat aan de inhoud die wordt geselecteerd door de Selector."@nl;
+    shacl:minCount 1;
+    shacl:name "prefix"@nl;
+    shacl:path oa:prefix.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/866f7e6bf04104e9aa0f82fa4b8b0ff05ef17dc7>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/c202c852e84ae0c736f1f6a8f8030db817602116>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/59f19f33ed2d762d1b73623c8ef9129d6d178318>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/762f5094731b213d88d8a29332598749ea0eaa46>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/ca4892872b345b4fe994128b7c31877979275399>;
+    shacl:targetClass oa:TextualBody.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstueleinhoud.waarde";
+    shacl:datatype rdf:langString;
+    shacl:description "De tekst zelf."@nl;
+    shacl:name "waarde"@nl;
+    shacl:path rdf:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/59f19f33ed2d762d1b73623c8ef9129d6d178318> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstueleinhoud.taal";
+    shacl:description "Taal van de tekst."@nl;
+    shacl:maxCount 1;
+    shacl:name "taal"@nl;
+    shacl:path dc11:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstueleinhoud.waarde";
+    shacl:description "De tekst zelf."@nl;
+    shacl:maxCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path rdf:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/866f7e6bf04104e9aa0f82fa4b8b0ff05ef17dc7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstueleinhoud.formaat";
+    shacl:class skos:Concept;
+    shacl:description "Formaat van de inhoud."@nl;
+    shacl:name "formaat"@nl;
+    shacl:path dc11:format.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/b0172ce99ab148d096c4b104e1a9fa0858eeb396> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstueleinhoud.taal";
+    shacl:datatype xsd:string;
+    shacl:description "Taal van de tekst."@nl;
+    shacl:name "taal"@nl;
+    shacl:path dc11:language.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/c202c852e84ae0c736f1f6a8f8030db817602116> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstueleinhoud.formaat";
+    shacl:description "Formaat van de inhoud."@nl;
+    shacl:maxCount 1;
+    shacl:name "formaat"@nl;
+    shacl:path dc11:format.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#TekstueleinhoudShape/ca4892872b345b4fe994128b7c31877979275399> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Tekstueleinhoud.waarde";
+    shacl:description "De tekst zelf."@nl;
+    shacl:minCount 1;
+    shacl:name "waarde"@nl;
+    shacl:path rdf:value.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/70fd5c896379c47ab2ea11e80aae9af1be16fb7b>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/97c792855e3d953e92b98b61328d838b452fe52f>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/e664c00347c1b4a53927e11fea5483125548e4c8>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/1e975dc9451400256343c1605d0a93ab4af03564>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/5af23f1bd959293c64ddd457ff39d4d98588a34c>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/5bf53f4aafaddd6f1991d17d337414f414dde118>;
+    shacl:targetClass omgevingsvergunning:Verbintenis.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/1e975dc9451400256343c1605d0a93ab4af03564> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Verbintenis.rechthebbende";
+    shacl:description "De agent die rechthebbende is van de verbintenis."@nl;
+    shacl:minCount 1;
+    shacl:name "rechthebbende"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Verbintenis.rechthebbende>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/5af23f1bd959293c64ddd457ff39d4d98588a34c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Verbintenis.rechthebbende";
+    shacl:description "De agent die rechthebbende is van de verbintenis."@nl;
+    shacl:maxCount 1;
+    shacl:name "rechthebbende"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Verbintenis.rechthebbende>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/5bf53f4aafaddd6f1991d17d337414f414dde118> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Verbintenis.rechthebbende";
+    shacl:class prov:Agent;
+    shacl:description "De agent die rechthebbende is van de verbintenis."@nl;
+    shacl:name "rechthebbende"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Verbintenis.rechthebbende>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/70fd5c896379c47ab2ea11e80aae9af1be16fb7b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Verbintenis.eiser";
+    shacl:description "De agent die de vordering van de verbintenis eist."@nl;
+    shacl:maxCount 1;
+    shacl:name "eiser"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Verbintenis.eiser>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/97c792855e3d953e92b98b61328d838b452fe52f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Verbintenis.eiser";
+    shacl:description "De agent die de vordering van de verbintenis eist."@nl;
+    shacl:minCount 1;
+    shacl:name "eiser"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Verbintenis.eiser>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#VerbintenisShape/e664c00347c1b4a53927e11fea5483125548e4c8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Verbintenis.eiser";
+    shacl:class prov:Agent;
+    shacl:description "De agent die de vordering van de verbintenis eist."@nl;
+    shacl:name "eiser"@nl;
+    shacl:path <https://data.vlaanderen.be/ns/slimmeraadpleegomgeving#Verbintenis.eiser>.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape> a shacl:NodeShape;
+    shacl:closed false;
+    shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/75cff476bdd391ede10f0c90249e7e9e9767a502>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/bda0bad9abcbb234a93d8bcf523cfd149f86ad06>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/421d78c27acf98a3c52191db36ac97de764ae8b5>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/d000adb186880cbcc53d4d31cf1f6bfd06d1ae82>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/1399bd400d4637b15d5fe38202d6572f82150aac>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/5fceb068938b8a837e254da418f45825d992aec8>, <https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>;
+    shacl:targetClass schemas:WebSite.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Website.naam";
+    shacl:datatype rdf:langString;
+    shacl:description "Naam van de website."@nl;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/421d78c27acf98a3c52191db36ac97de764ae8b5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Website.locatie";
+    shacl:description "URL van de website."@nl;
+    shacl:maxCount 1;
+    shacl:name "locatie"@nl;
+    shacl:path schemas:url.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Website.naam";
+    shacl:description "Naam van de website."@nl;
+    shacl:maxCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Website.locatie";
+    shacl:datatype xsd:anyURI;
+    shacl:description "URL van de website."@nl;
+    shacl:name "locatie"@nl;
+    shacl:path schemas:url.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/75cff476bdd391ede10f0c90249e7e9e9767a502> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Website.heeftmeerinfo";
+    shacl:description "Beschrijving van de website."@nl;
+    shacl:maxCount 1;
+    shacl:name "heeft meer info"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/bda0bad9abcbb234a93d8bcf523cfd149f86ad06> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Website.heeftmeerinfo";
+    shacl:datatype rdf:langString;
+    shacl:description "Beschrijving van de website."@nl;
+    shacl:name "heeft meer info"@nl;
+    shacl:path dcterms:description.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/d000adb186880cbcc53d4d31cf1f6bfd06d1ae82> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Website.locatie";
+    shacl:description "URL van de website."@nl;
+    shacl:minCount 1;
+    shacl:name "locatie"@nl;
+    shacl:path schemas:url.
+<https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#WebsiteShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving/kandidaatstandaard/2024-09-13#Website.naam";
+    shacl:description "Naam van de website."@nl;
+    shacl:minCount 1;
+    shacl:name "naam"@nl;
+    shacl:path dcterms:title.

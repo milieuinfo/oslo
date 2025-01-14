@@ -243,101 +243,101 @@
 <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-ap> <https://data.vlaanderen.be/shacl/mobiliteit-trips-en-aanbod-apshapes> mobiliteit-trips-en-aanbod-ap:AanbiederShape, mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape, mobiliteit-trips-en-aanbod-ap:BoekingShape, mobiliteit-trips-en-aanbod-ap:DienstregelingShape, mobiliteit-trips-en-aanbod-ap:KenmerkShape, mobiliteit-trips-en-aanbod-ap:LicentieShape, mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape, mobiliteit-trips-en-aanbod-ap:OverstapShape, mobiliteit-trips-en-aanbod-ap:PseudoniemShape, mobiliteit-trips-en-aanbod-ap:ReizigerShape, mobiliteit-trips-en-aanbod-ap:ReservatieShape, mobiliteit-trips-en-aanbod-ap:ResourceShape, mobiliteit-trips-en-aanbod-ap:RouteShape, mobiliteit-trips-en-aanbod-ap:RoutebeschrijvingShape, mobiliteit-trips-en-aanbod-ap:RouteknoopShape, mobiliteit-trips-en-aanbod-ap:RouteplannerShape, mobiliteit-trips-en-aanbod-ap:RoutesegmentShape, mobiliteit-trips-en-aanbod-ap:ToegankelijkheidShape, mobiliteit-trips-en-aanbod-ap:TransportconnectieShape, mobiliteit-trips-en-aanbod-ap:UitvoerderShape, mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape, mobiliteit-trips-en-aanbod-ap:VoorkeurShape, mobiliteit-trips-en-aanbod-ap:WaardeShape, mobiliteit-trips-en-aanbod-ap:PeriodeShape, mobiliteit-trips-en-aanbod-ap:PubliekeOrganisatieShape, mobiliteit-trips-en-aanbod-ap:PlaatsShape, mobiliteit-trips-en-aanbod-ap:FormeelKaderShape, mobiliteit-trips-en-aanbod-ap:ContactInfoShape, mobiliteit-trips-en-aanbod-ap:OpeningsurenSpecificatieShape, mobiliteit-trips-en-aanbod-ap:LijnStringShape, mobiliteit-trips-en-aanbod-ap:PuntShape, mobiliteit-trips-en-aanbod-ap:PolygoonShape, mobiliteit-trips-en-aanbod-ap:GeografischeNaamShape, mobiliteit-trips-en-aanbod-ap:TaalStringShape, mobiliteit-trips-en-aanbod-ap:GetypeerdeStringShape, mobiliteit-trips-en-aanbod-ap:RoutetypeShape, mobiliteit-trips-en-aanbod-ap:VervoermiddelShape, mobiliteit-trips-en-aanbod-ap:ResourcetypeShape, mobiliteit-trips-en-aanbod-ap:DienstverleningtypeShape, mobiliteit-trips-en-aanbod-ap:ResourcestatusShape, mobiliteit-trips-en-aanbod-ap:ReizigerskenmerkShape, mobiliteit-trips-en-aanbod-ap:ReizigersvoorkeurShape, mobiliteit-trips-en-aanbod-ap:TransportgebiedtypeShape, mobiliteit-trips-en-aanbod-ap:TransportknooptypeShape, mobiliteit-trips-en-aanbod-ap:TekenShape, mobiliteit-trips-en-aanbod-ap:GebruikerstypeShape, mobiliteit-trips-en-aanbod-ap:VervoersbewijstypeShape, mobiliteit-trips-en-aanbod-ap:ToegankelijkheidsniveauShape, mobiliteit-trips-en-aanbod-ap:TransporttypeShape, mobiliteit-trips-en-aanbod-ap:ConnectietypeShape, mobiliteit-trips-en-aanbod-ap:ToegankelijkheidsonderdeelShape, mobiliteit-trips-en-aanbod-ap:ToegankelijkheidstypeShape, mobiliteit-trips-en-aanbod-ap:AandrijftypeShape, mobiliteit-trips-en-aanbod-ap:BoekingstatusShape, mobiliteit-trips-en-aanbod-ap:IdentificatorShape, mobiliteit-trips-en-aanbod-ap:GeometrieShape, mobiliteit-trips-en-aanbod-ap:LocatieShape, mobiliteit-trips-en-aanbod-ap:StandaardEenheidShape, mobiliteit-trips-en-aanbod-ap:GerichteLinkShape, mobiliteit-trips-en-aanbod-ap:LinkShape, mobiliteit-trips-en-aanbod-ap:TransportgebiedShape, mobiliteit-trips-en-aanbod-ap:TransportknoopShape, mobiliteit-trips-en-aanbod-ap:TransportnetwerkShape, mobiliteit-trips-en-aanbod-ap:TransportobjectShape, mobiliteit-trips-en-aanbod-ap:GeldbedragShape, mobiliteit-trips-en-aanbod-ap:GetalShape, mobiliteit-trips-en-aanbod-ap:PrijsplanShape, mobiliteit-trips-en-aanbod-ap:KwantitatieveWaardeShape, mobiliteit-trips-en-aanbod-ap:ReisShape.
 mobiliteit-trips-en-aanbod-ap:AanbiederShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1457 shacl:class schema:ContactPoint;
+_:n3-1402 shacl:class schema:ContactPoint;
     shacl:description "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren.";
     shacl:name "^contactinfo";
     shacl:path schema:contactPoint.
-mobiliteit-trips-en-aanbod-ap:AanbiederShape shacl:property _:n3-1457.
-_:n3-1458 shacl:class adms:Identifier;
+mobiliteit-trips-en-aanbod-ap:AanbiederShape shacl:property _:n3-1402.
+_:n3-1403 shacl:class adms:Identifier;
     shacl:description "Identificator die de organisatie verkreeg bij registratie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^registratie";
     shacl:path rov:registration.
-mobiliteit-trips-en-aanbod-ap:AanbiederShape shacl:property _:n3-1458.
-_:n3-1459 shacl:datatype rdf:langString;
+mobiliteit-trips-en-aanbod-ap:AanbiederShape shacl:property _:n3-1403.
+_:n3-1404 shacl:datatype rdf:langString;
     shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^voorkeursnaam";
     shacl:path skos:prefLabel.
-mobiliteit-trips-en-aanbod-ap:AanbiederShape shacl:property _:n3-1459;
+mobiliteit-trips-en-aanbod-ap:AanbiederShape shacl:property _:n3-1404;
     shacl:targetClass trips-en-aanbod:Aanbieder.
 mobiliteit-trips-en-aanbod-ap:AandrijftypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1460 shacl:class trips-en-aanbod:Dienstregeling;
+_:n3-1405 shacl:class trips-en-aanbod:Dienstregeling;
     shacl:description "Schema met tijdstippen waarop iets wordt aangeboden.";
     shacl:maxCount 1;
     shacl:name "dienstregeling";
     shacl:path trips-en-aanbod:dienstregeling.
-mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape shacl:property _:n3-1460.
-_:n3-1461 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape shacl:property _:n3-1405.
+_:n3-1406 shacl:class skos:Concept;
     shacl:description "Type gebruiker waarvoor de beschikbaarheid geldt.";
     shacl:maxCount 1;
     shacl:name "gebruiker";
     shacl:path trips-en-aanbod:gebruiker.
-mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape shacl:property _:n3-1461.
-_:n3-1462 shacl:class schema:OpeningHoursSpecification;
+mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape shacl:property _:n3-1406.
+_:n3-1407 shacl:class schema:OpeningHoursSpecification;
     shacl:description "Uren waarop iets beschikbaar is.";
     shacl:maxCount 1;
     shacl:name "openingsuren";
     shacl:path schemas:hoursAvailable.
-mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape shacl:property _:n3-1462.
-_:n3-1463 shacl:datatype rdfs:Literal;
+mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape shacl:property _:n3-1407.
+_:n3-1408 shacl:datatype rdfs:Literal;
     shacl:description "Uren waarop iets beschikbaar is.";
     shacl:maxCount 1;
     shacl:name "openingsurenString";
     shacl:path schema:openingHours.
-mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape shacl:property _:n3-1463.
-_:n3-1464 shacl:class eu:PeriodOfTime;
+mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape shacl:property _:n3-1408.
+_:n3-1409 shacl:class eu:PeriodOfTime;
     shacl:description "Periode waarin iets beschikbaar is.";
     shacl:maxCount 1;
     shacl:name "periode";
     shacl:path trips-en-aanbod:periode.
-mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape shacl:property _:n3-1464;
+mobiliteit-trips-en-aanbod-ap:BeschikbaarheidShape shacl:property _:n3-1409;
     shacl:targetClass trips-en-aanbod:Beschikbaarheid.
 mobiliteit-trips-en-aanbod-ap:BoekingShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1465 shacl:datatype xsd:dateTime;
+_:n3-1410 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de Boeking is gebeurd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "datum";
     shacl:path dcterms:date.
-mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1465.
-_:n3-1466 shacl:class schemas:MonetaryAmount;
+mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1410.
+_:n3-1411 shacl:class schemas:MonetaryAmount;
     shacl:description "Prijs die voor de geboekte Reis of gereserveerde Resource is betaald.";
     shacl:maxCount 1;
     shacl:name "prijs";
     shacl:path schemas:price.
-mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1466.
-_:n3-1467 shacl:class schemas:Trip;
+mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1411.
+_:n3-1412 shacl:class schemas:Trip;
     shacl:description "Reis die geboekt wordt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "reis";
     shacl:path trips-en-aanbod:reis.
-mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1467.
-_:n3-1468 shacl:class trips-en-aanbod:Resource;
+mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1412.
+_:n3-1413 shacl:class trips-en-aanbod:Resource;
     shacl:description "Resource die is gereserveerd.";
     shacl:name "resource";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Boeking.resource>.
-mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1468.
-_:n3-1469 cube:codeList <https://github.com/TOMP-WG/TOMP-API/blob/master/documents/191021%20-%20Blueprint%20for%20a%20TO-MP%20API%20v1.1.pdf>;
+mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1413.
+_:n3-1414 cube:codeList <https://github.com/TOMP-WG/TOMP-API/blob/master/documents/191021%20-%20Blueprint%20for%20a%20TO-MP%20API%20v1.1.pdf>;
     shacl:class skos:Concept;
     shacl:description "Status van de Boeking.";
     shacl:maxCount 1;
     shacl:name "status";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Boeking.status>.
-mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1469.
-_:n3-1470 shacl:class trips-en-aanbod:Vervoersbewijs;
+mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1414.
+_:n3-1415 shacl:class trips-en-aanbod:Vervoersbewijs;
     shacl:description "Vervoersbewijs voor de geboekte Reis.";
     shacl:name "vervoersbewijs";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Boeking.vervoersbewijs>.
-mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1470;
+mobiliteit-trips-en-aanbod-ap:BoekingShape shacl:property _:n3-1415;
     shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.boeking>.
 mobiliteit-trips-en-aanbod-ap:BoekingstatusShape a shacl:NodeShape;
     shacl:closed false;
@@ -356,29 +356,29 @@ mobiliteit-trips-en-aanbod-ap:DienstverleningtypeShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 mobiliteit-trips-en-aanbod-ap:FormeelKaderShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1471 shacl:datatype rdf:langString;
+_:n3-1416 shacl:datatype rdf:langString;
     shacl:description "Beschrijving van het formeel kader.";
     shacl:maxCount 1;
     shacl:name "beschrijving";
     shacl:path dcterms:description.
-mobiliteit-trips-en-aanbod-ap:FormeelKaderShape shacl:property _:n3-1471.
-_:n3-1472 shacl:class cpsv:FormalFramework;
+mobiliteit-trips-en-aanbod-ap:FormeelKaderShape shacl:property _:n3-1416.
+_:n3-1417 shacl:class cpsv:FormalFramework;
     shacl:description "Ander formeel kader dat met het formeel kader verband houdt.";
     shacl:name "isGerelateerdAan";
     shacl:path dcterms:relation.
-mobiliteit-trips-en-aanbod-ap:FormeelKaderShape shacl:property _:n3-1472.
-_:n3-1473 shacl:datatype rdf:langString;
+mobiliteit-trips-en-aanbod-ap:FormeelKaderShape shacl:property _:n3-1417.
+_:n3-1418 shacl:datatype rdf:langString;
     shacl:description "Naam vh formeel kader.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-mobiliteit-trips-en-aanbod-ap:FormeelKaderShape shacl:property _:n3-1473.
-_:n3-1474 shacl:class dcterms:Location;
+mobiliteit-trips-en-aanbod-ap:FormeelKaderShape shacl:property _:n3-1418.
+_:n3-1419 shacl:class dcterms:Location;
     shacl:description "Het geografisch bereik vh formeel kader.";
     shacl:name "toepassingsgebied";
     shacl:path eu:territorialApplication.
-mobiliteit-trips-en-aanbod-ap:FormeelKaderShape shacl:property _:n3-1474;
+mobiliteit-trips-en-aanbod-ap:FormeelKaderShape shacl:property _:n3-1419;
     shacl:targetClass cpsv:FormalFramework.
 mobiliteit-trips-en-aanbod-ap:GebruikerstypeShape a shacl:NodeShape;
     shacl:closed false;
@@ -391,35 +391,35 @@ mobiliteit-trips-en-aanbod-ap:GeografischeNaamShape a shacl:NodeShape;
     shacl:targetClass rdf:langString.
 mobiliteit-trips-en-aanbod-ap:GeometrieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1475 shacl:datatype rdfs:Literal;
+_:n3-1420 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in gml-formaat.";
     shacl:maxCount 1;
     shacl:name "gml";
     shacl:path geosparql:asGML.
-mobiliteit-trips-en-aanbod-ap:GeometrieShape shacl:property _:n3-1475.
-_:n3-1476 shacl:datatype rdfs:Literal;
+mobiliteit-trips-en-aanbod-ap:GeometrieShape shacl:property _:n3-1420.
+_:n3-1421 shacl:datatype rdfs:Literal;
     shacl:description "Geometrie uitgedrukt in wkt-formaat.";
     shacl:maxCount 1;
     shacl:name "wkt";
     shacl:path geosparql:asWKT.
-mobiliteit-trips-en-aanbod-ap:GeometrieShape shacl:property _:n3-1476;
+mobiliteit-trips-en-aanbod-ap:GeometrieShape shacl:property _:n3-1421;
     shacl:targetClass locn:Geometry.
 mobiliteit-trips-en-aanbod-ap:GerichteLinkShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1477 shacl:class netwerk:Link;
+_:n3-1422 shacl:class netwerk:Link;
     shacl:description "Verwijzing naar de Link.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "link";
     shacl:path <https://data.vlaanderen.be/ns/netwerk#GerichteLink.link>.
-mobiliteit-trips-en-aanbod-ap:GerichteLinkShape shacl:property _:n3-1477.
-_:n3-1478 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:GerichteLinkShape shacl:property _:n3-1422.
+_:n3-1423 shacl:class skos:Concept;
     shacl:description "Geeft aan of de richting van de link overeenstemt met zijn positieve of zijn negatieve richting.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "richting";
     shacl:path netwerk:richting.
-mobiliteit-trips-en-aanbod-ap:GerichteLinkShape shacl:property _:n3-1478;
+mobiliteit-trips-en-aanbod-ap:GerichteLinkShape shacl:property _:n3-1423;
     shacl:targetClass netwerk:GerichteLink.
 mobiliteit-trips-en-aanbod-ap:GetalShape a shacl:NodeShape;
     shacl:closed false;
@@ -432,386 +432,386 @@ mobiliteit-trips-en-aanbod-ap:IdentificatorShape a shacl:NodeShape;
     shacl:targetClass adms:Identifier.
 mobiliteit-trips-en-aanbod-ap:KenmerkShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1479 shacl:class skos:Concept;
+_:n3-1424 shacl:class skos:Concept;
     shacl:description "Aard van het Kenmerk van de Reiziger.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:KenmerkShape shacl:property _:n3-1479.
-_:n3-1480 shacl:class trips-en-aanbod:Waarde;
+mobiliteit-trips-en-aanbod-ap:KenmerkShape shacl:property _:n3-1424.
+_:n3-1425 shacl:class trips-en-aanbod:Waarde;
     shacl:description "Waarde van het Kenmerk van de reiziger.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-mobiliteit-trips-en-aanbod-ap:KenmerkShape shacl:property _:n3-1480;
+mobiliteit-trips-en-aanbod-ap:KenmerkShape shacl:property _:n3-1425;
     shacl:targetClass trips-en-aanbod:Kenmerk.
 mobiliteit-trips-en-aanbod-ap:KwantitatieveWaardeShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1481 shacl:datatype xsd:string;
+_:n3-1426 shacl:datatype xsd:string;
     shacl:description "De eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "eenheid";
     shacl:path schemas:unitText.
-mobiliteit-trips-en-aanbod-ap:KwantitatieveWaardeShape shacl:property _:n3-1481.
-_:n3-1482 shacl:class generiek:StandaardEenheid;
+mobiliteit-trips-en-aanbod-ap:KwantitatieveWaardeShape shacl:property _:n3-1426.
+_:n3-1427 shacl:class generiek:StandaardEenheid;
     shacl:description "De gestandaardiseerde eenheid waarin de waarde is uitgedrukt.";
     shacl:maxCount 1;
     shacl:name "standaardEenheid";
     shacl:path schemas:unitCode.
-mobiliteit-trips-en-aanbod-ap:KwantitatieveWaardeShape shacl:property _:n3-1482.
-_:n3-1483 shacl:class schemas:Number;
+mobiliteit-trips-en-aanbod-ap:KwantitatieveWaardeShape shacl:property _:n3-1427.
+_:n3-1428 shacl:class schemas:Number;
     shacl:description "Getal waarmee de kwantiteit van het kenmerk kan worden uitgedrukt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-mobiliteit-trips-en-aanbod-ap:KwantitatieveWaardeShape shacl:property _:n3-1483;
+mobiliteit-trips-en-aanbod-ap:KwantitatieveWaardeShape shacl:property _:n3-1428;
     shacl:targetClass schemas:QuantitativeValue.
 mobiliteit-trips-en-aanbod-ap:LicentieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1484 shacl:class cpsv:FormalFramework;
+_:n3-1429 shacl:class cpsv:FormalFramework;
     shacl:description "Formeel Kader waarbinnen de Licentie is verkregen.";
     shacl:name "VerkregenBinnen";
     shacl:path trips-en-aanbod:verkregenBinnen.
-mobiliteit-trips-en-aanbod-ap:LicentieShape shacl:property _:n3-1484.
-_:n3-1485 shacl:class eu:PeriodOfTime;
+mobiliteit-trips-en-aanbod-ap:LicentieShape shacl:property _:n3-1429.
+_:n3-1430 shacl:class eu:PeriodOfTime;
     shacl:description "Periode waarvoor de Licentie geldt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "periode";
     shacl:path dcterms:date.
-mobiliteit-trips-en-aanbod-ap:LicentieShape shacl:property _:n3-1485.
-_:n3-1486 shacl:class dcterms:Location;
+mobiliteit-trips-en-aanbod-ap:LicentieShape shacl:property _:n3-1430.
+_:n3-1431 shacl:class dcterms:Location;
     shacl:description "Gebied of Plaats waarbinnen de Licentie geldt.";
     shacl:minCount 1;
     shacl:name "toepassingsgebied";
     shacl:path eu:territorialApplication.
-mobiliteit-trips-en-aanbod-ap:LicentieShape shacl:property _:n3-1486.
-_:n3-1487 shacl:class eu:PublicOrganisation;
+mobiliteit-trips-en-aanbod-ap:LicentieShape shacl:property _:n3-1431.
+_:n3-1432 shacl:class eu:PublicOrganisation;
     shacl:description "Publieke Organisatie verantwoordelijk voor het verkeersmanagement of de planning, controle of het beheer van een bepaald vervoersnetwerk of vervoerswijze, of beide, die onder haar territoriale bevoegdheid vallen.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "vervoersautoriteit";
     shacl:path trips-en-aanbod:vervoersautoriteit.
-mobiliteit-trips-en-aanbod-ap:LicentieShape shacl:property _:n3-1487;
+mobiliteit-trips-en-aanbod-ap:LicentieShape shacl:property _:n3-1432;
     shacl:targetClass trips-en-aanbod:Licentie.
 mobiliteit-trips-en-aanbod-ap:LijnStringShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass sf:LineString.
 mobiliteit-trips-en-aanbod-ap:LinkShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1488 shacl:class sf:LineString;
+_:n3-1433 shacl:class sf:LineString;
     shacl:description "Geometrie van de midellijn van de Link.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometriemiddellijn";
     shacl:path netwerk:geometriemiddellijn.
-mobiliteit-trips-en-aanbod-ap:LinkShape shacl:property _:n3-1488;
+mobiliteit-trips-en-aanbod-ap:LinkShape shacl:property _:n3-1433;
     shacl:targetClass netwerk:Link.
 mobiliteit-trips-en-aanbod-ap:LocatieShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass prov:Location.
 mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1489 shacl:class cpsv:FormalFramework;
+_:n3-1434 shacl:class cpsv:FormalFramework;
     shacl:description "Formeel Kader waarbinnen de Mobiliteitsdienst wordt aangeboden.";
     shacl:name "AangebodenBinnen";
     shacl:path trips-en-aanbod:aangebodenBinnen.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1489.
-_:n3-1490 shacl:class transportnetwerk:Transportobject;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1434.
+_:n3-1435 shacl:class transportnetwerk:Transportobject;
     shacl:description "Transportobject waarop de Mobiliteitsdienst wordt aangeboden.";
     shacl:name "BeschikbaarOp";
     shacl:path trips-en-aanbod:beschikbaarOp.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1490.
-_:n3-1491 shacl:class trips-en-aanbod:Mobiliteitsdienst;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1435.
+_:n3-1436 shacl:class trips-en-aanbod:Mobiliteitsdienst;
     shacl:description "Meer specifieke Mobiliteitsdiensten waaruit de Mobiliteitsdienst is samengesteld.";
     shacl:name "Omvat";
     shacl:path trips-en-aanbod:omvat.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1491.
-_:n3-1492 shacl:class trips-en-aanbod:Uitvoerder;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1436.
+_:n3-1437 shacl:class trips-en-aanbod:Uitvoerder;
     shacl:description "Uitvoerder van de Mobiliteitsdienst.";
     shacl:minCount 1;
     shacl:name "UitgevoerdDoor";
     shacl:path trips-en-aanbod:uitgevoerdDoor.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1492.
-_:n3-1493 shacl:class trips-en-aanbod:Aanbieder;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1437.
+_:n3-1438 shacl:class trips-en-aanbod:Aanbieder;
     shacl:description "De aanbieder van de Mobiliteitsdienst.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "aanbieder";
     shacl:path trips-en-aanbod:aanbieder.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1493.
-_:n3-1494 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1438.
+_:n3-1439 shacl:class skos:Concept;
     shacl:description "Aandrijving van het vervoermiddel waarmee of waarvoor de Mobiliteitsdienst doorgaans wordt georganiseerd.";
     shacl:name "aandrijving";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.aandrijving>.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1494.
-_:n3-1495 shacl:class trips-en-aanbod:Beschikbaarheid;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1439.
+_:n3-1440 shacl:class trips-en-aanbod:Beschikbaarheid;
     shacl:description "Beschikbaarheid van de Mobiliteitsdienst.";
     shacl:name "beschikbaarheid";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.beschikbaarheid>.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1495.
-_:n3-1496 shacl:class trips-en-aanbod:Licentie;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1440.
+_:n3-1441 shacl:class trips-en-aanbod:Licentie;
     shacl:description "Licentie waaronder de Mobiliteitsdienst wordt aangeboden.";
     shacl:name "licentie";
     shacl:path trips-en-aanbod:licentie.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1496.
-_:n3-1497 shacl:datatype rdf:langString;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1441.
+_:n3-1442 shacl:datatype rdf:langString;
     shacl:description "Naam van de Mobiliteitsdienst.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1497.
-_:n3-1498 shacl:class schemas:PriceSpecification;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1442.
+_:n3-1443 shacl:class schemas:PriceSpecification;
     shacl:description "Prijsplan van de Mobiliteitsdienst.";
     shacl:name "prijsplan";
     shacl:path trips-en-aanbod:prijsplan.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1498.
-_:n3-1499 shacl:class trips-en-aanbod:Resource;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1443.
+_:n3-1444 shacl:class trips-en-aanbod:Resource;
     shacl:description "Resource waarover de Mobiliteitsdienst beschikt.";
     shacl:name "resource";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.resource>.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1499.
-_:n3-1500 shacl:class dcterms:Location;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1444.
+_:n3-1445 shacl:class dcterms:Location;
     shacl:description "Gebied of Plaats waarbinnen de Mobiliteitsdienst wordt aangeboden.";
     shacl:name "ruimtelijkeDekking";
     shacl:path dcterms:spatial.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1500.
-_:n3-1501 shacl:class trips-en-aanbod:Toegankelijkheid;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1445.
+_:n3-1446 shacl:class trips-en-aanbod:Toegankelijkheid;
     shacl:description "Toegankelijkheid van de Mobiliteitsdienst.";
     shacl:name "toegankelijkheid";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.toegankelijkheid>.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1501.
-_:n3-1502 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1446.
+_:n3-1447 shacl:class skos:Concept;
     shacl:description "Aard van de mobiliteitsdienst.";
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1502.
-_:n3-1503 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1447.
+_:n3-1448 shacl:class skos:Concept;
     shacl:description "Vervoermiddel waarmee of waarvoor de Mobiliteitsdienst doorgaans wordt georganiseerd.";
     shacl:name "vervoermiddel";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Mobiliteitsdienst.vervoermiddel>.
-mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1503;
+mobiliteit-trips-en-aanbod-ap:MobiliteitsdienstShape shacl:property _:n3-1448;
     shacl:targetClass trips-en-aanbod:Mobiliteitsdienst.
 mobiliteit-trips-en-aanbod-ap:OpeningsurenSpecificatieShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass schema:OpeningHoursSpecification.
 mobiliteit-trips-en-aanbod-ap:OverstapShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1504 shacl:class transportnetwerk:Transportobject;
+_:n3-1449 shacl:class transportnetwerk:Transportobject;
     shacl:description "Transportobject waarmee de Routeconnectie samenvalt.";
     shacl:maxCount 1;
     shacl:name "GerealiseerdOp";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Overstap.gerealiseerdOp>.
-mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1504.
-_:n3-1505 shacl:class trips-en-aanbod:Routeknoop;
+mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1449.
+_:n3-1450 shacl:class trips-en-aanbod:Routeknoop;
     shacl:description "Referentie naar verbonden klasse.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "Routeknoop";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Overstap.routeknoop.source>.
-mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1505.
-_:n3-1506 shacl:class trips-en-aanbod:Routeknoop;
+mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1450.
+_:n3-1451 shacl:class trips-en-aanbod:Routeknoop;
     shacl:description "Referentie naar verbonden klasse.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "Routeknoop";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Overstap.routeknoop.target>.
-mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1506.
-_:n3-1507 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1451.
+_:n3-1452 shacl:class skos:Concept;
     shacl:description "Aandrijving van het vervoermiddel waarmee de Overstap gebeurt.";
     shacl:maxCount 1;
     shacl:name "aandrijving";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Overstap.aandrijving>.
-mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1507.
-_:n3-1508 shacl:datatype xsd:duration;
+mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1452.
+_:n3-1453 shacl:datatype xsd:duration;
     shacl:description "Tijd waarin de overstap gebeurt.";
     shacl:maxCount 1;
     shacl:name "overstaptijd";
     shacl:path trips-en-aanbod:overstaptijd.
-mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1508.
-_:n3-1509 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1453.
+_:n3-1454 shacl:class skos:Concept;
     shacl:description "Vervoermiddel waarmee de Overstap gebeurt.";
     shacl:maxCount 1;
     shacl:name "vervoermiddel";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Overstap.vervoermiddel>.
-mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1509;
+mobiliteit-trips-en-aanbod-ap:OverstapShape shacl:property _:n3-1454;
     shacl:targetClass trips-en-aanbod:overstap.
 mobiliteit-trips-en-aanbod-ap:PeriodeShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1510 shacl:datatype xsd:dateTime;
+_:n3-1455 shacl:datatype xsd:dateTime;
     shacl:description "Aanvang van de tijdsduur.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "begin";
     shacl:path eu:startTime.
-mobiliteit-trips-en-aanbod-ap:PeriodeShape shacl:property _:n3-1510.
-_:n3-1511 shacl:datatype xsd:dateTime;
+mobiliteit-trips-en-aanbod-ap:PeriodeShape shacl:property _:n3-1455.
+_:n3-1456 shacl:datatype xsd:dateTime;
     shacl:description "Einde vd tijdsduur.";
     shacl:maxCount 1;
     shacl:name "einde";
     shacl:path eu:endTime.
-mobiliteit-trips-en-aanbod-ap:PeriodeShape shacl:property _:n3-1511;
+mobiliteit-trips-en-aanbod-ap:PeriodeShape shacl:property _:n3-1456;
     shacl:targetClass eu:PeriodOfTime.
 mobiliteit-trips-en-aanbod-ap:PlaatsShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1512 shacl:class locn:Geometry;
+_:n3-1457 shacl:class locn:Geometry;
     shacl:description "Geometrie van de plaats of het gebied.";
     shacl:maxCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-mobiliteit-trips-en-aanbod-ap:PlaatsShape shacl:property _:n3-1512.
-_:n3-1513 shacl:datatype rdf:langString;
+mobiliteit-trips-en-aanbod-ap:PlaatsShape shacl:property _:n3-1457.
+_:n3-1458 shacl:datatype rdf:langString;
     shacl:description "Naam van de plaats of van het gebied.";
     shacl:maxCount 1;
     shacl:name "plaatsnaam";
     shacl:path rdfs:label.
-mobiliteit-trips-en-aanbod-ap:PlaatsShape shacl:property _:n3-1513;
+mobiliteit-trips-en-aanbod-ap:PlaatsShape shacl:property _:n3-1458;
     shacl:targetClass dcterms:Location.
 mobiliteit-trips-en-aanbod-ap:PolygoonShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass sf:Polygon.
 mobiliteit-trips-en-aanbod-ap:PrijsplanShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1514 shacl:datatype rdf:langString;
+_:n3-1459 shacl:datatype rdf:langString;
     shacl:description "Beschrijving van het Prijsplan.";
     shacl:maxCount 1;
     shacl:name "beschrijving";
     shacl:path dcterms:description.
-mobiliteit-trips-en-aanbod-ap:PrijsplanShape shacl:property _:n3-1514.
-_:n3-1515 shacl:datatype rdf:langString;
+mobiliteit-trips-en-aanbod-ap:PrijsplanShape shacl:property _:n3-1459.
+_:n3-1460 shacl:datatype rdf:langString;
     shacl:description "Naam van het Prijsplan.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-mobiliteit-trips-en-aanbod-ap:PrijsplanShape shacl:property _:n3-1515;
+mobiliteit-trips-en-aanbod-ap:PrijsplanShape shacl:property _:n3-1460;
     shacl:targetClass schemas:PriceSpecification.
 mobiliteit-trips-en-aanbod-ap:PseudoniemShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass trips-en-aanbod:Pseudoniem.
 mobiliteit-trips-en-aanbod-ap:PubliekeOrganisatieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1516 shacl:class schema:ContactPoint;
+_:n3-1461 shacl:class schema:ContactPoint;
     shacl:description "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^contactinfo";
     shacl:path schema:contactPoint.
-mobiliteit-trips-en-aanbod-ap:PubliekeOrganisatieShape shacl:property _:n3-1516.
-_:n3-1517 shacl:class adms:Identifier;
+mobiliteit-trips-en-aanbod-ap:PubliekeOrganisatieShape shacl:property _:n3-1461.
+_:n3-1462 shacl:class adms:Identifier;
     shacl:description "Identificator van de Publieke Organisatie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^identificator";
     shacl:path adms:identifier.
-mobiliteit-trips-en-aanbod-ap:PubliekeOrganisatieShape shacl:property _:n3-1517.
-_:n3-1518 shacl:datatype rdf:langString;
+mobiliteit-trips-en-aanbod-ap:PubliekeOrganisatieShape shacl:property _:n3-1462.
+_:n3-1463 shacl:datatype rdf:langString;
     shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^voorkeursnaam";
     shacl:path skos:prefLabel.
-mobiliteit-trips-en-aanbod-ap:PubliekeOrganisatieShape shacl:property _:n3-1518.
-_:n3-1519 shacl:class dcterms:Location;
+mobiliteit-trips-en-aanbod-ap:PubliekeOrganisatieShape shacl:property _:n3-1463.
+_:n3-1464 shacl:class dcterms:Location;
     shacl:description "Administratief gebied dat de Publieke Organisatie dekt.";
     shacl:name "werkingsgebied";
     shacl:path dcterms:spatial.
-mobiliteit-trips-en-aanbod-ap:PubliekeOrganisatieShape shacl:property _:n3-1519;
+mobiliteit-trips-en-aanbod-ap:PubliekeOrganisatieShape shacl:property _:n3-1464;
     shacl:targetClass eu:PublicOrganisation.
 mobiliteit-trips-en-aanbod-ap:PuntShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass sf:Point.
 mobiliteit-trips-en-aanbod-ap:ReisShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1520 shacl:class schemas:Trip;
+_:n3-1465 shacl:class schemas:Trip;
     shacl:description "Deel van een volledige Reis dat op zichzelf ook beschouwd kan worden als een Reis.";
     shacl:name "IsDeelVan";
     shacl:path schema:partOfTrip.
-mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1520.
-_:n3-1521 shacl:datatype xsd:dateTime;
+mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1465.
+_:n3-1466 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de Reis afgelopen is of waarop de Reiziger zou willen dat ze is afgelopen.";
     shacl:maxCount 1;
     shacl:name "aankomsttijdstip";
     shacl:path schemas:arrivalTime.
-mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1521.
-_:n3-1522 shacl:class trips-en-aanbod:Boeking;
+mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1466.
+_:n3-1467 shacl:class trips-en-aanbod:Boeking;
     shacl:description "Boeking van de Reis.";
     shacl:name "boeking";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reis.boeking>.
-mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1522.
-_:n3-1523 shacl:class trips-en-aanbod:Route;
+mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1467.
+_:n3-1468 shacl:class trips-en-aanbod:Route;
     shacl:description "Route die de Reiziger kiest uit de mogelijke Routes.";
     shacl:name "gekozenRoute";
     shacl:path trips-en-aanbod:gekozenRoute.
-mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1523.
-_:n3-1524 shacl:class trips-en-aanbod:Route;
+mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1468.
+_:n3-1469 shacl:class trips-en-aanbod:Route;
     shacl:description "Routes die gevolgd kunnen worden om de Reis uit te voeren.";
     shacl:name "mogelijkeRoute";
     shacl:path trips-en-aanbod:mogelijkeRoute.
-mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1524.
-_:n3-1525 shacl:class prov:Location;
+mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1469.
+_:n3-1470 shacl:class prov:Location;
     shacl:description "Opeenvolging van Locaties die men tijdens de Reis wil aandoen.";
     shacl:minCount 2;
     shacl:name "reisweg";
     shacl:path schema:itinerary.
-mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1525.
-_:n3-1526 shacl:class trips-en-aanbod:Route;
+mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1470.
+_:n3-1471 shacl:class trips-en-aanbod:Route;
     shacl:description "Route die uiteindelijk uitgevoerd is om de Reis te realiseren.";
     shacl:maxCount 1;
     shacl:name "uitgevoerdeRoute";
     shacl:path trips-en-aanbod:uitgevoerdeRoute.
-mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1526.
-_:n3-1527 shacl:datatype xsd:dateTime;
+mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1471.
+_:n3-1472 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de Reis aanvangt of waarop de Reiziger zou willen dat ze aanvangt.";
     shacl:maxCount 1;
     shacl:name "vertrektijdstip";
     shacl:path schemas:departureTime.
-mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1527.
-_:n3-1528 shacl:class trips-en-aanbod:Vervoersbewijs;
+mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1472.
+_:n3-1473 shacl:class trips-en-aanbod:Vervoersbewijs;
     shacl:description "Vervoersbewijs voor de Reis.";
     shacl:name "vervoersbewijs";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reis.vervoersbewijs>.
-mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1528;
+mobiliteit-trips-en-aanbod-ap:ReisShape shacl:property _:n3-1473;
     shacl:targetClass schemas:Trip.
 mobiliteit-trips-en-aanbod-ap:ReizigerShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1529 shacl:class trips-en-aanbod:Reiziger;
+_:n3-1474 shacl:class trips-en-aanbod:Reiziger;
     shacl:description "Reiziger die de Reiziger vergezelt tijdens de Reis.";
     shacl:name "IsMedereizigerVan";
     shacl:path trips-en-aanbod:isMedereizigerVan.
-mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1529.
-_:n3-1530 shacl:class schemas:Trip;
+mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1474.
+_:n3-1475 shacl:class schemas:Trip;
     shacl:description "Reis die een Reiziger onderneemt of wil ondernemen.";
     shacl:name "Onderneemt";
     shacl:path trips-en-aanbod:onderneemt.
-mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1530.
-_:n3-1531 shacl:class trips-en-aanbod:Kenmerk;
+mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1475.
+_:n3-1476 shacl:class trips-en-aanbod:Kenmerk;
     shacl:description "Kenmerk van de Reiziger.";
     shacl:name "kenmerk";
     shacl:path trips-en-aanbod:kenmerk.
-mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1531.
-_:n3-1532 shacl:class trips-en-aanbod:Pseudoniem;
+mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1476.
+_:n3-1477 shacl:class trips-en-aanbod:Pseudoniem;
     shacl:description "Naam van de Reiziger die afwijkt van zijn werkelijke naam.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "pseudoniem";
     shacl:path trips-en-aanbod:pseudoniem.
-mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1532.
-_:n3-1533 shacl:class trips-en-aanbod:Vervoersbewijs;
+mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1477.
+_:n3-1478 shacl:class trips-en-aanbod:Vervoersbewijs;
     shacl:description "Vervoersbewijs van de Reiziger.";
     shacl:name "vervoersbewijs";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reiziger.vervoersbewijs>.
-mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1533.
-_:n3-1534 shacl:class trips-en-aanbod:Voorkeur;
+mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1478.
+_:n3-1479 shacl:class trips-en-aanbod:Voorkeur;
     shacl:description "Voorkeuren van de Reiziger.";
     shacl:name "voorkeur";
     shacl:path trips-en-aanbod:voorkeur.
-mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1534;
+mobiliteit-trips-en-aanbod-ap:ReizigerShape shacl:property _:n3-1479;
     shacl:targetClass trips-en-aanbod:Reiziger.
 mobiliteit-trips-en-aanbod-ap:ReizigerskenmerkShape a shacl:NodeShape;
     shacl:closed false;
@@ -821,78 +821,78 @@ mobiliteit-trips-en-aanbod-ap:ReizigersvoorkeurShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 mobiliteit-trips-en-aanbod-ap:ReservatieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1535 shacl:class trips-en-aanbod:Boeking;
+_:n3-1480 shacl:class trips-en-aanbod:Boeking;
     shacl:description "Referentie naar verbonden klasse.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "Boeking";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.boeking>.
-mobiliteit-trips-en-aanbod-ap:ReservatieShape shacl:property _:n3-1535.
-_:n3-1536 shacl:class trips-en-aanbod:Resource;
+mobiliteit-trips-en-aanbod-ap:ReservatieShape shacl:property _:n3-1480.
+_:n3-1481 shacl:class trips-en-aanbod:Resource;
     shacl:description "Referentie naar verbonden klasse.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "Resource";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.resource>.
-mobiliteit-trips-en-aanbod-ap:ReservatieShape shacl:property _:n3-1536.
-_:n3-1537 shacl:class eu:PeriodOfTime;
+mobiliteit-trips-en-aanbod-ap:ReservatieShape shacl:property _:n3-1481.
+_:n3-1482 shacl:class eu:PeriodOfTime;
     shacl:description "Periode waarvoor iets gereserveerd wordt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "periode";
     shacl:path dcterms:date.
-mobiliteit-trips-en-aanbod-ap:ReservatieShape shacl:property _:n3-1537.
-_:n3-1538 shacl:class prov:Location;
+mobiliteit-trips-en-aanbod-ap:ReservatieShape shacl:property _:n3-1482.
+_:n3-1483 shacl:class prov:Location;
     shacl:description "Reisweg waarvoor iets gereserveerd wordt.";
     shacl:name "reisweg";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.reisweg>.
-mobiliteit-trips-en-aanbod-ap:ReservatieShape shacl:property _:n3-1538;
+mobiliteit-trips-en-aanbod-ap:ReservatieShape shacl:property _:n3-1483;
     shacl:targetClass trips-en-aanbod:Reservatie.
 mobiliteit-trips-en-aanbod-ap:ResourceShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1539 shacl:class skos:Concept;
+_:n3-1484 shacl:class skos:Concept;
     shacl:description "Aandrijving van het vervoermiddel.";
     shacl:maxCount 1;
     shacl:name "aandrijving";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.aandrijving>.
-mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1539.
-_:n3-1540 shacl:class trips-en-aanbod:Mobiliteitsdienst;
+mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1484.
+_:n3-1485 shacl:class trips-en-aanbod:Mobiliteitsdienst;
     shacl:description "Mobiliteitsdienst van de Resource.";
     shacl:minCount 1;
     shacl:name "dienst";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.dienst>.
-mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1540.
-_:n3-1541 shacl:datatype rdfs:Literal;
+mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1485.
+_:n3-1486 shacl:datatype rdfs:Literal;
     shacl:description "Identificator van de Resource.";
     shacl:maxCount 1;
     shacl:name "identificator";
     shacl:path trips-en-aanbod:identificator.
-mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1541.
-_:n3-1542 shacl:class prov:Location;
+mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1486.
+_:n3-1487 shacl:class prov:Location;
     shacl:description "Plaats waar de Resource zich bevindt.";
     shacl:maxCount 1;
     shacl:name "locatie";
     shacl:path dcterms:spatial.
-mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1542.
-_:n3-1543 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1487.
+_:n3-1488 shacl:class skos:Concept;
     shacl:description "Toestand waarin een Resource zich bevindt.";
     shacl:maxCount 1;
     shacl:name "status";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.status>.
-mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1543.
-_:n3-1544 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1488.
+_:n3-1489 shacl:class skos:Concept;
     shacl:description "Aard van de Resource.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1544.
-_:n3-1545 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1489.
+_:n3-1490 shacl:class skos:Concept;
     shacl:description "Het type vervoermiddel van de Resource.";
     shacl:maxCount 1;
     shacl:name "vervoermiddel";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Resource.vervoermiddel>.
-mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1545;
+mobiliteit-trips-en-aanbod-ap:ResourceShape shacl:property _:n3-1490;
     shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Reservatie.resource>.
 mobiliteit-trips-en-aanbod-ap:ResourcestatusShape a shacl:NodeShape;
     shacl:closed false;
@@ -902,207 +902,207 @@ mobiliteit-trips-en-aanbod-ap:ResourcetypeShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 mobiliteit-trips-en-aanbod-ap:RouteShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1546 shacl:class trips-en-aanbod:Routeplanner;
+_:n3-1491 shacl:class trips-en-aanbod:Routeplanner;
     shacl:description "Routeplanner waarmee de Route is berekend.";
     shacl:maxCount 1;
     shacl:name "BerekendMet";
     shacl:path trips-en-aanbod:berekendMet.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1546.
-_:n3-1547 shacl:class trips-en-aanbod:Routesegment;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1491.
+_:n3-1492 shacl:class trips-en-aanbod:Routesegment;
     shacl:description "Opeenvolging van Routesegmenten waaruit de Route bestaat.";
     shacl:minCount 1;
     shacl:name "BestaatUit";
     shacl:path trips-en-aanbod:bestaatUit.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1547.
-_:n3-1548 shacl:class prov:Location;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1492.
+_:n3-1493 shacl:class prov:Location;
     shacl:description "Locatie waar de Route eindigt.";
     shacl:maxCount 1;
     shacl:name "aankomstpunt";
     shacl:path trips-en-aanbod:aankomstpunt.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1548.
-_:n3-1549 shacl:datatype xsd:dateTime;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1493.
+_:n3-1494 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de Route eindigt.";
     shacl:maxCount 1;
     shacl:name "aankomsttijdstip";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.aankomsttijdstip>.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1549.
-_:n3-1550 shacl:class schemas:QuantitativeValue;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1494.
+_:n3-1495 shacl:class schemas:QuantitativeValue;
     shacl:maxCount 1;
     shacl:name "afstand";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.afstand>.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1550.
-_:n3-1551 shacl:class schemas:MonetaryAmount;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1495.
+_:n3-1496 shacl:class schemas:MonetaryAmount;
     shacl:description "Prijs van de Route.";
     shacl:maxCount 1;
     shacl:name "kostprijs";
     shacl:path trips-en-aanbod:kostprijs.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1551.
-_:n3-1552 shacl:datatype xsd:duration;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1496.
+_:n3-1497 shacl:datatype xsd:duration;
     shacl:description "Tijd waarin de Route wordt afgelegd.";
     shacl:maxCount 1;
     shacl:name "reisduur";
     shacl:path trips-en-aanbod:reisduur.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1552.
-_:n3-1553 shacl:class trips-en-aanbod:Routebeschrijving;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1497.
+_:n3-1498 shacl:class trips-en-aanbod:Routebeschrijving;
     shacl:description "Beschrijving van de Route.";
     shacl:maxCount 1;
     shacl:name "routebeschrijving";
     shacl:path trips-en-aanbod:routebeschrijving.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1553.
-_:n3-1554 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1498.
+_:n3-1499 shacl:class skos:Concept;
     shacl:description "Aard van de Route.";
     shacl:maxCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1554.
-_:n3-1555 shacl:class prov:Location;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1499.
+_:n3-1500 shacl:class prov:Location;
     shacl:description "Locatie waar de Route begint.";
     shacl:maxCount 1;
     shacl:name "vertrekpunt";
     shacl:path trips-en-aanbod:vertrekpunt.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1555.
-_:n3-1556 shacl:datatype xsd:dateTime;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1500.
+_:n3-1501 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop de Route begint.";
     shacl:maxCount 1;
     shacl:name "vertrektijdstip";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Route.vertrektijdstip>.
-mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1556;
+mobiliteit-trips-en-aanbod-ap:RouteShape shacl:property _:n3-1501;
     shacl:targetClass trips-en-aanbod:Route.
 mobiliteit-trips-en-aanbod-ap:RoutebeschrijvingShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass trips-en-aanbod:Routebeschrijving.
 mobiliteit-trips-en-aanbod-ap:RouteknoopShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1557 shacl:class trips-en-aanbod:Mobiliteitsdienst;
+_:n3-1502 shacl:class trips-en-aanbod:Mobiliteitsdienst;
     shacl:description "Mobiliteitsdienst die de Reiziger heeft gebruikt in de Routeknoop.";
     shacl:maxCount 1;
     shacl:name "GerealiseerdDoor";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routeknoop.gerealiseerdDoor>.
-mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1557.
-_:n3-1558 shacl:class trips-en-aanbod:Resource;
+mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1502.
+_:n3-1503 shacl:class trips-en-aanbod:Resource;
     shacl:description "Resource van de Mobiliteitsdienst die de reiziger heeft gebruikt in de Routeknoop.";
     shacl:maxCount 1;
     shacl:name "GerealiseerdMet";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routeknoop.gerealiseerdMet>.
-mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1558.
-_:n3-1559 shacl:class transportnetwerk:Transportobject;
+mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1503.
+_:n3-1504 shacl:class transportnetwerk:Transportobject;
     shacl:description "Transportobject dat met de Routeknoop samenvalt.";
     shacl:maxCount 1;
     shacl:name "GerealiseerdOp";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routeknoop.gerealiseerdOp>.
-mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1559.
-_:n3-1560 shacl:class trips-en-aanbod:Routeknoop;
+mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1504.
+_:n3-1505 shacl:class trips-en-aanbod:Routeknoop;
     shacl:description "Routeknoop waarnaar wordt overgestapt.";
     shacl:maxCount 1;
     shacl:name "Overstap";
     shacl:path trips-en-aanbod:overstap.
-mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1560.
-_:n3-1561 shacl:class sf:Point;
+mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1505.
+_:n3-1506 shacl:class sf:Point;
     shacl:description "Locatie van de Routeknoop.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "geometrie";
     shacl:path locn:geometry.
-mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1561.
-_:n3-1562 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1506.
+_:n3-1507 shacl:class skos:Concept;
     shacl:description "Aard van de Routeknoop.";
     shacl:maxCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1562.
-_:n3-1563 shacl:class trips-en-aanbod:Vervoersbewijs;
+mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1507.
+_:n3-1508 shacl:class trips-en-aanbod:Vervoersbewijs;
     shacl:description "Vervoersbewijs dat nodig is of gebruikt is in de Routeknoop.";
     shacl:maxCount 1;
     shacl:name "vervoersbewijs";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routeknoop.vervoersbewijs>.
-mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1563;
+mobiliteit-trips-en-aanbod-ap:RouteknoopShape shacl:property _:n3-1508;
     shacl:targetClass <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Overstap.routeknoop.target>.
 mobiliteit-trips-en-aanbod-ap:RouteplannerShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1564 shacl:class transportnetwerk:Transportnetwerk;
+_:n3-1509 shacl:class transportnetwerk:Transportnetwerk;
     shacl:description "Info over Transportnetwerken die een Routeplanner gebruikt om Routes te berekenen.";
     shacl:name "IntegreertInfoOver";
     shacl:path trips-en-aanbod:integreertInfoOver.
-mobiliteit-trips-en-aanbod-ap:RouteplannerShape shacl:property _:n3-1564.
-_:n3-1565 shacl:datatype xsd:string;
+mobiliteit-trips-en-aanbod-ap:RouteplannerShape shacl:property _:n3-1509.
+_:n3-1510 shacl:datatype xsd:string;
     shacl:description "Naam van de Routeplanner.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "naam";
     shacl:path dcterms:title.
-mobiliteit-trips-en-aanbod-ap:RouteplannerShape shacl:property _:n3-1565;
+mobiliteit-trips-en-aanbod-ap:RouteplannerShape shacl:property _:n3-1510;
     shacl:targetClass trips-en-aanbod:Routeplanner.
 mobiliteit-trips-en-aanbod-ap:RoutesegmentShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1566 shacl:class trips-en-aanbod:Mobiliteitsdienst;
+_:n3-1511 shacl:class trips-en-aanbod:Mobiliteitsdienst;
     shacl:description "Mobiliteitsdienst die de Reiziger heeft gebruikt bij het afleggen van het Routesegment.";
     shacl:maxCount 1;
     shacl:name "GerealiseerdDoor";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.gerealiseerdDoor>.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1566.
-_:n3-1567 shacl:class trips-en-aanbod:Resource;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1511.
+_:n3-1512 shacl:class trips-en-aanbod:Resource;
     shacl:description "Resource van de Mobiliteitsdienst die de Reiziger heeft gebruikt bij het afleggen van het Routesegment.";
     shacl:maxCount 1;
     shacl:name "GerealiseerdMet";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.gerealiseerdMet>.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1567.
-_:n3-1568 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1512.
+_:n3-1513 shacl:class skos:Concept;
     shacl:description "Aandrijving van het vervoermiddel waarmee het Routesegment is afgelegd.";
     shacl:maxCount 1;
     shacl:name "aandrijving";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.aandrijving>.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1568.
-_:n3-1569 shacl:class trips-en-aanbod:Routeknoop;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1513.
+_:n3-1514 shacl:class trips-en-aanbod:Routeknoop;
     shacl:description "Knoop waar het Routesegment eindigt.";
     shacl:maxCount 1;
     shacl:name "aankomstknoop";
     shacl:path trips-en-aanbod:aankomstknoop.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1569.
-_:n3-1570 shacl:datatype xsd:dateTime;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1514.
+_:n3-1515 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop het Routesegment eindigt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "aankomsttijdstip";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.aankomsttijdstip>.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1570.
-_:n3-1571 shacl:class netwerk:GerichteLink;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1515.
+_:n3-1516 shacl:class netwerk:GerichteLink;
     shacl:description "Opeenvolging van Gerichte Links waaruit het Routesegment bestaat.";
     shacl:minCount 1;
     shacl:name "link";
     shacl:path trips-en-aanbod:link.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1571.
-_:n3-1572 shacl:class trips-en-aanbod:Uitvoerder;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1516.
+_:n3-1517 shacl:class trips-en-aanbod:Uitvoerder;
     shacl:description "Uitvoerder van het Routesegment.";
     shacl:maxCount 1;
     shacl:name "uitvoerder";
     shacl:path trips-en-aanbod:uitvoerder.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1572.
-_:n3-1573 shacl:class trips-en-aanbod:Routeknoop;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1517.
+_:n3-1518 shacl:class trips-en-aanbod:Routeknoop;
     shacl:description "Knoop waar het Routesegment begint.";
     shacl:maxCount 1;
     shacl:name "vertrekknoop";
     shacl:path trips-en-aanbod:vertrekknoop.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1573.
-_:n3-1574 shacl:datatype xsd:dateTime;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1518.
+_:n3-1519 shacl:datatype xsd:dateTime;
     shacl:description "Tijdstip waarop het Routesegment begint.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "vertrektijdstip";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vertrektijdstip>.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1574.
-_:n3-1575 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1519.
+_:n3-1520 shacl:class skos:Concept;
     shacl:description "Type vervoermiddel waarmee het Routesegment is afgelegd.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "vervoermiddel";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vervoermiddel>.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1575.
-_:n3-1576 shacl:class trips-en-aanbod:Vervoersbewijs;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1520.
+_:n3-1521 shacl:class trips-en-aanbod:Vervoersbewijs;
     shacl:description "Vervoersbewijs waarmee het Routesegment kan worden afgelegd of is afgelegd.";
     shacl:maxCount 1;
     shacl:name "vervoersbewijs";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Routesegment.vervoersbewijs>.
-mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1576;
+mobiliteit-trips-en-aanbod-ap:RoutesegmentShape shacl:property _:n3-1521;
     shacl:targetClass trips-en-aanbod:Routesegment.
 mobiliteit-trips-en-aanbod-ap:RoutetypeShape a shacl:NodeShape;
     shacl:closed false;
@@ -1118,26 +1118,26 @@ mobiliteit-trips-en-aanbod-ap:TekenShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 mobiliteit-trips-en-aanbod-ap:ToegankelijkheidShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1577 shacl:class skos:Concept;
+_:n3-1522 shacl:class skos:Concept;
     shacl:description "Niveau van toegankelijkheid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "niveau";
     shacl:path trips-en-aanbod:niveau.
-mobiliteit-trips-en-aanbod-ap:ToegankelijkheidShape shacl:property _:n3-1577.
-_:n3-1578 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:ToegankelijkheidShape shacl:property _:n3-1522.
+_:n3-1523 shacl:class skos:Concept;
     shacl:description "Deel van de dienst of infrastructuur waarop de Toegankelijkheid betrekking heeft..";
     shacl:maxCount 1;
     shacl:name "onderdeel";
     shacl:path trips-en-aanbod:onderdeel.
-mobiliteit-trips-en-aanbod-ap:ToegankelijkheidShape shacl:property _:n3-1578.
-_:n3-1579 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:ToegankelijkheidShape shacl:property _:n3-1523.
+_:n3-1524 shacl:class skos:Concept;
     shacl:description "Aard van de Toegankelijkheid.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:ToegankelijkheidShape shacl:property _:n3-1579;
+mobiliteit-trips-en-aanbod-ap:ToegankelijkheidShape shacl:property _:n3-1524;
     shacl:targetClass trips-en-aanbod:Toegankelijkheid.
 mobiliteit-trips-en-aanbod-ap:ToegankelijkheidsniveauShape a shacl:NodeShape;
     shacl:closed false;
@@ -1150,113 +1150,113 @@ mobiliteit-trips-en-aanbod-ap:ToegankelijkheidstypeShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 mobiliteit-trips-en-aanbod-ap:TransportconnectieShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1580 shacl:class transportnetwerk:Transportobject;
+_:n3-1525 shacl:class transportnetwerk:Transportobject;
     shacl:description "Transportobjecten die door deTransportconnectie verbonden zijn.";
     shacl:minCount 2;
     shacl:name "^Verbindt";
     shacl:path netwerk:verbindt.
-mobiliteit-trips-en-aanbod-ap:TransportconnectieShape shacl:property _:n3-1580.
-_:n3-1581 shacl:class adms:Identifier;
+mobiliteit-trips-en-aanbod-ap:TransportconnectieShape shacl:property _:n3-1525.
+_:n3-1526 shacl:class adms:Identifier;
     shacl:description "Identificator van de Transportconnectie.";
     shacl:maxCount 1;
     shacl:name "^identificator";
     shacl:path netwerk:identificator.
-mobiliteit-trips-en-aanbod-ap:TransportconnectieShape shacl:property _:n3-1581.
-_:n3-1582 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:TransportconnectieShape shacl:property _:n3-1526.
+_:n3-1527 shacl:class skos:Concept;
     shacl:description "Aard van de Transportconnectie.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:TransportconnectieShape shacl:property _:n3-1582;
+mobiliteit-trips-en-aanbod-ap:TransportconnectieShape shacl:property _:n3-1527;
     shacl:targetClass trips-en-aanbod:Transportconnectie.
 mobiliteit-trips-en-aanbod-ap:TransportgebiedShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1583 shacl:class sf:Polygon;
+_:n3-1528 shacl:class sf:Polygon;
     shacl:description "Beschrijving van de geometrie van het Transportgebied.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^geometrie";
     shacl:path <https://data.vlaanderen.be/ns/netwerk#Netwerkgebied.geometrie>.
-mobiliteit-trips-en-aanbod-ap:TransportgebiedShape shacl:property _:n3-1583.
-_:n3-1584 shacl:class adms:Identifier;
+mobiliteit-trips-en-aanbod-ap:TransportgebiedShape shacl:property _:n3-1528.
+_:n3-1529 shacl:class adms:Identifier;
     shacl:description "Identificator van het Transportgebied.";
     shacl:maxCount 1;
     shacl:name "^identificator";
     shacl:path netwerk:identificator.
-mobiliteit-trips-en-aanbod-ap:TransportgebiedShape shacl:property _:n3-1584.
-_:n3-1585 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:TransportgebiedShape shacl:property _:n3-1529.
+_:n3-1530 shacl:class skos:Concept;
     shacl:description "Aard van het Transportgebied.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:TransportgebiedShape shacl:property _:n3-1585;
+mobiliteit-trips-en-aanbod-ap:TransportgebiedShape shacl:property _:n3-1530;
     shacl:targetClass transportnetwerk:Transportgebied.
 mobiliteit-trips-en-aanbod-ap:TransportgebiedtypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 mobiliteit-trips-en-aanbod-ap:TransportknoopShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1586 shacl:class sf:Point;
+_:n3-1531 shacl:class sf:Point;
     shacl:description "Locatie van de Transportknoop.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "^geometrie";
     shacl:path <https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie>.
-mobiliteit-trips-en-aanbod-ap:TransportknoopShape shacl:property _:n3-1586.
-_:n3-1587 shacl:class adms:Identifier;
+mobiliteit-trips-en-aanbod-ap:TransportknoopShape shacl:property _:n3-1531.
+_:n3-1532 shacl:class adms:Identifier;
     shacl:description "Identificator van de Transportknoop.";
     shacl:maxCount 1;
     shacl:name "^identificator";
     shacl:path netwerk:identificator.
-mobiliteit-trips-en-aanbod-ap:TransportknoopShape shacl:property _:n3-1587.
-_:n3-1588 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:TransportknoopShape shacl:property _:n3-1532.
+_:n3-1533 shacl:class skos:Concept;
     shacl:description "Aard van de Transportknoop.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:TransportknoopShape shacl:property _:n3-1588;
+mobiliteit-trips-en-aanbod-ap:TransportknoopShape shacl:property _:n3-1533;
     shacl:targetClass transportnetwerk:Transportknoop.
 mobiliteit-trips-en-aanbod-ap:TransportknooptypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 mobiliteit-trips-en-aanbod-ap:TransportnetwerkShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1589 shacl:class transportnetwerk:Transportobject;
+_:n3-1534 shacl:class transportnetwerk:Transportobject;
     shacl:description "Transportobjecten waaruit het Transportnetwerk bestaat.";
     shacl:name "^BestaatUit";
     shacl:path netwerk:bestaatUit.
-mobiliteit-trips-en-aanbod-ap:TransportnetwerkShape shacl:property _:n3-1589.
-_:n3-1590 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:TransportnetwerkShape shacl:property _:n3-1534.
+_:n3-1535 shacl:class skos:Concept;
     shacl:description "Aard van het Transportnetwerk volgens de vervoerswijze.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:TransportnetwerkShape shacl:property _:n3-1590;
+mobiliteit-trips-en-aanbod-ap:TransportnetwerkShape shacl:property _:n3-1535;
     shacl:targetClass transportnetwerk:Transportnetwerk.
 mobiliteit-trips-en-aanbod-ap:TransportobjectShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1591 shacl:class trips-en-aanbod:Beschikbaarheid;
+_:n3-1536 shacl:class trips-en-aanbod:Beschikbaarheid;
     shacl:description "Beschikbaarheid van het Transportobject.";
     shacl:maxCount 1;
     shacl:name "beschikbaarheid";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Transportobject.beschikbaarheid>.
-mobiliteit-trips-en-aanbod-ap:TransportobjectShape shacl:property _:n3-1591.
-_:n3-1592 shacl:datatype rdf:langString;
+mobiliteit-trips-en-aanbod-ap:TransportobjectShape shacl:property _:n3-1536.
+_:n3-1537 shacl:datatype rdf:langString;
     shacl:description "Naam van het Transportobject.";
     shacl:maxCount 1;
     shacl:name "geografischeNaam";
     shacl:path transportnetwerk:geografischeNaam.
-mobiliteit-trips-en-aanbod-ap:TransportobjectShape shacl:property _:n3-1592.
-_:n3-1593 shacl:class trips-en-aanbod:Toegankelijkheid;
+mobiliteit-trips-en-aanbod-ap:TransportobjectShape shacl:property _:n3-1537.
+_:n3-1538 shacl:class trips-en-aanbod:Toegankelijkheid;
     shacl:description "Toegankelijkheid van het Transportobject.";
     shacl:maxCount 1;
     shacl:name "toegankelijkheid";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Transportobject.toegankelijkheid>.
-mobiliteit-trips-en-aanbod-ap:TransportobjectShape shacl:property _:n3-1593;
+mobiliteit-trips-en-aanbod-ap:TransportobjectShape shacl:property _:n3-1538;
     shacl:targetClass transportnetwerk:Transportobject.
 mobiliteit-trips-en-aanbod-ap:TransporttypeShape a shacl:NodeShape;
     shacl:closed false;
@@ -1269,83 +1269,83 @@ mobiliteit-trips-en-aanbod-ap:VervoermiddelShape a shacl:NodeShape;
     shacl:targetClass skos:Concept.
 mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1594 shacl:datatype xsd:integer;
+_:n3-1539 shacl:datatype xsd:integer;
     shacl:description "Aantal reizen dat men met het Vervoersbewijs kan afleggen.";
     shacl:maxCount 1;
     shacl:name "aantal";
     shacl:path trips-en-aanbod:aantal.
-mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1594.
-_:n3-1595 shacl:class schemas:QuantitativeValue;
+mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1539.
+_:n3-1540 shacl:class schemas:QuantitativeValue;
     shacl:description "Gecumuleerde afstand die men met het Vervoersbewijs mag afleggen.";
     shacl:maxCount 1;
     shacl:name "afstand";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Vervoersbewijs.afstand>.
-mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1595.
-_:n3-1596 shacl:class schemas:MonetaryAmount;
+mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1540.
+_:n3-1541 shacl:class schemas:MonetaryAmount;
     shacl:description "Geldbedrag dat aan de Mobiliteitsdienst kan worden besteed.";
     shacl:maxCount 1;
     shacl:name "bedrag";
     shacl:path trips-en-aanbod:bedrag.
-mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1596.
-_:n3-1597 shacl:class trips-en-aanbod:Mobiliteitsdienst;
+mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1541.
+_:n3-1542 shacl:class trips-en-aanbod:Mobiliteitsdienst;
     shacl:description "Mobiliteitsdienst waarvan men met het Vervoersbewijs gebruik mag maken.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "dienst";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Vervoersbewijs.dienst>.
-mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1597.
-_:n3-1598 shacl:datatype xsd:duration;
+mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1542.
+_:n3-1543 shacl:datatype xsd:duration;
     shacl:description "Totale tijd waarvan men met het Vervoersbewijs van een Mobiliteitsdienst gebruik mag maken.";
     shacl:maxCount 1;
     shacl:name "duur";
     shacl:path trips-en-aanbod:duur.
-mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1598.
-_:n3-1599 shacl:class eu:PeriodOfTime;
+mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1543.
+_:n3-1544 shacl:class eu:PeriodOfTime;
     shacl:description "Periode waarvoor het Vervoersbewijs geldt.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "periode";
     shacl:path dcterms:date.
-mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1599.
-_:n3-1600 shacl:class schemas:MonetaryAmount;
+mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1544.
+_:n3-1545 shacl:class schemas:MonetaryAmount;
     shacl:description "Prijs die voor het Vervoersbewijs is betaald.";
     shacl:maxCount 1;
     shacl:name "prijs";
     shacl:path schemas:price.
-mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1600.
-_:n3-1601 shacl:class prov:Location;
+mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1545.
+_:n3-1546 shacl:class prov:Location;
     shacl:description "Opeenvolging van Locaties waarvoor het Vervoersbewijs geldig is.";
     shacl:minCount 1;
     shacl:name "reisweg";
     shacl:path <https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#Vervoersbewijs.reisweg>.
-mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1601.
-_:n3-1602 shacl:class skos:Concept;
+mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1546.
+_:n3-1547 shacl:class skos:Concept;
     shacl:description "Aard van het Vervoersbewijs.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1602;
+mobiliteit-trips-en-aanbod-ap:VervoersbewijsShape shacl:property _:n3-1547;
     shacl:targetClass trips-en-aanbod:Vervoersbewijs.
 mobiliteit-trips-en-aanbod-ap:VervoersbewijstypeShape a shacl:NodeShape;
     shacl:closed false;
     shacl:targetClass skos:Concept.
 mobiliteit-trips-en-aanbod-ap:VoorkeurShape a shacl:NodeShape;
     shacl:closed false.
-_:n3-1603 shacl:class skos:Concept;
+_:n3-1548 shacl:class skos:Concept;
     shacl:description "Aard van de Voorkeur van de Reiziger.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "type";
     shacl:path dcterms:type.
-mobiliteit-trips-en-aanbod-ap:VoorkeurShape shacl:property _:n3-1603.
-_:n3-1604 shacl:class trips-en-aanbod:Waarde;
+mobiliteit-trips-en-aanbod-ap:VoorkeurShape shacl:property _:n3-1548.
+_:n3-1549 shacl:class trips-en-aanbod:Waarde;
     shacl:description "Waarde van de Voorkeur van de Reiziger.";
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "waarde";
     shacl:path schemas:value.
-mobiliteit-trips-en-aanbod-ap:VoorkeurShape shacl:property _:n3-1604;
+mobiliteit-trips-en-aanbod-ap:VoorkeurShape shacl:property _:n3-1549;
     shacl:targetClass trips-en-aanbod:Voorkeur.
 mobiliteit-trips-en-aanbod-ap:WaardeShape a shacl:NodeShape;
     shacl:closed false;
